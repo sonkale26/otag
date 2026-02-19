@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etkileşimli İçerik Üretim İş Akışı</title>
+    <title>Ders İçerik Üretim İş Akışı</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
@@ -13,7 +13,7 @@
             height: 0; 
             border-left: 10px solid transparent;
             border-right: 10px solid transparent;
-            border-top: 10px solid #9CA3AF;
+            border-top: 10px solid #9CA3AF; /* gray-400 */
             margin: 0 auto;
         }
         .connector-line {
@@ -22,109 +22,70 @@
             background-color: #9CA3AF;
             margin: 0 auto;
         }
-        .dashed-line {
-            border-left: 2px dashed #CBD5E1;
-            height: 100%;
-            position: absolute;
-            left: 50%;
-            top: 0;
-            z-index: -1;
-        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 p-6 min-h-screen">
 
-    <div class="max-w-4xl mx-auto">
+    <div class="max-w-3xl mx-auto">
         
         <!-- Header -->
         <header class="text-center mb-10">
-            <h1 class="text-3xl font-bold text-slate-900 mb-2">Etkileşimli İçerik Üretim Süreci</h1>
-            <p class="text-slate-500">Rise & Kitap Bazlı Takip Sistemi</p>
-        </header>
+            <h1 class="text-3xl font-bold text-slate-900 mb-2">Etkileşimli İçerik  Üretim Süreci</h1>
+</header>
 
         <!-- Start Node -->
         <div class="flex flex-col items-center relative z-10">
-            <div class="bg-white border-l-4 border-purple-600 shadow-sm rounded-lg p-4 w-72 text-center hover:shadow-md transition-shadow">
+          <div class="bg-white border-l-4 border-purple-600 shadow-sm rounded-lg p-4 w-72 text-center hover:shadow-md transition-shadow">
                 <span class="text-xs font-semibold text-purple-600 uppercase tracking-wider">GİRDİ</span>
-                <div class="font-bold text-slate-800 mt-1">Ders & Kitap Listesi</div>
-                <div class="text-xs text-slate-400 mt-1">Excel Veri Kaynağı</div>
-            </div>
+                <div class="font-bold text-slate-800 mt-1">Ders Seçimi</div>
+          
+          </div>
             <div class="connector-line"></div>
             <div class="arrow-down"></div>
-        </div>
+      </div>
 
-        <!-- Phase 1: Planning & Assignment (Blue) -->
+        <!-- Decision Node -->
+        
+        <!-- Phase 1: Planning (Blue) -->
         <div class="mt-2 space-y-4">
-            <div class="bg-blue-50 border border-blue-200 rounded-xl shadow-sm p-6 relative overflow-hidden">
-                <div class="absolute top-0 right-0 bg-blue-100 text-blue-600 text-xs font-bold px-3 py-1 rounded-bl-lg">1. PLANLAMA</div>
+            <div class="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg shadow-sm p-5 relative">
+                <div class="absolute -left-3 top-5 bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shadow-sm">1</div>
+                <h2 class="text-blue-800 font-bold text-lg mb-3">Planlama Aşaması</h2>
                 
-                <h2 class="text-blue-900 font-bold text-xl mb-4 flex items-center gap-2">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
-                    Ders Tanımlama ve Atama
-                </h2>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
-                    <!-- Data Point -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <!-- Step -->
                     <div class="bg-white p-3 rounded-lg border border-blue-100 shadow-sm">
                         <div class="text-[10px] text-blue-400 font-bold uppercase">Ders Kodu</div>
                         <div class="font-bold text-gray-800">ADY106U</div>
                     </div>
                     <!-- Data Point -->
-                    <div class="bg-white p-3 rounded-lg border border-blue-100 shadow-sm">
-                        <div class="text-[10px] text-blue-400 font-bold uppercase">Kitap Kodu</div>
-                        <div class="font-mono text-xs text-gray-600 mt-1">3154-0-0-0-1902-V01</div>
-                    </div>
+                    
                     <!-- Data Point -->
                     <div class="bg-white p-3 rounded-lg border border-blue-100 shadow-sm">
                         <div class="text-[10px] text-blue-400 font-bold uppercase">Öğrenci Sayısı</div>
-                        <div class="font-bold text-gray-800">6009</div>
+                        <div class="font-bold text-gray-800">xxxx</div>
                     </div>
                      <!-- Data Point -->
-                     <div class="bg-yellow-50 p-3 rounded-lg border border-yellow-200 shadow-sm">
+                  <div class="bg-yellow-50 p-3 rounded-lg border border-yellow-200 shadow-sm">
                         <div class="text-[10px] text-yellow-600 font-bold uppercase">Program</div>
-                        <div class="font-bold text-yellow-800">RISE</div>
-                    </div>
-                </div>
-
-                <!-- Timeline Section -->
-                <div class="bg-blue-100/50 rounded-lg p-3 flex flex-col md:flex-row justify-between items-center gap-4">
-                    <div class="flex items-center gap-2">
-                        <div class="w-8 h-8 rounded-full bg-blue-200 flex items-center justify-center text-blue-700">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                        </div>
-                        <div>
-                            <div class="text-xs text-blue-500 font-semibold">ATAMA TARİHİ</div>
-                            <div class="text-sm font-bold text-blue-900">23.12.2024</div>
-                        </div>
-                    </div>
-                    <div class="h-0.5 w-full bg-blue-200 flex-1 relative hidden md:block">
-                        <div class="absolute right-0 -top-1 w-2 h-2 bg-blue-300 rounded-full"></div>
-                    </div>
-                    <div class="flex items-center gap-2 bg-red-50 px-3 py-1 rounded border border-red-100">
-                        <div class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center text-red-600">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        </div>
-                        <div>
-                            <div class="text-xs text-red-500 font-semibold">HEDEF (DEADLINE)</div>
-                            <div class="text-sm font-bold text-red-700">05.05.2025</div>
-                        </div>
+                        <div class="font-bold text-yellow-800">Articulate / Rise&nbsp; &nbsp;</div>
                     </div>
                 </div>
             </div>
 
             <div class="flex justify-center"><div class="connector-line"></div></div>
             <div class="flex justify-center"><div class="arrow-down"></div></div>
-        </div>
+      </div>
 
         <!-- Phase 2: Production (Orange) -->
         <div class="mt-2 space-y-4">
-            <div class="bg-orange-50 border border-orange-200 rounded-xl shadow-sm p-6 relative">
-                <div class="absolute top-0 right-0 bg-orange-100 text-orange-600 text-xs font-bold px-3 py-1 rounded-bl-lg">2. ÜRETİM</div>
+            <div class="bg-orange-50 border-l-4 border-orange-500 rounded-r-lg shadow-sm p-5 relative">
+                <div class="absolute -left-3 top-5 bg-orange-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shadow-sm">2</div>
+                <h2 class="text-orange-800 font-bold text-lg mb-3">Üretim Süreci</h2>
                 
-                <h2 class="text-orange-900 font-bold text-xl mb-4 flex items-center gap-2">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
-                    Etkileşimli İçerik Geliştirme
-                </h2>
+                 <div class="absolute top-0 right-0 bg-orange-100 text-orange-600 text-xs font-bold px-3 py-1 rounded-bl-lg">2. ÜRETİM</div>
+                
+                
 
                 <div class="flex items-center gap-3 mb-4">
                     <span class="text-sm font-semibold text-gray-600">Başlama Tarihi:</span>
@@ -134,26 +95,26 @@
                 </div>
 
                 <!-- Unit Grid Visualization -->
-                <div class="bg-white p-4 rounded-lg border border-orange-100 shadow-inner">
+              <div class="bg-white p-4 rounded-lg border border-orange-100 shadow-inner">
                     <div class="text-xs text-gray-400 font-semibold mb-2 uppercase text-center">Ünite İlerleme Durumu</div>
-                    <div class="flex flex-wrap justify-center gap-2">
+                <div class="flex flex-wrap justify-center gap-2">
                         <!-- Units 1-8 (Completed) -->
-                        <div class="w-16 h-16 bg-green-100 rounded-lg flex flex-col items-center justify-center border border-green-200 relative overflow-hidden group">
+                  <div class="w-14 h-14 bg-green-100 rounded-lg flex flex-col items-center justify-center border border-green-200 relative overflow-hidden group">
                             <span class="text-[10px] text-green-600 font-bold">ÜNİTE 1</span>
                             <svg class="w-5 h-5 text-green-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
                             <div class="absolute inset-0 bg-green-200 opacity-0 group-hover:opacity-20 transition-opacity"></div>
                         </div>
-                        <div class="w-16 h-16 bg-green-100 rounded-lg flex flex-col items-center justify-center border border-green-200"><span class="text-[10px] text-green-600 font-bold">ÜNİTE 2</span><svg class="w-5 h-5 text-green-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
-                        <div class="w-16 h-16 bg-green-100 rounded-lg flex flex-col items-center justify-center border border-green-200"><span class="text-[10px] text-green-600 font-bold">ÜNİTE 3</span><svg class="w-5 h-5 text-green-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
-                        <div class="w-16 h-16 bg-green-100 rounded-lg flex flex-col items-center justify-center border border-green-200"><span class="text-[10px] text-green-600 font-bold">ÜNİTE 4</span><svg class="w-5 h-5 text-green-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
-                        <div class="w-16 h-16 bg-green-100 rounded-lg flex flex-col items-center justify-center border border-green-200"><span class="text-[10px] text-green-600 font-bold">ÜNİTE 5</span><svg class="w-5 h-5 text-green-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
-                        <div class="w-16 h-16 bg-green-100 rounded-lg flex flex-col items-center justify-center border border-green-200"><span class="text-[10px] text-green-600 font-bold">ÜNİTE 6</span><svg class="w-5 h-5 text-green-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
-                        <div class="w-16 h-16 bg-green-100 rounded-lg flex flex-col items-center justify-center border border-green-200"><span class="text-[10px] text-green-600 font-bold">ÜNİTE 7</span><svg class="w-5 h-5 text-green-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
-                        <div class="w-16 h-16 bg-green-100 rounded-lg flex flex-col items-center justify-center border border-green-200"><span class="text-[10px] text-green-600 font-bold">ÜNİTE 8</span><svg class="w-5 h-5 text-green-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
+                  <div class="w-14 h-14 bg-green-100 rounded-lg flex flex-col items-center justify-center border border-green-200"><span class="text-[10px] text-green-600 font-bold">ÜNİTE 2</span><svg class="w-5 h-5 text-green-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
+                  <div class="w-14 h-14 bg-green-100 rounded-lg flex flex-col items-center justify-center border border-green-200"><span class="text-[10px] text-green-600 font-bold">ÜNİTE 3</span><svg class="w-5 h-5 text-green-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
+                  <div class="w-14 h-14 bg-green-100 rounded-lg flex flex-col items-center justify-center border border-green-200"><span class="text-[10px] text-green-600 font-bold">ÜNİTE 4</span><svg class="w-5 h-5 text-green-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
+                  <div class="w-14 h-14 bg-green-100 rounded-lg flex flex-col items-center justify-center border border-green-200"><span class="text-[10px] text-green-600 font-bold">ÜNİTE 5</span><svg class="w-5 h-5 text-green-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
+                  <div class="w-14 h-14 bg-green-100 rounded-lg flex flex-col items-center justify-center border border-green-200"><span class="text-[10px] text-green-600 font-bold">ÜNİTE 6</span><svg class="w-5 h-5 text-green-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
+                  <div class="w-14 h-14 bg-green-100 rounded-lg flex flex-col items-center justify-center border border-green-200"><span class="text-[10px] text-green-600 font-bold">ÜNİTE 7</span><svg class="w-5 h-5 text-green-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
+                  <div class="w-14 h-14 bg-green-100 rounded-lg flex flex-col items-center justify-center border border-green-200"><span class="text-[10px] text-green-600 font-bold">ÜNİTE 8</span><svg class="w-5 h-5 text-green-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
                         
                         <!-- Empty Units -->
-                        <div class="w-16 h-16 bg-gray-50 rounded-lg flex flex-col items-center justify-center border border-dashed border-gray-300 opacity-50"><span class="text-[10px] text-gray-400">ÜNİTE 9</span><span class="text-lg text-gray-300">-</span></div>
-                        <div class="w-16 h-16 bg-gray-50 rounded-lg flex flex-col items-center justify-center border border-dashed border-gray-300 opacity-50"><span class="text-[10px] text-gray-400">ÜNİTE 10</span><span class="text-lg text-gray-300">-</span></div>
+                        <div class="w-14 h-14 bg-gray-50 rounded-lg flex flex-col items-center justify-center border border-dashed border-gray-300 opacity-50"><span class="text-[10px] text-gray-400">ÜNİTE 9</span><span class="text-lg text-gray-300">-</span></div>
+                        <div class="w-14 h-14 bg-gray-50 rounded-lg flex flex-col items-center justify-center border border-dashed border-gray-300 opacity-50"><span class="text-[10px] text-gray-400">ÜNİTE 10</span><span class="text-lg text-gray-300">-</span></div>
                     </div>
                 </div>
             </div>
@@ -164,48 +125,42 @@
 
         <!-- Phase 3: Control & Publish (Green) -->
         <div class="mt-2 mb-10">
-            <div class="bg-green-50 border border-green-200 rounded-xl shadow-sm p-6 relative">
-                <div class="absolute top-0 right-0 bg-green-100 text-green-600 text-xs font-bold px-3 py-1 rounded-bl-lg">3. KONTROL & YAYIN</div>
+            <div class="bg-green-50 border-l-4 border-green-600 rounded-r-lg shadow-sm p-5 relative">
+                <div class="absolute -left-3 top-5 bg-green-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shadow-sm">3</div>
+                <h2 class="text-green-800 font-bold text-lg mb-3">Kontrol ve Yayın</h2>
                 
-                <h2 class="text-green-800 font-bold text-xl mb-4 flex items-center gap-2">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    Yayın ve Finalizasyon
-                </h2>
-                
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <!-- Step 1 -->
-                    <div class="bg-white p-3 rounded border border-green-100 flex flex-col items-center text-center">
-                        <div class="text-[10px] text-green-500 font-bold uppercase mb-1">Yayın Sorumlusu</div>
-                        <div class="bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full text-sm font-bold">Meltem</div>
-                    </div>
-
-                    <!-- Step 2 -->
-                    <div class="bg-white p-3 rounded border border-green-100 flex flex-col items-center text-center">
-                        <div class="text-[10px] text-green-500 font-bold uppercase mb-1">Kontrol Çıktıları</div>
-                        <div class="flex items-center gap-1 text-green-700 font-bold">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                            TAMAM
+                <div class="flex flex-col gap-3">
+                    <!-- Action Item -->
+                    <div class="flex items-center gap-3 bg-white p-3 rounded border border-green-100">
+                        <div class="bg-green-100 p-2 rounded-full text-green-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="font-bold text-sm text-gray-800">Kontrol ve Yayın Çıktıları</div>
+                            <div class="text-xs text-gray-500">Son kontrollerin yapılması</div>
                         </div>
                     </div>
-
-                    <!-- Step 3 -->
-                    <div class="bg-green-600 text-white p-3 rounded shadow-md flex flex-col items-center text-center justify-center">
-                        <div class="text-[10px] opacity-75 uppercase mb-1">Bitiş Tarihi</div>
-                        <div class="font-bold text-lg">21.01.2025</div>
+                    
+                    <!-- Date & Notes -->
+                    <div class="flex flex-col md:flex-row gap-3">
+                        <div class="flex-1 bg-green-600 text-white p-3 rounded text-center shadow-md">
+                            <div class="text-xs opacity-75 mb-1">HEDEF</div>
+                            <div class="font-bold">Tamamlanma Tarihi</div>
+                        </div>
+                        <div class="flex-1 bg-white border border-gray-200 p-3 rounded text-center text-gray-600 text-sm flex items-center justify-center">
+                            Notlar ve Arşivleme
+                        </div>
                     </div>
                 </div>
             </div>
             
             <!-- Finish Node -->
-            <div class="flex justify-center mt-8">
-                 <div class="flex items-center gap-2 bg-slate-800 text-white px-8 py-3 rounded-full text-sm font-bold shadow-lg tracking-wide border-4 border-slate-100">
-                    <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                    SÜREÇ TAMAMLANDI
-                 </div>
-            </div>
+            
         </div>
 
-    </div>
+</div>
 
 </body>
 </html>
