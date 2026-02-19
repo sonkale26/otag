@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kare Bulmaca Oluşturucu</title>
+    <!-- React ve ReactDOM CDN -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <!-- Babel (JSX'i tarayıcıda çalıştırmak için) -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        body { background-color: #f0f2f5; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        /* Scrollbar düzenlemeleri */
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e0; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #a0aec0; }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect, useCallback } = React;
+
+        // --- ICONS (Lucide React yerine SVG bileşenleri) ---
+        const IconBase = ({ children, size = 24, className = "" }) => (
+            <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>{children}</svg>
+        );
+        const GridIcon = (props) => <IconBase {...props}><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M3 15h18"/><path d="M9 3v18"/><path d="M15 3v18"/></IconBase>;
+        const Download = (props) => <IconBase {...props}><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></IconBase>;
+        const Layout = (props) => <IconBase {...props}><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><line x1="3" x2="21" y1="9" y2="9"/><line x1="9" x2="9" y1="21" y2="9"/></IconBase>;
+        const Wand2 = (props) => <IconBase {...props}><path d="m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72Z"/><path d="m14 7 3 3"/><path d="M5 6v4"/><path d="M19 14v4"/><path d="M10 2v2"/><path d="M7 8H3"/><path d="M21 16h-4"/><path d="M11 3H9"/></IconBase>;
+        const XIcon = (props) => <IconBase {...props}><path d="M18 6 6 18"/><path d="m6 6 12 12"/></IconBase>;
+        const ListIcon = (props) => <IconBase {...props}><line x1="8" x2="21" y1="6" y2="6"/><line x1="8" x2="21" y1="12" y2="12"/><line x1="8" x2="21" y1="18" y2="18"/><line x1="3" x2="3.01" y1="6" y2="6"/><line x1="3" x2="3.01" y1="12" y2="12"/><line x1="3" x2="3.01" y1="18" y2="18"/></IconBase>;
+        const CheckCircle = (props) => <IconBase {...props}><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></IconBase>;
+        const RotateCw = (props) => <IconBase {...props}><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/></IconBase>;
+        const ArrowRight = (props) => <IconBase {...props}><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></IconBase>;
+        const ArrowDown = (props) => <IconBase {...props}><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></IconBase>;
+        const RefreshCcw = (props) => <IconBase {...props}><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 16h5v5"/></IconBase>;
+
+        // --- ANA UYGULAMA ---
+        const App = () => {
+            // İSTEK ÜZERİNE GÜNCELLENDİ: Satır 15, Sütun 20
+            const [rows, setRows] = useState(15);
+            const [cols, setCols] = useState(15);
+            const [title, setTitle] = useState("");
+            const [gridData, setGridData] = useState([]);
+            const [clues, setClues] = useState({ across: [], down: [] }); 
+            const [selectedTool, setSelectedTool] = useState('letter'); 
+            
+            // Navigasyon
+            const [activeCell, setActiveCell] = useState(null);
+            const [direction, setDirection] = useState('across'); 
+            
+            const [showAutoModal, setShowAutoModal] = useState(false);
+            const [autoInput, setAutoInput] = useState("ELMA: Kırmızı bir meyve\nARMUT: Ankara'nın bir ilçesi\nKALEM: Yazı yazma aracı\nMASA: Dört ayaklı eşya\nOKUL: Eğitim yuvası");
+
+            // İlk yüklemede ızgarayı oluştur
+            useEffect(() => {
+                initializeGrid(rows, cols);
+            }, []); 
+
+            // Komşu kontrolü fonksiyonu (Editör için)
+            const hasNeighborInEditor = useCallback((index, dir, currentGrid = gridData) => {
+                const r = Math.floor(index / cols);
+                const c = index % cols;
+                
+                const getC = (rr, cc) => {
+                    if (rr < 0 || rr >= rows || cc < 0 || cc >= cols) return null;
+                    return currentGrid[rr * cols + cc];
+                };
+
+                if (dir === 'across') {
+                    const left = getC(r, c - 1);
+                    const right = getC(r, c + 1);
+                    return (left && left.type === 'letter') || (right && right.type === 'letter');
+                } else {
+                    const up = getC(r - 1, c);
+                    const down = getC(r + 1, c);
+                    return (up && up.type === 'letter') || (down && down.type === 'letter');
+                }
+            }, [gridData, rows, cols]);
+
+            // --- KLAVYE KONTROLÜ (EDİTÖR İÇİN) ---
+            useEffect(() => {
+                const handleKeyDown = (e) => {
+                // Modal açıksa veya aktif hücre yoksa veya kullanıcı bir inputa yazı yazıyorsa engelle
+                if (showAutoModal || activeCell === null) return;
+                if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+
+                const currentRow = Math.floor(activeCell / cols);
+                const currentCol = activeCell % cols;
+                let nextCell = activeCell;
+
+                // Yön Tuşları
+                if (e.key === 'ArrowRight') {
+                    if (currentCol < cols - 1) nextCell = activeCell + 1;
+                    setDirection('across');
+                } else if (e.key === 'ArrowLeft') {
+                    if (currentCol > 0) nextCell = activeCell - 1;
+                    setDirection('across');
+                } else if (e.key === 'ArrowDown') {
+                    if (currentRow < rows - 1) nextCell = activeCell + cols;
+                    setDirection('down');
+                } else if (e.key === 'ArrowUp') {
+                    if (currentRow > 0) nextCell = activeCell - cols;
+                    setDirection('down');
+                }
+                
+                // Yön Değiştirme (Space)
+                else if (e.key === ' ') {
+                    e.preventDefault();
+                    setDirection(prev => {
+                        const newDir = prev === 'across' ? 'down' : 'across';
+                        // Eğer hedef yönde komşu varsa değiştir, yoksa eskisi kalsın
+                        if (hasNeighborInEditor(activeCell, newDir)) return newDir;
+                        return prev;
+                    });
+                }
+
+                // Harf Girişi
+                else if (e.key.length === 1 && e.key.match(/[a-zA-ZğüşıöçĞÜŞİÖÇ]/)) {
+                    if (gridData[activeCell].type === 'letter') {
+                        const updatedGrid = [...gridData];
+                        updatedGrid[activeCell].content = e.key.toUpperCase();
+                        setGridData(updatedGrid);
+                        
+                        // Yöne göre ilerle
+                        if (direction === 'across') {
+                            if ((activeCell + 1) % cols !== 0) nextCell = activeCell + 1;
+                        } else {
+                            if (activeCell + cols < rows * cols) nextCell = activeCell + cols;
+                        }
+                    }
+                }
+                
+                // Silme (Backspace)
+                else if (e.key === 'Backspace') {
+                    if (gridData[activeCell].type === 'letter') {
+                        const updatedGrid = [...gridData];
+                        updatedGrid[activeCell].content = '';
+                        setGridData(updatedGrid);
+                        
+                        // Silince geri git
+                        if (direction === 'across') {
+                            if (currentCol > 0) nextCell = activeCell - 1;
+                        } else {
+                            if (currentRow > 0) nextCell = activeCell - cols;
+                        }
+                    }
+                }
+
+                if (nextCell !== activeCell) {
+                    setActiveCell(nextCell);
+                }
+                };
+
+                window.addEventListener('keydown', handleKeyDown);
+                return () => window.removeEventListener('keydown', handleKeyDown);
+            }, [activeCell, gridData, rows, cols, showAutoModal, direction, hasNeighborInEditor]);
+
+
+            const initializeGrid = (r, c) => {
+                const newGrid = [];
+                for (let i = 0; i < r * c; i++) {
+                newGrid.push({
+                    id: i,
+                    type: 'letter', 
+                    content: '',
+                    number: null
+                });
+                }
+                setGridData(newGrid);
+                setClues({ across: [], down: [] });
+            };
+
+            const handleResize = () => {
+                initializeGrid(rows, cols);
+            };
+
+            // --- AKILLI HÜCRE SEÇİMİ VE YÖN TAYİNİ ---
+            const handleCellClick = (index) => {
+                if (selectedTool === 'block') {
+                const updatedGrid = [...gridData];
+                updatedGrid[index].type = updatedGrid[index].type === 'block' ? 'letter' : 'block';
+                if (updatedGrid[index].type === 'block') {
+                    updatedGrid[index].content = '';
+                    updatedGrid[index].number = null;
+                }
+                setGridData(updatedGrid);
+                setActiveCell(index);
+                } else {
+                // Akıllı Yön Algılama
+                if (activeCell === index) {
+                    // Zaten seçiliyse yön değiştirmeyi dene
+                    const newDir = direction === 'across' ? 'down' : 'across';
+                    // Sadece o yönde komşu varsa değiştir
+                    if (hasNeighborInEditor(index, newDir)) {
+                        setDirection(newDir);
+                    }
+                } else {
+                    setActiveCell(index);
+                    
+                    // Komşuları kontrol et
+                    const hasHoriz = hasNeighborInEditor(index, 'across');
+                    const hasVert = hasNeighborInEditor(index, 'down');
+
+                    if (hasVert && !hasHoriz) {
+                        setDirection('down');
+                    } else if (hasHoriz && !hasVert) {
+                        setDirection('across');
+                    } else {
+                        setDirection('across'); 
+                    }
+                }
+                }
+            };
+
+            // --- ANALİZ VE İPUCU OLUŞTURMA ---
+            const analyzeGridAndGenerateClues = (currentGrid = gridData, providedClueMap = {}) => {
+                const newGrid = [...currentGrid];
+                let counter = 1;
+                const newClues = { across: [], down: [] };
+
+                newGrid.forEach(c => c.number = null);
+
+                const getCell = (r, c) => {
+                    if (r < 0 || r >= rows || c < 0 || c >= cols) return null;
+                    return newGrid[r * cols + c];
+                };
+
+                for (let r = 0; r < rows; r++) {
+                    for (let c = 0; c < cols; c++) {
+                        const cell = getCell(r, c);
+                        if (cell.type !== 'letter') continue;
+
+                        const left = getCell(r, c - 1);
+                        const right = getCell(r, c + 1);
+                        const top = getCell(r - 1, c);
+                        const bottom = getCell(r + 1, c);
+
+                        const isAcrossStart = (!left || left.type === 'block') && (right && right.type === 'letter');
+                        const isDownStart = (!top || top.type === 'block') && (bottom && bottom.type === 'letter');
+
+                        let assignedNumber = cell.number;
+
+                        if (isAcrossStart || isDownStart) {
+                            if (!assignedNumber) {
+                                assignedNumber = counter++;
+                                cell.number = assignedNumber;
+                            }
+                        }
+
+                        if (isAcrossStart) {
+                            let word = cell.content;
+                            let k = 1;
+                            while (getCell(r, c + k) && getCell(r, c + k).type === 'letter') {
+                                word += getCell(r, c + k).content;
+                                k++;
+                            }
+                            const existingClue = providedClueMap[word] || "İpucu girilmedi...";
+                            newClues.across.push({ number: assignedNumber, text: existingClue, word: word });
+                        }
+
+                        if (isDownStart) {
+                            let word = cell.content;
+                            let k = 1;
+                            while (getCell(r + k, c) && getCell(r + k, c).type === 'letter') {
+                                word += getCell(r + k, c).content;
+                                k++;
+                            }
+                            const existingClue = providedClueMap[word] || "İpucu girilmedi...";
+                            newClues.down.push({ number: assignedNumber, text: existingClue, word: word });
+                        }
+                    }
+                }
+
+                setGridData(newGrid);
+                setClues(newClues);
+                return newClues; 
+            };
+
+            const updateClueText = (direction, index, text) => {
+                const updatedClues = { ...clues };
+                updatedClues[direction][index].text = text;
+                setClues(updatedClues);
+            };
+
+            const updateCellContent = (text) => {
+                if (activeCell === null) return;
+                const updatedGrid = [...gridData];
+                if (updatedGrid[activeCell].type === 'letter') {
+                    updatedGrid[activeCell].content = text.toUpperCase();
+                }
+                setGridData(updatedGrid);
+            };
+
+            // --- OTOMATİK YERLEŞTİRME ---
+            const generateLayout = () => {
+                const lines = autoInput.split('\n').filter(l => l.trim() !== '');
+                const clueMap = {}; 
+                
+                const wordList = lines.map(line => {
+                    const parts = line.split(':');
+                    const wordRaw = parts[0];
+                    const clueRaw = parts.slice(1).join(':'); 
+                    
+                    // HATA DÜZELTME: İzgaraya konacak kelimeyi olduğu gibi alıyoruz (I/İ dönüşümü yapmadan)
+                    // Böylece clueMap'teki anahtar ile griddeki içerik birebir eşleşecek.
+                    const originalUpper = wordRaw?.trim().toUpperCase() || '';
+                    
+                    const cleanClue = clueRaw?.trim() || '';
+                    if(originalUpper) clueMap[originalUpper] = cleanClue;
+
+                    return { 
+                        word: originalUpper, // Yerleştirme algoritması için de bu hali kullanılsın
+                        originalWord: originalUpper,
+                        placed: false
+                    };
+                }).filter(w => w.word.length > 1);
+
+                wordList.sort((a, b) => b.word.length - a.word.length);
+
+                const newGrid = Array(rows * cols).fill(null).map((_, i) => ({
+                    id: i,
+                    type: 'letter',
+                    content: '',
+                    number: null
+                }));
+
+                const getIdx = (r, c) => r * cols + c;
+                const getCell = (r, c) => {
+                    if (r < 0 || r >= rows || c < 0 || c >= cols) return null;
+                    return newGrid[getIdx(r, c)];
+                };
+
+                const canPlaceWord = (wordObj, r, c, direction) => {
+                    if (r < 0 || c < 0 || r >= rows || c >= cols) return false;
+
+                    const len = wordObj.word.length;
+                    if (direction === 'H' && c + len > cols) return false;
+                    if (direction === 'V' && r + len > rows) return false;
+                    
+                    if (direction === 'H') {
+                        const prev = getCell(r, c - 1);
+                        const next = getCell(r, c + len);
+                        if (prev && prev.content !== '') return false;
+                        if (next && next.content !== '') return false;
+                    } else {
+                        const prev = getCell(r - 1, c);
+                        const next = getCell(r + len, c);
+                        if (prev && prev.content !== '') return false;
+                        if (next && next.content !== '') return false;
+                    }
+
+                    for (let i = 0; i < len; i++) {
+                        const currR = direction === 'H' ? r : r + i;
+                        const currC = direction === 'H' ? c + i : c;
+                        
+                        const idx = getIdx(currR, currC);
+                        if (idx < 0 || idx >= newGrid.length) return false;
+
+                        const cell = newGrid[idx];
+                        if (cell.content !== '' && cell.content !== wordObj.originalWord[i]) return false;
+                        
+                        if (cell.content === '') {
+                            if (direction === 'H') {
+                                const top = getCell(currR - 1, currC);
+                                const bottom = getCell(currR + 1, currC);
+                                if ((top && top.content !== '') || (bottom && bottom.content !== '')) return false;
+                            } else {
+                                const left = getCell(currR, currC - 1);
+                                const right = getCell(currR, currC + 1);
+                                if ((left && left.content !== '') || (right && right.content !== '')) return false;
+                            }
+                        }
+                    }
+                    return true;
+                };
+
+                const placeWord = (wordObj, r, c, direction) => {
+                    if (!canPlaceWord(wordObj, r, c, direction)) return false;
+                    const len = wordObj.word.length;
+                    for (let i = 0; i < len; i++) {
+                        const currR = direction === 'H' ? r : r + i;
+                        const currC = direction === 'H' ? c + i : c;
+                        const cell = newGrid[getIdx(currR, currC)];
+                        cell.content = wordObj.originalWord[i];
+                        cell.type = 'letter';
+                    }
+                    return true;
+                };
+
+                if (wordList.length > 0) {
+                    const first = wordList[0];
+                    const startR = Math.floor(rows / 2);
+                    const startC = Math.floor((cols - first.word.length) / 2);
+                    placeWord(first, startR, startC, 'H');
+                    first.placed = true;
+                }
+
+                for (let i = 1; i < wordList.length; i++) {
+                    const current = wordList[i];
+                    let placed = false;
+                    for (let r = 0; r < rows && !placed; r++) {
+                        for (let c = 0; c < cols && !placed; c++) {
+                            const cell = getCell(r, c);
+                            if (cell.content) {
+                                for (let k = 0; k < current.originalWord.length; k++) {
+                                    if (current.originalWord[k] === cell.content) {
+                                        const left = getCell(r, c-1);
+                                        const right = getCell(r, c+1);
+                                        const isHorizContext = (left && left.content) || (right && right.content);
+                                        if (isHorizContext) {
+                                            if (placeWord(current, r - k, c, 'V')) { placed = true; break; }
+                                        } else {
+                                            if (placeWord(current, r, c - k, 'H')) { placed = true; break; }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (!placed) {
+                        for (let tryCount = 0; tryCount < 200 && !placed; tryCount++) {
+                            const r = Math.floor(Math.random() * rows);
+                            const c = Math.floor(Math.random() * cols);
+                            const dir = Math.random() > 0.5 ? 'H' : 'V';
+                            if (placeWord(current, r, c, dir)) placed = true;
+                        }
+                    }
+                }
+
+                newGrid.forEach(cell => {
+                    if (!cell.content) cell.type = 'block';
+                });
+
+                setGridData(newGrid);
+                analyzeGridAndGenerateClues(newGrid, clueMap);
+                setShowAutoModal(false);
+            };
+
+            // --- HTML ÇIKTI ---
+            const generateHTML = () => {
+                const css = `
+                body { font-family: 'Segoe UI', sans-serif; padding: 20px; background: #f9f9f9; }
+                .container { max-width: 1200px; margin: 0 auto; background: white; padding: 30px; box-shadow: 0 0 15px rgba(0,0,0,0.1); border-radius: 8px; }
+                
+                /* Header Düzeni - Yön kontrolü buraya taşındı */
+                .header-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px; }
+                h1 { margin: 0; color: #2c3e50; font-size: 28px; }
+
+                .puzzle-wrapper { display: flex; gap: 30px; flex-wrap: wrap; justify-content: center; align-items: flex-start; }
+                
+                /* Bulmaca Alanı */
+                .puzzle-left { display: flex; flex-direction: column; gap: 10px; align-items: center; }
+
+                /* İSTEK ÜZERİNE GÜNCELLENDİ: Izgara Boyutları 35px yapıldı */
+                .grid-container { 
+                    display: grid; 
+                    grid-template-columns: repeat(${cols}, 35px); 
+                    grid-auto-rows: 35px;
+                    gap: 1px; 
+                    background: #000; 
+                    border: 2px solid #000;
+                    user-select: none;
+                }
+                .cell { position: relative; background: white; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+                .cell.block { background: #000; cursor: default; }
+                
+                /* Yön Göstergeleri - İkonlar küçültüldü */
+                .cell.active-h { background: #e3f2fd; } 
+                .cell.active-h::after { content: '➤'; position: absolute; right: -2px; top: 50%; transform: translateY(-50%) scale(0.6); color: rgba(33, 150, 243, 0.6); pointer-events: none; z-index: 3; }
+                
+                .cell.active-v { background: #fff3e0; }
+                .cell.active-v::after { content: '▼'; position: absolute; bottom: -2px; left: 50%; transform: translateX(-50%) scale(0.6); color: rgba(255, 152, 0, 0.6); pointer-events: none; z-index: 3; }
+
+                /* Fontlar küçültüldü */
+                .cell input { 
+                    width: 100%; height: 100%; border: none; 
+                    text-align: center; font-size: 16px; font-weight: bold; text-transform: uppercase;
+                    outline: none; background: transparent; padding: 0; margin: 0; color: #333; cursor: pointer; z-index: 2;
+                    border-radius: 0; /* iOS input border radius fix */
+                }
+                .cell.correct { background-color: #d1e7dd !important; }
+                .cell.wrong { background-color: #f8d7da !important; }
+                
+                /* Köşe Numaraları küçültüldü */
+                .number { position: absolute; top: 0px; left: 1px; font-size: 9px; font-weight: bold; line-height: 1; color: #555; pointer-events: none; z-index: 1;}
+                
+                .clues-container { flex: 1; min-width: 250px; }
+                .clue-list { list-style: none; padding: 0; font-size: 14px; margin-bottom: 20px; line-height: 1.4; }
+                .clue-list li { margin-bottom: 4px; }
+                .clue-number { font-weight: bold; color: #2980b9; margin-right: 5px; font-size: 14px; }
+                
+                h3 { font-size: 18px; border-bottom: 2px solid #ddd; padding-bottom: 5px; margin-bottom: 10px; color: #e74c3c; }
+
+                /* Yön Bilgi Kutusu - Header stili */
+                .info-box {
+                    background-color: #f0f9ff;
+                    border: 1px solid #bae6fd;
+                    border-radius: 6px;
+                    padding: 8px 12px;
+                    font-size: 13px;
+                    color: #0369a1;
+                    max-width: 350px;
+                    text-align: right;
+                    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+                }
+                .direction-status { font-weight: bold; display: inline-block; margin-right: 5px; }
+                .direction-status span.h { color: #0284c7; }
+                .direction-status span.v { color: #ea580c; }
+                .help-text { font-size: 11px; color: #64748b; display: block; margin-top: 2px; }
+
+                @media (max-width: 800px) {
+                    .header-row { flex-direction: column; gap: 15px; text-align: center; align-items: stretch; }
+                    .info-box { text-align: center; max-width: 100%; }
+                    .grid-container { grid-template-columns: repeat(${cols}, 22px); grid-auto-rows: 22px; }
+                    .cell input { font-size: 11px; }
+                    .number { font-size: 6px; }
+                    .clues-container { min-width: 100%; }
+                }
+                `;
+
+                let gridHTML = '';
+                gridData.forEach((cell, idx) => {
+                    if (cell.type === 'block') {
+                        gridHTML += `<div class="cell block" data-type="block"></div>`;
+                    } else {
+                        const numHTML = cell.number ? `<span class="number">${cell.number}</span>` : '';
+                        gridHTML += `<div class="cell" id="cell-${idx}" data-index="${idx}" data-type="letter">${numHTML}<input type="text" maxlength="1" data-index="${idx}" data-answer="${cell.content}" readonly></div>`;
+                    }
+                });
+
+                const acrossHTML = clues.across.map(c => `<li><span class="clue-number">${c.number}</span> ${c.text}</li>`).join('');
+                const downHTML = clues.down.map(c => `<li><span class="clue-number">${c.number}</span> ${c.text}</li>`).join('');
+
+                return `
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${title}</title>
+<style>${css}</style>
+</head>
+<body>
+<div class="container">
+    <div class="header-row">
+        <h1>${title}</h1>
+        <div class="info-box">
+            <div class="direction-status" id="dir-status">
+                Aktif Yön: <span class="h">YATAY (Soldan Sağa) ➤</span>
+            </div>
+            <div class="help-text">
+                Yönü değiştirmek için hücreye tekrar tıklayın veya <b>SPACE</b> tuşuna basın.
+            </div>
+        </div>
+    </div>
+
+    <div class="puzzle-wrapper">
+        <div class="puzzle-left">
+            <div class="grid-container" id="grid">
+                ${gridHTML}
+            </div>
+        </div>
+
+        <div class="clues-container">
+            <h3>Soldan Sağa</h3>
+            <ul class="clue-list">${acrossHTML}</ul>
+            <h3>Yukarıdan Aşağıya</h3>
+            <ul class="clue-list">${downHTML}</ul>
+        </div>
+    </div>
+    <div style="text-align:center; margin-top:30px;">
+        <button onclick="check()" style="padding:10px 20px; background:#2ecc71; color:white; border:none; border-radius:6px; cursor:pointer; font-weight:bold; font-size:16px;">Kontrol Et</button>
+        <button id="btn-show-answers" onclick="showAnswers()" style="display:none; padding:10px 20px; background:#3498db; color:white; border:none; border-radius:6px; cursor:pointer; font-weight:bold; font-size:16px; margin-left: 10px;">Cevapları Göster</button>
+        <button id="btn-retry" onclick="resetPuzzle()" style="display:none; padding:10px 20px; background:#e74c3c; color:white; border:none; border-radius:6px; cursor:pointer; font-weight:bold; font-size:16px; margin-left: 10px;">Tekrar Dene</button>
+    </div>
+</div>
+<script>
+    const cols = ${cols};
+    const rows = ${rows};
+    const gridEl = document.getElementById('grid');
+    const dirStatusEl = document.getElementById('dir-status');
+    let currentDirection = 'across'; // 'across' or 'down'
+    let activeIndex = -1;
+
+    gridEl.addEventListener('click', (e) => {
+        const cell = e.target.closest('.cell');
+        if (!cell || cell.dataset.type === 'block') return;
+
+        const idx = parseInt(cell.dataset.index);
+        
+        if (activeIndex === idx) {
+            // Yön değiştirme isteği
+            const potentialDir = currentDirection === 'across' ? 'down' : 'across';
+            // Yalnızca hedef yönde komşu kutu varsa değiştir
+            if (hasNeighbor(idx, potentialDir)) {
+                currentDirection = potentialDir;
+            }
+        } else {
+            const hasHoriz = hasNeighbor(idx, 'across');
+            const hasVert = hasNeighbor(idx, 'down');
+
+            if (hasVert && !hasHoriz) currentDirection = 'down';
+            else if (hasHoriz && !hasVert) currentDirection = 'across';
+            else currentDirection = 'across';
+        }
+
+        focusCell(idx);
+    });
+
+    // Mobil uyumluluk için INPUT dinleyicisi
+    document.addEventListener('input', (e) => {
+        const input = e.target;
+        // Sadece hücre içindeki inputlar için çalışsın
+        if (input.tagName !== 'INPUT' || !input.parentElement.classList.contains('cell')) return;
+
+        const val = input.value;
+        if (val.length > 0) {
+            const rawChar = val.slice(-1);
+
+            // Space (Boşluk) kontrolü - Yön değiştirme (MOBİL İÇİN EKLENDİ)
+            if (rawChar === ' ') {
+                input.value = ''; // Girilen boşluğu temizle
+                
+                // Yön değiştirme isteği
+                const potentialDir = currentDirection === 'across' ? 'down' : 'across';
+                // Yalnızca hedef yönde komşu kutu varsa değiştir
+                if (hasNeighbor(activeIndex, potentialDir)) {
+                    currentDirection = potentialDir;
+                    updateHighlight();
+                }
+                return;
+            }
+
+            // Son karakteri al ve büyüt (Mobilde kelime tamamlama vs. yüzünden birden fazla karakter gelebilir)
+            const char = rawChar.toLocaleUpperCase('tr-TR');
+            
+            // Sadece harf ise kabul et
+            if (char.match(/[a-zA-ZğüşıöçĞÜŞİÖÇ]/)) {
+                input.value = char;
+                input.parentElement.classList.remove('wrong', 'correct');
+                
+                const offset = currentDirection === 'across' ? 1 : cols;
+                moveFocus(offset, true);
+            } else {
+                input.value = ''; // Harf değilse temizle
+            }
+        }
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (activeIndex === -1) return;
+
+        if (e.key === 'ArrowRight') { currentDirection = 'across'; moveFocus(1); }
+        else if (e.key === 'ArrowLeft') { currentDirection = 'across'; moveFocus(-1); }
+        else if (e.key === 'ArrowDown') { currentDirection = 'down'; moveFocus(cols); }
+        else if (e.key === 'ArrowUp') { currentDirection = 'down'; moveFocus(-cols); }
+        
+        else if (e.key === ' ') {
+            e.preventDefault();
+            // Yön değiştirme isteği (Klavye)
+            const potentialDir = currentDirection === 'across' ? 'down' : 'across';
+            // Yalnızca hedef yönde komşu kutu varsa değiştir
+            if (hasNeighbor(activeIndex, potentialDir)) {
+                currentDirection = potentialDir;
+                updateHighlight();
+            }
+        }
+
+        // Harf girişleri artık 'input' listener ile yönetiliyor.
+        
+        else if (e.key === 'Backspace') {
+            const input = document.querySelector(\`input[data-index='\${activeIndex}']\`);
+            if(input) {
+                if(input.value !== '') {
+                    input.value = ''; 
+                } else {
+                    const offset = currentDirection === 'across' ? -1 : -cols;
+                    moveFocus(offset, false);
+                }
+            }
+        }
+    });
+
+    function hasNeighbor(idx, dir) {
+        const r = Math.floor(idx / cols);
+        const c = idx % cols;
+        
+        if (dir === 'across') {
+            const left = document.querySelector(\`div[data-index='\${idx - 1}']\`);
+            const right = document.querySelector(\`div[data-index='\${idx + 1}']\`);
+            const hasLeft = left && left.dataset.type === 'letter' && (idx % cols !== 0);
+            const hasRight = right && right.dataset.type === 'letter' && ((idx + 1) % cols !== 0);
+            return hasLeft || hasRight;
+        } else {
+            const up = document.querySelector(\`div[data-index='\${idx - cols}']\`);
+            const down = document.querySelector(\`div[data-index='\${idx + cols}']\`);
+            const hasUp = up && up.dataset.type === 'letter';
+            const hasDown = down && down.dataset.type === 'letter';
+            return hasUp || hasDown;
+        }
+    }
+
+    function focusCell(idx) {
+        activeIndex = idx;
+        updateHighlight();
+        const input = document.querySelector(\`input[data-index='\${idx}']\`);
+        if(input) {
+            input.removeAttribute('readonly');
+            input.focus();
+        }
+    }
+
+    function moveFocus(offset, skipFilled = false) {
+        let nextIdx = activeIndex + offset;
+        let loop = 0;
+        
+        while(loop < 50) { 
+            if (nextIdx < 0 || nextIdx >= rows * cols) break;
+
+            if (currentDirection === 'across') {
+                const currentRow = Math.floor(activeIndex / cols);
+                const nextRow = Math.floor(nextIdx / cols);
+                if (Math.abs(offset) === 1 && currentRow !== nextRow) break;
+            }
+
+            const targetDiv = document.querySelector(\`div[data-index='\${nextIdx}']\`);
+            
+            if (!targetDiv || targetDiv.dataset.type === 'block') {
+                if (currentDirection === 'down') {
+                        break; 
+                } else {
+                        break;
+                }
+            }
+            
+            focusCell(nextIdx);
+            break;
+            loop++;
+        }
+    }
+
+    function updateHighlight() {
+        document.querySelectorAll('.cell').forEach(c => {
+            c.classList.remove('active-h', 'active-v');
+        });
+        const cell = document.getElementById('cell-' + activeIndex);
+        if(cell) {
+            cell.classList.add(currentDirection === 'across' ? 'active-h' : 'active-v');
+        }
+
+        // Yön Bilgi Kutusunu Güncelle
+        if(dirStatusEl) {
+            if(currentDirection === 'across') {
+                dirStatusEl.innerHTML = 'Aktif Yön: <span class="h">YATAY (Soldan Sağa) ➤</span>';
+            } else {
+                dirStatusEl.innerHTML = 'Aktif Yön: <span class="v">DİKEY (Yukarıdan Aşağı) ▼</span>';
+            }
+        }
+    }
+
+    function check() {
+        let correctCount = 0, totalCount = 0;
+        document.querySelectorAll('input').forEach(inp => {
+            totalCount++;
+            const userVal = inp.value.toLocaleUpperCase('tr-TR');
+            
+            // Mevcut stilleri temizle
+            inp.parentElement.classList.remove('correct', 'wrong');
+            
+            if (userVal === '') return;
+            
+            if (userVal === inp.dataset.answer) {
+                inp.parentElement.classList.add('correct');
+                correctCount++;
+            } else {
+                inp.parentElement.classList.add('wrong');
+            }
+        });
+        
+        const showAnswersBtn = document.getElementById('btn-show-answers');
+        const retryBtn = document.getElementById('btn-retry');
+
+        if(correctCount === totalCount && totalCount > 0) {
+            // Uyarı mesajı kaldırıldı, buton gizlendi
+            if(showAnswersBtn) showAnswersBtn.style.display = 'none';
+            if(retryBtn) retryBtn.style.display = 'none';
+        } else {
+             // Tamamı doğru değilse butonları göster
+             if(showAnswersBtn) showAnswersBtn.style.display = 'inline-block';
+             if(retryBtn) retryBtn.style.display = 'inline-block';
+        }
+    }
+
+    function showAnswers() {
+        // Onay mesajı kaldırıldı
+        document.querySelectorAll('input').forEach(inp => {
+            inp.value = inp.dataset.answer;
+            inp.parentElement.classList.add('correct');
+            inp.parentElement.classList.remove('wrong');
+        });
+    }
+
+    function resetPuzzle() {
+        // Onay mesajı kaldırıldı
+        document.querySelectorAll('input').forEach(inp => {
+            inp.value = '';
+            inp.parentElement.classList.remove('correct', 'wrong');
+        });
+        activeIndex = -1;
+        updateHighlight();
+        
+        // Butonları gizle
+        const showAnswersBtn = document.getElementById('btn-show-answers');
+        if(showAnswersBtn) showAnswersBtn.style.display = 'none';
+        
+        const retryBtn = document.getElementById('btn-retry');
+        if(retryBtn) retryBtn.style.display = 'none';
+    }
+<\/script>
+</body>
+</html>`;
+            };
+
+            const downloadFile = () => {
+                const htmlContent = generateHTML();
+                const blob = new Blob([htmlContent], { type: 'text/html' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                const safeTitle = title.replace(/[^a-z0-9]/gi, '-').toLowerCase() || 'bulmaca';
+                a.download = `${safeTitle}.html`;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+            };
+
+            const getCellClass = (idx, cellType) => {
+                if (cellType === 'block') return 'bg-black';
+                let classes = 'bg-white hover:bg-blue-50 text-gray-800';
+                if (activeCell === idx) {
+                    classes = direction === 'across' ? 'bg-blue-100 ring-2 ring-blue-500 z-10' : 'bg-orange-100 ring-2 ring-orange-500 z-10';
+                }
+                return classes;
+            };
+
+            return (
+                <div className="flex flex-col h-screen bg-gray-50 text-gray-800 font-sans overflow-hidden">
+                <header className="bg-indigo-700 text-white p-4 shadow-md flex justify-between items-center z-10">
+                    <div className="flex items-center gap-2">
+                    <GridIcon size={24} />
+                    <h1 className="text-xl font-bold">Kare Bulmaca Pro</h1>
+                    </div>
+                    <button onClick={downloadFile} className="bg-green-500 hover:bg-green-600 px-4 py-2 rounded text-sm font-bold flex items-center gap-2 shadow transition-all transform hover:scale-105 text-white">
+                        <Download size={18} /> HTML OLUŞTUR
+                    </button>
+                </header>
+
+                <div className="flex flex-1 overflow-hidden relative">
+                    <div className="w-80 bg-white shadow-lg flex flex-col border-r border-gray-200 z-20 overflow-y-auto">
+                        <div className="p-4 border-b">
+                            <button 
+                                onClick={() => setShowAutoModal(true)}
+                                className="w-full bg-purple-600 text-white py-3 rounded-lg shadow hover:bg-purple-700 flex items-center justify-center gap-2 font-bold transition-all">
+                                <Wand2 size={20} /> OTOMATİK OLUŞTUR
+                            </button>
+                        </div>
+
+                        <div className="p-4 border-b">
+                            <label className="block text-sm font-bold text-gray-700 mb-1">Bulmaca Başlığı</label>
+                            <input 
+                                type="text" 
+                                value={title} 
+                                onChange={(e) => setTitle(e.target.value)}
+                                className="w-full border rounded p-2 text-sm focus:ring-2 ring-indigo-500 outline-none"
+                            />
+                        </div>
+                        
+                        <div className="p-4 border-b">
+                            <h3 className="text-sm font-bold text-gray-700 mb-2">Araçlar</h3>
+                            <div className="flex gap-2">
+                                <button onClick={()=>setSelectedTool('letter')} className={`flex-1 py-2 text-sm rounded border ${selectedTool==='letter'?'bg-indigo-600 text-white':'bg-white hover:bg-gray-50'}`}>Harf</button>
+                                <button onClick={()=>setSelectedTool('block')} className={`flex-1 py-2 text-sm rounded border ${selectedTool==='block'?'bg-black text-white':'bg-white hover:bg-gray-50'}`}>Blok</button>
+                            </div>
+                            
+                            <div className="mt-3 p-3 bg-blue-50 border border-blue-100 rounded text-xs text-blue-800">
+                                <div className="flex items-center gap-2 mb-1 font-bold"><RotateCw size={14}/> Yön Kontrolü:</div>
+                                <p className="mb-1">Aktif Yön: <span className={`font-bold uppercase ${direction === 'across' ? 'text-blue-600' : 'text-orange-600'}`}>{direction === 'across' ? 'Yatay (Soldan Sağa) ➤' : 'Dikey (Yukarıdan Aşağı) ▼'}</span></p>
+                                <p>Yönü değiştirmek için hücreye tekrar tıklayın veya <b>SPACE</b> tuşuna basın.</p>
+                            </div>
+
+                            <button onClick={() => analyzeGridAndGenerateClues()} className="w-full mt-2 bg-indigo-100 text-indigo-700 py-2 rounded text-sm font-bold hover:bg-indigo-200 flex items-center justify-center gap-2">
+                                <CheckCircle size={16}/> Soruları Güncelle
+                            </button>
+                        </div>
+
+                        <div className="flex-1 overflow-y-auto p-4 bg-gray-50">
+                            <h3 className="text-sm font-bold text-gray-700 mb-2 flex items-center gap-2"><ListIcon size={16}/> Soru Listesi</h3>
+                            
+                            {clues.across.length > 0 && (
+                                <div className="mb-4">
+                                    <span className="text-xs font-bold text-blue-600 block mb-1 border-b border-blue-200 pb-1">SOLDAN SAĞA</span>
+                                    {clues.across.map((c, i) => (
+                                        <div key={`a-${i}`} className="mb-2 bg-white p-2 rounded border border-gray-200 shadow-sm text-xs">
+                                            <span className="font-bold text-gray-500 mr-1">{c.number}.</span>
+                                            <span className="font-bold text-gray-800">{c.word}:</span>
+                                            <input 
+                                                type="text" 
+                                                value={c.text} 
+                                                onChange={(e) => updateClueText('across', i, e.target.value)}
+                                                className="w-full mt-1 border-b border-gray-200 outline-none bg-transparent text-gray-600"
+                                            />
+                                        </div>
+                                    ))}
+                                </div>
+                            )}
+
+                            {clues.down.length > 0 && (
+                                <div className="mb-4">
+                                    <span className="text-xs font-bold text-orange-600 block mb-1 border-b border-orange-200 pb-1">YUKARIDAN AŞAĞIYA</span>
+                                    {clues.down.map((c, i) => (
+                                        <div key={`d-${i}`} className="mb-2 bg-white p-2 rounded border border-gray-200 shadow-sm text-xs">
+                                            <span className="font-bold text-gray-500 mr-1">{c.number}.</span>
+                                            <span className="font-bold text-gray-800">{c.word}:</span>
+                                            <input 
+                                                type="text" 
+                                                value={c.text} 
+                                                onChange={(e) => updateClueText('down', i, e.target.value)}
+                                                className="w-full mt-1 border-b border-gray-200 outline-none bg-transparent text-gray-600"
+                                            />
+                                        </div>
+                                    ))}
+                                </div>
+                            )}
+                        </div>
+                    </div>
+
+                    <div className="flex-1 bg-gray-200 p-8 overflow-auto flex justify-center items-start">
+                        <div 
+                            className="bg-white shadow-2xl p-1 relative"
+                            style={{
+                                display: 'grid',
+                                gridTemplateColumns: `repeat(${cols}, 50px)`,
+                                gridAutoRows: '50px',
+                                gap: '1px',
+                                backgroundColor: '#000',
+                                border: '2px solid #000'
+                            }}
+                        >
+                            {gridData.map((cell, idx) => (
+                                <div 
+                                    key={cell.id}
+                                    onClick={() => handleCellClick(idx)}
+                                    className={`
+                                        relative flex items-center justify-center cursor-pointer select-none text-3xl font-bold uppercase transition-colors duration-100
+                                        ${getCellClass(idx, cell.type)}
+                                    `}
+                                >
+                                    {activeCell === idx && direction === 'across' && (
+                                        <ArrowRight size={20} className="absolute right-0 top-1/2 transform -translate-y-1/2 text-blue-400 opacity-50 pointer-events-none" />
+                                    )}
+                                    {activeCell === idx && direction === 'down' && (
+                                        <ArrowDown size={20} className="absolute bottom-0 left-1/2 transform -translate-x-1/2 text-orange-400 opacity-50 pointer-events-none" />
+                                    )}
+
+                                    {cell.number && (
+                                        <span className="absolute top-0.5 left-0.5 text-xs leading-none text-gray-500 font-bold">{cell.number}</span>
+                                    )}
+                                    {cell.type === 'letter' && cell.content}
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+
+                {showAutoModal && (
+                    <div className="absolute inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+                        <div className="bg-white rounded-xl shadow-2xl w-full max-w-lg flex flex-col max-h-[90vh]">
+                            <div className="p-4 border-b flex justify-between items-center bg-gray-50 rounded-t-xl">
+                                <h2 className="text-lg font-bold flex items-center gap-2">Otomatik Bulmaca Oluşturucu</h2>
+                                <button onClick={() => setShowAutoModal(false)} className="text-gray-500 hover:text-red-500"><XIcon size={24}/></button>
+                            </div>
+                            <div className="p-6 flex-1 overflow-y-auto">
+                                <label className="block text-sm font-bold text-gray-700 mb-2">Kelime Listesi (KELİME: İpucu)</label>
+                                <textarea 
+                                    value={autoInput}
+                                    onChange={(e) => setAutoInput(e.target.value)}
+                                    className="w-full h-64 border rounded p-3 text-sm font-mono focus:ring-2 ring-purple-500 outline-none"
+                                ></textarea>
+                            </div>
+                            <div className="p-4 border-t bg-gray-50 rounded-b-xl flex justify-end gap-3">
+                                <button onClick={() => setShowAutoModal(false)} className="px-4 py-2 text-gray-600 hover:bg-gray-200 rounded">İptal</button>
+                                <button onClick={generateLayout} className="px-6 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded font-bold">Oluştur</button>
+                            </div>
+                        </div>
+                    </div>
+                )}
+                </div>
+            );
+        };
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+</html>
