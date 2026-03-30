@@ -1,0 +1,143 @@
+{
+  "course_title": "İletişim ve Pazarlama İletişimi",
+  "chapters": [
+    {
+      "id": 1,
+      "title": "1. İletişim Kavramı",
+      "chunks": [
+        {
+          "id": "ch1_p1",
+          "title": "İletişim Tanımı",
+          "text": "1. İletişim Kavramı İletişim, evrensel bir olgudur ve insanların, kurumların, işletmelerin kendilerini ifade etme aracıdır\n. En yalın haliyle gönderici ve alıcı arasında belli bir düşünce birliği oluşturma sürecidir\n. Günlük hayatta ticari ya da ticari olmayan sayısız çeşidi bulunan iletişim, sadece sözcüklerle değil evrensel semboller ve jestler vasıtasıyla da yapılmaktadır\n.",
+          "audio_file": "ch1_p1.wav"
+        },
+        {
+          "id": "ch1_p2",
+          "title": "a. İletişim Süreci",
+          "text": "a. İletişim Süreci İletişim modeli, mesajın oluşturulmasından yorumlanmasına kadar pek çok unsuru kapsar\n. Ortak deneyim ve referansların büyüklüğü, mesajın doğru anlaşılmasını doğrudan etkiler\n.",
+          "audio_file": "ch1_p2.wav"
+        },
+        {
+          "id": "ch1_p3",
+          "title": "I. Gönderen (Kaynak)",
+          "text": "I. Gönderen (Kaynak): İletişim sürecinde mesajı başlatan taraftır\n. Gönderici kâr amacı güden/gütmeyen bir işletme, perakendeci, ürün temsilcisi ünlü bir kişi veya günümüzde influencer olabilir\n. Hedef kitlenin mesajı içselleştirmesi ve kaynağa uyması için gönderenin güvenilir ve uzman algılanması çok önemlidir\n.",
+          "audio_file": "ch1_p3.wav"
+        },
+        {
+          "id": "ch1_p4",
+          "title": "II. Kodlama ve Mesaj",
+          "text": "II. Kodlama ve Mesaj: Mesajı gönderecek olan kaynağın düşünce ve bilgilerini kelimeler, sesler veya görseller kullanarak sembolleştirmesine kodlama denir\n. Mesajın mutlaka alıcının anlayabileceği aşina olunan bir yapıda (logo vb. görsel kodlar dahil) tasarlanması gerekir\n. Bu aşamada \"ne söyleneceği\" (içerik) ve \"nasıl söyleneceği\" (yapı/tasarım) kararları verilir\n.",
+          "audio_file": "ch1_p4.wav"
+        },
+        {
+          "id": "ch1_p5",
+          "title": "III. Kanal",
+          "text": "III. Kanal: Mesajın göndericiden alıcıya izlediği ortamdır\n. Bu kanal; yüz yüze, e-posta veya sosyal medya gibi kişisel kanallar olabileceği gibi televizyon, radyo, gazete gibi kitle iletişimine dayalı kişisel olmayan kanallar da olabilir\n. Kişisel kanallar hedef kitle üzerinde daha inandırıcı bir etki bırakır\n.",
+          "audio_file": "ch1_p5.wav"
+        },
+        {
+          "id": "ch1_p6",
+          "title": "IV. Alıcı ve Çözümleme",
+          "text": "IV. Alıcı ve Çözümleme: Mesajın paylaşıldığı kişi veya gruptur\n. Çözümleme ise alıcının geçmiş deneyimlerine ve sahip olduğu referanslara göre bu mesaja anlam yüklemesi sürecidir\n. Etkili bir iletişimde kodlama ve çözümleme süreçlerinin uyumlu olması gerekir\n.",
+          "audio_file": "ch1_p6.wav"
+        },
+        {
+          "id": "ch1_p7",
+          "title": "V. Tepki ve Geri Bildirim",
+          "text": "V. Tepki ve Geri Bildirim: Mesajı aldıktan sonra alıcıda oluşan reaksiyonlar (hatırlama, satın alma eylemine geçme vb.) tepkidir\n. Geri bildirim ise kaynağın amaçladığı etkiyi yaratıp yaratmadığını görmek için tepkiyi ölçmesidir (satışları, tıklamaları veya müşteri yorumlarını analiz etmesi gibi)\n.",
+          "audio_file": "ch1_p7.wav"
+        },
+        {
+          "id": "ch1_p8",
+          "title": "VI. Gürültü",
+          "text": "VI. Gürültü: Mesajın hedefte farklı algılanmasına ya da anlamından sapmasına yol açan kavramsal yanlış anlamalar veya bağlantı kopukluğu, seste parazit gibi fiziksel sorunların tümüdür\n.",
+          "audio_file": "ch1_p8.wav"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "2. Pazarlama İletişimi ve Unsurları",
+      "chunks": [
+        {
+          "id": "ch2_p1",
+          "title": "Pazarlama İletişimi Tanımı",
+          "text": "2. Pazarlama İletişimi ve Unsurları Pazarlama iletişimi, pazarlama karması içinde (4P ve 3P) üretilen, fiyatlanan ve dağıtılan ürünlerin müşterilere tutundurulması için kullanılan dinamik süreçlerdir\n. Ürünün bilinirliğini sağlamak, satın almayı hatırlatmak ve tüketiciyi ikna ederek rekabetçi avantaj kazanmak için kullanılır\n. Pazarlama iletişimi unsurlarının nasıl karma haline getirileceğine; bütçe, ürün türü, dağıtım stratejileri (itme ya da çekme stratejisi) ve hedef kitle nitelikleri gibi kısıtlara göre karar verilir\n.",
+          "audio_file": "ch2_p1.wav"
+        },
+        {
+          "id": "ch2_p2",
+          "title": "a. Pazarlama İletişimi Karması Elemanları",
+          "text": "a. Pazarlama İletişimi Karması Elemanları İletişim sürecinde tüketiciyi etkilemek için (AIDA modeli baz alınarak) dikkat çekmek, ilgiyi ve isteği uyandırmak ile satın alma davranışını ortaya çıkarmak adına farklı pazarlama iletişimi elemanları kullanılır\n.",
+          "audio_file": "ch2_p2.wav"
+        },
+        {
+          "id": "ch2_p3",
+          "title": "I. Reklam",
+          "text": "I. Reklam: Kâr amacı güden veya gütmeyen işletmelerin bedelini ödeyerek kitle iletişim araçlarıyla yaptığı, kitlelere seslenen, ikna edici ve hatırlatıcı faaliyetlerdir\n.",
+          "audio_file": "ch2_p3.wav"
+        },
+        {
+          "id": "ch2_p4",
+          "title": "II. Kişisel Satış",
+          "text": "II. Kişisel Satış: Özellikle endüstriyel pazarlarda yoğun kullanılan ve itme stratejisinin de parçası olan yüz yüze, yüksek maliyetli iletişim yöntemidir\n. Uzun dönemli müşteri ilişkisi geliştirmeyi hedefler\n.",
+          "audio_file": "ch2_p4.wav"
+        },
+        {
+          "id": "ch2_p5",
+          "title": "III. Halkla İlişkiler",
+          "text": "III. Halkla İlişkiler: Stratejik planlı çabalar ile kurum ve kitleler arasında iyi niyet oluşturmayı, karşılıklı anlayış geliştirmeyi ve ürün ile marka imajını kriz dönemleri dâhil olmak üzere desteklemeyi amaçlar\n.",
+          "audio_file": "ch2_p5.wav"
+        },
+        {
+          "id": "ch2_p6",
+          "title": "IV. Satış Tutundurma",
+          "text": "IV. Satış Tutundurma: Satışları anlık olarak artırmak üzere tüketicilere (kuponlar, para iadeleri, çekilişler) veya aracılara (bayi toplantıları, ticari ödenekler) sunulan çeşitli özendirici uygulamalardır\n.",
+          "audio_file": "ch2_p6.wav"
+        },
+        {
+          "id": "ch2_p7",
+          "title": "V. Doğrudan Pazarlama",
+          "text": "V. Doğrudan Pazarlama: Telefon, broşür, katalog, e-posta veya dijital yollarla müşteriyle doğrudan ilişki kurularak müşteri veri tabanı oluşturmayı ve hızlı geri dönüş almayı amaçlayan iletişim yöntemidir\n.",
+          "audio_file": "ch2_p7.wav"
+        },
+        {
+          "id": "ch2_p8",
+          "title": "VI. Sponsorluk",
+          "text": "VI. Sponsorluk: İmaj geliştirme, rakiplerden farklılaşma ve görünürlük elde etme amaçlarıyla işletmelerin nakdi veya ayni olarak bir etkinliğe, programa destek vermesidir\n.",
+          "audio_file": "ch2_p8.wav"
+        },
+        {
+          "id": "ch2_p9",
+          "title": "VII. Sergi ve Fuarlar",
+          "text": "VII. Sergi ve Fuarlar: Ürünlerin fiziksel olarak sergilendiği, tüketicilerin gönüllü olduğu ve satış baskısı içermeyen, işletmelere geniş pazar ağı ile karşılıklı iletişim imkanı sağlayan organizasyonlardır\n.",
+          "audio_file": "ch2_p9.wav"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "3. Pazarlama İletişimi ve Marka",
+      "chunks": [
+        {
+          "id": "ch3_p1",
+          "title": "Marka ve İletişim İlişkisi",
+          "text": "3. Pazarlama İletişimi ve Marka Tüketicilerin pazar seçenekleri arasında kolayca tercih yapabilmeleri için marka güçlü bir gösterge konumundadır\n. Tüketicinin algısı, ürün kalitesi, dağıtım kanalı ve fiyatlamanın yanında markanın görsel ve sözel unsurlarıyla oluşturulan iletişim süreçleriyle doğrudan ilişkilidir\n. Marka ismi, iletişimin en temel sözel unsurudur ve seçilirken kolay telaffuz edilen, ayırt edici, ürün içeriğine uygun ve tescil edilebilen bir kelime olmasına dikkat edilir\n. Markanın sözcük özelliği taşımayan hali amblem, yazılı ve görsel hali logodur; tüketicinin onu tanımasını sağlarlar\n. Ürünün raftaki ayrıştırıcısı konumundaki ambalaj tasarımı ve marka etiği, müşterinin satın alma kararının büyük kısmını mağazada verdiği düşünüldüğünde iletişimde çok etkili bir roldedir\n. Kurumsal iletişim bağlamında kısa reklam ve marka sloganları marka imajını güçlendirirken\n, ürünle özdeşleştirilen gerçek ünlüler veya yaratılmış hayali maskotlar (marka karakterleri), iletişim etkisini önemli ölçüde destekler\n.",
+          "audio_file": "ch3_p1.wav"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "4. Pazarlama İletişimi ve Toplum",
+      "chunks": [
+        {
+          "id": "ch4_p1",
+          "title": "Etik, Sosyal Sorumluluk ve Eleştiriler",
+          "text": "4. Pazarlama İletişimi ve Toplum İşletmeler pazarlama uygulamalarını mutlaka sosyal sorumluluk sınırları dâhilinde yürütmelidir\n. Ancak pazarlama iletişimi bazen tüketiciler, toplum ve rekabet üzerindeki olumsuz etkileri yönüyle eleştirilir\n. Çocuklar gibi korunmasız kitlelere yönelik yönlendirmeler, fiyat aldatmacaları, gereksiz tüketimi pompalayan materyalizm veya yüksek satış baskısı sıklıkla eleştiri konusudur\n. İletişimde kullanılan reklamların dürüstlüğe, ahlaki kurallara ve mevzuata uygun olması, rakipleri kötülememesi şarttır\n. Etik ve ahlaki sorunlar sadece reklamlarda değil; müşteri verilerinin izinsiz kullanıldığı doğrudan pazarlamada\n, rakiplerin asıl sponsorun gölgesinde bırakıldığı sponsorluklarda\n ve manipülasyona çok açık, denetimi zor olan sosyal medya ağlarında da karşımıza çıkar\n. Sağlıklı bir ekonomik faaliyet ortamı için rekabetin yanında işbirliğinin ve etik standartların korunduğu kurumsal bir \"pazarlama dengesi\"nin tesis edilmesi mecburidir",
+          "audio_file": "ch4_p1.wav"
+        }
+      ]
+    }
+  ]
+}

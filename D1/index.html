@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="tr"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>İletişim ve Pazarlama İletişimi — Sesli Ders</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#080c14;--bg2:#0d1220;--bg3:#131927;--gb:rgba(255,255,255,.08);--text:#e8eaf0;--muted:#6b7280;--acc:#3b82f6;--accl:rgba(59,130,246,.15)}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;display:flex;flex-direction:column}
+.app{display:grid;grid-template-columns:280px 1fr;min-height:100vh;max-width:1100px;margin:0 auto;width:100%}
+.sidebar{background:var(--bg2);border-right:1px solid var(--gb);overflow-y:auto;padding:24px 0}
+.sidebar-title{padding:0 20px 16px;font-size:.78rem;font-weight:700;color:var(--muted);letter-spacing:1.5px;text-transform:uppercase}
+.ch-btn{display:block;width:100%;text-align:left;background:none;border:none;padding:10px 20px;color:var(--muted);cursor:pointer;font-size:.82rem;transition:.2s;border-left:3px solid transparent}
+.ch-btn:hover{background:var(--accl);color:var(--text)}
+.ch-btn.active{color:var(--acc);border-left-color:var(--acc);background:var(--accl);font-weight:600}
+.chunk-btn{display:block;width:100%;text-align:left;background:none;border:none;padding:7px 20px 7px 32px;color:var(--muted);cursor:pointer;font-size:.76rem;transition:.2s;border-left:3px solid transparent}
+.chunk-btn:hover{color:var(--text);background:rgba(255,255,255,.03)}
+.chunk-btn.active{color:#93c5fd;border-left-color:#93c5fd}
+.player-main{display:flex;flex-direction:column;padding:40px}
+.course-tag{font-size:.72rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.course-title{font-size:2rem;font-weight:800;letter-spacing:-1.5px;margin-bottom:24px;line-height:1.2}
+.now-card{background:rgba(59,130,246,.06);border:1px solid rgba(59,130,246,.2);border-radius:18px;padding:32px;margin-bottom:28px;flex:1}
+.np-label{font-size:.72rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#60a5fa;margin-bottom:10px}
+.np-chap{font-size:1.1rem;font-weight:700;margin-bottom:4px}
+.np-chunk{font-size:.85rem;color:var(--muted);margin-bottom:20px}
+.np-text{font-size:.9rem;color:#9ca3af;line-height:1.8;max-height:180px;overflow-y:auto;padding-right:8px}
+.np-text::-webkit-scrollbar{width:4px}
+.np-text::-webkit-scrollbar-thumb{background:rgba(255,255,255,.1)}
+.prog-bar{height:5px;background:rgba(255,255,255,.08);border-radius:3px;margin:20px 0 10px;cursor:pointer;position:relative}
+.prog-fill{height:100%;border-radius:3px;background:linear-gradient(90deg,#3b82f6,#7c3aed);transition:width .5s linear}
+.prog-times{display:flex;justify-content:space-between;font-size:.72rem;color:var(--muted);margin-bottom:20px}
+.controls{display:flex;align-items:center;justify-content:center;gap:16px}
+.ctrl-btn{background:rgba(255,255,255,.06);border:1px solid var(--gb);border-radius:50%;width:44px;height:44px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:16px;color:var(--text);transition:.2s}
+.ctrl-btn:hover{background:rgba(255,255,255,.12);transform:scale(1.08)}
+.ctrl-btn:active{transform:scale(.95)}
+.play-btn{width:60px;height:60px;font-size:22px;background:linear-gradient(135deg,#1d4ed8,#3b82f6);border:none;box-shadow:0 8px 24px rgba(59,130,246,.35)}
+.play-btn:hover{box-shadow:0 12px 32px rgba(59,130,246,.5)}
+.speed-btn{background:rgba(59,130,246,.1);border:1px solid rgba(59,130,246,.2);color:#93c5fd;font-size:.75rem;font-weight:600;border-radius:8px;padding:6px 12px;cursor:pointer;transition:.2s}
+.speed-btn:hover{background:rgba(59,130,246,.2)}
+.status-bar{margin-top:20px;display:flex;align-items:center;gap:8px;font-size:.75rem;color:var(--muted);background:var(--bg3);border-radius:8px;padding:10px 14px;border:1px solid var(--gb)}
+.status-dot{width:8px;height:8px;border-radius:50%;background:var(--acc);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+@media(max-width:700px){.app{grid-template-columns:1fr}.sidebar{border-right:none;border-bottom:1px solid var(--gb);max-height:220px}.player-main{padding:20px}}
+</style></head>
+<body>
+<div class="app">
+<div class="sidebar">
+  <div class="sidebar-title">İçindekiler</div>
+  <div id="toc"></div>
+</div>
+<div class="player-main">
+  <div class="course-tag">Sesli Ders</div>
+  <div class="course-title" id="courseTitle"></div>
+  <div class="now-card">
+    <div class="np-label">▶ Şu An Oynatılıyor</div>
+    <div class="np-chap" id="npChap">—</div>
+    <div class="np-chunk" id="npChunk">—</div>
+    <div class="np-text" id="npText"></div>
+    <div class="prog-bar" id="progBar" onclick="seekAudio(event)">
+      <div class="prog-fill" id="progFill" style="width:0%"></div>
+    </div>
+    <div class="prog-times"><span id="pCurr">0:00</span><span id="pDur">0:00</span></div>
+    <div class="controls">
+      <button class="ctrl-btn" onclick="skipTime(-10)" title="-10s">⏪</button>
+      <button class="ctrl-btn" onclick="prevChunk()" title="Önceki">⏮</button>
+      <button class="ctrl-btn play-btn" id="playBtn" onclick="togglePlay()">▶</button>
+      <button class="ctrl-btn" onclick="nextChunk()" title="Sonraki">⏭</button>
+      <button class="ctrl-btn" onclick="skipTime(10)" title="+10s">⏩</button>
+      <button class="speed-btn" id="speedBtn" onclick="cycleSpeed()">1.0×</button>
+    </div>
+    <div class="status-bar"><div class="status-dot"></div><span id="statusTxt">Oynatmaya başlamak için ▶ tuşuna basın</span></div>
+  </div>
+</div>
+</div>
+<script>
+const DATA={"course_title":"İletişim ve Pazarlama İletişimi","chapters":[{"id":1,"title":"1. İletişim Kavramı","chunks":[{"id":"ch1_p1","title":"İletişim Tanımı","text":"1. İletişim Kavramı İletişim, evrensel bir olgudur ve insanların, kurumların, işletmelerin kendilerini ifade etme aracıdır\n. En yalın haliyle gönderici ve alıcı arasında belli bir düşünce birliği oluşturma sürecidir\n. Günlük hayatta ticari ya da ticari olmayan sayısız çeşidi bulunan iletişim, sadece sözcüklerle değil evrensel semboller ve jestler vasıtasıyla da yapılmaktadır\n.","audio_file":"ch1_p1.wav"},{"id":"ch1_p2","title":"a. İletişim Süreci","text":"a. İletişim Süreci İletişim modeli, mesajın oluşturulmasından yorumlanmasına kadar pek çok unsuru kapsar\n. Ortak deneyim ve referansların büyüklüğü, mesajın doğru anlaşılmasını doğrudan etkiler\n.","audio_file":"ch1_p2.wav"},{"id":"ch1_p3","title":"I. Gönderen (Kaynak)","text":"I. Gönderen (Kaynak): İletişim sürecinde mesajı başlatan taraftır\n. Gönderici kâr amacı güden/gütmeyen bir işletme, perakendeci, ürün temsilcisi ünlü bir kişi veya günümüzde influencer olabilir\n. Hedef kitlenin mesajı içselleştirmesi ve kaynağa uyması için gönderenin güvenilir ve uzman algılanması çok önemlidir\n.","audio_file":"ch1_p3.wav"},{"id":"ch1_p4","title":"II. Kodlama ve Mesaj","text":"II. Kodlama ve Mesaj: Mesajı gönderecek olan kaynağın düşünce ve bilgilerini kelimeler, sesler veya görseller kullanarak sembolleştirmesine kodlama denir\n. Mesajın mutlaka alıcının anlayabileceği aşina olunan bir yapıda (logo vb. görsel kodlar dahil) tasarlanması gerekir\n. Bu aşamada \"ne söyleneceği\" (içerik) ve \"nasıl söyleneceği\" (yapı/tasarım) kararları verilir\n.","audio_file":"ch1_p4.wav"},{"id":"ch1_p5","title":"III. Kanal","text":"III. Kanal: Mesajın göndericiden alıcıya izlediği ortamdır\n. Bu kanal; yüz yüze, e-posta veya sosyal medya gibi kişisel kanallar olabileceği gibi televizyon, radyo, gazete gibi kitle iletişimine dayalı kişisel olmayan kanallar da olabilir\n. Kişisel kanallar hedef kitle üzerinde daha inandırıcı bir etki bırakır\n.","audio_file":"ch1_p5.wav"},{"id":"ch1_p6","title":"IV. Alıcı ve Çözümleme","text":"IV. Alıcı ve Çözümleme: Mesajın paylaşıldığı kişi veya gruptur\n. Çözümleme ise alıcının geçmiş deneyimlerine ve sahip olduğu referanslara göre bu mesaja anlam yüklemesi sürecidir\n. Etkili bir iletişimde kodlama ve çözümleme süreçlerinin uyumlu olması gerekir\n.","audio_file":"ch1_p6.wav"},{"id":"ch1_p7","title":"V. Tepki ve Geri Bildirim","text":"V. Tepki ve Geri Bildirim: Mesajı aldıktan sonra alıcıda oluşan reaksiyonlar (hatırlama, satın alma eylemine geçme vb.) tepkidir\n. Geri bildirim ise kaynağın amaçladığı etkiyi yaratıp yaratmadığını görmek için tepkiyi ölçmesidir (satışları, tıklamaları veya müşteri yorumlarını analiz etmesi gibi)\n.","audio_file":"ch1_p7.wav"},{"id":"ch1_p8","title":"VI. Gürültü","text":"VI. Gürültü: Mesajın hedefte farklı algılanmasına ya da anlamından sapmasına yol açan kavramsal yanlış anlamalar veya bağlantı kopukluğu, seste parazit gibi fiziksel sorunların tümüdür\n.","audio_file":"ch1_p8.wav"}]},{"id":2,"title":"2. Pazarlama İletişimi ve Unsurları","chunks":[{"id":"ch2_p1","title":"Pazarlama İletişimi Tanımı","text":"2. Pazarlama İletişimi ve Unsurları Pazarlama iletişimi, pazarlama karması içinde (4P ve 3P) üretilen, fiyatlanan ve dağıtılan ürünlerin müşterilere tutundurulması için kullanılan dinamik süreçlerdir\n. Ürünün bilinirliğini sağlamak, satın almayı hatırlatmak ve tüketiciyi ikna ederek rekabetçi avantaj kazanmak için kullanılır\n. Pazarlama iletişimi unsurlarının nasıl karma haline getirileceğine; bütçe, ürün türü, dağıtım stratejileri (itme ya da çekme stratejisi) ve hedef kitle nitelikleri gibi kısıtlara göre karar verilir\n.","audio_file":"ch2_p1.wav"},{"id":"ch2_p2","title":"a. Pazarlama İletişimi Karması Elemanları","text":"a. Pazarlama İletişimi Karması Elemanları İletişim sürecinde tüketiciyi etkilemek için (AIDA modeli baz alınarak) dikkat çekmek, ilgiyi ve isteği uyandırmak ile satın alma davranışını ortaya çıkarmak adına farklı pazarlama iletişimi elemanları kullanılır\n.","audio_file":"ch2_p2.wav"},{"id":"ch2_p3","title":"I. Reklam","text":"I. Reklam: Kâr amacı güden veya gütmeyen işletmelerin bedelini ödeyerek kitle iletişim araçlarıyla yaptığı, kitlelere seslenen, ikna edici ve hatırlatıcı faaliyetlerdir\n.","audio_file":"ch2_p3.wav"},{"id":"ch2_p4","title":"II. Kişisel Satış","text":"II. Kişisel Satış: Özellikle endüstriyel pazarlarda yoğun kullanılan ve itme stratejisinin de parçası olan yüz yüze, yüksek maliyetli iletişim yöntemidir\n. Uzun dönemli müşteri ilişkisi geliştirmeyi hedefler\n.","audio_file":"ch2_p4.wav"},{"id":"ch2_p5","title":"III. Halkla İlişkiler","text":"III. Halkla İlişkiler: Stratejik planlı çabalar ile kurum ve kitleler arasında iyi niyet oluşturmayı, karşılıklı anlayış geliştirmeyi ve ürün ile marka imajını kriz dönemleri dâhil olmak üzere desteklemeyi amaçlar\n.","audio_file":"ch2_p5.wav"},{"id":"ch2_p6","title":"IV. Satış Tutundurma","text":"IV. Satış Tutundurma: Satışları anlık olarak artırmak üzere tüketicilere (kuponlar, para iadeleri, çekilişler) veya aracılara (bayi toplantıları, ticari ödenekler) sunulan çeşitli özendirici uygulamalardır\n.","audio_file":"ch2_p6.wav"},{"id":"ch2_p7","title":"V. Doğrudan Pazarlama","text":"V. Doğrudan Pazarlama: Telefon, broşür, katalog, e-posta veya dijital yollarla müşteriyle doğrudan ilişki kurularak müşteri veri tabanı oluşturmayı ve hızlı geri dönüş almayı amaçlayan iletişim yöntemidir\n.","audio_file":"ch2_p7.wav"},{"id":"ch2_p8","title":"VI. Sponsorluk","text":"VI. Sponsorluk: İmaj geliştirme, rakiplerden farklılaşma ve görünürlük elde etme amaçlarıyla işletmelerin nakdi veya ayni olarak bir etkinliğe, programa destek vermesidir\n.","audio_file":"ch2_p8.wav"},{"id":"ch2_p9","title":"VII. Sergi ve Fuarlar","text":"VII. Sergi ve Fuarlar: Ürünlerin fiziksel olarak sergilendiği, tüketicilerin gönüllü olduğu ve satış baskısı içermeyen, işletmelere geniş pazar ağı ile karşılıklı iletişim imkanı sağlayan organizasyonlardır\n.","audio_file":"ch2_p9.wav"}]},{"id":3,"title":"3. Pazarlama İletişimi ve Marka","chunks":[{"id":"ch3_p1","title":"Marka ve İletişim İlişkisi","text":"3. Pazarlama İletişimi ve Marka Tüketicilerin pazar seçenekleri arasında kolayca tercih yapabilmeleri için marka güçlü bir gösterge konumundadır\n. Tüketicinin algısı, ürün kalitesi, dağıtım kanalı ve fiyatlamanın yanında markanın görsel ve sözel unsurlarıyla oluşturulan iletişim süreçleriyle doğrudan ilişkilidir\n. Marka ismi, iletişimin en temel sözel unsurudur ve seçilirken kolay telaffuz edilen, ayırt edici, ürün içeriğine uygun ve tescil edilebilen bir kelime olmasına dikkat edilir\n. Markanın sözcük özelliği taşımayan hali amblem, yazılı ve görsel hali logodur; tüketicinin onu tanımasını sağlarlar\n. Ürünün raftaki ayrıştırıcısı konumundaki ambalaj tasarımı ve marka etiği, müşterinin satın alma kararının büyük kısmını mağazada verdiği düşünüldüğünde iletişimde çok etkili bir roldedir\n. Kurumsal iletişim bağlamında kısa reklam ve marka sloganları marka imajını güçlendirirken\n, ürünle özdeşleştirilen gerçek ünlüler veya yaratılmış hayali maskotlar (marka karakterleri), iletişim etkisini önemli ölçüde destekler\n.","audio_file":"ch3_p1.wav"}]},{"id":4,"title":"4. Pazarlama İletişimi ve Toplum","chunks":[{"id":"ch4_p1","title":"Etik, Sosyal Sorumluluk ve Eleştiriler","text":"4. Pazarlama İletişimi ve Toplum İşletmeler pazarlama uygulamalarını mutlaka sosyal sorumluluk sınırları dâhilinde yürütmelidir\n. Ancak pazarlama iletişimi bazen tüketiciler, toplum ve rekabet üzerindeki olumsuz etkileri yönüyle eleştirilir\n. Çocuklar gibi korunmasız kitlelere yönelik yönlendirmeler, fiyat aldatmacaları, gereksiz tüketimi pompalayan materyalizm veya yüksek satış baskısı sıklıkla eleştiri konusudur\n. İletişimde kullanılan reklamların dürüstlüğe, ahlaki kurallara ve mevzuata uygun olması, rakipleri kötülememesi şarttır\n. Etik ve ahlaki sorunlar sadece reklamlarda değil; müşteri verilerinin izinsiz kullanıldığı doğrudan pazarlamada\n, rakiplerin asıl sponsorun gölgesinde bırakıldığı sponsorluklarda\n ve manipülasyona çok açık, denetimi zor olan sosyal medya ağlarında da karşımıza çıkar\n. Sağlıklı bir ekonomik faaliyet ortamı için rekabetin yanında işbirliğinin ve etik standartların korunduğu kurumsal bir \"pazarlama dengesi\"nin tesis edilmesi mecburidir","audio_file":"ch4_p1.wav"}]}]};
+const SPEEDS=[0.75,1,1.25,1.5,2];
+let sIdx=1, chIdx=0, cuIdx=0;
+let audio=null, synth=window.speechSynthesis, useTTS=true, utter=null;
+let playing=false, progTimer=null;
+
+function init(){
+  document.getElementById('courseTitle').textContent=DATA.course_title;
+  buildTOC();
+  const prog=JSON.parse(localStorage.getItem('sd_prog_'+DATA.course_title)||'{"ci":0,"ui":0}');
+  chIdx=prog.ci||0; cuIdx=prog.ui||0;
+  if(chIdx>=DATA.chapters.length) chIdx=0;
+  const ch=DATA.chapters[chIdx];
+  if(cuIdx>=(ch.chunks||[]).length) cuIdx=0;
+  loadChunk(chIdx,cuIdx);
+}
+
+function buildTOC(){
+  const toc=document.getElementById('toc');
+  DATA.chapters.forEach((ch,ci)=>{
+    const b=document.createElement('button');
+    b.className='ch-btn'; b.id='ch_'+ci;
+    b.textContent=ch.id+'. '+ch.title;
+    b.onclick=()=>loadChunk(ci,0);
+    toc.appendChild(b);
+    (ch.chunks||[]).forEach((cu,ui)=>{
+      const cb=document.createElement('button');
+      cb.className='chunk-btn'; cb.id='cu_'+ci+'_'+ui;
+      cb.textContent=(cu.title||('Parça '+(ui+1)));
+      cb.onclick=()=>loadChunk(ci,ui);
+      toc.appendChild(cb);
+    });
+  });
+}
+
+function loadChunk(ci,ui){
+  stop();
+  chIdx=ci; cuIdx=ui;
+  const ch=DATA.chapters[ci];
+  const cu=(ch.chunks||[])[ui];
+  if(!cu) return;
+  document.getElementById('npChap').textContent=ch.title;
+  document.getElementById('npChunk').textContent=cu.title||'Parça '+(ui+1);
+  document.getElementById('npText').textContent=cu.text;
+  document.getElementById('pCurr').textContent='0:00';
+  document.getElementById('pDur').textContent='—';
+  document.getElementById('progFill').style.width='0%';
+  document.getElementById('statusTxt').textContent='Oynatmaya başlamak için ▶ tuşuna basın';
+  document.querySelectorAll('.ch-btn').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.chunk-btn').forEach(b=>b.classList.remove('active'));
+  const cb=document.getElementById('ch_'+ci); if(cb) cb.classList.add('active');
+  const kb=document.getElementById('cu_'+ci+'_'+ui); if(kb) kb.classList.add('active');
+  saveProgress();
+
+  audio=new Audio('audio/'+cu.audio_file);
+  audio.playbackRate=SPEEDS[sIdx];
+  audio.ontimeupdate=updateProg;
+  audio.onended=()=>nextChunk();
+  audio.onerror=()=>{ useTTS=true; if(playing) speakCurrent(); };
+  useTTS=false;
+}
+
+function togglePlay(){ if(playing) stop(); else play(); }
+function play(){
+  playing=true;
+  document.getElementById('playBtn').textContent='⏸';
+  if(useTTS) speakCurrent(); else { audio.play().catch(()=>{ useTTS=true; speakCurrent(); }); }
+  document.getElementById('statusTxt').textContent='Oynatılıyor...';
+  if(useTTS) startProgTimer();
+}
+function stop(){
+  playing=false;
+  document.getElementById('playBtn').textContent='▶';
+  audio?.pause();
+  synth.cancel();
+  clearInterval(progTimer);
+}
+function speakCurrent(){
+  const ch=DATA.chapters[chIdx];
+  const cu=(ch?.chunks||[])[cuIdx];
+  if(!cu) return;
+  utter=new SpeechSynthesisUtterance(cu.text);
+  utter.rate=SPEEDS[sIdx];
+  utter.onend=()=>{ clearInterval(progTimer); nextChunk(); };
+  synth.speak(utter);
+  const wpm=Math.round(150*SPEEDS[sIdx]);
+  const words=cu.text.split(/\s+/).length;
+  const est=Math.ceil(words/wpm*60);
+  document.getElementById('pDur').textContent=fmt(est);
+}
+
+let ttsStart=0, ttsDur=0;
+function startProgTimer(){
+  clearInterval(progTimer);
+  const ch=DATA.chapters[chIdx];
+  const cu=(ch?.chunks||[])[cuIdx];
+  if(!cu) return;
+  const wpm=Math.round(150*SPEEDS[sIdx]);
+  ttsDur=Math.ceil(cu.text.split(/\s+/).length/wpm*60);
+  ttsStart=Date.now();
+  progTimer=setInterval(()=>{
+    const el=(Date.now()-ttsStart)/1000;
+    const pct=Math.min(el/ttsDur,1)*100;
+    document.getElementById('progFill').style.width=pct+'%';
+    document.getElementById('pCurr').textContent=fmt(Math.floor(el));
+    document.getElementById('pDur').textContent=fmt(ttsDur);
+  },500);
+}
+
+function updateProg(){
+  if(!audio) return;
+  const pct=(audio.currentTime/audio.duration)*100||0;
+  document.getElementById('progFill').style.width=pct+'%';
+  document.getElementById('pCurr').textContent=fmt(audio.currentTime);
+  document.getElementById('pDur').textContent=fmt(audio.duration);
+}
+
+function seekAudio(e){
+  if(!audio||useTTS) return;
+  const bar=document.getElementById('progBar');
+  const pct=e.offsetX/bar.offsetWidth;
+  audio.currentTime=pct*audio.duration;
+}
+
+function skipTime(sec){
+  if(!useTTS && audio){ audio.currentTime=Math.max(0,audio.currentTime+sec); return; }
+  if(sec>0) nextChunk(); else prevChunk();
+}
+
+function nextChunk(){
+  const ch=DATA.chapters[chIdx];
+  if(cuIdx+1 < (ch.chunks||[]).length){ loadChunk(chIdx,cuIdx+1); }
+  else if(chIdx+1 < DATA.chapters.length){ loadChunk(chIdx+1,0); }
+  if(playing) play();
+}
+function prevChunk(){
+  if(cuIdx>0){ loadChunk(chIdx,cuIdx-1); }
+  else if(chIdx>0){ const pc=DATA.chapters[chIdx-1]; loadChunk(chIdx-1,(pc.chunks||[]).length-1); }
+  if(playing) play();
+}
+
+function cycleSpeed(){
+  sIdx=(sIdx+1)%SPEEDS.length;
+  const s=SPEEDS[sIdx];
+  document.getElementById('speedBtn').textContent=s+'×';
+  if(audio) audio.playbackRate=s;
+  if(utter) utter.rate=s;
+}
+
+function saveProgress(){ localStorage.setItem('sd_prog_'+DATA.course_title,JSON.stringify({ci:chIdx,ui:cuIdx})); }
+function fmt(s){ if(!s||isNaN(s)) return '0:00'; s=Math.floor(s); return Math.floor(s/60)+':'+(s%60+'').padStart(2,'0'); }
+init();
+</script>
+</body></html>
