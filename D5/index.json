@@ -1,0 +1,131 @@
+{
+  "course_title": "Bölüm 1: Pazarlama İletişimine Giriş",
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Bölüm 1: Pazarlama İletişimine Giriş",
+      "chunks": [
+        {
+          "id": "ch1_p1",
+          "title": "GİRİŞ",
+          "text": "Dünya üzerindeki tüm canlılar gibi, örgütler, kurumlar ve işletmeler de birbirleriyle ve bireylerle iletişim halindedir\n. Yalnızca özel işletmeler değil, kâr amacı gütmeyen kurumlar da markalarının bilinirliği ve hatırlanması için pazarlama iletişimi faaliyetlerinde bulunurlar\n.",
+          "audio_file": "ch1_p1.wav"
+        },
+        {
+          "id": "ch1_p2",
+          "title": "İLETİŞİM KAVRAMI",
+          "text": "İnsanlık tarihi kadar eski olan iletişim, kişi ve kurumların kendilerini ifade etme şekli olup anlaşılabilir mesajların alınıp gönderilmesi sanatıdır\n. Kaynak ile alıcı arasında belli bir konu etrafında düşünce birliği sağlama sürecidir\n.",
+          "audio_file": "ch1_p2.wav"
+        },
+        {
+          "id": "ch1_p3",
+          "title": "İletişim Süreci",
+          "text": "İletişim süreci, mesajın oluşturulmasından alıcının bu mesajı yorumlamasına ve tepki vermesine kadar geçen birbiriyle bağlantılı çok sayıda unsuru içerir\n.",
+          "audio_file": "ch1_p3.wav"
+        },
+        {
+          "id": "ch1_p4",
+          "title": "Gönderen (Kaynak)",
+          "text": "İletişim sürecinde bilgi, fikir veya sunulan ürünü paylaşmak üzere mesajı başlatan kişi veya kurumlardır\n. Kaynağın ikna ediciliği, alıcı kitle tarafından güvenilir, uzman bulunmasına veya alıcının onunla kendini özdeşleştirebilmesine bağlıdır\n.",
+          "audio_file": "ch1_p4.wav"
+        },
+        {
+          "id": "ch1_p5",
+          "title": "Kodlama ve Mesaj",
+          "text": "Kaynağın sahip olduğu düşünce ve fikirleri kelimeler, sesler ve görsel unsurlar aracılığıyla sembolleştirmesi işlemi kodlamadır\n. Mesajın, alıcının anlayacağı dilde şekillendirilmesi ve içerik olarak rasyonel, duygusal ya da ahlaki çekicilik unsurlarıyla doğru bir şekilde tasarlanması gerekir\n.",
+          "audio_file": "ch1_p5.wav"
+        },
+        {
+          "id": "ch1_p6",
+          "title": "Kanal",
+          "text": "Mesajın kaynaktan alıcıya ulaşmak için kullandığı yoldur\n. TV, radyo, gazete gibi kişisel olmayan kitle iletişim mecralarının yanı sıra sosyal medya, e-posta veya satış temsilcileri aracılığıyla gerçekleşen doğrudan, kişisel kanallar şeklinde ikiye ayrılır\n.",
+          "audio_file": "ch1_p6.wav"
+        },
+        {
+          "id": "ch1_p7",
+          "title": "Alıcı ve Çözümleme",
+          "text": "Alıcı, gönderenin mesajını paylaştığı kişi veya gruplardır\n. Çözümleme ise alıcının geçmiş deneyimleri, beklentileri ve değerleri yardımıyla kaynağın kodladığı bu mesaja anlam yüklemesidir\n.",
+          "audio_file": "ch1_p7.wav"
+        },
+        {
+          "id": "ch1_p8",
+          "title": "Tepki ve Geri Bildirim",
+          "text": "Alıcının mesajı aldıktan sonra oluşan gözlenebilen veya gözlenemeyen tüm reaksiyonları tepkidir\n. Geri bildirim ise kaynağın, mesajın arzu edilen amaca ulaşıp ulaşmadığını kontrol etmesini ve iletişimin yönünü değerlendirmesini sağlayan bir araçtır\n.",
+          "audio_file": "ch1_p8.wav"
+        },
+        {
+          "id": "ch1_p9",
+          "title": "Gürültü",
+          "text": "Geri bildirimin kalitesini düşüren, mesajın gerçek anlamından saptırılarak yanlış algılanmasına veya bozulmasına neden olan fiziksel veya kavramsal her türlü planlanmamış unsurdur\n.",
+          "audio_file": "ch1_p9.wav"
+        },
+        {
+          "id": "ch1_p10",
+          "title": "PAZARLAMA İLETİŞİMİ VE UNSURLARI",
+          "text": "Tüketicilerin ihtiyaçları ile pazarlama faaliyetleri arasında gerçekleşen değişim ilişkilerinde iletişim hayati bir rol oynar\n. İşletmenin varlığından haberdar etme, rakiplerden farklılaşma, bilgi verme, ikna etme ve marka imajı yaratma gibi temel işlevleri vardır\n. Pazarlama iletişiminin kendi içerisinde bir karması bulunur\n.",
+          "audio_file": "ch1_p10.wav"
+        },
+        {
+          "id": "ch1_p11",
+          "title": "Pazarlama İletişimi Karması Elemanları",
+          "text": "İşletmeler bütçelerine, ürün tipine, hedef kitlenin medya alışkanlıklarına ve benimsedikleri dağıtım stratejilerine göre bu karma elemanları arasından tercih yaparlar\n.",
+          "audio_file": "ch1_p11.wav"
+        },
+        {
+          "id": "ch1_p12",
+          "title": "Reklam",
+          "text": "Belirli bir kuruluşun, iletişim araçlarını kullanarak ve bedelini ödeyerek geniş kitlelere seslendiği bilgilendirme, ikna etme ve hatırlatma işlevleri olan bir tutundurma aracıdır\n.",
+          "audio_file": "ch1_p12.wav"
+        },
+        {
+          "id": "ch1_p13",
+          "title": "Kişisel Satış",
+          "text": "Özellikle endüstriyel pazarlarda kullanılan, alıcı ve satıcı arasında yüz yüze ve uzun dönemli ilişki geliştirmeyi amaçlayan yüksek maliyetli ve çok aşamalı bir diyalog geliştirme sürecidir\n.",
+          "audio_file": "ch1_p13.wav"
+        },
+        {
+          "id": "ch1_p14",
+          "title": "Halkla İlişkiler",
+          "text": "Kurum ile hedef kitle (kamuoyu, ortaklar, medya) arasında iyi niyetli, stratejik ilişki geliştirmeyi amaçlar\n. Marka imajını güçlendirmede ve kriz dönemlerinde önemli bir faaliyettir\n.",
+          "audio_file": "ch1_p14.wav"
+        },
+        {
+          "id": "ch1_p15",
+          "title": "Satış Tutundurma",
+          "text": "Ürün satışını kısa vadeli desteklemek üzere tüketicilere (kupon, yarışma, numune, indirim) veya aracılara (ticari ödenekler, bayi toplantıları) sunulan özendiricilerin bütünüdür\n.",
+          "audio_file": "ch1_p15.wav"
+        },
+        {
+          "id": "ch1_p16",
+          "title": "Doğrudan Pazarlama",
+          "text": "Broşür, telefon, mektup, katalog, çevrimiçi veya mobil kanallar gibi araçlarla tüketicilerle birebir ilişki kurup doğrudan ve ölçülebilir geri dönüş almayı sağlayan ve müşteri sadakatini destekleyen iletişim türüdür\n.",
+          "audio_file": "ch1_p16.wav"
+        },
+        {
+          "id": "ch1_p17",
+          "title": "Sponsorluk",
+          "text": "İşletmelerin görünürlüğünü artırmak, rakiplerden farklılaşma ve imaj geliştirmek için belirli bir faaliyete (etkinlik, yayın vb.) nakdi veya ayni fayda sağlamasıdır\n.",
+          "audio_file": "ch1_p17.wav"
+        },
+        {
+          "id": "ch1_p18",
+          "title": "Sergi ve Fuarlar",
+          "text": "İşletmelerin ve tüketicilerin satış baskısı olmaksızın yüz yüze geldiği, hedef kitlenin ihtiyaç ve beklentilerinin anlaşıldığı, çift yönlü ağ imkanı tanıyan organizasyonlardır\n.",
+          "audio_file": "ch1_p18.wav"
+        },
+        {
+          "id": "ch1_p19",
+          "title": "PAZARLAMA İLETİŞİMİ VE MARKA",
+          "text": "Günümüzün yoğun rekabet ortamında markalar, tüketicinin seçim yapmasını kolaylaştıran en güçlü referans noktalarıdır\n. Marka ismi, ürünün faydaları hakkında ipucu veren, kolay telaffuz edilen ve akılda kalıcı olması gereken en önemli sözel tutundurma aracıdır\n. Markayı muadillerinden ayıran logolar, amblemler ile iletişim aracı işlevi gören ambalaj tasarımı ve etiketler de satın alma kararını doğrudan etkiler\n. Kurum kimliğini güçlendiren marka sloganları ve ünlü kişilerden veya yaratılmış kurgulardan oluşan marka karakterleri de tutundurma faaliyetlerinde büyük önem taşır\n.",
+          "audio_file": "ch1_p19.wav"
+        },
+        {
+          "id": "ch1_p20",
+          "title": "PAZARLAMA İLETİŞİMİ VE TOPLUM",
+          "text": "Pazarlama iletişimi, tüketici seçenekleri arasında ürünleri farklılaştırmak ve tek seslilik yaratmak açısından son derece önemlidir\n. Ancak işletmeler bu faaliyetlerini mutlaka sosyal sorumluluk sınırları dahilinde, ürünlerin doğru bilgilendirmesini yaparak ve çevreye zarar vermeyerek uygulamalıdır\n. Yüksek baskılı satış taktikleri, aldatıcı reklam ve ambalajlar, özelliklerini abartan mesajlar, mahremiyet ihlalleri veya savunmasız çocukları hedef alan iletişim çabaları tüketici ve toplum nezdinde yoğun şekilde eleştirilmektedir\n. Sağlıklı bir iletişim yapısı için rekabetin yanında, yasal düzenlemeler, kurumlar, işbirliği ve pazarlama faaliyetlerinde reklam ahlakı gibi etik kurallar ön planda tutulmalıdır\n.",
+          "audio_file": "ch1_p20.wav"
+        }
+      ]
+    }
+  ]
+}
