@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AKADEMİK İLETİŞİMDE ÜRETKEN YAPAY ZEKÂNIN GELİŞİMİ VE POTANSİYELİ</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0d1117;--card:#161b27;--card2:#1e2535;
+  --b:rgba(255,255,255,.07);--b2:rgba(255,255,255,.13);
+  --t:#dde3f5;--t2:#8892b0;--t3:#4a5275;
+  --ac:#4f8ef7;--ac2:#3a6fd8;
+}
+
+[data-theme="light"] {
+  --bg:#e2e8f0;--card:#ffffff;--card2:#f1f5f9;
+  --b:rgba(0,0,0,.08);--b2:rgba(0,0,0,.14);
+  --t:#0f172a;--t2:#475569;--t3:#64748b;
+}
+
+html,body{height:100%;height:100dvh;overflow:hidden}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--t);display:flex}
+
+/* THEME TOGGLE (PLAYER) */
+.pl-theme-btn {
+  position:absolute; top:20px; right:20px; width:40px; height:40px;
+  border-radius:50%; background:var(--card2); border:1px solid var(--b);
+  color:var(--t); font-size:1.1rem; display:flex; align-items:center;
+  justify-content:center; cursor:pointer; transition:.2s; z-index:50;
+}
+.pl-theme-btn:hover { background:var(--b); transform:scale(1.05); }
+@media(max-width:768px){.pl-theme-btn{top:16px;right:16px;width:36px;height:36px;font-size:1rem;background:var(--card);}}
+
+/* RESPONSIVE LAYOUT */
+.sidebar { width:340px; background:var(--card); border-right:1px solid var(--b); display:flex; flex-direction:column; z-index:10; }
+.main-view { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; background:var(--bg); position:relative; min-width:0; }
+
+/* HEADER & TOC */
+.hdr{padding:24px 24px 16px;flex-shrink:0}
+.hdr-tag{font-size:.7rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--t3);font-weight:700;margin-bottom:8px}
+.hdr-title{font-size:1.4rem;font-weight:800;letter-spacing:-.4px;line-height:1.25}
+.toc{flex:1;overflow-y:auto;padding:0 0 16px}
+.toc::-webkit-scrollbar{width:4px}
+.toc::-webkit-scrollbar-thumb{background:var(--b2);border-radius:2px}
+.toc-item{
+  display:flex;align-items:center;gap:14px;
+  padding:14px 24px;cursor:pointer;transition:background .15s;
+  border-left:3px solid transparent;
+}
+.toc-item:hover{background:rgba(79,142,247,.06)}
+.toc-item.active{background:rgba(79,142,247,.1);border-left-color:var(--ac)}
+.toc-num{
+  width:36px;height:36px;border-radius:50%;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  font-size:.75rem;font-weight:700;
+  background:var(--card2);color:var(--t3);border:1px solid var(--b2);
+  transition:.15s;
+}
+.toc-item.active .toc-num{
+  background:var(--ac);color:#fff;border-color:var(--ac);
+  box-shadow:0 0 0 4px rgba(79,142,247,.2);
+}
+.toc-item.active .toc-num-inner{display:none}
+.toc-item.active .toc-num::before{content:'🔊';font-size:.8rem}
+.toc-label{font-size:.85rem;font-weight:500;color:var(--t2);line-height:1.4;flex:1;transition:.15s}
+.toc-item.active .toc-label{color:var(--ac);font-weight:700}
+.toc-item.done .toc-num{background:rgba(46,204,133,.15);color:#34d399;border-color:rgba(46,204,133,.3)}
+
+/* PLAYER CARD */
+.player-card {
+  width:100%; max-width:480px;
+  background:var(--card); padding:40px;
+  border-radius:24px; box-shadow:0 20px 60px rgba(0,0,0,.5);
+  border:1px solid var(--b);
+  text-align:center;
+}
+.cover-art {
+  width:120px; height:120px; border-radius:20px;
+  background:linear-gradient(135deg, rgba(79,142,247,.1), rgba(155,108,247,.1));
+  border:1px solid var(--b);
+  margin:0 auto 24px; display:flex; align-items:center; justify-content:center;
+  font-size:3rem; color:var(--ac);
+}
+.now-title{font-size:1.1rem;font-weight:700;margin-bottom:20px;line-height:1.4;color:var(--t)}
+.progress{margin-bottom:12px}
+.prog-track{
+  height:6px;background:rgba(255,255,255,.1);border-radius:3px;
+  cursor:pointer;position:relative;
+}
+.prog-fill{
+  height:6px;background:var(--ac);border-radius:3px;
+  width:0%;pointer-events:none;
+  transition:width .25s linear;
+}
+.times{display:flex;justify-content:space-between;font-size:.7rem;color:var(--t3);margin-top:8px;font-weight:600}
+.ctrls{display:flex;align-items:center;justify-content:center;gap:24px;margin-top:20px}
+.ctrl-btn{
+  width:44px;height:44px;border-radius:50%;border:none;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  background:transparent;color:var(--t2);transition:.15s;
+}
+.ctrl-btn:hover{color:var(--t); background:rgba(255,255,255,.05)}
+.ctrl-btn svg{width:24px;height:24px;fill:currentColor}
+.skip-btn{position:relative}
+.skip-label{
+  position:absolute;bottom:-18px;left:50%;transform:translateX(-50%);
+  font-size:.6rem;color:var(--t3);white-space:nowrap;font-weight:600;
+}
+.play-btn{
+  width:64px;height:64px;border-radius:50%;
+  background:var(--ac);color:#fff;font-size:24px;border:none;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 8px 24px rgba(79,142,247,.4);transition:.15s;
+}
+.play-btn:hover{background:var(--ac2);box-shadow:0 10px 30px rgba(79,142,247,.5)}
+.play-btn:active{transform:scale(.95)}
+
+/* MOBILE ADAPTATION */
+@media(max-width: 768px) {
+  body { flex-direction: column; }
+  .sidebar { width: 100%; flex: 1; border-right: none; border-bottom: 1px solid var(--b); min-height: 0; }
+  .main-view { flex: none; align-items: stretch; justify-content: flex-end; padding: 0; background: transparent; width: 100%; z-index: 20; }
+  .player-card { max-width: 100%; border-radius: 0; padding: 16px 20px; padding-bottom: calc(16px + env(safe-area-inset-bottom)); border: none; border-top: 1px solid var(--b); box-shadow: 0 -10px 30px rgba(0,0,0,.5); background: var(--card2); margin: 0; }
+  .cover-art { display: none; } 
+  .now-title { font-size: 1rem; margin-bottom: 12px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; text-align: center; }
+  .ctrls { gap: 20px; margin-top: 12px; }
+  .play-btn { width: 56px; height: 56px; }
+  .ctrl-btn svg { width: 24px; height: 24px; }
+  .skip-label { bottom: -14px; }
+}
+</style>
+</head>
+<body>
+
+<button class="pl-theme-btn" id="pl-theme-btn" onclick="togglePlayerTheme()" title="Tema Değiştir">🌙</button>
+
+<aside class="sidebar">
+  <div class="hdr">
+    <div class="hdr-tag">DERS</div>
+    <div class="hdr-title">AKADEMİK İLETİŞİMDE ÜRETKEN YAPAY ZEKÂNIN GELİŞİMİ VE POTANSİYELİ</div>
+  </div>
+  <div class="toc" id="toc"></div>
+</aside>
+
+<main class="main-view">
+  <div class="player-card">
+    <div class="cover-art">🎙️</div>
+    <div class="now-title" id="now-title">Başlamak için bir bölüm seçin</div>
+    <div class="progress">
+      <div class="prog-track" id="prog-track" onclick="seek(event)">
+        <div class="prog-fill" id="prog-fill"></div>
+      </div>
+      <div class="times"><span id="t-cur">00:00</span><span id="t-dur">00:00</span></div>
+    </div>
+    <div class="ctrls">
+      <button class="ctrl-btn" onclick="prevTrack()" title="Önceki">
+        <svg viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6 8.5 6V6z"/></svg>
+      </button>
+      <button class="ctrl-btn skip-btn" onclick="skipTime(-10)" title="-10s">
+        <svg viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/><text x="12" y="14" text-anchor="middle" font-size="5" font-family="sans-serif" fill="currentColor">10</text></svg>
+        <span class="skip-label">-10s</span>
+      </button>
+      <button class="play-btn" id="play-btn" onclick="togglePlay()">▶</button>
+      <button class="ctrl-btn skip-btn" onclick="skipTime(10)" title="+10s">
+        <svg viewBox="0 0 24 24"><path d="M12 5V1l5 5-5 5V7c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6h2c0 4.42-3.58 8-8 8s-8-3.58-8-8 3.58-8 8-8z"/><text x="12" y="14" text-anchor="middle" font-size="5" font-family="sans-serif" fill="currentColor">10</text></svg>
+        <span class="skip-label">+10s</span>
+      </button>
+      <button class="ctrl-btn" onclick="nextTrack()" title="Sonraki">
+        <svg viewBox="0 0 24 24"><path d="M6 18l8.5-6L6 6v12zm2.5-6 5.5 3.9V8.1L8.5 12zM16 6h2v12h-2z"/></svg>
+      </button>
+    </div>
+  </div>
+</main>
+
+<audio id="ap"></audio>
+<script>
+// TEMA YÖNETİMİ
+function initPlayerTheme() {
+  const saved = localStorage.getItem('sd-theme');
+  const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+  if (saved === 'light' || (!saved && prefersLight)) {
+    document.documentElement.setAttribute('data-theme', 'light');
+    document.getElementById('pl-theme-btn').textContent = '☀️';
+  }
+}
+function togglePlayerTheme() {
+  const el = document.documentElement;
+  if (el.getAttribute('data-theme') === 'light') {
+    el.removeAttribute('data-theme');
+    localStorage.setItem('sd-theme', 'dark');
+    document.getElementById('pl-theme-btn').textContent = '🌙';
+  } else {
+    el.setAttribute('data-theme', 'light');
+    localStorage.setItem('sd-theme', 'light');
+    document.getElementById('pl-theme-btn').textContent = '☀️';
+  }
+}
+initPlayerTheme();
+
+const CHUNKS = [{"chapterTitle":"AKADEMİK İLETİŞİMDE ÜRETKEN YAPAY ZEKÂNIN GELİŞİMİ VE POTANSİYELİ","id":"ch1_c1","title":"Giriş","text":"21. yüzyılda teknolojinin hızla gelişimi, yükseköğretim ve araştırma sistemlerindeki bilgi üretim şekillerini köklü bir biçimde değiştirmektedir 1. Bu devrimin tam merkezinde yer alan Üretken Yapay Zekâ (ÜYZ) teknolojilerinin sunduğu fırsatları, Yükseköğretim Kurulu (YÖK), MEB ve TÜBİTAK gibi kurumlar hazırladıkları stratejiler ve etik rehberler ile araştırma ekosistemine entegre etmeye çalışmaktadır 1, 2.","audio_file":"audio/ch1_c1.wav"},{"chapterTitle":"AKADEMİK İLETİŞİMDE ÜRETKEN YAPAY ZEKÂNIN GELİŞİMİ VE POTANSİYELİ","id":"ch1_c2","title":"1.1. Akademik Araştırmalarda Yapay Zekânın Tarihsel Gelişimi","text":"Geçmişte fiziksel olarak yürütülen araştırma süreçleri önce dijital veri tabanlarına taşınmış, sonrasında ise Doğal Dil İşleme (NLP) temelli asistanlar mevcut metinleri iyileştirmek için devreye girmiştir 3, 4. Ancak akademik alandaki asıl kırılma, 2017 yılında \"Transformer\" mimarisinin tanıtılması ve büyük dil modellerinin (LLM) geliştirilmesiyle gerçekleşmiştir 5. ChatGPT gibi araçların ortaya çıkmasıyla yapay zekâ, veriyi depolayan pasif bir araç olmaktan çıkarak, makale özetleyebilen ve anında metin üretebilen etkileşimli bir asistana dönüşmüş, haftalar süren analiz süreleri büyük ölçüde kısalmıştır 5, 6.","audio_file":"audio/ch1_c2.wav"},{"chapterTitle":"AKADEMİK İLETİŞİMDE ÜRETKEN YAPAY ZEKÂNIN GELİŞİMİ VE POTANSİYELİ","id":"ch1_c3","title":"1.2. ÜYZ Nedir?","text":"ÜYZ, devasa veri yığınlarını analiz eden ve aldığı komutlar (prompt) doğrultusunda önceden var olmayan yeni içerikler üreten bir sistemdir 7, 8. Geleneksel yapay zekâ yalnızca mevcut veriyi analiz edip sınıflandırırken, ÜYZ sıfırdan metin, görsel ya da ses sentezleyebilen bilişsel bir teknolojidir 8, 9. Bu modeller metin üretmenin yanı sıra özetleme, kod yazma ve çeviri gibi çeşitli işlemleri de başarabilmektedir 10.","audio_file":"audio/ch1_c3.wav"},{"chapterTitle":"AKADEMİK İLETİŞİMDE ÜRETKEN YAPAY ZEKÂNIN GELİŞİMİ VE POTANSİYELİ","id":"ch1_c4","title":"1.3. Akademik Yazımda ÜYZ Araçlarının Yaygın Kullanım Alanları ve Fırsatlar","text":"ÜYZ araçları, fikir geliştirmek, araştırma soruları oluşturmak ve taslak (iskelet) kurarak yazar tıkanıklığını aşmak için sıkça kullanılmaktadır 11, 12. Bunun dışında literatür özetleme ile dilbilgisi düzeltme, üslubu akademik tona uyarlama ve çeviri sağlama amacıyla da önemli destek sunar 12, 13. Özellikle ana dili İngilizce olmayan öğrencilerin dil bariyerini aşmalarına yardımcı olarak akademik iletişimde büyük bir fırsat eşitliği sağlar 14. Bu sayede mekanik süreçler hızlanırken araştırmacı, analitik düşünmeye çok daha fazla zaman ayırabilmektedir 15.","audio_file":"audio/ch1_c4.wav"},{"chapterTitle":"AKADEMİK İLETİŞİMDE ÜRETKEN YAPAY ZEKÂNIN GELİŞİMİ VE POTANSİYELİ","id":"ch1_c5","title":"Örnek Olay: Akademik Yazımda Dijital Asistanın Fırsatları ve Etik Sınırları","text":"Ayşe isimli bir lisans öğrencisi, bitirme tezinde yapay zekâyı fikir üretimi ve tez iskeleti (yapısal boyut) oluşturmak, ayrıca özet bölümündeki İngilizce gramer hatalarını gidermek (dilsel boyut) amacıyla bir asistan gibi kullanmıştır 16, 17. Metni baştan sona yapay zekâya yazdırmayarak (de novo üretimden kaçınarak) hem bilişsel körelme riskinden korunmuş hem de aracın kullanımını tezinde beyan ederek çalışmasını şeffaflık ve insan gözetimi altında başarıyla tamamlamıştır 16, 18, 19.","audio_file":"audio/ch1_c5.wav"},{"chapterTitle":"BÜYÜK DİL MODELLERİNİN (LLM) ÇALIŞMA PRENSİPLERİ VE YAPISAL SINIRLILIKLARI","id":"ch2_c1","title":"Giriş","text":"ÜYZ dışarıdan insan gibi akıcı yanıtlar verse de akademik bağlamı, dünyayı ya da normları bilinçli olarak anlayamaz 21. Çıktıların niteliği ve doğruluğu, beslendikleri verilerin kalitesine ve sahip oldukları istatistiksel yapıya dayandığı için bu araçlar eleştirel bir yaklaşımla kullanılmalıdır 21, 22.","audio_file":"audio/ch2_c1.wav"},{"chapterTitle":"BÜYÜK DİL MODELLERİNİN (LLM) ÇALIŞMA PRENSİPLERİ VE YAPISAL SINIRLILIKLARI","id":"ch2_c2","title":"2.1. Doğal Dil İşleme (NLP) ve LLM Mimarisinin Temelleri","text":"Bilgisayarların insan dilini anlamasını sağlayan NLP teknolojisi kural tabanlı sistemlerden, beynin çalışma şeklinden ilham alan yapay sinir ağlarına geçiş yapmıştır 23. Bu modellerin temelini oluşturan Transformer mimarisi, cümledeki uzak kelime ilişkilerini kavrayabilmektedir 24. Güncel LLM'ler milyarlarca parametre ile devasa metin verilerinden (Wikipedia, makaleler) beslenir, fakat kelimelerin taşıdığı anlamı bilinçli olarak değil, yalnzıca kelimeler arası istatistiksel olasılıkları ölçerek öğrenirler 25, 26.","audio_file":"audio/ch2_c2.wav"},{"chapterTitle":"BÜYÜK DİL MODELLERİNİN (LLM) ÇALIŞMA PRENSİPLERİ VE YAPISAL SINIRLILIKLARI","id":"ch2_c3","title":"2.2. Olasılıksal Metin Üretimi: Kelime Tahmin ve Eşleştirme Mekanizmaları","text":"LLM'ler, kullanıcının komutuna cevap verirken hazır bir veritabanından bilgi almaz; girilen metni \"token\" adlı küçük parçalara bölerek devasa dil örüntüleri içinde bir sonraki en olası token'ı tahmin eder 27, 28. Akıllı telefon klavyelerindeki otomatik tahminin devasa bir benzeri olan bu sistem, doğrudan bir \"doğruluk mekanizması\" barındırmaz 28, 29. Bilimsel gerçeklikten ziyade dilsel ihtimalleri ölçtükleri için çıktıların içerisinde asılsız veya hatalı ifadeler yer alabilmektedir 29.","audio_file":"audio/ch2_c3.wav"},{"chapterTitle":"BÜYÜK DİL MODELLERİNİN (LLM) ÇALIŞMA PRENSİPLERİ VE YAPISAL SINIRLILIKLARI","id":"ch2_c4","title":"2.3. Olasılıksal Metin Üretimi: Kelime Tahmin ve Eşleştirme Mekanizmaları","text":"Yapay zekâ eleştirel düşünme, bilimsel özgünlük yaratma veya mantıksal akıl yürütme becerilerine sahip değildir 30. Kavrayış eksikliği yaşadığı için yalnızca var olan verileri yeniden harmanlar, ancak bilime özgün bir katkıda bulunamaz 31. Etik veya hukuki hesap verebilirlik kapasitesi olmadığı için de, bilim otoriteleri nezdinde yazar veya ortak yazar olarak gösterilemez 32.","audio_file":"audio/ch2_c4.wav"},{"chapterTitle":"BÜYÜK DİL MODELLERİNİN (LLM) ÇALIŞMA PRENSİPLERİ VE YAPISAL SINIRLILIKLARI","id":"ch2_c5","title":"2.3.1. Bilgi Doğruluğu Zafiyeti: Yapay Zekâ Halüsinasyonları ve Sahte Referanslar","text":"LLM'ler bilgi eksikliği yaşadıklarında uydurma içerikler üretebilir ve bu durum \"yapay zekâ halüsinasyonu\" olarak adlandırılır 33. Akademik alandaki en tehlikeli boyutu ise, gerçekte var olmayan dergilere, sahte isimlere ve uydurma DOI numaralarına sahip uydurma akademik referanslar oluşturabilmesidir 34. Bu risklerden ötürü yapay zekâ tarafından verilen tüm veriler birincil kaynaklardan bağımsız olarak doğrulanmalıdır 34.","audio_file":"audio/ch2_c5.wav"},{"chapterTitle":"BÜYÜK DİL MODELLERİNİN (LLM) ÇALIŞMA PRENSİPLERİ VE YAPISAL SINIRLILIKLARI","id":"ch2_c6","title":"2.3.2. Eğitim Verilerinden Kaynaklanan Algoritmik Önyargılar","text":"Yapay zekâ internetteki devasa verilerle eğitildiği için bu veri içerisindeki cinsiyetçi, kültürel veya politik önyargıları da metinlerine yansıtabilmektedir 35. Özellike veri setlerinin yoğunlukla Batı merkezli olması, Türkiye gibi ülkelere dair kısıtlı ve tek yönlü ifadeler üretilmesine yol açabilir 36. Bu tür algoritmik önyargıları fark edip engellemek tamamen araştırmacının kendi eleştirel süzgecine ve etik yaklaşımına bağlıdır 37.","audio_file":"audio/ch2_c6.wav"},{"chapterTitle":"İNSAN VE YAPAY ZEKÂ İŞ BİRLİĞİ: OTONOMİ, SINIRLAR VE ARAÇSALLAŞTIRMA","id":"ch3_c1","title":"Giriş","text":"Akademik üretim mekanik bir iş değil, bilgilerin sentezlendiği özgün ve entelektüel bir süreçtir 38. Yapay zekâ araştırmacıları hızlandırsa da, düşünme yetisinin yerini alan bir \"ortak yazar\" değil, insani süreci destekleyen araçsal bir asistandır 38, 39.","audio_file":"audio/ch3_c1.wav"},{"chapterTitle":"İNSAN VE YAPAY ZEKÂ İŞ BİRLİĞİ: OTONOMİ, SINIRLAR VE ARAÇSALLAŞTIRMA","id":"ch3_c2","title":"3.1. Yardımcı Araç Olarak Yapay Zekâ: Beklentilerin ve Sınırların Belirlenmesi","text":"COPE ve ICMJE gibi kurumlara göre, telif hakkı bulunmayan ve yasal sorumluluk alamayan yapay zekâ bilimsel bir yazar sayılamaz 40. Yapay zekâyı dil ve yazım denetimi yapması, taslak oluşturması veya karmaşık metinleri özetlemesi için kullanmak dürüstlük sınırları içerisindedir 41. Ancak, çalışmanın ana hipotezini oluşturmak ve verilerden bilimsel çıkarım elde etmek kesinlikle insana ait bir görevdir 42. TÜBİTAK mevzuatına göre de projelerin çekirdek kısımlarının ilk taslaklarını yapay zekâya doğrudan yazdırmak, eserin özgünlüğünü tehlikeye atan riskli bir davranıştır 43.","audio_file":"audio/ch3_c2.wav"},{"chapterTitle":"İNSAN VE YAPAY ZEKÂ İŞ BİRLİĞİ: OTONOMİ, SINIRLAR VE ARAÇSALLAŞTIRMA","id":"ch3_c3","title":"3.2. Bilişsel Beceriler ve Otomasyon: İnsan Zekâsının İkame Edilemezliği","text":"Öğrencilerin makale okuma ve derin sentez yapma gibi zorlayıcı zihinsel görevleri tamamen yapay zekâya devretmeleri durumunda, uzun vadede analitik becerilerinin zayıflamasına yol açan \"bilişsel körelme\" yaşanır 44. Yapay zekâ; insan zekâsının aksine bağlamı anlayamaz, niyet barındıramaz ve nedensellik kurgulayamaz 45. Yazı sürecinde yaşanan zihinsel zorluklar öğrenmenin kritik parçaları olduğundan dolayı bu görevleri tamamen otomatize etmek yazarın yetkinliğini ve bilimsel yaratıcılığını ortadan kaldırır 46, 47.","audio_file":"audio/ch3_c3.wav"},{"chapterTitle":"İNSAN VE YAPAY ZEKÂ İŞ BİRLİĞİ: OTONOMİ, SINIRLAR VE ARAÇSALLAŞTIRMA","id":"ch3_c4","title":"3.3. Akademik Metin Üretiminde İnsan Gözetimi (Human-in-the-Loop) Yaklaşımı","text":"Akademik kullanımda en güvenilir model, yapay zekâdan çıkan metni doğrudan pasifçe kopyalamayı reddeden \"İnsan Gözetimi\" (HITL) modelidir 48. Bu model, makinenin sunduğu verileri her aşamada okuyan, sorgulayan, hataları eleyen ve metnin nihai karar vericisi olan aktif insan öznesinin vazgeçilmezliğini şart koşar 48.","audio_file":null},{"chapterTitle":"İNSAN VE YAPAY ZEKÂ İŞ BİRLİĞİ: OTONOMİ, SINIRLAR VE ARAÇSALLAŞTIRMA","id":"ch3_c5","title":"3.3.1. ÜYZ Çıktılarını Filtrelemede Eleştirel Değerlendirmenin Rolü","text":"Güvenli entegrasyon için dört temel aşamadan oluşan \"Veritas\" değerlendirme sistemi uygulanmalıdır 49. Buna göre araştırmacı; yapay zekâdan alınan iddiaları bağımsız kütüphane veya veri tabanlarından doğrulamalıdır 50, içeriğin sahip olabileceği algoritmik önyargıları eleştirel biçimde değerlendirmelidir 51, elde ettiği fikir veya bilginin asıl insan sahibi bulunarak metin içinde uygun biçimde atıf yapılmalıdır 51 ve son olarak içerik araştırmacının özgün üslubuna uygun şekilde baştan düzenlenmelidir 52.","audio_file":null},{"chapterTitle":"İNSAN VE YAPAY ZEKÂ İŞ BİRLİĞİ: OTONOMİ, SINIRLAR VE ARAÇSALLAŞTIRMA","id":"ch3_c6","title":"3.3.2. Yazarın Entelektüel Sorumluluğu ve Aidiyet Kavramı","text":"Uluslararası yönergelere göre eser yazarlığının temel şartı hukuki ve etik olarak \"hesap verebilirlik\" ilkesidir 53. YÖK ve TÜBİTAK kurallarınca da belirtildiği gibi, makalede oluşan herhangi bir intihal, yanlış veri veya hatada sorumluluk doğrudan insana aittir ve yapay zekâyı suçlamak mazeret kabul edilmez 54. İlgili araçların çalışmada hangi amaçlarla ne kadar kullanıldığı beyan veya yöntem kısımlarında mutlaka okuyucuya şeffaf bir şekilde bildirilmelidir 55. Eserin sahiplenilmesi, her argümanın araştırmacı tarafından korunabilmesini ve tüm sürecin insan aklınca denetlenmesini zorunlu kılar 56.","audio_file":null}];
+const ap = document.getElementById('ap');
+let cur = 0, playing = false, spd = 1, doneSet = new Set();
+
+function fmt(s) {
+  s = Math.floor(s || 0);
+  return String(Math.floor(s / 60)).padStart(2,'0') + ':' + String(s % 60).padStart(2,'0');
+}
+
+function buildTOC() {
+  const toc = document.getElementById('toc');
+  CHUNKS.forEach((cu, i) => {
+    const row = document.createElement('div');
+    row.className = 'toc-item' + (i === 0 ? ' active' : '');
+    row.id = 'ti' + i;
+    row.onclick = () => loadTrack(i, false);
+    row.innerHTML = '<div class="toc-num"><span class="toc-num-inner">' + (i + 1) + '</span></div>' +
+                    '<div class="toc-label">' + (cu.title || cu.chapterTitle || ('Parça ' + (i+1))) + '</div>';
+    toc.appendChild(row);
+  });
+}
+
+function loadTrack(idx, autoPlay) {
+  if (idx < 0 || idx >= CHUNKS.length) return;
+  const wasPlaying = playing;
+  if (!ap.paused) { ap.pause(); playing = false; }
+  cur = idx;
+  const cu = CHUNKS[idx];
+
+  document.querySelectorAll('.toc-item').forEach((el, i) => {
+    el.classList.toggle('active', i === idx);
+    if (i === idx) el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  });
+
+  document.getElementById('now-title').textContent = cu.title || cu.chapterTitle || ('Parça ' + (idx+1));
+  document.getElementById('prog-fill').style.width = '0%';
+  document.getElementById('t-cur').textContent = '00:00';
+  document.getElementById('t-dur').textContent = '00:00';
+  document.getElementById('play-btn').textContent = '▶';
+
+  if (cu.audio_file) {
+    ap.src = cu.audio_file;
+    ap.playbackRate = spd;
+    if (autoPlay || wasPlaying) doPlay();
+  }
+  localStorage.setItem('sd-pos', idx);
+}
+
+function doPlay() {
+  ap.play().then(() => {
+    playing = true;
+    document.getElementById('play-btn').textContent = '⏸';
+  }).catch(() => {});
+}
+
+function togglePlay() {
+  if (playing) { ap.pause(); playing = false; document.getElementById('play-btn').textContent = '▶'; }
+  else doPlay();
+}
+
+function nextTrack() { loadTrack(cur + 1, true); }
+function prevTrack() {
+  if (ap.currentTime > 3) { ap.currentTime = 0; return; }
+  loadTrack(cur - 1, playing);
+}
+function skipTime(s) { ap.currentTime = Math.max(0, Math.min(ap.duration || 0, ap.currentTime + s)); }
+function seek(e) {
+  if (!ap.duration) return;
+  const r = e.currentTarget.getBoundingClientRect();
+  ap.currentTime = ((e.clientX - r.left) / r.width) * ap.duration;
+}
+
+ap.addEventListener('timeupdate', () => {
+  if (!ap.duration) return;
+  document.getElementById('prog-fill').style.width = (ap.currentTime / ap.duration * 100) + '%';
+  document.getElementById('t-cur').textContent = fmt(ap.currentTime);
+  document.getElementById('t-dur').textContent = fmt(ap.duration);
+});
+ap.addEventListener('ended', () => {
+  doneSet.add(cur);
+  document.getElementById('ti' + cur)?.classList.add('done');
+  nextTrack();
+});
+
+buildTOC();
+const savedPos = parseInt(localStorage.getItem('sd-pos') || '0');
+loadTrack(Math.min(savedPos, CHUNKS.length - 1), false);
+</script>
+</body>
+</html>
