@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>İnşaat Sektöründe İş Sağlığı ve Güvenliği I</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <div class="nav-brand">İSG <b>Bölüm 3</b></div>
+    <div class="nav-links" id="nav-links">
+      <a href="#giris">Giriş</a>
+      <a href="#yukseklik">Yükseklik Kavramı</a>
+      <a href="#hiyerarsi">Kontrol Hiyerarşisi</a>
+      <a href="#onleyici">Önleyici Sistemler</a>
+      <a href="#durdurucu">Durdurucu Sistemler</a>
+      <a href="#kkd">KKD</a>
+      <a href="#erisim">Erişim Ekipmanları</a>
+      <a href="#quiz">Sınav</a>
+    </div>
+  </div>
+</nav>
+
+<div class="stripe"></div>
+
+<!-- ================= COVER ================= -->
+<div class="cover" id="cover">
+  <div class="cover-eyebrow">Bölüm 3 &middot; İş Sağlığı ve Güvenliği</div>
+  <h1>İnşaat Sektöründe <span>İş Sağlığı</span><br>ve Güvenliği I</h1>
+  <p class="desc">İnşaat sektöründe yüksekte çalışma kavramı, yüksekten düşmenin fiziği ve istatistikleri, yüksekte
+    çalışma kontrol hiyerarşisi ile düşmeyi önleyici, hareketi kısıtlayıcı ve düşmeyi durdurucu sistemler; ayrıca
+    kişisel koruyucu donanımlar ve güvenli erişim ekipmanları üzerine etkileşimli bir bölüm özeti.</p>
+  <div class="cover-keys">
+    <span class="kw">Yüksekte Çalışma</span>
+    <span class="kw">Yüksekten Düşme</span>
+    <span class="kw">Düşme Faktörü</span>
+    <span class="kw">Düşmeyi Durdurucu Sistemler</span>
+  </div>
+
+  <div class="cover-cards">
+    <div class="cover-card">
+      <div class="num">01</div>
+      <h3>Yüksekte Çalışmalarda Kavramlar ve Mevzuat</h3>
+      <p>Yüksekte çalışmayı, yükseklik kavramını, yüksekte çalışmanın planlanmasını ve yüksekte çalışma kontrol
+        hiyerarşisini açıklayabilme.</p>
+    </div>
+    <div class="cover-card">
+      <div class="num">02</div>
+      <h3>Yüksekte Güvenli Çalışma</h3>
+      <p>Düşmeyi önleyici sistemler, hareketi kısıtlayıcı sistemler, düşmeyi durdurucu sistemler, acil durumlar ve
+        kurtarma ile yüksekte çalışmada kullanılan kişisel koruyucu donanımlar ve erişim ekipmanlarını
+        tanımlayabilme.</p>
+    </div>
+  </div>
+
+  <button class="start-btn" onclick="document.getElementById('giris').scrollIntoView({behavior:'smooth'})">
+    Bölüme Başla
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+  </button>
+
+  <div class="toc">
+    <div class="toc-label">İçindekiler</div>
+    <div class="toc-grid">
+      <a class="toc-item" href="#giris"><span class="n">01</span>Giriş</a>
+      <a class="toc-item" href="#yukseklik"><span class="n">02</span>Yükseklik Kavramı</a>
+      <a class="toc-item" href="#fizik"><span class="n">03</span>Yüksekten Düşmenin Fiziği</a>
+      <a class="toc-item" href="#faktor"><span class="n">04</span>Düşme Faktörü ve Darbe Kuvveti</a>
+      <a class="toc-item" href="#hiyerarsi"><span class="n">05</span>Kontrol Hiyerarşisi</a>
+      <a class="toc-item" href="#onleyici"><span class="n">06</span>Önleyici / Kısıtlayıcı Sistemler</a>
+      <a class="toc-item" href="#durdurucu"><span class="n">07</span>Durdurucu Sistemler</a>
+      <a class="toc-item" href="#kkd"><span class="n">08</span>Kişisel Koruyucu Donanımlar</a>
+      <a class="toc-item" href="#erisim"><span class="n">09</span>Güvenli Erişim Ekipmanları</a>
+      <a class="toc-item" href="#acil"><span class="n">10</span>Acil Durumlar ve Kurtarma</a>
+      <a class="toc-item" href="#ozet"><span class="n">11</span>Bölüm Özeti</a>
+      <a class="toc-item" href="#quiz"><span class="n">12</span>Sınav</a>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+<!-- ================= GİRİŞ ================= -->
+<section id="giris">
+  <div class="sec-label">Giriş</div>
+  <h2 class="sec-title">İnşaat Sektörü Neden Özel Bir Dikkat Gerektirir?</h2>
+  <p class="lead">
+    İnşaat sektörü, ülkemiz gayrisafi yurt içi hasılasının %7,2'sini oluşturan ve 200'den fazla alt sektöre mal
+    ve hizmet talebi yaratan önemli bir ekonomik koldur. Ekonomideki bu ağırlığına karşılık sektör, iş kazaları
+    açısından da ülkemizde ilk sıralarda yer almaktadır: inşaat sektöründe iş kazası geçiren sigortalı sayısı
+    bütün sektörlerdeki iş kazası sayısının yaklaşık %15'ini, ölümlü iş kazaları ise yaklaşık %35'ini
+    oluşturmaktadır. Başka bir ifadeyle ülkemizde her 3 ölümlü iş kazasından biri inşaat sektöründe meydana
+    gelmektedir.
+  </p>
+  <p class="lead">
+    İnşaat sektöründe yaşanan ölümlü iş kazalarının hemen hemen yarısı yüksekten düşme şeklinde
+    gerçekleşmektedir. İnşaat işlerinin doğası gereği pek çok faaliyetin yüksekte yürütülmesi zorunlu olduğundan,
+    yüksekte güvenli çalışma konusu sektör için büyük önem taşımaktadır.
+  </p>
+
+  <div class="gauge">
+    <div class="az">%15<br><span style="opacity:.75">İnşaatın tüm sektörlerdeki iş kazası payı</span></div>
+    <div class="teh">%35<br><span style="opacity:.75">İnşaatın tüm sektörlerdeki ölümlü iş kazası payı</span></div>
+    <div class="cok">%86,8<br><span style="opacity:.75">Yüksekten düşme tipi ölümlü kazaların inşaattaki payı</span></div>
+  </div>
+
+  <div class="tf-box">
+    <div class="tf-label">Bilgi Kontrolü &middot; Doğru / Yanlış</div>
+    <div class="tf-statement">İnşaat sektöründe yaşanan ölümlü iş kazalarının hemen hemen yarısı yüksekten düşme
+      şeklinde meydana gelmektedir.</div>
+    <div class="tf-btns">
+      <button class="tf-btn" onclick="answerTF(this,true)">Doğru</button>
+      <button class="tf-btn" onclick="answerTF(this,false)">Yanlış</button>
+    </div>
+    <div class="tf-fb">Doğru: 2013-2017 yılları arasında sektörde yüksekten düşme tipinde meydana gelen ölümlü iş
+      kazaları, sektördeki bütün ölümlü iş kazalarının yaklaşık yarısını oluşturmaktadır.</div>
+  </div>
+</section>
+
+<!-- ================= YÜKSEKLİK KAVRAMI ================= -->
+<section id="yukseklik">
+  <div class="sec-label">Öğrenme Çıktısı 1</div>
+  <h2 class="sec-title">Yükseklik Kavramı, Yüksekte Çalışma Nedir?</h2>
+  <p class="lead">
+    İş sağlığı ve güvenliği mevzuatına göre yüksekte çalışma, "seviye farkı bulunan ve düşme sonucu yaralanma
+    ihtimalinin oluşabileceği her türlü alanda yapılan çalışma" olarak tanımlanmaktadır. Bu tanımdan, yalnızca
+    zemin seviyesinin üstündeki alanların değil, daha alt seviyelerdeki yerlerde yürütülen faaliyetlerin de
+    yüksekte çalışma kapsamına girdiği anlaşılmaktadır. İşyeri koşullarına bağlı olarak kimi zaman 50 cm'lik bir
+    yükseklikten düşmenin sonuçları bile ölümcül olabilmektedir.
+  </p>
+  <p class="lead">
+    Bazı ülkeler yüksekte çalışmayı 1,8 m ya da 3 m ve üzerindeki yükseklikler için tanımlarken, ülkemizdekine
+    benzer, mesafeye bağlı olmayan bir tanım kullanan ülkeler de bulunmaktadır. Örneğin Birleşik Krallık'ın
+    Yüksekte Çalışma Yönetmeliği'nde yüksekte çalışma; gerekli önlemler alınmadığı takdirde bir çalışanın
+    yaralanmasına yol açabilecek herhangi bir yerde çalışmak (zemin seviyesindeki veya altındaki yerler dâhil)
+    ya da bir yere erişim sağlamak/oradan ayrılmak olarak tanımlanmıştır.
+  </p>
+
+  <div class="callout">
+    <h4>Kapsayıcı Tanımın Önemi</h4>
+    <p>6331 sayılı Kanun'un getirdiği önleyici yaklaşımın katkısıyla, mevzuatımızdaki yüksekte çalışma ve
+      yükseklik tanımları belli bir mesafeyle sınırlı değil, daha kapsayıcı niteliktedir. Seviye farkı bulunan
+      ve düşme sonucu yaralanma ihtimalinin olduğu her alanda yapılacak çalışmalar için risk değerlendirmesi
+      sonuçlarıyla bütünleştirilerek tedbir alınması gerekir.</p>
+  </div>
+
+  <div class="tf-box">
+    <div class="tf-label">Bilgi Kontrolü &middot; Doğru / Yanlış</div>
+    <div class="tf-statement">Yüksekte çalışma yalnızca zemin seviyesinin üzerindeki alanlarda yürütülen
+      faaliyetleri kapsar; zemin seviyesinin altındaki çalışmalar bu kapsama girmez.</div>
+    <div class="tf-btns">
+      <button class="tf-btn" onclick="answerTF(this,false)">Doğru</button>
+      <button class="tf-btn" onclick="answerTF(this,true)">Yanlış</button>
+    </div>
+    <div class="tf-fb">Yanlış: Tanımdan, sadece zemin seviyesinin üstündeki alanlarda değil daha alt seviyelerdeki
+      yerlerde yürütülen faaliyetlerin de yüksekte çalışma kapsamına girdiği anlaşılmaktadır.</div>
+  </div>
+</section>
+
+<!-- ================= YÜKSEKTEN DÜŞMENİN FİZİĞİ ================= -->
+<section id="fizik">
+  <div class="sec-label">İstatistikler</div>
+  <h2 class="sec-title">Yüksekten Düşmenin Fiziği ve Kaza İstatistikleri</h2>
+  <p class="lead">
+    Yüksekten düşme, hava direncinin de etkili olduğu bir serbest düşme hareketidir. Yaklaşık 100 kg ağırlığındaki
+    bir insanın düşüşünün 1. saniyesinde yaklaşık 5 metrelik mesafe kat edilir ve hız saatte 33,65 km'ye ulaşır.
+    15 katlı bir binanın en üst katından düşme ise yaklaşık 3,6 saniye sürer — insan zihninin tahmin ettiğinden
+    çok daha hızlı gerçekleşen bir olaydır.
+  </p>
+
+  <div class="table-scroll">
+    <table>
+      <thead><tr><th style="width:110px">Yıl</th><th>İnşaat Sektöründe Meydana Gelen Ölümlü İş Kazası Sayısı</th></tr></thead>
+      <tbody id="fizik-yillar-body"></tbody>
+    </table>
+  </div>
+  <p class="lead" style="margin-top:14px;">2013-2018 yılları arasında sektörde yılda ortalama 528 ölümlü iş kazası
+    meydana gelmiş, bunların yaklaşık yarısını yüksekten düşme tipi kazalar oluşturmuştur.</p>
+
+  <h3 style="font-family:var(--font-display);font-weight:600;font-size:19px;margin-top:30px;">Yüksekten Düşme Kazalarının Ana Nedenleri (2013-2017)</h3>
+  <div class="table-scroll">
+    <table>
+      <thead><tr><th>Düşme Nedeni</th><th style="width:100px">Oran</th></tr></thead>
+      <tbody id="fizik-nedenler-body"></tbody>
+    </table>
+  </div>
+
+  <div class="callout warn">
+    <h4>En Sık Görülen Düşme Tipi</h4>
+    <p>İnşaatlarda düşme şeklinde meydana gelen ölümlü iş kazalarının yaklaşık %40'ı, katlarda düşmeye karşı
+      herhangi bir önlem alınmamış kenarlardan ve boşluklardan düşmeler şeklinde meydana gelmektedir.</p>
+  </div>
+</section>
+
+<!-- ================= DÜŞME FAKTÖRÜ ================= -->
+<section id="faktor">
+  <div class="sec-label">Temel Kavram</div>
+  <h2 class="sec-title">Düşme Faktörü ve Darbe Kuvveti</h2>
+  <p class="lead">
+    Olası bir düşme durdurulduğunda, düşen kişinin gövdesi gerilen halattan üretilen enerjiyi emer; halatın en
+    fazla uzama yaptığı anda üretilen kuvvete <b>darbe kuvveti</b> denir ve çalışanın üzerine gelebilecek azami
+    darbe kuvveti 6 kN'u aşamaz. <b>Düşme faktörü</b> ise yüksekte çalışan kişinin düşme yüksekliğinin, düşüşü
+    durduracak halatın uzunluğuna oranıdır ve 0 ile 2 arasında bir değer alır. Düşme faktörü ne kadar düşükse,
+    olası bir düşmede çalışan üzerine gelecek darbe kuvveti o kadar az olur.
+  </p>
+
+  <div class="table-scroll">
+    <table>
+      <thead><tr><th style="width:140px">Bağlantı Konumu</th><th style="width:120px">Düşme Faktörü</th><th>Açıklama</th></tr></thead>
+      <tbody>
+        <tr><td style="font-family:var(--font-mono);color:var(--orange)">Baş üstü</td><td>0</td><td>Bağlantı halatı baş üstü bir konuma takıldığında düşebilecek yükseklik neredeyse sıfırdır.</td></tr>
+        <tr><td style="font-family:var(--font-mono);color:var(--orange)">Çalışan seviyesi</td><td>1</td><td>Bağlantı halatı çalışan seviyesinde konumlandırıldığında, olası düşmede halatın uzunluğu kadar düşülür.</td></tr>
+        <tr><td style="font-family:var(--font-mono);color:var(--orange)">Ayak hizası</td><td>2</td><td>Bağlantı ayak hizasında yapıldığında, çalışan halat uzunluğunun iki katı kadar mesafe düşer.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="tf-box">
+    <div class="tf-label">Bilgi Kontrolü &middot; Doğru / Yanlış</div>
+    <div class="tf-statement">Yüksekte çalışma yürütülürken bağlantı halatının konumlandırılma şekli, mümkün
+      olduğunca düşme faktörü 2 olacak şekilde tercih edilmelidir.</div>
+    <div class="tf-btns">
+      <button class="tf-btn" onclick="answerTF(this,false)">Doğru</button>
+      <button class="tf-btn" onclick="answerTF(this,true)">Yanlış</button>
+    </div>
+    <div class="tf-fb">Yanlış: Bağlantı halatının konumlandırılma şekli hiçbir zaman düşme faktörü 2 olmayacak
+      şekilde tercih edilmelidir; darbe kuvvetinin asgari düzeyde tutulması için bağlantının mümkün olduğunca
+      baş üstü seviyelerde yapılması uygundur.</div>
+  </div>
+</section>
+
+<!-- ================= KONTROL HİYERARŞİSİ ================= -->
+<section id="hiyerarsi">
+  <div class="sec-label">Bilgi Kontrolü &middot; Sürükle-Bırak</div>
+  <h2 class="sec-title">Yüksekte Çalışma Kontrol Hiyerarşisi</h2>
+  <p class="lead">
+    Düşme tehlikelerini ortadan kaldırmak veya azaltmak için tercih edilen sıralı çözümler silsilesine
+    <b>yüksekte çalışma kontrol hiyerarşisi</b> denir. Genel olarak dört basamaktan oluşur: yüksekte çalışmaktan
+    kaçınma, düşmelerin önlenmesi, düşme mesafesi ve sonuçlarının azaltılması, idari kontroller. Aşağıdaki
+    örnekleri, ait oldukları basamağa sürükleyin.
+  </p>
+  <div class="dd-box">
+    <div class="dd-title">Etkinlik</div>
+    <p class="dd-desc">Her bir uygulamayı, yüksekte çalışma kontrol hiyerarşisinde ait olduğu basamağa sürükleyin.</p>
+    <div class="dd-pool" id="hiyerarsi-pool"></div>
+    <div class="dd-targets" id="hiyerarsi-targets"></div>
+    <button class="reset-btn dd-reset" id="hiyerarsi-reset-btn">Etkinliği sıfırla</button>
+  </div>
+</section>
+
+<!-- ================= ÖNLEYİCİ / KISITLAYICI SİSTEMLER ================= -->
+<section id="onleyici">
+  <div class="sec-label">Yüksekte Güvenli Çalışma</div>
+  <h2 class="sec-title">Düşmeyi Önleyici ve Hareketi Kısıtlayıcı Sistemler</h2>
+  <p class="lead">
+    Düşme önleyici sistemler, çalışanın düşme ihtimalini tamamen ortadan kaldırmayı; hareketi kısıtlayıcı
+    sistemler ise çalışanın düşme riski olan bir kenara ulaşmasını engellemeyi amaçlar. Kartlara tıklayarak
+    yüksekte sıkça kullanılan sistemleri inceleyin.
+  </p>
+  <div class="flip-grid" id="onleyici-flip"></div>
+</section>
+
+<!-- ================= DÜŞMEYİ DURDURUCU SİSTEMLER ================= -->
+<section id="durdurucu">
+  <div class="sec-label">Yüksekte Güvenli Çalışma</div>
+  <h2 class="sec-title">Düşmeyi Durdurucu Sistemler</h2>
+  <p class="lead">
+    Düşmeyi önleyici sistemlerin uygulanmasının mümkün olmadığı durumlarda, düşmenin mesafesini ve sonuçlarını
+    hafifletmek için düşmeyi durdurucu sistemler kullanılır. Bu sistemler toplu koruyucu (güvenlik ağları, hava
+    yastıkları, yakalama platformları) ve kişisel koruyucu (kişisel düşmeyi durdurucu sistem) olarak ikiye
+    ayrılır. Aşağıdaki tanımları ait oldukları sisteme sürükleyin.
+  </p>
+  <div class="match-grid">
+    <div class="match-col">
+      <h5>Tanımlar (sürükleyin)</h5>
+      <div id="durdurucu-pool"></div>
+    </div>
+    <div class="match-col">
+      <h5>Düşmeyi Durdurucu Sistemler</h5>
+      <div id="durdurucu-slots"></div>
+    </div>
+  </div>
+  <button class="reset-btn dd-reset" id="durdurucu-reset-btn">Etkinliği sıfırla</button>
+
+  <div class="callout warn">
+    <h4>Açıklık Mesafesi</h4>
+    <p>Kişisel düşmeyi durdurucu sistemlerde, halatın toplam uzunluğu, yaşam hattındaki sehim ve açılmış enerji
+      sönümleyicinin uzunlukları toplamı 5 metreden fazla olabilir. Çalışanın zemine çarpmadan güvenle
+      yakalanabilmesi için ankraj noktası ile zemin arasındaki mesafenin bu değerden daha fazla olması
+      gerekir.</p>
+  </div>
+</section>
+
+<!-- ================= KİŞİSEL KORUYUCU DONANIMLAR ================= -->
+<section id="kkd">
+  <div class="sec-label">Yönetmelik</div>
+  <h2 class="sec-title">Yüksek Çalışmada Kullanılan Kişisel Koruyucu Donanımlar</h2>
+  <p class="lead">
+    Kişisel koruyucu donanımlar, diğer tüm kontrol önlemleri dikkate alındıktan sonra yalnızca son çare olarak
+    kullanılmalıdır. Başarıları büyük ölçüde donanımların doğru seçilmesine, doğru ve her zaman takılmasına ve
+    uygun şekilde bakımının yapılmasına bağlıdır.
+  </p>
+  <div class="table-scroll">
+    <table>
+      <thead><tr><th style="width:200px">Donanım</th><th style="width:140px">Standart</th><th>Açıklama</th></tr></thead>
+      <tbody id="kkd-body"></tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ================= GÜVENLİ ERİŞİM EKİPMANLARI ================= -->
+<section id="erisim">
+  <div class="sec-label">Ekipmanlar</div>
+  <h2 class="sec-title">Güvenli Erişim Ekipmanları</h2>
+  <p class="lead">
+    Güvenli erişim ekipmanları, çalışanların yükseğe güvenli bir şekilde çalışmasına imkân vermek için özel
+    olarak tasarlanmış merdivenler, iskeleler, yükseltilebilir platformlar ve benzeri ekipmanlardır. En uygun
+    ekipmanın seçiminde işin türü ve süresi belirleyicidir.
+  </p>
+  <div class="tabs" id="erisim-tabs"></div>
+  <div class="list-box" id="erisim-list" style="max-height:380px;"></div>
+</section>
+
+<!-- ================= ACİL DURUMLAR VE KURTARMA ================= -->
+<section id="acil">
+  <div class="sec-label">Planlama</div>
+  <h2 class="sec-title">Acil Durumlar, Kurtarma ve Askı Travması</h2>
+  <p class="lead">
+    Yüksekte çalışmalarda meydana gelebilecek olası düşmeler acil durum teşkil eder; bu nedenle yüksekte
+    çalışmaya başlanmadan önce hangi kurtarma yönteminin kullanılacağını, müdahale edecek ekipleri ve kurtarma
+    ekipmanlarını açıkça belirten bir kurtarma planı bulundurulmalıdır.
+  </p>
+
+  <div class="callout warn">
+    <h4>Askı Travması (Emniyet Kemeri Askı Sendromu)</h4>
+    <p>Bir çalışan düştükten ve kişisel düşmeyi durdurucu sistem tarafından yakalandıktan sonra tehlike sona
+      ermez. Emniyet kemerinin bacak kayışları, asılı kalınan süre boyunca femoral arterleri sıkıştırarak kan
+      dolaşımını kısıtlar; bu durum askı travması olarak bilinir ve dolaşım şokuyla sonuçlanabilir. Bazı
+      araştırmalar, askıda kalan çalışanın 10 dakika içinde kurtarılmasını tavsiye etmektedir.</p>
+  </div>
+
+  <div class="callout">
+    <h4>Travma Kayışı</h4>
+    <p>Askıda kalan çalışanın kan dolaşımının bir miktar sürdürülebilmesi için kullanılan travma kayışı, ayağın
+      içine sokulabileceği bir halka oluşturarak çalışanın kısmen ayağa kalkmasına ve arterlerinden ağırlık
+      almasına imkân tanır; böylece kurtarma ekibi gelene kadar zaman kazandırır.</p>
+  </div>
+
+  <div class="callout">
+    <h4>Kurtarma Sonrası Dikkat</h4>
+    <p>Bilincini yitirecek kadar uzun süre askıda kalan bir çalışan kurtarılırken dikkatli olunmalıdır; literatür,
+      kurtarılan çalışanı diz çökmüş pozisyondan oturma ve ardından sırtüstü pozisyona geçirmek için asgari
+      30-40 dakika süre tanınmasını önermektedir.</p>
+  </div>
+</section>
+
+<!-- ================= BÖLÜM ÖZETİ ================= -->
+<section id="ozet">
+  <div class="sec-label">Bölüm Özeti</div>
+  <h2 class="sec-title">Öğrenme Çıktıları ve Bölüm Özeti</h2>
+  <div class="callout">
+    <h4>1 — Yüksekte çalışmayı, yükseklik kavramını, planlamayı ve kontrol hiyerarşisini açıklayabilme</h4>
+    <p>İnşaat sektörü, ülkemizde yüksekten düşme tipi iş kazalarının en sık yaşandığı faaliyet koludur.
+      Mevzuatımıza göre yüksekte çalışma, seviye farkı bulunan ve düşme sonucu yaralanma ihtimalinin
+      oluşabileceği her türlü alanda yapılan çalışma olarak tanımlanır; bu nedenle zemin seviyesi altındaki
+      çalışmalar da kapsama girebilir. Yüksekte çalışma kontrol hiyerarşisi; kaçınma, önleme, düşme mesafesinin
+      azaltılması ve idari kontroller basamaklarını izler ve en etkin çözümün ilk tercih edilmesi esasına
+      dayanır.</p>
+  </div>
+  <div class="callout">
+    <h4>2 — Önleyici, kısıtlayıcı ve durdurucu sistemler ile KKD ve erişim ekipmanlarını tanımlayabilme</h4>
+    <p>Yüksekte çalışmaktan kaçınılamıyorsa öncelikle toplu koruma sağlayan kenar koruma sistemleri, rüzgar
+      perdeleri ve kapak sistemleri tercih edilmelidir. Düşme önlenemiyorsa güvenlik ağları, hava yastıkları,
+      yakalama platformları ve kişisel düşmeyi durdurucu sistemler devreye girer. Kişisel koruyucu donanımlar
+      yalnızca son çare olarak kullanılır; merdivenler, cephe iskeleleri, sütunlu platformlar ve asılı erişim
+      donanımları gibi ekipmanların doğru seçimi ve düzenli bakımı iş kazalarının azaltılmasında kilit rol
+      oynar.</p>
+  </div>
+</section>
+
+<!-- ================= QUIZ ================= -->
+<section id="quiz">
+  <div class="sec-label">Neler Öğrendik?</div>
+  <h2 class="sec-title">Kendini Sına</h2>
+  <div class="quiz-progress">
+    <span id="quiz-position">Soru 1 / 10</span>
+    <span class="score-pill" id="quiz-score">Doğru: 0</span>
+  </div>
+  <div id="quiz-container"></div>
+  <button class="reset-btn" id="quiz-reset-btn">Sınavı sıfırla</button>
+</section>
+
+</div>
+
+<div class="stripe"></div>
+<footer>Kaynak: İnşaat Sektöründe İş Sağlığı ve Güvenliği I — Bölüm 3 (Maden, Metal ve İnşaat Sektörlerinde İş Sağlığı ve Güvenliği)</footer>
+
+<a href="#cover" class="top-link" id="top-link">&uarr;</a>
+
+<script src="assets/script.js"></script>
+<script>
+/* =========================================================
+   PAGE-SPECIFIC DATA + INIT CALLS — Bölüm 3
+   ========================================================= */
+
+const fizikYillar = [
+  ["2013","521"],["2014","501"],["2015","473"],["2016","496"],["2017","587"],["2018","591"]
+];
+(function renderFizikYillar(){
+  const body=document.getElementById('fizik-yillar-body');
+  fizikYillar.forEach(row=>{
+    const tr=document.createElement('tr');
+    tr.innerHTML = `<td style="font-family:var(--font-mono);color:var(--orange)">${row[0]}</td><td>${row[1]}</td>`;
+    body.appendChild(tr);
+  });
+})();
+
+const fizikNedenler = [
+  ["Kat kenarlarından düşmeler (önlem alınmamış)","%21,21"],
+  ["Yapı içerisindeki diğer boşluklardan düşmeler","%17,01"],
+  ["Kalıp işlerinin yürütümü esnasında düşmeler","%12,46"],
+  ["Cephe iskelelerinden düşmeler","%10,68"],
+  ["Çatıdan düşmeler","%9,3"],
+  ["Kullanılan iş ekipmanı kaynaklı düşmeler","%8,27"],
+  ["Direkten düşmeler","%3,26"],
+  ["Sütunlu çalışma platformu ve diğer iskelelerden düşmeler","%2,61"],
+  ["Diğer düşme tipleri","%15,2"]
+];
+(function renderFizikNedenler(){
+  const body=document.getElementById('fizik-nedenler-body');
+  fizikNedenler.forEach(row=>{
+    const tr=document.createElement('tr');
+    tr.innerHTML = `<td>${row[0]}</td><td style="font-family:var(--font-mono);color:var(--orange)">${row[1]}</td>`;
+    body.appendChild(tr);
+  });
+})();
+
+const hiyerarsiReset = initBucketSort('hiyerarsi-pool','hiyerarsi-targets',
+  [
+    {key:"kacinma",label:"Yüksekte Çalışmaktan Kaçınma"},
+    {key:"onleme",label:"Düşmelerin Önlenmesi"},
+    {key:"azaltma",label:"Düşme Mesafesi/Sonuçlarının Azaltılması"},
+    {key:"idari",label:"İdari Kontroller"}
+  ],
+  [
+    {label:"Merdivene çıkmak yerine teleskopik araç kullanılması", correct:"kacinma"},
+    {label:"Kabloların montajının zemin seviyesinde yapılması", correct:"kacinma"},
+    {label:"Geçici kenar koruma sistemi (korkuluk) kurulması", correct:"onleme"},
+    {label:"Hareketi kısıtlayıcı sistemle çalışanın korumasız kenara yaklaşmasının engellenmesi", correct:"onleme"},
+    {label:"Çalışma alanının altına güvenlik ağı veya hava yastığı kurulması", correct:"azaltma"},
+    {label:"Kişisel düşmeyi durdurucu sistem ile çalışılması", correct:"azaltma"},
+    {label:"Tehlikeli alanlarda uyarı levhaları ve belirlenmiş sınır çizgileri kullanılması", correct:"idari"},
+    {label:"Yüksekte yapılan çalışmaların ehil bir kişi tarafından gözetim altında yürütülmesi", correct:"idari"}
+  ]
+);
+document.getElementById('hiyerarsi-reset-btn').addEventListener('click', hiyerarsiReset);
+
+initFlipCards('onleyici-flip', [
+  {tag:"tehlikeli", tagText:"Toplu Koruma", title:"Geçici Kenar Koruma Sistemi",
+   text:"Genellikle \"korkuluk\" olarak adlandırılır ve açık kenarlardan, döşemedeki açıklıklardan düşme riskini ortadan kaldırmak için kullanılır. TS EN 13374 standardına göre A, B ve C olmak üzere üç sınıfı bulunur; çalışma yüzeyi açısı 60°'den fazla olan alanlarda kullanılamaz."},
+  {tag:"tehlikeli", tagText:"Toplu Koruma", title:"Rüzgar Perdesi",
+   text:"Yüksek katlı bina inşaatlarında hem çalışan hem de malzeme düşmesini önlemek için kullanılan kenar koruma sistemidir. Çalışanları rüzgar ve yağmur gibi iklim koşullarından da korur, birden fazla kat yüksekliğine yayılabilir ve vinç kullanımı gerektirmez."},
+  {tag:"tehlikeli", tagText:"Toplu Koruma", title:"Kapak Sistemi",
+   text:"Çalışma yüzeyindeki boşluklardan düşmeleri önlemek için kullanılan etkili bir mühendislik kontrolüdür. Kapaklar üstünden geçecek ağırlığın iki katını destekleyecek şekilde yapılmalı ve yerinden çıkmayacak şekilde sabitlenmelidir."},
+  {tag:"coktehlikeli", tagText:"Kişisel Koruma", title:"Hareketi Kısıtlayıcı Sistem",
+   text:"Kişinin düşme riski olan bir konuma ulaşmasını fiziksel olarak engelleyerek hareketini kontrol etmek amacıyla kullanılan aktif kişisel korunma önlemidir. Bağlantı halatı ile ankraj veya yatay yaşam hattına bağlanan tam vücut emniyet kemerinden oluşur; düşmeyi durdurma amacıyla kullanılmaz."},
+  {tag:"coktehlikeli", tagText:"Kişisel Koruma", title:"Çalışma Konumlandırma Sistemi",
+   text:"Serbest düşme mesafesini sınırlayan ve daha düşük bir seviyeye düşme nedeniyle yaralanma riskini azaltan kişisel hareketi kısıtlayıcı sistemdir. Bir düşüşü durdurmak için tasarlanmamıştır; kullanılırken ikincil bir yedekleme olarak kişisel düşmeyi durdurucu sistem de bulundurulmalıdır."},
+  {tag:"tehlikeli", tagText:"Bağlantı Noktası", title:"Ankraj ve Yaşam Hattı",
+   text:"\"Sabitleme noktaları\" olarak da bilinen ankrajlar, kişisel koruyucu donanımların bağlanacağı sistemin bir parçasıdır. Mümkün olduğunda çalışanın baş ya da omuz hizasının üzerinde oluşturulmalı; ankraj tertibatları ve yaşam hatları TS EN 795 standardında sınıflandırılmalıdır."}
+]);
+
+const durdurucuReset = initMatchActivity('durdurucu-pool','durdurucu-slots', [
+  {term:"Güvenlik Ağları", def:"Olası bir düşmede çalışanları güvenli bir mesafede yakalamak için kullanılan, genellikle sentetik malzemelerden üretilen ağlardır."},
+  {term:"Hava Yastıkları", def:"Düşme durumunda yastık görevi gören, yumuşak dolgulu veya havayla şişirilmiş çanta ya da minderlerdir."},
+  {term:"Yakalama Platformları", def:"Düşme durumunda bir çalışanı ya da düşen malzemeleri belirli bir yükseklikte yakalamak için çalışma alanının etrafına yerleştirilen geçici platformlardır."},
+  {term:"Kişisel Düşmeyi Durdurucu Sistem", def:"Emniyet kemeri, bağlantı halatı, bağlantı kancaları ve enerji sönümleyici gibi bileşenlerle çalışma alanından düşen bir çalışanı güvenli şekilde durduran sistemdir."}
+]);
+document.getElementById('durdurucu-reset-btn').addEventListener('click', durdurucuReset);
+
+const kkdTable = [
+  ["Baret","TS EN 397 / TS EN 12492","Düşen objelerden, çarpma ve darbelerden, elektrik çarpmalarından baş bölgesini korur; çene kayışı ile kullanılması tavsiye edilir."],
+  ["Tam Vücut Emniyet Kemeri","TS EN 361","Kişinin vücudunun tamamını destekler; kişisel düşmeyi durdurucu sistemlerin önemli bir bileşenidir. Yalnızca arka veya göğüs \"D\" halkasına bağlanmalıdır."],
+  ["Çalışma Konumlama Kemeri","TS EN 358","Kişiyi belli bir pozisyonda ve çalışma alanına belli bir mesafede sabit tutar; bir düşüşü durdurmak için tasarlanmamıştır, tam vücut emniyet kemeri yerine kullanılamaz."],
+  ["Bağlantı Halatları (Lanyard)","—","Kullanıcının emniyet kemerini ve ankraj noktasını birbirine bağlayan ara ekipmandır; enerji sönümleyicili veya konumlandırma halatı türleri bulunur."],
+  ["Bağlantı Kancaları (Karabina)","TS EN 362","Yüksekte çalışma bileşenlerini birbirine bağlar; kapısının istem dışı açılmasına karşı kilitleme sistemine sahip olmalıdır."],
+  ["Enerji Sönümleyiciler","—","Yüksekten düşme esnasında kullanıcıya uygulanan darbe kuvvetlerini sınırlamak için tasarlanmış, düşmeyi durdurucu sistemlerde kullanılan ekipmandır."]
+];
+(function renderKkdTable(){
+  const body=document.getElementById('kkd-body');
+  kkdTable.forEach(row=>{
+    const tr=document.createElement('tr');
+    tr.innerHTML = `<td style="font-family:var(--font-display);font-weight:600;">${row[0]}</td><td style="font-family:var(--font-mono);color:var(--orange);font-size:13px;">${row[1]}</td><td>${row[2]}</td>`;
+    body.appendChild(tr);
+  });
+})();
+
+const erisimData = {
+  "Merdivenler":[
+    "Düşmeye karşı koruma sağlayan ekipmanlar değildir; ancak düşük riskli ve kısa süreli çalışmalar için tercih edilebilirler.",
+    "Kayma ve düşme olasılıklarını azaltmak için merdivende üç nokta temas kuralı uygulanmalıdır.",
+    "Merdiven konumlandırılırken 4'e 1 çekme kuralı dikkate alınmalıdır (düşeydeki 4 birim mesafe için yatayda azami 1 birim çekme).",
+    "TS EN 131-1'den TS EN 131-7'ye kadar farklı merdiven tiplerine ilişkin standartlar yürürlüktedir."
+  ],
+  "Cephe İskeleleri":[
+    "Yapı yüzeylerinde yürütülen işler ile bakım/onarım çalışmalarının güvenli yapılmasını sağlayan geçici yapılardır.",
+    "Boru-kelepçe sistemi, kamalı flanşlı sistem, fincan tip sistem gibi farklı türleri bulunur.",
+    "Ön yapımlı bileşenlerden oluşan cephe iskelelerinin TS EN 12810-1 standardına göre uygunluk belgesi olmalıdır.",
+    "Platformların etrafında en az 1 metre yükseklikte ana korkuluk ve en az 15 cm yükseklikte topuk levhası bulunmalıdır."
+  ],
+  "Sütunlu Çalışma Platformları":[
+    "İşverenlerin iskelelere alternatif olarak kullandığı, dikey sütuna tırmanan, güçle çalışan platformlardır.",
+    "Montajının ve sökülmesinin hızlı olması, omuz/bel rahatsızlığı riskini azaltması gibi avantajları vardır.",
+    "TS EN 1495+A2 standardına uygun olmalı ve yük diyagramı bulundurulmalıdır.",
+    "Yapıya bakan yüzey ile platform arasındaki açıklık 40 cm'den fazlaysa ana korkuluk en az 110 cm yükseklikte olmalıdır."
+  ],
+  "Asılı Erişim Donanımları":[
+    "Yapı dış cephelerinde yürütülen çalışmalarda yoğun tercih edilen, kaldırılıp indirilebilen iş ekipmanlarıdır.",
+    "Kurulumda ilk adım, donanımı sağlam ve güvenli bir yapıya sabitlemektir; havalandırma kanalı, baca gibi yerlere sabitlenmez.",
+    "\"Ölü yük kullanılarak sabitleme\" ve \"doğrudan yapıya sabitleme\" yöntemleri uygulanabilir.",
+    "Güvenlik kuralları, tasarım hesapları ve deneyler TS EN 1808 standardı ile belirlenir."
+  ],
+  "Yükseltilebilen Seyyar Çalışma Platformları":[
+    "İstenilen yüksekliklere ulaşarak güvenle çalışmayı sağlayan, kenar korumaları bulunan ekipmanlardır.",
+    "Makaslı platformlar, sepetli vinçler, bomlu platformlar ve dikey personel platformları farklı tipleridir.",
+    "Ekipman makası açık ya da bom uzatılmış hâldeyken yatayda hareket ettirilmemelidir.",
+    "Makasın en yüksek konumda olması veya bomun tamamen açılması hâlinde rüzgar önemli bir güvenlik sorunu oluşturabilir."
+  ]
+};
+initTabbedList('erisim-tabs','erisim-list', erisimData);
+
+const quizData = [
+  {q:"Aşağıdakilerin hangisinde yüksekte çalışma doğru tanımlanmıştır?",
+   options:["Seviye farkı bulunan ve düşme sonucu yaralanma ihtimalinin oluşabileceği her türlü alanda yapılan çalışma","Zemin seviyesinin altında yürütülen çalışmalar","1,8 metre ve daha yüksek yerlerde yürütülen çalışmalar","Bir kişinin adım atarak çıkmayacağı bir yükseklikte yürüttüğü çalışmalar","Seviye farkı bulunan her alanda yürütülen çalışmalar"], correct:0},
+  {q:"Aşağıdakilerden hangisi Yapı İşlerinde İş Sağlığı ve Güvenliği Yönetmeliği uyarınca yüksekte çalışmalarda uyulması gereken yükümlülük arasında yer almaz?",
+   options:["Yüksekte çalışma iş izni doldurulması","Yüksekte çalışma ekipman ve donanımlarının düzenli kontrollerinin yapılması","Yüksekte çalışma ile ilgili çalışanlara eğitim verilmesi","Yapılan çalışmaların ehil bir kişi gözetim ve kontrolünde gerçekleştirilmesi","İşlerin önceden uygun şekilde planlanması ve organize edilmesi"], correct:0},
+  {q:"Düşmelerin önlenmesi, idari kontroller, düşmelerin mesafe/sonuçlarının azaltılması ve yüksekte çalışmaktan kaçınma adımlarının doğru öncelik sıralaması aşağıdakilerden hangisidir?",
+   options:["Önleme - İdari kontroller - Azaltma - Kaçınma","İdari kontroller - Önleme - Kaçınma - Azaltma","İdari kontroller - Kaçınma - Azaltma - Önleme","Azaltma - Önleme - İdari kontroller - Kaçınma","Kaçınma - Önleme - Azaltma - İdari kontroller"], correct:4},
+  {q:"Düşme faktörünün 2 olduğu durum aşağıdakilerden hangisidir?",
+   options:["Ayak hizasında bağlantı yapıldığında","Baş üstü bir seviyede bağlantı yapıldığında","Bel hizasında bağlantı yapıldığında","Göğüs hizasında bağlantı yapıldığında","Omuz hizasında bağlantı yapıldığında"], correct:0},
+  {q:"Merdiven kullanımında, düşey-yatay olmak üzere asgari çekme oranları aşağıdakilerin hangisinde sırasıyla ve doğru olarak verilmiştir?",
+   options:["1:4","1:5","2:5","4:1","5:1"], correct:3},
+  {q:"Yapı İşlerinde İş Sağlığı ve Güvenliği Yönetmeliği uyarınca yapı işlerinde kullanılacak geçici kenar koruma sistemlerinin hangi standarda uygunluk belgesine sahip olması gerekmektedir?",
+   options:["TS EN 1004","TS EN 1495","TS EN 1263-1","TS EN 12810-1","TS EN 13374"], correct:4},
+  {q:"Aşağıdakilerden hangisi kişisel düşmeyi durdurucu sistemin temel bileşenlerinden biri değildir?",
+   options:["Travma kayışı","Ankraj noktası","Bağlantı halatı","Bağlantı kancaları","Tam vücut tipi emniyet kemeri"], correct:0},
+  {q:"Sütunlu çalışma platformlarında yapı yüzeyi ile platform arasındaki mesafe 40 cm'den fazla ise yapıya bakan yüzeydeki ana korkuluk yüksekliği en az ne kadar olmalıdır?",
+   options:["110 cm","100 cm","70 cm","50 cm","40 cm"], correct:0},
+  {q:"Aşağıdakilerden hangisi esnek ve dikey yaşam hattı kullanılacağı zaman açıklık mesafesinin hesaplanmasında dikkate alınması gereken şartlardan biri değildir?",
+   options:["Hatta oluşan 'V' şeklindeki sehim","Serbest düşme mesafesi","Açılmış durumdaki enerji sönümleyicinin uzunluğu","Esnek bir yaşam hattı kullanılmışsa hatta oluşan esneme miktarı","Tam vücut emniyet kemerinde meydana gelen esneme miktarı"], correct:0},
+  {q:"Düşme sonrasında askı travmasının etkisini azaltmak ve kurtarma ekibi gelene kadar zaman kazanmak için kullanılması gereken ekipman aşağıdakilerden hangisidir?",
+   options:["Travma kayışı","Baş koruyucu","Enerji sönümleyici","Tam vücut emniyet kemeri","Konumlandırma halatı"], correct:0}
+];
+initQuiz({
+  containerId:'quiz-container', positionId:'quiz-position', scoreId:'quiz-score',
+  resetBtnSelector:'#quiz-reset-btn', quizData:quizData
+});
+</script>
+</body>
+</html>

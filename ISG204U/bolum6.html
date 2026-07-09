@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Metal Sektöründe İş Sağlığı ve Güvenliği</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+  /* Local helper for a 2-column bucket-sort layout (this page only) */
+  .dd-targets.cols-2{grid-template-columns:1fr 1fr;}
+  @media(max-width:680px){.dd-targets.cols-2{grid-template-columns:1fr;}}
+  .cat-row td{background:var(--panel2);font-family:var(--font-mono);font-weight:700;color:var(--ink);}
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <div class="nav-brand">İSG <b>Bölüm 6</b></div>
+    <div class="nav-links" id="nav-links">
+      <a href="#giris">Giriş</a>
+      <a href="#metal-nedir">Metal Sektörü</a>
+      <a href="#turkiye">Türkiye'de Metal</a>
+      <a href="#islemler">Yapılan İşlemler</a>
+      <a href="#mevzuat">Mevzuat</a>
+      <a href="#fiziksel">Fiziksel Etmenler</a>
+      <a href="#diger-etmenler">Diğer Etmenler</a>
+      <a href="#quiz">Sınav</a>
+    </div>
+  </div>
+</nav>
+
+<div class="stripe"></div>
+
+<!-- ================= COVER ================= -->
+<div class="cover" id="cover">
+  <div class="cover-eyebrow">Bölüm 6 &middot; İş Sağlığı ve Güvenliği</div>
+  <h1>Metal Sektöründe <span>İş Sağlığı</span><br>ve Güvenliği</h1>
+  <p class="desc">Metal sektörünün genel özellikleri, sektörde yapılan işlemler, işin yürütümüne ilişkin mevzuat
+    ve sektöre özgü fiziksel, kimyasal, biyolojik, ergonomik ve psikososyal iş sağlığı ve güvenliği risk
+    etmenleri üzerine etkileşimli bir bölüm özeti.</p>
+  <div class="cover-keys">
+    <span class="kw">İş Sağlığı ve Güvenliği</span>
+    <span class="kw">Metal Sektörü</span>
+    <span class="kw">Metal Sektöründe İSG Risk Etmenleri</span>
+  </div>
+
+  <div class="cover-cards">
+    <div class="cover-card">
+      <div class="num">01</div>
+      <h3>Metal Sektöründe Genel Bilgiler</h3>
+      <p>Metal sektöründe genel bilgileri açıklayabilme.</p>
+    </div>
+    <div class="cover-card">
+      <div class="num">02</div>
+      <h3>Metal Sektöründe İSG Risk Etmenleri</h3>
+      <p>Metal sektöründe iş sağlığı ve güvenliği risk etmenlerini açıklayabilme.</p>
+    </div>
+  </div>
+
+  <button class="start-btn" onclick="document.getElementById('giris').scrollIntoView({behavior:'smooth'})">
+    Bölüme Başla
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+  </button>
+
+  <div class="toc">
+    <div class="toc-label">İçindekiler</div>
+    <div class="toc-grid">
+      <a class="toc-item" href="#giris"><span class="n">01</span>Giriş</a>
+      <a class="toc-item" href="#metal-nedir"><span class="n">02</span>Metal Sektörü / Tarihçesi</a>
+      <a class="toc-item" href="#turkiye"><span class="n">03</span>Türkiye'de Metal Sektörü</a>
+      <a class="toc-item" href="#islemler"><span class="n">04</span>Sektörde Yapılan İşlemler</a>
+      <a class="toc-item" href="#mevzuat"><span class="n">05</span>İSG ile İlgili Mevzuat</a>
+      <a class="toc-item" href="#fiziksel"><span class="n">06</span>Fiziksel Risk Etmenleri</a>
+      <a class="toc-item" href="#diger-etmenler"><span class="n">07</span>Diğer Risk Etmenleri</a>
+      <a class="toc-item" href="#ozet"><span class="n">08</span>Bölüm Özeti</a>
+      <a class="toc-item" href="#quiz"><span class="n">09</span>Sınav</a>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+<!-- ================= GİRİŞ ================= -->
+<section id="giris">
+  <div class="sec-label">Giriş</div>
+  <h2 class="sec-title">Çalışma Ortamında İş Sağlığı ve Güvenliği</h2>
+  <p class="lead">
+    Çalışma ortamında İş Sağlığı ve Güvenliğinin sağlanamaması başta iş kazaları ve meslek hastalıkları
+    olmak üzere birçok olumsuzluğu beraberinde getirir. Çalışanlar yaralanır, hastalanır ya da yaşamlarını
+    kaybedebilir, makineler zarar görür, malzeme ve ekipmanlar kaybedilebilir. Bu durum sonunda işçi,
+    işveren ve devleti temsil eden çeşitli kurumlar arasında hukuksal sorunların çıkmasına neden olur.
+    İşletmeler ayakta kalabilmek, sürdürülebilir rekabet üstünlüğü ve kâr elde edebilmek için çalışanlarını
+    korumak, üretim güvenliğini ve işletme güvenliğini sağlamak zorundadırlar.
+  </p>
+  <p class="lead">
+    İş sağlığı ve güvenliğine önem verilmediği takdirde iş kazaları ve meslek hastalıklarının artması
+    kaçınılmazdır. İş kazası sadece çalışanı etkilememekte, çalışanın ailesini, yakınlarını, iş arkadaşlarını,
+    işvereni, devleti ve dolayısıyla bütün ülke ve toplumu etkilemektedir. Sanayileşme, teknolojik gelişmeler
+    ve toplumsal bilinçlenme düzeyine bağlı olarak çalışanların sağlığı ve güvenliği ile ilgili yeni sorunlar
+    ortaya çıkmıştır; bu sorunları bütün hâlinde yönetebilmek için çıkarılan 6331 sayılı İSG Kanunu ve buna
+    bağlı yönetmelikler İSG kültürünü sürekli desteklemektedir.
+  </p>
+  <p class="lead">
+    Metal sanayi; gerek istihdam, gerek ekonomik, gerek savunma sanayi, gerek ulaştırma gerekse bütün
+    sektörler için düşünüldüğünde belki de en önemli iş koludur. Çünkü bütün sanayilerde üretimi sağlayacak
+    olan da yine demir çelikten üretilmiş tezgâhlar, aletler ve metallerdir. Metal sanayisinin ürettiği ürünler
+    bütün sanayiden çıkarıldığı zaman geriye neredeyse hiçbir şey kalmaz. Çalışanların bu sektörde çalışma
+    ortamında korunması; devletin, işverenin ve çalışanların bizzat kendilerinin iş güvenliği bilinci ile
+    yaptıkları çalışmalara bağlıdır.
+  </p>
+
+  <div class="tf-box">
+    <div class="tf-label">Bilgi Kontrolü &middot; Doğru / Yanlış</div>
+    <div class="tf-statement">Tüm metaller, civa hariç, oda sıcaklığında katı hâldedir.</div>
+    <div class="tf-btns">
+      <button class="tf-btn" onclick="answerTF(this,true)">Doğru</button>
+      <button class="tf-btn" onclick="answerTF(this,false)">Yanlış</button>
+    </div>
+    <div class="tf-fb">Doğru: Metallerin özelliklerinden biri, civa hariç tüm metallerin oda sıcaklığında katı
+      hâlde bulunmasıdır. Ayrıca metaller tel ve levha hâline getirilebilir, ışığı yansıtır, ısı ve elektriği
+      iletir ve yüksek mukavemet kuvvetine sahiptir.</div>
+  </div>
+</section>
+
+<!-- ================= METAL SEKTÖRÜ / TARİHÇESİ ================= -->
+<section id="metal-nedir">
+  <div class="sec-label">Öğrenme Çıktısı 1</div>
+  <h2 class="sec-title">Metal Sektöründe Genel Bilgiler</h2>
+  <p class="lead">
+    Metal, kendine has parlaklığı olan, yüksek elektrik ve ısı iletkenliğine sahip, şekil vermeye uygun ve
+    mukavemet özelliği çok yüksek olan madenlere verilen ortak isimdir. Altın, gümüş, platin, demir, çinko,
+    alüminyum, bakır, magnezyum en çok kullanılan metal türleridir.
+  </p>
+
+  <div class="gauge">
+    <div class="az">TEL / LEVHA<br><span style="opacity:.75">Şekil verilebilir, ışığı yansıtır</span></div>
+    <div class="teh">ISI &amp; ELEKTRİK<br><span style="opacity:.75">İletkenlik özelliği yüksektir</span></div>
+    <div class="cok">MUKAVEMET<br><span style="opacity:.75">Yoğunluğu ve dayanımı fazladır</span></div>
+  </div>
+
+  <p class="lead">
+    Metal sektörü ülkeler için çok büyük öneme sahiptir; ülkelerin gelişmişlik düzeyi, kişi başına tüketilen
+    metal miktarıyla ölçülmektedir. Yoğun bir rekabetin yaşandığı ve esnek çalışma biçimlerinin yaygın
+    olarak kullanıldığı bu sektör; demir-çelik, döküm, ham çelik, çelik boru, ferro alaşımlar, alüminyum ve
+    bakır gibi ana metal sanayinden, tüketici elektroniğine, otomotivden inşaat sektörüne kadar birçok
+    alanda ürün vermektedir. Özellikle döküm yöntemi metalin kullanımında en çok başvurulan yöntemdir;
+    sanayi ürünlerinin %90'ında en az bir döküm yöntemiyle hazırlanmış bir ürün bulunmaktadır.
+  </p>
+
+  <div class="callout">
+    <h4>Metal Sektörünün Tarihçesi</h4>
+    <p>Demirin ilk kullanım örnekleri MÖ 4000'lerde Sümer ve Mısır'da görülür; MÖ 1000 yıllarında Orta
+      Doğu'da demirin kullanılmaya başlanmasıyla "Demir Çağı" başlamıştır. Sanayi devrimiyle birlikte demir,
+      küçük el tezgâhlarından büyük fabrikalara taşınmıştır. Günümüzde çelik; içerisinde karbon, manganez,
+      silikon, fosfor, kükürt ve oksijen barındıran, demirin karbonla işlenmesi sonucu ortaya çıkan, mülkiyet
+      kaybı olmaksızın tekrar tekrar dönüştürülüp kullanılabilen dünyanın en önemli mühendislik ve yapı
+      malzemesidir. Yeryüzünde çıkarılan demir cevherinin neredeyse tamamı (%98) çelik üretiminde
+      kullanılmaktadır. 2016 yılında dünyada yaklaşık 2,35 milyar ton demir cevheri çıkarılmış, en büyük
+      üretici %40'lık oranla Avustralya olmuştur.</p>
+    <p>Cumhuriyet döneminde ülkemizde modern demir-çelik üretimi 1932'de Kırıkkale'de başlamış; kömür
+      havzalarına yakınlığı sebebiyle 1937'de Karabük tesisinin temeli atılmış, 1965'te Ereğli, 1970'te ise
+      İskenderun Demir Çelik tesisleri kurulmuştur.</p>
+  </div>
+</section>
+
+<!-- ================= TÜRKİYE'DE METAL SEKTÖRÜ ================= -->
+<section id="turkiye">
+  <div class="sec-label">Sayısal Veriler</div>
+  <h2 class="sec-title">Türkiye'de Metal Sektörü</h2>
+  <p class="lead">
+    Türkiye, kullandığı demirin yaklaşık %40'ına yakınını kendi topraklarından çıkarmakta ve işlemektedir;
+    kalan ihtiyacını ithalat yoluyla karşılamaktadır. Dünya genelinde Türkiye ham çelik üretiminde 8. sırada
+    yer almaktadır. Türkiye, tarihî bir rekora imza atarak 2017 yılında bir önceki yıla göre yaklaşık %13,2
+    artışla 37,5 milyon ton ham çelik üretimi gerçekleştirmiştir; bu üretimin 11,5 milyon tonu Ereğli,
+    İskenderun ve Karabük'teki entegre tesislerde demir cevheri kullanılarak üretilmiştir. Kişi başı 428 kg
+    çelik tüketimiyle Türkiye dünyada 8. sırada yer almaktadır. Sosyal Güvenlik Kurumu (SGK) istatistiklerine
+    göre metal sektöründe, 2019 yılı verilerine göre yaklaşık 200 bin işyeri ve 2 milyon çalışan bulunmaktadır.
+  </p>
+
+  <div class="tf-box">
+    <div class="tf-label">Bilgi Kontrolü &middot; Doğru / Yanlış</div>
+    <div class="tf-statement">Türkiye, ham çelik üretiminde dünyada 8. sırada yer almaktadır.</div>
+    <div class="tf-btns">
+      <button class="tf-btn" onclick="answerTF(this,true)">Doğru</button>
+      <button class="tf-btn" onclick="answerTF(this,false)">Yanlış</button>
+    </div>
+    <div class="tf-fb">Doğru: Dünya geneline bakıldığında Türkiye ham çelik üretiminde dünyada 8. sırada yer
+      almaktadır; dünyadaki demir rezervlerinin yaklaşık %80'ine sahip Avustralya, Rusya, Brezilya, Çin,
+      Hindistan, Ukrayna ve Kanada gibi ülkeler dikkate alındığında bu iyi bir sıralamadır.</div>
+  </div>
+
+  <h3 style="font-family:var(--font-display);font-weight:600;font-size:19px;margin-top:30px;">Tablo 6.1 &middot; Metal Sektörünün Alt İş Kolları</h3>
+  <p class="lead">"İş Sağlığı ve Güvenliğine İlişkin İşyeri Tehlike Sınıfları Tebliği"ne göre tehlikeli ve çok
+    tehlikeli sınıfta bulunan, metal sektöründeki 7 iş koluna bağlı alt iş kolları aşağıda listelenmiştir.</p>
+  <div class="table-scroll">
+    <table>
+      <thead><tr><th style="width:70px">Kod</th><th>Alt İş Kolu</th></tr></thead>
+      <tbody id="tablo61-body"></tbody>
+    </table>
+  </div>
+
+  <h3 style="font-family:var(--font-display);font-weight:600;font-size:19px;margin-top:34px;">Tablo 6.2 &middot; SGK İş Kazası ve Meslek Hastalığı İstatistikleri</h3>
+  <p class="lead">Metal sektöründe en fazla işyeri ve çalışan sayısına sahip 7 iş koluna ait SGK işyeri ve
+    çalışan sayısı ile bu işyerlerinde 2017-2019 yıllarında yaşanan iş kazası ve meslek hastalıkları
+    istatistikleri, yıl sekmelerinden seçilerek incelenebilir.</p>
+  <div class="tabs" id="tablo62-tabs"></div>
+  <div class="table-scroll">
+    <table>
+      <thead><tr>
+        <th style="width:60px">NACE</th><th>İş Kolu</th><th>İşyeri</th><th>Çalışan</th>
+        <th>İş Kazası</th><th>Meslek Hst.</th><th>İş Kazası Ölüm</th><th>Meslek Hst. Ölüm</th>
+      </tr></thead>
+      <tbody id="tablo62-body"></tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ================= METAL SEKTÖRÜNDE YAPILAN İŞLEMLER ================= -->
+<section id="islemler">
+  <div class="sec-label">Süreçler</div>
+  <h2 class="sec-title">Metal Sektöründe Yapılan İşlemler</h2>
+  <p class="lead">
+    Metal sektörünün yapısına bakıldığında metali ihtiyaç duyulan şekle ve özelliğe getirebilmek için çeşitli
+    işlemler kullanıldığı görülmektedir. İstenilen ürünün elde edilmesi ve son hâlini alması için birçok
+    işlem, "ilk işlemler" ve "son ürün elde etmek için yapılan işlemler" olarak iki grupta sıralanabilir.
+  </p>
+
+  <div class="dd-box">
+    <div class="dd-title">Etkinlik</div>
+    <p class="dd-desc">Aşağıdaki işlemleri, metal sektöründe yapıldıkları aşamaya (İlk İşlemler / Son Ürün
+      Elde Etmek İçin Yapılan İşlemler) göre sürükleyin.</p>
+    <div class="dd-pool" id="islem-pool"></div>
+    <div class="dd-targets cols-2" id="islem-targets"></div>
+    <button class="reset-btn dd-reset" id="islem-reset-btn">Etkinliği sıfırla</button>
+  </div>
+
+  <h3 style="font-family:var(--font-display);font-weight:600;font-size:19px;margin-top:34px;">Süreç Kartları</h3>
+  <p class="lead">Metal sektöründe yapılan başlıca işlemleri kartlara tıklayarak inceleyin.</p>
+  <div class="flip-grid" id="islem-flip"></div>
+
+  <h3 style="font-family:var(--font-display);font-weight:600;font-size:19px;margin-top:34px;">Türkiye'de Kullanılan Kaynak Teknikleri</h3>
+  <p class="lead">Kaynak işlemi, malzemeleri birbiriyle birleştirmek için kullanılan bir imalat yöntemidir;
+    genellikle metal veya termoplastik malzemeler üzerinde uygulanır. Türkiye'de sanayide çok çeşitli kaynak
+    teknikleri kullanılmaktadır.</p>
+  <div class="tabs" id="kaynak-tabs"></div>
+  <div class="list-box" id="kaynak-list" style="max-height:340px;"></div>
+</section>
+
+<!-- ================= MEVZUAT ================= -->
+<section id="mevzuat">
+  <div class="sec-label">Yasal Çerçeve</div>
+  <h2 class="sec-title">Metal Sektöründe İşin Yürütümü ve İSG ile İlgili Mevzuat</h2>
+  <p class="lead">Metal sektöründe iş sağlığı ve güvenliğini düzenleyen kanun ve yönetmelikler arasından
+    aramak istediğinizi yazabilirsiniz.</p>
+  <div class="searchbar">
+    <input type="text" id="mevzuat-input" placeholder="Mevzuat adı ara...">
+    <span class="count-pill" id="mevzuat-count"></span>
+  </div>
+  <div class="list-box" id="mevzuat-list"></div>
+</section>
+
+<!-- ================= FİZİKSEL RİSK ETMENLERİ ================= -->
+<section id="fiziksel">
+  <div class="sec-label">Öğrenme Çıktısı 2</div>
+  <h2 class="sec-title">Metal Sektöründe Fiziksel Risk Etmenleri</h2>
+  <p class="lead">
+    Metal sektöründe çoğunlukla makine ve tezgâhlarla çalışılmakta, üretim sürecinde çok çeşitli kesici,
+    delici ve sert aletler kullanılmaktadır. Sektörde iş sağlığı ve güvenliği alanında mekanik tehlikeler
+    (makine ve ekipman kaynaklı), fiziksel tehlikeler (gürültü, yetersiz havalandırma, yetersiz veya aşırı
+    aydınlatma) ve tehlikeli yöntem ve işlem kaynaklı tehlikeler ön plana çıkmaktadır. Aşağıdaki sekmelerden
+    fiziksel risk etmenlerinin ayrıntılarına ulaşabilirsiniz.
+  </p>
+  <div class="tabs" id="fiziksel-tabs"></div>
+  <div class="list-box" id="fiziksel-list" style="max-height:420px;"></div>
+
+  <div class="tf-box">
+    <div class="tf-label">Bilgi Kontrolü &middot; Doğru / Yanlış</div>
+    <div class="tf-statement">"Çalışanların Gürültü ile İlgili Risklerden Korunmalarına Dair Yönetmelik"e göre
+      en düşük maruziyet eylem değeri 80 dB(A), en yüksek maruziyet eylem değeri ise 85 dB(A)'dır.</div>
+    <div class="tf-btns">
+      <button class="tf-btn" onclick="answerTF(this,true)">Doğru</button>
+      <button class="tf-btn" onclick="answerTF(this,false)">Yanlış</button>
+    </div>
+    <div class="tf-fb">Doğru: Yönetmelikte belirtildiği üzere en düşük maruziyet eylem değeri 80 dB(A), en
+      yüksek maruziyet eylem değeri ise 85 dB(A) olarak belirlenmiştir. Gürültü düzeyi 80 dB'i aşan
+      işyerlerinde çalışanlara işe giriş ve periyodik muayenelerde odyometri testi yapılmalıdır.</div>
+  </div>
+
+  <h3 style="font-family:var(--font-display);font-weight:600;font-size:19px;margin-top:30px;">Tehlikeyi Riskiyle Eşleştirin</h3>
+  <p class="lead">Aşağıdaki fiziksel tehlike başlıklarını, Tablo 6.3'te belirtilen risklerle eşleştirin.</p>
+  <div class="match-grid">
+    <div class="match-col">
+      <h5>Riskler (sürükleyin)</h5>
+      <div id="fiziksel-match-pool"></div>
+    </div>
+    <div class="match-col">
+      <h5>Tehlike</h5>
+      <div id="fiziksel-match-slots"></div>
+    </div>
+  </div>
+  <button class="reset-btn dd-reset" id="fiziksel-match-reset-btn">Etkinliği sıfırla</button>
+
+  <div class="tf-box">
+    <div class="tf-label">Bilgi Kontrolü &middot; Doğru / Yanlış</div>
+    <div class="tf-statement">Metal sektöründe kayış, kasnak, dişli, çark sistemine sahip makinelerde
+      çalışanlar, bu hareketli alanlara genellikle el-kol gibi uzuvlarını kaptırarak kazalara maruz
+      kalmaktadır.</div>
+    <div class="tf-btns">
+      <button class="tf-btn" onclick="answerTF(this,true)">Doğru</button>
+      <button class="tf-btn" onclick="answerTF(this,false)">Yanlış</button>
+    </div>
+    <div class="tf-fb">Doğru: Dönen mekanizmalara sahip makinelerde çalışanlar genellikle el-kol gibi
+      uzuvlarını hareketli parçalara kaptırarak kazalara maruz kalmaktadır; bu nedenle dönen mekanizmalara
+      dolanacak yapıda uzun ve bol kıyafetler giyilmemelidir.</div>
+  </div>
+</section>
+
+<!-- ================= DİĞER RİSK ETMENLERİ ================= -->
+<section id="diger-etmenler">
+  <div class="sec-label">Kimyasal &middot; Biyolojik &middot; Ergonomik &middot; Psikososyal</div>
+  <h2 class="sec-title">Metal Sektöründe Diğer Risk Etmenleri</h2>
+  <p class="lead">
+    Metal sektöründe işyerlerinde iş kazalarına ve meslek hastalıklarına yol açan risk etmenleri; fiziksel,
+    kimyasal, biyolojik, ergonomik ve psikososyal risk etmenleri başlıkları altında ele alınmaktadır.
+  </p>
+
+  <div class="callout warn">
+    <h4>Kimyasal Etmenler</h4>
+    <p>Metal sektöründe çok sayıda kimyasal kullanılmakta olup bu kimyasallar çalışanlar için önemli risk
+      etmenlerindendir. Eritme ve arıtma, dökümcülük, pres ve dövme, haddehane, kaynak işlemleri, zımparalama
+      ve parlatma, metal yüzey işlemleri ve metali yeniden kazanma gibi işlemlerin hemen her aşamasında
+      çalışanlar bu kimyasalların etkilerine maruz kalmaktadır. Sıklıkla kullanılan toz boyalar, yaş boyalar
+      ve kesme sıvıları (bor yağları) gibi kimyasallar; solunum, sindirim ve cilt yoluyla alınmakta ve atopik
+      dermatit, alerjik astım, alerjik konjonktivit gibi sağlık sorunlarına, sıcak çarpmasına, zehirlenmeye ve
+      toz patlamasına yol açabilmektedir. Metal sektöründe patlayıcı maddeler kullanılmamaktadır.</p>
+    <p class="src">Bu bölümlerde çalışanlarda kan biyokimyası, toksikolojik testler, tam kan, tam idrar
+      tetkikleri ve tüm sistemlerin detaylı muayenesi yapılır.</p>
+  </div>
+
+  <div class="callout">
+    <h4>Biyolojik Etmenler</h4>
+    <p>Bakteri, virüs, parazit ve mantar enfeksiyonları, alerjik reaksiyonlar, zehirlenmeler (besin
+      zehirlenmeleri, alerjik dermatit, alerjik rinit, alerjik astım, tinea pedis, şarbon vb.) görülür. Dar ve
+      kapalı alanlarda birlikte çalışmaktan kaynaklanan tüberküloz, hepatit, HIV gibi enfeksiyon hastalıkları
+      sık karşılaşılabilen durumlardır. Kesici, delici iş ekipmanlarının (makas, bıçak vb.) kullanıldığı
+      işlemlerde tetanos da görülür. Çevre temizliği, kişisel hijyen, atık kontrolü, uygun KKD temini ve
+      kullandırılması, konuyla ilgili eğitimlerin verilmesi korunmada önemlidir.</p>
+  </div>
+
+  <div class="callout warn">
+    <h4>Ergonomik Etmenler</h4>
+    <p>Tekrarlayan hareketler, el emeğinin yoğun olduğu işler, elle taşıma, büyük ve ağır nesneleri kaldırma
+      işleri, uygunsuz duruş, uzun süre aynı pozisyonda çalışmak sık görülen ergonomik etmenler olup, aşırı
+      yorgunluğa, başta bel ağrısı olmak üzere kas iskelet sistemi rahatsızlıklarına ve damar hastalıklarına
+      yol açar. Metal sektöründe zımparalama, parlatma, dövme, pres vb. süreçlerinde tekrarlayan hareketler,
+      elle taşıma, ayakta ve oturarak uygun olmayan pozisyonlarda uzun süre kalma gibi ergonomik problem
+      alanlarıyla karşılaşılmaktadır.</p>
+  </div>
+
+  <div class="callout warn">
+    <h4>Psikososyal Etmenler</h4>
+    <p>Çalışma temposunun yüksek olması, sık sık değişmesi, vardiyalı çalışma düzenine geçişler, fazla
+      çalışma, sosyal güvencesinin olmaması, uygunsuz fiziksel ortamlarda çalışma, iletişim bozukluğu, iş
+      güvencesinin olmaması, görev tanımlarının net olmaması, psikolojik taciz (mobbing) ve ayrımcı politika
+      gibi etmenler çalışanlar üzerinde stres kaynağı oluşturur. Metal sektörü, üretim aşamalarının neredeyse
+      tamamı tehlikelerle dolu, azami dikkat gerektiren bir sektördür; artan ürün talebi çalışanları daha
+      fazla çalışmaya itmekte ve bu durum stres düzeylerini artırarak kazaları da beraberinde
+      getirmektedir.</p>
+  </div>
+
+  <h3 style="font-family:var(--font-display);font-weight:600;font-size:19px;margin-top:30px;">Tablo 6.3 &middot; Tehlikeleri Kategorisine Göre Sınıflandırın</h3>
+  <p class="lead">Aşağıdaki tehlike başlıklarını, Tablo 6.3'te ait oldukları risk etmeni grubuna sürükleyin.</p>
+  <div class="dd-box">
+    <div class="dd-title">Etkinlik</div>
+    <div class="dd-pool" id="kategori-pool"></div>
+    <div class="dd-targets" id="kategori-targets"></div>
+    <button class="reset-btn dd-reset" id="kategori-reset-btn">Etkinliği sıfırla</button>
+  </div>
+
+  <div class="callout">
+    <h4>Ek Bilgi &middot; Metal Yangınları</h4>
+    <p>Metal yangınları D sınıfı yangınlardır; magnezyum, titanyum, zirkonyum, sodyum, lityum ya da potasyum
+      gibi yanıcı metallerde meydana gelir. Metal yangınları boğularak söndürülür ve bunun için D tipi
+      kimyasal kuru toz kullanılır; en sık kullanılan söndürme maddesi sodyum klorittir. Metal yangınlarına
+      su, köpük, ABC veya AB ve BC tipi kuru tozlar kullanılamaz, sadece D tipi kuru toz kullanılır; erimiş
+      yanıcı metaller ile temas hâlinde olan su buhar oluşturur ve hidrojen patlamalarına yol açar.
+      Başlangıç aşamasının ötesindeki yanıcı metal yangınlarına sadece özel eğitimli itfaiye personeli
+      müdahale etmelidir.</p>
+    <p class="src">Kaynak: yangin.org, "Metal Yangınları ve Söndürülmesi" (Araştır Yanıt Anahtarı, Bölüm 6)</p>
+  </div>
+</section>
+
+<!-- ================= BÖLÜM ÖZETİ ================= -->
+<section id="ozet">
+  <div class="sec-label">Bölüm Özeti</div>
+  <h2 class="sec-title">Öğrenme Çıktıları ve Bölüm Özeti</h2>
+  <div class="callout">
+    <h4>1 — Metal sektöründe genel bilgileri açıklayabilme</h4>
+    <p>Tüm dünyada olduğu gibi ülkemizde de çalışma ortamında İş Sağlığı ve Güvenliğinin sağlanamaması,
+      başta iş kazaları ve meslek hastalıkları olmak üzere birçok olumsuzluğu beraberinde getirir. Metal
+      sanayi; istihdam, ekonomik, savunma ve ulaştırma açısından belki de en önemli iş koludur, çünkü bütün
+      sanayilerde üretimi sağlayacak olan da yine demir çelikten üretilmiş tezgâhlar, aletler ve metallerdir.
+      Metal sektörü, yapısı gereği oldukça yaygın bir alt sektörler grubunu kendi içinde barındırmakta ve
+      ülkemizde motor sektör olma özelliğiyle bilinmektedir; İş Sağlığı ve Güvenliğine İlişkin İşyeri Tehlike
+      Sınıfları Tebliğine göre tehlikeli ve çok tehlikeli sınıfın içerisinde yer alan iş kollarından oluşan
+      bir sektördür.</p>
+  </div>
+  <div class="callout">
+    <h4>2 — Metal sektöründe iş sağlığı ve güvenliği risk etmenlerini açıklayabilme</h4>
+    <p>Metal sektöründe çoğunlukla makine ve tezgâhlarla çalışılmakta, üretim sürecinde çok çeşitli kesici,
+      delici ve sert aletler kullanılmaktadır. Sektörde mekanik tehlikeler (makine ve ekipman kaynaklı),
+      fiziksel tehlikeler (gürültü, yetersiz havalandırma, yetersiz veya aşırı aydınlatma) ve tehlikeli
+      yöntem ve işlem kaynaklı tehlikeler ön plana çıkmaktadır. İşyerlerinde iş kazalarına ve meslek
+      hastalıklarına yol açan risk etmenleri; fiziksel, kimyasal, biyolojik, ergonomik ve psikososyal risk
+      etmenleri başlıkları altında ele alınmaktadır.</p>
+  </div>
+</section>
+
+<!-- ================= QUIZ ================= -->
+<section id="quiz">
+  <div class="sec-label">Neler Öğrendik?</div>
+  <h2 class="sec-title">Kendini Sına</h2>
+  <div class="quiz-progress">
+    <span id="quiz-position">Soru 1 / 10</span>
+    <span class="score-pill" id="quiz-score">Doğru: 0</span>
+  </div>
+  <div id="quiz-container"></div>
+  <button class="reset-btn" id="quiz-reset-btn">Sınavı sıfırla</button>
+</section>
+
+</div>
+
+<div class="stripe"></div>
+<footer>Kaynak: Metal Sektöründe İş Sağlığı ve Güvenliği — Bölüm 6 (Maden, Metal ve İnşaat Sektörlerinde İş Sağlığı ve Güvenliği)</footer>
+
+<a href="#cover" class="top-link" id="top-link">&uarr;</a>
+
+<script src="assets/script.js"></script>
+<script>
+/* =========================================================
+   PAGE-SPECIFIC DATA + INIT CALLS — Bölüm 6
+   ========================================================= */
+
+/* ---------- Tablo 6.1: alt iş kolları ---------- */
+const tablo61 = [
+  ["24","Ana metal sanayii", true],
+  ["24.1","Ana demir ve çelik ürünleri ile ferro alaşımların imalatı", false],
+  ["24.2","Çelikten tüpler, borular, içi boş profiller ve benzeri bağlantı parçalarının imalatı", false],
+  ["24.3","Çeliğin ilk işlenmesinde elde edilen diğer ürünlerin imalatı", false],
+  ["24.4","Değerli ana metaller ve diğer demir dışı metallerin imalatı", false],
+  ["24.5","Metal döküm sanayii", false],
+  ["25","Fabrikasyon metal ürünleri imalatı (makine ve teçhizat hariç)", true],
+  ["25.1","Metal yapı malzemeleri imalatı", false],
+  ["25.2","Metal tank, rezervuar ve muhafaza kapları imalatı", false],
+  ["25.3","Buhar jeneratörü imalatı, merkezî ısıtma sıcak su kazanları (boylerleri) hariç", false],
+  ["25.4","Silah ve mühimmat (cephane) imalatı", false],
+  ["25.5","Metallerin dövülmesi, preslenmesi, baskılanması ve yuvarlanması; toz metalurjisi", false],
+  ["25.6","Metallerin işlenmesi ve kaplanması; makinede işleme", false],
+  ["25.7","Çatal-bıçak takımı ve diğer kesici aletler ile el aletleri ve genel hırdavat malzemeleri imalatı", false],
+  ["25.9","Diğer fabrikasyon metal ürünlerin imalatı", false],
+  ["26","Bilgisayarların, elektronik ve optik ürünlerin imalatı", true],
+  ["26.1","Elektronik bileşenlerin ve devre kartlarının imalatı", false],
+  ["26.2","Bilgisayar ve bilgisayar çevre birimleri imalatı", false],
+  ["26.3","İletişim ekipmanlarının imalatı", false],
+  ["26.4","Tüketici elektroniği ürünlerinin imalatı", false],
+  ["26.5","Ölçme, test ve seyrüsefer amaçlı alet ve cihazlar ile saat imalatı", false],
+  ["26.6","Işınlama, elektro medikal ve elektro terapi ile ilgili cihazların imalatı", false],
+  ["26.7","Optik aletlerin ve fotografik ekipmanların imalatı", false],
+  ["26.8","Manyetik ve optik kaset, bant, CD, vb. ortamların imalatı", false],
+  ["27","Elektrikli teçhizat imalatı", true],
+  ["27.1","Elektrik motoru, jeneratör, transformatör ile elektrik dağıtım ve kontrol cihazlarının imalatı", false],
+  ["27.2","Akümülatör ve pil imalatı", false],
+  ["27.3","Kablolamada kullanılan teller ve kablolar ile gereçlerin imalatı", false],
+  ["27.4","Elektrikli aydınlatma ekipmanlarının imalatı", false],
+  ["27.5","Ev aletleri imalatı", false],
+  ["27.9","Diğer elektrikli ekipmanların imalatı", false],
+  ["28","Başka yerde sınıflandırılmamış makine ve ekipman imalatı", true],
+  ["28.1","Genel amaçlı makinelerin imalatı", false],
+  ["28.2","Genel amaçlı diğer makinelerin imalatı", false],
+  ["28.3","Tarım ve ormancılık makinelerinin imalatı", false],
+  ["28.4","Metal işleme makineleri ve takım tezgâhları imalatı", false],
+  ["28.9","Diğer özel amaçlı makinelerin imalatı", false],
+  ["29","Motorlu kara taşıtı, treyler (römork) ve yarı treyler (yarı römork) imalatı", true],
+  ["29.1","Motorlu kara taşıtlarının imalatı", false],
+  ["29.2","Motorlu kara taşıtları karoseri (kaporta) imalatı; treyler (römork) ve yarı treyler (yarı römork) imalatı", false],
+  ["29.3","Motorlu kara taşıtları için parça ve aksesuar imalatı", false],
+  ["30","Diğer ulaşım araçlarının imalatı", true],
+  ["30.1","Gemi ve tekne yapımı", false],
+  ["30.2","Demir yolu lokomotifleri ve vagonlarının imalatı", false],
+  ["30.3","Hava taşıtları ve uzay araçları ile bunlarla ilgili makinelerin imalatı", false],
+  ["30.4","Askerî savaş araçlarının imalatı", false],
+  ["30.9","Başka yerde sınıflandırılmamış ulaşım araçlarının imalatı", false]
+];
+(function renderTablo61(){
+  const body=document.getElementById('tablo61-body');
+  tablo61.forEach(row=>{
+    const tr=document.createElement('tr');
+    if(row[2]) tr.className='cat-row';
+    tr.innerHTML = `<td style="font-family:var(--font-mono);color:var(--orange)">${row[0]}</td><td>${row[1]}</td>`;
+    body.appendChild(tr);
+  });
+})();
+
+/* ---------- Tablo 6.2: SGK istatistikleri (yıla göre sekme) ---------- */
+const tablo62 = {
+  "2017":[
+    ["24","Ana Metal Sanayi",6854,168084,15670,49,29,0],
+    ["25","Fabrikasyon Metal Ürünler İmalatı (Mak. Teç. Hariç)",35657,379581,23627,28,36,0],
+    ["26","Bilgisayarların, Elektronik ve Optik Ürünlerin İmalatı",1705,34932,1015,2,0,0],
+    ["27","Elektrikli Teçhizat İmalatı",6100,145280,7543,24,7,0],
+    ["28","Başka yerde sınıflandırılmamış makine ve ekipman imalatı",11313,156563,8102,12,16,0],
+    ["29","Motorlu Kara Taşıtı, Treyler (Römork) ve Yarı Treyler (Yarı Römork) İmalatı",3752,202365,11475,33,9,0],
+    ["30","Diğer ulaşım araçlarının imalatı",1079,51278,3397,22,2,0]
+  ],
+  "2018":[
+    ["24","Ana Metal Sanayi",6658,162481,17403,64,43,0],
+    ["25","Fabrikasyon Metal Ürünler İmalatı (Mak. Teç. Hariç)",35565,364546,25716,34,48,0],
+    ["26","Bilgisayarların, Elektronik ve Optik Ürünlerin İmalatı",1824,34646,1163,2,2,0],
+    ["27","Elektrikli Teçhizat İmalatı",6319,145610,9230,28,10,0],
+    ["28","Başka yerde sınıflandırılmamış makine ve ekipman imalatı",11831,158330,9815,16,14,0],
+    ["29","Motorlu Kara Taşıtı, Treyler (Römork) ve Yarı Treyler (Yarı Römork) İmalatı",3823,199087,12133,47,6,0],
+    ["30","Diğer ulaşım araçlarının imalatı",1167,56346,4618,30,5,0]
+  ],
+  "2019":[
+    ["24","Ana Metal Sanayi",6589,163275,16413,95,19,0],
+    ["25","Fabrikasyon Metal Ürünler İmalatı (Mak. Teç. Hariç)",35131,376186,24085,56,31,0],
+    ["26","Bilgisayarların, Elektronik ve Optik Ürünlerin İmalatı",1957,38329,1274,2,0,0],
+    ["27","Elektrikli Teçhizat İmalatı",6522,149614,8486,34,3,0],
+    ["28","Başka yerde sınıflandırılmamış makine ve ekipman imalatı",12445,161629,9592,22,9,0],
+    ["29","Motorlu Kara Taşıtı, Treyler (Römork) ve Yarı Treyler (Yarı Römork) İmalatı",3943,201164,11768,59,4,0],
+    ["30","Diğer ulaşım araçlarının imalatı",1226,68535,6988,44,4,0]
+  ]
+};
+(function initTablo62(){
+  const years=Object.keys(tablo62);
+  let current="2019";
+  function renderTabs(){
+    const tabsEl=document.getElementById('tablo62-tabs');
+    tabsEl.innerHTML='';
+    years.forEach(y=>{
+      const btn=document.createElement('button');
+      btn.className='tab-btn'+(y===current?' active':'');
+      btn.textContent=y+' Yılı';
+      btn.onclick=()=>{ current=y; renderTabs(); renderTable(); };
+      tabsEl.appendChild(btn);
+    });
+  }
+  function renderTable(){
+    const body=document.getElementById('tablo62-body');
+    body.innerHTML='';
+    tablo62[current].forEach(row=>{
+      const tr=document.createElement('tr');
+      tr.innerHTML = `<td style="font-family:var(--font-mono);color:var(--orange)">${row[0]}</td><td>${row[1]}</td>`+
+        row.slice(2).map(v=>`<td>${v}</td>`).join('');
+      body.appendChild(tr);
+    });
+  }
+  renderTabs(); renderTable();
+})();
+
+/* ---------- İşlemler: ilk / son ürün bucket sort ---------- */
+const islemReset = initBucketSort('islem-pool','islem-targets',
+  [{key:"ilk",label:"İlk İşlemler"},{key:"son",label:"Son Ürün Elde Etmek İçin Yapılan İşlemler"}],
+  [
+    {label:"Cevher ve hurda eritme ve arıtma", correct:"ilk"},
+    {label:"Dökümcülük", correct:"ilk"},
+    {label:"Dövme – şekillendirme ve presleme", correct:"ilk"},
+    {label:"Kaynakçılık ve metal kesme", correct:"ilk"},
+    {label:"Sinterleme", correct:"ilk"},
+    {label:"Talaşlı imalat (Torna, freze vb.)", correct:"ilk"},
+    {label:"Taşlama", correct:"son"},
+    {label:"Parlatma", correct:"son"},
+    {label:"Zımparalama", correct:"son"},
+    {label:"Yüzey işleme", correct:"son"},
+    {label:"Yüzey kaplama işlemleri", correct:"son"}
+  ]
+);
+document.getElementById('islem-reset-btn').addEventListener('click', islemReset);
+
+/* ---------- İşlemler: süreç flip kartları ---------- */
+initFlipCards('islem-flip', [
+  {tag:"tehlikeli", tagText:"İlk İşlem", title:"Birincil Eritme ve Arıtma",
+   text:"Zenginleştirilmiş cevherlerden metal elde etme işlemidir."},
+  {tag:"tehlikeli", tagText:"İlk İşlem", title:"İkincil Eritme ve Arıtma",
+   text:"Hurdalardan ve işlem atıklarından metalin yeniden kazanılması işlemidir."},
+  {tag:"tehlikeli", tagText:"İlk İşlem", title:"Dökümcülük",
+   text:"Sırasıyla maça kumu ve model hazırlama, kalıp kumu ve kalıp hazırlama, döküm ve ateş hazırlama, metal eritme ve arıtma, kalıp içine metal dökme, kalıptaki metal dökümü soğutma, kalıptan dökümü çıkarma (derece bozma) ve temizleme-çapak giderme adımlarından oluşur. Demir, çelik, pirinç ve bronz geleneksel döküm metalleridir; dökümcülük sektöründe en çok gri ve sfero demir dökümü yapılır."},
+  {tag:"coktehlikeli", tagText:"İlk İşlem", title:"Dövme ve Presleme",
+   text:"Metal parçalarına yüksek basınç uygulanarak şekil verilmesi işlemleridir. Preslemede genellikle yaprak, şerit veya rulo hâlindeki metal, ortam ısısında kesme, presleme, çekme gibi işlemlere tabi tutularak belirli şekillere sokulur."},
+  {tag:"tehlikeli", tagText:"İlk İşlem", title:"Haddehaneler",
+   text:"Metallerin eritilerek çeşitli şekillere sokulmak suretiyle makineler yardımıyla inceltilmesi ve şekil verilmesi işine haddeleme, bu işlerin yapıldığı yerlere haddehane denir. Hem sıcak hem de soğuk işlem uygulanabilmektedir."},
+  {tag:"coktehlikeli", tagText:"İlk İşlem", title:"Kaynakçılık ve Sıcak Kesme",
+   text:"Sıcak veya basınç altında metal ya da plastik parçaların birleştirilmesi işlemlerinin genel adıdır. Metal sektörünün en yüksek riskli alanlarından biridir; çok çeşitli kaynak teknikleri kullanılmaktadır."},
+  {tag:"tehlikeli", tagText:"Talaşlı İmalat", title:"Tornalar",
+   text:"Sinterlenmiş metallerden oluşan kesici, delici uçlara sahiptir. Soğutmak, işlem kalitesini artırmak ve kesici delici yüzeylerin ömrünü uzatmak amacıyla sıvı ve yağ bazlı metal işleme sıvıları kullanılır."},
+  {tag:"tehlikeli", tagText:"Son İşlem", title:"Metal Yeniden Kazanma",
+   text:"Demir dışındaki metal sanayisinin ikincil üretiminin %95'ini alüminyum, bakır, kurşun ve çinko oluşturur. Magnezyum, civa, nikel, kıymetli metaller, kadmiyum, selenyum, kobalt, kalay ve titanyum hurdadan yeniden kazanılan metallerdir."}
+]);
+
+/* ---------- Kaynak teknikleri sekmeleri ---------- */
+const kaynakData = {
+  "Elektrik Ark Kaynakları":[
+    "Elektrik ark kaynağı düşük voltajlı yüksek ampere sahip kaynak makinelerinde yapılmaktadır. Örtülü Elektrik Ark Kaynaklarında, kaynak işleminde kullanılan elektrot çubuklarının üzeri örtü maddeleriyle kaplanmıştır; çekirdek elektrik akımını ana malzemeye iletir ve ısı etkisiyle eriyerek kaynak ağzını doldurur.",
+    "Gaz Altı Ark Kaynaklarında çıplak elektrot ve örtü amaçlı inert/aktif gazlar (argon, helyum, karbondioksit vb.) kullanılır. Eriyen elektrotla gaz altı kaynağı (MİG/MAG) ve Tungsten inert gaz altı kaynağı (TİG) bu grubun alt türleridir.",
+    "Toz Altı Ark Kaynağında, kaynak elektrodunun temas ettiği noktaya akıtılan yanmayan bir malzeme (örn. grafit) ile kaynak yapılan nokta üzerinde bir örtü oluşturulur; otomatik bir kaynak yöntemidir.",
+    "Nokta veya Punta Kaynağı, kaynak olacak parçaların elektrik akımı geçişine olan direncinden yararlanarak yapılan bir kaynak işlemidir.",
+    "Elektron Işın Kaynağı, elektron tabancasından çok yüksek hızla yönlendirilen elektronların kinetik enerjisinden yararlanılan bir ergitme esaslı kaynak yöntemidir."
+  ],
+  "Lazer Kaynağı":[
+    "Lazer ışının milisaniyelerle hesaplanabilecek seviyelerde malzemeyi ısıtması ile yapılır. Enerji, optikler sayesinde tam odak noktasına yüksek yoğunlukla bırakılır; küçük alanlarda ısı dağılmadan kaynak işlemi yapılmaktadır. Ülkemizde lazer kaynağı daha çok otomotiv sektöründe kullanılmaktadır."
+  ],
+  "Oksijen-Gaz Kaynakları":[
+    "Gaz kaynağında parçaların birleşme yerlerini ergime sıcaklığına kadar ısıtmak için asetilen, hidrojen, metan, propan, bütan vb. yanıcı gazlardan yararlanılmaktadır. Kolay temin edilebilmesi ve yüksek sıcaklıkta ısı vermesi (~3000°C) nedeniyle en çok asetilen gazı ile LPG tercih edilmektedir. Kaynak tipi kullanılan yanıcı gaz türüne göre isimlendirilir: Oksi-Asetilen, Oksi-Hidrojen, Oksi-LPG, Oksi-Doğalgaz."
+  ]
+};
+initTabbedList('kaynak-tabs','kaynak-list', kaynakData);
+
+/* ---------- Mevzuat arama listesi ---------- */
+const mevzuatListesi = [
+  "4857 İş Kanunu",
+  "5510 Sosyal Sigortalar ve Genel Sağlık Sigortası Kanunu",
+  "6331 İş Sağlığı ve Güvenliği Kanunu",
+  "Binaların Yangından Korunması Hakkında Yönetmelik",
+  "Çalışanların Gürültü ile İlgili Risklerden Korunmalarına Dair Yönetmelik",
+  "Çalışanların İş Sağlığı ve Güvenliği Eğitimlerinin Usul ve Esasları Hakkında Yönetmelik",
+  "Çalışanların Patlayıcı Ortamların Tehlikelerinden Korunması Hakkında Yönetmelik",
+  "Çalışanların Titreşimle İlgili Risklerden Korunmalarına Dair Yönetmelik",
+  "Çalışma gücü ve meslekte kazanma gücü kaybı oranı tespit işlemleri yönetmeliği",
+  "Çocuk ve Genç İşçilerin Çalıştırılma Usul ve Esasları Hakkında Yönetmelik",
+  "Ekranlı Araçlarla Çalışmalarda Sağlık ve Güvenlik Önlemleri Hakkında Yönetmelik",
+  "Elektrik İç Tesisler Yönetmeliği",
+  "Elektrik Tesislerinde Topraklamalar Yönetmeliği",
+  "Elle Taşıma İşleri Yönetmeliği",
+  "Geçici veya Belirli Süreli İşlerde İş Sağlığı ve Güvenliği Hakkında Yönetmelik",
+  "Hijyen Eğitimi Yönetmeliği",
+  "İlkyardım Yönetmeliği",
+  "İş Ekipmanlarının Kullanımında Sağlık ve Güvenlik Şartları Yönetmeliği",
+  "İş Güvenliği Uzmanlarının Görev, Yetki ve Sorumluluk ve Eğitimleri Hakkında Yönetmelik",
+  "İş kanununa ilişkin çalışma süreleri yönetmeliği",
+  "İş kanununa ilişkin fazla çalışma ve fazla sürelerle çalışma yönetmeliği",
+  "İş Sağlığı ve Güvenliği Kurulları Hakkında Yönetmelik",
+  "İş Sağlığı ve Güvenliği Risk Değerlendirmesi Yönetmeliği",
+  "İşyeri Bina ve Eklentilerinde Alınacak Sağlık ve Güvenlik Önlemlerine İlişkin Yönetmelik",
+  "İşyeri Hekimi ve Diğer Sağlık Personelinin Görev, Yetki, Sorumluluk ve Eğitimleri Hakkında Yönetmelik",
+  "İşyerlerinde Acil Durumlar Hakkında Yönetmelik",
+  "İş Sağlığı ve Güvenliği Hizmetleri Yönetmeliği",
+  "Kanserojen veya Mutajen Maddelerle Çalışmalarda Sağlık ve Güvenlik Önlemleri Hakkında Yönetmelik",
+  "Kimyasal Maddelerle Çalışmalarda Sağlık ve Güvenlik Önlemleri Hakkında Yönetmelik",
+  "Kişisel Koruyucu Donanımların İşyerlerinde Kullanılması Hakkında Yönetmelik",
+  "Makine Emniyet Yönetmeliği",
+  "Muhtemel Patlayıcı Ortamda Kullanılan Teçhizat ve Koruyucu Sistemler ile İlgili Yönetmelik",
+  "Sağlık ve Güvenlik İşaretleri Yönetmeliği",
+  "Tehlikeli ve Çok Tehlikeli Sınıfta Yer Alan İşlerde Çalıştırılacakların Mesleki Eğitimlerine Dair Yönetmelik",
+  "Tozla Mücadele Yönetmeliği"
+];
+initSearchList('mevzuat-input','mevzuat-list','mevzuat-count', mevzuatListesi);
+
+/* ---------- Fiziksel risk etmenleri sekmeleri (Tablo 6.3 detayları) ---------- */
+const fizikselData = {
+  "Mekanik":[
+    "Dönen, hareketli iş ekipmanları vücut travmalarına (sıkıştırma, ezilme, kesilme vb.) yol açar. Kayış, kasnak, dişli, çark sistemine sahip makinelerde çalışanlar bu hareketli alanlara genellikle el-kol gibi uzuvlarını kaptırarak kazalara maruz kalmaktadır. Küçük aletlerin kullanımıyla yapılan işlerde zımpara taşları, dönen bıçaklar, freze bıçakları da tehlike oluşturmaktadır; korunmak için dikkatli çalışılmalı, dönen mekanizmalara dolanacak yapıda uzun ve bol kıyafetler giyilmemeli, hareketli kısımlara koruyucu takılmalıdır."
+  ],
+  "Elektrik":[
+    "Elektrik tesisatı, trafo, jeneratör, yıldırım, statik elektrik, akümülatör ve iş ekipmanları; elektrik akımına kapılma, elektrik şoku, kanda ayrışma, kalpte fibrilasyon, doku yanıkları ve tahribatı gibi risklere yol açar. Kaynak makineleri 30-40 volt elektrikle çalışırken boşta kalma gerilimleri en az 2 kat daha fazladır; çalışanların kullandığı eldivenler yalıtımlı, yırtık ve deliği olmayan ürünler olmalıdır."
+  ],
+  "Termal Konfor":[
+    "Sıcaklık, nem, hava akım hızı ve radyant ısı ile ilgili atmosferik şartlar; yüksek sıcaklık ve nemli ortamlarda sıcak çarpması, tuz ve mineral kayıpları, ısı kramp­ları, dikkat bozuklukları, aşırı yorgunluk, mantar oluşumu (tinea pedis) ve soğuk algınlıklarına yol açar. Metallerde ortalama 1500°C gibi yüksek sıcaklıklarda eritme işlemi yapılır. Oturarak yapılan işlerde uygun sıcaklık 21-25°C, orta dereceli ağır işlerde 19-23°C, ağır işlerde 17-21°C'dir."
+  ],
+  "Aydınlatma":[
+    "Aydınlatma sistemi yetersizliği görme keskinliğinde azalma, görüş alanının kısıtlanması ve ışığa duyarlılığa yol açar. Endüstriyel aydınlatma şartları EN 12464 standartlarında belirtilmiştir; istenen minimum aydınlık düzeyleri 50 lüx ile 1000 lüx arasında değişebilmektedir. Hassas işleme için (0,1 mm'den küçük toleranslı) ortalama 500 lüx'lük bir aydınlatma gereklidir."
+  ],
+  "Gürültü":[
+    "İş ekipmanları (dönen ekipmanlar, kesme, delme, pres vb.) ve havalandırma işlemleri; geçici ve kalıcı işitme kaybı, kulak çınlaması, hipertansiyon, ritim bozuklukları, uyku düzensizliği, dikkat dağınıklığı ve iletişim bozukluklarına yol açar. En düşük maruziyet eylem değeri 80 dB(A), en yüksek maruziyet eylem değeri 85 dB(A)'dır. Toplu koruma, gürültü maruziyetini azaltmada ana etmen olarak kullanılmaktadır."
+  ],
+  "Titreşim":[
+    "El-kol titreşimi ve vücut titreşimi olmak üzere iki tiptir; tüm vücut titreşimine bağlı omurga hasarları (en çok bel), el-kol titreşimine bağlı Raynaud fenomeni, beyaz parmak sendromu, karpal tünel sendromu gibi rahatsızlıklara yol açar. Bütün vücut titreşimi maruziyetinde günlük maruziyet eylem değeri 0,5 m/s², maruziyet sınır değeri 1,15 m/s²'dir. El-kol titreşimi maruziyetinde günlük maruziyet eylem değeri 2,5 m/s², maruziyet sınır değeri 5 m/s²'dir."
+  ],
+  "Tozlar":[
+    "Öğütme, kırma, paketleme, hammadde depoları, havalandırma ve temizlik işlemleri kaynaklı tozlar; solunum sistemi hastalıkları, mesleki astım ve aşırı duyarlılık akciğer enfeksiyonuna (hipersensitivite pnömonisi) yol açar. Berilyum, kalay ve bazı demir tozları fibrojenik özellik gösterir; kurşun, nikel, krom, kadmiyum gibi ağır metal tozları toksik etki gösterir ve kanser gelişiminde tetikleyici rol oynayabilir."
+  ],
+  "Radyasyon":[
+    "Metal sektöründe çalışanların maruz kaldığı radyasyon kaynağı olarak ultraviyole (UV) ve kızılötesi (IR) ışınlar sayılabilir; doğal UV kaynağı güneş ışınları, ısı yayan metaller ve kaynak yöntemlerinden yayılan ışınlar radyasyon kaynaklarıdır. Bu ışınlar cilt ve göz hasarlarına (keratokonjonktivit, 'kaynakçı gözü') yol açabilir; kızılötesi ışınlara maruziyet erken yaşta katarakt oluşumuna neden olabilir ('cam üfleyici kataraktı'). Korunmak için radyasyona neden olan çalışmalar kısa süreli tutulmalı, mesafe korunmalı; koruyucu paravan, elbise, eldiven, başlık ve gözlük kullanılmalıdır."
+  ]
+};
+(function initFizikselTabs(){
+  const categories=Object.keys(fizikselData);
+  let current=categories[0];
+  function renderTabs(){
+    const tabsEl=document.getElementById('fiziksel-tabs');
+    tabsEl.innerHTML='';
+    categories.forEach(cat=>{
+      const btn=document.createElement('button');
+      btn.className='tab-btn'+(cat===current?' active':'');
+      btn.textContent=cat;
+      btn.onclick=()=>{ current=cat; renderTabs(); renderList(); };
+      tabsEl.appendChild(btn);
+    });
+  }
+  function renderList(){
+    const list=document.getElementById('fiziksel-list');
+    list.innerHTML='';
+    fizikselData[current].forEach(item=>{
+      const div=document.createElement('div');
+      div.className='list-item';
+      div.textContent=item;
+      list.appendChild(div);
+    });
+  }
+  renderTabs(); renderList();
+})();
+
+/* ---------- Fiziksel tehlike / risk eşleştirme ---------- */
+const fizikselMatchReset = initMatchActivity('fiziksel-match-pool','fiziksel-match-slots', [
+  {term:"Mekanik", def:"Dönen, hareketli iş ekipmanlarının neden olduğu sıkıştırma, ezilme ve kesilme gibi vücut travmaları."},
+  {term:"Elektrik", def:"Elektrik akımına kapılma, elektrik şoku, kalpte fibrilasyon ve doku yanıkları."},
+  {term:"Gürültü", def:"Geçici veya kalıcı işitme kaybı, kulak çınlaması, hipertansiyon ve uyku düzensizliği."},
+  {term:"Aydınlatma", def:"Görme keskinliğinde azalma, görüş alanının kısıtlanması ve ışığa duyarlılık."},
+  {term:"Titreşim", def:"Omurga hasarları, Raynaud fenomeni ve beyaz parmak sendromu gibi rahatsızlıklar."},
+  {term:"Toz", def:"Solunum sistemi hastalıkları, mesleki astım ve aşırı duyarlılık akciğer enfeksiyonu."}
+]);
+document.getElementById('fiziksel-match-reset-btn').addEventListener('click', fizikselMatchReset);
+
+/* ---------- Tablo 6.3 kategorileri bucket sort ---------- */
+const kategoriReset = initBucketSort('kategori-pool','kategori-targets',
+  [
+    {key:"fiziksel",label:"Fiziksel Risk Etmenleri"},
+    {key:"kimyasal",label:"Kimyasal Risk Etmenleri"},
+    {key:"biyolojik",label:"Biyolojik Risk Etmenleri"},
+    {key:"ergonomik",label:"Ergonomik Risk Etmenleri"},
+    {key:"psikososyal",label:"Psikososyal Risk Etmenleri"}
+  ],
+  [
+    {label:"Mekanik", correct:"fiziksel"},
+    {label:"Elektrik", correct:"fiziksel"},
+    {label:"Gürültü", correct:"fiziksel"},
+    {label:"Titreşim", correct:"fiziksel"},
+    {label:"Radyasyon", correct:"fiziksel"},
+    {label:"Toksik Maddeler", correct:"kimyasal"},
+    {label:"Alerjik Maddeler", correct:"kimyasal"},
+    {label:"Bakteriler", correct:"biyolojik"},
+    {label:"Virüsler", correct:"biyolojik"},
+    {label:"Elle Taşıma", correct:"ergonomik"},
+    {label:"Ekranlı Araçlar", correct:"ergonomik"},
+    {label:"İş Stresi", correct:"psikososyal"},
+    {label:"Şiddet", correct:"psikososyal"}
+  ]
+);
+document.getElementById('kategori-reset-btn').addEventListener('click', kategoriReset);
+
+/* ---------- Quiz ---------- */
+const quizData = [
+  {q:"Aşağıdakilerden hangisi metallerin özelliklerinden biri değildir?",
+   options:["Tel ve levha hâline getirilebilmeleri sebebiyle kullanışlıdır.","Işığı yansıtma özellikleri vardır.","Elektriği iletmezler.","Yoğunlukları fazladır.","Yüksek mukavemet kuvvetine sahiptirler."], correct:2},
+  {q:"Aşağıdakilerden hangisi metal sektöründe yapılan ilk işlemler arasındadır?",
+   options:["Taşlama","Dökümcülük","Yüzey işleme","Parlatma","Zımparalama"], correct:1},
+  {q:"Aşağıdakilerden hangisi zımpara ve parlatma bantlarında kullanılan maddelerden biri değildir?",
+   options:["Alüminyum Oksit","Silisyum Karbür","Granit","Kireç taşı","Çakmak taşı"], correct:2},
+  {q:"Aşağıdakilerden hangisi dökümcülükte yapılan işlemler arasında yer almaz?",
+   options:["Kalıp kumu ve kalıp hazırlama","Döküm ve ateş hazırlama","Maça kumu ve model hazırlama","Kalıp içine metal döküm","Metal kesim"], correct:4},
+  {q:"2019 yılı SGK iş kazası ve meslek hastalığı istatistiklerine göre en çok iş kazasının yaşandığı iş kolu aşağıdakilerden hangisidir?",
+   options:["Ana metal sanayi","Elektrikli teçhizat imalatı","Başka yerde sınıflandırılmamış makine ve ekipman imalatı","Fabrikasyon metal ürünler imalatı (Mak. Teç. Hariç)","Bilgisayarların, elektronik ve optik ürünlerin imalatı"], correct:3},
+  {q:"Aşağıdakilerden hangisi fiziksel risk etmenlerinden olan termal tehlikelerden biri değildir?",
+   options:["Aydınlatma sistemi","Radyant ısı","Hava akım hızı","Sıcaklık","Nem"], correct:0},
+  {q:"Metal sektöründe kayış, kasnak, dişli, çark sistemine sahip makinelerde yaşanan iş kazalarında daha çok zarar gören uzuv aşağıdakilerden hangisidir?",
+   options:["Burun","Ayak","Göz","Kulak","El-Kol"], correct:4},
+  {q:"Endüstriyel aydınlatma standardı aşağıdakilerden hangisidir?",
+   options:["TS EN 385","TS EN 12464","TS EN 408","TS EN 164","TS EN 1678"], correct:1},
+  {q:"Aşağıdakilerden hangisi radyasyondan korunmak için alınacak önlemler arasında yer almaz?",
+   options:["Koruyucu paravan","Koruyucu elbise","Koruyucu eldiven","Radyasyon kaynağı ile çalışan arasında mesafe","Uzun süre etkileşim"], correct:4},
+  {q:"Metal sektöründe çalışanların ergonomik olarak en az zarar gördüğü işlem aşağıdakilerden hangisidir?",
+   options:["Parlatma","Dövme","Pres","Araçla seyahat","Zımparalama"], correct:3}
+];
+initQuiz({
+  containerId:'quiz-container', positionId:'quiz-position', scoreId:'quiz-score',
+  resetBtnSelector:'#quiz-reset-btn', quizData:quizData
+});
+</script>
+</body>
+</html>

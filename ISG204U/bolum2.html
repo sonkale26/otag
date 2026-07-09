@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>İnşaat Sektöründe İş Sağlığı ve Güvenliği</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <div class="nav-brand">İSG <b>Bölüm 2</b></div>
+    <div class="nav-links" id="nav-links">
+      <a href="#giris">Giriş</a>
+      <a href="#ozellikler">Sektör Özellikleri</a>
+      <a href="#istatistik">İstatistikler</a>
+      <a href="#planlama">Planlama</a>
+      <a href="#mevzuat">Mevzuat</a>
+      <a href="#kisiler">Kişiler</a>
+      <a href="#riskler">Riskler</a>
+      <a href="#kkd">KKD</a>
+      <a href="#meslek-hastaliklari">Meslek Hastalıkları</a>
+      <a href="#quiz">Sınav</a>
+    </div>
+  </div>
+</nav>
+
+<div class="stripe"></div>
+
+<!-- ================= COVER ================= -->
+<div class="cover" id="cover">
+  <div class="cover-eyebrow">Bölüm 2 &middot; İş Sağlığı ve Güvenliği</div>
+  <h1>İnşaat Sektöründe <span>İş Sağlığı</span><br>ve Güvenliği</h1>
+  <p class="desc">Dünyanın en büyük ve en tehlikeli endüstri dallarından biri olan inşaat sektörünün karakteristik
+    özellikleri, Yapı İşlerinde İş Sağlığı ve Güvenliği Yönetmeliği, sektördeki başlıca tehlike ve riskler,
+    kişisel koruyucu donanımlar ve sıkça karşılaşılan meslek hastalıkları üzerine etkileşimli bir bölüm özeti.</p>
+  <div class="cover-keys">
+    <span class="kw">Sağlık ve Güvenlik Planı</span>
+    <span class="kw">İnşaat Sektörü</span>
+    <span class="kw">Meslek Hastalıkları</span>
+    <span class="kw">Güvenli İnşaat</span>
+  </div>
+
+  <div class="cover-cards">
+    <div class="cover-card">
+      <div class="num">01</div>
+      <h3>İnşaat Sektörüne İlişkin Genel Bilgiler</h3>
+      <p>İnşaat sektörünün yapısı ve karakteristik özelliklerini sıralayarak iş sağlığı ve güvenliği mevzuatı
+        ve önemli temel kavramları açıklayabilme.</p>
+    </div>
+    <div class="cover-card">
+      <div class="num">02</div>
+      <h3>Sektördeki Sağlık ve Güvenlik Riskleri ve Önlemler</h3>
+      <p>İnşaat sektörü çalışanlarının sağlığı ve güvenliği açısından tehdit oluşturabilecek faaliyetler,
+        etmenler ve ekipmanlar ile bu unsurlara ilişkin riskleri, meslek hastalıklarını ve kişisel koruyucu
+        donanımları tanımlayabilme.</p>
+    </div>
+  </div>
+
+  <button class="start-btn" onclick="document.getElementById('giris').scrollIntoView({behavior:'smooth'})">
+    Bölüme Başla
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+  </button>
+
+  <div class="toc">
+    <div class="toc-label">İçindekiler</div>
+    <div class="toc-grid">
+      <a class="toc-item" href="#giris"><span class="n">01</span>Giriş</a>
+      <a class="toc-item" href="#ozellikler"><span class="n">02</span>Sektörün Karakteristik Özellikleri</a>
+      <a class="toc-item" href="#istatistik"><span class="n">03</span>İSG İstatistikleri</a>
+      <a class="toc-item" href="#planlama"><span class="n">04</span>İnşaat Sektöründe Planlama</a>
+      <a class="toc-item" href="#mevzuat"><span class="n">05</span>Yapı İşlerinde İSG Mevzuatı</a>
+      <a class="toc-item" href="#kisiler"><span class="n">06</span>Kişiler ve Sorumlulukları</a>
+      <a class="toc-item" href="#riskler"><span class="n">07</span>Sağlık ve Güvenlik Riskleri</a>
+      <a class="toc-item" href="#kkd"><span class="n">08</span>Kişisel Koruyucu Donanımlar</a>
+      <a class="toc-item" href="#meslek-hastaliklari"><span class="n">09</span>Meslek Hastalıkları</a>
+      <a class="toc-item" href="#quiz"><span class="n">10</span>Sınav</a>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+<!-- ================= GİRİŞ ================= -->
+<section id="giris">
+  <div class="sec-label">Giriş</div>
+  <h2 class="sec-title">İnşaat Sektörü Neden Bu Kadar Tehlikeli?</h2>
+  <p class="lead">
+    İnşaat sektörü, ülke ekonomilerine sağladığı katma değer ve istihdam olanaklarıyla her zaman lokomotif bir
+    sektör olmuştur. Ancak sektörde yaşanan iş kazaları, dünyanın birçok ülkesinde olduğu gibi ülkemiz için de
+    büyük bir sorun teşkil etmektedir. Kazaların sık yaşanmasının başlıca nedeni, çalışma koşullarının zor ve
+    sürekli değişken olmasıdır: yükseklikte, kazılarda, tünellerde, otoyollarda ve kapalı alanlarda çalışma;
+    elektrik, gürültü, toz ve kimyasallara maruziyet; devasa iş makineleri; geçici veya gündelik istihdam; sıkı
+    teslim tarihleri ve yetersiz eğitim bir arada bulunur.
+  </p>
+  <p class="lead">
+    İnşaat çalışanları evler, ofis binaları, fabrikalar, hastaneler, yollar, köprüler, tüneller, stadyumlar,
+    limanlar ve havaalanları inşa eder, onarır, yeniler ve yıkar. Buna karşın kaza ve meslek hastalıklarına yol
+    açan nedenlerin neredeyse tamamı önlenebilir niteliktedir; sağlık ve güvenlik süreçleri, bir şantiyedeki
+    risklerin en aza indirilmesinde hayati bir rol oynar ve hazırlık aşamasından itibaren uygulanmalıdır. Bu
+    bölümde, Yapı İşlerinde İş Sağlığı ve Güvenliği Yönetmeliği'ne uygun güvenli çalışma uygulamaları ve
+    prosedürlerine dair genel bilgiler; iş kazası riskinin azaltılabileceği temel alanlara odaklanılarak ele
+    alınmaktadır.
+  </p>
+
+  <div class="tf-box">
+    <div class="tf-label">Bilgi Kontrolü &middot; Doğru / Yanlış</div>
+    <div class="tf-statement">İnşaat sektöründe yaşanan iş kazalarının başlıca nedeni, çalışma koşullarının sabit ve
+      öngörülebilir olmasıdır.</div>
+    <div class="tf-btns">
+      <button class="tf-btn" onclick="answerTF(this,false)">Doğru</button>
+      <button class="tf-btn" onclick="answerTF(this,true)">Yanlış</button>
+    </div>
+    <div class="tf-fb">Yanlış: Sektörde kazaların sık yaşanmasının başlıca nedeni, çalışma koşullarının tam tersine
+      zor ve değişken olmasıdır. Her proje; çalışma ortamı, fiziki boyutlar, üretim yöntemi, yapım süresi ve iklim
+      koşulları bakımından kendine özgüdür ve bu durum standart bir İSG şablonunun her şantiyede aynen
+      uygulanmasını güçleştirir.</div>
+  </div>
+</section>
+
+<!-- ================= SEKTÖRÜN KARAKTERİSTİK ÖZELLİKLERİ ================= -->
+<section id="ozellikler">
+  <div class="sec-label">Öğrenme Çıktısı 1</div>
+  <h2 class="sec-title">Sektörün Karakteristik Özellikleri</h2>
+  <p class="lead">
+    İnşaat sektörü, dünyada en büyük ve en geniş endüstri dallarından biridir ve birçok sektörden daha fazla
+    istihdam sağlar. Buna karşın iş kazası sonucu ölüm sayılarına bakıldığında, diğer tüm sektörlerden daha fazla
+    ölüm yaşandığı görülür. Sektörün kendine özgü tehlikelerinin ve özelliklerinin göz önünde bulundurulması, iş
+    kazalarının azaltılmasına katkı sağlayacaktır. Aşağıdaki kartlara tıklayarak sektörün karakteristik
+    özelliklerini inceleyebilirsiniz.
+  </p>
+  <div class="flip-grid" id="ozellik-flip"></div>
+</section>
+
+<!-- ================= İSTATİSTİKLER ================= -->
+<section id="istatistik">
+  <div class="sec-label">Veriler</div>
+  <h2 class="sec-title">Sektördeki İş Sağlığı ve Güvenliği İstatistikleri</h2>
+  <p class="lead">
+    Sosyal Güvenlik Kurumu istatistiklerine göre 2018 yılında inşaat sektöründe 1,6 milyon kişi istihdam
+    edilmiştir. Sektör çoğunlukla küçük ve orta ölçekli işletmelerden (KOBİ) oluşur ve 6331 sayılı Kanun'un
+    yayımlanmasından sonra çalışma koşullarında ilerleme kaydedilmiş olmasına rağmen, iş kazaları hâlâ
+    sektörün en önemli sorunları arasındadır. Her yıl yaklaşık 500 çalışan sektörde hayatını kaybetmekte;
+    ülkemizde meydana gelen üç ölümlü iş kazasından biri inşaat sektöründe kaydedilmektedir.
+  </p>
+
+  <div class="gauge">
+    <div class="az">%12,9<br><span style="opacity:.75">1992-2018 arası inşaat sektöründeki istihdam payı</span></div>
+    <div class="teh">%12,7<br><span style="opacity:.75">Tüm iş kazaları içindeki pay</span></div>
+    <div class="cok">%32,6<br><span style="opacity:.75">Tüm ölümlü kazalar içindeki pay</span></div>
+  </div>
+
+  <p class="lead">
+    Çalışanların yalnızca yaklaşık %12,9'u inşaat sektöründe istihdam edilmesine rağmen, ölümlü kazaların
+    %32,6'sı bu sektörde gerçekleşmektedir; bu orantısızlık, sektörde yaşanan kazaların sonuçlarının diğer
+    sektörlere göre daha ağır olmasından kaynaklanmaktadır. Ölümlü iş kazaları incelendiğinde, %35 ile %45
+    arasında değişen oranlarla yüksekten düşme kaynaklı kazalar ilk sırada yer almaktadır; bunu trafik ve iş
+    makinesi kazaları, elektrik çarpmaları, iş ekipmanı kaynaklı kazalar, malzeme düşmesi, kazı işlerinde toprak
+    altında kalma, kalıp çökmesi, yangın ve patlamalar izlemektedir.
+  </p>
+
+  <div class="tf-box">
+    <div class="tf-label">Bilgi Kontrolü &middot; Doğru / Yanlış</div>
+    <div class="tf-statement">İnşaat sektöründeki çalışanların, diğer sektörlerdeki çalışanlara göre ölümle
+      sonuçlanan bir kaza ile karşılaşma olasılığı yaklaşık iki kat daha yüksektir.</div>
+    <div class="tf-btns">
+      <button class="tf-btn" onclick="answerTF(this,true)">Doğru</button>
+      <button class="tf-btn" onclick="answerTF(this,false)">Yanlış</button>
+    </div>
+    <div class="tf-fb">Doğru: 1992-2018 yılları arasındaki veriler, inşaat sektöründeki yüz bin çalışanda ölüm
+      oranının tüm sektörlerin toplamından sürekli olarak daha yüksek seyrettiğini ve inşaat çalışanlarının
+      ölümcül kaza olasılığının diğer sektörlere göre yaklaşık iki kat fazla olduğunu göstermektedir.</div>
+  </div>
+</section>
+
+<!-- ================= PLANLAMA ================= -->
+<section id="planlama">
+  <div class="sec-label">Yönetim</div>
+  <h2 class="sec-title">İnşaat Sektöründe Planlama</h2>
+  <p class="lead">
+    Kazaların neden olduğu insani, maddi ve zaman kayıplarının önlenmesi için inşaat başlamadan önce tüm çalışma
+    faaliyetlerinin dikkatlice planlanması büyük önem taşır. Planlama, etkili İSG yönetiminin kritik bir
+    parçasıdır ve İSG politikasının geliştirilmesinden organizasyonel düzenlemelere, izleme ve denetime kadar
+    tüm süreçleri kapsamalıdır. İnşaat firmalarında planlama genel olarak iki seviyede gerçekleşir: merkez
+    ofiste üst yönetim tarafından yürütülen <b>kurumsal/stratejik planlama</b> ve proje yöneticileri tarafından
+    tesisin inşası sürecinde yürütülen <b>proje düzeyinde planlama</b>.
+  </p>
+
+  <div class="searchbar">
+    <input type="text" id="planlama-search" placeholder="Planlama hususu ara...">
+    <span class="count-pill" id="planlama-count"></span>
+  </div>
+  <div class="list-box" id="planlama-list"></div>
+
+  <div class="callout">
+    <h4>Planlamada Ayrıntı Düzeyi</h4>
+    <p>Bir planda yer alan ayrıntı derecesi, yönetim seviyelerine göre değişir: üst yönetimler seyrek güncellenen,
+      düşük ayrıntı düzeyine sahip uzun vadeli planlar hazırlarken, alt yönetim kademeleri daha ayrıntılı ve kısa
+      vadeli planları daha sık hazırlamalıdır. Planlama süreci başladığında yöneticilerin ve çalışanların
+      taahhüdü, başarının anahtarıdır.</p>
+  </div>
+</section>
+
+<!-- ================= MEVZUAT ================= -->
+<section id="mevzuat">
+  <div class="sec-label">Yönetmelik</div>
+  <h2 class="sec-title">Yapı İşlerinde İş Sağlığı ve Güvenliği Mevzuatı</h2>
+  <p class="lead">
+    Ülkemiz mevzuatında yapı işlerinde alınacak asgari iş sağlığı ve güvenliği şartları,
+    <b>Yapı İşlerinde İş Sağlığı ve Güvenliği Yönetmeliği</b>'nde düzenlenmektedir. Avrupa Birliği'nin 24/6/1992
+    tarihli ve 92/57/EEC sayılı Konsey Direktifine uyumlu olarak hazırlanan Yönetmelik, 5/10/2013 tarihli ve
+    28786 sayılı Resmî Gazete'de yayımlanarak yürürlüğe girmiş, 31/12/2018 tarihinde bazı değişikliklere
+    uğramıştır. Yönetmelik, işin süresine ya da çalışan sayısına bakılmaksızın, yapı işlerinin gerçekleştirildiği
+    6331 sayılı Kanun kapsamındaki tüm işyerleri için geçerlidir; ancak bitmiş yapı işlerinin kullanıcılarını ve
+    Maden İşyerlerinde İSG Yönetmeliği kapsamındaki işyerlerini kapsam dışında tutar.
+  </p>
+
+  <div class="table-scroll">
+    <table>
+      <thead><tr><th>İşverenler</th><th>İşin Kapsamı</th><th style="width:80px">Bildirim</th><th style="width:110px">SG Koordinatörü</th><th style="width:80px">SG Planı</th><th style="width:90px">SG Dosyası</th></tr></thead>
+      <tbody id="mevzuat-tablo-body"></tbody>
+    </table>
+  </div>
+  <p style="font-family:var(--font-mono);font-size:12.5px;color:var(--muted);margin-top:8px;">
+    Kaynak: Yapı İşlerinde Sağlık ve Güvenlik Planı Rehberi (2018), Aile, Çalışma ve Sosyal Hizmetler Bakanlığı — SG: Sağlık ve Güvenlik
+  </p>
+
+  <h3 style="font-family:var(--font-display);font-weight:600;font-size:19px;margin-top:34px;">Yönetmeliğin Ekleri</h3>
+  <p class="lead">Yönetmelikte 5 adet Ek bulunur. Aşağıdaki eklerin içeriğini, sürükleyerek doğru tanımlarla eşleştirin.</p>
+  <div class="match-grid">
+    <div class="match-col">
+      <h5>Tanımlar (sürükleyin)</h5>
+      <div id="ek-pool"></div>
+    </div>
+    <div class="match-col">
+      <h5>Yönetmelik Ekleri</h5>
+      <div id="ek-slots"></div>
+    </div>
+  </div>
+  <button class="reset-btn dd-reset" id="ek-reset-btn">Etkinliği sıfırla</button>
+
+  <div class="callout warn" style="margin-top:26px;">
+    <h4>Kapsam Dışında Kalanlar</h4>
+    <p>Yönetmelik, bitmiş yapı işlerinin kullanıcılarının sağlığını ve güvenliğini kapsamaz. Ayrıca Maden
+      İşyerlerinde İş Sağlığı ve Güvenliği Yönetmeliği kapsamına giren işyerleri de bu Yönetmeliğin kapsamı
+      dışındadır. Buna karşılık, kendi nam ve hesabına çalışanlar 6331 sayılı Kanun'un kapsamına girmese de,
+      inşaat sektöründe yaygın olarak bulunmaları nedeniyle bu kişilere ilişkin yükümlülüklere Yönetmelikte ayrıca
+      yer verilmiştir.</p>
+  </div>
+</section>
+
+<!-- ================= KİŞİLER VE SORUMLULUKLARI ================= -->
+<section id="kisiler">
+  <div class="sec-label">Paydaşlar</div>
+  <h2 class="sec-title">Kişiler ve Sorumlulukları</h2>
+  <p class="lead">
+    Bir inşaat projesi, pek çok paydaşın ekip hâlinde çalışmasını gerektirir. Yapı İşlerinde İş Sağlığı ve
+    Güvenliği Yönetmeliği, ülkemiz mevzuatına <b>proje sorumlusu</b> ile <b>sağlık ve güvenlik koordinatörü</b>
+    kavramlarını kazandırmıştır. Ayrıca işverenlere, sağlık ve güvenlik planı ile sağlık ve güvenlik dosyası
+    olmak üzere iki temel dokümanın hazırlanması yükümlülüğü getirilmiştir. Kartlara tıklayarak bu kavramları
+    inceleyebilirsiniz.
+  </p>
+  <div class="flip-grid" id="kisiler-flip"></div>
+</section>
+
+<!-- ================= RİSKLER ================= -->
+<section id="riskler">
+  <div class="sec-label">Öğrenme Çıktısı 2</div>
+  <h2 class="sec-title">Sektördeki Sağlık ve Güvenlik Riskleri ve Önlemler</h2>
+  <p class="lead">
+    İnşaat sektörü çok farklı faaliyetler barındırır ve karşılaşılabilecek riskler proje özelinde değişkenlik
+    gösterir. Önlemler hiyerarşisinde, yalnızca bireyi koruyan önlemlerden (kişisel koruma) önce, risk altındaki
+    herkesi koruyan önlemler (toplu koruma) değerlendirilmelidir. Aşağıdaki sekmelerden başlıca tehlike
+    kategorilerini inceleyebilirsiniz.
+  </p>
+  <div class="tabs" id="risk-tabs"></div>
+  <div class="list-box" id="risk-list" style="max-height:420px;"></div>
+
+  <h3 style="font-family:var(--font-display);font-weight:600;font-size:19px;margin-top:34px;">Tehlikeyi Kategorisine Sürükleyin</h3>
+  <p class="lead">Aşağıdaki önlem veya durumları, ilişkili oldukları tehlike kategorisine sürükleyin.</p>
+  <div class="dd-box">
+    <div class="dd-title">Etkinlik</div>
+    <p class="dd-desc">Her bir madde, hangi ana tehlike başlığıyla ilişkilidir?</p>
+    <div class="dd-pool" id="risk-pool"></div>
+    <div class="dd-targets" id="risk-targets"></div>
+    <button class="reset-btn dd-reset" id="risk-reset-btn">Etkinliği sıfırla</button>
+  </div>
+
+  <div class="callout warn">
+    <h4>Gürültü — Maruziyet Eylem ve Sınır Değerleri</h4>
+    <p>Çalışanların Gürültü ile İlgili Risklerden Korunmalarına Dair Yönetmelik kapsamında en düşük maruziyet
+      eylem değeri 80 desibel, en yüksek maruziyet eylem değeri 85 desibeldir. Maruziyet sınır değeri ise, kulak
+      koruyucuların koruyucu etkisi dâhil edilerek dahi aşılamayacak değer olup 87 desibel olarak
+      belirlenmiştir.</p>
+  </div>
+  <div class="callout warn">
+    <h4>Titreşim — Maruziyet Eylem ve Sınır Değerleri</h4>
+    <p>El-kol titreşiminde sekiz saatlik çalışma için günlük maruziyet eylem değeri 2,5 m/s², sınır değeri 5 m/s²
+      olarak; bütün vücut titreşiminde ise günlük maruziyet eylem değeri 0,5 m/s², sınır değeri 1,15 m/s² olarak
+      belirlenmiştir.</p>
+  </div>
+</section>
+
+<!-- ================= KKD ================= -->
+<section id="kkd">
+  <div class="sec-label">Kişisel Koruyucu Donanımlar</div>
+  <h2 class="sec-title">İnşaat Sektöründe Yaygın Kullanılan KKD'ler</h2>
+  <p class="lead">
+    Kişisel koruyucu donanım (KKD), yürütülen işten kaynaklanabilecek risklere karşı çalışanı koruyan, çalışan
+    tarafından giyilen, takılan veya tutulan ekipmandır. İşyerindeki risklerin önlenmesi ya da yeterince
+    azaltılması toplu korunma veya iş organizasyonu ile sağlanamadığı durumlarda kullanılır. Kartlara tıklayarak
+    inşaat sektöründe öne çıkan KKD çeşitlerini inceleyin.
+  </p>
+  <div class="flip-grid" id="kkd-flip"></div>
+
+  <div class="callout warn" style="margin-top:26px;">
+    <h4>CE İşareti Zorunluluğu</h4>
+    <p>Kişisel Koruyucu Donanımların İşyerlerinde Kullanılması Hakkında Yönetmelik kapsamında, kişisel koruyucu
+      donanımlar CE işareti taşımak ve Türkçe kullanım kılavuzu bulundurmak zorundadır.</p>
+  </div>
+</section>
+
+<!-- ================= MESLEK HASTALIKLARI ================= -->
+<section id="meslek-hastaliklari">
+  <div class="sec-label">Sağlık</div>
+  <h2 class="sec-title">Meslek Hastalıkları</h2>
+  <p class="lead">
+    İnşaat işleri; yapıların inşası, bakımı, onarımı, yenilenmesi ve yıkılması gibi çok çeşitli işleri kapsar ve
+    farklı pek çok meslek grubunun bir arada çalışmasını gerektirir. Çalışanların fiziksel iş talepleriyle sık
+    karşılaşması, sık iş değiştirmesi ve mevsimsel yoğun mesai gibi nedenlerle sağlık ve güvenlik açısından pek
+    çok riske maruz kalınmaktadır. Sektörde en sık karşılaşılan meslek hastalıkları arasında gürültüye bağlı
+    işitme kaybı, titreşime bağlı rahatsızlıklar, karpal tünel sendromu, bel rahatsızlıkları, tozdan ve asbestten
+    kaynaklanan hastalıklar, kimyasallardan kaynaklanan hastalıklar, mesleki cilt hastalıkları, mesleki astım,
+    mesleki kanser ve tetanoz sayılabilir.
+  </p>
+
+  <h3 style="font-family:var(--font-display);font-weight:600;font-size:19px;margin-top:10px;">Mesleklere Göre Birincil Tehlike Kaynakları</h3>
+  <div class="searchbar">
+    <input type="text" id="meslek-search" placeholder="Meslek ara...">
+    <span class="count-pill" id="meslek-count"></span>
+  </div>
+  <div class="list-box" id="meslek-list"></div>
+  <p style="font-family:var(--font-mono);font-size:12.5px;color:var(--muted);margin-top:8px;">
+    Kaynak: TS 13739 İş Sağlığı ve Güvenliği Yönetim Sistemi — KOBİ'ler İçin — İnşaat Sektörü
+  </p>
+</section>
+
+<!-- ================= BÖLÜM ÖZETİ ================= -->
+<section id="ozet">
+  <div class="sec-label">Bölüm Özeti</div>
+  <h2 class="sec-title">Öğrenme Çıktıları ve Bölüm Özeti</h2>
+  <div class="callout">
+    <h4>1 — İnşaat sektörünün yapısını ve mevzuatını açıklayabilme</h4>
+    <p>İnşaat sektörü, istihdam ve gelişmişliğe katkısı bakımından ülkemizin lokomotif sektörlerindendir; ancak
+      iş sağlığı ve güvenliği açısından da en tehlikeli sektörlerden biridir. Sektörün kendine özgü
+      tehlikelerinin göz önünde bulundurulması ve iyi bir planlama, iş kazalarının azaltılmasına önemli katkı
+      sağlar. Ülkemizde inşaat işlerinde alınması gereken asgari şartlar, Yapı İşlerinde İş Sağlığı ve Güvenliği
+      Yönetmeliği'nde düzenlenmiştir.</p>
+  </div>
+  <div class="callout">
+    <h4>2 — Sektördeki riskleri, meslek hastalıklarını ve KKD'leri tanımlayabilme</h4>
+    <p>Çalışanların en sık karşılaştığı iş kazaları arasında yüksekten düşme, trafik ve iş makinesi kazaları,
+      elektrik çarpmaları, kazı göçükleri, kalıp çökmesi, yangın ve patlamalar yer alır. Sektörde en yaygın
+      meslek hastalıkları ise ağır kaldırma, titreşim, gürültü, toz, asbest ve kimyasallara maruziyet sonucu
+      ortaya çıkan cilt hastalıkları, duyu kayıpları, bel ağrısı ve kanserlerdir. Önlemler hiyerarşisinde toplu
+      koruma tedbirleri, kişisel koruyucu donanımlardan önce değerlendirilmelidir.</p>
+  </div>
+</section>
+
+<!-- ================= QUIZ ================= -->
+<section id="quiz">
+  <div class="sec-label">Neler Öğrendik?</div>
+  <h2 class="sec-title">Kendini Sına</h2>
+  <div class="quiz-progress">
+    <span id="quiz-position">Soru 1 / 10</span>
+    <span class="score-pill" id="quiz-score">Doğru: 0</span>
+  </div>
+  <div id="quiz-container"></div>
+  <button class="reset-btn" id="quiz-reset-btn">Sınavı sıfırla</button>
+</section>
+
+</div>
+
+<div class="stripe"></div>
+<footer>Kaynak: İnşaat Sektöründe İş Sağlığı ve Güvenliği — Bölüm 2 (Maden, Metal ve İnşaat Sektörlerinde İş Sağlığı ve Güvenliği)</footer>
+
+<a href="#cover" class="top-link" id="top-link">&uarr;</a>
+
+<script src="assets/script.js"></script>
+<script>
+/* =========================================================
+   PAGE-SPECIFIC DATA + INIT CALLS — Bölüm 2 (İnşaat Sektörü)
+   ========================================================= */
+
+initFlipCards('ozellik-flip', [
+  {tag:"tehlikeli", tagText:"Özellik", title:"Malzeme ve Yöntem Çeşitliliği",
+   text:"Farklı üretim yöntemlerinde veya farklı fiziksel ve kimyasal özelliklere sahip maddelerle çalışma nedeniyle çalışanlar çok çeşitli tehlikelere maruz kalmaktadır."},
+  {tag:"tehlikeli", tagText:"Özellik", title:"Çalışma Ortamında Seviye Farkı",
+   text:"Sektörde çalışmalar zemin seviyesinin altında başlamakta ve proje boyunca çalışma ortamı sürekli yükselmektedir; bu durum yüksekte çalışma risklerini kalıcı hâle getirir."},
+  {tag:"tehlikeli", tagText:"Özellik", title:"Fiziksel Güce Dayalı İşler",
+   text:"İmalatın başlamasından bitişine kadar çalışanların kaldırma, taşıma, bükme gibi ağır fiziksel güce dayalı, tekrarlayan ve duruşu olumsuz etkileyen işlerde çalışması gerekmektedir."},
+  {tag:"tehlikeli", tagText:"Özellik", title:"İklim Şartları Altında Çalışma",
+   text:"Açık havada güneş, yağmur, kar, don, aşırı soğuk ve sıcak altında çalışma yapılması gerektiğinden, çalışma ortamlarında asgari konfor şartlarının sağlanması zorlaşmaktadır."},
+  {tag:"coktehlikeli", tagText:"Özellik", title:"Çalışan Sirkülasyonu",
+   text:"Sektördeki esnek işgücü piyasası nedeniyle çalışanlar genellikle geçici veya gündelik olarak çalışır; bu durum iş güvenliği açısından kalıcı bir kurum kültürünün oluşmasını engeller."},
+  {tag:"tehlikeli", tagText:"Özellik", title:"Geniş ve Dağınık Çalışma Alanı",
+   text:"Şantiyelerde birbirini takip eden ya da aynı anda gerçekleşen farklı çalışma ve imalatlar bulunur; farklı çalışma grupları aynı şantiyede bir arada çalışabilmektedir."},
+  {tag:"coktehlikeli", tagText:"Özellik", title:"Alt İşveren Çokluğu",
+   text:"İnşaatlarda birçok iş alt işverenler aracılığıyla yerine getirilir. Alt işverenlerin farklı çalışma yöntem ve kurallarının olması, asıl işverenlerle koordinasyon zorluklarını beraberinde getirir."},
+  {tag:"tehlikeli", tagText:"Özellik", title:"Sıkı Teslim Tarihleri",
+   text:"Sıkı teslim tarihleri nedeniyle iş gücü kapasitesinde ve üretim yöntemlerinde yenilik yapılmadan üretim zorlaması yapılması, hayati tehlike oluşturacak şekilde çalışma biçimleri doğurabilir."}
+]);
+
+const planlamaListesi = [
+  "İş başlamadan önce proje ve önerilen saha hakkında olabildiğince fazla sağlık ve güvenlik bilgisinin toplanması",
+  "Maliyet tahmini ve program hazırlığında, işle ilgili özel sağlık ve güvenlik tehlikelerinin göz önünde bulundurulması",
+  "Malzeme satın alma veya ekipman kiralamada tedarikçinin sağlık ve güvenlik bilgilerinin dikkate alınması",
+  "Sözleşme yapmadan önce alt işverenlerin çalışma yöntemlerinin ve getirecekleri ekipmanların öğrenilmesi",
+  "Gerekli araç, gereç ve ekipmanlara karar verilmesi ve uygunluğunun kontrol edilmesi",
+  "Malzeme teslimatlarının ve depolama ihtiyaçlarının planlanması",
+  "Acil durum ve kurtarma prosedürlerinin, gerekli ekipman ve eğitimlerle birlikte planlanması",
+  "Tüm çalışanların etkili bir eğitim almasının sağlanması",
+  "Çalışanların sağlığı ve güvenliği için şantiye kuralları ve gereksinimlerinin oluşturulması",
+  "Sağlık ve güvenlik koordinatörlerinin tasarım aşamasında erken görevlendirilmesi",
+  "Asıl işverenin, diğer işverenlerle birlikte riskleri değerlendirmek üzere iş birliği yapması",
+  "Sağlık ve güvenliğin planlanmasına harcanacak çabanın, proje riskleri ile orantılı olması",
+  "Yüksek riskli işlerde gerekli hâllerde uzman tavsiyesine başvurulması",
+  "Planlamanın, proje geliştikçe asıl işveren tarafından rutin olarak gözden geçirilip revize edilmesi"
+];
+initSearchList('planlama-search','planlama-list','planlama-count', planlamaListesi);
+
+const mevzuatTablosu = [
+  ["Bir işveren","31 iş gününden ve 21 çalışandan veya 501 yevmiyeden az","–","–","+","+"],
+  ["Bir işveren","30 iş gününden ve 20 çalışandan veya 500 yevmiyeden fazla","+","–","+","+"],
+  ["Birden fazla işveren / alt işveren","31 iş gününden ve 21 çalışandan veya 501 yevmiyeden az, Ek-2 çalışmaları yok","–","–","+","+"],
+  ["Birden fazla işveren / alt işveren","31 iş gününden ve 21 çalışandan veya 501 yevmiyeden az, Ek-2 çalışmaları var","–","+","+","+"],
+  ["Birden fazla işveren / alt işveren","30 iş gününden ve 20 çalışandan veya 500 yevmiyeden fazla","+","+","+","+"]
+];
+(function renderMevzuatTable(){
+  const body=document.getElementById('mevzuat-tablo-body');
+  mevzuatTablosu.forEach(row=>{
+    const tr=document.createElement('tr');
+    tr.innerHTML = `<td>${row[0]}</td><td>${row[1]}</td><td style="text-align:center;font-family:var(--font-mono);color:var(--orange)">${row[2]}</td><td style="text-align:center;font-family:var(--font-mono);color:var(--orange)">${row[3]}</td><td style="text-align:center;font-family:var(--font-mono);color:var(--orange)">${row[4]}</td><td style="text-align:center;font-family:var(--font-mono);color:var(--orange)">${row[5]}</td>`;
+    body.appendChild(tr);
+  });
+})();
+
+const ekReset = initMatchActivity('ek-pool','ek-slots', [
+  {term:"Ek-1", def:"Yapı işleri kapsamına giren işlerin tek tek sayıldığı liste."},
+  {term:"Ek-2", def:"Risk içeren çalışmaların belirtildiği, sağlık ve güvenlik planında özel tedbir gerektiren liste."},
+  {term:"Ek-3", def:"Yapı işine başlamadan önce yapılacak bildirimde yer alması gereken bilgiler."},
+  {term:"Ek-4", def:"Kapalı ve açık alanları kapsayan genel ve özel asgari sağlık ve güvenlik şartları."},
+  {term:"Ek-5", def:"Cephe iskeleleri, kenar koruma sistemleri, çalışma platformları ve güvenlik ağlarının asgari şartları."}
+]);
+document.getElementById('ek-reset-btn').addEventListener('click', ekReset);
+
+initFlipCards('kisiler-flip', [
+  {tag:"tehlikeli", tagText:"Kavram", title:"Proje Sorumlusu",
+   text:"İşveren adına projenin hazırlanmasından, uygulanmasından ve uygulamanın kontrolünden sorumlu gerçek veya tüzel kişidir. Görevlendirilmesi zorunlu değildir; görevlendirildiğinde yükümlülükleri işverenlerinkiyle aynıdır."},
+  {tag:"coktehlikeli", tagText:"Kavram", title:"Sağlık ve Güvenlik Koordinatörü",
+   text:"Aynı yapı alanında birden fazla işveren veya alt işveren bulunması durumunda, tasarım ve inşayı sağlık ve güvenlik yönünden koordine etmek üzere projenin hazırlık ve uygulama aşamalarında görevlendirilir."},
+  {tag:"tehlikeli", tagText:"Doküman", title:"Sağlık ve Güvenlik Planı",
+   text:"Yapı alanının tamamından sorumlu işverenler veya proje sorumluları tarafından hazırlanması sağlanan; Ek-2'de belirtilen riskli faaliyetler için özel önlemleri de içeren, tüm inşaat projeleri için zorunlu bir dokümandır."},
+  {tag:"tehlikeli", tagText:"Doküman", title:"Sağlık ve Güvenlik Dosyası",
+   text:"Proje hazırlık aşamasında hazırlığına başlanan ve uygulama aşamasında güncellenen; projenin tamamlanmasından sonra yapılacak temizlik, bakım, tadilat, yenileme ve yıkım işleri için gerekli bilgileri içeren zorunlu bir dokümandır."}
+]);
+
+const riskData = {
+  "Yüksekte Çalışma":[
+    "Seviye farkı bulunan ve düşme sonucu yaralanma ihtimalinin oluşabileceği her türlü alanda yapılan çalışma olarak tanımlanır; herhangi bir yükseklik sınırı verilmemiştir.",
+    "Düşmeler; korumasız kenarlardan, açıklıklardan, çatılardan, kırılgan zeminlerden, kazı kenarlarından, merdivenlerden ve iskelelerden kaynaklanır.",
+    "Kontrol hiyerarşisi 'kaçınma, önleme, durdurma' sırasıyla uygulanır; toplu koruma her zaman kişisel korumadan önce değerlendirilir.",
+    "Tam vücut emniyet kemeri, bağlantı halatı ve enerji sönümleyici aparat, düşmenin önlenmesinde kullanılan başlıca kişisel koruyucu donanımlardır."
+  ],
+  "İş Makineleri, Araç Trafiği ve Elektrik":[
+    "Araç güzergâhı ile yaya yollarının net ayrılmaması ve saha içi hız sınırlarının aşılması, trafik kaynaklı kazaların başlıca nedenidir.",
+    "Kazı ekipmanları içeri devrilme/düşme, cisim düşmesi ve elektrik çarpması riskleri taşırken, kaldırma ekipmanları çökme, sıkışma ve yük düşmesi riskleri taşır.",
+    "Elektrik çarpması; kabloların aşınması, geçici onarımlar, bakımsız ekipman kullanımı ve enerji hatlarına yakın çalışma gibi nedenlerle meydana gelir.",
+    "Elektrik çarpmalarından korunmak için ekipmanların düzenli kontrolü, uygun topraklama ve yalıtkan kişisel koruyucu donanım kullanımı gereklidir."
+  ],
+  "Kazı, Kalıp-Beton ve El Aletleri":[
+    "Kazı işlerinde en ciddi risklerden biri, zeminin kazı alanına kayması, çökmesi veya düşmesiyle oluşan göçüklerdir; şev açıları ve destek sistemleriyle önlenir.",
+    "Kazı kenarlarına korkuluk yerleştirilmesi ve araçların kazıya fazla yaklaşmaması, düşme ve göçük riskini azaltır.",
+    "Kalıp kurma/sökme sırasında yüksekten düşme, kalıpların taşınması sırasında çarpma ve beton pompası bomunun enerji hatlarına teması başlıca risklerdir.",
+    "El aletleriyle kazalar genellikle yanlış alet seçimi, bakımsızlık veya uygunsuz saklama gibi nedenlerden kaynaklanır."
+  ],
+  "Yangın, Patlama ve Yıkım":[
+    "Yangın üçgeni; ısı (tutuşturma kaynağı), oksijen ve yanıcı maddenin bir araya gelmesiyle oluşur; önlemenin temeli bu üçlünün bir arada bulunmasını engellemektir.",
+    "Şantiye genel temizliği ve düzeni, yangın riskinin azaltılmasında büyük öneme sahiptir.",
+    "Yıkım işlerinde doğru yöntemin seçimi (elle, mekanik veya patlayıcı ile) yapının durumuna, çevresine ve maliyete göre belirlenir.",
+    "Yıkım öncesinde elektrik ve gaz bağlantılarının kesilmesi, yangın ve patlama riskini azaltan temel bir tedbirdir."
+  ],
+  "Fiziksel, Kimyasal ve Biyolojik Etmenler":[
+    "Gürültü, titreşim, optik radyasyon (UV) ve termal konfor, inşaat sektöründe en sık karşılaşılan fiziksel risk etmenleridir.",
+    "Kimyasallar çalışana solunum, cilt teması veya yeme-yutma yoluyla bulaşır; solunan tozların akciğerde birikmesi pnömokonyoza yol açabilir.",
+    "Asbest tozunun solunması asbestoz, akciğer kanseri veya mezotelyomaya neden olabilir; asbestle çalışma yalnızca özel eğitimli uzmanlarca yapılabilir.",
+    "Biyolojik risk etmenleri; kuş dışkısı, mantar sporları, durgun sular ve haşereler aracılığıyla enfeksiyon ve alerjik reaksiyonlara neden olabilir."
+  ]
+};
+initTabbedList('risk-tabs','risk-list', riskData);
+
+const riskReset = initBucketSort('risk-pool','risk-targets',
+  [{key:"yukseklik",label:"Yüksekte Çalışma"},{key:"elektrik",label:"Elektrik Güvenliği"},{key:"kazi",label:"Kazı İşleri"}],
+  [
+    {label:"Tam vücut emniyet kemeri ve bağlantı halatı kullanımı", correct:"yukseklik"},
+    {label:"Enerji hatlarının altında güvenli çalışma mesafesi bırakılması", correct:"elektrik"},
+    {label:"Kazı kenarlarına korkuluk yerleştirilmesi", correct:"kazi"},
+    {label:"Kontrol hiyerarşisinde 'kaçınma, önleme, durdurma' ilkesinin uygulanması", correct:"yukseklik"},
+    {label:"Şev açılarının belirlenmesi veya iksa sistemi kurulması", correct:"kazi"},
+    {label:"Islak veya nemli alanlarda çalışmadan kaçınılması", correct:"elektrik"}
+  ]
+);
+document.getElementById('risk-reset-btn').addEventListener('click', riskReset);
+
+initFlipCards('kkd-flip', [
+  {tag:"coktehlikeli", tagText:"Baş Koruyucu", title:"Baret",
+   text:"İnşaat sektöründe ilk akla gelen KKD'dir. Düşen/fırlayan cisimlere karşı korur; TS EN 397+A1 standardında darbeye, delinmeye ve aleve karşı dayanım zorunlu kriterlerdir. Hasar gören veya darbe alan baretler yenisiyle değiştirilmelidir."},
+  {tag:"tehlikeli", tagText:"Ayak Koruyucu", title:"Emniyet / Koruyucu / İş Ayakkabıları",
+   text:"Ayak koruyucular emniyet ayakkabıları, koruyucu ayakkabılar ve iş ayakkabıları olmak üzere üçe ayrılır. Emniyet ayakkabıları darbe ve sıkışmaya karşı en üst düzey korumayı sağlar; TS EN ISO 20345 standardına tabidir."},
+  {tag:"tehlikeli", tagText:"Göz Koruyucu", title:"Gözlükler",
+   text:"Genel kullanım gözlükleri darbeleri engeller, tam koruma (dalgıç tipi) gözlükler gözü ve çevresini korur, kaynak gözlükleri ise kaynak işlemi sırasında oluşan zararlı ışınlara karşı kullanılır."},
+  {tag:"tehlikeli", tagText:"Kulak Koruyucu", title:"Kulak Tıkaçları ve Kulaklıklar",
+   text:"Gürültü kontrolünün teknik ve idari önlemlerle sağlanamadığı durumlarda kullanılır. Kulak tıkaçları, manşonlu kulaklıklar ve barete takılabilen kulaklıklar başlıca çeşitleridir; SNR değerine göre seçilmelidir."},
+  {tag:"coktehlikeli", tagText:"Düşmeye Karşı Koruyucu", title:"Tam Vücut Emniyet Kemeri",
+   text:"Bağlantı halatı (lanyard) ve enerji sönümleyici (şok emici) aparat ile birlikte kullanılır. Düşme anında çalışan üzerine gelen kuvveti azaltarak ciddi yaralanmaları önlemeyi amaçlar; toplu koruma yeterli olmadığında devreye girer."}
+]);
+
+const meslekTablosu = [
+  "Tuğla, taş vd. duvar ustası — Çimento dermatiti, ayakta çalışma, ağır yük",
+  "Seramik ustaları — Yapıştırıcı buharları, dermatitler, ayakta çalışma",
+  "Marangozlar — Ahşap tozu, ağır yük, tekrarlayan hareketler",
+  "Sıvacılar — Sıva tozları, iskelede çalışma, ağır yük, ayakta çalışma",
+  "Elektrikçiler — Lehim dumanındaki ağır metaller, ayakta çalışma, ağır yük, asbest",
+  "Elektrik santrali yapım ve tamircileri — Lehim dumanındaki ağır metaller, ağır yük, asbest",
+  "Boyacılar — Solvent buharları, toksik metaller",
+  "Duvar kağıdı ustaları — Tutkal buharları, ayakta çalışma",
+  "Tesisatçılar — Kurşun duman ve partikülleri, kaynak dumanları, asbest",
+  "Buhar kazanı ustaları — Kaynak dumanları, asbest",
+  "Halı kaplamacılar — Diz travması, ayakta çalışma, tutkal ve buharları",
+  "Karo ustaları — Yapıştırıcılar, toz, diz travması",
+  "Mozaik zımparacılar — Ayakta çalışma, silika tozu",
+  "Camcılar — Ayakta çalışma, yaralanma",
+  "İzolasyon çalışanları — Asbest, sentetik lifler, ayakta çalışma",
+  "Demiryolu inşaatçıları — Silika, sıcak, soğuk",
+  "Çatı ustaları — Katran, sıcak, yüksekte çalışma",
+  "Kaynakçılar — Kaynak emisyonları",
+  "Lehimciler — Metal dumanları, kurşun, kadmiyum",
+  "Kazıcılar, deliciler — Silika, gürültü, vibrasyon",
+  "Havalı çekiç kullananlar — Silika, gürültü, vibrasyon",
+  "Kazık makinası operatörleri — Silika, vibrasyon",
+  "Vinç operatörleri — Gürültü, lubrikan yağlar",
+  "Vinç kulesi operatörleri — Stres, izolasyon",
+  "Ekskavatör, kepçe operatörleri — Silika, histoplazmozis, vibrasyon, sıcak, gürültü",
+  "Greyder, dozer, kazıcı operatörleri — Silika, vibrasyon, sıcak, gürültü",
+  "Asfalt çalışanları — Asfalt emisyonları, sıcak, dizel egzozu",
+  "Kamyon ve traktör şoförleri — Vibrasyon, dizel egzozu",
+  "Yıkım çalışanları — Asbest, kurşun, toz, gürültü"
+];
+initSearchList('meslek-search','meslek-list','meslek-count', meslekTablosu);
+
+const quizData = [
+  {q:"İnşaat sektörünün karakteristik özelliği olan 'çalışma ortamında seviye farkı' aşağıdakilerden hangisiyle en iyi açıklanır?",
+   options:["İnşaatlarda birçok iş alt işverenler aracılığıyla yerine getirilmektedir.","Farklı çalışma grupları aynı şantiyede bir arada çalışabilmektedir.","Çalışmalar zemin seviyesinin altında başlamakta ve proje boyunca çalışma ortamı sürekli yükselmektedir.","İş makinelerinin hareketlerinden kaynaklanabilecek çarpma ve ezilme kazaları oluşabilmektedir.","Sıkı teslim tarihleri nedeniyle üretim zorlaması yapılması hayati tehlike oluşturmaktadır."],
+   correct:2},
+  {q:"Yapı İşlerinde İş Sağlığı ve Güvenliği Yönetmeliği kapsamında hazırlanması gereken dokümanlar aşağıdakilerden hangisidir?",
+   options:["Yalnız Sağlık ve Güvenlik Dokümanı","Sağlık ve Güvenlik Planı ve Sağlık ve Güvenlik Dokümanı","Sağlık ve Güvenlik Dosyası ve Sağlık ve Güvenlik Planı","Yalnız Sağlık ve Güvenlik Dosyası","Proje Bildirimi ve Sağlık ve Güvenlik Dokümanı"],
+   correct:2},
+  {q:"İşveren adına projenin hazırlanmasından, uygulanmasından ve uygulamanın kontrolünden sorumlu gerçek veya tüzel kişi aşağıdakilerden hangisidir?",
+   options:["Sağlık ve Güvenlik Koordinatörü","Proje Müellifi","Şantiye Şefi","Proje Sorumlusu","Fenni Mesul"],
+   correct:3},
+  {q:"Çalışanların yüksekten düşmelerinin engellenmesi amacıyla yüksekte çalışma kontrol hiyerarşisini özetleyen ifadeler hangi sırayla doğrudur?",
+   options:["Kaçınma, önleme, durdurma","Önleme, toplu korunma, kişisel korunma","Önleme, durdurma, kaçınma","Toplu korunma, kaçınma, kişisel korunma","Durdurma, kaçınma, önleme"],
+   correct:0},
+  {q:"Çalışanların Gürültü ile İlgili Risklerden Korunmalarına Dair Yönetmelik kapsamında en düşük maruziyet eylem değeri kaç desibeldir?",
+   options:["65 dB(A)","70 dB(A)","80 dB(A)","85 dB(A)","87 dB(A)"],
+   correct:2},
+  {q:"Çalışanların Titreşimle İlgili Risklerden Korunmalarına Dair Yönetmelik kapsamında el-kol titreşiminde 8 saatlik çalışma süresi için günlük maruziyet sınır değeri nedir?",
+   options:["2,5 m/s²","3 m/s²","3,5 m/s²","4 m/s²","5 m/s²"],
+   correct:4},
+  {q:"Düşme esnasında oluşan kinetik enerjiyi gidermek için tasarlanan ve düşen çalışanın maruz kalacağı şok etkisini düşürmeyi amaçlayan donanım aşağıdakilerden hangisidir?",
+   options:["Enerji sönümleyici","Karabina","Tam vücut emniyet kemeri","Bağlantı halatı","Koruyucu ayakkabı"],
+   correct:0},
+  {q:"Aşağıdakilerden hangisi kazı çalışmaları sırasında göçük riskine karşı alınabilecek tedbirlerden biri değildir?",
+   options:["Şev verilmesi","İksa yapılması","Korkulukların yerleştirilmesi","Kalkanların yerleştirilmesi","Statik hesabı yapılmış uygun destek ve setlerin kullanılması"],
+   correct:2},
+  {q:"Aşağıdakilerden hangileri fiziksel risk etmenleri kapsamında değerlendirilir? (I. Virüs, II. Katran, III. UV radyasyon, IV. Kaynak dumanı, V. Nem)",
+   options:["Yalnız I","Yalnız V","II ve IV","III ve V","I, II ve III"],
+   correct:3},
+  {q:"Aşağıdakilerden hangisi elektrikçilerin meslek hastalığına neden olabilecek birincil tehlike kaynakları arasında yer almaz?",
+   options:["Lehim dumanındaki ağır metaller","Ahşap tozu","Ayakta çalışma","Ağır yük","Asbest"],
+   correct:1}
+];
+initQuiz({
+  containerId:'quiz-container', positionId:'quiz-position', scoreId:'quiz-score',
+  resetBtnSelector:'#quiz-reset-btn', quizData:quizData
+});
+</script>
+</body>
+</html>

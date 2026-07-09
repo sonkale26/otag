@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Tehlikeli ve Çok Tehlikeli İş Kollarında İş Sağlığı ve Güvenliği</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <div class="nav-brand">İSG <b>Bölüm 1</b></div>
+    <div class="nav-links" id="nav-links">
+      <a href="#giris">Giriş</a>
+      <a href="#tehlikeli-sektorler">Tehlikeli Sektörler</a>
+      <a href="#tehlike-siniflari">Tehlike Sınıfları</a>
+      <a href="#nace-kodu">NACE Kodu</a>
+      <a href="#is-kazasi">İş Kazası</a>
+      <a href="#mesleki-egitim">Mesleki Eğitim</a>
+      <a href="#mesleki-yeterlilik">Mesleki Yeterlilik</a>
+      <a href="#quiz">Sınav</a>
+    </div>
+  </div>
+</nav>
+
+<div class="stripe"></div>
+
+<!-- ================= COVER ================= -->
+<div class="cover" id="cover">
+  <div class="cover-eyebrow">Bölüm 1 &middot; İş Sağlığı ve Güvenliği</div>
+  <h1>Tehlikeli ve <span>Çok Tehlikeli</span><br>İş Kollarında İSG</h1>
+  <p class="desc">Hangi iş kollarının "tehlikeli" ya da "çok tehlikeli" sayıldığı, bu sınıflandırmanın NACE koduyla
+    nasıl belirlendiği ve tehlikeli/çok tehlikeli işlerde çalışacakların tabi olduğu mesleki eğitim ve mesleki
+    yeterlilik sistemi üzerine etkileşimli bir bölüm özeti.</p>
+  <div class="cover-keys">
+    <span class="kw">Tehlikeli ve Çok Tehlikeli İş Kolu</span>
+    <span class="kw">NACE Kodu</span>
+    <span class="kw">Mesleki Eğitim</span>
+    <span class="kw">Mesleki Yeterlilik Sistemi</span>
+  </div>
+
+  <div class="cover-cards">
+    <div class="cover-card">
+      <div class="num">01</div>
+      <h3>Tehlikeli ve Çok Tehlikeli İşyerleri</h3>
+      <p>Tehlikeli ve çok tehlikeli iş kollarını sınıflayabilme.</p>
+    </div>
+    <div class="cover-card">
+      <div class="num">02</div>
+      <h3>Mesleki Eğitim ve Yeterlilik Sistemi</h3>
+      <p>Tehlikeli ve çok tehlikeli sınıfta yer alan işlerde mesleki eğitim ve mesleki yeterlilik sistemini
+        açıklayabilme.</p>
+    </div>
+  </div>
+
+  <button class="start-btn" onclick="document.getElementById('giris').scrollIntoView({behavior:'smooth'})">
+    Bölüme Başla
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+  </button>
+
+  <div class="toc">
+    <div class="toc-label">İçindekiler</div>
+    <div class="toc-grid">
+      <a class="toc-item" href="#giris"><span class="n">01</span>Giriş</a>
+      <a class="toc-item" href="#tehlikeli-sektorler"><span class="n">02</span>Tehlikeli Sektörler</a>
+      <a class="toc-item" href="#tehlike-siniflari"><span class="n">03</span>Tehlike Sınıfları</a>
+      <a class="toc-item" href="#nace-kodu"><span class="n">04</span>NACE Kodu</a>
+      <a class="toc-item" href="#is-kazasi"><span class="n">05</span>İş Kazası</a>
+      <a class="toc-item" href="#mesleki-egitim"><span class="n">06</span>Mesleki Eğitim</a>
+      <a class="toc-item" href="#mesleki-yeterlilik"><span class="n">07</span>Mesleki Yeterlilik</a>
+      <a class="toc-item" href="#quiz"><span class="n">08</span>Sınav</a>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+<!-- ================= GİRİŞ ================= -->
+<section id="giris">
+  <div class="sec-label">Giriş</div>
+  <h2 class="sec-title">"Yüksek Riskli Sektör" Anlayışı Neden Yetersiz Kalıyor?</h2>
+  <p class="lead">
+    İş sağlığı ve güvenliği geleneksel olarak inşaat, madencilik, metal, tarım, orman ve hayvancılık gibi
+    "yüksek risk" içeren çok tehlikeli sektörlere odaklanmıştır; bunun nedeni bu sektörlerde görülen ölümcül
+    kazaların sıklığıdır. Avrupa Birliği'nin İSG direktifleri ve bunlara dayanan ulusal mevzuat da bu bakış
+    açısını yansıtır. Ancak son yıllarda bu yaklaşımın, çalışma hayatındaki genel riski homojen dağıtmayan
+    dar bir görüş olduğu kabul görmeye başlamıştır.
+  </p>
+  <p class="lead">
+    2016 yılında Birleşik Krallık'ta yapılan bir çalışma, kimyasallara, liflere (özellikle asbest) ve toza
+    maruz kalmaktan kaynaklanan mesleki solunum hastalıkları nedeniyle yılda yaklaşık 12.000 ölüm
+    gerçekleştiğini tahmin etmiştir; bu rakam aynı dönemde çok tehlikeli işyerlerinde yaşanan ölümcül
+    yaralanmalarla kıyaslanamayacak kadar büyüktür. Benzer şekilde, Avrupa Birliği'nde çalışanları en çok
+    etkileyen sağlık sorunu olan kas-iskelet sistemi bozuklukları, geleneksel olarak yüksek risk kabul
+    edilmeyen toptan-perakende ticaret, otel ve restoran gibi sektörlerde de artan sıklıkta görülmektedir.
+    Psikososyal risklerle ilişkili sağlık sorunlarının en yüksek görüldüğü iki sektörün ise az tehlikeli
+    sınıflandırmada yer alan eğitim ve finans iş kolları olması dikkat çekicidir.
+  </p>
+
+  <div class="tf-box">
+    <div class="tf-label">Bilgi Kontrolü &middot; Doğru / Yanlış</div>
+    <div class="tf-statement">Birleşik Krallık'ta yapılan bir araştırmaya göre, mesleki solunum hastalıklarından
+      kaynaklanan yıllık ölüm sayısı, aynı dönemde çok tehlikeli işyerlerinde meydana gelen ölümcül
+      yaralanmalardan çok daha fazladır.</div>
+    <div class="tf-btns">
+      <button class="tf-btn" onclick="answerTF(this,true)">Doğru</button>
+      <button class="tf-btn" onclick="answerTF(this,false)">Yanlış</button>
+    </div>
+    <div class="tf-fb">Doğru: 2016 yılında yapılan bir çalışmaya göre İngiltere'de kimyasallara, liflere
+      (özellikle asbest) ve toza maruz kalmaktan kaynaklanan mesleki solunum hastalıkları nedeniyle her yıl
+      yaklaşık 12.000 ölüm gerçekleşmekte; bu, aynı dönemde çok tehlikeli işyerlerinde yaşanan ölümcül
+      yaralanmalarla kıyaslanamayacak kadar büyük bir rakamdır.</div>
+  </div>
+</section>
+
+<!-- ================= TEHLİKELİ SEKTÖRLER ================= -->
+<section id="tehlikeli-sektorler">
+  <div class="sec-label">Öğrenme Çıktısı 1</div>
+  <h2 class="sec-title">Tehlikeli ve Çok Tehlikeli İş Kolları Tanımlaması</h2>
+  <p class="lead">
+    Avrupa Birliği'ndeki sektörler, NACE düzenlemelerine uygun olarak Eurostat tarafından tanımlanmış ve
+    sınıflandırılmıştır. 1961'de piyasaya sürülen NACE sistemi, 1990'daki Revizyon 1'den 2008'deki
+    Revizyon 2'ye geçişte önemli değişikliklere uğramıştır; bu değişiklikler farklı üretim biçimlerini ve
+    ortaya çıkan yeni endüstrileri, özellikle de hizmet ve bilişim sektörlerinin artan ağırlığını yansıtır.
+  </p>
+
+  <div class="table-scroll">
+    <table>
+      <thead><tr><th style="width:70px">Kod</th><th>NACE Rev. 1 (1990)</th><th style="width:70px">Kod</th><th>NACE Rev. 2 (2008)</th></tr></thead>
+      <tbody id="nace-karsilastirma-body"></tbody>
+    </table>
+  </div>
+
+  <p class="lead" style="margin-top:26px;">
+    6331 sayılı Kanun'un 9. maddesi uyarınca işyerleri iş sağlığı ve güvenliği açısından üç tehlike sınıfına
+    ayrılır. Aşağıdaki gösterge bu üçlü sistemi özetler.
+  </p>
+  <div class="gauge">
+    <div class="az">AZ TEHLİKELİ<br><span style="opacity:.75">örn. eğitim, finans, ofis işleri</span></div>
+    <div class="teh">TEHLİKELİ<br><span style="opacity:.75">örn. toptan-perakende, otel-restoran</span></div>
+    <div class="cok">ÇOK TEHLİKELİ<br><span style="opacity:.75">örn. madencilik, inşaat, kimya</span></div>
+  </div>
+
+  <p class="lead">
+    Geleneksel olarak yüksek riskli kabul edilen bazı iş kollarına aşağıdaki kartlardan göz atabilirsiniz.
+  </p>
+  <div class="flip-grid" id="sektor-flip"></div>
+
+  <div class="tf-box">
+    <div class="tf-label">Bilgi Kontrolü &middot; Doğru / Yanlış</div>
+    <div class="tf-statement">Kas-iskelet sistemi bozuklukları açısından bakıldığında, toptan-perakende ticareti ve
+      otel-restoran gibi sektörler, geleneksel olarak yüksek risk kabul edilmemelerine rağmen, bu sağlık
+      sorununun görülme sıklığında dikkate değer bir artış göstermektedir.</div>
+    <div class="tf-btns">
+      <button class="tf-btn" onclick="answerTF(this,true)">Doğru</button>
+      <button class="tf-btn" onclick="answerTF(this,false)">Yanlış</button>
+    </div>
+    <div class="tf-fb">Doğru: Kas-iskelet sistemi bozuklukları Avrupa Birliği'nde çalışanları en çok etkileyen
+      sağlık sorunudur ve geleneksel olarak yüksek risk kabul edilmeyen toptan-perakende ticareti ile otel ve
+      restoran sektörlerinde görülme sıklığı artmaktadır.</div>
+  </div>
+</section>
+
+<!-- ================= TEHLİKE SINIFLARI ================= -->
+<section id="tehlike-siniflari">
+  <div class="sec-label">6331 Sayılı Kanun &middot; Madde 9</div>
+  <h2 class="sec-title">İşyeri Tehlike Sınıfının Belirlenmesi</h2>
+  <p class="lead">
+    6331 sayılı Kanun'un 9. maddesi uyarınca işyeri tehlike sınıfları, 5510 sayılı Kanun'un kısa vadeli sigorta
+    kolları prim tarifesi de dikkate alınarak İş Sağlığı ve Güvenliği Genel Müdürlüğü başkanlığındaki komisyon
+    görüşleri doğrultusunda Bakanlıkça çıkarılan bir tebliğ ile tespit edilir. 26.12.2012 tarihli ve 28509 sayılı
+    Resmî Gazete'de yayımlanan "İş Sağlığı ve Güvenliğine İlişkin İşyeri Tehlike Sınıfları Tebliği"ne göre:
+  </p>
+  <ul class="lead" style="padding-left:22px;">
+    <li>Tehlike sınıfının tespitinde işyerinde yürütülen <b>asıl işin</b> tehlike sınıfı esas alınır.</li>
+    <li>İşveren, asıl iş faaliyet değişikliğini en geç bir ay içinde Bakanlığa bildirmek zorundadır.</li>
+    <li>Asıl işin tayininde tereddüt varsa işyerinin kuruluş amacına bakılır.</li>
+    <li>Birden fazla asıl iş tanımına uygun faaliyet yürütülüyorsa, tehlike sınıfı yüksek olan iş esas alınır.</li>
+  </ul>
+
+  <div class="callout">
+    <h4>İşyeri Tehlike Sınıfına İtiraz Edilmesi</h4>
+    <p>Tebliğ'in 3. maddesine göre tehlike sınıfına yapılan itirazlar, işyerinin tesciline esas alınan asıl iş
+      dikkate alınarak Çalışma ve Sosyal Güvenlik Bakanlığınca değerlendirilir; gerekli görülmedikçe ayrıca bir
+      inceleme yapılmaz. Kararın tehlike sınıfı değişikliğine yol açması hâlinde işveren, gerekli iş ve
+      işlemleri 90 gün içinde tamamlamak ve İş Sağlığı ve Güvenliği Genel Müdürlüğü'ne bildirmek zorundadır.</p>
+  </div>
+
+  <h3 style="font-family:var(--font-display);font-weight:600;font-size:19px;margin-top:34px;">Etkinlik &middot; Mesleki Eğitim Zorunlu mu?</h3>
+  <p class="lead">Aşağıdaki işleri, "Tehlikeli ve Çok Tehlikeli Sınıfta Yer Alan İşlerde Çalıştırılacakların
+    Mesleki Eğitimlerine Dair Yönetmelik" ekindeki listeye (Tablo 1.4) göre doğru gruba sürükleyin.</p>
+  <div class="dd-box">
+    <div class="dd-title">Etkinlik</div>
+    <p class="dd-desc">Aşağıdaki işlerden hangileri Tablo 1.4'te açıkça sayılmıştır, hangileri sayılmamıştır?</p>
+    <div class="dd-pool" id="egitim-pool"></div>
+    <div class="dd-targets" id="egitim-targets"></div>
+    <button class="reset-btn dd-reset" id="egitim-reset-btn">Etkinliği sıfırla</button>
+  </div>
+
+  <h3 style="font-family:var(--font-display);font-weight:600;font-size:19px;margin-top:34px;">Tablo 1.3 &middot; Çok Tehlikeli İşler Listesinden Arayın</h3>
+  <p class="lead">NACE tanımlamalarına göre çok tehlikeli işler listesi (Tablo 1.3) alfabetik olarak
+    derlenmiştir. Aşağıdan bir anahtar kelime ile arama yapabilirsiniz.</p>
+  <div class="searchbar">
+    <input type="text" id="cok-tehlikeli-search" placeholder="Örn. madencilik, imalat, boru hattı...">
+    <span class="count-pill" id="cok-tehlikeli-count"></span>
+  </div>
+  <div class="list-box" id="cok-tehlikeli-list"></div>
+</section>
+
+<!-- ================= NACE KODU ================= -->
+<section id="nace-kodu">
+  <div class="sec-label">Uygulama</div>
+  <h2 class="sec-title">İşyerinin NACE Kodu Nasıl Belirlenir?</h2>
+  <p class="lead">
+    İşyeri tehlike sınıfı, işyerinin "NACE" koduyla belirlenir. NACE kodu, işyerinin SGK sicil numarasının
+    2. hanesinden başlayarak 3, 4, 5, 6 ve 7. hanelerindeki rakamlardan oluşan 6 haneli bir koddur. Bulunan bu
+    kod, "İş Sağlığı ve Güvenliğine İlişkin İşyeri Tehlike Sınıfları Tebliği" ekindeki listede aratılarak
+    işyerinin tehlike sınıfı öğrenilir.
+  </p>
+
+  <div class="calc">
+    <div class="calc-row">
+      <div>
+        <label for="sgk-sicil-input">SGK Sicil Numarası</label>
+        <input type="text" id="sgk-sicil-input" placeholder="Örn. 242110202001260000602-58">
+      </div>
+      <button id="nace-hesapla-btn">NACE Kodunu Hesapla</button>
+    </div>
+    <div class="calc-error" id="nace-hesapla-error">Lütfen en az 7 haneli bir sicil numarası girin.</div>
+    <div class="calc-result" id="nace-hesapla-result"></div>
+  </div>
+
+  <h3 style="font-family:var(--font-display);font-weight:600;font-size:19px;margin-top:34px;">Kavramları Eşleştirin</h3>
+  <p class="lead">Aşağıdaki tanımları, ait oldukları kavramla eşleştirin.</p>
+  <div class="match-grid">
+    <div class="match-col">
+      <h5>Tanımlar (sürükleyin)</h5>
+      <div id="kavram-pool"></div>
+    </div>
+    <div class="match-col">
+      <h5>Kavramlar</h5>
+      <div id="kavram-slots"></div>
+    </div>
+  </div>
+  <button class="reset-btn dd-reset" id="kavram-reset-btn">Etkinliği sıfırla</button>
+
+  <div class="callout warn" style="margin-top:30px;">
+    <h4>AVM'ler Gerçekten "Az Tehlikeli" midir?</h4>
+    <p>Bir AVM yönetim şirketinin NACE kodu (68.32 &middot; gayrimenkul yönetimi) onu "az tehlikeli" sınıfa
+      sokar. Ancak cephe temizliği, teknik bakım, kiralanabilir alan tadilatı, kaynaklı imalatlar ve yüksekte
+      çalışma gibi faaliyetler AVM'lerin günlük rutininde sıkça yer alır ve bunların hepsi "çok tehlikeli"
+      sınıfta bulunan riskli aktivitelerdir. Bu nedenle tesis yönetiminin İSG planlaması, mevzuattaki "az
+      tehlikeli" etiketine rağmen çok tehlikeli işyerlerinden farksız yapılmalıdır.</p>
+    <p class="src">Kaynak: mallreport.com.tr, "AVM'lerde Tehlike Sınıfı Tespiti ve İSG Hizmetleri", Erişim: 08.12.2020</p>
+  </div>
+</section>
+
+<!-- ================= İŞ KAZASI ================= -->
+<section id="is-kazasi">
+  <div class="sec-label">5510 Sayılı Kanun</div>
+  <h2 class="sec-title">İş Kazası: Tanım, Bildirim ve Teşvikler</h2>
+  <p class="lead">
+    İş kazası, kişinin çalışma hayatında 5510 sayılı Kanun'da sayılan hâllerden birinde meydana gelen ve
+    sigortalıyı bedenen veya ruhen engelli hâle getiren olaydır. Örneğin bir maden işletmesinde yer altında
+    çalışan bir sigortalının grizu patlaması veya kömür yangını sonucu yaralanması ya da vefat etmesi iş
+    kazasıdır.
+  </p>
+
+  <div class="tabs" id="iskazasi-tabs"></div>
+  <div class="list-box" id="iskazasi-list" style="max-height:380px;"></div>
+
+  <div class="callout" style="margin-top:26px;">
+    <h4>Bildirim Süresi</h4>
+    <p>Hizmet akdine tabi (4/a) sigortalıların iş kazaları, işveren tarafından olayın olduğu tarihten sonraki
+      üç iş günü içinde SGK'ye bildirilmelidir. Kendi adına ve hesabına bağımsız çalışanlar (4/b) ise
+      rahatsızlıklarının bildirime engel olmadığı günden sonraki üç iş günü içinde bildirim yapmalıdır.
+      Bildirim süresinde yapılmazsa, bildirim tarihine kadar sigortalıya ödenen geçici iş göremezlik ödeneği
+      işverenden tahsil edilir ve idari para cezası uygulanır.</p>
+  </div>
+
+  <div class="tf-box">
+    <div class="tf-label">Bilgi Kontrolü &middot; Doğru / Yanlış</div>
+    <div class="tf-statement">İş kazası olayı yaşanmayan işverenlere teşvikten yararlanmak için işyerinin çok
+      tehlikeli sınıfta yer alması, 10'dan fazla çalışanı bulunması ve son 3 yıl içinde ölümlü veya sürekli iş
+      göremezlikle sonuçlanan iş kazası meydana gelmemiş olması gerekir.</div>
+    <div class="tf-btns">
+      <button class="tf-btn" onclick="answerTF(this,true)">Doğru</button>
+      <button class="tf-btn" onclick="answerTF(this,false)">Yanlış</button>
+    </div>
+    <div class="tf-fb">Doğru: Bu şartları sağlayan işyerlerinde işsizlik sigortası işveren payı, bir sonraki
+      takvim yılından geçerli olmak üzere ve üç yıl süreyle %1 olarak alınır. Kazanın bildirilmemesi hâlinde
+      işveren, yararlandığı primleri yasal faiziyle geri öder ve beş yıl süreyle teşvikten yararlanamaz.</div>
+  </div>
+</section>
+
+<!-- ================= MESLEKİ EĞİTİM ================= -->
+<section id="mesleki-egitim">
+  <div class="sec-label">6331 Sayılı Kanun &middot; Madde 17</div>
+  <h2 class="sec-title">Tehlikeli ve Çok Tehlikeli İşlerde Mesleki Eğitim Zorunluluğu</h2>
+  <p class="lead">
+    6331 sayılı Kanun'un 17. maddesinin 3. fıkrasına göre, mesleki eğitim alma zorunluluğu bulunan tehlikeli
+    ve çok tehlikeli sınıfta yer alan işlerde, yapacağı işle ilgili mesleki eğitim aldığını belgeleyemeyenler
+    çalıştırılamaz. Bu hükme dayanılarak çıkarılan "Tehlikeli ve Çok Tehlikeli Sınıfta Yer Alan İşlerde
+    Çalıştırılacakların Mesleki Eğitimlerine Dair Yönetmelik", mesleki eğitimin usul ve esaslarını, eğitimin
+    zorunlu olduğu işleri (Tablo 1.4) ve kabul edilen belge türlerini düzenler.
+  </p>
+
+  <div class="callout">
+    <h4>Mesleki Eğitimin Belgelendirilmesi</h4>
+    <p>Yönetmeliğin 6. maddesine göre Tablo 1.4'te sayılan işlerde fiilen çalıştırılacakların; 3308 sayılı
+      Kanun'a göre verilen diploma, bitirme belgesi, yetki belgesi veya ustalık belgesi; işbaşı eğitim
+      programı sonucu alınan belge; Millî Eğitim Bakanlığınca verilen operatör veya sürücü belgesi; ateşleyici
+      yeterlilik belgesi; yetkili kamu kurum ve kuruluşlarınca düzenlenen eğitim belgeleri; ya da Meslekî
+      Yeterlilik Kurumu'nca verilen meslekî yeterlilik belgelerinden birine sahip olmaları zorunludur.</p>
+  </div>
+
+  <div class="callout warn">
+    <h4>"Ağır ve Tehlikeli İşler" Uygulaması Hâlâ Sürüyor mu?</h4>
+    <p>2004 tarihli Ağır ve Tehlikeli İşler Yönetmeliği, hangi işlerin ağır ve tehlikeli sayılacağını, kadın ve
+      genç işçilerin hangi işlerde çalıştırılabileceğini ve sağlık raporu sıklığını (kadın/genç işçiler için
+      6 ayda bir, diğerleri için yılda bir) düzenlemekteydi. 2012'de yürürlüğe giren 6331 sayılı Kanun ile bu
+      yönetmeliğin dayandığı 4857 sayılı Kanun maddeleri kaldırılmış, iş ve işyerleri az tehlikeli-tehlikeli-çok
+      tehlikeli olarak üçe ayrılmıştır. Bu nedenle Ağır ve Tehlikeli İşler Yönetmeliği 2013'te tamamen
+      yürürlükten kaldırılmıştır; buna rağmen "ağır ve tehlikeli iş" ifadesi uzun süre gündelik konuşmada
+      yerini korumuştur. Sağlık raporlarında hâlâ kullanılan "ağır ve tehlikeli işlerde çalışabilir/çalışamaz"
+      ifadelerinin artık yasal bir karşılığı yoktur.</p>
+    <p class="src">Kaynak: meslekhastaligi.net, "Ağır ve Tehlikeli İşler Uygulaması Sürüyor mu?", Erişim: 08.12.2020</p>
+  </div>
+
+  <div class="tf-box">
+    <div class="tf-label">Bilgi Kontrolü &middot; Doğru / Yanlış</div>
+    <div class="tf-statement">Ağır ve Tehlikeli İşler Yönetmeliği hâlen yürürlüktedir ve muayene periyotları bu
+      yönetmeliğe göre belirlenmektedir.</div>
+    <div class="tf-btns">
+      <button class="tf-btn" onclick="answerTF(this,false)">Doğru</button>
+      <button class="tf-btn" onclick="answerTF(this,true)">Yanlış</button>
+    </div>
+    <div class="tf-fb">Yanlış: "Ağır ve tehlikeli iş ya da işyeri" tanımı üzerine kurulan sistem 2013 yılında
+      uygulamadan kaldırılmıştır. Muayene periyotları, sağlık raporları ve benzeri konular artık az
+      tehlikeli-tehlikeli-çok tehlikeli sistemine dayanan güncel mevzuat üzerinden yürütülmektedir.</div>
+  </div>
+</section>
+
+<!-- ================= MESLEKİ YETERLİLİK ================= -->
+<section id="mesleki-yeterlilik">
+  <div class="sec-label">Öğrenme Çıktısı 2</div>
+  <h2 class="sec-title">Ulusal Mesleki Yeterlilik Sistemi</h2>
+  <p class="lead">
+    Mesleki eğitim, toplumsal hayatın her alanında ihtiyaç duyulan mesleklerde kalifiye teknik eleman
+    yetiştirmek için gerekli bilgi ve becerilerin verildiği eğitimdir. Ulusal Mesleki Yeterlilik Sistemi ise;
+    ulusal meslek standartlarının oluşturulduğu, eğitim ve öğretim programlarının bu standartlara göre
+    hazırlandığı, iş gücünün mesleki yeterliliğinin akredite kuruluşlarca yapılan sınavlar sonucunda
+    belgelendirildiği, hayat boyu öğrenmeyi destekleyen adil ve şeffaf bir sistemdir.
+  </p>
+
+  <div class="callout">
+    <h4>Meslekî Yeterlilik Kurumu (MYK)</h4>
+    <p>Ulusal ve uluslararası meslek standartlarını temel alarak teknik ve meslekî alanlarda ulusal
+      yeterliliklerin esaslarını belirlemek; denetim, ölçme-değerlendirme, belgelendirme ve
+      sertifikalandırmaya ilişkin faaliyetleri yürütmek amacıyla 2006 yılında kurulmuştur. MYK; standartları
+      belirlenecek meslekleri tespit eder, ulusal yeterlilikleri hazırlar, yeterliliği belgelendirecek
+      kuruluşları yetkilendirir ve sınavlarda başarılı olanlara sertifika verilmesini sağlar.</p>
+  </div>
+
+  <div class="callout warn">
+    <h4>5544 Sayılı Kanun Kapsamı Dışındaki Meslekler</h4>
+    <p>5544 sayılı Mesleki Yeterlilik Kanunu'nun 2. maddesine göre tabiplik, diş hekimliği, hemşirelik, ebelik,
+      eczacılık, veterinerlik, mimarlık ve mühendislik meslekleri ile mesleğe giriş şartları ayrı bir kanunla
+      düzenlenmiş meslekler bu Kanun'un kapsamı dışındadır; bunların dışındaki tüm meslekler kapsam
+      dahilindedir. 2015 yılında yapılan düzenlemeyle, MYK tarafından yayımlanan tebliğlerde yer alan
+      mesleklerde çalışacak kişilerin MYK Mesleki Yeterlilik Belgesi alması zorunlu hâle gelmiştir.</p>
+  </div>
+
+  <div class="tf-box">
+    <div class="tf-label">Bilgi Kontrolü &middot; Doğru / Yanlış</div>
+    <div class="tf-statement">3308 sayılı Mesleki Eğitim Kanunu'na göre ustalık belgesi almış olan ya da bu
+      alanda mezun olduğu diplomasında belirtilen dalda çalışan kişilerden ayrıca MYK Mesleki Yeterlilik
+      Belgesi şartı aranmaz.</div>
+    <div class="tf-btns">
+      <button class="tf-btn" onclick="answerTF(this,true)">Doğru</button>
+      <button class="tf-btn" onclick="answerTF(this,false)">Yanlış</button>
+    </div>
+    <div class="tf-fb">Doğru: Ustalık belgesi almış olanlar ile Millî Eğitim Bakanlığına bağlı meslekî ve teknik
+      eğitim okullarından/üniversitelerin ilgili bölümlerinden mezun olup diploma veya ustalık belgesinde
+      belirtilen alanda çalıştırılanlar için MYK Mesleki Yeterlilik Belgesi şartı aranmaz.</div>
+  </div>
+</section>
+
+<!-- ================= BÖLÜM ÖZETİ ================= -->
+<section id="ozet">
+  <div class="sec-label">Bölüm Özeti</div>
+  <h2 class="sec-title">Öğrenme Çıktıları ve Bölüm Özeti</h2>
+  <div class="callout">
+    <h4>1 — Tehlikeli ve çok tehlikeli iş kollarını sınıflayabilme</h4>
+    <p>Yüksek riskli ortamlarda çalışmak, çalışanların geçimini sağlaması nedeniyle çalışma hayatının bir
+      gerçeğidir. İSG açısından farklı sektörlerdeki riskler farklı bakış açılarıyla ele alınmalıdır: ölümcül
+      kazalar açısından tehlikeli/çok tehlikeli iş kolları öne çıkarken, kas-iskelet ve psikososyal sağlık
+      sorunları açısından geleneksel olarak az riskli kabul edilen sektörler de dikkate alınmalıdır. İşyeri
+      tehlike sınıfı, NACE koduna dayanılarak Bakanlıkça yayımlanan tebliğ ile belirlenir.</p>
+  </div>
+  <div class="callout">
+    <h4>2 — Mesleki eğitim ve mesleki yeterlilik sistemini açıklayabilme</h4>
+    <p>6331 sayılı Kanun'un 17. maddesi, tehlikeli ve çok tehlikeli sınıfta yer alan işlerde çalışacaklara
+      mesleki eğitim alma ve bunu belgeleme zorunluluğu getirmiştir. 2006'da kurulan Meslekî Yeterlilik Kurumu,
+      ulusal meslek standartlarına dayanan bir belgelendirme sistemi işletmekte; eskiden geçerli olan "ağır ve
+      tehlikeli iş" kavramı ise yerini az tehlikeli-tehlikeli-çok tehlikeli sınıflandırma sistemine
+      bırakmıştır.</p>
+  </div>
+</section>
+
+<!-- ================= QUIZ ================= -->
+<section id="quiz">
+  <div class="sec-label">Neler Öğrendik?</div>
+  <h2 class="sec-title">Kendini Sına</h2>
+  <div class="quiz-progress">
+    <span id="quiz-position">Soru 1 / 10</span>
+    <span class="score-pill" id="quiz-score">Doğru: 0</span>
+  </div>
+  <div id="quiz-container"></div>
+  <button class="reset-btn" id="quiz-reset-btn">Sınavı sıfırla</button>
+</section>
+
+</div>
+
+<div class="stripe"></div>
+<footer>Kaynak: Tehlikeli ve Çok Tehlikeli İş Kollarında İş Sağlığı ve Güvenliği — Bölüm 1 (Maden, Metal ve İnşaat Sektörlerinde İş Sağlığı ve Güvenliği)</footer>
+
+<a href="#cover" class="top-link" id="top-link">&uarr;</a>
+
+<script src="assets/script.js"></script>
+<script>
+/* =========================================================
+   PAGE-SPECIFIC DATA + INIT CALLS — Bölüm 1
+   ========================================================= */
+
+const naceKarsilastirma = [
+  ["A/B","Tarım, avcılık, ormancılık / Balıkçılık","A B","Tarım, ormancılık ve balıkçılık"],
+  ["C","Madencilik ve taş ocakçılığı","B","Madencilik ve taş ocakçılığı"],
+  ["D","İmalat","C","İmalat"],
+  ["E","Elektrik, gaz ve su temini","D/E","Elektrik, gaz, buhar, klima temini / Su temini, atık yönetimi"],
+  ["F","İnşaat","F","İnşaat"],
+  ["G","Toptan ve perakende ticaret","G","Toptan-perakende ticaret; motorlu taşıt onarımı"],
+  ["H","Oteller ve restoranlar","I","Konaklama ve yemek servisi faaliyetleri"],
+  ["I","Nakliye, depolama ve iletişim","H","Nakliyat ve depolama"],
+  ["J","Bilgi ve iletişim / Finansal aracılık","J/K","Bilgi-iletişim / Finansal ve sigorta faaliyetleri"],
+  ["M","Eğitim","P","Eğitim"]
+];
+(function renderNaceTable(){
+  const body=document.getElementById('nace-karsilastirma-body');
+  naceKarsilastirma.forEach(row=>{
+    const tr=document.createElement('tr');
+    tr.innerHTML = `<td style="font-family:var(--font-mono);color:var(--orange)">${row[0]}</td><td>${row[1]}</td><td style="font-family:var(--font-mono);color:var(--orange)">${row[2]}</td><td>${row[3]}</td>`;
+    body.appendChild(tr);
+  });
+})();
+
+initFlipCards('sektor-flip', [
+  {tag:"coktehlikeli", tagText:"Yüksekten Düşme", title:"İnşaat",
+   text:"Çalışanlar sıklıkla tehlikeli maddeler kullanır ve yükseklerde çalışır; sektördeki travmatik yaralanmaların yarısından fazlası yüksekten düşmelerden kaynaklanır. Yaşlı çalışanlarda yaralanma ve ölüm olasılığı daha da yüksektir. Baret ve diğer koruyucu ekipmanlar zorunlu olsa da, çalışan davranışından ve çevre koşullarından doğan kazaları önlemek için sektöre özgü risk değerlendirmeleri kaçınılmazdır."},
+  {tag:"coktehlikeli", tagText:"Toz, Cıva, Radon", title:"Madencilik",
+   text:"Sanayi Devrimi'nden bu yana önemli mesafe kat edilmiş olsa da madencilik kendine özgü riskler taşımaya devam eder. Çalışanlar sağlığa zararlı toza, cıvaya veya radona maruz kalabilir. Riskin tamamen ortadan kaldırılamadığı faaliyetlerde en azından gaz maskesi, havalandırma sistemi ve kulak koruyucu gibi ekipmanlarla korunma sağlanması gerekir."},
+  {tag:"tehlikeli", tagText:"Göreceli Az Dikkat", title:"Sağlık Hizmetleri",
+   text:"Görece daha az dikkat çekse de, stresli ortamda uzun saatler çalışma bu sektörü riskli hâle getirir. Hastalarla uzun süre ilgilenmenin, yılda 100.000 çalışan başına 30 vakaya kadar zarar verebildiği tahmin edilmektedir. İğne batması gibi olaylar hâlâ endişe verici oranda görülür; bu nedenle düzenli tıbbi tarama ve eğitim önem taşır."},
+  {tag:"tehlikeli", tagText:"Ağır Makine, Kimyasal", title:"İmalat-Metal",
+   text:"Gıdadan tekstile, mobilyaya kadar her şeyi kapsayan geniş bir iş kolu grubudur. Çalışanlar genellikle ağır iş makineleri ve tehlikeli malzemelerle çalışır; bu yüzden detaylı bilgilendirme ve eğitim gerekir. Endüstriyel otomasyon arttıkça kaza olasılığı azalsa da, insan istihdamı sürdükçe kişisel ve toplu korunma önlemlerine duyulan ihtiyaç devam eder."}
+]);
+
+const egitimReset = initBucketSort('egitim-pool','egitim-targets',
+  [{key:"zorunlu",label:"Tablo 1.4'te Sayılmıştır (Zorunlu)"},{key:"degil",label:"Tablo 1.4'te Sayılmamıştır"}],
+  [
+    {label:"Petrol, doğalgaz ve her çeşit maden arama ve sondaj işleri", correct:"zorunlu"},
+    {label:"Kükürdün eritme yoluyla üretimi, öğütülmesi ve depolanması", correct:"zorunlu"},
+    {label:"Cam, şişe ve optik malzeme üretimine ilişkin işler", correct:"zorunlu"},
+    {label:"10 kg'ı aşmayan tornacılık ve tesviyecilik gibi talaşlı imalat işleri", correct:"degil"},
+    {label:"Denizlerde, göllerde balık avlanması, toplanması ve dalyan işleri", correct:"zorunlu"}
+  ]
+);
+document.getElementById('egitim-reset-btn').addEventListener('click', egitimReset);
+
+const kavramReset = initMatchActivity('kavram-pool','kavram-slots', [
+  {term:"NACE Kodu", def:"İşyerinin ana faaliyetini tanımlayan, Avrupa Topluluğu'nda ekonomik faaliyetlerin istatistiki sınıflamasına göre verilen altı haneli kod."},
+  {term:"İşyeri Tehlike Sınıfı", def:"İşyerlerinin iş sağlığı ve güvenliği açısından az tehlikeli, tehlikeli veya çok tehlikeli olarak ayrıldığı sınıflandırma."},
+  {term:"Mesleki Yeterlilik Belgesi", def:"Bireyin, ulusal yeterlilikte belirtilen bilgi, beceri ve yetkinliklere sahip olduğunu gösteren belge."},
+  {term:"Meslekî Yeterlilik Kurumu (MYK)", def:"Ulusal mesleki yeterlilik sistemini kurmak ve işletmek üzere 2006 yılında kurulan kurum."}
+]);
+document.getElementById('kavram-reset-btn').addEventListener('click', kavramReset);
+
+initCodeCalculator({
+  inputId:'sgk-sicil-input', buttonId:'nace-hesapla-btn', errorId:'nace-hesapla-error', resultId:'nace-hesapla-result',
+  exampleCode:'42.11.02', exampleDesc:'yol, tünel vb. yerlerdeki yüzey işleri', exampleClass:'coktehlikeli', exampleClassTag:'ÇOK TEHLİKELİ'
+});
+
+const cokTehlikeliIsler = [
+  "Açık havada yapılan sporlara uygun tesislerin ve eğlence alanları yapılarının inşaatı",
+  "Adli tıp laboratuvarlarının faaliyetleri",
+  "Ağaç yünü, ağaç unu, ağaç talaşı, ağaç yonga imalatı",
+  "Aktif karbon imalatı",
+  "Akümülatör imalatı",
+  "Altın, gümüş, platin gibi değerli metal madenciliği",
+  "Alüminyum imalatı (işlenmemiş halde)",
+  "Alüminyum madenciliği",
+  "Amyantlı kağıt imalatı",
+  "Askerî savaş araçlarının imalatı",
+  "Askerî silah ve bunların parçalarının imalatı",
+  "Bakır madenciliği",
+  "Baraj ve bentlerin inşaatı",
+  "Barut, vb. itici tozların imalatı",
+  "Boru hattı ile doğalgaz taşımacılığı",
+  "Boru hattı ile ham petrol, rafine petrol ve petrol ürünleri taşımacılığı",
+  "Bor mineralleri madenciliği",
+  "Çakıl ve kum ocakçılığı",
+  "Çelik dökümü",
+  "Çimento imalatı",
+  "Demir cevheri madenciliği",
+  "Demir yolları ve metroların inşaatı",
+  "Doğal asfalt, asfaltit, asfaltlı taş ve bitüm madenciliği",
+  "Doğalgaz çıkarılması (madenciliği)",
+  "Elektrik enerjisi üretimi",
+  "Elmas (endüstri elmasları dâhil) madenciliği",
+  "Enerji santralleri inşaatı",
+  "Gemi ve yüzer yapıların hurdalarının parçalara ayrılması",
+  "Gemilerin, yüzer platformların büyük çapta değiştirilmesi ve yeniden inşası",
+  "Grafit ocakçılığı",
+  "Granit ocakçılığı",
+  "Guano madenciliği",
+  "Ham petrolün çıkarılması",
+  "Hava taşıtları yoluyla yapılan itfaiye hizmetleri",
+  "Havaalanı pisti inşaatı",
+  "Hazır patlayıcılar, dinamit, elektrikli kapsüller vb. patlayıcı imalatı",
+  "İkamet amaçlı olmayan binaların inşaatı",
+  "İnşaat amaçlı kazık çakma ve temel inşaatı işleri",
+  "İnşaat iskelesi ve çalışma platformunu kurma ve sökme işleri",
+  "Kaya tuzunun çıkarımı",
+  "Kehribar, Oltu taşı ve lületaşı ocakçılığı",
+  "Kırıktaşı (kalker) ocakçılığı",
+  "Kil, refrakter kil ve kaolin madenciliği",
+  "Kömürün karbonlaştırılması",
+  "Köprülerin inşaatı",
+  "Krom madenciliği",
+  "Kükürt madenciliği",
+  "Kurşun, çinko ve kalay madenciliği",
+  "Linyit madenciliği",
+  "Maden sahalarının hazırlanması",
+  "Madencilik ve imalat sanayisi yapılarının inşaatı",
+  "Mermer ocakçılığı",
+  "Nükleer reaktörler ve nükleer reaktör parçası imalatı",
+  "Otoyollar, kara yolları, şehir içi yollar ve diğer yolların inşaatı",
+  "Petrol ve gaz çıkarımı ile ilgili vinç ve sondaj kulesi kurma, onarım, sökme hizmetleri",
+  "Savaş gemileri ve denizaltıların imalatı",
+  "Taş kömürü madenciliği",
+  "Tehlikeli atıkların ıslahı ve bertaraf edilmesi",
+  "Toryum madenciliği",
+  "Tünel inşaatı",
+  "Uranyum madenciliği",
+  "Yer altı çalışmaları (madencilik, depolama vb. için düşey galeri ve kuyu açma)",
+  "Yıkım işleri (binaların ve diğer yapıların yıkılması ve sökülmesi)",
+  "Yol yüzeylerinin asfaltlanması ve onarımı, tünel vb. yerlerdeki yüzey işleri",
+  "Zemin ve arazi hazırlama, kazı ve hafriyat işleri"
+];
+initSearchList('cok-tehlikeli-search','cok-tehlikeli-list','cok-tehlikeli-count', cokTehlikeliIsler);
+
+const iskazasiData = {
+  "İş Kazası Sayılan Hâller":[
+    "Sigortalının işyerinde bulunduğu sırada meydana gelen olaylar.",
+    "İşveren tarafından yürütülmekte olan iş nedeniyle meydana gelen olaylar.",
+    "Bir işverene bağlı çalışan sigortalının, görevli olarak işyeri dışında başka bir yere gönderilmesi nedeniyle asıl işini yapmaksızın geçen zamanlarda meydana gelen olaylar.",
+    "Emziren kadın sigortalının, çocuğuna süt vermek için ayrılan zamanlarda meydana gelen olaylar.",
+    "Sigortalıların, işverence sağlanan bir taşıtla işin yapıldığı yere gidiş gelişi sırasında meydana gelen olaylar.",
+    "Kendi adına ve hesabına bağımsız çalışan sigortalının, yürütmekte olduğu iş nedeniyle meydana gelen olaylar."
+  ],
+  "İş Kazası Sigortası Kapsamındaki Sigortalılar":[
+    "Hizmet akdi ile çalışanlar (4/a).",
+    "Kendi adına ve hesabına bağımsız çalışanlar ile köy ve mahalle muhtarları (4/b).",
+    "Ceza İnfaz Kurumları ile Tutukevlerinde çalışanlar.",
+    "Aday çırak, çırak ve stajyerler.",
+    "Tarım ve orman işlerinde hizmet akdiyle süreksiz olarak çalışan sigortalılar.",
+    "Ek 9'uncu maddede belirtilen şartlarda ev hizmetlerinde çalışan sigortalılar."
+  ],
+  "İş Kazası Sigortasından Sağlanan Haklar":[
+    "Geçici İş Göremezlik Ödeneği — istirahat süresince çalışılamayan günler için ödenen parasal yardım.",
+    "Sürekli İş Göremezlik Geliri — meslekte kazanma gücü en az %10 oranında azalanlara bağlanan gelir.",
+    "Ölüm Geliri — iş kazası sonucu vefat eden sigortalının hak sahiplerine bağlanan gelir.",
+    "Evlenme Ödeneği.",
+    "Cenaze Ödeneği."
+  ]
+};
+initTabbedList('iskazasi-tabs','iskazasi-list', iskazasiData);
+
+const quizData = [
+  {q:"Avrupa Birliği'ndeki sektörlerin, NACE düzenlemelerine uygun olarak tanımlamasını ve sınıflandırmasını yapan kuruluş aşağıdakilerden hangisidir?",
+   options:["ILO","Eurostat","WHO","OSHA-EU","OSHA"], correct:1},
+  {q:"NACE sınıflandırma sisteminin ilk piyasaya sürüldüğü yıl aşağıdakilerden hangisidir?",
+   options:["1961","1990","2008","2011","2020"], correct:0},
+  {q:"İş sağlığı ve güvenliği açısından tanımlanan işyerleri tehlike sınıfları aşağıdakilerden hangisidir?",
+   options:["Tehlikesiz, tehlikeli ve çok tehlikeli","Az ağır, tehlikeli ve çok ağır","Tehlikeli, çok tehlikeli ve yüksek tehlikeli","Az tehlikeli, tehlikeli ve çok tehlikeli","Hafif, ağır ve çok ağır"], correct:3},
+  {q:"Aşağıdakilerden hangisi NACE tanımlamalarına göre çok tehlikeli işler sınıfında yer almaz?",
+   options:["Aktif karbon imalatı","Alüminyum madenciliği","Amyantlı kağıt imalatı","Baraj ve bentlerin inşaatı","Otelcilik ve konaklama işleri"], correct:4},
+  {q:"Aşağıdakilerden hangisi çalışanların işsizlik sigortası işveren payı teşvik olarak bir sonraki takvim yılından geçerli olmak üzere ve üç yıl süreyle %1 olarak alınmasını sağlayan teşvik uygulamasının şartlarındandır?",
+   options:["İşyeri az tehlikeli sınıfta olmalı","İşyerinde 50'den fazla çalışan olmalı","Son 3 yıl içinde ölümlü veya sürekli iş göremezlikle sonuçlanan iş kazası meydana gelmemiş olmalı","İşyeri tehlikeli sınıfta olmalı","KOBİ olmalı"], correct:2},
+  {q:"Kendi adına ve hesabına bağımsız çalışan sigortalıların iş kazası hâllerinin bildirimi aşağıdakilerden hangisi tarafından yapılır?",
+   options:["İşveren","Kolluk kuvvetleri","İş güvenliği uzmanı","Çalışanın kendisi","İş yeri hekimi"], correct:3},
+  {q:"Sigortalının iş kazası, meslek hastalığı, hastalık ve analık hallerinde kurumca yetkilendirilen hekim veya sağlık kurulu raporlarında belirtilen istirahat süresince geçici olarak çalışamama hâline ne ad verilir?",
+   options:["Geçici iş göremezlik","Geçici iş göremezlik ödeneği","Ölüm geliri","Cenaze ödeneği","Evlenme ödeneği"], correct:0},
+  {q:"Bir kimsenin hayatını kazanmak için yaptığı, kuralları toplum tarafından belirlenmiş ve belli bir eğitimle kazanılan bilgi ve becerilere dayalı faaliyetler bütünü olarak tanımlanan kavram aşağıdakilerden hangisidir?",
+   options:["Mesleki beceri","Kabiliyet","Meslek","Yeterlilik sistemi","Mesleki standart"], correct:2},
+  {q:"Örgün veya yaygın eğitim yoluyla bireyleri mesleğe hazırlamak, meslek sahibi olanların mesleklerindeki gelişimlerini ve yeni mesleklere uyumlarını sağlamak amacıyla gerekli bilgi, beceri, tavır ve değer duygularını geliştiren eğitime ne ad verilir?",
+   options:["Mesleki eğitim","Teknik eğitim","Yaşam boyu eğitim","Lisans eğitimi","Çıraklık eğitimi"], correct:0},
+  {q:"Aşağıdakilerden hangisi mesleki eğitim alınacak işler kapsamında değildir?",
+   options:["Petrol, tabii gaz, su ve her çeşit maden ile taş, toprak, kum ve benzeri maddelerin çıkarılması ve üretimi işleri","Kükürdün eritme yoluyla üretimi, öğütülmesi, ambalajı ve depolanması ile ilgili işler","Cam, şişe, optik ve benzeri malzeme fabrika ve imalathanelerinde üretime ilişkin işler","10 kg'ı aşmayan tornacılık, tesviyecilik gibi talaşlı imalat ve taşlama işleri","Denizlerde, göllerde ve nehirlerde balık ve diğer hayvanların avlanması, toplanması, üretilmesi ve dalyan işleri"], correct:3}
+];
+initQuiz({
+  containerId:'quiz-container', positionId:'quiz-position', scoreId:'quiz-score',
+  resetBtnSelector:'#quiz-reset-btn', quizData:quizData
+});
+</script>
+</body>
+</html>
