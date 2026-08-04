@@ -70,7 +70,11 @@ function answerTF(btn, isCorrectChoice){
   if(!isCorrectChoice){
     btns.forEach(b=>{ if(b!==btn) b.classList.add('correct'); });
   }
-  box.querySelector('.tf-fb').classList.add('show');
+  const fb=box.querySelector('.tf-fb');
+  const prefix = isCorrectChoice ? 'Tebrikler yanıtınız doğru! ' : 'Yanıtınız yanlış! ';
+  const color  = isCorrectChoice ? 'var(--green)' : 'var(--red)';
+  fb.innerHTML = `<b style="color:${color}">${prefix}</b>` + fb.innerHTML;
+  fb.classList.add('show');
 }
 
 /* ---------- Generic pointer-based drag & drop ----------
@@ -99,7 +103,7 @@ function answerTF(btn, isCorrectChoice){
      scrolling while a chip is being dragged (see styles.css). */
 let _activeDragEnd = null;
 
-function makeDraggable(el, onDropCheck){
+function makeDraggable(el, onDropCheck, onSettled){
   let offsetX=0, offsetY=0, origParent=null, placeholder=null, dragging=false, lastEvt=null, activePointerId=null;
 
   el.addEventListener('pointerdown', startDrag);
@@ -190,6 +194,7 @@ function makeDraggable(el, onDropCheck){
       }
     }
     refreshAllDropZones();
+    if(typeof onSettled==='function') onSettled();
   }
 }
 
@@ -240,8 +245,39 @@ function shuffleArray(arr){
    or dragged back onto the pool to unsort them. Each chip is colored
    individually (chip-correct / chip-wrong) and a target's own border
    reflects the aggregate of everything currently inside it. */
-function initBucketSort(poolId, targetsId, buckets, items){
+function initBucketSort(poolId, targetsId, buckets, items, revealBtnId){
+  const revealBtn = revealBtnId ? document.getElementById(revealBtnId) : null;
+  let errorSeen = false;
+
+  // Enable the "Yanıtları gör" button once a chip has been placed in the wrong
+  // bucket; it stays enabled until the activity is reset.
+  function updateReveal(){
+    if(!revealBtn) return;
+    const targets=document.getElementById(targetsId);
+    if(targets && targets.querySelector('.chip-wrong')) errorSeen=true;
+    revealBtn.disabled = !errorSeen;
+  }
+
+  // Move every chip into its correct bucket and mark it correct.
+  function solve(){
+    const pool=document.getElementById(poolId);
+    const targets=document.getElementById(targetsId);
+    const allTargets=Array.from(targets.querySelectorAll('.dd-target'));
+    const chips=[...pool.querySelectorAll('.dd-chip'), ...targets.querySelectorAll('.dd-chip')];
+    chips.forEach(chip=>{
+      const item=items[parseInt(chip.dataset.idx)];
+      const target=allTargets.find(t=>t.dataset.key===item.correct);
+      if(!target) return;
+      target.appendChild(chip);
+      chip.classList.add('placed','chip-correct');
+      chip.classList.remove('chip-wrong');
+    });
+    refreshAllDropZones();
+    updateReveal();
+  }
+
   function render(){
+    errorSeen=false;
     const pool=document.getElementById(poolId);
     const targets=document.getElementById(targetsId);
     pool.innerHTML=''; targets.innerHTML='';
@@ -276,9 +312,12 @@ function initBucketSort(poolId, targetsId, buckets, items){
         }
         // refreshAllDropZones() (called by makeDraggable after this returns)
         // recomputes this target's aggregate correct/wrong border.
-      });
+      }, updateReveal);
     });
+    updateReveal();
   }
+
+  if(revealBtn) revealBtn.addEventListener('click', solve);
   render();
   return render; // so caller can wire up a reset button
 }
@@ -289,8 +328,39 @@ function initBucketSort(poolId, targetsId, buckets, items){
    so a wrong match can be dragged straight into another slot or back to
    the pool; dropping onto an already-occupied slot swaps the previous
    occupant back to the pool automatically. */
-function initMatchActivity(poolId, slotsId, pairs){
+function initMatchActivity(poolId, slotsId, pairs, revealBtnId){
+  const revealBtn = revealBtnId ? document.getElementById(revealBtnId) : null;
+  let errorSeen = false;
+
+  // Enable the "Yanıtları gör" button once a definition has been dropped on the
+  // wrong term slot; it stays enabled until the activity is reset.
+  function updateReveal(){
+    if(!revealBtn) return;
+    const slots=document.getElementById(slotsId);
+    if(slots && slots.querySelector('.def-wrong')) errorSeen=true;
+    revealBtn.disabled = !errorSeen;
+  }
+
+  // Drop every definition onto its matching term slot and mark it correct.
+  function solve(){
+    const pool=document.getElementById(poolId);
+    const slots=document.getElementById(slotsId);
+    const allSlots=Array.from(slots.querySelectorAll('.match-slot'));
+    const defs=[...pool.querySelectorAll('.match-def'), ...slots.querySelectorAll('.match-def')];
+    defs.forEach(def=>{
+      const idx=parseInt(def.dataset.idx);
+      const slot=allSlots.find(s=>parseInt(s.dataset.idx)===idx);
+      if(!slot) return;
+      slot.appendChild(def);
+      def.classList.add('placed','def-correct');
+      def.classList.remove('def-wrong');
+    });
+    refreshAllDropZones();
+    updateReveal();
+  }
+
   function render(){
+    errorSeen=false;
     const pool=document.getElementById(poolId);
     const slots=document.getElementById(slotsId);
     pool.innerHTML=''; slots.innerHTML='';
@@ -328,9 +398,12 @@ function initMatchActivity(poolId, slotsId, pairs){
         else { el.classList.add('def-wrong'); el.classList.remove('def-correct'); }
         // refreshAllDropZones() (called by makeDraggable after this returns)
         // recomputes this slot's correct/wrong border from el's class.
-      });
+      }, updateReveal);
     });
+    updateReveal();
   }
+
+  if(revealBtn) revealBtn.addEventListener('click', solve);
   render();
   return render;
 }
