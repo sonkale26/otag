@@ -323,6 +323,15 @@ tr:hover td{background:var(--amber-bg);}
 .reset-btn{background:none;border:1px solid var(--line);color:var(--muted);padding:9px 16px;border-radius:5px;font-family:var(--font-mono);font-size:13px;cursor:pointer;margin-top:8px;touch-action:manipulation;}
 .reset-btn:hover{border-color:var(--amber);color:var(--amber);}
 
+/* action row + "Yanıtları gör" (reveal answers) button for drag activities.
+   The reveal button is disabled until the learner makes a wrong drop, then
+   turns amber to signal it is now actionable. */
+.dd-actions{display:flex;flex-wrap:wrap;gap:10px;}
+.dd-reveal:not([disabled]){border-color:var(--amber);color:var(--amber);}
+.dd-reveal:not([disabled]):hover{background:var(--amber-bg);}
+.dd-reveal[disabled]{opacity:.5;cursor:not-allowed;}
+.dd-reveal[disabled]:hover{border-color:var(--line);color:var(--muted);background:none;}
+
 footer{text-align:center;color:var(--muted);font-family:var(--font-mono);font-size:13px;padding:40px 20px 10px;}
 
 /* ============ SCROLL AFFORDANCE ============
