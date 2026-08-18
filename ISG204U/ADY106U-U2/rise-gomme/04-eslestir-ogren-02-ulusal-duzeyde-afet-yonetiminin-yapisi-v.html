@@ -1,0 +1,2268 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Türkiye’nin Afet Yönetim Sistemi</title>
+<style>@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap');
+
+/* ============================================================
+   Çöz-Öğren çalışma zamanı — kurumsal tasarım sistemi
+   Lacivert kurum rengi, ölçülü mavi vurgu, başarı öğelerinde altın.
+   ============================================================ */
+:root {
+  --ink: #13243d;
+  --ink-2: #3c4d68;
+  --ink-3: #6f7f99;
+  --paper: #f2f4f8;
+  --card: #ffffff;
+
+  --accent: #1d5c9e;
+  --accent-2: #164a80;
+  --accent-tint: #e9f0f8;
+
+  --gold: #8f6b1c;
+  --gold-2: #b8912f;
+  --gold-tint: #f8f1de;
+
+  --rule: #d5dce7;
+  --rule-soft: #e6eaf1;
+  --ok: #1a6b47;
+  --ok-tint: #e7f2ec;
+  --no: #a83232;
+  --no-tint: #f8eaea;
+
+  --display: 'Source Serif 4', Georgia, serif;
+  --body: 'Inter', system-ui, -apple-system, sans-serif;
+  --mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  --r-s: 4px;
+  --r-m: 8px;
+  --r-l: 12px;
+  --shadow: 0 1px 2px rgba(19, 36, 61, .05), 0 6px 18px -10px rgba(19, 36, 61, .16);
+  --shadow-lift: 0 2px 4px rgba(19, 36, 61, .07), 0 16px 34px -16px rgba(19, 36, 61, .26);
+  --maxw: 880px;
+  --side-w: 306px;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+
+body.eo-body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.eo-shell { display: flex; min-height: 100vh; align-items: flex-start; }
+
+/* ============================================================
+   Kenar çubuğu
+   ============================================================ */
+.eo-side {
+  width: var(--side-w);
+  flex: 0 0 var(--side-w);
+  background: var(--ink);
+  color: #fff;
+  padding: 22px 20px 26px;
+  position: sticky;
+  top: 0;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+.eo-brand { display: block; padding-bottom: 16px; border-bottom: 1px solid rgba(255, 255, 255, .13); }
+.eo-brand .eo-eyebrow {
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: .18em;
+  text-transform: uppercase; color: #92a5c2; margin-bottom: 10px;
+}
+.eo-brand h1 {
+  font-family: var(--display); font-weight: 700; font-size: 24px; line-height: 1.2;
+  margin: 0 0 6px; letter-spacing: -.005em;
+}
+.eo-brand p { margin: 0; font-size: 13px; color: #a9b8d3; line-height: 1.5; }
+
+.eo-side-foot {
+  margin-top: 18px; padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, .13);
+  font-size: 11.5px; color: #8fa0bd; line-height: 1.55;
+}
+
+/* ---- Rütbe ve puan ---- */
+.eo-rank { margin: 16px 0 14px; }
+.eo-rank-top { display: flex; align-items: center; gap: 11px; margin-bottom: 9px; }
+.eo-rank-seal {
+  width: 44px; height: 44px; flex: 0 0 44px; border-radius: 50%;
+  display: grid; place-items: center;
+  border: 2px solid var(--gold-2); background: rgba(184, 145, 47, .14);
+  font-family: var(--mono); font-size: 15px; font-weight: 500; color: #e3c579;
+}
+.eo-rank-name { font-family: var(--display); font-weight: 600; font-size: 16.5px; line-height: 1.2; }
+.eo-rank-pts { font-family: var(--mono); font-size: 11.5px; color: #92a5c2; margin-top: 3px; }
+.eo-rank-track { height: 4px; border-radius: 999px; background: rgba(255, 255, 255, .14); overflow: hidden; }
+.eo-rank-track i {
+  display: block; height: 100%; width: 0; border-radius: 999px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-2));
+  transition: width .5s cubic-bezier(.3, .1, .2, 1);
+}
+.eo-rank-next { font-family: var(--mono); font-size: 10.5px; color: #8fa0bd; margin-top: 6px; }
+
+/* ---- İlerleme ---- */
+.eo-progress { margin: 0 0 16px; }
+.eo-prog-top {
+  display: flex; align-items: baseline; justify-content: space-between;
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: .16em;
+  text-transform: uppercase; color: #92a5c2; margin-bottom: 8px;
+}
+.eo-prog-top b { font-size: 17px; color: #fff; letter-spacing: 0; font-weight: 600; }
+.eo-prog-track { height: 7px; border-radius: 999px; background: rgba(255, 255, 255, .14); overflow: hidden; }
+.eo-prog-track i {
+  display: block; height: 100%; width: 0; border-radius: 999px;
+  background: #6ea8e0; transition: width .5s cubic-bezier(.3, .1, .2, 1);
+}
+.eo-progress.is-full .eo-prog-track i { background: linear-gradient(90deg, var(--gold), var(--gold-2)); }
+.eo-prog-meta {
+  display: flex; align-items: center; gap: 10px; justify-content: space-between;
+  margin-top: 8px; font-size: 11.5px; color: #92a5c2;
+}
+.eo-prog-reset {
+  background: none; border: 0; padding: 0; font: inherit; font-size: 11.5px;
+  color: #92a5c2; text-decoration: underline; cursor: pointer;
+}
+.eo-prog-reset:hover { color: #fff; }
+
+/* ---- Rozetler ---- */
+.eo-badges { margin-bottom: 6px; }
+.eo-badges h4 {
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: .16em; text-transform: uppercase;
+  color: #92a5c2; margin: 0 0 8px; font-weight: 400;
+}
+.eo-badge-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 7px; }
+.eo-badge {
+  aspect-ratio: 1; border-radius: 50%; display: grid; place-items: center;
+  border: 1.5px solid rgba(255, 255, 255, .18); background: rgba(255, 255, 255, .05);
+  color: rgba(255, 255, 255, .32); position: relative; padding: 0;
+  transition: transform .2s ease, border-color .2s ease, background .2s ease;
+}
+.eo-badge svg { width: 18px; height: 18px; display: block; }
+.eo-badge.is-earned { border-color: var(--gold-2); background: rgba(184, 145, 47, .16); color: #e3c579; }
+.eo-badge.is-earned:hover { transform: translateY(-2px); }
+.eo-badge.is-new { animation: eo-badge-pop .6s ease; }
+@keyframes eo-badge-pop {
+  0% { transform: scale(.5); }
+  60% { transform: scale(1.16); }
+  100% { transform: scale(1); }
+}
+
+/* Rozet bildirimi */
+.eo-award {
+  position: fixed; right: 22px; bottom: 22px; z-index: 60; max-width: 330px;
+  display: flex; align-items: center; gap: 14px;
+  background: var(--ink); color: #fff; border-radius: var(--r-l);
+  border-left: 3px solid var(--gold-2);
+  padding: 15px 20px 15px 17px; box-shadow: var(--shadow-lift);
+  transform: translateY(16px); opacity: 0; transition: .32s cubic-bezier(.2, .7, .3, 1);
+}
+.eo-award.show { transform: translateY(0); opacity: 1; }
+.eo-award-seal {
+  width: 40px; height: 40px; flex: 0 0 40px; border-radius: 50%;
+  display: grid; place-items: center;
+  border: 2px solid var(--gold-2); background: rgba(184, 145, 47, .18); color: #e3c579;
+}
+.eo-award-seal svg { width: 19px; height: 19px; }
+.eo-award-kicker {
+  font-family: var(--mono); font-size: 10px; letter-spacing: .16em;
+  text-transform: uppercase; color: #e3c579; margin-bottom: 3px;
+}
+.eo-award-name { font-family: var(--display); font-weight: 600; font-size: 16px; line-height: 1.25; }
+.eo-award-desc { font-size: 12.5px; color: #b3c1d9; margin-top: 2px; line-height: 1.4; }
+
+/* ---- Gezinme ---- */
+.eo-nav { list-style: none; margin: 14px 0 16px; padding: 0; display: grid; gap: 1px; }
+.eo-nav button {
+  width: 100%; display: grid; grid-template-columns: 28px 1fr; align-items: center; gap: 13px;
+  background: transparent; border: 0; border-left: 2px solid transparent;
+  border-radius: 0 var(--r-m) var(--r-m) 0;
+  padding: 9px 11px; color: #ccd6e8; font: inherit; font-size: 14.5px; text-align: left;
+  cursor: pointer; transition: background .16s ease, color .16s ease, border-color .16s ease;
+}
+.eo-nav button:hover { background: rgba(255, 255, 255, .06); color: #fff; }
+.eo-nav button[aria-current="true"] {
+  background: rgba(255, 255, 255, .1); color: #fff; font-weight: 600; border-left-color: #6ea8e0;
+}
+.eo-nav .eo-num {
+  font-family: var(--mono); font-size: 11.5px; width: 28px; height: 28px;
+  display: grid; place-items: center; border: 1.5px solid currentColor;
+  border-radius: 50%; opacity: .55;
+}
+.eo-nav button[aria-current="true"] .eo-num { opacity: 1; border-color: #6ea8e0; color: #6ea8e0; }
+.eo-nav button.is-done .eo-num { border-color: var(--gold-2); color: #e3c579; opacity: 1; }
+.eo-nav button.is-done[aria-current="true"] .eo-num { background: rgba(184, 145, 47, .2); }
+.eo-navmeta { display: block; font-size: 11px; opacity: .62; font-family: var(--mono); margin-top: 2px; }
+
+.eo-menubtn { display: none; }
+
+/* ============================================================
+   İçerik alanı
+   ============================================================ */
+.eo-main { flex: 1; min-width: 0; padding: 32px 34px 64px; }
+.eo-wrap { max-width: var(--maxw); margin: 0 auto; }
+
+.eo-lessonhead { margin-bottom: 22px; padding-bottom: 16px; border-bottom: 1px solid var(--rule); }
+.eo-lessonhead .eo-kicker {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .18em;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 8px;
+}
+.eo-lessonhead h2 {
+  font-family: var(--display); font-weight: 700; font-size: clamp(27px, 4vw, 38px);
+  line-height: 1.15; letter-spacing: -.015em; margin: 0 0 7px;
+}
+.eo-lessonhead p { margin: 0; color: var(--ink-2); max-width: 64ch; font-size: 16px; }
+
+.eo-activity {
+  background: var(--card); border: 1px solid var(--rule); border-radius: var(--r-l);
+  box-shadow: var(--shadow); margin-bottom: 16px; overflow: hidden;
+}
+.eo-act-head {
+  display: flex; align-items: center; gap: 14px;
+  padding: 13px 18px; border-bottom: 1px solid var(--rule-soft); background: #fbfcfe;
+}
+.eo-act-head .eo-tag {
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--ink-3); border: 1px solid var(--rule); border-radius: var(--r-s);
+  padding: 4px 9px; white-space: nowrap;
+}
+.eo-act-head h3 {
+  font-family: var(--display); font-weight: 600; font-size: 19px; margin: 0;
+  flex: 1; min-width: 0; line-height: 1.3;
+}
+.eo-act-body { padding: 20px 18px; }
+
+.eo-act-tick {
+  width: 26px; height: 26px; flex: 0 0 26px; border-radius: 50%;
+  display: grid; place-items: center; font-size: 13px; font-weight: 700;
+  background: var(--gold-tint); color: var(--gold); border: 1px solid rgba(143, 107, 28, .3);
+  opacity: 0; transform: scale(.6); transition: opacity .3s ease, transform .3s ease;
+}
+.eo-activity.is-complete .eo-act-tick { opacity: 1; transform: scale(1); }
+.eo-activity.is-complete { border-color: rgba(143, 107, 28, .32); }
+.eo-activity.is-complete .eo-act-head { background: var(--gold-tint); }
+
+.eo-earned {
+  font-family: var(--mono); font-size: 11px; color: var(--gold);
+  background: var(--gold-tint); border-radius: var(--r-s); padding: 4px 9px; white-space: nowrap;
+}
+
+/* ============================================================
+   Ortak bileşenler
+   ============================================================ */
+.eo-bubble {
+  width: 28px; height: 28px; flex: 0 0 28px;
+  border: 1.5px solid var(--rule); border-radius: 50%;
+  display: grid; place-items: center;
+  font-family: var(--mono); font-size: 12.5px; color: var(--ink-3); background: #fff;
+  transition: background .18s ease, border-color .18s ease, color .18s ease;
+}
+.eo-rail { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.eo-rail .eo-dot {
+  width: 11px; height: 11px; border-radius: 50%;
+  border: 1.5px solid var(--rule); background: #fff; transition: all .18s ease;
+}
+.eo-rail .eo-dot.is-current { border-color: var(--ink); transform: scale(1.25); }
+.eo-rail .eo-dot.is-ok { background: var(--ok); border-color: var(--ok); }
+.eo-rail .eo-dot.is-no { background: var(--no); border-color: var(--no); }
+
+.eo-btn {
+  font: inherit; font-weight: 600; font-size: 14.5px;
+  border-radius: var(--r-m); padding: 11px 20px;
+  border: 1px solid var(--ink); background: var(--ink); color: #fff;
+  cursor: pointer; transition: background .16s ease, opacity .16s ease;
+}
+.eo-btn:hover { background: #1d3255; }
+.eo-btn[disabled] { opacity: .4; cursor: not-allowed; }
+.eo-btn.ghost { background: #fff; color: var(--ink); border-color: var(--rule); }
+.eo-btn.ghost:hover { border-color: var(--ink-3); background: #f7f9fc; }
+.eo-btn.accent { background: var(--accent); border-color: var(--accent); }
+.eo-btn.accent:hover { background: var(--accent-2); }
+.eo-btn.sm { padding: 8px 15px; font-size: 13.5px; }
+
+.eo-actions { display: flex; gap: 9px; flex-wrap: wrap; align-items: center; margin-top: 16px; }
+.eo-spacer { flex: 1; }
+.eo-counter { font-family: var(--mono); font-size: 12.5px; color: var(--ink-3); }
+.eo-counter b { color: var(--ink); font-size: 16px; font-weight: 500; }
+
+:where(button, a, input, [tabindex]):focus-visible {
+  outline: 2px solid var(--accent); outline-offset: 2px; border-radius: var(--r-s);
+}
+
+/* ============================================================
+   1) Tıkla-Öğren
+   ============================================================ */
+.eo-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(215px, 1fr)); gap: 12px; }
+.eo-card { perspective: 1400px; background: none; border: 0; padding: 0; cursor: pointer; font: inherit; }
+.eo-card-inner {
+  position: relative; width: 100%; min-height: 186px;
+  transform-style: preserve-3d; transition: transform .5s cubic-bezier(.4, .1, .2, 1);
+}
+.eo-card[aria-pressed="true"] .eo-card-inner { transform: rotateY(180deg); }
+.eo-face {
+  position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden;
+  border-radius: var(--r-m); padding: 22px 18px;
+  display: flex; flex-direction: column; justify-content: center; text-align: center;
+  border: 1px solid var(--rule);
+}
+.eo-face-front { background: var(--ink); color: #fff; border-color: var(--ink); }
+.eo-face-front .eo-term { font-family: var(--display); font-weight: 600; font-size: 19px; line-height: 1.3; }
+.eo-face-front .eo-hint {
+  font-family: var(--mono); font-size: 10px; letter-spacing: .14em; text-transform: uppercase;
+  color: #92a5c2; margin-top: 14px;
+}
+.eo-face-back {
+  transform: rotateY(180deg); background: #fff; border-color: var(--accent);
+  box-shadow: inset 0 0 0 1px var(--accent-tint);
+  font-size: 14.5px; line-height: 1.55; color: var(--ink-2);
+  overflow-y: auto; overscroll-behavior: contain;
+  /* Taşan metin ortalanırken üstten kırpılmasın diye içerik akışa bırakılır */
+  justify-content: flex-start; padding: 20px 15px;
+  scrollbar-width: thin;
+}
+.eo-face-back p { margin: auto 0; }   /* kısa metinler yine dikeyde ortalanır */
+.eo-card-idx { position: absolute; top: 11px; left: 13px; font-family: var(--mono); font-size: 10.5px; opacity: .5; }
+
+/* ============================================================
+   2) Yanıtla-Öğren
+   ============================================================ */
+.eo-quiz-top {
+  display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+  margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid var(--rule-soft);
+}
+.eo-streak {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .06em;
+  color: var(--gold); background: var(--gold-tint); border: 1px solid rgba(143, 107, 28, .25);
+  border-radius: var(--r-s); padding: 4px 10px; animation: eo-streak-in .3s ease;
+}
+@keyframes eo-streak-in { from { opacity: 0; transform: translateY(-3px); } to { opacity: 1; } }
+
+.eo-qtext { font-family: var(--display); font-weight: 600; font-size: 20px; line-height: 1.45; margin: 0 0 15px; }
+.eo-options { display: grid; gap: 7px; }
+.eo-opt {
+  display: flex; align-items: flex-start; gap: 13px; width: 100%; text-align: left;
+  padding: 13px 16px; border: 1px solid var(--rule); border-radius: var(--r-m);
+  background: #fff; font: inherit; font-size: 15.5px; color: var(--ink); cursor: pointer;
+  transition: border-color .16s ease, background .16s ease;
+}
+.eo-opt:hover:not([disabled]) { border-color: var(--accent); background: var(--accent-tint); }
+.eo-opt:not(.is-picked):hover:not([disabled]) .eo-bubble { border-color: var(--accent); color: var(--accent); }
+.eo-opt.is-picked { border-color: var(--accent); background: var(--accent-tint); }
+.eo-opt.is-picked .eo-bubble { background: var(--accent); border-color: var(--accent); color: #fff; }
+.eo-opt.is-ok { border-color: var(--ok); background: var(--ok-tint); }
+.eo-opt.is-ok .eo-bubble { background: var(--ok); border-color: var(--ok); color: #fff; }
+.eo-opt.is-no { border-color: var(--no); background: var(--no-tint); }
+.eo-opt.is-no .eo-bubble { background: var(--no); border-color: var(--no); color: #fff; }
+.eo-opt[disabled] { cursor: default; }
+
+.eo-feedback {
+  margin-top: 14px; padding: 13px 16px; border-radius: var(--r-m);
+  border: 1px solid var(--rule); border-left: 3px solid var(--accent);
+  background: #fbfcfe; font-size: 14.5px; line-height: 1.6; color: var(--ink-2);
+}
+.eo-feedback .eo-fb-title {
+  font-family: var(--display); font-weight: 600; font-size: 15.5px; color: var(--accent); margin-bottom: 4px;
+}
+.eo-feedback.is-ok { border-left-color: var(--ok); background: var(--ok-tint); border-color: rgba(26, 107, 71, .25); }
+.eo-feedback.is-ok .eo-fb-title { color: var(--ok); }
+.eo-feedback.is-no { border-left-color: var(--no); background: var(--no-tint); border-color: rgba(168, 50, 50, .22); }
+.eo-feedback.is-no .eo-fb-title { color: var(--no); }
+
+.eo-result { text-align: center; padding: 12px 4px 4px; }
+.eo-score-ring {
+  width: 118px; height: 118px; margin: 0 auto 16px; border-radius: 50%;
+  display: grid; place-items: center; position: relative;
+  background: conic-gradient(var(--accent) var(--pct, 0%), var(--rule-soft) 0);
+}
+.eo-score-ring.is-high { background: conic-gradient(var(--gold-2) var(--pct, 0%), var(--rule-soft) 0); }
+.eo-score-ring::after { content: ""; position: absolute; inset: 10px; background: #fff; border-radius: 50%; }
+.eo-score-ring span {
+  position: relative; z-index: 1; font-family: var(--display); font-weight: 700; font-size: 31px;
+}
+.eo-result h4 { font-family: var(--display); font-weight: 700; font-size: 22px; margin: 0 0 8px; }
+.eo-result p { margin: 0 auto 20px; color: var(--ink-2); max-width: 48ch; }
+.eo-review { text-align: left; margin-top: 18px; display: grid; gap: 6px; }
+.eo-review-item {
+  display: grid; grid-template-columns: 26px 1fr; gap: 12px; padding: 13px 16px;
+  border: 1px solid var(--rule-soft); border-radius: var(--r-m); font-size: 14.5px;
+}
+.eo-review-item .eo-mark {
+  width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center;
+  font-size: 13px; color: #fff; font-weight: 700;
+}
+.eo-review-item.ok .eo-mark { background: var(--ok); }
+.eo-review-item.no .eo-mark { background: var(--no); }
+.eo-review-item small { display: block; color: var(--ink-3); margin-top: 4px; }
+
+/* ============================================================
+   3) Bul-Öğren
+   ============================================================ */
+.eo-puzzle { display: grid; grid-template-columns: auto 1fr; gap: 24px; align-items: start; }
+.eo-puzzle-left { min-width: 0; }
+.eo-grid-scroll { overflow-x: auto; padding-bottom: 8px; -webkit-overflow-scrolling: touch; }
+.eo-grid { display: grid; gap: 3px; width: max-content; grid-auto-rows: var(--cell, 34px); }
+.eo-cell {
+  position: relative; width: var(--cell, 34px); height: var(--cell, 34px); background: transparent;
+}
+.eo-cell.open { background: #fff; border: 1px solid var(--ink); border-radius: var(--r-s); }
+.eo-cell input {
+  width: 100%; height: 100%; border: 0; background: transparent; text-align: center;
+  font-family: var(--mono); font-size: 16px; font-weight: 500; text-transform: uppercase;
+  color: var(--ink); padding: 0; border-radius: 0;   /* 16px: iOS'ta odaklanınca yakınlaşmayı önler */
+}
+.eo-cell input:focus { outline: 0; }
+.eo-cell.is-word { background: var(--accent-tint); }
+
+/* Aktif hücre yönü: yatayda mavi ve sağ ok, dikeyde amber ve alt ok */
+.eo-grid.dir-across .eo-cell.is-active { background: #cfe2f4; border-color: var(--accent); }
+.eo-grid.dir-across .eo-cell.is-active::after {
+  content: '➤'; position: absolute; right: -7px; top: 50%; transform: translateY(-50%);
+  font-size: 10px; color: var(--accent); pointer-events: none; z-index: 3;
+}
+.eo-grid.dir-down .eo-cell.is-word { background: var(--gold-tint); }
+.eo-grid.dir-down .eo-cell.is-active { background: #f2e4c0; border-color: var(--gold-2); }
+.eo-grid.dir-down .eo-cell.is-active::after {
+  content: '▼'; position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%);
+  font-size: 10px; color: var(--gold); pointer-events: none; z-index: 3;
+}
+.eo-cell.is-ok { background: var(--ok-tint) !important; border-color: var(--ok); }
+.eo-cell.is-no { background: var(--no-tint) !important; border-color: var(--no); }
+.eo-cell .eo-cnum {
+  position: absolute; top: 1px; left: 3px; font-family: var(--mono); font-size: var(--cnum, 8.5px);
+  color: var(--ink-3); pointer-events: none; line-height: 1.2;
+}
+
+/* Yön ve güncel ipucu kutusu */
+.eo-cwbar {
+  border: 1px solid var(--rule); border-left: 3px solid var(--accent);
+  border-radius: var(--r-m); background: #fbfcfe; padding: 9px 12px; margin-bottom: 11px;
+}
+.eo-cwbar.is-down { border-left-color: var(--gold-2); background: #fdfaf1; }
+.eo-cwtop { display: flex; align-items: center; gap: 12px; }
+.eo-cwdir {
+  font-family: var(--mono); font-size: 11.5px; letter-spacing: .06em;
+  text-transform: uppercase; color: var(--accent); flex: 1; min-width: 0;
+}
+.eo-cwdir b { font-size: 13px; }
+.eo-cwbar.is-down .eo-cwdir { color: var(--gold); }
+.eo-cwnav { display: flex; gap: 5px; flex: 0 0 auto; }
+.eo-cwstep {
+  width: 34px; height: 34px; border-radius: var(--r-s); border: 1px solid var(--rule);
+  background: #fff; color: var(--ink-2); font: inherit; font-size: 17px; line-height: 1;
+  cursor: pointer; display: grid; place-items: center;
+}
+.eo-cwstep:hover { border-color: var(--accent); color: var(--accent); }
+.eo-cwclue { font-size: 15px; line-height: 1.5; color: var(--ink); margin-top: 8px; }
+.eo-cwclue:empty { display: none; }
+.eo-cwnum {
+  display: inline-grid; place-items: center; min-width: 21px; height: 21px; padding: 0 5px;
+  border-radius: var(--r-s); background: var(--accent); color: #fff;
+  font-family: var(--mono); font-size: 11.5px; margin-right: 8px; vertical-align: 1px;
+}
+.eo-cwbar.is-down .eo-cwnum { background: var(--gold-2); }
+.eo-cwlen { font-family: var(--mono); font-size: 12px; color: var(--ink-3); }
+.eo-cwhelp { font-size: 12px; color: var(--ink-3); margin-top: 7px; }
+
+.eo-clues h4 {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--accent); margin: 0 0 10px; padding-bottom: 8px;
+  border-bottom: 1px solid var(--rule-soft); font-weight: 400;
+}
+.eo-clues ol { list-style: none; margin: 0 0 16px; padding: 0; display: grid; gap: 1px; }
+.eo-clues li button {
+  display: grid; grid-template-columns: 24px 1fr; gap: 8px; width: 100%; text-align: left;
+  background: none; border: 0; border-radius: var(--r-s); padding: 9px 8px; font: inherit;
+  font-size: 14.5px; line-height: 1.45; color: var(--ink-2); cursor: pointer;
+}
+.eo-clues li button:hover { background: #f2f5f9; }
+.eo-clues li button[aria-current="true"] { background: var(--accent-tint); color: var(--ink); }
+.eo-clues li.solved button { color: var(--ink-3); text-decoration: line-through; }
+.eo-clues .eo-cn { font-family: var(--mono); font-size: 13px; color: var(--accent); }
+.eo-cwdone {
+  margin-top: 16px; padding: 13px 16px; border-radius: var(--r-m);
+  border: 1px solid rgba(26, 107, 71, .3); background: var(--ok-tint);
+  color: var(--ok); font-family: var(--display); font-weight: 600; font-size: 15.5px;
+}
+
+/* ============================================================
+   4) Eşleştir-Öğren
+   ============================================================ */
+.eo-match { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; align-items: start; }
+.eo-match-col h4 {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--ink-3); margin: 0 0 12px; font-weight: 400;
+}
+.eo-pool { display: grid; gap: 7px; min-height: 36px; }
+.eo-chip {
+  padding: 12px 15px; border: 1px solid var(--rule); border-radius: var(--r-m);
+  background: #fff; font: inherit; font-size: 14.5px; line-height: 1.45; text-align: left;
+  color: var(--ink-2); cursor: pointer; transition: border-color .16s ease, background .16s ease;
+}
+.eo-chip:hover { border-color: var(--accent); }
+.eo-chip.is-selected { border-color: var(--accent); background: var(--accent-tint); box-shadow: inset 0 0 0 1px var(--accent); }
+.eo-chip.is-dragging { opacity: .45; }
+.eo-slot {
+  border: 1px solid var(--rule-soft); border-radius: var(--r-m); padding: 13px 15px;
+  background: #fbfcfe; display: grid; gap: 8px;
+}
+.eo-slot .eo-slot-term { font-family: var(--display); font-weight: 600; font-size: 16px; }
+.eo-drop {
+  min-height: 50px; border: 1px dashed var(--rule); border-radius: var(--r-s);
+  display: grid; place-items: center; padding: 9px 11px; text-align: center;
+  font-size: 13px; color: var(--ink-3); background: #fff; cursor: pointer;
+}
+.eo-drop.is-over { border-color: var(--accent); background: var(--accent-tint); }
+.eo-drop.filled { border-style: solid; color: var(--ink-2); font-size: 14px; text-align: left; place-items: start; }
+.eo-slot.is-ok { border-color: var(--ok); background: var(--ok-tint); }
+.eo-slot.is-ok .eo-drop { border-color: var(--ok); background: var(--ok-tint); }
+.eo-slot.is-no .eo-drop { border-color: var(--no); background: var(--no-tint); }
+.eo-hintline { font-size: 13.5px; color: var(--ink-3); margin: 0 0 13px; }
+
+/* ============================================================
+   5) Dene-Öğren
+   ============================================================ */
+.eo-study-nav { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 16px; }
+.eo-step {
+  font-family: var(--mono); font-size: 12px; padding: 6px 12px; border-radius: var(--r-s);
+  border: 1px solid var(--rule); background: #fff; color: var(--ink-3); cursor: pointer;
+}
+.eo-step[aria-current="true"] { background: var(--ink); border-color: var(--ink); color: #fff; }
+.eo-step.done { border-color: var(--gold-2); color: var(--gold); background: var(--gold-tint); }
+.eo-cat {
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--accent); margin-bottom: 8px;
+}
+.eo-study h4 {
+  font-family: var(--display); font-weight: 700; font-size: 25px; line-height: 1.2;
+  letter-spacing: -.01em; margin: 0 0 11px;
+}
+.eo-theory { font-size: 16.5px; line-height: 1.7; color: var(--ink-2); margin: 0 0 16px; }
+.eo-keys {
+  border-left: 2px solid var(--accent); padding: 2px 0 2px 32px; margin: 0 0 18px;
+  display: grid; gap: 9px;
+}
+.eo-keys li { list-style: none; font-size: 15px; line-height: 1.6; color: var(--ink-2); position: relative; }
+.eo-keys li::before {
+  content: attr(data-n); font-family: var(--mono); font-size: 11px; color: var(--accent);
+  position: absolute; left: -32px; top: 4px;
+}
+.eo-quizbox { border-top: 1px solid var(--rule-soft); padding-top: 18px; }
+.eo-quizbox .eo-qlabel {
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--ink-3); margin-bottom: 12px;
+}
+
+.eo-done { text-align: center; padding: 20px 12px; }
+.eo-done .eo-stamp {
+  width: 80px; height: 80px; margin: 0 auto 18px; border-radius: 50%;
+  border: 2px solid var(--gold-2); color: var(--gold); display: grid; place-items: center;
+  font-size: 34px; background: var(--gold-tint);
+}
+.eo-done h4 { font-family: var(--display); font-weight: 700; font-size: 24px; margin: 0 0 8px; }
+.eo-done p { color: var(--ink-2); margin: 0 auto 20px; max-width: 46ch; }
+
+.eo-empty {
+  padding: 26px 18px; text-align: center; color: var(--ink-3); font-size: 15px;
+  border: 1px dashed var(--rule); border-radius: var(--r-m); background: #fbfcfe;
+}
+
+.eo-sr {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+
+/* ============================================================
+   Duyarlı düzen
+   ============================================================ */
+@media (max-width: 1080px) {
+  :root { --side-w: 268px; }
+  .eo-main { padding: 28px 24px 60px; }
+  .eo-puzzle { grid-template-columns: 1fr; gap: 24px; }
+}
+
+@media (max-width: 900px) {
+  .eo-match { grid-template-columns: 1fr; gap: 18px; }
+}
+
+@media (max-width: 860px) {
+  .eo-shell { flex-direction: column; align-items: stretch; }
+  .eo-side {
+    position: sticky; top: 0; z-index: 40;
+    width: 100%; flex: none; max-height: none; overflow: visible;
+    padding: 13px 16px; display: grid;
+    grid-template-columns: auto 1fr auto; align-items: center; gap: 11px;
+    box-shadow: 0 2px 14px rgba(19, 36, 61, .22);
+  }
+  .eo-brand { padding-bottom: 0; border-bottom: 0; grid-column: 2; grid-row: 1; min-width: 0; }
+  .eo-brand .eo-eyebrow, .eo-brand p, .eo-side-foot { display: none; }
+  .eo-brand h1 { font-size: 16.5px; margin: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+  .eo-rank { grid-column: 1; grid-row: 1; margin: 0; }
+  .eo-rank-top { margin: 0; gap: 0; }
+  .eo-rank-seal { width: 36px; height: 36px; flex-basis: 36px; font-size: 13px; }
+  .eo-rank-info, .eo-rank-track, .eo-rank-next { display: none; }
+
+  .eo-menubtn {
+    display: block; grid-column: 3; grid-row: 1;
+    background: rgba(255, 255, 255, .1); border: 1px solid rgba(255, 255, 255, .22);
+    color: #fff; border-radius: var(--r-m); padding: 10px 14px; font: inherit; font-size: 13.5px;
+    cursor: pointer; white-space: nowrap; min-height: 40px;
+  }
+
+  .eo-progress { grid-column: 1 / -1; grid-row: 2; margin: 0; }
+  .eo-prog-top, .eo-prog-meta { display: none; }
+  .eo-prog-track { height: 4px; }
+
+  .eo-nav, .eo-badges { display: none; }
+  .eo-side.open .eo-nav {
+    display: grid; grid-column: 1 / -1; grid-row: 3;
+    margin: 6px 0 0; max-height: 50vh; overflow-y: auto;
+  }
+  .eo-side.open .eo-badges { display: block; grid-column: 1 / -1; grid-row: 4; margin: 2px 0 6px; }
+  .eo-side.open .eo-badge-grid { grid-template-columns: repeat(8, 1fr); }
+  .eo-side.open .eo-rank-info { display: block; }
+  .eo-side.open .eo-prog-top { display: flex; margin-bottom: 6px; }
+  .eo-side.open .eo-prog-meta { display: flex; margin-top: 6px; }
+  .eo-side.open .eo-progress { margin-top: 4px; }
+
+  .eo-main { padding: 18px 14px 52px; }
+  .eo-lessonhead { margin-bottom: 18px; padding-bottom: 14px; }
+  .eo-act-body { padding: 15px 12px; }
+  .eo-act-head { padding: 11px 12px; gap: 9px; flex-wrap: wrap; }
+  .eo-act-head h3 { font-size: 17px; flex-basis: 100%; order: 3; }
+  .eo-activity { border-radius: var(--r-m); margin-bottom: 18px; }
+
+  .eo-cards { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 11px; }
+  .eo-card-inner { min-height: 158px; }
+  .eo-face { padding: 16px 13px; }
+  .eo-face-front .eo-term { font-size: 15.5px; }
+  .eo-face-back { font-size: 13.5px; }
+
+  .eo-qtext { font-size: 17.5px; }
+  .eo-opt { font-size: 15px; padding: 12px 13px; gap: 11px; }
+  .eo-theory { font-size: 15.5px; }
+  .eo-study h4 { font-size: 21px; }
+  .eo-keys { padding-left: 30px; }
+  .eo-keys li::before { left: -28px; }
+
+  .eo-cwbar { padding: 10px 12px; }
+  .eo-cwclue { font-size: 14.5px; }
+  .eo-clues li button { padding: 11px 8px; }   /* dokunma hedefi */
+
+  .eo-actions { gap: 8px; }
+  .eo-actions .eo-btn { flex: 1 1 auto; min-height: 44px; }
+  .eo-counter { flex-basis: 100%; }
+
+  .eo-award { left: 14px; right: 14px; bottom: 14px; max-width: none; }
+}
+
+@media (max-width: 420px) {
+  .eo-main { padding: 16px 11px 46px; }
+  .eo-cards { grid-template-columns: 1fr 1fr; }
+  .eo-card-inner { min-height: 146px; }
+  .eo-cwstep { width: 38px; height: 38px; }
+  .eo-score-ring { width: 112px; height: 112px; }
+  .eo-brand h1 { font-size: 14.5px; }
+  .eo-menubtn { padding: 10px 11px; font-size: 12.5px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: .001ms !important; transition-duration: .001ms !important; }
+}
+
+@media print {
+  .eo-side, .eo-actions, .eo-menubtn, .eo-award { display: none !important; }
+  .eo-main { padding: 0; }
+  .eo-activity { break-inside: avoid; box-shadow: none; }
+}
+
+/* Izgara çocuklarının içeriğe göre şişip taşmasını engelle */
+.edit-wrap>*,#editor,.act,.act-body,.item,.optrow,.lesson-list{min-width:0}
+.optrow input[type=text],.act-head input{min-width:0}
+.item-head{flex-wrap:wrap;row-gap:6px}
+
+/* Stüdyo mobil düzeni */
+@media(max-width:760px){
+  .app{padding:14px 13px 60px}
+  .top{gap:10px}
+  .top .btn{flex:1 1 auto;min-width:104px}
+  .logo h1{font-size:18px}
+  .steps{padding:4px;gap:3px}
+  .steps button{min-width:0;flex:1 1 30%;font-size:12px;padding:9px 6px;gap:6px}
+  .steps button .n{width:19px;height:19px;font-size:10px}
+  .card{padding:16px 14px}
+  .card>h2{font-size:19px}
+  .grid2,.grid3{grid-template-columns:1fr;gap:10px}
+  .edit-wrap{grid-template-columns:1fr}
+  .lesson-list{position:static;grid-auto-flow:row}
+  .out{grid-template-columns:1fr}
+  .pv-frame{height:64vh;min-height:400px}
+  .act-head{flex-wrap:wrap}
+  .act-head input{flex:1 1 100%;order:-1}
+  .optrow{grid-template-columns:auto 1fr auto}
+}
+</style></head>
+<body class="eo-body"><div id="eo-root"></div>
+<script>window.EO_DATA={"meta":{"id":"mmsss5hyi2znp5c","title":"Türkiye’nin Afet Yönetim Sistemi","subtitle":"Çöz-Öğren","footer":"Anadolu Üniversitesi","eyebrow":"etkileşimli çalışma seti"},"lessons":[{"id":"eslestir","kind":"match","title":"Eşleştir-Öğren","intro":"Açıklamayı seçip karşısındaki kavramla eşleştirin.","activities":[{"title":"Ulusal Düzeyde Afet Yönetiminin Yapısı ve Paydaşları","items":[{"term":"5902 Sayılı Yasa","definition":"Türkiye'nin afet yönetimi sistemini belirleyen temel yasal düzenlemelerden biri olup ulusal ve yerel düzeylerde sistemin nasıl işlediğini ortaya koymaktadır."},{"term":"İl Afet ve Acil Durum Yönetim Merkezi","definition":"Vali başkanlığında yürütülen ve Operasyon, Lojistik ve Bakım, Bilgi ve Planlama ile Finans ve İdari İşler servislerini bünyesinde barındıran yerel düzey yönetim birimidir."}]}]}]};</script>
+<script>/* ============================================================
+   Çöz-Öğren — bulmaca motoru
+   Kelime + ipucu listesinden ızgarayı kendisi kurar, kesişimleri
+   en çoklayacak yerleşimi arar ve etkileşimi yönetir.
+   ============================================================ */
+(function (global) {
+  'use strict';
+
+  var TR_UP = { 'i': 'İ', 'ı': 'I', 'ş': 'Ş', 'ğ': 'Ğ', 'ü': 'Ü', 'ö': 'Ö', 'ç': 'Ç' };
+
+  function upperTR(s) {
+    return String(s || '').replace(/[iışğüöç]/g, function (c) { return TR_UP[c]; }).toUpperCase();
+  }
+
+  /** Yerleştirmeden önce cevabı sadeleştirir: harf dışındaki her şey atılır. */
+  function normalize(s) {
+    return upperTR(s).replace(/[^A-ZÇĞİÖŞÜ]/g, '');
+  }
+
+  function key(r, c) { return r + ',' + c; }
+
+  /**
+   * Kelimeleri kesişimli biçimde yerleştirir.
+   * @returns {{placed:Array, skipped:Array, grid:Map, rows:number, cols:number}}
+   */
+  function layout(words) {
+    var items = words
+      .map(function (w, i) {
+        return { text: normalize(w.answer), clue: w.clue || '', raw: w.answer || '', src: i };
+      })
+      .filter(function (w) { return w.text.length > 1; })
+      .sort(function (a, b) { return b.text.length - a.text.length; });
+
+    var grid = new Map();
+    var placed = [];
+    var skipped = [];
+
+    function letterAt(r, c) { return grid.has(key(r, c)) ? grid.get(key(r, c)) : null; }
+
+    function fits(word, r, c, dir) {
+      var dr = dir === 'down' ? 1 : 0, dc = dir === 'across' ? 1 : 0;
+      var cross = 0;
+      // Baş ve son komşusu boş olmalı — kelimeler birbirine yapışmasın
+      if (letterAt(r - dr, c - dc) || letterAt(r + dr * word.length, c + dc * word.length)) return -1;
+      for (var i = 0; i < word.length; i++) {
+        var rr = r + dr * i, cc = c + dc * i;
+        var cur = letterAt(rr, cc);
+        if (cur) {
+          if (cur !== word[i]) return -1;
+          cross++;
+        } else {
+          // Yeni doldurulan hücrenin yanları boş olmalı
+          var sr = dir === 'across' ? 1 : 0, sc = dir === 'across' ? 0 : 1;
+          if (letterAt(rr - sr, cc - sc) || letterAt(rr + sr, cc + sc)) return -1;
+        }
+      }
+      return cross;
+    }
+
+    function put(word, r, c, dir, item) {
+      var dr = dir === 'down' ? 1 : 0, dc = dir === 'across' ? 1 : 0;
+      for (var i = 0; i < word.length; i++) grid.set(key(r + dr * i, c + dc * i), word[i]);
+      placed.push({ text: word, clue: item.clue, raw: item.raw, row: r, col: c, dir: dir, src: item.src });
+    }
+
+    items.forEach(function (item, idx) {
+      var w = item.text;
+      if (idx === 0) { put(w, 0, 0, 'across', item); return; }
+
+      var best = null;
+      var cur = getBounds();
+      for (var i = 0; i < w.length; i++) {
+        for (var j = 0; j < placed.length; j++) {
+          var p = placed[j];
+          for (var k = 0; k < p.text.length; k++) {
+            if (p.text[k] !== w[i]) continue;
+            var dir = p.dir === 'across' ? 'down' : 'across';
+            var r, c;
+            if (dir === 'down') { r = p.row - i; c = p.col + k; }
+            else { r = p.row + k; c = p.col - i; }
+            var score = fits(w, r, c, dir);
+            if (score < 1) continue;
+            // Kesişimi ödüllendir, ızgarayı büyüten ve orantısızlaştıran yerleşimi cezalandır
+            var endR = r + (dir === 'down' ? w.length - 1 : 0);
+            var endC = c + (dir === 'across' ? w.length - 1 : 0);
+            var h = Math.max(cur.maxR, endR) - Math.min(cur.minR, r) + 1;
+            var wd = Math.max(cur.maxC, endC) - Math.min(cur.minC, c) + 1;
+            var total = score * 14 - (h * wd) * 0.05 - Math.abs(h - wd) * 0.6;
+            if (!best || total > best.total) best = { r: r, c: c, dir: dir, total: total };
+          }
+        }
+      }
+
+      if (best) { put(w, best.r, best.c, best.dir, item); return; }
+
+      // Kesişim bulunamadı: ızgaranın altına, ortalayarak ayrı bir satıra bırak
+      var bounds = getBounds();
+      var col = Math.round((bounds.minC + bounds.maxC - w.length) / 2);
+      var fallbackRow = bounds.maxR + 2;
+      var tries = 0;
+      while (fits(w, fallbackRow, col, 'across') < 0 && tries < 40) { fallbackRow++; tries++; }
+      if (tries < 40) put(w, fallbackRow, col, 'across', item);
+      else skipped.push(item.raw);
+    });
+
+    function getBounds() {
+      var minR = Infinity, maxR = -Infinity, minC = Infinity, maxC = -Infinity;
+      grid.forEach(function (v, k) {
+        var p = k.split(','), r = +p[0], c = +p[1];
+        if (r < minR) minR = r; if (r > maxR) maxR = r;
+        if (c < minC) minC = c; if (c > maxC) maxC = c;
+      });
+      if (minR === Infinity) return { minR: 0, maxR: 0, minC: 0, maxC: 0 };
+      return { minR: minR, maxR: maxR, minC: minC, maxC: maxC };
+    }
+
+    // Sol üst köşe 0,0 olacak şekilde kaydır
+    var b = getBounds();
+    var shifted = new Map();
+    grid.forEach(function (v, k) {
+      var p = k.split(',');
+      shifted.set(key(+p[0] - b.minR, +p[1] - b.minC), v);
+    });
+    placed.forEach(function (p) { p.row -= b.minR; p.col -= b.minC; });
+
+    // Numaralandırma: yukarıdan aşağı, soldan sağa
+    placed.sort(function (a, x) { return a.row - x.row || a.col - x.col; });
+    var nums = {};
+    var n = 0;
+    placed.forEach(function (p) {
+      var kk = key(p.row, p.col);
+      if (!nums[kk]) nums[kk] = ++n;
+      p.num = nums[kk];
+    });
+
+    return {
+      placed: placed,
+      skipped: skipped,
+      grid: shifted,
+      rows: b.maxR - b.minR + 1,
+      cols: b.maxC - b.minC + 1
+    };
+  }
+
+  /**
+   * Bulmacayı verilen kapsayıcıya çizer ve etkileşimi bağlar.
+   */
+  function render(host, words, opts) {
+    opts = opts || {};
+    var model = layout(words || []);
+    host.innerHTML = '';
+
+    if (!model.placed.length) {
+      host.innerHTML = '<div class="eo-empty">Bu bulmacada henüz kelime yok.</div>';
+      return null;
+    }
+
+    var wrap = document.createElement('div');
+    wrap.className = 'eo-puzzle';
+
+    var left = document.createElement('div');
+    left.className = 'eo-puzzle-left';
+
+    // Yön kutusu: aktif yön, o an çözülen ipucu ve kelimeler arası gezinme
+    var bar = document.createElement('div');
+    bar.className = 'eo-cwbar';
+    bar.innerHTML =
+      '<div class="eo-cwtop">' +
+        '<span class="eo-cwdir" data-dir>Yatay <b>➤</b></span>' +
+        '<span class="eo-cwnav">' +
+          '<button type="button" class="eo-cwstep" data-prev aria-label="Önceki kelime">‹</button>' +
+          '<button type="button" class="eo-cwstep" data-next aria-label="Sonraki kelime">›</button>' +
+        '</span>' +
+      '</div>' +
+      '<div class="eo-cwclue" data-clue></div>' +
+      '<div class="eo-cwhelp">Yönü değiştirmek için hücreye yeniden dokunun ya da boşluk tuşuna basın.</div>';
+    left.appendChild(bar);
+
+    var scroll = document.createElement('div');
+    scroll.className = 'eo-grid-scroll';
+    var gridEl = document.createElement('div');
+    gridEl.className = 'eo-grid dir-across';
+    gridEl.style.gridTemplateColumns = 'repeat(' + model.cols + ', var(--cell, 34px))';
+    scroll.appendChild(gridEl);
+    left.appendChild(scroll);
+
+    var cells = {};
+    var startNums = {};
+    model.placed.forEach(function (p) { startNums[key(p.row, p.col)] = p.num; });
+
+    for (var r = 0; r < model.rows; r++) {
+      for (var c = 0; c < model.cols; c++) {
+        var cell = document.createElement('div');
+        cell.className = 'eo-cell';
+        var letter = model.grid.get(key(r, c));
+        if (letter) {
+          cell.className += ' open';
+          var num = startNums[key(r, c)];
+          if (num) cell.innerHTML = '<span class="eo-cnum">' + num + '</span>';
+          var inp = document.createElement('input');
+          inp.type = 'text';
+          inp.setAttribute('maxlength', '2');
+          inp.setAttribute('autocomplete', 'off');
+          inp.setAttribute('autocorrect', 'off');
+          inp.setAttribute('autocapitalize', 'characters');
+          inp.setAttribute('spellcheck', 'false');
+          inp.setAttribute('enterkeyhint', 'next');
+          inp.setAttribute('aria-label', (r + 1) + '. satır ' + (c + 1) + '. sütun');
+          inp.dataset.r = r; inp.dataset.c = c;
+          cell.appendChild(inp);
+          cells[key(r, c)] = { el: cell, input: inp, answer: letter };
+        }
+        gridEl.appendChild(cell);
+      }
+    }
+
+    // İpucu listeleri
+    var right = document.createElement('div');
+    right.className = 'eo-clues';
+    var across = model.placed.filter(function (p) { return p.dir === 'across'; });
+    var down = model.placed.filter(function (p) { return p.dir === 'down'; });
+    var clueBtns = {};
+
+    function clueList(title, arr) {
+      if (!arr.length) return null;
+      var box = document.createElement('div');
+      var h = document.createElement('h4');
+      h.textContent = title;
+      var ol = document.createElement('ol');
+      arr.forEach(function (p) {
+        var li = document.createElement('li');
+        var b = document.createElement('button');
+        b.type = 'button';
+        b.innerHTML = '<span class="eo-cn">' + p.num + '</span><span>' + escapeHtml(p.clue) +
+          ' <span style="color:var(--ink-3);font-family:var(--mono);font-size:12px">(' + p.text.length + ')</span></span>';
+        b.addEventListener('click', function () { focusWord(p, true); });
+        li.appendChild(b);
+        ol.appendChild(li);
+        clueBtns[p.num + p.dir] = { li: li, btn: b };
+      });
+      box.appendChild(h); box.appendChild(ol);
+      return box;
+    }
+
+    var a1 = clueList('Soldan sağa', across); if (a1) right.appendChild(a1);
+    var d1 = clueList('Yukarıdan aşağı', down); if (d1) right.appendChild(d1);
+
+    wrap.appendChild(left);
+    wrap.appendChild(right);
+    host.appendChild(wrap);
+
+    // ---- Durum ----
+    var dir = 'across';
+    var active = null; // {r,c}
+
+    function wordAt(r, c, d) {
+      return model.placed.filter(function (p) {
+        if (p.dir !== d) return false;
+        if (d === 'across') return p.row === r && c >= p.col && c < p.col + p.text.length;
+        return p.col === c && r >= p.row && r < p.row + p.text.length;
+      })[0] || null;
+    }
+
+    function currentWord() {
+      if (!active) return null;
+      return wordAt(active.r, active.c, dir) ||
+             wordAt(active.r, active.c, dir === 'across' ? 'down' : 'across');
+    }
+
+    function paint() {
+      Object.keys(cells).forEach(function (k) {
+        cells[k].el.classList.remove('is-active', 'is-word');
+      });
+      Object.keys(clueBtns).forEach(function (k) { clueBtns[k].btn.removeAttribute('aria-current'); });
+
+      gridEl.classList.toggle('dir-across', dir === 'across');
+      gridEl.classList.toggle('dir-down', dir === 'down');
+      bar.classList.toggle('is-down', dir === 'down');
+      bar.querySelector('[data-dir]').innerHTML = dir === 'across'
+        ? 'Yatay · soldan sağa <b>➤</b>'
+        : 'Dikey · yukarıdan aşağı <b>▼</b>';
+
+      if (!active) { bar.querySelector('[data-clue]').textContent = ''; return; }
+
+      var w = currentWord();
+      if (w) {
+        for (var i = 0; i < w.text.length; i++) {
+          var rr = w.dir === 'down' ? w.row + i : w.row;
+          var cc = w.dir === 'across' ? w.col + i : w.col;
+          if (cells[key(rr, cc)]) cells[key(rr, cc)].el.classList.add('is-word');
+        }
+        var cb = clueBtns[w.num + w.dir];
+        if (cb) cb.btn.setAttribute('aria-current', 'true');
+        bar.querySelector('[data-clue]').innerHTML =
+          '<span class="eo-cwnum">' + w.num + '</span>' + escapeHtml(w.clue) +
+          ' <span class="eo-cwlen">(' + w.text.length + ' harf)</span>';
+      } else {
+        bar.querySelector('[data-clue]').textContent = '';
+      }
+
+      var cur = cells[key(active.r, active.c)];
+      if (cur) cur.el.classList.add('is-active');
+    }
+
+    /** Izgara, kullanılabilir genişliğe göre ölçeklenir; taşarsa yatay kaydırma devreye girer. */
+    function fitGrid() {
+      var avail = (scroll.clientWidth || left.clientWidth || 320) - 2;
+      var gap = 3;
+      var size = Math.floor((avail - (model.cols - 1) * gap) / model.cols);
+      size = Math.max(22, Math.min(34, size));
+      gridEl.style.setProperty('--cell', size + 'px');
+      gridEl.style.setProperty('--cnum', (size < 27 ? 7.5 : 8.5) + 'px');
+    }
+
+    function focusCell(r, c, silent) {
+      var cell = cells[key(r, c)];
+      if (!cell) return;
+      active = { r: r, c: c };
+      if (!silent) cell.input.focus({ preventScroll: false });
+      paint();
+    }
+
+    function focusWord(p, scroll) {
+      dir = p.dir;
+      focusCell(p.row, p.col);
+      if (scroll) cells[key(p.row, p.col)].el.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+    }
+
+    function step(r, c, back) {
+      var dr = dir === 'down' ? 1 : 0, dc = dir === 'across' ? 1 : 0;
+      if (back) { dr = -dr; dc = -dc; }
+      var nr = r + dr, nc = c + dc;
+      if (cells[key(nr, nc)]) focusCell(nr, nc);
+    }
+
+    gridEl.addEventListener('click', function (e) {
+      var inp = e.target.closest('input');
+      if (!inp) return;
+      var r = +inp.dataset.r, c = +inp.dataset.c;
+      var other = dir === 'across' ? 'down' : 'across';
+      if (active && active.r === r && active.c === c) {
+        // Aynı hücreye yeniden dokunuş: yalnızca o yönde kelime varsa yön değişir
+        if (wordAt(r, c, other)) dir = other;
+      } else if (!wordAt(r, c, dir)) {
+        dir = other;
+      }
+      focusCell(r, c);
+    });
+
+    /** Kelimeler arasında sıradaki/önceki kelimeye geçer (mobilde ipucu listesine inmeden). */
+    function jumpWord(step) {
+      var order = model.placed.slice().sort(function (a, b) {
+        return a.num - b.num || (a.dir === 'across' ? -1 : 1);
+      });
+      var cur = currentWord();
+      var i = cur ? order.indexOf(cur) : -1;
+      var next = order[((i + step) % order.length + order.length) % order.length];
+      if (next) focusWord(next, true);
+    }
+    bar.querySelector('[data-prev]').addEventListener('click', function () { jumpWord(-1); });
+    bar.querySelector('[data-next]').addEventListener('click', function () { jumpWord(1); });
+
+    gridEl.addEventListener('input', function (e) {
+      var inp = e.target;
+      if (inp.tagName !== 'INPUT') return;
+      var v = inp.value;
+      if (v === ' ') {                       // mobil klavyede boşluk = yön değiştir
+        inp.value = '';
+        var other = dir === 'across' ? 'down' : 'across';
+        if (active && wordAt(active.r, active.c, other)) { dir = other; paint(); }
+        return;
+      }
+      var ch = upperTR(v.slice(-1)).replace(/[^A-ZÇĞİÖŞÜ]/g, '');
+      inp.value = ch;
+      inp.parentElement.classList.remove('is-ok', 'is-no');
+      if (ch) step(+inp.dataset.r, +inp.dataset.c, false);
+      if (opts.onChange) opts.onChange(progress());
+    });
+
+    gridEl.addEventListener('keydown', function (e) {
+      var inp = e.target;
+      if (inp.tagName !== 'INPUT') return;
+      var r = +inp.dataset.r, c = +inp.dataset.c;
+      if (e.key === ' ') {
+        e.preventDefault();
+        var other = dir === 'across' ? 'down' : 'across';
+        if (wordAt(r, c, other)) { dir = other; paint(); }
+        return;
+      }
+      if (e.key === 'Backspace') {
+        if (!inp.value) { e.preventDefault(); step(r, c, true); }
+        else { inp.parentElement.classList.remove('is-ok', 'is-no'); }
+        return;
+      }
+      var moves = { ArrowUp: [-1, 0], ArrowDown: [1, 0], ArrowLeft: [0, -1], ArrowRight: [0, 1] };
+      if (moves[e.key]) {
+        e.preventDefault();
+        var want = (e.key === 'ArrowUp' || e.key === 'ArrowDown') ? 'down' : 'across';
+        if (dir !== want) { dir = want; paint(); }
+        var nr = r + moves[e.key][0], nc = c + moves[e.key][1];
+        var guard = 0;
+        while (!cells[key(nr, nc)] && guard++ < 30 && nr >= -1 && nc >= -1 && nr <= model.rows && nc <= model.cols) {
+          nr += moves[e.key][0]; nc += moves[e.key][1];
+        }
+        if (cells[key(nr, nc)]) focusCell(nr, nc);
+      }
+    });
+
+    function progress() {
+      var filled = 0, total = 0, correct = 0;
+      Object.keys(cells).forEach(function (k) {
+        total++;
+        var v = cells[k].input.value;
+        if (v) filled++;
+        if (v === cells[k].answer) correct++;
+      });
+      return { filled: filled, total: total, correct: correct, solved: correct === total };
+    }
+
+    var api = {
+      check: function () {
+        var solvedWords = 0;
+        model.placed.forEach(function (p) {
+          var ok = true;
+          for (var i = 0; i < p.text.length; i++) {
+            var rr = p.dir === 'down' ? p.row + i : p.row;
+            var cc = p.dir === 'across' ? p.col + i : p.col;
+            var cell = cells[key(rr, cc)];
+            if (!cell) continue;
+            if (cell.input.value !== cell.answer) ok = false;
+          }
+          var cb = clueBtns[p.num + p.dir];
+          if (cb) cb.li.classList.toggle('solved', ok);
+          if (ok) solvedWords++;
+        });
+        Object.keys(cells).forEach(function (k) {
+          var cell = cells[k];
+          cell.el.classList.remove('is-ok', 'is-no');
+          if (!cell.input.value) return;
+          cell.el.classList.add(cell.input.value === cell.answer ? 'is-ok' : 'is-no');
+        });
+        return { words: model.placed.length, solvedWords: solvedWords, cells: progress() };
+      },
+      reveal: function () {
+        Object.keys(cells).forEach(function (k) {
+          cells[k].input.value = cells[k].answer;
+          cells[k].el.classList.remove('is-no');
+          cells[k].el.classList.add('is-ok');
+        });
+        Object.keys(clueBtns).forEach(function (k) { clueBtns[k].li.classList.add('solved'); });
+        return progress();
+      },
+      clear: function () {
+        Object.keys(cells).forEach(function (k) {
+          cells[k].input.value = '';
+          cells[k].el.classList.remove('is-ok', 'is-no');
+        });
+        Object.keys(clueBtns).forEach(function (k) { clueBtns[k].li.classList.remove('solved'); });
+        return progress();
+      },
+      progress: progress,
+      model: model
+    };
+
+    fitGrid();
+    focusWord(model.placed[0]);
+    var fitTimer = null;
+    window.addEventListener('resize', function () {
+      clearTimeout(fitTimer);
+      fitTimer = setTimeout(fitGrid, 120);
+    });
+    api.fit = fitGrid;
+    return api;
+  }
+
+  function escapeHtml(s) {
+    return String(s == null ? '' : s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  global.EOCrossword = { layout: layout, render: render, normalize: normalize, upperTR: upperTR };
+})(window);
+</script>
+<script>/* ============================================================
+   Çöz-Öğren — çalışma zamanı motoru
+   Veri: window.EO_DATA (data.js)   Çizim: EO.mount(data, root, opts)
+   ============================================================ */
+(function (global) {
+  'use strict';
+
+  var LETTERS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
+
+  var KIND_LABEL = {
+    cards: 'Kart destesi',
+    quiz: 'Test',
+    crossword: 'Bulmaca',
+    match: 'Eşleştirme',
+    study: 'Dene-Öğren'
+  };
+
+  // ---------- yardımcılar ----------
+  function el(tag, cls, html) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (html != null) n.innerHTML = html;
+    return n;
+  }
+  function esc(s) {
+    return String(s == null ? '' : s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+  /** Yazar metinlerinde <strong>, <em>, <br> gibi basit etiketlere izin verilir. */
+  function rich(s) {
+    return esc(s).replace(/&lt;(\/?)(b|i|u|strong|em|br|span|sup|sub|mark|small)((\s|\/)[^&]*?)?&gt;/gi,
+      function (m) { return m.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"'); });
+  }
+  function shuffle(arr) {
+    var a = arr.slice();
+    for (var i = a.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var t = a[i]; a[i] = a[j]; a[j] = t;
+    }
+    return a;
+  }
+  function store(k, v) {
+    try {
+      if (v === undefined) return JSON.parse(localStorage.getItem('eo:' + k) || 'null');
+      localStorage.setItem('eo:' + k, JSON.stringify(v));
+    } catch (e) { /* depolama kapalıysa ilerleme yalnızca oturumda tutulur */ }
+    return null;
+  }
+
+  /** FNV-1a: kısa, çakışması düşük bir imza üretir. */
+  function hash32(s) {
+    var h = 0x811c9dc5;
+    for (var i = 0; i < s.length; i++) {
+      h ^= s.charCodeAt(i);
+      h = (h + ((h << 1) + (h << 4) + (h << 7) + (h << 8) + (h << 24))) >>> 0;
+    }
+    return h.toString(36);
+  }
+
+  /**
+   * İlerleme/rozet anahtarı. Aynı paket yeniden açıldığında öğrenci kaldığı
+   * yerden devam etsin diye içeriğe göre belirlenir; farklı bir paket ise
+   * başlıkları aynı olsa bile ayrı bir alan kullanır.
+   */
+  function courseKey(data) {
+    var meta = data.meta || {};
+    var sig = (meta.title || '') + '|' + (meta.subtitle || '') + '|';
+    (data.lessons || []).forEach(function (l) {
+      sig += (l.kind || '') + ':' + (l.title || '') + '[';
+      (l.activities || []).forEach(function (a) {
+        sig += (a.title || '') + '#' + ((a.items || []).length) + ';';
+      });
+      sig += ']';
+    });
+    return 'prog:' + (meta.id ? meta.id + ':' : '') + hash32(sig);
+  }
+
+  // ============================================================
+  // Oyunlaştırma: puan, seviye, rozet
+  // ============================================================
+  var LEVELS = [
+    { min: 0, name: 'Başlangıç', mark: 'I' },
+    { min: 120, name: 'Öğrenen', mark: 'II' },
+    { min: 300, name: 'Uygulayan', mark: 'III' },
+    { min: 540, name: 'Yetkin', mark: 'IV' },
+    { min: 850, name: 'Uzman', mark: 'V' }
+  ];
+
+  var ICONS = {
+    step: '<path d="M12 3l2.6 5.5 6 .9-4.3 4.3 1 6L12 17l-5.3 2.7 1-6L3.4 9.4l6-.9z"/>',
+    cards: '<rect x="3" y="6" width="12" height="14" rx="1.5"/><path d="M8 4h11a1.5 1.5 0 0 1 1.5 1.5V17"/>',
+    quiz: '<circle cx="12" cy="12" r="9"/><path d="M8.5 12.4l2.6 2.6 4.6-5.4"/>',
+    puzzle: '<rect x="3.5" y="3.5" width="7" height="7" rx="1"/><rect x="13.5" y="3.5" width="7" height="7" rx="1"/><rect x="3.5" y="13.5" width="7" height="7" rx="1"/><rect x="13.5" y="13.5" width="7" height="7" rx="1"/>',
+    match: '<path d="M10 14a4 4 0 0 1 0-5.7l2-2a4 4 0 0 1 5.7 5.7l-1 1"/><path d="M14 10a4 4 0 0 1 0 5.7l-2 2a4 4 0 0 1-5.7-5.7l1-1"/>',
+    streak: '<path d="M12 3s5 4.5 5 9a5 5 0 0 1-10 0c0-1.7.7-3.2 1.6-4.4.3 1.4 1.1 2.2 2 2.2 1.4 0 1.4-2.6 1.4-6.8z"/>',
+    perfect: '<path d="M5 4h14v9a7 7 0 0 1-14 0z"/><path d="M9 21h6M12 20v-4"/>',
+    crown: '<path d="M4 8l4 3.5L12 5l4 6.5L20 8l-1.5 11h-13z"/>'
+  };
+
+  var BADGES = [
+    { id: 'ilk-adim', icon: 'step', name: 'İlk Adım', desc: 'İlk etkinliği tamamladınız.' },
+    { id: 'kart-ustasi', icon: 'cards', name: 'Kavram Ustası', desc: 'Tüm kart destelerini bitirdiniz.' },
+    { id: 'test-tamam', icon: 'quiz', name: 'Sınav Disiplini', desc: 'Tüm testleri tamamladınız.' },
+    { id: 'bulmaca', icon: 'puzzle', name: 'Çözümleyici', desc: 'Bir bulmacayı tamamen çözdünüz.' },
+    { id: 'eslestirme', icon: 'match', name: 'Bağlantı Kuran', desc: 'Bir eşleştirmenin tamamını doğru yaptınız.' },
+    { id: 'seri', icon: 'streak', name: 'İstikrar', desc: 'Bir testte üst üste 5 doğru yanıt verdiniz.' },
+    { id: 'kusursuz', icon: 'perfect', name: 'Kusursuz', desc: 'Bir testi hatasız tamamladınız.' },
+    { id: 'set-tamam', icon: 'crown', name: 'Set Tamamlandı', desc: 'Tüm bölümleri bitirdiniz.' }
+  ];
+
+  function icon(name) {
+    return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" ' +
+      'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + (ICONS[name] || '') + '</svg>';
+  }
+
+  function levelOf(points) {
+    var lv = LEVELS[0], i;
+    for (i = 0; i < LEVELS.length; i++) if (points >= LEVELS[i].min) lv = LEVELS[i];
+    var next = LEVELS[LEVELS.indexOf(lv) + 1] || null;
+    return { level: lv, next: next, index: LEVELS.indexOf(lv) };
+  }
+
+  function trNum(n) {
+    return String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+  }
+
+  /** Etkinlik tipine göre kazanılan puanı hesaplar. */
+  function pointsFor(kind, score) {
+    var base = { cards: 20, quiz: 30, crossword: 35, match: 25, study: 30 }[kind] || 20;
+    return Math.round(base + base * (typeof score === 'number' ? Math.max(0, Math.min(1, score)) : 0));
+  }
+
+  // ---------- 1) Tıkla-Öğren ----------
+  function renderCards(act, host, done, opts_ctx) {
+    opts_ctx = opts_ctx || {};
+    var items = act.items || [];
+    if (!items.length) { host.appendChild(el('div', 'eo-empty', 'Bu destede henüz kart yok.')); return; }
+
+    var grid = el('div', 'eo-cards');
+    var flipped = 0;
+    var buttons = [];
+
+    items.forEach(function (it, i) {
+      var btn = el('button', 'eo-card');
+      btn.type = 'button';
+      btn.setAttribute('aria-pressed', 'false');
+      btn.innerHTML =
+        '<div class="eo-card-inner">' +
+          '<div class="eo-face eo-face-front">' +
+            '<span class="eo-card-idx">' + String(i + 1).padStart(2, '0') + '</span>' +
+            '<span class="eo-term">' + rich(it.term) + '</span>' +
+            '<span class="eo-hint">açıklama için tıklayın</span>' +
+          '</div>' +
+          '<div class="eo-face eo-face-back"><p>' + rich(it.definition) + '</p></div>' +
+        '</div>';
+      btn.addEventListener('click', function () {
+        var now = btn.getAttribute('aria-pressed') === 'true';
+        btn.setAttribute('aria-pressed', now ? 'false' : 'true');
+        if (!now && !btn.dataset.seen) { btn.dataset.seen = '1'; flipped++; count(); }
+      });
+      buttons.push(btn);
+      grid.appendChild(btn);
+    });
+
+    var bar = el('div', 'eo-actions');
+    var meta = el('span', 'eo-counter');
+    var flipAll = el('button', 'eo-btn ghost sm', 'Tümünü çevir');
+    var reset = el('button', 'eo-btn ghost sm', 'Baştan');
+    flipAll.type = reset.type = 'button';
+
+    flipAll.addEventListener('click', function () {
+      buttons.forEach(function (b) {
+        b.setAttribute('aria-pressed', 'true');
+        if (!b.dataset.seen) { b.dataset.seen = '1'; flipped++; }
+      });
+      count();
+    });
+    reset.addEventListener('click', function () {
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', 'false'); delete b.dataset.seen; });
+      flipped = 0; count();
+    });
+
+    function count() {
+      meta.innerHTML = '<b>' + flipped + '</b> / ' + items.length + ' kart görüldü';
+      if (flipped >= items.length) done(1);
+    }
+    count();
+
+    bar.appendChild(meta);
+    bar.appendChild(el('span', 'eo-spacer'));
+    bar.appendChild(reset);
+    bar.appendChild(flipAll);
+
+    host.appendChild(grid);
+    host.appendChild(bar);
+  }
+
+  // ---------- 2) Yanıtla-Öğren ----------
+  function renderQuiz(act, host, done, opts_ctx) {
+    opts_ctx = opts_ctx || {};
+    var items = (act.items || []).filter(function (q) { return q && q.question; });
+    if (!items.length) { host.appendChild(el('div', 'eo-empty', 'Bu testte henüz soru yok.')); return; }
+
+    var idx = 0;
+    var answers = new Array(items.length).fill(null);
+    var picked = null;                       // onaylanmamış seçim
+    var streak = 0, bestStreak = 0;
+    var stage = el('div');
+    host.appendChild(stage);
+
+    function rail() {
+      var r = el('div', 'eo-rail');
+      items.forEach(function (_, i) {
+        var d = el('span', 'eo-dot');
+        if (answers[i] != null) d.classList.add(answers[i] === items[i].answer ? 'is-ok' : 'is-no');
+        if (i === idx) d.classList.add('is-current');
+        r.appendChild(d);
+      });
+      return r;
+    }
+
+    function drawQuestion() {
+      stage.innerHTML = '';
+      var q = items[idx];
+
+      var top = el('div', 'eo-quiz-top');
+      top.appendChild(el('span', 'eo-counter', '<b>' + (idx + 1) + '</b> / ' + items.length + ' soru'));
+      if (streak >= 2) top.appendChild(el('span', 'eo-streak', 'üst üste ' + streak + ' doğru'));
+      top.appendChild(el('span', 'eo-spacer'));
+      top.appendChild(rail());
+      stage.appendChild(top);
+
+      stage.appendChild(el('p', 'eo-qtext', rich(q.question)));
+
+      var opts = el('div', 'eo-options');
+      var locked = answers[idx] != null;
+      (q.options || []).forEach(function (text, i) {
+        var b = el('button', 'eo-opt');
+        b.type = 'button';
+        b.innerHTML = '<span class="eo-bubble">' + (LETTERS[i] || i + 1) + '</span><span>' + rich(text) + '</span>';
+        if (locked) {
+          b.disabled = true;
+          if (i === q.answer) b.classList.add('is-ok');
+          else if (i === answers[idx]) b.classList.add('is-no');
+        } else if (picked === i) {
+          b.classList.add('is-picked');
+          b.setAttribute('aria-pressed', 'true');
+        }
+        b.addEventListener('click', function () {
+          if (answers[idx] != null) return;
+          picked = (picked === i) ? null : i;   // aynı şıkka yeniden tıklayınca seçim kalkar
+          drawQuestion();
+        });
+        opts.appendChild(b);
+      });
+      stage.appendChild(opts);
+
+      if (locked) {
+        var right = answers[idx] === q.answer;
+        var fb = el('div', 'eo-feedback ' + (right ? 'is-ok' : 'is-no'));
+        fb.appendChild(el('div', 'eo-fb-title', right
+          ? 'Tebrikler, yanıtınız doğru!'
+          : 'Yanıtınız yanlış! Doğru yanıt: ' + (LETTERS[q.answer] || '')));
+        var body = q.explanation || (right
+          ? 'Doğru seçeneği işaretlediniz.'
+          : 'Doğru seçenek yukarıda yeşille gösterilmiştir.');
+        fb.appendChild(el('div', '', rich(body)));
+        stage.appendChild(fb);
+      }
+
+      var bar = el('div', 'eo-actions');
+      var prev = el('button', 'eo-btn ghost sm', '← Önceki');
+      prev.type = 'button';
+      prev.disabled = idx === 0;
+      prev.addEventListener('click', function () { idx--; picked = null; drawQuestion(); });
+      bar.appendChild(prev);
+      bar.appendChild(el('span', 'eo-spacer'));
+
+      if (!locked) {
+        var confirm = el('button', 'eo-btn accent', 'Yanıtı onayla');
+        confirm.type = 'button';
+        confirm.disabled = picked == null;
+        confirm.addEventListener('click', function () {
+          if (picked == null) return;
+          answers[idx] = picked;
+          if (picked === q.answer) {
+            streak++;
+            if (streak > bestStreak) bestStreak = streak;
+            if (streak >= 5 && opts_ctx.award) opts_ctx.award('seri');
+          } else { streak = 0; }
+          picked = null;
+          drawQuestion();
+        });
+        bar.appendChild(confirm);
+      } else {
+        var next = el('button', 'eo-btn', idx === items.length - 1 ? 'Sonucu gör' : 'Sonraki →');
+        next.type = 'button';
+        next.addEventListener('click', function () {
+          if (idx === items.length - 1) drawResult();
+          else { idx++; picked = null; drawQuestion(); }
+        });
+        bar.appendChild(next);
+      }
+      stage.appendChild(bar);
+    }
+
+    function drawResult() {
+      stage.innerHTML = '';
+      var correct = answers.filter(function (a, i) { return a === items[i].answer; }).length;
+      var pct = Math.round(correct / items.length * 100);
+      done(correct / items.length);
+      if (pct === 100 && opts_ctx.award) opts_ctx.award('kusursuz');
+
+      var box = el('div', 'eo-result');
+      var ring = el('div', 'eo-score-ring' + (pct >= 80 ? ' is-high' : ''), '<span>%' + pct + '</span>');
+      ring.style.setProperty('--pct', pct + '%');
+      box.appendChild(ring);
+      box.appendChild(el('h4', '', items.length + ' sorudan ' + correct + ' doğru'));
+      box.appendChild(el('p', '', pct >= 80 ? 'Konuya hâkimsiniz. Yanlış yanıtladığınız soruların açıklamalarını gözden geçirip diğer etkinliklere geçebilirsiniz.'
+        : pct >= 50 ? 'İyi bir başlangıç. Aşağıdaki listeden yanlış yanıtlarınızı inceleyip testi yeniden çözün.'
+        : 'Konuyu Dene-Öğren modülünden tekrar edip testi yeniden çözmenizi öneririz.'));
+
+      var review = el('div', 'eo-review');
+      items.forEach(function (q, i) {
+        var ok = answers[i] === q.answer;
+        var row = el('div', 'eo-review-item ' + (ok ? 'ok' : 'no'));
+        row.appendChild(el('span', 'eo-mark', ok ? '✓' : '✕'));
+        var body = el('div');
+        body.appendChild(el('div', '', rich(q.question)));
+        body.appendChild(el('small', '', 'Doğru yanıt: ' + (LETTERS[q.answer] || '') + ') ' + esc((q.options || [])[q.answer] || '')));
+        row.appendChild(body);
+        review.appendChild(row);
+      });
+      box.appendChild(review);
+
+      var bar = el('div', 'eo-actions');
+      bar.appendChild(el('span', 'eo-spacer'));
+      var again = el('button', 'eo-btn accent', 'Testi yeniden çöz');
+      again.type = 'button';
+      again.addEventListener('click', function () {
+        answers = new Array(items.length).fill(null);
+        idx = 0; streak = 0; drawQuestion();
+      });
+      bar.appendChild(again);
+      bar.appendChild(el('span', 'eo-spacer'));
+      box.appendChild(bar);
+
+      stage.appendChild(box);
+    }
+
+    drawQuestion();
+  }
+
+  // ---------- 3) Bul-Öğren ----------
+  function renderCrossword(act, host, done, opts_ctx) {
+    opts_ctx = opts_ctx || {};
+    var items = (act.items || []).filter(function (w) { return w && w.answer && w.clue; });
+    if (!items.length) { host.appendChild(el('div', 'eo-empty', 'Bu bulmacada henüz kelime yok.')); return; }
+
+    var board = el('div');
+    host.appendChild(board);
+    var api = global.EOCrossword.render(board, items);
+
+    var msg = el('div');
+    host.appendChild(msg);
+
+    var bar = el('div', 'eo-actions');
+    var status = el('span', 'eo-counter', items.length + ' kelime');
+    var check = el('button', 'eo-btn accent', 'Kontrol et');
+    var reveal = el('button', 'eo-btn ghost sm', 'Çözümü göster');
+    var clear = el('button', 'eo-btn ghost sm', 'Temizle');
+    check.type = reveal.type = clear.type = 'button';
+    // Yardım düğmeleri ilk denemeden önce görünmez; önce öğrenci denesin
+    reveal.style.display = clear.style.display = 'none';
+
+    check.addEventListener('click', function () {
+      var r = api.check();
+      status.innerHTML = '<b>' + r.solvedWords + '</b> / ' + r.words + ' kelime doğru';
+      msg.innerHTML = '';
+      if (r.cells.solved) {
+        msg.appendChild(el('div', 'eo-cwdone', 'Tebrikler, bulmacayı tamamladınız!'));
+        reveal.style.display = clear.style.display = 'none';
+        done(1);
+      } else {
+        reveal.style.display = clear.style.display = '';
+        msg.appendChild(el('div', 'eo-hintline', r.cells.filled < r.cells.total
+          ? 'Boş kalan hücreler var. Doğru harfler yeşil, yanlışlar kırmızı işaretlendi.'
+          : 'Yanlış harfler kırmızı işaretlendi; düzeltip yeniden kontrol edin.'));
+      }
+    });
+    reveal.addEventListener('click', function () {
+      api.reveal();
+      status.textContent = 'Çözüm gösterildi';
+      msg.innerHTML = '';
+      done(0);
+    });
+    clear.addEventListener('click', function () {
+      api.clear();
+      status.textContent = items.length + ' kelime';
+      msg.innerHTML = '';
+    });
+
+    bar.appendChild(status);
+    bar.appendChild(el('span', 'eo-spacer'));
+    bar.appendChild(clear);
+    bar.appendChild(reveal);
+    bar.appendChild(check);
+    host.appendChild(bar);
+
+    if (api && api.model && api.model.skipped.length) {
+      host.appendChild(el('p', 'eo-hintline',
+        'Izgaraya sığmayan kelimeler: ' + api.model.skipped.map(esc).join(', ')));
+    }
+  }
+
+  // ---------- 4) Eşleştir-Öğren ----------
+  function renderMatch(act, host, done, opts_ctx) {
+    opts_ctx = opts_ctx || {};
+    var items = (act.items || []).filter(function (p) { return p && p.term && p.definition; });
+    if (!items.length) { host.appendChild(el('div', 'eo-empty', 'Bu etkinlikte henüz eşleştirme yok.')); return; }
+
+    host.appendChild(el('p', 'eo-hintline',
+      'Açıklamayı seçip karşısındaki kavram kutusuna tıklayın; masaüstünde sürükleyip bırakabilirsiniz.'));
+
+    var wrap = el('div', 'eo-match');
+    var leftCol = el('div', 'eo-match-col');
+    leftCol.appendChild(el('h4', '', 'Açıklamalar'));
+    var pool = el('div', 'eo-pool');
+    leftCol.appendChild(pool);
+
+    var rightCol = el('div', 'eo-match-col');
+    rightCol.appendChild(el('h4', '', 'Kavramlar'));
+    var slots = el('div', 'eo-pool');
+    rightCol.appendChild(slots);
+
+    wrap.appendChild(leftCol);
+    wrap.appendChild(rightCol);
+    host.appendChild(wrap);
+
+    var selected = null;
+
+    function makeChip(item, i) {
+      var chip = el('button', 'eo-chip');
+      chip.type = 'button';
+      chip.draggable = true;
+      chip.dataset.id = i;
+      chip.innerHTML = rich(item.definition);
+      chip.addEventListener('click', function () {
+        if (selected === chip) { chip.classList.remove('is-selected'); selected = null; return; }
+        if (selected) selected.classList.remove('is-selected');
+        selected = chip; chip.classList.add('is-selected');
+      });
+      chip.addEventListener('dragstart', function (e) {
+        selected = chip;
+        chip.classList.add('is-dragging');
+        try { e.dataTransfer.setData('text/plain', String(i)); } catch (err) {}
+        e.dataTransfer.effectAllowed = 'move';
+      });
+      chip.addEventListener('dragend', function () { chip.classList.remove('is-dragging'); });
+      return chip;
+    }
+
+    shuffle(items.map(function (it, i) { return { it: it, i: i }; }))
+      .forEach(function (o) { pool.appendChild(makeChip(o.it, o.i)); });
+
+    var drops = [];
+    items.forEach(function (item, i) {
+      var slot = el('div', 'eo-slot');
+      slot.appendChild(el('div', 'eo-slot-term', rich(item.term)));
+      var drop = el('div', 'eo-drop', 'buraya bırakın');
+      drop.dataset.id = i;
+      drop.tabIndex = 0;
+
+      function place(chip) {
+        if (!chip) return;
+        if (drop.dataset.filled) returnChip(drop);
+        drop.textContent = '';
+        drop.appendChild(chip);
+        chip.classList.remove('is-selected');
+        drop.dataset.filled = chip.dataset.id;
+        drop.classList.add('filled');
+        selected = null;
+        slot.classList.remove('is-ok', 'is-no');
+        update();
+      }
+      function onActivate() {
+        if (selected) { place(selected); return; }
+        if (drop.dataset.filled) returnChip(drop);
+      }
+      drop.addEventListener('click', onActivate);
+      drop.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onActivate(); }
+      });
+      drop.addEventListener('dragover', function (e) { e.preventDefault(); drop.classList.add('is-over'); });
+      drop.addEventListener('dragleave', function () { drop.classList.remove('is-over'); });
+      drop.addEventListener('drop', function (e) {
+        e.preventDefault();
+        drop.classList.remove('is-over');
+        place(selected);
+      });
+
+      slot.appendChild(drop);
+      slots.appendChild(slot);
+      drops.push({ drop: drop, slot: slot, id: i });
+    });
+
+    function returnChip(drop) {
+      var chip = drop.querySelector('.eo-chip');
+      if (chip) pool.appendChild(chip);
+      drop.textContent = 'buraya bırakın';
+      delete drop.dataset.filled;
+      drop.classList.remove('filled');
+      drop.parentElement.classList.remove('is-ok', 'is-no');
+      update();
+    }
+
+    var status = el('span', 'eo-counter');
+    var wrongTries = 0;
+    function update() {
+      var filled = drops.filter(function (d) { return d.drop.dataset.filled != null; }).length;
+      status.innerHTML = '<b>' + filled + '</b> / ' + items.length + ' eşleştirildi';
+      check.disabled = filled !== items.length;
+    }
+
+    var bar = el('div', 'eo-actions');
+    var reset = el('button', 'eo-btn ghost sm', 'Baştan');
+    var reveal = el('button', 'eo-btn ghost sm', 'Çözümü göster');
+    var check = el('button', 'eo-btn accent sm', 'Eşleştirmeleri kontrol et');
+    reset.type = check.type = reveal.type = 'button';
+    reveal.style.display = 'none';        // iki yanlış denemeden sonra açılır
+
+    check.addEventListener('click', function () {
+      var ok = 0;
+      drops.forEach(function (d) {
+        var correct = d.drop.dataset.filled === String(d.id);
+        d.slot.classList.toggle('is-ok', correct);
+        d.slot.classList.toggle('is-no', !correct);
+        if (correct) ok++;
+      });
+      if (ok === items.length) {
+        status.innerHTML = '<b>' + ok + '</b> / ' + items.length + ' doğru — tamamlandı';
+        reveal.style.display = 'none';
+        done(1);
+        return;
+      }
+      wrongTries++;
+      status.innerHTML = '<b>' + ok + '</b> / ' + items.length + ' doğru' +
+        (wrongTries < 2 ? ' — yanlışları düzeltip yeniden deneyin' : '');
+      if (wrongTries >= 2) reveal.style.display = '';
+    });
+
+    reveal.addEventListener('click', function () {
+      // Her açıklamayı doğru kavramın kutusuna yerleştirir
+      drops.forEach(function (d) {
+        if (d.drop.dataset.filled != null) returnChip(d.drop);
+      });
+      drops.forEach(function (d) {
+        var chip = pool.querySelector('.eo-chip[data-id="' + d.id + '"]');
+        if (!chip) return;
+        d.drop.textContent = '';
+        d.drop.appendChild(chip);
+        d.drop.dataset.filled = String(d.id);
+        d.drop.classList.add('filled');
+        d.slot.classList.add('is-ok');
+        d.slot.classList.remove('is-no');
+      });
+      status.textContent = 'Çözüm gösterildi';
+      reveal.style.display = 'none';
+      check.disabled = true;
+      done(0);
+    });
+
+    reset.addEventListener('click', function () {
+      drops.forEach(function (d) { if (d.drop.dataset.filled != null) returnChip(d.drop); });
+      Array.prototype.slice.call(pool.children).forEach(function (c) { c.classList.remove('is-selected'); });
+      selected = null;
+      update();
+    });
+
+    bar.appendChild(status);
+    bar.appendChild(el('span', 'eo-spacer'));
+    bar.appendChild(reset);
+    bar.appendChild(reveal);
+    bar.appendChild(check);
+    host.appendChild(bar);
+    update();
+  }
+
+  // ---------- 5) Dene-Öğren ----------
+  function renderStudy(act, host, done, opts_ctx) {
+    opts_ctx = opts_ctx || {};
+    var items = (act.items || []).filter(function (m) { return m && (m.title || m.theory); });
+    if (!items.length) { host.appendChild(el('div', 'eo-empty', 'Bu modülde henüz bölüm yok.')); return; }
+
+    var idx = 0;
+    var answers = new Array(items.length).fill(null);
+    var picked = null;                       // onaylanmamış seçim
+    var stage = el('div', 'eo-study');
+    host.appendChild(stage);
+
+    function draw() {
+      stage.innerHTML = '';
+      if (idx >= items.length) return drawDone();
+      var m = items[idx];
+
+      var nav = el('div', 'eo-study-nav');
+      items.forEach(function (x, i) {
+        var s = el('button', 'eo-step', String(i + 1).padStart(2, '0'));
+        s.type = 'button';
+        if (i === idx) s.setAttribute('aria-current', 'true');
+        if (answers[i] != null) s.classList.add('done');
+        s.addEventListener('click', function () { idx = i; picked = null; draw(); });
+        nav.appendChild(s);
+      });
+      stage.appendChild(nav);
+
+      if (m.category) stage.appendChild(el('div', 'eo-cat', esc(m.category)));
+      stage.appendChild(el('h4', '', rich(m.title)));
+      if (m.theory) stage.appendChild(el('p', 'eo-theory', rich(m.theory)));
+
+      if (m.keyPoints && m.keyPoints.length) {
+        var ul = el('ul', 'eo-keys');
+        m.keyPoints.forEach(function (k, i) {
+          var li = el('li', '', rich(k));
+          li.setAttribute('data-n', String(i + 1).padStart(2, '0'));
+          ul.appendChild(li);
+        });
+        stage.appendChild(ul);
+      }
+
+      if (m.question) {
+        var qb = el('div', 'eo-quizbox');
+        qb.appendChild(el('div', 'eo-qlabel', 'Kontrol sorusu'));
+        qb.appendChild(el('p', 'eo-qtext', rich(m.question)));
+        var opts = el('div', 'eo-options');
+        var locked = answers[idx] != null;
+        (m.options || []).forEach(function (t, i) {
+          var b = el('button', 'eo-opt');
+          b.type = 'button';
+          b.innerHTML = '<span class="eo-bubble">' + (LETTERS[i] || i + 1) + '</span><span>' + rich(t) + '</span>';
+          if (locked) {
+            b.disabled = true;
+            if (i === m.answer) b.classList.add('is-ok');
+            else if (i === answers[idx]) b.classList.add('is-no');
+          } else if (picked === i) {
+            b.classList.add('is-picked');
+            b.setAttribute('aria-pressed', 'true');
+          }
+          b.addEventListener('click', function () {
+            if (answers[idx] != null) return;
+            picked = (picked === i) ? null : i;
+            draw();
+          });
+          opts.appendChild(b);
+        });
+        qb.appendChild(opts);
+
+        if (locked) {
+          var right = answers[idx] === m.answer;
+          var fb = el('div', 'eo-feedback ' + (right ? 'is-ok' : 'is-no'));
+          fb.appendChild(el('div', 'eo-fb-title', right
+            ? 'Tebrikler, yanıtınız doğru!'
+            : 'Yanıtınız yanlış! Doğru yanıt: ' + (LETTERS[m.answer] || '')));
+          fb.appendChild(el('div', '', rich(m.explanation || (right
+            ? 'Doğru seçeneği işaretlediniz.'
+            : 'Doğru seçenek yukarıda yeşille gösterilmiştir.'))));
+          qb.appendChild(fb);
+        }
+        stage.appendChild(qb);
+      }
+
+      var bar = el('div', 'eo-actions');
+      var prev = el('button', 'eo-btn ghost sm', '← Önceki');
+      prev.type = 'button'; prev.disabled = idx === 0;
+      prev.addEventListener('click', function () { idx--; picked = null; draw(); });
+      bar.appendChild(prev);
+      bar.appendChild(el('span', 'eo-spacer'));
+
+      if (m.question && answers[idx] == null) {
+        var confirm = el('button', 'eo-btn accent', 'Yanıtı onayla');
+        confirm.type = 'button';
+        confirm.disabled = picked == null;
+        confirm.addEventListener('click', function () {
+          if (picked == null) return;
+          answers[idx] = picked; picked = null; draw();
+        });
+        bar.appendChild(confirm);
+      } else {
+        var next = el('button', 'eo-btn', idx === items.length - 1 ? 'Modülü bitir' : 'Sonraki bölüm →');
+        next.type = 'button';
+        next.addEventListener('click', function () { idx++; picked = null; draw(); });
+        bar.appendChild(next);
+      }
+      stage.appendChild(bar);
+    }
+
+    function drawDone() {
+      var withQ = items.filter(function (m) { return !!m.question; });
+      var correct = items.filter(function (m, i) { return m.question && answers[i] === m.answer; }).length;
+      done(withQ.length ? correct / withQ.length : 1);
+      stage.innerHTML = '';
+      var d = el('div', 'eo-done');
+      d.appendChild(el('div', 'eo-stamp', '✓'));
+      d.appendChild(el('h4', '', 'Modül tamamlandı'));
+      d.appendChild(el('p', '', withQ.length
+        ? items.length + ' bölümü bitirdiniz, ' + withQ.length + ' kontrol sorusundan ' + correct + ' tanesini doğru yanıtladınız.'
+        : items.length + ' bölümü bitirdiniz.'));
+      var bar = el('div', 'eo-actions');
+      bar.appendChild(el('span', 'eo-spacer'));
+      var again = el('button', 'eo-btn accent', 'Baştan başla');
+      again.type = 'button';
+      again.addEventListener('click', function () {
+        idx = 0; picked = null; answers = new Array(items.length).fill(null); draw();
+      });
+      bar.appendChild(again);
+      bar.appendChild(el('span', 'eo-spacer'));
+      d.appendChild(bar);
+      stage.appendChild(d);
+    }
+
+    draw();
+  }
+
+  var RENDERERS = {
+    cards: renderCards,
+    quiz: renderQuiz,
+    crossword: renderCrossword,
+    match: renderMatch,
+    study: renderStudy
+  };
+
+  /** Tek bir etkinliği kart kabuğuyla birlikte çizer. */
+  function renderActivity(act, kind, host, opts) {
+    opts = opts || {};
+    var box = el('div', 'eo-activity');
+    var earned = null;
+    if (!opts.bare) {
+      var head = el('div', 'eo-act-head');
+      head.appendChild(el('span', 'eo-tag', KIND_LABEL[kind] || kind));
+      head.appendChild(el('h3', '', esc(act.title || 'Etkinlik')));
+      if (opts.onDone) {
+        earned = el('span', 'eo-earned');
+        earned.style.display = 'none';
+        head.appendChild(earned);
+        var tick = el('span', 'eo-act-tick', '✓');
+        tick.title = 'Tamamlandı';
+        head.appendChild(tick);
+      }
+      box.appendChild(head);
+    }
+    var body = el('div', 'eo-act-body');
+    box.appendChild(body);
+    host.appendChild(box);
+
+    var fired = false;
+    var done = function (score) {
+      box.classList.add('is-complete');
+      if (fired) return;
+      fired = true;
+      var pts = pointsFor(kind, score);
+      if (earned) {
+        earned.textContent = '+' + pts + ' puan';
+        earned.style.display = '';
+      }
+      if (opts.onDone) opts.onDone(pts, score);
+    };
+
+    (RENDERERS[kind] || function () {
+      body.appendChild(el('div', 'eo-empty', 'Bilinmeyen etkinlik türü: ' + esc(kind)));
+    })(act, body, done, { award: opts.award || function () {} });
+
+    if (opts.completed) {
+      box.classList.add('is-complete');
+      fired = true;
+      if (earned && opts.earnedPoints) {
+        earned.textContent = opts.earnedPoints + ' puan';
+        earned.style.display = '';
+      }
+    }
+    return box;
+  }
+
+  /** Tüm kursu kenar çubuğuyla birlikte kurar. */
+  function mount(data, root, opts) {
+    opts = opts || {};
+    data = data || { meta: {}, lessons: [] };
+    var lessons = data.lessons || [];
+    var meta = data.meta || {};
+    root.dataset.mounted = '1';   // DOMContentLoaded'daki otomatik kurulum tekrar çizmesin
+    root.innerHTML = '';
+    document.body.classList.add('eo-body');
+
+    if (opts.single) {
+      var lesson = lessons[opts.single.lesson] || lessons[0];
+      var act = (lesson.activities || [])[opts.single.activity];
+      if (act) renderActivity(act, lesson.kind, root, { bare: opts.bare });
+      return;
+    }
+
+    var shell = el('div', 'eo-shell');
+    var side = el('aside', 'eo-side');
+    var brand = el('div', 'eo-brand');
+    brand.innerHTML =
+      '<div class="eo-eyebrow">' + esc(meta.eyebrow || 'etkileşimli çalışma seti') + '</div>' +
+      '<h1>' + esc(meta.title || 'Çöz-Öğren') + '</h1>' +
+      '<p>' + esc(meta.subtitle || '') + '</p>';
+    side.appendChild(brand);
+
+    var menuBtn = el('button', 'eo-menubtn', 'Bölümler');
+    menuBtn.type = 'button';
+    menuBtn.addEventListener('click', function () { side.classList.toggle('open'); });
+    side.appendChild(menuBtn);
+
+    // ---- Oyunlaştırma durumu ----
+    var progKey = courseKey(data);
+    var saved = store(progKey) || {};
+    var doneMap = saved.done || saved;              // eski biçimle uyum
+    if (typeof doneMap !== 'object' || doneMap === null) doneMap = {};
+    var points = saved.points || 0;
+    var earnedBadges = saved.badges || {};
+    var earnedPts = saved.pts || {};
+
+    var totalActs = 0;
+    lessons.forEach(function (l) {
+      (l.activities || []).forEach(function (a) { if ((a.items || []).length) totalActs++; });
+    });
+
+    function save() {
+      store(progKey, { done: doneMap, points: points, badges: earnedBadges, pts: earnedPts });
+    }
+
+    // ---- Rütbe paneli ----
+    var rank = el('div', 'eo-rank');
+    rank.innerHTML =
+      '<div class="eo-rank-top">' +
+        '<div class="eo-rank-seal" data-seal>I</div>' +
+        '<div class="eo-rank-info">' +
+          '<div class="eo-rank-name" data-lvname>Başlangıç</div>' +
+          '<div class="eo-rank-pts" data-pts>0 puan</div>' +
+        '</div>' +
+      '</div>' +
+      '<div class="eo-rank-track"><i data-lvfill></i></div>' +
+      '<div class="eo-rank-next" data-next></div>';
+    side.appendChild(rank);
+
+    function drawRank() {
+      var lv = levelOf(points);
+      rank.querySelector('[data-seal]').textContent = lv.level.mark;
+      rank.querySelector('[data-lvname]').textContent = 'Seviye ' + (lv.index + 1) + ' · ' + lv.level.name;
+      rank.querySelector('[data-pts]').textContent = trNum(points) + ' puan';
+      var pct = 100, next = '';
+      if (lv.next) {
+        var span = lv.next.min - lv.level.min;
+        pct = Math.max(0, Math.min(100, Math.round((points - lv.level.min) / span * 100)));
+        next = lv.next.name + ' rütbesine ' + trNum(lv.next.min - points) + ' puan';
+      } else { next = 'En üst rütbeye ulaştınız'; }
+      rank.querySelector('[data-lvfill]').style.width = pct + '%';
+      rank.querySelector('[data-next]').textContent = next;
+    }
+
+    // ---- İlerleme ----
+    var prog = el('div', 'eo-progress');
+    prog.innerHTML =
+      '<div class="eo-prog-top"><span>İlerleme</span><b data-pct>%0</b></div>' +
+      '<div class="eo-prog-track"><i data-fill></i></div>' +
+      '<div class="eo-prog-meta"><span data-meta></span>' +
+      '<button type="button" class="eo-prog-reset" data-reset>sıfırla</button></div>';
+    side.appendChild(prog);
+
+    function doneCount() { return Object.keys(doneMap).length; }
+    function drawProgress() {
+      var n = doneCount();
+      var pct = totalActs ? Math.round(n / totalActs * 100) : 0;
+      prog.querySelector('[data-pct]').textContent = '%' + pct;
+      prog.querySelector('[data-fill]').style.width = pct + '%';
+      prog.querySelector('[data-meta]').textContent = n + ' / ' + totalActs + ' etkinlik tamamlandı';
+      prog.classList.toggle('is-full', totalActs > 0 && n >= totalActs);
+    }
+    prog.querySelector('[data-reset]').addEventListener('click', function () {
+      doneMap = {}; points = 0; earnedBadges = {}; earnedPts = {};
+      save(); drawRank(); drawProgress(); drawBadges(); draw();
+    });
+
+    // ---- Rozet vitrini ----
+    var badgeBox = el('div', 'eo-badges');
+    badgeBox.innerHTML = '<h4>Rozetler <span data-bcount></span></h4><div class="eo-badge-grid" data-bgrid></div>';
+    side.appendChild(badgeBox);
+
+    function drawBadges(newId) {
+      var grid = badgeBox.querySelector('[data-bgrid]');
+      grid.innerHTML = '';
+      BADGES.forEach(function (b) {
+        var got = !!earnedBadges[b.id];
+        var cell = el('div', 'eo-badge' + (got ? ' is-earned' : '') + (b.id === newId ? ' is-new' : ''), icon(b.icon));
+        cell.title = got ? b.name + ' — ' + b.desc : 'Kilitli: ' + b.desc;
+        cell.setAttribute('aria-label', cell.title);
+        grid.appendChild(cell);
+      });
+      badgeBox.querySelector('[data-bcount]').textContent =
+        Object.keys(earnedBadges).length + '/' + BADGES.length;
+    }
+
+    function award(id) {
+      if (earnedBadges[id]) return;
+      var b = BADGES.filter(function (x) { return x.id === id; })[0];
+      if (!b) return;
+      earnedBadges[id] = Date.now();
+      points += 25;
+      save(); drawRank(); drawBadges(id);
+      showAward(b);
+    }
+
+    // Aynı anda birden çok rozet kazanılabilir; bildirimler sırayla gösterilir.
+    var awardQueue = [], awardShowing = false, awardTimer = null, awardHide = null;
+    function showAward(b) {
+      awardQueue.push(b);
+      if (!awardShowing) { nextAward(); return; }
+      // Sıradaki varken görünendeki bekleme kısalır, kuyruk tıkanmaz
+      clearTimeout(awardTimer);
+      awardTimer = setTimeout(awardHide, 1400);
+    }
+    function nextAward() {
+      var b = awardQueue.shift();
+      if (!b) { awardShowing = false; return; }
+      awardShowing = true;
+      var card = el('div', 'eo-award');
+      card.setAttribute('role', 'status');
+      card.innerHTML =
+        '<div class="eo-award-seal">' + icon(b.icon) + '</div>' +
+        '<div><div class="eo-award-kicker">Rozet kazanıldı · +25 puan</div>' +
+        '<div class="eo-award-name">' + esc(b.name) + '</div>' +
+        '<div class="eo-award-desc">' + esc(b.desc) + '</div></div>';
+      document.body.appendChild(card);
+      requestAnimationFrame(function () { card.classList.add('show'); });
+      awardHide = function () {
+        card.classList.remove('show');
+        setTimeout(function () { card.remove(); nextAward(); }, 400);
+      };
+      clearTimeout(awardTimer);
+      awardTimer = setTimeout(awardHide, awardQueue.length ? 2200 : 5000);
+    }
+
+    /** Bir bölümün tamamı bitti mi, tüm set bitti mi diye bakar. */
+    function checkMilestones() {
+      var allDone = totalActs > 0 && doneCount() >= totalActs;
+      if (allDone) award('set-tamam');
+      lessons.forEach(function (l, i) {
+        var acts = (l.activities || []).filter(function (a) { return (a.items || []).length; });
+        if (!acts.length) return;
+        var d = acts.filter(function (a, ai) { return doneMap[i + ':' + ai]; }).length;
+        if (d < acts.length) return;
+        if (l.kind === 'cards') award('kart-ustasi');
+        if (l.kind === 'quiz') award('test-tamam');
+      });
+    }
+
+    function markDone(key, pts, kind, score) {
+      if (doneMap[key]) return;
+      doneMap[key] = 1;
+      earnedPts[key] = pts;
+      points += pts;
+      save();
+      award('ilk-adim');
+      if (kind === 'crossword' && score === 1) award('bulmaca');
+      if (kind === 'match' && score === 1) award('eslestirme');
+      checkMilestones();
+      drawRank(); drawProgress(); drawNav(); drawBadges();
+    }
+
+    var nav = el('ul', 'eo-nav');
+    side.appendChild(nav);
+    if (meta.footer) side.appendChild(el('div', 'eo-side-foot', esc(meta.footer)));
+
+    var main = el('main', 'eo-main');
+    var wrap = el('div', 'eo-wrap');
+    main.appendChild(wrap);
+
+    shell.appendChild(side);
+    shell.appendChild(main);
+    root.appendChild(shell);
+
+    var current = 0;
+
+    function drawNav() {
+      nav.innerHTML = '';
+      lessons.forEach(function (l, i) {
+        var acts = (l.activities || []).filter(function (a) { return (a.items || []).length; });
+        var d = acts.filter(function (a, ai) { return doneMap[i + ':' + ai]; }).length;
+        var li = el('li');
+        var b = el('button');
+        b.type = 'button';
+        if (acts.length && d >= acts.length) b.classList.add('is-done');
+        b.innerHTML = '<span class="eo-num">' + (acts.length && d >= acts.length ? '✓' : String(i + 1).padStart(2, '0')) + '</span>' +
+          '<span>' + esc(l.title) +
+          '<span class="eo-navmeta">' + (acts.length ? d + ' / ' + acts.length + ' tamamlandı' : 'içerik yok') + '</span></span>';
+        if (i === current) b.setAttribute('aria-current', 'true');
+        b.addEventListener('click', function () {
+          current = i; side.classList.remove('open'); draw();
+          main.scrollIntoView({ block: 'start', behavior: 'smooth' });
+        });
+        li.appendChild(b);
+        nav.appendChild(li);
+      });
+    }
+
+    function draw() {
+      drawRank();
+      drawProgress();
+      drawBadges();
+      drawNav();
+      wrap.innerHTML = '';
+      var l = lessons[current];
+      if (!l) { wrap.appendChild(el('div', 'eo-empty', 'Bu pakette henüz bölüm yok.')); return; }
+
+      var head = el('div', 'eo-lessonhead');
+      head.innerHTML =
+        '<div class="eo-kicker">Bölüm ' + String(current + 1).padStart(2, '0') + ' · ' + esc(KIND_LABEL[l.kind] || '') + '</div>' +
+        '<h2>' + esc(l.title) + '</h2>' +
+        '<p>' + esc(l.intro || '') + '</p>';
+      wrap.appendChild(head);
+
+      var acts = (l.activities || []).filter(function (a) { return (a.items || []).length; });
+      if (!acts.length) {
+        wrap.appendChild(el('div', 'eo-empty', 'Bu bölümde gösterilecek etkinlik yok.'));
+      }
+      acts.forEach(function (act, ai) {
+        var key = current + ':' + ai;
+        renderActivity(act, l.kind, wrap, {
+          completed: !!doneMap[key],
+          earnedPoints: earnedPts[key],
+          award: award,
+          onDone: function (pts, score) { markDone(key, pts, l.kind, score); }
+        });
+      });
+
+      var bar = el('div', 'eo-actions');
+      if (current > 0) {
+        var p = el('button', 'eo-btn ghost', '← ' + lessons[current - 1].title);
+        p.type = 'button';
+        p.addEventListener('click', function () { current--; draw(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+        bar.appendChild(p);
+      }
+      bar.appendChild(el('span', 'eo-spacer'));
+      if (current < lessons.length - 1) {
+        var n = el('button', 'eo-btn', lessons[current + 1].title + ' →');
+        n.type = 'button';
+        n.addEventListener('click', function () { current++; draw(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+        bar.appendChild(n);
+      }
+      wrap.appendChild(bar);
+    }
+
+    draw();
+    return { goTo: function (i) { current = i; draw(); } };
+  }
+
+  global.EO = { mount: mount, renderActivity: renderActivity, KIND_LABEL: KIND_LABEL, esc: esc, rich: rich };
+
+  if (typeof document !== 'undefined') {
+    document.addEventListener('DOMContentLoaded', function () {
+      var root = document.getElementById('eo-root');
+      if (root && global.EO_DATA && !root.dataset.mounted) {
+        root.dataset.mounted = '1';
+        mount(global.EO_DATA, root);
+      }
+    });
+  }
+})(window);
+</script>
+<script>EO.mount(window.EO_DATA,document.getElementById('eo-root'),{single:{"lesson":0,"activity":0}});</script>
+</body></html>
