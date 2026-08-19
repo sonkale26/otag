@@ -1477,6 +1477,14 @@ function itemEl(def, act, item, ii){
 /* ============================================================
    4) Önizleme
    ============================================================ */
+/* Satır içine gömülen CSS'te yazı tipi dosyası isteği bırakmayız:
+   göreli yol artık gömüldüğü sayfaya göre çözülür ve farklı alan adına
+   düşen istek CORS ile engellenir. Sistemde kurulu Gravity yine kullanılır. */
+function cssSatirIci(){
+  return RT['lib/css/eogrenme.css']
+    .replace(/,?\s*url\((['"])\.\.\/\.\.\/assets\/fonts\/[^)]*\1\)\s*format\((['"])woff2\2\)/g, '');
+}
+
 function buildPage(dataObj, opts){
   opts = opts||{};
   const data = JSON.stringify(dataObj).replace(/<\//g,'<\\/');
@@ -1485,7 +1493,7 @@ function buildPage(dataObj, opts){
   return `<!doctype html><html lang="tr" data-theme="${tema}"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(dataObj.meta.title||'Çöz-Öğren')}</title>
-<style>${RT['lib/css/eogrenme.css']}
+<style>${cssSatirIci()}
 /* Izgara çocuklarının içeriğe göre şişip taşmasını engelle */
 .edit-wrap>*,#editor,.act,.act-body,.item,.optrow,.lesson-list{min-width:0}
 .optrow input[type=text],.act-head input{min-width:0}
@@ -1569,21 +1577,36 @@ function renderPreview(){
   $('#pv-durum').innerHTML = '<div class="note">Önizleme hazırlanıyor…</div>';
   clearTimeout(pvTimer);
 
-  fr.removeAttribute('src');
-  fr.srcdoc = html;
+  // Blob adresi önce denenir: srcdoc'un boyut ve sanal alan kısıtları yoktur.
+  // Yüklenen sayfa haber verince bekleme sona erer.
+  if(!blobIleYukle(fr, html)){
+    srcdocIleYukle(fr, html);
+    pvTimer = setTimeout(()=>{ if(pvOnay !== bilet) pvHata(); }, 3000);
+    return;
+  }
 
   pvTimer = setTimeout(()=>{
     if(pvOnay === bilet) return;
-    // srcdoc çalışmadı: blob adresiyle dene
-    try{
-      const url = URL.createObjectURL(new Blob([html],{type:'text/html'}));
-      fr.removeAttribute('srcdoc');
-      fr.src = url;
-      setTimeout(()=>URL.revokeObjectURL(url), 60000);
-      pvTimer = setTimeout(()=>{ if(pvOnay !== bilet) pvHata(); }, 3000);
-    }catch(e){ pvHata(); }
-  }, 3000);
+    srcdocIleYukle(fr, html);                       // blob sessiz kaldı
+    pvTimer = setTimeout(()=>{ if(pvOnay !== bilet) pvHata(); }, 3000);
+  }, 2500);
 }
+
+function blobIleYukle(fr, html){
+  try{
+    const url = URL.createObjectURL(new Blob([html], {type:'text/html'}));
+    fr.removeAttribute('srcdoc');
+    fr.src = url;
+    setTimeout(()=>URL.revokeObjectURL(url), 60000);
+    return true;
+  }catch(e){ return false; }
+}
+
+function srcdocIleYukle(fr, html){
+  fr.removeAttribute('src');
+  fr.srcdoc = html;
+}
+
 $('#pv-reload').onclick=renderPreview;
 $('#pv-new').onclick=()=>{
   const html = currentPreviewHtml();
