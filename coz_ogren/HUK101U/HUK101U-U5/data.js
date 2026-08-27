@@ -1,0 +1,590 @@
+/* Çöz-Öğren — içerik verisi. Elle de düzenleyebilirsiniz. */
+window.EO_DATA = {
+  "meta": {
+    "id": "mmt8a8vkhm7m490",
+    "title": "Bölüm 5",
+    "subtitle": "Hukuki İlişkiler ve Haklar",
+    "footer": "",
+    "eyebrow": "Çöz-Öğren"
+  },
+  "lessons": [
+    {
+      "id": "tikla",
+      "kind": "cards",
+      "title": "Tıkla-Öğren",
+      "intro": "Kavramları görmek için kartlara tıklayın; ön yüzde kavram, arka yüzde açıklaması yer alır.",
+      "activities": [
+        {
+          "title": "Hak Kavramı ve Kamu Hakları",
+          "items": [
+            {
+              "term": "Hak",
+              "definition": "Hukuk tarafından tanınan, yararlanılması hak sahibinin iradesine bırakılan ve korunmasını isteme hususunda bireyin yetkili sayıldığı menfaatlerdir."
+            },
+            {
+              "term": "Objektif Hukuk",
+              "definition": "Toplum yaşamını düzenleyen, Devlet gücü ile yerine getirilen ve hukuki yaptırımla kuvvetlendirilmiş kuralların bütünüdür."
+            },
+            {
+              "term": "Subjektif Hukuk",
+              "definition": "Objektif hukukun kişilere sağladığı yetkileri ifade eden kısmıdır ve hak sözcüğü ile ifade edilir."
+            },
+            {
+              "term": "Kişi",
+              "definition": "Hukukta hak sahibi olan varlıklara verilen addır."
+            },
+            {
+              "term": "Kamu Hakları",
+              "definition": "Kamu hukukundan doğan ve vatandaşların Devlet'e karşı sahip olduğu haklardır."
+            },
+            {
+              "term": "Genel Nitelikli Kamu Hakları",
+              "definition": "Kamu kuruluşları ile hukuken bir ilişkiye girilmeksizin genel olarak kişilere verilen ve kişisel, sosyal-ekonomik ve siyasal kamu hakları olarak üç kategoride toplanan haklardır."
+            }
+          ]
+        },
+        {
+          "title": "Özel Haklar, Mutlak Haklar ve Nisbî Haklar",
+          "items": [
+            {
+              "term": "Özel Haklar",
+              "definition": "Özel hukuk kurallarından doğan ve kişilerin birbirlerine karşı sahip oldukları, özel hukuk tarafından kişiye tanınan hukuki yetkilerdir."
+            },
+            {
+              "term": "Mutlak Haklar",
+              "definition": "Sahibine kişiler ile maddi ve maddi olmayan mallar üzerinde en geniş yetkileri veren ve herkese karşı ileri sürülebilen haklardır."
+            },
+            {
+              "term": "Nisbî Haklar",
+              "definition": "Herkese karşı değil, yalnız hukuki işleme veya ilişkiye taraf olan belirli kişilere karşı ileri sürülebilen haklardır."
+            },
+            {
+              "term": "Mülkiyet Hakkı",
+              "definition": "Sahibine hukuk düzeninin sınırları içinde eşyayı kullanma, ondan yararlanma ve üzerinde tasarrufta bulunma yetkileri veren aynî haktır."
+            },
+            {
+              "term": "Sınırlı Aynî Haklar",
+              "definition": "Mülkiyet hakkındaki yetkilerin yalnızca bir kısmını sahibine tanıyan ve irtifak hakları, taşınmaz yükü ile rehin hakları olarak üç gruba ayrılan aynî haklardır."
+            },
+            {
+              "term": "Kişilik Hakları",
+              "definition": "Bir insanın maddi, manevi ve iktisadi bütünlüğü ve varlıkları üzerinde sahip olduğu mutlak haklardır."
+            }
+          ]
+        },
+        {
+          "title": "Özel Hakların Diğer Sınıflandırmaları",
+          "items": [
+            {
+              "term": "Malvarlığı Hakları",
+              "definition": "Kişilerin para ile ölçülebilir, paraya çevrilebilir, kural olarak devredilebilir ve miras yoluyla intikal edebilir hak ve borçlarının bütünüdür."
+            },
+            {
+              "term": "Devredilebilen Haklar",
+              "definition": "Sağlararası hukuki işlemle başkalarına devredilebilen ve miras yoluyla da intikal eden haklardır."
+            },
+            {
+              "term": "Yenilik Doğuran Haklar",
+              "definition": "Hak sahibinin tek taraflı irade açıklaması ile yeni bir hukuki ilişki kurabilmesine, mevcut ilişkiyi değiştirebilmesine veya ortadan kaldırabilmesine imkân veren haklardır."
+            },
+            {
+              "term": "Alelâde Haklar",
+              "definition": "Hak sahibinin kullanmasıyla yeni bir hukuki ilişki doğurmayan haklardır."
+            },
+            {
+              "term": "Bağımlı Haklar",
+              "definition": "Bağımsız bir hakka bağlı olan ve asıl hak bulunmaksızın mevcut olmayan yan haklardır."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yanitla",
+      "kind": "quiz",
+      "title": "Yanıtla-Öğren",
+      "intro": "Soruları yanıtlayın; her seçimden sonra doğru yanıt ve gerekçesi gösterilir.",
+      "activities": [
+        {
+          "title": "Hak Kavramı ve Kamu Hakları",
+          "items": [
+            {
+              "question": "Kaynakta hak nasıl tanımlanmaktadır?",
+              "options": [
+                "Hukuk tarafından tanınan ve korunmasını isteme hususunda bireyin yetkili sayıldığı menfaat",
+                "Yalnızca Devlet tarafından verilen görev",
+                "Sadece yazılı hukuk kuralından doğan yükümlülük",
+                "Toplumda yaptırımsız kabul edilen davranış"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta hak, hukuk tarafından tanınan, yararlanılması hak sahibinin iradesine bırakılan ve korunmasını isteme hususunda bireyin yetkili sayıldığı menfaat olarak tanımlanmaktadır."
+            },
+            {
+              "question": "Objektif hukukun kişilere sağladığı yetkileri ifade eden kavram hangisidir?",
+              "options": [
+                "Subjektif hukuk",
+                "Örf ve âdet hukuku",
+                "Kamu hukuku",
+                "Yargı yetkisi"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta objektif hukukun kişilere sağladığı yetkileri ifade eden kısmın subjektif hukuk olduğu belirtilmektedir."
+            },
+            {
+              "question": "Haklar doğdukları hukuk kuralının niteliğine göre hangi iki ana gruba ayrılır?",
+              "options": [
+                "Kamu hakları ve özel haklar",
+                "Mutlak haklar ve nisbi haklar",
+                "Devredilebilen ve devredilemeyen haklar",
+                "Bağımlı ve bağımsız haklar"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta hakların, doğdukları hukuk kuralının niteliğine göre kamu hakları ve özel haklar olarak ikiye ayrıldığı belirtilmektedir."
+            },
+            {
+              "question": "Kişisel kamu haklarına kaynakta hangi ad da verilmektedir?",
+              "options": [
+                "Negatif statü hakları",
+                "Pozitif statü hakları",
+                "Aktif statü hakları",
+                "Bağımlı haklar"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta kişisel kamu haklarının koruyucu kamu hakları veya negatif statü hakları olarak da adlandırıldığı belirtilmektedir."
+            },
+            {
+              "question": "Siyasal kamu haklarının temel işlevi nedir?",
+              "options": [
+                "Kişinin Devlet yönetimine ve siyasal kuruluşlara katılmasını sağlamak",
+                "Kişinin yalnızca malvarlığını korumak",
+                "Kişiye yalnızca özel hukuk sözleşmesi yapma yetkisi vermek",
+                "Kişiyi tüm kamu yükümlülüklerinden muaf tutmak"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta siyasal kamu haklarının, kişinin seçim yoluyla veya başka biçimlerde Devlet yönetimine ve siyasal kuruluşlara katılmasını sağladığı belirtilmektedir."
+            }
+          ]
+        },
+        {
+          "title": "Özel Haklar, Mutlak Haklar ve Nisbî Haklar",
+          "items": [
+            {
+              "question": "Özel haklar mahiyetlerine göre hangi iki ana gruba ayrılır?",
+              "options": [
+                "Mutlak haklar ve nisbî haklar",
+                "Kamu hakları ve özel haklar",
+                "Bağımlı haklar ve bağımsız haklar",
+                "Devredilebilir ve devredilemez haklar"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta özel hakların mahiyetlerine göre mutlak haklar ve nisbî haklar olmak üzere ikiye ayrıldığı belirtilmektedir."
+            },
+            {
+              "question": "Mutlak hakların temel özelliği hangisidir?",
+              "options": [
+                "Herkese karşı ileri sürülebilmeleri",
+                "Yalnızca borçluya karşı ileri sürülebilmeleri",
+                "Her zaman devredilemez olmaları",
+                "Sadece kamu hukukundan doğmaları"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta mutlak hakların hak sahibi tarafından herkese karşı ileri sürülebileceği belirtilmektedir."
+            },
+            {
+              "question": "Sahibine en geniş yetki veren aynî hak hangisidir?",
+              "options": [
+                "Mülkiyet hakkı",
+                "Rehin hakkı",
+                "İrtifak hakkı",
+                "Taşınmaz yükü"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta sahibine en geniş yetki veren aynî hakkın mülkiyet hakkı olduğu belirtilmektedir."
+            },
+            {
+              "question": "Sınırlı aynî haklar hangi üç gruba ayrılır?",
+              "options": [
+                "İrtifak hakları, taşınmaz yükü ve rehin hakları",
+                "Mülkiyet, telif ve kişilik hakları",
+                "Alacak, grup ve yenilik doğuran haklar",
+                "Kişisel, sosyal ve siyasal haklar"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta sınırlı aynî hakların irtifak hakları, taşınmaz yükü ve rehin hakları olarak üçe ayrıldığı belirtilmektedir."
+            },
+            {
+              "question": "Nisbî hakların kaynakta belirtilen başlıca kaynağı hangisidir?",
+              "options": [
+                "Borç ilişkileri",
+                "Yalnızca kamu hukuku",
+                "Yalnızca anayasal düzenlemeler",
+                "Sadece örf ve âdet hukuku"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta nisbî hakların özellikle borç ilişkilerinden meydana geldiği belirtilmektedir."
+            }
+          ]
+        },
+        {
+          "title": "Özel Hakların Diğer Sınıflandırmaları",
+          "items": [
+            {
+              "question": "Konularına göre özel haklar hangi iki gruba ayrılır?",
+              "options": [
+                "Malvarlığı hakları ve kişilik hakları",
+                "Mutlak haklar ve nisbî haklar",
+                "Kamu hakları ve özel haklar",
+                "Bağımlı haklar ve bağımsız haklar"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta özel hakların konularına göre malvarlığı hakları ve kişilik hakları olarak ikiye ayrıldığı belirtilmektedir."
+            },
+            {
+              "question": "Aşağıdakilerden hangisi devredilebilen haklara kaynakta verilen örneklerden biridir?",
+              "options": [
+                "Mülkiyet hakkı",
+                "Oturma hakkı",
+                "Nafaka hakkı",
+                "Nişanı bozma hakkı"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta mülkiyet hakkı devredilebilen haklara örnek olarak sayılmaktadır."
+            },
+            {
+              "question": "Yenilik doğuran haklar kaç grupta toplanmaktadır?",
+              "options": [
+                "İki",
+                "Üç",
+                "Dört",
+                "Beş"
+              ],
+              "answer": 1,
+              "explanation": "Kaynakta yenilik doğuran hakların kurucu, değiştirici ve bozucu olmak üzere üç gruba ayrıldığı belirtilmektedir."
+            },
+            {
+              "question": "Hak sahibinin kullanmasıyla herhangi bir yeni hukuki ilişki doğurmayan haklara ne ad verilir?",
+              "options": [
+                "Alelâde haklar",
+                "Kurucu yenilik doğuran haklar",
+                "Bağımlı haklar",
+                "Güçlendirilmiş alacak hakları"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta yeni bir hukuki ilişki doğurmayan hakların alelâde haklar olarak adlandırıldığı belirtilmektedir."
+            },
+            {
+              "question": "İpotek hakkı bağımsız olup olmamasına göre hangi grupta yer alır?",
+              "options": [
+                "Bağımlı hak",
+                "Bağımsız hak",
+                "Kişilik hakkı",
+                "Siyasal hak"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta ipotek hakkı asıl hakkı güvence altına alan bağımlı haklara örnek olarak verilmektedir."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bul",
+      "kind": "crossword",
+      "title": "Bul-Öğren",
+      "intro": "İpuçlarından yola çıkarak kelimeleri bulun. Izgara, verdiğiniz kelimelerden otomatik kurulur.",
+      "activities": [
+        {
+          "title": "Hak Kavramı ve Kamu Hakları",
+          "items": [
+            {
+              "answer": "SUBJEKTİF",
+              "clue": "Objektif düzenin kişilere sağladığı yetkileri ifade eden hukuk anlayışını niteleyen sözcük"
+            },
+            {
+              "answer": "MENFAAT",
+              "clue": "Bireyin korunmasını isteme hususunda yetkili sayıldığı ve hukukça tanınan yarar"
+            },
+            {
+              "answer": "NEGATİF",
+              "clue": "Kişisel kamu haklarının kaynakta belirtilen statü türünü niteleyen sözcük"
+            },
+            {
+              "answer": "POZİTİF",
+              "clue": "Sosyal ve ekonomik kamu haklarının kaynakta belirtilen statü türünü niteleyen sözcük"
+            },
+            {
+              "answer": "SİYASAL",
+              "clue": "Seçme, seçilme ve devlet yönetimine katılma ile ilgili kamu haklarını niteleyen sözcük"
+            }
+          ]
+        },
+        {
+          "title": "Özel Haklar, Mutlak Haklar ve Nisbî Haklar",
+          "items": [
+            {
+              "answer": "MUTLAK",
+              "clue": "Hak sahibinin herkese karşı ileri sürebildiği hak türünü niteleyen sözcük"
+            },
+            {
+              "answer": "NİSBÎ",
+              "clue": "Yalnızca belirli kişi veya kişilere karşı ileri sürülebilen hak türünü niteleyen sözcük"
+            },
+            {
+              "answer": "MÜLKİYET",
+              "clue": "Malike eşyayı kullanma, ondan yararlanma ve tasarrufta bulunma yetkisi veren tam aynî hak"
+            },
+            {
+              "answer": "İRTİFAK",
+              "clue": "Başkasına ait bir eşyayı kullanma veya ondan yararlanma yetkisi veren sınırlı aynî hak türü"
+            }
+          ]
+        },
+        {
+          "title": "Özel Hakların Diğer Sınıflandırmaları",
+          "items": [
+            {
+              "answer": "MALVARLIĞI",
+              "clue": "Bir kişinin para ile ölçülebilir hak ve borçlarının bütününü ifade eden kavram"
+            },
+            {
+              "answer": "DEVREDİLEN",
+              "clue": "Sağlararası işlemle başkasına aktarılabilen ve mirasla intikal edebilen hakları niteleyen sözcük"
+            },
+            {
+              "answer": "ALELÂDE",
+              "clue": "Kullanılması yeni bir hukuki ilişki doğurmayan hak türünü niteleyen sözcük"
+            },
+            {
+              "answer": "BAĞIMLI",
+              "clue": "Asıl hak olmadan var olamayan yan hakları niteleyen sözcük"
+            },
+            {
+              "answer": "KURUCU",
+              "clue": "Kullanılmasıyla yeni bir hukuki ilişki yaratan yenilik doğuran hak türünü niteleyen sözcük"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eslestir",
+      "kind": "match",
+      "title": "Eşleştir-Öğren",
+      "intro": "Açıklamayı seçip karşısındaki kavramla eşleştirin.",
+      "activities": [
+        {
+          "title": "Hak Kavramı ve Kamu Hakları",
+          "items": [
+            {
+              "term": "Objektif Hukuk",
+              "definition": "Toplum yaşamını düzenleyen ve Devlet gücüyle desteklenen hukuk kurallarının bütünüdür."
+            },
+            {
+              "term": "Subjektif Hukuk",
+              "definition": "Objektif hukukun kişilere sağladığı yetkileri ifade eder."
+            },
+            {
+              "term": "Kişisel Kamu Hakları",
+              "definition": "Kişiyi topluma ve özellikle Devlet'e karşı koruyan negatif statü haklarıdır."
+            },
+            {
+              "term": "Sosyal ve Ekonomik Kamu Hakları",
+              "definition": "Bireye Devlet'ten olumlu davranış, hizmet veya yardım isteme imkânı veren pozitif statü haklarıdır."
+            },
+            {
+              "term": "Siyasal Kamu Hakları",
+              "definition": "Kişinin Devlet yönetimine ve siyasal kuruluşlara katılmasını sağlayan aktif statü haklarıdır."
+            }
+          ]
+        },
+        {
+          "title": "Özel Haklar, Mutlak Haklar ve Nisbî Haklar",
+          "items": [
+            {
+              "term": "Mutlak Hak",
+              "definition": "Herkese karşı ileri sürülebilir."
+            },
+            {
+              "term": "Nisbî Hak",
+              "definition": "Yalnızca belirli kişi veya kişilere karşı ileri sürülebilir."
+            },
+            {
+              "term": "Mülkiyet Hakkı",
+              "definition": "Kullanma, yararlanma ve tasarrufta bulunma yetkilerini birlikte sağlar."
+            },
+            {
+              "term": "İrtifak Hakkı",
+              "definition": "Başkasına ait bir eşyayı kullanma veya ondan yararlanma yetkisi verir."
+            },
+            {
+              "term": "Rehin Hakkı",
+              "definition": "Alacak ödenmezse rehin verilen şeyi sattırıp paraya çevirerek alacağın tahsilini sağlar."
+            }
+          ]
+        },
+        {
+          "title": "Özel Hakların Diğer Sınıflandırmaları",
+          "items": [
+            {
+              "term": "Devredilebilen Hak",
+              "definition": "Sağlararası işlemle başkasına devredilebilir ve miras yoluyla intikal edebilir."
+            },
+            {
+              "term": "Devredilemeyen Hak",
+              "definition": "Başkalarına devredilemez ve miras yoluyla intikal etmez."
+            },
+            {
+              "term": "Kurucu Yenilik Doğuran Hak",
+              "definition": "Kullanılmasıyla yeni bir hukuki ilişki doğurur."
+            },
+            {
+              "term": "Bozucu Yenilik Doğuran Hak",
+              "definition": "Kullanılmasıyla mevcut hukuki durumu ortadan kaldırır."
+            },
+            {
+              "term": "Bağımlı Hak",
+              "definition": "Asıl hakka bağlıdır ve asıl hak olmadan mevcut olmaz."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dene",
+      "kind": "study",
+      "title": "Dene-Öğren",
+      "intro": "Kısa metni okuyun, öne çıkan noktaları inceleyin ve kontrol sorusunu yanıtlayın.",
+      "activities": [
+        {
+          "title": "Hak Kavramı ve Kamu Hakları",
+          "items": [
+            {
+              "category": "Hak Kavramı",
+              "title": "Hak, Hukuk ve Kişi",
+              "theory": "Hak, hukuk tarafından tanınan, yararlanılması hak sahibinin iradesine bırakılan ve korunmasını isteme hususunda bireyin yetkili sayıldığı menfaattir. Öğretide objektif hukuk toplum yaşamını düzenleyen ve Devlet gücüyle desteklenen hukuk kurallarının bütününü, subjektif hukuk ise objektif hukukun kişilere sağladığı yetkileri ifade eder. Subjektif hukuk için hak sözcüğü kullanılabilir. Her hak mutlaka bir hukuk kuralına dayanır; bu kural yazılı veya yazılı olmayan bir hukuk kuralı olabilir. Hukukta hak sahibi olan varlıklara kişi denir.",
+              "keyPoints": [
+                "Hak, hukuk düzenince tanınan ve korunan bir menfaattir.",
+                "Subjektif hukuk, objektif hukukun kişilere sağladığı yetkilerdir.",
+                "Her hak bir hukuk kuralına dayanır."
+              ],
+              "question": "Hukukta hak sahibi olan varlıklara ne ad verilir?",
+              "options": [
+                "Kişi",
+                "Mamelek",
+                "Ayni hak",
+                "Yükümlülük"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta hukukta hak sahibi olan varlıkların kişi veya şahıs olarak adlandırıldığı belirtilmektedir."
+            },
+            {
+              "category": "Kamu Hakları",
+              "title": "Kişisel, Sosyal-Ekonomik ve Siyasal Haklar",
+              "theory": "Kamu hakları kamu hukukundan doğan ve vatandaşların Devlet'e karşı sahip olduğu haklardır. Genel nitelikli kamu hakları kişisel kamu hakları, sosyal ve ekonomik kamu hakları ve siyasal kamu hakları olarak üç gruba ayrılır. Kişisel kamu hakları Devlet'in karışmama ödevini ifade eden negatif statü haklarıdır. Sosyal ve ekonomik kamu hakları Devlet'ten hizmet ve yardım isteme imkânı veren pozitif statü haklarıdır. Siyasal kamu hakları ise kişinin Devlet yönetimine ve siyasal kuruluşlara katılmasını sağlayan aktif statü haklarıdır.",
+              "keyPoints": [
+                "Genel nitelikli kamu hakları üç gruptur.",
+                "Kişisel kamu hakları negatif statü haklarıdır.",
+                "Siyasal kamu hakları aktif statü haklarıdır."
+              ],
+              "question": "Eğitim ve öğretim hakkı kaynakta hangi kamu hakkı grubunda yer almaktadır?",
+              "options": [
+                "Sosyal ve ekonomik kamu hakları",
+                "Kişisel kamu hakları",
+                "Özel nitelikli kamu hakları",
+                "Siyasal kamu hakları"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta eğitim ve öğretim hakkı sosyal ve ekonomik kamu hakları arasında sayılmaktadır."
+            }
+          ]
+        },
+        {
+          "title": "Özel Haklar, Mutlak Haklar ve Nisbî Haklar",
+          "items": [
+            {
+              "category": "Mutlak ve Nisbî Haklar",
+              "title": "İleri Sürülebileceği Çevreye Göre Ayrım",
+              "theory": "Özel hakların mahiyetlerine göre temel ayrımı mutlak ve nisbî haklar ayrımıdır. Mutlak haklar herkese karşı ileri sürülebilir ve herkes bu haklara saygı göstermekle yükümlüdür. Nisbî haklar ise yalnızca belirli kişi veya kişilere karşı ileri sürülebilir. Nisbî haklar özellikle borç ilişkilerinden doğar ve alacaklıya borçludan bir şeyi verme, yapma veya yapmama şeklinde belirli bir edimi isteme yetkisi verir.",
+              "keyPoints": [
+                "Mutlak haklar herkese karşı ileri sürülebilir.",
+                "Nisbî haklar belirli kişilere karşı ileri sürülebilir.",
+                "Nisbî haklar özellikle borç ilişkilerinden doğar."
+              ],
+              "question": "Bir satış sözleşmesinde alıcının malın teslimini isteme hakkı hangi tür haktır?",
+              "options": [
+                "Nisbî hak",
+                "Mutlak hak",
+                "Kişisel kamu hakkı",
+                "Siyasal kamu hakkı"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta borç ilişkilerinden doğan ve yalnızca belirli kişiye karşı ileri sürülebilen alacak haklarının nisbî hak olduğu belirtilmektedir."
+            },
+            {
+              "category": "Aynî Haklar",
+              "title": "Mülkiyet ve Sınırlı Aynî Haklar",
+              "theory": "Maddi mallar üzerindeki mutlak haklara aynî haklar denir. Aynî haklar, sahibine sağladıkları yetkinin kapsamına göre mülkiyet hakkı ve sınırlı aynî haklar olarak ikiye ayrılır. Mülkiyet hakkı sahibine kullanma, yararlanma ve tasarrufta bulunma yetkilerini verir. Sınırlı aynî haklar ise bu yetkilerin yalnızca bir kısmını sağlar ve irtifak hakları, taşınmaz yükü ile rehin hakları olarak üç gruba ayrılır.",
+              "keyPoints": [
+                "Aynî haklar maddi mallar üzerindeki mutlak haklardır.",
+                "Mülkiyet hakkı en geniş aynî haktır.",
+                "Sınırlı aynî haklar üç gruptur."
+              ],
+              "question": "Aşağıdakilerden hangisi sınırlı aynî haklardan biridir?",
+              "options": [
+                "Rehin hakkı",
+                "Seçme hakkı",
+                "Dilekçe hakkı",
+                "Kişi hürriyeti"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta rehin hakları sınırlı aynî hakların üç grubundan biri olarak sayılmaktadır."
+            }
+          ]
+        },
+        {
+          "title": "Özel Hakların Diğer Sınıflandırmaları",
+          "items": [
+            {
+              "category": "Kullanılmalarına ve Amaçlarına Göre Haklar",
+              "title": "Devir ve Yenilik Doğuran Haklar",
+              "theory": "Özel haklar kullanılmalarına göre devredilebilen ve devredilemeyen haklara ayrılır. Devredilebilen haklar sağlararası işlemle başkasına aktarılabilir ve mirasla intikal edebilir. Devredilemeyen haklar ise başkasına devredilemez ve mirasla geçmez. Amaçlarına göre özel haklar yenilik doğuran haklar ve alelâde haklardır. Yenilik doğuran haklar tek taraflı irade açıklamasıyla yeni bir hukuki ilişki kurabilir, mevcut ilişkiyi değiştirebilir veya ortadan kaldırabilir; kurucu, değiştirici ve bozucu olmak üzere üçe ayrılır.",
+              "keyPoints": [
+                "Devredilebilen haklar başkasına aktarılabilir ve mirasla geçebilir.",
+                "Yenilik doğuran haklar üç gruptur.",
+                "Alelâde haklar yeni bir hukuki durum doğurmaz."
+              ],
+              "question": "Önalım hakkı kaynakta hangi yenilik doğuran hak türüne örnek verilmektedir?",
+              "options": [
+                "Kurucu yenilik doğuran hak",
+                "Değiştirici yenilik doğuran hak",
+                "Bozucu yenilik doğuran hak",
+                "Alelâde hak"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta önalım hakkı kurucu yenilik doğuran hakların örneklerinden biri olarak verilmektedir."
+            },
+            {
+              "category": "Bağımsız ve Bağımlı Haklar",
+              "title": "Asıl Hak ve Yan Hak İlişkisi",
+              "theory": "Özel haklar başka bir hakka bağlı olup olmamalarına göre bağımsız ve bağımlı haklar olarak ikiye ayrılır. Bağımsız haklar herhangi bir hakka bağlı olmadan doğrudan doğruya sahip olunan haklardır. Bağımlı haklar ise bağımsız bir hakka bağlıdır ve asıl hak olmadan mevcut olmaz. Bu haklar asıl hakkın amacına ulaşmasına yardımcı olabilir, onu güçlendirebilir, güvence altına alabilir veya kapsamını genişletebilir. Asıl hak sona erdiğinde bağımlı hak da kural olarak sona erer.",
+              "keyPoints": [
+                "Bağımsız haklar başka bir hakka bağlı değildir.",
+                "Bağımlı haklar asıl hak olmadan mevcut olmaz.",
+                "Asıl hak sona erdiğinde bağımlı hak da kural olarak sona erer."
+              ],
+              "question": "Aşağıdakilerden hangisi kaynakta bağımsız haklara örnek olarak verilmektedir?",
+              "options": [
+                "Mülkiyet hakkı",
+                "İpotek hakkı",
+                "Kefile karşı hak",
+                "Faiz talebi"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta mülkiyet hakkı bağımsız haklara örnek olarak verilmektedir."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};

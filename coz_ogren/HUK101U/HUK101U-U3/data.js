@@ -1,0 +1,594 @@
+/* Çöz-Öğren — içerik verisi. Elle de düzenleyebilirsiniz. */
+window.EO_DATA = {
+  "meta": {
+    "id": "mmt8a8vkhm7m490",
+    "title": "Bölüm 3",
+    "subtitle": "Hukuk Sistemleri ve Türk Hukuk Tarihi",
+    "footer": "",
+    "eyebrow": "Çöz-Öğren"
+  },
+  "lessons": [
+    {
+      "id": "tikla",
+      "kind": "cards",
+      "title": "Tıkla-Öğren",
+      "intro": "Kavramları görmek için kartlara tıklayın; ön yüzde kavram, arka yüzde açıklaması yer alır.",
+      "activities": [
+        {
+          "title": "Karşılaştırmalı Hukuk ve Hukuk Sistemleri",
+          "items": [
+            {
+              "term": "Hukuk Kültürü",
+              "definition": "Belirli bir toplumda bireylerce genellikle paylaşılan, hukuka ilişkin fikirler, tutumlar, değerler, kanılar ve beklentiler toplamıdır."
+            },
+            {
+              "term": "Karşılaştırmalı Hukuk",
+              "definition": "Hem bir hukuk disiplininin hem de hukuk araştırmasında kullanılan bir yöntemin adıdır; farklı hukuk düzenlerinin kavram, kurum ve çözümlerini ortak bir zeminde karşılaştırmaya imkân verir."
+            },
+            {
+              "term": "Kıta Avrupası Hukuk Sistemi",
+              "definition": "Temeli Roma Hukuku'na dayanan, soyut kavramlar ile genel ve yazılı kuralların ağırlık taşıdığı hukuk sistemidir."
+            },
+            {
+              "term": "Anglo-Amerikan Hukuk Sistemi",
+              "definition": "İngiliz Hukuku'nda örnek olaylar ve yargı kararları temelinde gelişen; Amerika Birleşik Devletleri hukukunda da önceki örnek kararların bağlayıcılığı ilkesinin etkili olduğu hukuk sistemidir."
+            },
+            {
+              "term": "Sosyalist Hukuk Sistemi",
+              "definition": "Marksist düşüncenin özel bir yorumuna dayalı olarak tasarlanmış, mülkiyet ilişkileri ve hukukun araçsal işlevi bakımından farklılık gösteren hukuk düzenidir."
+            },
+            {
+              "term": "Tedvin",
+              "definition": "Bir ülkede dağınık hâlde bulunan hukuk kurallarının ait oldukları hukuk dalına bağlı olarak derlenip sistemli bir bütünlüğe kavuşturulması etkinliğidir."
+            }
+          ]
+        },
+        {
+          "title": "İslam Hukuku ve Osmanlı Hukuku",
+          "items": [
+            {
+              "term": "Şeriat",
+              "definition": "Dar anlamda İslam dinini belirleyen ilahi buyrukların toplamı; geniş anlamda insanın toplumsal varoluşunu düzenleyen bütüncül normatif sistemdir."
+            },
+            {
+              "term": "Fıkıh",
+              "definition": "İslam Hukuk Bilimi olarak, insanın belirli koşullarda ne yapması gerektiğini ve davranışlarının sonuçlarını bilme yetisini ifade eder."
+            },
+            {
+              "term": "Edille-i Şer'iyye",
+              "definition": "İslam Hukukunda şeriatın saptanmasında başvurulan kaynakların genel adıdır; kaynakta Kitap, Sünnet, icmâ, kıyas, istihsan, maslahat ve örf sayılmaktadır."
+            },
+            {
+              "term": "Muâmelât",
+              "definition": "Fıkhın insanlar arasındaki doğumdan ölüme kadar toplumsal ilişkileri, sözleşmeleri, mirası, evlenmeyi, boşanmayı ve benzeri işlemleri inceleyen bölümüdür."
+            },
+            {
+              "term": "Örfi Hukuk",
+              "definition": "Osmanlı hükümdarının şeriata aykırı olmamak üzere kendi iradesine dayanarak özellikle kamu hukuku alanında kanunname, emirname ve yasakname gibi düzenlemeler yapmasıyla oluşan hukuktur."
+            },
+            {
+              "term": "Mecelle-i Ahkamı Adliyye",
+              "definition": "1868-1878 yılları arasında Ahmet Cevdet Paşa başkanlığındaki komisyon tarafından derlenen, Hanefi mezhebinin medeni hukuka ilişkin fıkıh kurallarını içeren 1851 maddelik kodekstir."
+            }
+          ]
+        },
+        {
+          "title": "Tanzimat, Cumhuriyet ve Türk Hukuk Devrimi",
+          "items": [
+            {
+              "term": "Tanzimat Fermanı",
+              "definition": "Osmanlı toplumunun dönüşüm ve yeniliklerini ortaya koymaya çalıştığı yeni dönemin habercisi olan hukuki düzenlemedir."
+            },
+            {
+              "term": "Kanun-u Esasî",
+              "definition": "1876'da ilan edilen, meclis ve meşruti ilkeleri kabul eden modern anlamdaki Osmanlı Anayasasıdır."
+            },
+            {
+              "term": "Benimseme",
+              "definition": "Yabancı hukukun, benimseyen toplumun kendi iradesine ve yaşam biçimini değiştirme isteğine dayanarak alınmasıdır; kaynakta iktibas ve resepsiyon terimleriyle de ifade edilmektedir."
+            },
+            {
+              "term": "Adli Kapitülasyon",
+              "definition": "Kaynakta Osmanlı Devleti'nin son döneminde hukuk birliğini ve egemenliği sınırlandıran, Cumhuriyet döneminde Lozan Antlaşması ile kaldırılan hukuki ayrıcalıklar bağlamında ele alınmaktadır."
+            },
+            {
+              "term": "Türk Hukuk Devrimi",
+              "definition": "Bağımsızlığın kazanılması ve modernleşmenin tamamlanması amaçlarını birlikte taşıyan, hukuk alanındaki köklü dönüşümdür."
+            },
+            {
+              "term": "Türk Medeni Kanunu",
+              "definition": "1926'da İsviçre Medeni Kanunu'nun benimsenmesiyle kabul edilen ve özel hukuk alanındaki diğer düzenlemelerin temelini oluşturan ana hukuki düzenlemedir."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yanitla",
+      "kind": "quiz",
+      "title": "Yanıtla-Öğren",
+      "intro": "Soruları yanıtlayın; her seçimden sonra doğru yanıt ve gerekçesi gösterilir.",
+      "activities": [
+        {
+          "title": "Karşılaştırmalı Hukuk ve Hukuk Sistemleri",
+          "items": [
+            {
+              "question": "Kaynakta hukuk sistemleri hangi dört ana başlık altında ele alınmaktadır?",
+              "options": [
+                "Kıta Avrupası, Anglo-Amerikan, Sosyalist ve İslam Hukuku",
+                "Roma, Bizans, Osmanlı ve Cumhuriyet Hukuku",
+                "Özel hukuk, kamu hukuku, ceza hukuku ve usul hukuku",
+                "Yazılı hukuk, örf-adet hukuku, içtihat hukuku ve anayasa hukuku"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta öğretimsel amaçla Kıta Avrupası Hukuku, Anglo-Amerikan Hukuku, Sosyalist Hukuk ve İslam Hukuku şeklinde dörtlü bir kümelendirme kullanılmaktadır."
+            },
+            {
+              "question": "Kıta Avrupası Hukuk Sistemini karakterize eden temel özellik hangisidir?",
+              "options": [
+                "Roma Hukuku'na dayanması",
+                "Yalnızca örnek mahkeme kararlarına dayanması",
+                "Yazılı anayasanın bulunmaması",
+                "Kolektif mülkiyetin zorunlu olması"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta Kıta Avrupası Hukuk Sisteminin temel özelliğinin Roma Hukuku'nun yeniden canlandırılmasına dayalı bir hukuk biliminin ürünü olması olduğu belirtilmektedir."
+            },
+            {
+              "question": "İngiliz Hukuku'nun tarihsel olarak dayandığı üç kaynak hangileridir?",
+              "options": [
+                "Common Law, Equity ve Statute Law",
+                "Anayasa, kanun ve yönetmelik",
+                "Şeriat, fıkıh ve örf",
+                "Roma Hukuku, Pandekt Hukuku ve tedvin"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta İngiliz Hukuku'nun Common Law, Equity ve Statute Law olmak üzere üç tarihsel kaynağa dayandığı belirtilmektedir."
+            },
+            {
+              "question": "Pandekt Hukuku kaynakta nasıl tanımlanmaktadır?",
+              "options": [
+                "Roma Hukuku'nun Almanya'da zamanın ve bölgenin gereklerine göre düzenlenmiş hâli",
+                "İngiliz örnek karar hukukunun Alman uygulaması",
+                "İslam Hukuku'nun Avrupa'da uygulanmış biçimi",
+                "Amerikan federal hukukunun tarihsel kaynağı"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta Pandekt Hukuku, Roma Hukuku'nun Almanya'da geçerli olduğu bölgenin ve zamanın gereklerine göre düzenlenmiş hâli olarak açıklanmaktadır."
+            },
+            {
+              "question": "Sosyalist Hukukun başlıca üç temel ilkesi hangileridir?",
+              "options": [
+                "Sosyalist demokrasi, sosyalist yasallık ve demokratik merkeziyetçilik",
+                "Yersellik, kişisellik ve hukuki güvenlik",
+                "Common Law, Equity ve Statute Law",
+                "Şeriat, fıkıh ve tedvin"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta sosyalist hukukun üç temel ilkesi sosyalist demokrasi, sosyalist yasallık ve demokratik merkeziyetçilik olarak sayılmaktadır."
+            }
+          ]
+        },
+        {
+          "title": "İslam Hukuku ve Osmanlı Hukuku",
+          "items": [
+            {
+              "question": "Fıkhın üç temel bölümünden biri hangisidir?",
+              "options": [
+                "Muâmelât",
+                "Common Law",
+                "Statute Law",
+                "Pandekt"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta fıkhın İbâdât, Muâmelât ve Ukûbât olmak üzere üç ana bölümde incelendiği belirtilmektedir."
+            },
+            {
+              "question": "İslam Hukukunda Hz. Muhammed'in söz ve eylemlerini ifade eden kaynak hangisidir?",
+              "options": [
+                "Sünnet",
+                "İcmâ",
+                "Maslahat",
+                "Örf"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta Sünnet, Hazreti Muhammed'in söz ve eylemlerini ifade eden ikinci temel kaynak olarak belirtilmektedir."
+            },
+            {
+              "question": "Fakihlerin bir sorun karşısında aynı çözüme ulaşmaları ne olarak adlandırılır?",
+              "options": [
+                "İcmâ",
+                "Kıyas",
+                "İstihsan",
+                "Ta'zir"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta icmâ, fakihlerin bir sorun karşısında aynı çözüme ulaşmaları olarak tanımlanmaktadır."
+            },
+            {
+              "question": "Osmanlı örfi hukukunda hükümdarın yasama faaliyetlerinden biri hangisidir?",
+              "options": [
+                "Kanunname",
+                "Institutiones",
+                "Common Law",
+                "Magna Carta"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta padişahın kanunname, emirname ve yasakname gibi adlarla düzenlemeler yaptığı belirtilmektedir."
+            },
+            {
+              "question": "Mecelle hangi hukuki geleneğin kurallarını derlemiştir?",
+              "options": [
+                "Hanefi mezhebinin medeni hukuka ilişkin fıkıh kuralları",
+                "Fransız ceza hukukunun hükümleri",
+                "İngiliz Common Law kararları",
+                "Roma Hukuku'nun ceza hükümleri"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta Mecelle'nin Hanefi mezhebinin medeni hukuka ilişkin fıkıh kurallarının kodeksi olduğu belirtilmektedir."
+            }
+          ]
+        },
+        {
+          "title": "Tanzimat, Cumhuriyet ve Türk Hukuk Devrimi",
+          "items": [
+            {
+              "question": "1839 tarihli Gülhane Hattı Hümayunu'nda ilk defa beyan edilen ilkelerden biri hangisidir?",
+              "options": [
+                "Vatandaşların kanun önünde eşitliği",
+                "Common Law'ın bağlayıcılığı",
+                "Sosyalist yasallık",
+                "Federal devlet yapısı"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta 1839 tarihli Gülhane Hattı Hümayunu'nda vatandaşların kanun önünde eşitliği ilkesinin ilk defa beyan edildiği belirtilmektedir."
+            },
+            {
+              "question": "1876'da kabul edilen modern anlamdaki Osmanlı Anayasası hangisidir?",
+              "options": [
+                "Kanun-u Esasî",
+                "Mecelle",
+                "Kanunname-i Arazi",
+                "Hukuku Aile Kararnamesi"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta 1876'da Kanun-u Esasî ile meclis ve meşruti ilkelerin kabul edildiği belirtilmektedir."
+            },
+            {
+              "question": "Cumhuriyet Hukuk Devrimi'nin ağırlıklı yöntemi hangisidir?",
+              "options": [
+                "Benimseme",
+                "Yalnızca örf-adet",
+                "Yalnızca yargısal içtihat",
+                "Sadece kanunname"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta hukuki benimsemenin Cumhuriyet Hukuk Devrimi'nin tek yöntemi olmadığı, ancak ağırlıklı yöntemi olarak işlev gördüğü belirtilmektedir."
+            },
+            {
+              "question": "1926'da İsviçre Medeni Kanunu'nun benimsenmesinin amacı hangi kavram çiftiyle ifade edilmektedir?",
+              "options": [
+                "Bağımsızlık ve modernleşme",
+                "Refah ve kalkınma",
+                "Batılılaşma ve dünyevileşme",
+                "Yenilenme ve merkezileşme"
+              ],
+              "answer": 0,
+              "explanation": "Kaynağın bölüm sonu sorusunda doğru cevap bağımsızlık ve modernleşme olarak verilmektedir."
+            },
+            {
+              "question": "Türk Medeni Kanunu'nun kabulünün sonuçlarından biri hangisidir?",
+              "options": [
+                "Hukukun birliği ve tekliğinin sağlanması",
+                "Çok hukuklu yapının güçlendirilmesi",
+                "Adli kapitülasyonların genişletilmesi",
+                "Örfi hukukun tek kaynak hâline gelmesi"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta Medeni Kanun'un kabulüyle çok hukuklu ve çok başlı yapının tasfiye edilerek hukukun birliği ve tekliğinin sağlandığı belirtilmektedir."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bul",
+      "kind": "crossword",
+      "title": "Bul-Öğren",
+      "intro": "İpuçlarından yola çıkarak kelimeleri bulun. Izgara, verdiğiniz kelimelerden otomatik kurulur.",
+      "activities": [
+        {
+          "title": "Karşılaştırmalı Hukuk ve Hukuk Sistemleri",
+          "items": [
+            {
+              "answer": "TEDVİN",
+              "clue": "Dağınık hukuk kurallarını bir hukuk dalı içinde derleyip sistemli bütünlüğe kavuşturma etkinliği"
+            },
+            {
+              "answer": "PANDEKT",
+              "clue": "Roma hukukunun Almanya'da yerel gereklere göre işlenmiş biçimine verilen ad"
+            },
+            {
+              "answer": "EQUİTY",
+              "clue": "İngiliz hukukunda aşırı biçimciliğin adalet arayışını karşılamadaki yetersizliğine tepki olarak gelişen içtihadi kaynak"
+            },
+            {
+              "answer": "FEDERAL",
+              "clue": "Birden fazla özerk devletin aynı merkezî iktidara bağlı bulunduğu devlet yapısını niteleyen sözcük"
+            },
+            {
+              "answer": "KÜLTÜR",
+              "clue": "Hukuka ilişkin fikir, tutum, değer, kanı ve beklentilerin toplumsal bütününü ifade eden kavramın ikinci sözcüğü"
+            }
+          ]
+        },
+        {
+          "title": "İslam Hukuku ve Osmanlı Hukuku",
+          "items": [
+            {
+              "answer": "FIKIH",
+              "clue": "İslam hukuk bilimini ve hukuki bilme yetisini ifade eden kavram"
+            },
+            {
+              "answer": "ŞERİAT",
+              "clue": "Dar anlamda ilahi buyrukların toplamını ifade eden normatif düzen"
+            },
+            {
+              "answer": "İCMÂ",
+              "clue": "Fakihlerin belirli bir sorun karşısında aynı çözüme ulaşması"
+            },
+            {
+              "answer": "MASLAHAT",
+              "clue": "Zorunlu ve kamusal yarar bulunan bir güçlüğü kaldırmaya yönelik çözüm kaynağı"
+            },
+            {
+              "answer": "MECELLE",
+              "clue": "Ahmet Cevdet Paşa başkanlığındaki komisyonca hazırlanan 1851 maddelik medeni hukuk kodeksinin kısa adı"
+            }
+          ]
+        },
+        {
+          "title": "Tanzimat, Cumhuriyet ve Türk Hukuk Devrimi",
+          "items": [
+            {
+              "answer": "TANZİMAT",
+              "clue": "1839'dan itibaren Osmanlı hukuki kurumlarının modernleştirilmesine yönelen dönemin adı"
+            },
+            {
+              "answer": "İKTİBAS",
+              "clue": "Yabancı hukukun benimsenmesini ifade etmek için kullanılan terimlerden biri"
+            },
+            {
+              "answer": "LOZAN",
+              "clue": "Kapitülasyonların kaldırılmasıyla ilişkilendirilen uluslararası antlaşmanın kısa adı"
+            },
+            {
+              "answer": "MEDENİ",
+              "clue": "1926'da İsviçre'den benimsenen ve özel hukuk reformunun merkezinde yer alan kanunu niteleyen sözcük"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eslestir",
+      "kind": "match",
+      "title": "Eşleştir-Öğren",
+      "intro": "Açıklamayı seçip karşısındaki kavramla eşleştirin.",
+      "activities": [
+        {
+          "title": "Karşılaştırmalı Hukuk ve Hukuk Sistemleri",
+          "items": [
+            {
+              "term": "Roma Hukuku",
+              "definition": "Roma'nın kuruluşundan Iustinianus'un ölümüne kadar Roma'da ve egemenliği altındaki topraklarda uygulanmış hukuk kültürüdür."
+            },
+            {
+              "term": "Common Law",
+              "definition": "Örnek kararların bağlayıcılığı temelinde gelişen İngiliz içtihat hukukudur."
+            },
+            {
+              "term": "Equity",
+              "definition": "Common Law'ın aşırı biçimciliğinin yetersizliklerini gidermek için gelişen içtihat hukukudur."
+            },
+            {
+              "term": "Statute Law",
+              "definition": "İngiliz Parlamentosunun yasaları ile bunların uygulanmasına ilişkin düzenlemeleri kapsayan yasa hukukudur."
+            },
+            {
+              "term": "Sosyalist Yasallık",
+              "definition": "Sosyalist toplum ilişkilerinin oluşturulmasında araçsal değer taşıyan hukuka ilgililerin itaatini ifade eden ilkedir."
+            }
+          ]
+        },
+        {
+          "title": "İslam Hukuku ve Osmanlı Hukuku",
+          "items": [
+            {
+              "term": "Kitap",
+              "definition": "Kur'an-ı Kerim'i ifade eden temel kaynaktır."
+            },
+            {
+              "term": "Sünnet",
+              "definition": "Hazreti Muhammed'in söz ve eylemlerini ifade eden ikinci temel kaynaktır."
+            },
+            {
+              "term": "İcmâ",
+              "definition": "Fakihlerin bir sorun karşısında aynı çözüme ulaşmalarıdır."
+            },
+            {
+              "term": "Kıyas",
+              "definition": "Bir sorunun çözümünü benzer başka bir soruna benzeterek uygulamaktır."
+            },
+            {
+              "term": "Örfi Hukuk",
+              "definition": "Osmanlı hükümdarının şeriata aykırı olmamak üzere kendi iradesine dayanarak oluşturduğu yasa temelli hukuk alanıdır."
+            }
+          ]
+        },
+        {
+          "title": "Tanzimat, Cumhuriyet ve Türk Hukuk Devrimi",
+          "items": [
+            {
+              "term": "Gülhane Hattı Hümayunu",
+              "definition": "1839'da kanun önünde eşitlik ve ceza hukukunda keyfiliğin kaldırılması yönünde ilkeler açıklamıştır."
+            },
+            {
+              "term": "Islahat Fermanı",
+              "definition": "1856'da eşit vatandaşlık hakları yönünde önemli adımlar getirmiştir."
+            },
+            {
+              "term": "Kanun-u Esasî",
+              "definition": "1876'da meclis ve meşruti ilkeleri kabul eden Osmanlı Anayasasıdır."
+            },
+            {
+              "term": "Mecelle",
+              "definition": "Fıkıh geleneğine dayalı olarak hazırlanmış ve 1926'ya kadar yürürlükte kalmış medeni hukuk kodeksidir."
+            },
+            {
+              "term": "Türk Medeni Kanunu",
+              "definition": "1926'da kabul edilerek laik hukuk düzenine geçiş, hukuk birliği ve aile düzeninde köklü değişimlere temel olmuştur."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dene",
+      "kind": "study",
+      "title": "Dene-Öğren",
+      "intro": "Kısa metni okuyun, öne çıkan noktaları inceleyin ve kontrol sorusunu yanıtlayın.",
+      "activities": [
+        {
+          "title": "Karşılaştırmalı Hukuk ve Hukuk Sistemleri",
+          "items": [
+            {
+              "category": "Batı Hukuk Kültürü",
+              "title": "Kıta Avrupası ve Anglo-Amerikan Hukuku",
+              "theory": "Batı hukuk kültürü içinde tarihsel evrimi farklı iki hukuk ailesi öne çıkar. Kıta Avrupası Hukuku Roma Hukuku'na dayalı, soyut kavramlar ile genel ve yazılı kuralların ağırlık taşıdığı bir sistemdir. İngiliz Hukuku ise genel kavramlardan çok örnek olay gruplarına ve yargı kararlarına dayanır. İngiliz Hukuku'nun tarihsel kaynakları Common Law, Equity ve Statute Law'dur. Amerikan Hukuku da İngiliz Hukuku'ndan gelen örnek kararların bağlayıcılığı ilkesini benimsemiş, ancak federal yapı içinde federal ve eyalet yasalarıyla gelişmiştir.",
+              "keyPoints": [
+                "Kıta Avrupası Hukuku Roma Hukuku'na dayanır.",
+                "İngiliz Hukukunda örnek kararlar temel önemdedir.",
+                "Amerikan Hukukunda federal ve eyalet hukuk düzenleri birlikte bulunur."
+              ],
+              "question": "İngiliz Hukuku ile Kıta Avrupası Hukuku arasındaki temel farklılıklardan biri hangisidir?",
+              "options": [
+                "İngiliz Hukukunun örnek olaylar ve yargı kararlarına ağırlık vermesi",
+                "Kıta Avrupası Hukukunda hiçbir yazılı kural bulunmaması",
+                "İngiliz Hukukunun Roma Hukuku'na doğrudan dayanması",
+                "Kıta Avrupası Hukukunda mahkemelerin bulunmaması"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta İngiliz Hukukunun örnek olay grupları ve yargı kararlarına, Kıta Avrupası Hukukunun ise genel kavramlar ve yazılı kurallara ağırlık verdiği belirtilmektedir."
+            },
+            {
+              "category": "Sosyalist Hukuk",
+              "title": "İlkeler ve Mülkiyet Biçimleri",
+              "theory": "Sosyalist Hukuk Marksist düşüncenin özel bir yorumuna dayalı olarak tasarlanmış bir hukuk düzenidir. Kaynakta sosyalist hukuk başlıca sosyalist demokrasi, sosyalist yasallık ve demokratik merkeziyetçilik ilkelerine dayandırılmaktadır. Sosyalist hukuk sistemini ayıran temel özelliklerden biri mülkiyet biçimlerindeki farklılıktır. Sovyet örneğinde devlet mülkiyeti, kollektif çiftlik mülkiyeti, kişisel mülkiyet ve sınırlı biçimde özel mülkiyet kategorileri ele alınmaktadır.",
+              "keyPoints": [
+                "Sosyalist hukuk üç temel ilkeye dayandırılmıştır.",
+                "Kamusal mülkiyet sistem içinde önemli yer tutar.",
+                "Sovyet hukukunda farklı mülkiyet biçimleri birlikte ele alınmıştır."
+              ],
+              "question": "Kaynakta sosyalist hukuk sistemini ayıran temel özelliklerden biri hangisidir?",
+              "options": [
+                "Mülkiyet biçimleri konusundaki farklılık",
+                "Yalnızca yazısız kurallara dayanması",
+                "Örnek kararların tek hukuk kaynağı olması",
+                "Şeriat hükümlerini esas alması"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta sosyalist hukuk sisteminin temel farklılıklarından birinin mülkiyet biçimleri olduğu belirtilmektedir."
+            }
+          ]
+        },
+        {
+          "title": "İslam Hukuku ve Osmanlı Hukuku",
+          "items": [
+            {
+              "category": "İslam Hukuku",
+              "title": "Kaynaklar ve Fıkhın Bölümleri",
+              "theory": "İslam Hukuk Bilimi olan fıkıh, şeriatın belirli hiyerarşik kaynaklardan saptanacağı kabulüne dayanır. Kaynakta Kitap ve Sünnet temel kaynaklar olarak; bunların yanında icmâ, kıyas, istihsan, maslahat ve örf de kaynaklar arasında sayılmaktadır. Klasik İslam Hukuk Bilimi şeriatı İbâdât, Muâmelât ve Ukûbât olmak üzere üç ana bölümde incelemiştir. Muâmelât insanlar arasındaki toplumsal ilişkileri ve hukuki işlemleri; Ukûbât ise suç sayılan fiiller ve yaptırımları konu edinir.",
+              "keyPoints": [
+                "Kitap ve Sünnet temel kaynaklardır.",
+                "Fıkıh üç ana bölümde incelenir.",
+                "Muâmelât toplumsal ilişkiler ve hukuki işlemlerle ilgilidir."
+              ],
+              "question": "Sözleşme, miras, evlenme ve boşanma hangi fıkıh bölümü altında incelenir?",
+              "options": [
+                "Muâmelât",
+                "İbâdât",
+                "Ukûbât",
+                "İcmâ"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta bu işlemler Muâmelât bölümünde sayılmaktadır."
+            },
+            {
+              "category": "Osmanlı Hukuku",
+              "title": "Şer'i ve Örfi Hukukun Birlikteliği",
+              "theory": "Osmanlı Hukuku genel olarak İslam Hukuku çerçevesi içinde değerlendirilmekle birlikte özellikle kamu hukuku alanında örfi hukuk da önemli bir yere sahiptir. Hükümdar şeriata aykırı olmamak üzere kanunname, emirname ve yasakname gibi düzenlemeler çıkarabilmiştir. Böylece Tanzimat'a kadar şer'i alanda içtihadi, örfi alanda ise yasa temelli bir hukuk birlikte varlığını sürdürmüştür. Osmanlı milletler sistemi de özel hukuk alanında farklı toplulukların kendi hukuk veya örfüne göre uyuşmazlıklarını çözmelerine imkân tanımıştır.",
+              "keyPoints": [
+                "Osmanlı Hukuku'nda şer'i ve örfi alanlar birlikte bulunmuştur.",
+                "Örfi hukuk özellikle kamu hukuku alanında etkili olmuştur.",
+                "Milletler sistemi özel hukukta çok hukuklu bir yapı sağlamıştır."
+              ],
+              "question": "Osmanlı örfi hukukunda hükümdarın yasa koyma yetkisinin sınırı kaynakta nasıl belirtilmektedir?",
+              "options": [
+                "Şeriata aykırı olmamak",
+                "Yalnızca yabancı hukuk kurallarını uygulamak",
+                "Hiçbir yazılı düzenleme yapmamak",
+                "Sadece özel hukuk alanında düzenleme yapmak"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta sultanın nizam-i âlem için şeriata aykırı olmamak üzere yasa koyduğu belirtilmektedir."
+            }
+          ]
+        },
+        {
+          "title": "Tanzimat, Cumhuriyet ve Türk Hukuk Devrimi",
+          "items": [
+            {
+              "category": "Tanzimat Dönemi",
+              "title": "Gelenek ile Batı Hukuku Arasında Modernleşme",
+              "theory": "Tanzimat döneminde Osmanlı hukuki kurumlarının modernleştirilmesine yönelik düzenlemeler yapılmıştır. 1839 tarihli Gülhane Hattı Hümayunu kanun önünde eşitlik ilkesini beyan etmiş ve ceza hukukunda keyfiliğin kaldırılacağını açıklamıştır. 1856 Islahat Fermanı eşit vatandaşlık hakları yönünde adımlar getirmiş, 1876 Kanun-u Esasî ise meclis ve meşruti ilkeleri kabul etmiştir. Bu dönemde Fransız Hukuku'ndan alınan kanunların yanında İslam Hukuku kaynaklı Mecelle, Kanunname-i Arazi ve Hukuku Aile Kararnamesi gibi düzenlemeler de hukuk sisteminde yer almıştır.",
+              "keyPoints": [
+                "Tanzimat hukuki modernleşmenin başlangıç dönemidir.",
+                "Batı hukukundan alınan kanunlarla İslam Hukuku kaynaklı düzenlemeler birlikte bulunmuştur.",
+                "1876 Kanun-u Esasî meclis ve meşruti ilkeleri kabul etmiştir."
+              ],
+              "question": "Tanzimat dönemindeki hukuk yapısının kültürel görünümü kaynakta nasıl açıklanmaktadır?",
+              "options": [
+                "Batı hukuku ile İslam Hukuku kaynaklı düzenlemelerin birlikte bulunması",
+                "Yalnızca Common Law'ın uygulanması",
+                "Sadece örfi hukukun geçerli olması",
+                "Bütün eski hukuki düzenlemelerin aynı anda kaldırılması"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta Batı hukukundan iktibas edilen kanunlarla İslam Hukuku kaynaklı düzenlemelerin birlikte bulunmasının ikili bir görünüm oluşturduğu belirtilmektedir."
+            },
+            {
+              "category": "Cumhuriyet ve Türk Hukuk Devrimi",
+              "title": "Bağımsızlık, Modernleşme ve Medeni Kanun",
+              "theory": "Cumhuriyet Hukuk Devrimi hem bağımsızlığın kazanılması hem de modernleşme amacını birlikte taşımıştır. Lozan Antlaşması ile kapitülasyonlar kaldırılmış, hukuki benimseme reformun ağırlıklı yöntemi olmuştur. 1926'da İsviçre Medeni Kanunu'nun benimsenmesiyle Türkiye laik bir hukuk düzenine geçmiş, Kıta Avrupası hukukunun parçası olmuş, hukuk birliği ve tekliği sağlanmış, aile düzeni ve evli kadının statüsünde köklü değişiklikler gerçekleştirilmiş ve modern hukuki düşünce ile hukuk kültürü benimsenmiştir.",
+              "keyPoints": [
+                "Hukuk Devrimi bağımsızlık ve modernleşme amaçlarını birlikte taşır.",
+                "1926 Medeni Kanunu hukuk birliği ve laikleşme açısından temel düzenlemedir.",
+                "Benimseme reformun ağırlıklı yöntemi olmuştur."
+              ],
+              "question": "1926 Türk Medeni Kanunu'nun kabulünün kaynakta belirtilen sonuçlarından biri hangisidir?",
+              "options": [
+                "Türkiye'nin Kıta Avrupası hukukunun bir parçası hâline gelmesi",
+                "Adli kapitülasyonların yeniden yürürlüğe girmesi",
+                "Çok hukuklu yapının güçlendirilmesi",
+                "Common Law'ın tek kaynak hâline gelmesi"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta Medeni Kanun'un kabulüyle Türkiye'nin laik bir hukuk düzenine geçtiği ve Türk hukukunun Kıta Avrupası hukukunun bir parçası olduğu belirtilmektedir."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};

@@ -1,0 +1,594 @@
+/* Çöz-Öğren — içerik verisi. Elle de düzenleyebilirsiniz. */
+window.EO_DATA = {
+  "meta": {
+    "id": "mmt8a8vkhm7m490",
+    "title": "Bölüm 4",
+    "subtitle": "Yargı Örgütü",
+    "footer": "",
+    "eyebrow": "Çöz-Öğren"
+  },
+  "lessons": [
+    {
+      "id": "tikla",
+      "kind": "cards",
+      "title": "Tıkla-Öğren",
+      "intro": "Kavramları görmek için kartlara tıklayın; ön yüzde kavram, arka yüzde açıklaması yer alır.",
+      "activities": [
+        {
+          "title": "Adlî Yargı",
+          "items": [
+            {
+              "term": "Adlî Yargı",
+              "definition": "Diğer yargı kollarının görev alanına girmeyen tüm dava ve yargısal işlerin çözüldüğü genel ve olağan yargı koludur."
+            },
+            {
+              "term": "İlk Derece Mahkemeleri",
+              "definition": "Adlî yargıda uyuşmazlığın esasını ilk kez inceleyip karara bağlayan hukuk ve ceza mahkemeleridir."
+            },
+            {
+              "term": "Bölge Adliye Mahkemesi",
+              "definition": "Adlî yargıda ikinci derece mahkeme olup ilk derece mahkemelerinin kesin olmayan hüküm ve kararlarına karşı yapılan istinaf başvurularını inceler."
+            },
+            {
+              "term": "Yargıtay",
+              "definition": "Adliye mahkemelerince verilen ve kanunun başka bir adlî yargı merciine bırakmadığı karar ve hükümlerin son inceleme merci olan bağımsız yüksek mahkemedir."
+            },
+            {
+              "term": "İstinaf",
+              "definition": "İlk derece mahkemelerince verilen kararların bölge adliye mahkemeleri tarafından olgu ve hukuk yönünden incelenmesi suretiyle düzeltilmesi, iyileştirilmesi veya iptal edilmesi amacına yönelik kanun yoludur."
+            },
+            {
+              "term": "Yargı Çevresi",
+              "definition": "Bir mahkemenin yargı yetkisinin sınırlarını belirleyen idarî ve coğrafi çevredir."
+            }
+          ]
+        },
+        {
+          "title": "İdarî Yargı ve Diğer Yargı Kolları",
+          "items": [
+            {
+              "term": "İdarî Yargı",
+              "definition": "Hukuka aykırı idarî işlemlere karşı açılan iptal davaları, idarî eylem ve işlemlerden doğan tam yargı davaları ve belirli idarî sözleşme uyuşmazlıklarının görüldüğü yargı koludur."
+            },
+            {
+              "term": "İdare Mahkemesi",
+              "definition": "Vergi mahkemelerinin görevine giren davalar ve Danıştay'ın ilk derece mahkemesi sıfatıyla bakacağı davalar dışında kalan idarî davalara bakan ilk derece mahkemesidir."
+            },
+            {
+              "term": "Vergi Mahkemesi",
+              "definition": "Vergi, resim, harç ve benzeri mali yükümler ile bunların zam ve cezaları ve 6183 sayılı Kanunun uygulanmasına ilişkin davalara bakan ilk derece mahkemesidir."
+            },
+            {
+              "term": "Bölge İdare Mahkemesi",
+              "definition": "İdare ve vergi mahkemelerinin istinafa açık nihai kararlarına karşı yapılan başvuruları inceleyen ikinci derece idarî yargı mahkemesidir."
+            },
+            {
+              "term": "Danıştay",
+              "definition": "İdarî yargıda kanunun başka bir idarî yargı merciine bırakmadığı karar ve hükümlerin son inceleme merci olan yüksek mahkemedir."
+            },
+            {
+              "term": "Uyuşmazlık Mahkemesi",
+              "definition": "Adlî ve idarî yargı mercileri arasındaki görev ve hüküm uyuşmazlıklarını kesin olarak çözmekle görevli ve yetkili yüksek yargı merciidir."
+            }
+          ]
+        },
+        {
+          "title": "Anayasa Yargısı ve Avrupa İnsan Hakları Mahkemesi Yargısı",
+          "items": [
+            {
+              "term": "Anayasa Yargısı",
+              "definition": "Geniş anlamda Anayasa hukuku sorunlarının yargısal süreçte karara bağlanması; dar anlamda kanunların ve bazı yasama işlemlerinin Anayasa'ya uygunluğunun yargısal denetimidir."
+            },
+            {
+              "term": "Anayasa Mahkemesi",
+              "definition": "Anayasa yargısında görevli, on beş üyeden oluşan ve norm denetimi ile bireysel başvuru dâhil Anayasa ve kanunlarla verilen görevleri yerine getiren yüksek mahkemedir."
+            },
+            {
+              "term": "Soyut Norm Denetimi",
+              "definition": "Belirli kişi ve grupların kanun, Cumhurbaşkanlığı kararnamesi veya Türkiye Büyük Millet Meclisi İçtüzüğünün Anayasa'ya aykırılığı iddiasıyla doğrudan Anayasa Mahkemesinde iptal davası açması yoluyla yapılan denetimdir."
+            },
+            {
+              "term": "Somut Norm Denetimi",
+              "definition": "Görülmekte olan bir davada uygulanacak kanun veya Cumhurbaşkanlığı kararnamesi hükmünün Anayasa'ya aykırılığının itiraz yoluyla Anayasa Mahkemesine taşınmasıdır."
+            },
+            {
+              "term": "Bireysel Başvuru",
+              "definition": "Anayasa'da güvence altına alınmış ve Avrupa İnsan Hakları Sözleşmesi kapsamındaki bir temel hak veya özgürlüğünün kamu gücü tarafından ihlal edildiğini iddia eden kişinin, olağan kanun yollarını tükettikten sonra Anayasa Mahkemesine başvurmasıdır."
+            },
+            {
+              "term": "Avrupa İnsan Hakları Mahkemesi",
+              "definition": "Avrupa İnsan Hakları Sözleşmesinin tarafı olan devletlerin sözleşmeye uymalarını sağlamak amacıyla görev yapan ve sözleşmeci devletlerin sayısına eşit sayıda hâkimden oluşan mahkemedir."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yanitla",
+      "kind": "quiz",
+      "title": "Yanıtla-Öğren",
+      "intro": "Soruları yanıtlayın; her seçimden sonra doğru yanıt ve gerekçesi gösterilir.",
+      "activities": [
+        {
+          "title": "Adlî Yargı",
+          "items": [
+            {
+              "question": "Adlî yargı kolunda kaç dereceli bir yargılama sistemi kabul edilmiştir?",
+              "options": [
+                "İki",
+                "Üç",
+                "Dört",
+                "Beş"
+              ],
+              "answer": 1,
+              "explanation": "Kaynakta adlî yargıda ilk derece mahkemeleri, bölge adliye mahkemeleri ve Yargıtay olmak üzere üç dereceli bir sistem bulunduğu belirtilmektedir."
+            },
+            {
+              "question": "Özel hukuk alanında ortaya çıkan uyuşmazlıkları çözen ilk derece mahkemeleri hangileridir?",
+              "options": [
+                "Hukuk mahkemeleri",
+                "Vergi mahkemeleri",
+                "İdare mahkemeleri",
+                "Uyuşmazlık Mahkemesi"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta boşanma, tazminat ve alacak davaları gibi özel hukuk uyuşmazlıklarının hukuk mahkemelerinde görüldüğü belirtilmektedir."
+            },
+            {
+              "question": "Kira ilişkisinden doğan tüm uyuşmazlıklara hangi genel hukuk mahkemesi bakar?",
+              "options": [
+                "Asliye hukuk mahkemesi",
+                "Sulh hukuk mahkemesi",
+                "Asliye ticaret mahkemesi",
+                "İş mahkemesi"
+              ],
+              "answer": 1,
+              "explanation": "Kaynakta kira ilişkisinden doğan tüm uyuşmazlıkların sulh hukuk mahkemesinin görev alanında olduğu belirtilmektedir."
+            },
+            {
+              "question": "Adlî yargıda ikinci derece mahkemeler hangileridir?",
+              "options": [
+                "Bölge adliye mahkemeleri",
+                "Bölge idare mahkemeleri",
+                "Yargıtay daireleri",
+                "Sulh hukuk mahkemeleri"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta bölge adliye mahkemeleri adlî yargının ikinci derece mahkemeleri olarak açıklanmaktadır."
+            },
+            {
+              "question": "Adlî yargı alanında hukukun aynı şekilde uygulanmasını ve hukuk birliğini sağlama işlevi hangi yüksek mahkemeye aittir?",
+              "options": [
+                "Danıştay",
+                "Yargıtay",
+                "Anayasa Mahkemesi",
+                "Sayıştay"
+              ],
+              "answer": 1,
+              "explanation": "Kaynakta Yargıtay'ın aslî fonksiyonunun adlî yargı alanında hukukun aynı şekilde uygulanmasını ve hukuk birliğini sağlamak olduğu belirtilmektedir."
+            }
+          ]
+        },
+        {
+          "title": "İdarî Yargı ve Diğer Yargı Kolları",
+          "items": [
+            {
+              "question": "İdarî yargı kolundaki ilk derece mahkemeleri hangileridir?",
+              "options": [
+                "İdare ve vergi mahkemeleri",
+                "Asliye hukuk ve sulh hukuk mahkemeleri",
+                "Bölge adliye ve bölge idare mahkemeleri",
+                "Danıştay ve Yargıtay"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta idarî yargının ilk derece mahkemeleri idare mahkemeleri ve vergi mahkemeleri olarak belirtilmektedir."
+            },
+            {
+              "question": "İdarî yargıda ikinci derece mahkeme hangisidir?",
+              "options": [
+                "Bölge idare mahkemesi",
+                "Danıştay",
+                "Yargıtay",
+                "Anayasa Mahkemesi"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta bölge idare mahkemeleri idarî yargının ikinci derece mahkemeleri olarak açıklanmaktadır."
+            },
+            {
+              "question": "İdarî yargının en üst yargı merci hangisidir?",
+              "options": [
+                "Yargıtay",
+                "Danıştay",
+                "Sayıştay",
+                "Uyuşmazlık Mahkemesi"
+              ],
+              "answer": 1,
+              "explanation": "Kaynakta idarî yargının en üst yargı merciinin Danıştay olduğu belirtilmektedir."
+            },
+            {
+              "question": "Mali yargı kolunda görevli organ hangisidir?",
+              "options": [
+                "Sayıştay",
+                "Danıştay",
+                "Yargıtay",
+                "Bölge idare mahkemesi"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta mali yargı kolunda görevli organın Sayıştay olduğu belirtilmektedir."
+            },
+            {
+              "question": "Adlî ve idarî yargı mercileri arasındaki görev ve hüküm uyuşmazlıklarını kesin olarak hangi merci çözer?",
+              "options": [
+                "Anayasa Mahkemesi",
+                "Uyuşmazlık Mahkemesi",
+                "Yargıtay",
+                "Danıştay"
+              ],
+              "answer": 1,
+              "explanation": "Kaynakta bu uyuşmazlıkları kesin olarak çözmekle görevli yüksek yargı merciinin Uyuşmazlık Mahkemesi olduğu belirtilmektedir."
+            }
+          ]
+        },
+        {
+          "title": "Anayasa Yargısı ve Avrupa İnsan Hakları Mahkemesi Yargısı",
+          "items": [
+            {
+              "question": "Anayasa Mahkemesi kaç üyeden oluşur?",
+              "options": [
+                "On iki",
+                "On beş",
+                "On yedi",
+                "Yirmi"
+              ],
+              "answer": 1,
+              "explanation": "Kaynakta Anayasa Mahkemesinin on beş üyeden oluştuğu belirtilmektedir."
+            },
+            {
+              "question": "Anayasa'ya uygunluk denetimi kaynakta kaç şekilde açıklanmaktadır?",
+              "options": [
+                "İki",
+                "Üç",
+                "Dört",
+                "Beş"
+              ],
+              "answer": 1,
+              "explanation": "Kaynakta soyut norm denetimi, somut norm denetimi ve bireysel başvuru olmak üzere üç yol sayılmaktadır."
+            },
+            {
+              "question": "Anayasa Mahkemesine bireysel başvuru yapılabilmesi için hangi şart aranır?",
+              "options": [
+                "Olağan kanun yollarının tüketilmiş olması",
+                "Doğrudan Cumhurbaşkanının başvurması",
+                "Yalnızca bir siyasi partinin başvurması",
+                "Uyuşmazlık Mahkemesinin izin vermesi"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta bireysel başvuru yapılabilmesi için olağan kanun yollarının tüketilmiş olması gerektiği belirtilmektedir."
+            },
+            {
+              "question": "Avrupa İnsan Hakları Mahkemesine bireysel başvuru süresi iç hukuktaki kesin karar tarihinden itibaren ne kadardır?",
+              "options": [
+                "Bir ay",
+                "Dört ay",
+                "Altı ay",
+                "Bir yıl"
+              ],
+              "answer": 1,
+              "explanation": "Kaynakta Avrupa İnsan Hakları Mahkemesine başvuru süresinin iç hukuktaki kesin karar tarihinden itibaren dört ay olduğu belirtilmektedir."
+            },
+            {
+              "question": "Avrupa İnsan Hakları Mahkemesinin karar organları arasında hangisi yer alır?",
+              "options": [
+                "Tek Yargıç",
+                "Yargıtay Dairesi",
+                "Vergi Dava Dairesi",
+                "Uyuşmazlık Kurulu"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta Mahkemenin karar organları Tek Yargıç, Komite, Daire ve Büyük Daire olarak sayılmaktadır."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bul",
+      "kind": "crossword",
+      "title": "Bul-Öğren",
+      "intro": "İpuçlarından yola çıkarak kelimeleri bulun. Izgara, verdiğiniz kelimelerden otomatik kurulur.",
+      "activities": [
+        {
+          "title": "Adlî Yargı",
+          "items": [
+            {
+              "answer": "İSTİNAF",
+              "clue": "İlk derece kararlarının olgu ve hukuk yönünden ikinci derece mahkemesinde incelendiği kanun yolu"
+            },
+            {
+              "answer": "YARGITAY",
+              "clue": "Adlî yargıda son inceleme mercii olan yüksek mahkeme"
+            },
+            {
+              "answer": "ASLİYE",
+              "clue": "Genel hukuk ve ceza mahkemelerinin adında ortak olarak geçen sözcük"
+            },
+            {
+              "answer": "SULH",
+              "clue": "Kira uyuşmazlıklarına bakan genel hukuk mahkemesinin adındaki ilk sözcük"
+            },
+            {
+              "answer": "TEMYİZ",
+              "clue": "Bölge adliye mahkemesi ve bazı ilk derece kararlarının yüksek mahkemede incelendiği kanun yolu"
+            }
+          ]
+        },
+        {
+          "title": "İdarî Yargı ve Diğer Yargı Kolları",
+          "items": [
+            {
+              "answer": "DANIŞTAY",
+              "clue": "İdarî yargıda son inceleme mercii olan yüksek mahkeme"
+            },
+            {
+              "answer": "SAYIŞTAY",
+              "clue": "Mali yargı kolunda görevli olan ve kamu idarelerinin hesap ve işlemlerini denetleyen organ"
+            },
+            {
+              "answer": "UYUŞMAZLIK",
+              "clue": "Adlî ve idarî yargı mercileri arasındaki görev ve hüküm çatışmalarını çözen yüksek mahkemenin adındaki ilk sözcük"
+            },
+            {
+              "answer": "İPTAL",
+              "clue": "Hukuka aykırı idarî işlemlere karşı açılan dava türü"
+            }
+          ]
+        },
+        {
+          "title": "Anayasa Yargısı ve Avrupa İnsan Hakları Mahkemesi Yargısı",
+          "items": [
+            {
+              "answer": "ANAYASA",
+              "clue": "Kanun ve bazı yasama işlemlerinin uygunluğunun denetlendiği üst norm"
+            },
+            {
+              "answer": "BİREYSEL",
+              "clue": "Temel hak ihlali iddiasıyla yüksek mahkemeye yapılan başvuru türünü niteleyen sözcük"
+            },
+            {
+              "answer": "SOYUT",
+              "clue": "Doğrudan iptal davası yoluyla yapılan norm denetimi türünü niteleyen sözcük"
+            },
+            {
+              "answer": "KOMİTE",
+              "clue": "Avrupa İnsan Hakları Mahkemesinde üç hâkimden oluşan karar organı"
+            },
+            {
+              "answer": "DOSTANE",
+              "clue": "Avrupa İnsan Hakları Mahkemesinin kabul edilebilir bulunan başvuruda taraflar arasında başlatılmasına yardımcı olduğu çözüm sürecini niteleyen sözcük"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eslestir",
+      "kind": "match",
+      "title": "Eşleştir-Öğren",
+      "intro": "Açıklamayı seçip karşısındaki kavramla eşleştirin.",
+      "activities": [
+        {
+          "title": "Adlî Yargı",
+          "items": [
+            {
+              "term": "Asliye Hukuk Mahkemesi",
+              "definition": "Sulh hukuk ve özel mahkemelerin görev alanı dışında kalan hukuk dava ve işlerine bakar."
+            },
+            {
+              "term": "Sulh Hukuk Mahkemesi",
+              "definition": "Kira uyuşmazlıkları, ortaklığın giderilmesi ve zilyetliğin korunması gibi davalara bakar."
+            },
+            {
+              "term": "Asliye Ceza Mahkemesi",
+              "definition": "Sulh ceza hâkimliği ve ağır ceza mahkemelerinin görevleri dışında kalan ceza dava ve işlerine bakar."
+            },
+            {
+              "term": "Bölge Adliye Mahkemesi",
+              "definition": "İlk derece mahkemelerinin kesin olmayan kararlarına karşı istinaf incelemesi yapar."
+            },
+            {
+              "term": "Yargıtay",
+              "definition": "Bölge adliye mahkemeleri ve bazı hâllerde ilk derece mahkemelerinin nihai kararlarının temyiz incelemesini yapar."
+            }
+          ]
+        },
+        {
+          "title": "İdarî Yargı ve Diğer Yargı Kolları",
+          "items": [
+            {
+              "term": "İdare Mahkemesi",
+              "definition": "Genel görevli ilk derece idarî yargı mahkemesidir."
+            },
+            {
+              "term": "Vergi Mahkemesi",
+              "definition": "Vergi, resim, harç ve benzeri mali yükümlere ilişkin davalara bakar."
+            },
+            {
+              "term": "Bölge İdare Mahkemesi",
+              "definition": "İdare ve vergi mahkemesi kararlarına karşı istinaf başvurularını inceler."
+            },
+            {
+              "term": "Danıştay",
+              "definition": "İdarî yargıda temyiz merciidir ve belirli davalara ilk ve son derece mahkemesi olarak bakabilir."
+            },
+            {
+              "term": "Sayıştay",
+              "definition": "Mali yargıda kamu idarelerinin hesap ve işlemlerini denetler ve kamu zararına yol açan hususları kesin hükme bağlar."
+            }
+          ]
+        },
+        {
+          "title": "Anayasa Yargısı ve Avrupa İnsan Hakları Mahkemesi Yargısı",
+          "items": [
+            {
+              "term": "Soyut Norm Denetimi",
+              "definition": "Belirli kişi ve grupların doğrudan Anayasa Mahkemesinde iptal davası açması yoluyla yapılır."
+            },
+            {
+              "term": "Somut Norm Denetimi",
+              "definition": "Görülmekte olan davada uygulanacak normun Anayasa'ya aykırılığının itiraz yoluyla Anayasa Mahkemesine taşınmasıdır."
+            },
+            {
+              "term": "Bireysel Başvuru",
+              "definition": "Olağan kanun yolları tüketildikten sonra temel hak ve özgürlük ihlali iddiasıyla yapılır."
+            },
+            {
+              "term": "AİHM Büyük Daire",
+              "definition": "On yedi hâkimden oluşur."
+            },
+            {
+              "term": "Bakanlar Komitesi",
+              "definition": "Avrupa İnsan Hakları Mahkemesinin kesinleşmiş kararlarının uygulanmasını denetler."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dene",
+      "kind": "study",
+      "title": "Dene-Öğren",
+      "intro": "Kısa metni okuyun, öne çıkan noktaları inceleyin ve kontrol sorusunu yanıtlayın.",
+      "activities": [
+        {
+          "title": "Adlî Yargı",
+          "items": [
+            {
+              "category": "Adlî Yargının Dereceleri",
+              "title": "İlk Derece, İstinaf ve Temyiz",
+              "theory": "Adlî yargı genel ve olağan yargı koludur. Bu yargı kolunda ilk derece mahkemeleri, bölge adliye mahkemeleri ve Yargıtay olmak üzere üç dereceli bir sistem vardır. İlk derece mahkemeleri uyuşmazlığın esasını inceleyip karar verir. Bölge adliye mahkemeleri ilk derece mahkemelerinin kesin olmayan kararlarına karşı istinaf incelemesi yapar. Yargıtay ise bölge adliye mahkemeleri ile bazı hâllerde ilk derece mahkemelerinin kararlarını temyiz yoluyla inceler.",
+              "keyPoints": [
+                "Adlî yargı üç derecelidir.",
+                "Bölge adliye mahkemeleri istinaf incelemesi yapar.",
+                "Yargıtay temyiz merciidir."
+              ],
+              "question": "İlk derece mahkemelerinin kesin olmayan kararlarının olgu ve hukuk yönünden incelenmesi hangi aşamada yapılır?",
+              "options": [
+                "İstinaf",
+                "Temyiz",
+                "Bireysel başvuru",
+                "Soyut norm denetimi"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta istinaf, ilk derece kararlarının bölge adliye mahkemeleri tarafından olgu ve hukuk yönünden incelenmesi olarak tanımlanmaktadır."
+            },
+            {
+              "category": "Adlî Yargı İlk Derece Mahkemeleri",
+              "title": "Hukuk ve Ceza Mahkemeleri",
+              "theory": "Adlî yargı ilk derece mahkemeleri hukuk ve ceza mahkemeleridir. Hukuk mahkemeleri genel ve özel mahkemeler olarak ayrılır. Sulh hukuk ve asliye hukuk genel mahkemelerdir; asliye ticaret, aile, tüketici, iş, icra, kadastro ve fikri ve sınaî haklar hukuk mahkemeleri özel mahkemeler arasında sayılmaktadır. Ceza yargısında genel mahkemeler asliye ceza ve ağır ceza mahkemeleridir. Ayrıca soruşturmalarda hâkim tarafından verilmesi gereken kararlar için sulh ceza hâkimliği kurulmuştur.",
+              "keyPoints": [
+                "İlk derece mahkemeleri hukuk ve ceza mahkemeleridir.",
+                "Sulh hukuk ve asliye hukuk genel hukuk mahkemeleridir.",
+                "Ceza yargısında asliye ceza ve ağır ceza genel mahkemelerdir."
+              ],
+              "question": "Aşağıdakilerden hangisi kaynakta özel hukuk mahkemelerinden biri olarak sayılmaktadır?",
+              "options": [
+                "Tüketici mahkemesi",
+                "Vergi mahkemesi",
+                "Bölge idare mahkemesi",
+                "Danıştay"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta tüketici mahkemesi özel hukuk mahkemeleri arasında sayılmaktadır."
+            }
+          ]
+        },
+        {
+          "title": "İdarî Yargı ve Diğer Yargı Kolları",
+          "items": [
+            {
+              "category": "İdarî Yargının Dereceleri",
+              "title": "İdare ve Vergi Mahkemelerinden Danıştay'a",
+              "theory": "İdarî yargı kolu üç derecelidir. İlk derece mahkemeleri idare mahkemeleri ve vergi mahkemeleridir. Bölge idare mahkemeleri ikinci derece mahkemeler olup istinaf başvurularını inceler. Danıştay idarî yargının en üst merciidir; temyiz görevi yanında kanunla gösterilen bazı davalara ilk ve son derece mahkemesi olarak da bakar ve kamu hizmetlerinin yürütülmesine ilişkin imtiyaz sözleşmeleri hakkında görüş bildirir.",
+              "keyPoints": [
+                "İdarî yargı üç derecelidir.",
+                "Bölge idare mahkemeleri istinaf incelemesi yapar.",
+                "Danıştay idarî yargının en üst merciidir."
+              ],
+              "question": "İdare ve vergi mahkemelerinin istinafa açık nihai kararlarını hangi mahkeme inceler?",
+              "options": [
+                "Bölge idare mahkemesi",
+                "Danıştay Genel Kurulu",
+                "Yargıtay",
+                "Anayasa Mahkemesi"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta bölge idare mahkemelerinin ilk derece idare ve vergi mahkemelerinin istinafa açık nihai kararlarına karşı yapılan başvuruları incelediği belirtilmektedir."
+            },
+            {
+              "category": "Mali ve Uyuşmazlık Yargısı",
+              "title": "Sayıştay ve Uyuşmazlık Mahkemesi",
+              "theory": "Temel yargı kolları yanında mali yargı ve uyuşmazlık yargısı da bulunmaktadır. Mali yargıda görevli organ Sayıştay'dır. Sayıştay, merkezî yönetim bütçesi kapsamındaki kamu idareleri ile sosyal güvenlik kurumlarının gelir, gider ve mallarını Türkiye Büyük Millet Meclisi adına denetler ve sorumluların hesap ve işlemlerini kesin hükme bağlar. Uyuşmazlık yargısında ise Uyuşmazlık Mahkemesi adlî ve idarî yargı mercileri arasındaki görev ve hüküm uyuşmazlıklarını kesin olarak çözer.",
+              "keyPoints": [
+                "Mali yargıda görevli organ Sayıştay'dır.",
+                "Sayıştay denetim ve yargısal görevler yürütür.",
+                "Uyuşmazlık Mahkemesi adlî ve idarî yargı arasındaki uyuşmazlıkları çözer."
+              ],
+              "question": "Aşağıdakilerden hangisi Sayıştay'ın kaynakta belirtilen görevlerinden biridir?",
+              "options": [
+                "Kamu idarelerinin mali faaliyet, karar ve işlemlerini denetlemek",
+                "Adlî yargı kararlarını temyiz etmek",
+                "Bireysel başvuruları karara bağlamak",
+                "Siyasi partileri kapatmak"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta Sayıştay'ın kamu idarelerinin mali faaliyet, karar ve işlemlerini denetlediği ve sonuçlarını Türkiye Büyük Millet Meclisine raporladığı belirtilmektedir."
+            }
+          ]
+        },
+        {
+          "title": "Anayasa Yargısı ve Avrupa İnsan Hakları Mahkemesi Yargısı",
+          "items": [
+            {
+              "category": "Anayasa'ya Uygunluk Denetimi",
+              "title": "Soyut, Somut ve Bireysel Başvuru",
+              "theory": "Anayasa Mahkemesi, yasama işlemlerinin Anayasa'ya uygunluğunu soyut norm denetimi ve somut norm denetimi yollarıyla inceler; ayrıca temel hak ve özgürlük ihlalleri için bireysel başvuruları karara bağlar. Soyut norm denetiminde Anayasa'da belirtilen kişiler doğrudan iptal davası açar. Somut norm denetiminde görülmekte olan bir davaya bakan mahkeme, uygulanacak normu Anayasa'ya aykırı görür veya tarafın iddiasını ciddi bulursa itiraz yoluyla başvurur. Bireysel başvuruda ise olağan kanun yollarının tüketilmiş olması gerekir.",
+              "keyPoints": [
+                "Anayasa'ya uygunluk denetimi üç yolla açıklanmaktadır.",
+                "Soyut norm denetimi doğrudan iptal davasına dayanır.",
+                "Bireysel başvuruda olağan kanun yolları tüketilmiş olmalıdır."
+              ],
+              "question": "Görülmekte olan bir davada uygulanacak kanun hükmünün Anayasa'ya aykırı görülmesi üzerine yapılan başvuru hangi denetim türüdür?",
+              "options": [
+                "Somut norm denetimi",
+                "Soyut norm denetimi",
+                "Temyiz",
+                "İstinaf"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta bu yol somut norm denetimi olarak açıklanmaktadır."
+            },
+            {
+              "category": "Avrupa İnsan Hakları Mahkemesi",
+              "title": "Yapı, Başvuru ve İnceleme",
+              "theory": "Avrupa İnsan Hakları Mahkemesi, sözleşmeci devletlerin sayısına eşit sayıda hâkimden oluşur. Mahkeme başvuruları Tek Yargıç, üç yargıçlı Komite, yedi yargıçlı Daire ve on yedi yargıçlı Büyük Daire düzeninde inceler. Sözleşme veya eki protokollerin ihlali nedeniyle zarar gören gerçek kişiler, hükümet dışı kuruluşlar ve kişi grupları başvurabilir. Kişilerin iç hukuk yollarını tüketmiş olmaları gerekir ve başvuru süresi iç hukuktaki kesin karar tarihinden itibaren dört aydır. Başvuru kabul edilebilir bulunursa Mahkeme önce dostane çözüm sürecinin yürütülmesine yardımcı olur.",
+              "keyPoints": [
+                "Mahkemenin dört karar organı vardır.",
+                "Bireysel başvuruda iç hukuk yolları tüketilmiş olmalıdır.",
+                "Başvuru süresi kesin karardan itibaren dört aydır."
+              ],
+              "question": "Avrupa İnsan Hakları Mahkemesinde yedi hâkimden oluşan karar organı hangisidir?",
+              "options": [
+                "Daire",
+                "Komite",
+                "Tek Yargıç",
+                "Büyük Daire"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta Dairenin yedi hâkimden oluştuğu belirtilmektedir."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};

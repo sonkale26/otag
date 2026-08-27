@@ -1,0 +1,598 @@
+/* Çöz-Öğren — içerik verisi. Elle de düzenleyebilirsiniz. */
+window.EO_DATA = {
+  "meta": {
+    "id": "mmt8a8vkhm7m490",
+    "title": "Bölüm 7",
+    "subtitle": "Özel Hukukun Dalları",
+    "footer": "",
+    "eyebrow": "Çöz-Öğren"
+  },
+  "lessons": [
+    {
+      "id": "tikla",
+      "kind": "cards",
+      "title": "Tıkla-Öğren",
+      "intro": "Kavramları görmek için kartlara tıklayın; ön yüzde kavram, arka yüzde açıklaması yer alır.",
+      "activities": [
+        {
+          "title": "Medeni Hukuk ve Borçlar Hukuku",
+          "items": [
+            {
+              "term": "Medeni Hukuk",
+              "definition": "Gerçek ya da tüzel kişilerin toplumsal ilişkilerinde ön plana çıkan haklarını konu alan özel hukuk dalıdır."
+            },
+            {
+              "term": "Kişiler Hukuku",
+              "definition": "Gerçek ve tüzel kişilerin hak ve fiil ehliyeti, erginlik, hısımlık, yerleşim yeri, kişiliğin korunması, dernekler ve vakıflar gibi konuları inceler."
+            },
+            {
+              "term": "Aile Hukuku",
+              "definition": "Evlenme, nişanlanma, boşanma, nafaka, mal rejimleri, soybağı, evlat edinme, velayet, vesayet ve kayyımlık gibi konuları ele alır."
+            },
+            {
+              "term": "Miras Hukuku",
+              "definition": "Kişinin ölümü sonrasında geride kalan malvarlığı üzerindeki hakları; mirasçılar, vasiyet, miras sözleşmesi, saklı pay ve paylaşım gibi konuları düzenler."
+            },
+            {
+              "term": "Eşya Hukuku",
+              "definition": "Taşınır ve taşınmaz mallar üzerindeki hakları, özellikle mülkiyet, birlikte mülkiyet ve sınırlı ayni hakları konu alır."
+            },
+            {
+              "term": "Borçlar Hukuku",
+              "definition": "Kişiler arasındaki borç ilişkilerini, borcun kaynaklarını, sorumluluk türlerini, borcun ifasını ve çeşitli sözleşmeleri düzenleyen hukuk dalıdır."
+            }
+          ]
+        },
+        {
+          "title": "İş Hukuku",
+          "items": [
+            {
+              "term": "İş Hukuku",
+              "definition": "Çalışma yaşamına ilişkin kuralları ele alan; bireysel iş hukuku, toplu iş hukuku ve sosyal güvenlik hukukunu kapsayan hukuk alanıdır."
+            },
+            {
+              "term": "İşçi",
+              "definition": "Bir iş sözleşmesine dayanarak çalışan gerçek kişidir."
+            },
+            {
+              "term": "İşveren",
+              "definition": "İşçi çalıştıran gerçek veya tüzel kişiye yahut tüzel kişiliği olmayan kurum ve kuruluşlara verilen addır."
+            },
+            {
+              "term": "Alt İşveren",
+              "definition": "Bir işverenden işyerinde yürütülen mal veya hizmet üretimine ilişkin iş alan ve görevlendirdiği işçilerini sadece bu işyerinde aldığı işte çalıştıran işverendir."
+            },
+            {
+              "term": "Toplu İş Hukuku",
+              "definition": "İşçi ve memurların sendikal haklarını, sendikaları, toplu iş sözleşmelerini, grev ve lokavt gibi konuları ele alan iş hukuku bölümüdür."
+            },
+            {
+              "term": "Sosyal Güvenlik Hukuku",
+              "definition": "Sosyal sigortalar, genel sağlık sigortası, sigortalılık, sigorta yardımları, primler, sosyal yardım ve sosyal hizmetleri düzenleyen alandır."
+            }
+          ]
+        },
+        {
+          "title": "Ticaret Hukuku ve Devletler Özel Hukuku",
+          "items": [
+            {
+              "term": "Ticaret Hukuku",
+              "definition": "Bir ticari işletmeyi ilgilendiren işlem ve fiilleri konu alan; ticari işletme, şirketler, taşıma işleri, kıymetli evrak, deniz ticareti ve sigorta hukukunu kapsayan hukuk dalıdır."
+            },
+            {
+              "term": "Tacir",
+              "definition": "Bir ticari işletmeyi kısmen de olsa kendi adına işleten kişidir."
+            },
+            {
+              "term": "Kıymetli Evrak",
+              "definition": "İçerdiği hak senetten ayrı olarak ileri sürülemeyen ve başkasına devredilemeyen senetlerdir."
+            },
+            {
+              "term": "Sigorta Sözleşmesi",
+              "definition": "Sigortacının prim karşılığında belirli bir rizikonun gerçekleşmesi hâlinde zararı tazmin etmeyi veya belirli olaylara bağlı olarak para ya da başka edimlerde bulunmayı üstlendiği sözleşmedir."
+            },
+            {
+              "term": "Devletler Özel Hukuku",
+              "definition": "Yabancılık unsuru taşıyan özel hukuk ilişkilerinde uygulanacak hukuku, milletlerarası yetkiyi ve yabancı kararların tanınması ile tenfizini konu alan hukuk dalıdır."
+            },
+            {
+              "term": "Kanunlar İhtilafı",
+              "definition": "Yabancılık unsuru taşıyan özel hukuk ilişkilerinde hangi hukukun uygulanacağını belirlemeye yönelik devletler özel hukuku alanıdır."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yanitla",
+      "kind": "quiz",
+      "title": "Yanıtla-Öğren",
+      "intro": "Soruları yanıtlayın; her seçimden sonra doğru yanıt ve gerekçesi gösterilir.",
+      "activities": [
+        {
+          "title": "Medeni Hukuk ve Borçlar Hukuku",
+          "items": [
+            {
+              "question": "4721 sayılı Türk Medeni Kanunu hangi dört kitaptan oluşmaktadır?",
+              "options": [
+                "Kişiler, aile, eşya ve miras hukuku",
+                "Borçlar, iş, ticaret ve sigorta hukuku",
+                "Kişiler, ceza, idare ve miras hukuku",
+                "Aile, şirketler, taşıma ve vatandaşlık hukuku"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta Türk Medeni Kanunu'nun kişiler hukuku, aile hukuku, eşya hukuku ve miras hukuku olmak üzere dört kitaptan oluştuğu belirtilmektedir."
+            },
+            {
+              "question": "Tüzel kişiler fiil ehliyetini ne zaman kazanırlar?",
+              "options": [
+                "Kanuna ve kuruluş belgelerine göre gerekli organlara sahip olmakla",
+                "Kurucularının tamamı ergin olduğunda",
+                "Malvarlıkları belirli bir tutara ulaştığında",
+                "Faaliyetlerine başladıktan bir yıl sonra"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta tüzel kişilerin kanuna ve kuruluş belgelerine göre gerekli organlara sahip olmakla fiil ehliyetini kazanacağı belirtilmektedir."
+            },
+            {
+              "question": "Taşınmaz mülkiyeti kural olarak nasıl kazanılır?",
+              "options": [
+                "Tapu siciline tescille",
+                "Zilyetliğin devriyle",
+                "Sözlü anlaşmayla",
+                "Ciro yoluyla"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta taşınmaz mülkiyetinin kural olarak tescille kazanıldığı belirtilmektedir."
+            },
+            {
+              "question": "Borçların kaynağı kaynakta hangi üç başlık altında belirtilmektedir?",
+              "options": [
+                "Kanun, sözleşme ve hukuka aykırı fiil",
+                "Mülkiyet, zilyetlik ve tescil",
+                "Vasiyet, miras ve rehin",
+                "Tacir, şirket ve sigorta"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta borcun kaynağının kural olarak kanun, sözleşme veya hukuka aykırı fiil olabileceği belirtilmektedir."
+            },
+            {
+              "question": "Genel işlem koşulları nasıl hazırlanır?",
+              "options": [
+                "Düzenleyen tarafından ileride çok sayıdaki benzer sözleşmede kullanılmak amacıyla önceden ve tek başına",
+                "Tarafların her sözleşmede birlikte pazarlık ederek",
+                "Mahkeme tarafından uyuşmazlık çıktıktan sonra",
+                "Yalnızca noter tarafından tarafların talebiyle"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta genel işlem koşullarının düzenleyen tarafından ileride çok sayıdaki benzer sözleşmede kullanılmak amacıyla önceden ve tek başına hazırlandığı belirtilmektedir."
+            }
+          ]
+        },
+        {
+          "title": "İş Hukuku",
+          "items": [
+            {
+              "question": "İş hukuku kaynakta hangi üç ana alana ayrılmaktadır?",
+              "options": [
+                "Bireysel iş hukuku, toplu iş hukuku ve sosyal güvenlik hukuku",
+                "Kişiler hukuku, aile hukuku ve miras hukuku",
+                "Ticari işletme, şirketler ve sigorta hukuku",
+                "Vatandaşlık, yabancılar ve kanunlar ihtilafı hukuku"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta iş hukukunun bireysel iş hukuku, toplu iş hukuku ve sosyal güvenlik hukuku olarak üç alana ayrıldığı gösterilmektedir."
+            },
+            {
+              "question": "Bireysel iş hukukunun temel aldığı kanun hangisidir?",
+              "options": [
+                "4857 sayılı İş Kanunu",
+                "5510 sayılı Sosyal Sigortalar ve Genel Sağlık Sigortası Kanunu",
+                "5718 sayılı Milletlerarası Özel Hukuk ve Usul Hukuku Hakkında Kanun",
+                "4721 sayılı Türk Medeni Kanunu"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta bireysel iş hukukunun 4857 sayılı İş Kanunu'nu temel aldığı belirtilmektedir."
+            },
+            {
+              "question": "İşveren adına hareket eden ve işin, işyerinin ve işletmenin yönetiminde görev alan kişiye ne denir?",
+              "options": [
+                "İşveren vekili",
+                "Alt işveren",
+                "Sigortalı",
+                "Tacir"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta işveren adına hareket eden ve yönetimde görev alan kişilerin işveren vekili olarak adlandırıldığı belirtilmektedir."
+            },
+            {
+              "question": "Toplu iş hukukunun anayasal koruma altındaki sonuçları arasında hangileri sayılmaktadır?",
+              "options": [
+                "Grev ve lokavt",
+                "Rehin ve ipotek",
+                "Ciro ve protesto",
+                "Vasiyet ve miras sözleşmesi"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta grev ve lokavt toplu iş hukukunun hayati konuları arasında sayılmaktadır."
+            },
+            {
+              "question": "Sosyal güvenlik sisteminin temel yasası hangisidir?",
+              "options": [
+                "5510 sayılı Sosyal Sigortalar ve Genel Sağlık Sigortası Kanunu",
+                "4857 sayılı İş Kanunu",
+                "4721 sayılı Türk Medeni Kanunu",
+                "6102 sayılı Türk Ticaret Kanunu"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta sosyal güvenlik sisteminin temel yasasının 5510 sayılı Sosyal Sigortalar ve Genel Sağlık Sigortası Kanunu olduğu belirtilmektedir."
+            }
+          ]
+        },
+        {
+          "title": "Ticaret Hukuku ve Devletler Özel Hukuku",
+          "items": [
+            {
+              "question": "Ticaret hukuku kaynakta kaç ana bölüm altında gösterilmektedir?",
+              "options": [
+                "Altı",
+                "Beş",
+                "Dört",
+                "Üç"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta ticaret hukukunun ticari işletme, şirketler, taşıma işleri, kıymetli evrak, deniz ticareti ve sigorta olmak üzere altı bölümden oluştuğu gösterilmektedir."
+            },
+            {
+              "question": "Bir ticari işletmeyi kısmen de olsa kendi adına işleten kişiye ne ad verilir?",
+              "options": [
+                "Tacir",
+                "Esnaf",
+                "Acente",
+                "Donatan"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta tacir, bir ticari işletmeyi kısmen de olsa kendi adına işleten kişi olarak tanımlanmaktadır."
+            },
+            {
+              "question": "Kambiyo senetleri hangileridir?",
+              "options": [
+                "Poliçe, çek ve bono",
+                "Pay senedi, tahvil ve makbuz",
+                "Vasiyetname, miras sözleşmesi ve senet",
+                "Poliçe, ipotek ve varant"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta kambiyo senetleri poliçe, çek ve bono olarak gösterilmektedir."
+            },
+            {
+              "question": "Sigortacının sigorta ettiği menfaati tekrar sigorta ettirmesine ne denir?",
+              "options": [
+                "Reasürans",
+                "Ciro",
+                "Tenfiz",
+                "Temlik"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta sigortacının sigorta ettiği menfaati tekrar sigorta ettirmesi reasürans olarak tanımlanmaktadır."
+            },
+            {
+              "question": "Yabancı hukukun olaya ilişkin hükümleri tüm araştırmalara rağmen tespit edilemezse hangi hukuk uygulanır?",
+              "options": [
+                "Türk hukuku",
+                "Tarafların vatandaşlık hukuklarından herhangi biri",
+                "Mahkemenin seçtiği herhangi bir hukuk",
+                "Yalnızca uluslararası teamül hukuku"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta yabancı hukukun olaya ilişkin hükümleri tüm araştırmalara rağmen tespit edilemezse Türk hukukunun uygulanacağı belirtilmektedir."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bul",
+      "kind": "crossword",
+      "title": "Bul-Öğren",
+      "intro": "İpuçlarından yola çıkarak kelimeleri bulun. Izgara, verdiğiniz kelimelerden otomatik kurulur.",
+      "activities": [
+        {
+          "title": "Medeni Hukuk ve Borçlar Hukuku",
+          "items": [
+            {
+              "answer": "İKAMETGÂH",
+              "clue": "Bir kimsenin sürekli kalma niyetiyle oturduğu yeri ifade eden hukuk terimi"
+            },
+            {
+              "answer": "VASİYET",
+              "clue": "Miras hukukunda kişinin ölümünden sonra sonuç doğuracak tek taraflı tasarruf türlerinden biri"
+            },
+            {
+              "answer": "MÜLKİYET",
+              "clue": "Bir eşya üzerinde kullanma, yararlanma ve tasarrufta bulunma yetkilerini sağlayan en geniş hak"
+            },
+            {
+              "answer": "ZİLYETLİK",
+              "clue": "Taşınır mülkiyetinin naklinde devri gereken fiilî hâkimiyet durumu"
+            },
+            {
+              "answer": "MÜTESELSİL",
+              "clue": "Birden çok borçlunun alacaklıya karşı borcun tamamından sorumlu olmasını niteleyen sözcük"
+            }
+          ]
+        },
+        {
+          "title": "İş Hukuku",
+          "items": [
+            {
+              "answer": "İŞVEREN",
+              "clue": "İşçi çalıştıran gerçek veya tüzel kişi yahut tüzel kişiliği olmayan kurum ve kuruluş"
+            },
+            {
+              "answer": "SENDİKA",
+              "clue": "Toplu çalışma ilişkilerinde işçi ve memurların örgütlenme hakkıyla bağlantılı yapı"
+            },
+            {
+              "answer": "LOKAVT",
+              "clue": "Toplu sözleşme sürecinin anayasal koruma altındaki sonuçlarından biri"
+            },
+            {
+              "answer": "SİGORTALI",
+              "clue": "Kısa veya uzun vadeli sigorta kolları bakımından adına ya da kendi adına prim ödenmesi gereken kişi"
+            },
+            {
+              "answer": "KIDEM",
+              "clue": "İş hukukunda tazminat başlığıyla birlikte anılan çalışma süresine bağlı kavram"
+            }
+          ]
+        },
+        {
+          "title": "Ticaret Hukuku ve Devletler Özel Hukuku",
+          "items": [
+            {
+              "answer": "TACİR",
+              "clue": "Bir ticari işletmeyi kendi adına kısmen de olsa işleten kişi"
+            },
+            {
+              "answer": "ACENTE",
+              "clue": "Belirli bir yer veya bölgede sürekli olarak ticari işletmeyi ilgilendiren sözleşmelerde aracılık etmeyi meslek edinen kişi"
+            },
+            {
+              "answer": "CİRO",
+              "clue": "Senetteki hakkın devri veya rehni gibi sonuçlar doğuran irade beyanı"
+            },
+            {
+              "answer": "REASÜRANS",
+              "clue": "Sigortacının üstlendiği menfaati yeniden sigorta ettirmesi işlemi"
+            },
+            {
+              "answer": "TENFİZ",
+              "clue": "Yabancı mahkeme veya hakem kararlarının uygulanabilir hâle gelmesiyle ilgili devletler özel hukuku işlemi"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eslestir",
+      "kind": "match",
+      "title": "Eşleştir-Öğren",
+      "intro": "Açıklamayı seçip karşısındaki kavramla eşleştirin.",
+      "activities": [
+        {
+          "title": "Medeni Hukuk ve Borçlar Hukuku",
+          "items": [
+            {
+              "term": "Kişiler Hukuku",
+              "definition": "Hak ve fiil ehliyeti, erginlik, hısımlık, yerleşim yeri ve kişiliğin korunmasını inceler."
+            },
+            {
+              "term": "Aile Hukuku",
+              "definition": "Evlenme, boşanma, nafaka, soybağı, velayet, vesayet ve kayyımlığı inceler."
+            },
+            {
+              "term": "Miras Hukuku",
+              "definition": "Ölüm sonrasında malvarlığının geçişini ve mirasçılık ilişkilerini düzenler."
+            },
+            {
+              "term": "Eşya Hukuku",
+              "definition": "Taşınır ve taşınmaz mallar üzerindeki hakları düzenler."
+            },
+            {
+              "term": "Borçlar Hukuku",
+              "definition": "Kişiler arasındaki borç ilişkilerini ve bunların kaynaklarını düzenler."
+            }
+          ]
+        },
+        {
+          "title": "İş Hukuku",
+          "items": [
+            {
+              "term": "İşçi",
+              "definition": "Bir iş sözleşmesine dayanarak çalışan gerçek kişidir."
+            },
+            {
+              "term": "İşveren",
+              "definition": "İşçi çalıştıran gerçek veya tüzel kişi ya da kurumdur."
+            },
+            {
+              "term": "İşveren Vekili",
+              "definition": "İşveren adına hareket eden ve yönetimde görev alan kişidir."
+            },
+            {
+              "term": "Alt İşveren",
+              "definition": "Asıl işverenden iş alıp işçilerini o işyerinde çalıştıran işverendir."
+            },
+            {
+              "term": "Sigortalı",
+              "definition": "Adına veya kendi adına prim ödenmesi gereken kişidir."
+            }
+          ]
+        },
+        {
+          "title": "Ticaret Hukuku ve Devletler Özel Hukuku",
+          "items": [
+            {
+              "term": "Tacir",
+              "definition": "Bir ticari işletmeyi kendi adına işleten kişidir."
+            },
+            {
+              "term": "Kambiyo Senetleri",
+              "definition": "Poliçe, çek ve bonodan oluşur."
+            },
+            {
+              "term": "Donatan",
+              "definition": "Gemisini menfaat sağlamak amacıyla suda kullanan gemi malikidir."
+            },
+            {
+              "term": "Reasürans",
+              "definition": "Sigortacının sigorta ettiği menfaati tekrar sigorta ettirmesidir."
+            },
+            {
+              "term": "Devletler Özel Hukuku",
+              "definition": "Yabancılık unsuru taşıyan özel hukuk ilişkilerini düzenler."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dene",
+      "kind": "study",
+      "title": "Dene-Öğren",
+      "intro": "Kısa metni okuyun, öne çıkan noktaları inceleyin ve kontrol sorusunu yanıtlayın.",
+      "activities": [
+        {
+          "title": "Medeni Hukuk ve Borçlar Hukuku",
+          "items": [
+            {
+              "category": "Medeni Hukuk",
+              "title": "Kişiler, Aile, Miras ve Eşya Hukuku",
+              "theory": "Medeni hukuk, gerçek ve tüzel kişilerin toplumsal ilişkilerinde ön plana çıkan haklarını inceler. Türk Medeni Kanunu kişiler hukuku, aile hukuku, eşya hukuku ve miras hukuku olmak üzere dört kitaptan oluşur. Kişiler hukuku hak ve fiil ehliyeti, erginlik, hısımlık, yerleşim yeri ve tüzel kişileri; aile hukuku evlenme, boşanma, nafaka, soybağı, velayet, vesayet ve kayyımlığı; miras hukuku ölüm sonrası malvarlığının geçişini; eşya hukuku ise taşınır ve taşınmazlar üzerindeki hakları inceler.",
+              "keyPoints": [
+                "Türk Medeni Kanunu dört kitaptan oluşur.",
+                "Kişiler hukuku gerçek ve tüzel kişileri ele alır.",
+                "Eşya hukukunun temel kavramı mülkiyettir."
+              ],
+              "question": "Aşağıdakilerden hangisi aile hukukunun konularından biridir?",
+              "options": [
+                "Vesayet",
+                "Ticaret sicili",
+                "Reasürans",
+                "Kambiyo senetleri"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta vesayet ve kayyımlık aile hukukunun konuları arasında sayılmaktadır."
+            },
+            {
+              "category": "Borçlar Hukuku",
+              "title": "Borç Kaynakları ve Sözleşmeler",
+              "theory": "Borçlar hukuku kişiler arasındaki borç ilişkilerini düzenler. Borcun kaynağı kural olarak kanun, sözleşme veya hukuka aykırı fiildir. Türk Borçlar Kanunu genel hükümler ve özel hükümler olmak üzere iki temel bölümden oluşur. Sözleşme, tarafların iradelerini karşılıklı ve birbirine uygun olarak açıklamalarıyla kurulur. Borçlar hukuku ayrıca genel işlem koşullarını, temsili, haksız fiilleri, kusursuz sorumluluk hâllerini, sebepsiz zenginleşmeyi, borçların ifasını ve çeşitli sözleşme türlerini inceler.",
+              "keyPoints": [
+                "Borcun üç temel kaynağı belirtilmiştir.",
+                "Borçlar Kanunu genel ve özel hükümlerden oluşur.",
+                "Sözleşme karşılıklı ve birbirine uygun irade açıklamalarıyla kurulur."
+              ],
+              "question": "Aşağıdakilerden hangisi kaynakta borçlar hukukunun incelediği konulardan biridir?",
+              "options": [
+                "Sebepsiz zenginleşme",
+                "Vatandaşlıktan çıkma",
+                "Gemi sicili",
+                "Sendikal demokrasi"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta sebepsiz zenginleşmeden doğan borç ilişkilerinin borçlar hukukunda incelendiği belirtilmektedir."
+            }
+          ]
+        },
+        {
+          "title": "İş Hukuku",
+          "items": [
+            {
+              "category": "Bireysel İş Hukuku",
+              "title": "İşçi, İşveren ve Koruma İlkesi",
+              "theory": "Bireysel iş hukuku 4857 sayılı İş Kanunu'nu temel alır. İş hukukunun temel özelliklerinden biri, iş sözleşmesinin taraflarından işçiyi korumaya yönelmesidir. İş Kanunu ücret, yıllık izin, fazla çalışma, kıdem tazminatı, ihbar tazminatı, hafta tatili ve sözleşmenin feshi gibi alanlarda işçi lehine alt sınırlar getirir. İşçi bir iş sözleşmesine dayanarak çalışan gerçek kişi, işveren ise işçi çalıştıran gerçek veya tüzel kişi ya da kurumdur. İşverenler iş sağlığı ve güvenliği için gerekli önlemleri almakla yükümlüdür.",
+              "keyPoints": [
+                "Bireysel iş hukuku İş Kanunu'nu temel alır.",
+                "İş hukuku işçiyi koruyucu hükümler içerir.",
+                "İş sağlığı ve güvenliği işverenin önemli yükümlülüklerindendir."
+              ],
+              "question": "Kaynakta iş hukukunun işçiyi korumasının temel gerekçelerinden biri nasıl açıklanmaktadır?",
+              "options": [
+                "İşçinin işverene bağımlı olması ve emir-talimat altında çalışması",
+                "İşçinin her durumda tacir sayılması",
+                "İşverenin hiçbir yönetim yetkisine sahip olmaması",
+                "İş sözleşmesinin kamu hukuku işlemi olması"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta işçinin işverenin emir ve talimatlarına uygun hareket etmek zorunda olması, işçinin korunmasını gerekli kılan temel özelliklerden biri olarak açıklanmaktadır."
+            },
+            {
+              "category": "Toplu İş ve Sosyal Güvenlik Hukuku",
+              "title": "Sendikal Haklar ve Sigorta Sistemi",
+              "theory": "Toplu iş hukuku sendikaların kuruluşu, işleyişi, üyelerine sağladıkları haklar, toplu iş sözleşmeleri, toplu sözleşme süreci, grev ve lokavt gibi konuları ele alır. Sosyal güvenlik hukukunun temel yasası 5510 sayılı Sosyal Sigortalar ve Genel Sağlık Sigortası Kanunu'dur. Sosyal güvenlik hukukunda işçi ve memurlar yanında bağımsız çalışanlar da kapsama alınır. İş kazası ve meslek hastalığı, hastalık, analık, malullük, yaşlılık, ölüm ve genel sağlık sigortası kaynakta sayılan sigorta kollarıdır.",
+              "keyPoints": [
+                "Toplu iş hukuku sendikal hakları ve toplu sözleşmeleri inceler.",
+                "Grev ve lokavt toplu iş hukukunun konularındandır.",
+                "Sosyal güvenlik hukuku farklı sigorta kollarını ve yardımları düzenler."
+              ],
+              "question": "Aşağıdakilerden hangisi kaynakta sosyal sigorta kolları arasında sayılmaktadır?",
+              "options": [
+                "Yaşlılık sigortası",
+                "Ticari işletme sigortası",
+                "Miras sigortası",
+                "Kıymetli evrak sigortası"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta yaşlılık sigortası sosyal güvenlik hukukunda yer alan sigorta kollarından biri olarak sayılmaktadır."
+            }
+          ]
+        },
+        {
+          "title": "Ticaret Hukuku ve Devletler Özel Hukuku",
+          "items": [
+            {
+              "category": "Ticaret Hukuku",
+              "title": "Ticari İşletmeden Sigorta Hukukuna",
+              "theory": "Ticaret hukuku bir ticari işletmeyi ilgilendiren işlem ve fiilleri konu alır. Kaynakta ticaret hukuku ticari işletme, şirketler, taşıma işleri, kıymetli evrak, deniz ticareti ve sigorta olmak üzere altı bölümde gösterilmektedir. Ticari işletme hukukunda ticari işletme, tacir, ticari iş, ticaret sicili, ticaret unvanı, haksız rekabet ve acentelik gibi kavramlar ele alınır. Şirketler hukukunda ticaret şirketleri; kıymetli evrak hukukunda senetler, ciro ve kambiyo senetleri; deniz ticaretinde gemi ve donatan; sigorta hukukunda sigorta sözleşmesi ve çeşitli sigorta türleri incelenir.",
+              "keyPoints": [
+                "Ticaret hukuku altı bölümden oluşur.",
+                "Tacir ticari işletmeyi kendi adına işleten kişidir.",
+                "Poliçe, çek ve bono kambiyo senetleridir."
+              ],
+              "question": "Aşağıdakilerden hangisi ticaret hukukunun kaynakta gösterilen bölümlerinden biridir?",
+              "options": [
+                "Taşıma işleri hukuku",
+                "Aile hukuku",
+                "Vesayet hukuku",
+                "Vatandaşlık hukuku"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta taşıma işleri hukuku ticaret hukukunun altı bölümünden biri olarak gösterilmektedir."
+            },
+            {
+              "category": "Devletler Özel Hukuku",
+              "title": "Yabancılık Unsuru, Kanunlar İhtilafı ve Vatandaşlık",
+              "theory": "Devletler özel hukuku yabancılık unsuru taşıyan özel hukuk ilişkilerini konu alır. Yabancılık unsuru taşıyan işlem ve ilişkilerde uygulanacak hukuk, Türk mahkemelerinin milletlerarası yetkisi ve yabancı kararların tanınması ile tenfizi bu alanın konularındandır. Hâkim Türk kanunlar ihtilafı kurallarını ve bu kurallara göre yetkili yabancı hukuku re'sen uygular. Yabancı hukukun hükümleri tüm araştırmalara rağmen tespit edilemezse Türk hukuku uygulanır. Devletler özel hukukunun alanı vatandaşlık hukuku, yabancılar hukuku ve kanunlar ihtilafı hukukunu kapsar.",
+              "keyPoints": [
+                "Devletler özel hukuku yabancılık unsuru taşıyan ilişkileri düzenler.",
+                "Yetkili yabancı hukuk hâkim tarafından re'sen uygulanır.",
+                "Vatandaşlık ve yabancılar hukuku bu alanın konuları arasındadır."
+              ],
+              "question": "Devletler özel hukukunun alanı kaynakta hangi üç başlıkla gösterilmektedir?",
+              "options": [
+                "Vatandaşlık hukuku, yabancılar hukuku ve kanunlar ihtilafı hukuku",
+                "Ticari işletme, şirketler ve sigorta hukuku",
+                "Kişiler, aile ve miras hukuku",
+                "Bireysel iş, toplu iş ve sosyal güvenlik hukuku"
+              ],
+              "answer": 0,
+              "explanation": "Kaynakta devletler özel hukukunun alanı vatandaşlık hukuku, yabancılar hukuku ve kanunlar ihtilafı hukuku olarak gösterilmektedir."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};
