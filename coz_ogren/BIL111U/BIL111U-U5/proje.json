@@ -1,0 +1,611 @@
+{
+  "meta": {
+    "id": "mmt4auu99gva7g6",
+    "title": "Bölüm 5",
+    "subtitle": "İşlem Tabloları",
+    "footer": "",
+    "eyebrow": "Çöz-Öğren"
+  },
+  "lessons": [
+    {
+      "id": "tikla",
+      "kind": "cards",
+      "title": "Tıkla-Öğren",
+      "intro": "Kavramları görmek için kartlara tıklayın; ön yüzde kavram, arka yüzde açıklaması yer alır.",
+      "activities": [
+        {
+          "title": "Arayüz, Veri Girişi ve Düzenleme",
+          "items": [
+            {
+              "term": "Çalışma Kitabı",
+              "definition": "Microsoft Excel'de bir veya birden fazla çalışma sayfasını içerebilen dosya bütünüdür."
+            },
+            {
+              "term": "Çalışma Sayfası",
+              "definition": "Excel dosyası içinde yer alan, satır ve sütunlardan oluşan veri düzenleme alanıdır."
+            },
+            {
+              "term": "Hücre",
+              "definition": "Satır ve sütunun kesişiminde bulunan, veri girişinin, düzenlemenin ve analizin gerçekleştirildiği temel Excel yapı taşıdır."
+            },
+            {
+              "term": "Veri Aralığı",
+              "definition": "Yatay, dikey veya dikdörtgen biçimde birden fazla hücreyi kapsayan ve A2:C6 gibi gösterilebilen hücre grubudur."
+            },
+            {
+              "term": "Ad Kutusu",
+              "definition": "Seçili hücrenin adresini gösteren ve hücre ya da hücre aralıklarına özel adlar verilmesini sağlayan Excel bileşenidir."
+            },
+            {
+              "term": "Formül Çubuğu",
+              "definition": "Seçili hücrenin içeriğini görüntüleyen; metin, sayı veya formülün yazılmasına ve düzenlenmesine olanak tanıyan alandır."
+            }
+          ]
+        },
+        {
+          "title": "Grafik ve Veri Analiz Araçları",
+          "items": [
+            {
+              "term": "Sütun Grafiği",
+              "definition": "Kategorileri karşılaştırmak için kullanılan, yatay eksende kategorilerin ve dikey eksende değerlerin yer aldığı grafik türüdür."
+            },
+            {
+              "term": "Çizgi Grafiği",
+              "definition": "Zaman içinde değişen verileri noktalar ve bu noktaları birleştiren çizgilerle göstermeye uygun grafik türüdür."
+            },
+            {
+              "term": "Pasta Grafiği",
+              "definition": "Bir bütünün parçalarını yüzdelik olarak göstermek ve oran ya da dağılım bilgisi vermek için kullanılan grafik türüdür."
+            },
+            {
+              "term": "Dağılım Grafiği",
+              "definition": "İki sayısal değişken arasındaki ilişkiyi göstermek ve korelasyon ya da eğilim incelemek için kullanılan grafik türüdür."
+            },
+            {
+              "term": "Pivot Tablo",
+              "definition": "Ham veriyi değiştirmeden verileri farklı alanlarda gruplayıp toplam, ortalama veya sayı gibi özetlerle raporlamaya yarayan analiz aracıdır."
+            },
+            {
+              "term": "Çözümleme Araç Takımı",
+              "definition": "Regresyon, histogram ve t-testi gibi gelişmiş istatistiksel analizlerin yapılmasını sağlayan Excel eklentisidir."
+            }
+          ]
+        },
+        {
+          "title": "Fonksiyonlar ve Makrolar",
+          "items": [
+            {
+              "term": "TOPLA",
+              "definition": "Belirtilen hücre aralığındaki sayısal değerlerin toplamını veren Excel fonksiyonudur."
+            },
+            {
+              "term": "ORTALAMA",
+              "definition": "Belirtilen hücre aralığındaki sayıların aritmetik ortalamasını hesaplayan fonksiyondur."
+            },
+            {
+              "term": "EĞER",
+              "definition": "Belirli bir koşulun doğru veya yanlış olmasına göre farklı sonuçlar üreten mantıksal fonksiyondur."
+            },
+            {
+              "term": "DÜŞEYARA",
+              "definition": "Bir tablo dizisinde aranan değeri bulup aynı satırdaki belirtilen sütundan karşılık gelen bilgiyi getiren arama fonksiyonudur."
+            },
+            {
+              "term": "Mutlak Referans",
+              "definition": "$A$1 biçiminde yazılan ve formül başka hücrelere taşındığında hücre adresinin sabit kalmasını sağlayan başvurudur."
+            },
+            {
+              "term": "Makro",
+              "definition": "Excel'de yapılan işlem adımlarını kaydederek bu işlemleri tek komutla yeniden çalıştırmaya yarayan otomasyon aracıdır."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yanitla",
+      "kind": "quiz",
+      "title": "Yanıtla-Öğren",
+      "intro": "Soruları yanıtlayın; her seçimden sonra doğru yanıt ve gerekçesi gösterilir.",
+      "activities": [
+        {
+          "title": "Arayüz, Veri Girişi ve Düzenleme",
+          "items": [
+            {
+              "question": "Excel çalışma sayfasında satırlar ve sütunlar nasıl tanımlanır?",
+              "options": [
+                "Satırlar numaralarla, sütunlar harflerle",
+                "Satırlar harflerle, sütunlar numaralarla",
+                "Her ikisi de yalnızca harflerle",
+                "Her ikisi de yalnızca numaralarla"
+              ],
+              "answer": 0,
+              "explanation": "Satırlar 1'den başlayan numaralarla, sütunlar ise A harfinden başlayarak alfabetik biçimde tanımlanır."
+            },
+            {
+              "question": "Excel 2007 sürümünden itibaren klasik menü yapısının yerine kullanılan yapı hangisidir?",
+              "options": [
+                "Durum çubuğu",
+                "Şerit",
+                "Doldurma tutamağı",
+                "Çalışma sayfası"
+              ],
+              "answer": 1,
+              "explanation": "Excel 2007 sürümünden itibaren komutların sekmeler ve gruplar hâlinde düzenlendiği şerit yapısı kullanılmaktadır."
+            },
+            {
+              "question": "Bir örüntüyü tanıyıp kalan hücreleri buna göre dolduran Hızlı Doldurma özelliğinin klavye kısayolu hangisidir?",
+              "options": [
+                "CTRL + Z",
+                "CTRL + T",
+                "CTRL + E",
+                "CTRL + X"
+              ],
+              "answer": 2,
+              "explanation": "Hızlı Doldurma özelliği Veri sekmesinden çalıştırılabilir veya CTRL + E kısayoluyla kullanılabilir."
+            },
+            {
+              "question": "Uzun bir hücre içeriğinin aynı hücre içinde alt satıra geçirilmesini sağlayan komut hangisidir?",
+              "options": [
+                "Birleştir ve Ortala",
+                "Hızlı Doldurma",
+                "Otomatik Tamamlama",
+                "Metni Kaydır"
+              ],
+              "answer": 3,
+              "explanation": "Metni Kaydır komutu, uzun metnin hücre sınırları dışına taşmasını engelleyerek içeriği aynı hücre içinde alt satıra geçirir."
+            },
+            {
+              "question": "Bir sütunun genişliğini hücre içeriğine göre otomatik ayarlamak için hangi işlem yapılır?",
+              "options": [
+                "Sütun kenarına çift tıklanır",
+                "Hücreye Delete tuşuyla müdahale edilir",
+                "Giriş sekmesinden Filtre seçilir",
+                "Sayfa sekmesi yeniden adlandırılır"
+              ],
+              "answer": 0,
+              "explanation": "Sütun ya da satır kenarına çift tıklamak Otomatik Sığdır işlemini uygular ve boyutu hücre içeriğine göre ayarlar."
+            }
+          ]
+        },
+        {
+          "title": "Grafik ve Veri Analiz Araçları",
+          "items": [
+            {
+              "question": "Veri kümesi Excel Tablosuna dönüştürüldüğünde yeni satırlar eklendikçe grafiğin otomatik güncellenmesini sağlayan kısayol hangisidir?",
+              "options": [
+                "CTRL + T",
+                "CTRL + E",
+                "CTRL + Z",
+                "CTRL + F"
+              ],
+              "answer": 0,
+              "explanation": "CTRL + T ile veri kümesi Excel Tablosuna dönüştürüldüğünde yeni satırlar tabloya ve bağlı grafiğe otomatik olarak dâhil edilir."
+            },
+            {
+              "question": "Belirli şehir veya satış temsilcisi gibi kategorileri seçerek grafiği etkileşimli biçimde filtrelemeye yarayan araç hangisidir?",
+              "options": [
+                "Formül İzleyici",
+                "Dilimleyici",
+                "Ad Kutusu",
+                "Otomatik Sığdır"
+              ],
+              "answer": 1,
+              "explanation": "Dilimleyici, kategoriler arasından seçim yaparak grafiğin veya pivot yapının dinamik biçimde filtrelenmesini sağlar."
+            },
+            {
+              "question": "Zaman serisi verilerinde belirli tarih aralıklarının seçilmesini sağlayan araç hangisidir?",
+              "options": [
+                "Veri Çubuğu",
+                "Koşullu Biçimlendirme",
+                "Zaman Çizelgesi",
+                "Hızlı Doldurma"
+              ],
+              "answer": 2,
+              "explanation": "Zaman Çizelgesi, tarih aralıklarının seçilmesine ve grafiğin bu seçime göre otomatik güncellenmesine olanak tanır."
+            },
+            {
+              "question": "Tek bir hücre içinde küçük bir eğilim grafiği göstermek için hangi özellik kullanılır?",
+              "options": [
+                "Pivot Tablo",
+                "3B Harita",
+                "Birleşik Grafik",
+                "Mini Grafik"
+              ],
+              "answer": 3,
+              "explanation": "Mini Grafikler, satır veya sütunlardaki eğilimleri tek bir hücre içinde küçük grafikler hâlinde gösterir."
+            },
+            {
+              "question": "Koşullu biçimlendirme hücrelerde neyi değiştirir?",
+              "options": [
+                "Değere bağlı görsel sunumu",
+                "Çalışma kitabının dosya uzantısını",
+                "Hücre adresinin satır numarasını",
+                "Verinin gerçek sayısal değerini"
+              ],
+              "answer": 0,
+              "explanation": "Koşullu biçimlendirme hücre değerine bağlı olarak renk, ikon veya yazı tipi gibi görsel özellikleri değiştirir; hücrenin gerçek değerini değiştirmez."
+            }
+          ]
+        },
+        {
+          "title": "Fonksiyonlar ve Makrolar",
+          "items": [
+            {
+              "question": "=STDSAPMA.P(A1:A10) fonksiyonu hangi işlemi gerçekleştirir?",
+              "options": [
+                "Standart sapmayı hesaplar",
+                "En büyük değeri bulur",
+                "Sayıları çarpar",
+                "Aritmetik ortalamayı verir"
+              ],
+              "answer": 0,
+              "explanation": "STDSAPMA.P, belirtilen sayı aralığının standart sapmasını hesaplamak için kullanılır."
+            },
+            {
+              "question": "Verilerin yatay düzende tutulduğu tabloda aranan değere karşılık gelen bilgiyi getirmek için hangi fonksiyon tercih edilir?",
+              "options": [
+                "MAK",
+                "YATAYARA",
+                "EĞERHATA",
+                "ÇARPIM"
+              ],
+              "answer": 1,
+              "explanation": "YATAYARA, DÜŞEYARA'nın yatay karşılığıdır ve satırlarda düzenlenmiş tablolarda arama yapmak için kullanılır."
+            },
+            {
+              "question": "Belirli bir satır ve sütun numarasına göre doğrudan hücre içeriğini getiren fonksiyon hangisidir?",
+              "options": [
+                "VEYA",
+                "MİN",
+                "İNDİS",
+                "TOPLA"
+              ],
+              "answer": 2,
+              "explanation": "İNDİS fonksiyonu, verilen dizi içinde satır ve sütun numarasını kullanarak ilgili hücre içeriğini getirir."
+            },
+            {
+              "question": "Kaydedilmiş bir makroyu çalıştırmak için kullanılan komut hangisidir?",
+              "options": [
+                "CTRL + E",
+                "ALT + F11",
+                "CTRL + T",
+                "ALT + F8"
+              ],
+              "answer": 3,
+              "explanation": "Kaydedilen makrolar Makroları Çalıştır komutuyla açılır ve bunun klavye kısayolu ALT + F8'dir."
+            },
+            {
+              "question": "Makro içeren Excel dosyaları hangi uzantıyla kaydedilir?",
+              "options": [
+                ".xlsm",
+                ".csv",
+                ".txt",
+                ".pdf"
+              ],
+              "answer": 0,
+              "explanation": "Makro içeren Excel dosyaları .xlsm uzantısıyla kaydedilir."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bul",
+      "kind": "crossword",
+      "title": "Bul-Öğren",
+      "intro": "İpuçlarından yola çıkarak kelimeleri bulun. Izgara, verdiğiniz kelimelerden otomatik kurulur.",
+      "activities": [
+        {
+          "title": "Arayüz, Veri Girişi ve Düzenleme",
+          "items": [
+            {
+              "answer": "SATIR",
+              "clue": "Çalışma sayfasında yatay uzanan ve numarayla tanımlanan yapı"
+            },
+            {
+              "answer": "SÜTUN",
+              "clue": "Çalışma sayfasında dikey ilerleyen ve harfle adlandırılan yapı"
+            },
+            {
+              "answer": "ŞERİT",
+              "clue": "Komutları sekmeler ve gruplar hâlinde üst bölümde toplayan arayüz yapısı"
+            },
+            {
+              "answer": "TIRNAK",
+              "clue": "Bazı girişlerin otomatik olarak tarihe dönüşmesini önlemek için başta kullanılabilen işaret"
+            },
+            {
+              "answer": "DOLDURMA",
+              "clue": "Seçili hücrenin sağ alt köşesindeki tutamakla seri üretmeye yarayan işlem"
+            },
+            {
+              "answer": "HİZALAMA",
+              "clue": "Hücre içeriğinin yatayda veya dikeyde konumunu düzenleyen işlem"
+            }
+          ]
+        },
+        {
+          "title": "Grafik ve Veri Analiz Araçları",
+          "items": [
+            {
+              "answer": "GRAFİK",
+              "clue": "Verileri görsel olarak sunup karşılaştırma ve eğilimleri fark etmeyi kolaylaştıran yapı"
+            },
+            {
+              "answer": "LEJANT",
+              "clue": "Görseldeki veri serilerinin adlarını açıklayan gösterge"
+            },
+            {
+              "answer": "EKSEN",
+              "clue": "Kategorilerin veya değerlerin yer aldığı yön çizgilerinden her biri"
+            },
+            {
+              "answer": "FİLTRE",
+              "clue": "Yalnızca belirli ölçütlere uyan satırları geçici olarak görünür yapan araç"
+            },
+            {
+              "answer": "SIRALAMA",
+              "clue": "Verileri artan ya da azalan düzende yeniden düzenleme işlemi"
+            },
+            {
+              "answer": "HİSTOGRAM",
+              "clue": "Çözümleme eklentisinde verilerin dağılımını görselleştiren analiz"
+            },
+            {
+              "answer": "KORELASYON",
+              "clue": "İki sayısal değişken arasındaki ilişkinin incelenmesinde kullanılan kavram"
+            }
+          ]
+        },
+        {
+          "title": "Fonksiyonlar ve Makrolar",
+          "items": [
+            {
+              "answer": "FONKSİYON",
+              "clue": "Belirli bir işlemi gerçekleştiren ve eşittir işaretiyle başlayan hazır hesaplama yapısı"
+            },
+            {
+              "answer": "ÇARPIM",
+              "clue": "Belirtilen hücrelerdeki değerleri birbiriyle çarpan işlem"
+            },
+            {
+              "answer": "SAPMA",
+              "clue": "Sayıların yayılımını ölçen istatistiksel hesaplamanın adındaki temel kavram"
+            },
+            {
+              "answer": "MANTIKSAL",
+              "clue": "Koşula bağlı DOĞRU veya YANLIŞ sonuçlarıyla çalışan fonksiyon türü"
+            },
+            {
+              "answer": "BAŞVURU",
+              "clue": "Bir veri kümesinde arama ve konuma göre bilgi getiren fonksiyon grubunun ikinci adı"
+            },
+            {
+              "answer": "OTOMASYON",
+              "clue": "Tekrarlayan görevlerin kayıtlı adımlarla otomatik biçimde yürütülmesi"
+            },
+            {
+              "answer": "GÜVENLİK",
+              "clue": "Güvenilmeyen kaynaklardan gelen kayıtlı işlemler çalıştırılırken dikkat edilmesi gereken konu"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eslestir",
+      "kind": "match",
+      "title": "Eşleştir-Öğren",
+      "intro": "Açıklamayı seçip karşısındaki kavramla eşleştirin.",
+      "activities": [
+        {
+          "title": "Arayüz, Veri Girişi ve Düzenleme",
+          "items": [
+            {
+              "term": "Giriş sekmesi",
+              "definition": "Veri girişi, yazı tipi, hizalama, sayı biçimi, kopyalama, yapıştırma, kesme ve temel düzenleme komutlarını içerir."
+            },
+            {
+              "term": "Ekle sekmesi",
+              "definition": "Grafik, özet tablo, şekil, görsel, bağlantı, metin kutusu ve mini grafik gibi ögelerin çalışma sayfasına eklenmesini sağlar."
+            },
+            {
+              "term": "Sayfa Düzeni sekmesi",
+              "definition": "Kenar boşlukları, yönlendirme, yazdırılabilir alan, arka plan ve tema gibi sayfa görünümü ayarlarını içerir."
+            },
+            {
+              "term": "Veri sekmesi",
+              "definition": "Sıralama, filtreleme, veri doğrulama, dış veri alma, metni sütunlara dönüştürme ve yinelenenleri kaldırma işlemlerinde kullanılır."
+            },
+            {
+              "term": "Görünüm sekmesi",
+              "definition": "Sayfa sonu ön izlemesi, ızgara çizgileri, yakınlaştırma, pencere bölme, dondurma ve yeni pencere seçeneklerini içerir."
+            }
+          ]
+        },
+        {
+          "title": "Grafik ve Veri Analiz Araçları",
+          "items": [
+            {
+              "term": "Alan Grafiği",
+              "definition": "Çizgi grafiğine benzer, alt kısmı renkle doldurulur ve zaman içindeki birikimli değişimleri göstermede kullanılır."
+            },
+            {
+              "term": "Çubuk Grafiği",
+              "definition": "Sütun grafiğinin yatay biçimidir ve uzun kategori adları veya çok sayıda kategori için kullanışlıdır."
+            },
+            {
+              "term": "Kombinasyon Grafik",
+              "definition": "Farklı türdeki veri serilerini, örneğin sütun ve çizgiyi, aynı görsel üzerinde birlikte sunar."
+            },
+            {
+              "term": "Mini Grafik",
+              "definition": "Bir hücre içinde gösterilen ve satır ya da sütundaki eğilimi küçük bir görselle özetleyen mikro grafiktir."
+            },
+            {
+              "term": "3B Harita",
+              "definition": "Şehir, ülke ve bölge gibi konumsal verileri harita üzerinde gösterebilen, zaman verileriyle animasyon da oluşturabilen görselleştirme aracıdır."
+            }
+          ]
+        },
+        {
+          "title": "Fonksiyonlar ve Makrolar",
+          "items": [
+            {
+              "term": "MAK",
+              "definition": "Belirtilen hücre aralığındaki en büyük değeri bulur."
+            },
+            {
+              "term": "VE",
+              "definition": "Tanımlanan koşulların birlikte sağlanması durumunda DOĞRU sonucu veren mantıksal fonksiyondur."
+            },
+            {
+              "term": "VEYA",
+              "definition": "Tanımlanan koşullardan en az biri sağlandığında DOĞRU sonucu veren mantıksal fonksiyondur."
+            },
+            {
+              "term": "EĞERHATA",
+              "definition": "Verilen formülde hata oluştuğunda alternatif bir ifade göstermeye yarayan fonksiyondur."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dene",
+      "kind": "study",
+      "title": "Dene-Öğren",
+      "intro": "Kısa metni okuyun, öne çıkan noktaları inceleyin ve kontrol sorusunu yanıtlayın.",
+      "activities": [
+        {
+          "title": "Arayüz, Veri Girişi ve Düzenleme",
+          "items": [
+            {
+              "category": "Çalışma Sayfaları",
+              "title": "Çok sayfalı dosyalarda düzen ve bağlantı",
+              "theory": "Bir çalışma kitabında birden fazla çalışma sayfası bulunabilir ve sayfalar arasında alt sekmelerle geçiş yapılabilir. Sayfaların Sayfa1 veya Sayfa2 gibi varsayılan adları yerine içeriği açıklayan anlamlı adlarla yeniden adlandırılması yön bulmayı kolaylaştırır. Excel, bir sayfadaki hücre değerinin başka bir sayfada kullanılmasına da izin verir; örneğin Sayfa1'deki C5 hücresine =Sayfa1!C5 ifadesiyle başvurulabilir. Sayfalar arası bağlantılar çoğaldığında bağlantıların ve sayfa adlarının düzenli tutulması önem taşır.",
+              "keyPoints": [
+                "Bir çalışma kitabı birden fazla çalışma sayfası içerebilir.",
+                "Sayfalara içeriği temsil eden anlamlı adlar verilmesi önerilir.",
+                "Sayfalar arası hücre bağlantıları formüllerle kurulabilir."
+              ],
+              "question": "Sayfa1'deki C5 hücresinin değerini başka bir sayfada kullanmak için hangi ifade kullanılır?",
+              "options": [
+                "=C5:Sayfa1",
+                "=Sayfa1!C5"
+              ],
+              "answer": 1,
+              "explanation": "Başka bir çalışma sayfasındaki hücreye başvururken sayfa adı, ünlem işareti ve hücre adresi birlikte kullanılır."
+            },
+            {
+              "category": "Veri Türleri",
+              "title": "Otomatik algılama ve hücre biçimi",
+              "theory": "Excel hücrelere girilen metin, sayı, tarih, saat, para birimi, yüzde ve mantıksal değerleri farklı biçimlerde işleyebilir. Metinler varsayılan olarak sola, sayısal veriler sağa hizalanır. Bazı girişler otomatik biçim tanıma nedeniyle istenmeyen şekilde değişebilir; örneğin 01/02 ifadesi tarih olarak algılanabilir. Bu tür durumlarda hücre biçimi önceden Metin olarak seçilebilir veya girişin başına tek tırnak işareti konabilir.",
+              "keyPoints": [
+                "Excel veri türünü çoğu zaman otomatik algılar.",
+                "Metin ve sayı verileri varsayılan olarak farklı yönlere hizalanır.",
+                "Metin biçimi veya tek tırnak, istenmeyen otomatik dönüşümleri önleyebilir."
+              ],
+              "question": "01/02 gibi bir ifadenin tarih olarak algılanması istenmiyorsa ne yapılabilir?",
+              "options": [
+                "Hücre biçimi Metin olarak ayarlanabilir",
+                "Sütun genişliği azaltılabilir",
+                "Veriye koşullu biçimlendirme uygulanabilir",
+                "Çalışma sayfası gizlenebilir"
+              ],
+              "answer": 0,
+              "explanation": "Hücre biçimini Metin yapmak veya giriş öncesinde tek tırnak kullanmak, Excel'in değeri otomatik olarak tarihe çevirmesini önler."
+            }
+          ]
+        },
+        {
+          "title": "Grafik ve Veri Analiz Araçları",
+          "items": [
+            {
+              "category": "Grafik Oluşturma",
+              "title": "Veriden grafiğe temel süreç",
+              "theory": "Grafik oluşturma, önce görselleştirilecek veri kümesinin doğru biçimde seçilmesiyle başlar. Ardından Ekle sekmesindeki Grafikler grubundan verinin yapısına uygun tür belirlenir ve Excel temel grafik yapısını otomatik oluşturur. Başlık, eksen adları, veri etiketleri, renkler ve yazı boyutları daha sonra düzenlenebilir. Grafik sayfa içinde taşınabilir ve köşelerinden yeniden boyutlandırılabilir.",
+              "keyPoints": [
+                "İlk adım doğru veri aralığını seçmektir.",
+                "Grafik türü verinin yapısına ve anlatılmak istenen mesaja göre belirlenir.",
+                "Oluşturulan grafik başlık, eksen ve veri etiketleriyle özelleştirilebilir."
+              ],
+              "question": "Grafik oluşturmada ilk yapılması gereken işlem hangisidir?",
+              "options": [
+                "Grafiğin rengini değiştirmek",
+                "Veri kümesini belirleyip seçmek",
+                "Grafiği başka sayfaya taşımak",
+                "İkincil eksen eklemek"
+              ],
+              "answer": 1,
+              "explanation": "Grafik oluşturmanın ilk ve en kritik adımı görselleştirilecek veri kümesinin doğru biçimde seçilmesidir."
+            },
+            {
+              "category": "Veri Analizi",
+              "title": "Sıralama, filtreleme ve pivot özetleme",
+              "theory": "Sıralama, belirli bir sütunu temel alarak verileri artan veya azalan düzende yeniden düzenler. Filtreleme, veri silmeden yalnızca belirli ölçütleri karşılayan satırların geçici olarak gösterilmesini sağlar. Pivot tablolar ise büyük veri kümelerini satır, sütun, değer ve filtre alanlarında yeniden yapılandırarak toplam, ortalama ve sayı gibi özetler üretir. Pivot tabloya uygulanan filtreleme ve gruplama işlemleri Pivot Grafik üzerinde de dinamik olarak yansıtılabilir.",
+              "keyPoints": [
+                "Sıralama verilerin düzenini değiştirir.",
+                "Filtreleme veriyi silmeden görünümü daraltır.",
+                "Pivot tablolar ham veriyi değiştirmeden dinamik özet raporlar üretir."
+              ],
+              "question": "Büyük bir veri kümesini ham veriyi değiştirmeden farklı açılardan özetlemek için hangi araç kullanılır?",
+              "options": [
+                "Metni Kaydır",
+                "Otomatik Sığdır",
+                "Pivot Tablo",
+                "Formül Çubuğu"
+              ],
+              "answer": 2,
+              "explanation": "Pivot Tablo, ham veriyi değiştirmeden alanları yeniden düzenleyerek toplam, ortalama ve sayı gibi özet raporlar oluşturur."
+            }
+          ]
+        },
+        {
+          "title": "Fonksiyonlar ve Makrolar",
+          "items": [
+            {
+              "category": "Fonksiyonlar",
+              "title": "İç içe formül ve hücre referansı",
+              "theory": "Excel fonksiyonları eşittir işaretiyle başlar ve parantez içinde gerekli değişkenleri alır. Fonksiyonlar iç içe kullanılarak daha gelişmiş koşullar oluşturulabilir; örneğin =EĞER(ORTALAMA(A1:A5)>=60;\"Başarılı\";\"Başarısız\") ifadesi önce ortalamayı hesaplar, ardından sonucu koşula göre sınıflandırır. Formüller kopyalanırken göreli hücre adresleri yeni konuma göre değişebilir. Adresin sabit kalması gerektiğinde $A$1 biçimindeki mutlak referans kullanılır.",
+              "keyPoints": [
+                "Fonksiyonlar eşittir işaretiyle başlar.",
+                "Fonksiyonlar iç içe kullanılabilir.",
+                "Mutlak referans kopyalama sırasında hücre adresini sabit tutar."
+              ],
+              "question": "Bir hücre adresinin formül kopyalandığında değişmemesi için hangi gösterim kullanılmalıdır?",
+              "options": [
+                "A1:A10",
+                "$A$1",
+                "A$1:B$2",
+                "A1!Sayfa1"
+              ],
+              "answer": 1,
+              "explanation": "$A$1 biçimindeki mutlak referans, formül başka hücrelere taşındığında veya kopyalandığında adresin sabit kalmasını sağlar."
+            },
+            {
+              "category": "Makrolar",
+              "title": "Makro kaydı, VBA ve güvenli kullanım",
+              "theory": "Makro Kaydedici, kullanıcının Excel'de yaptığı işlem adımlarını kaydeder ve bu adımların daha sonra tekrar çalıştırılmasını sağlar. Makro kaydetmek için Görünüm sekmesinden Makrolar ve Makro Kaydet komutu kullanılır; kayıt tamamlandığında Makro Kaydını Durdur seçilir. Kaydedilen makrolar Visual Basic Düzenleyicisi üzerinden daha gelişmiş biçimde düzenlenebilir. Makrolar otomatik işlem yaptığı için güvenilmeyen kaynaklardan gelen makro dosyaları açılmamalı ve çalıştırmadan önce dosyanın yedek kopyası alınmalıdır.",
+              "keyPoints": [
+                "Makro Kaydedici işlem adımlarını kayıt altına alır.",
+                "Visual Basic Düzenleyicisi ALT + F11 ile açılabilir.",
+                "Makro çalıştırmadan önce dosyanın yedeğini almak önerilir."
+              ],
+              "question": "Makroların daha gelişmiş biçimde düzenlenebildiği Visual Basic Düzenleyicisi hangi kısayolla açılır?",
+              "options": [
+                "CTRL + F11",
+                "CTRL + F8",
+                "ALT + F11",
+                "ALT + F4"
+              ],
+              "answer": 2,
+              "explanation": "Makro Kaydediciyle oluşturulan makrolar Excel'in Visual Basic Düzenleyicisinde düzenlenebilir ve bu ortam ALT + F11 ile açılır."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

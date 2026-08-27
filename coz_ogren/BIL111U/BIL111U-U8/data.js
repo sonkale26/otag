@@ -1,0 +1,594 @@
+/* Çöz-Öğren — içerik verisi. Elle de düzenleyebilirsiniz. */
+window.EO_DATA = {
+  "meta": {
+    "id": "mmt4auu99gva7g6",
+    "title": "Bölüm 8",
+    "subtitle": "Çoklu Ortam Araçları",
+    "footer": "",
+    "eyebrow": "Çöz-Öğren"
+  },
+  "lessons": [
+    {
+      "id": "tikla",
+      "kind": "cards",
+      "title": "Tıkla-Öğren",
+      "intro": "Kavramları görmek için kartlara tıklayın; ön yüzde kavram, arka yüzde açıklaması yer alır.",
+      "activities": [
+        {
+          "title": "Çoklu Ortamın Kuramsal Temelleri ve Görsel Tasarım",
+          "items": [
+            {
+              "term": "Çoklu Ortam",
+              "definition": "Bir materyalin resim, metin veya sesle desteklenerek farklı formlarda sunulmasıdır."
+            },
+            {
+              "term": "Sınırlı Kapasite Varsayımı",
+              "definition": "Bireyin aynı anda işleyebileceği bilginin belirli bir sınırı olduğunu ve çalışan belleğin yalnızca belirli miktarda bilgiyi aynı anda işleyebildiğini öne süren yaklaşımdır."
+            },
+            {
+              "term": "İkili Kodlama Teorisi",
+              "definition": "Bilginin görsel ve sözel olmak üzere iki temel kanalda işlendiğini ve bu kanalların birbirini tamamlayarak öğrenmeyi desteklediğini öne süren yaklaşımdır."
+            },
+            {
+              "term": "Bilişsel Yük Teorisi",
+              "definition": "Bir görev yerine getirilirken çalışan bellekte oluşan yükü ve bireyin zihinsel kapasitesini bilgi işleme sürecinde nasıl kullandığını açıklayan yaklaşımdır."
+            },
+            {
+              "term": "Bitmap (Raster) Görsel",
+              "definition": "En küçük görüntü birimi olan piksellerin birleşimiyle oluşturulan ve büyütüldüğünde görüntü kalitesi düşebilen görsel türüdür."
+            },
+            {
+              "term": "Vektör Görsel",
+              "definition": "Koordinat düzleminde matematiksel hesaplamalar, çizgiler, eğriler ve çokgenler kullanılarak oluşturulan; ölçeklendiğinde kalite kaybı yaşamayan görsel türüdür."
+            }
+          ]
+        },
+        {
+          "title": "Sesli ve Hareketli İçeriklerin Tasarımı",
+          "items": [
+            {
+              "term": "Podcast",
+              "definition": "İnternet üzerinden anlık olarak dinlenebilen veya cihazlara indirilip daha sonra dinlenebilen, tek seferlik ya da bölüm ve sezon formatında hazırlanabilen sesli içerik türüdür."
+            },
+            {
+              "term": "Ses Efekti",
+              "definition": "Duygusal etkiyi artırmak, dikkati belirli bir noktaya çekmek veya kullanıcıya geri bildirim vermek amacıyla çoklu ortam içeriklerinde kullanılan işitsel unsurdur."
+            },
+            {
+              "term": "Müzik",
+              "definition": "Çoklu ortam uygulamalarında giriş, çıkış veya arka plan aşamalarında dikkat, etkileşim ve motivasyonu desteklemek amacıyla kullanılan sesli içerik türüdür."
+            },
+            {
+              "term": "Video Kurgu",
+              "definition": "Kayıt sonrasında videoların kesilmesi, birleştirilmesi, boşlukların temizlenmesi ve görsel-işitsel unsurlarla düzenlenmesini kapsayan işlemler bütünüdür."
+            },
+            {
+              "term": "2D Animasyon",
+              "definition": "Çoğunlukla vektör tabanlı görsellerin hareketlendirilmesiyle oluşturulan ve çizgi film, hareketli grafik, infografik ile eğitsel içeriklerde kullanılan animasyon türüdür."
+            },
+            {
+              "term": "3D Animasyon",
+              "definition": "Üç boyutlu modellerin tasarımı ve hareketlendirilmesiyle oluşturulan; oyun, sinema, sanal ve artırılmış gerçeklik ortamlarında kullanılan animasyon türüdür."
+            }
+          ]
+        },
+        {
+          "title": "Dijital İçeriklerin Korunması ve Telif Hakları",
+          "items": [
+            {
+              "term": "Filigran",
+              "definition": "Dijital görsellerin izinsiz kullanımını sınırlamak amacıyla görsel üzerine eklenen ve çoğu zaman filigransız sürüme erişimi lisans veya ödeme koşuluna bağlayan koruma yöntemidir."
+            },
+            {
+              "term": "Tersine Görsel Arama",
+              "definition": "Belirli bir görselin orijinal kaynağına ulaşmak ve hangi platformlarda paylaşıldığını tespit etmek amacıyla kullanılan arama tekniğidir."
+            },
+            {
+              "term": "Creative Commons",
+              "definition": "Telif hakkı yasaları altında eserlerin paylaşımını ve kullanılmasını daha esnek ve erişilebilir hâle getirmek amacıyla oluşturulmuş kâr amacı gütmeyen uluslararası bir organizasyondur."
+            },
+            {
+              "term": "Blockchain",
+              "definition": "Merkezî bir otoriteye ihtiyaç duymadan işlemlerin güvenli, değiştirilemez ve şeffaf biçimde kaydedildiği dağıtık defter teknolojisidir."
+            },
+            {
+              "term": "Non-Fungible Token (NFT)",
+              "definition": "Blok zincir teknolojisi kullanılarak oluşturulan, benzersiz ve değiştirilemez dijital varlıktır."
+            },
+            {
+              "term": "CC0",
+              "definition": "İçerik sahibinin telif haklarından feragat ederek eserini dünya çapında kamu malı olarak sunduğu ve kullanımda koşul aramadığı lisans modelidir."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yanitla",
+      "kind": "quiz",
+      "title": "Yanıtla-Öğren",
+      "intro": "Soruları yanıtlayın; her seçimden sonra doğru yanıt ve gerekçesi gösterilir.",
+      "activities": [
+        {
+          "title": "Çoklu Ortamın Kuramsal Temelleri ve Görsel Tasarım",
+          "items": [
+            {
+              "question": "Karmaşık bilgilerin daha küçük ve yönetilebilir bileşenlere ayrılmasını öneren çoklu ortam tasarım ilkesi hangisidir?",
+              "options": [
+                "Parçalara bölme ilkesi",
+                "Tutarlılık ilkesi",
+                "Resim ilkesi",
+                "Gereksizlik ilkesi"
+              ],
+              "answer": 0,
+              "explanation": "Parçalara bölme ilkesi, karmaşık bilgilerin daha küçük ve yönetilebilir bölümler hâlinde sunulmasının öğrenmeyi kolaylaştıracağını belirtir."
+            },
+            {
+              "question": "Bir grafik açıklanırken ekrandaki uzun metin yerine sesli anlatım kullanılmasını destekleyen ilke hangisidir?",
+              "options": [
+                "Konumsal yakınlık ilkesi",
+                "Biçim ilkesi",
+                "Kişiselleştirme ilkesi",
+                "İşaretleme ilkesi"
+              ],
+              "answer": 1,
+              "explanation": "Biçim ilkesi, görsellerin yazılı metin yerine sözlü anlatımla desteklenmesinin bilişsel yükü azaltabileceğini belirtir."
+            },
+            {
+              "question": "Öğrenme materyalinde konuyla ilgisi olmayan dikkat dağıtıcı unsurların kullanılmamasını öneren ilke hangisidir?",
+              "options": [
+                "Ses ilkesi",
+                "Çoklu ortam ilkesi",
+                "Tutarlılık ilkesi",
+                "Ön alıştırma ilkesi"
+              ],
+              "answer": 2,
+              "explanation": "Tutarlılık ilkesi, öğretim amacına hizmet etmeyen ve dikkat dağıtan unsurların içerikten çıkarılmasını önerir."
+            },
+            {
+              "question": "Büyük ölçekli logo ve baskı tasarımlarında kalite kaybı yaşamadan büyütülebilmesi nedeniyle hangi görsel türü daha uygundur?",
+              "options": [
+                "RAW bitmap",
+                "JPEG bitmap",
+                "PNG bitmap",
+                "Vektör görsel"
+              ],
+              "answer": 3,
+              "explanation": "Vektör görseller ölçeklendirildiğinde kalite kaybı oluşturmadığı için logo, simge, illüstrasyon ve baskı tasarımlarında avantaj sağlar."
+            },
+            {
+              "question": "Metnin okunaklılığını ve estetiğini güçlendiren; yazı karakteri, punto, satır aralığı, hizalama ve renk gibi unsurları kapsayan alan hangisidir?",
+              "options": [
+                "Tipografi",
+                "Sıkıştırma",
+                "SEO",
+                "Filtreleme"
+              ],
+              "answer": 0,
+              "explanation": "Tipografi, metnin okunaklılığını ve estetiğini optimize ederek görsel iletişimi ve tasarım bütünlüğünü güçlendirir."
+            }
+          ]
+        },
+        {
+          "title": "Sesli ve Hareketli İçeriklerin Tasarımı",
+          "items": [
+            {
+              "question": "Konuşma bulunan çoklu ortam içeriklerinde arka plan müziği için hangi tercih önerilmektedir?",
+              "options": [
+                "Sözsüz enstrümantal müzik",
+                "Yüksek sesli sözlü müzik",
+                "Yalnızca ses efekti",
+                "Müziksiz intro"
+              ],
+              "answer": 0,
+              "explanation": "Konuşma bulunan içeriklerde dinleyicinin dikkatini bölmemek ve anlaşılırlığı artırmak için genellikle sözsüz enstrümantal müzikler tercih edilir."
+            },
+            {
+              "question": "Ham ses dosyalarında arka plan gürültüsünü temizleme, yankıyı giderme ve bas-tiz ayarı yapma işlemleri hangi tür araçlarla gerçekleştirilir?",
+              "options": [
+                "Vektör çizim araçları",
+                "Ses düzenleme uygulamaları",
+                "İçerik yönetim sistemleri",
+                "Tersine görsel arama araçları"
+              ],
+              "answer": 1,
+              "explanation": "Adobe Audition, Audacity, Ocenaudio, LMMS ve GarageBand gibi ses düzenleme uygulamaları bu tür temel ve ileri seviye ses işlemlerini destekler."
+            },
+            {
+              "question": "Kayıt sonrasında videoların kesilmesi, birleştirilmesi ve sahneler arası boşlukların temizlenmesi hangi sürecin parçasıdır?",
+              "options": [
+                "SEO optimizasyonu",
+                "Tipografik düzenleme",
+                "Video kurgu ve montaj",
+                "Tersine görsel arama"
+              ],
+              "answer": 2,
+              "explanation": "Video kurgu ve montaj süreci, ham görüntülerin düzenlenmesini ve akışın izleyiciye etkili bir hikâye sunacak biçimde yapılandırılmasını içerir."
+            },
+            {
+              "question": "Üç boyutlu modellerin tasarlanıp hareketlendirilmesiyle oluşturulan animasyon türü hangisidir?",
+              "options": [
+                "2D animasyon",
+                "Hareketli tipografi",
+                "Görsel efekt",
+                "3D animasyon"
+              ],
+              "answer": 3,
+              "explanation": "3D animasyonlar üç boyutlu modellerin tasarlanması ve hareketlendirilmesiyle oluşturulur."
+            },
+            {
+              "question": "Sanal gerçeklik deneyimlerinde kullanıcıların sanal hareketleri gerçek dünyada refleksif olarak tekrarlaması hangi konu açısından risk oluşturur?",
+              "options": [
+                "Fiziksel güvenlik",
+                "Tipografik bütünlük",
+                "Dosya sıkıştırma",
+                "Meta veri düzenleme"
+              ],
+              "answer": 0,
+              "explanation": "Sanal bir engelden kaçma veya sıçrama gibi hareketlerin gerçek dünyada da yapılması fiziksel güvenlik riski doğurabilir."
+            }
+          ]
+        },
+        {
+          "title": "Dijital İçeriklerin Korunması ve Telif Hakları",
+          "items": [
+            {
+              "question": "Bir Creative Commons içeriğinin hem ticari hem de ticari olmayan amaçlarla kullanılmasına izin veren ve yalnızca uygun atıf şartı getiren lisans hangisidir?",
+              "options": [
+                "CC BY",
+                "CC BY-NC",
+                "CC BY-NC-ND",
+                "CC0"
+              ],
+              "answer": 0,
+              "explanation": "CC BY lisansı, içeriğin dağıtılmasına, düzenlenmesine, uyarlanmasına ve geliştirilmesine izin verir; bunun için orijinal sahibine uygun atıf yapılması gerekir."
+            },
+            {
+              "question": "Uyarlanan veya geliştirilen yeni içeriğin de aynı koşullarla lisanslanmasını zorunlu kılan lisans hangisidir?",
+              "options": [
+                "CC0",
+                "CC BY-SA",
+                "CC BY-NC",
+                "CC BY"
+              ],
+              "answer": 1,
+              "explanation": "CC BY-SA lisansı, atıf koşuluna ek olarak değiştirilmiş içeriğin de aynı lisans koşullarıyla paylaşılmasını zorunlu kılar."
+            },
+            {
+              "question": "İçeriğin yalnızca ticari olmayan amaçlarla kullanılmasına izin veren Creative Commons lisansı hangisidir?",
+              "options": [
+                "CC BY-SA",
+                "CC0",
+                "CC BY-NC",
+                "CC BY"
+              ],
+              "answer": 2,
+              "explanation": "CC BY-NC lisansı, atıf yapılması koşuluyla içeriğin yalnızca ticari olmayan amaçlarla dağıtılmasına, uyarlanmasına ve geliştirilmesine izin verir."
+            },
+            {
+              "question": "Ticari olmayan kullanımda içeriğin değiştirilmeden kopyalanıp dağıtılmasına izin veren lisans hangisidir?",
+              "options": [
+                "CC BY",
+                "CC BY-SA",
+                "CC0",
+                "CC BY-NC-ND"
+              ],
+              "answer": 3,
+              "explanation": "CC BY-NC-ND lisansı, atıf şartıyla içeriğin ticari olmayan amaçlarla değiştirilmeden kopyalanmasına ve dağıtılmasına izin verir."
+            },
+            {
+              "question": "Yapay zekâ tarafından üretilen içeriklerin telif değerlendirmesinde öne çıkan temel ölçüt hangisidir?",
+              "options": [
+                "İnsanın eser üzerindeki yaratıcı kontrol düzeyi",
+                "İçeriğin yalnızca yüksek çözünürlüklü olması",
+                "İçeriğin sosyal medyada paylaşılması",
+                "İçeriğin mutlaka NFT olarak satılması"
+              ],
+              "answer": 0,
+              "explanation": "Telif hakkı değerlendirmesinde insanın yaratıcı süreç üzerindeki kontrolü ve geleneksel yaratıcılık unsurlarını ne ölçüde yönlendirdiği temel ölçüt olarak ele alınmaktadır."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bul",
+      "kind": "crossword",
+      "title": "Bul-Öğren",
+      "intro": "İpuçlarından yola çıkarak kelimeleri bulun. Izgara, verdiğiniz kelimelerden otomatik kurulur.",
+      "activities": [
+        {
+          "title": "Çoklu Ortamın Kuramsal Temelleri ve Görsel Tasarım",
+          "items": [
+            {
+              "answer": "TİPOGRAFİ",
+              "clue": "Yazı karakteri, punto, hizalama ve renk kararlarıyla metnin görsel sunumunu biçimlendiren disiplin"
+            },
+            {
+              "answer": "KATMAN",
+              "clue": "Düzenleme işlemlerinin üst üste eklenebilen şeffaf sayfalarda ayrı ayrı yapılmasını sağlayan yapı"
+            },
+            {
+              "answer": "FİLTRE",
+              "clue": "Bir fotoğrafın renk tonunu, görünümünü veya stilini değiştirmek için kullanılan düzenleme işlemi"
+            },
+            {
+              "answer": "KONTRAST",
+              "clue": "Görselde açık ve koyu değerler arasındaki farkı etkileyen düzenleme unsuru"
+            },
+            {
+              "answer": "VEKTÖR",
+              "clue": "Matematiksel çizgi, eğri ve şekillerle oluşturulan ölçeklenebilir grafik türü"
+            }
+          ]
+        },
+        {
+          "title": "Sesli ve Hareketli İçeriklerin Tasarımı",
+          "items": [
+            {
+              "answer": "DİKSİYON",
+              "clue": "Konuşmanın açık, doğru ve etkili biçimde gerçekleştirilmesine ilişkin özellik"
+            },
+            {
+              "answer": "KURGU",
+              "clue": "Video akışını sahne, geçiş, ses ve görsel unsurlarla yapılandırma süreci"
+            },
+            {
+              "answer": "YANKI",
+              "clue": "Ses düzenleme yazılımlarıyla giderilebilen istenmeyen işitsel tekrar"
+            },
+            {
+              "answer": "MONTAJ",
+              "clue": "Ham video parçalarının kesilip birleştirilerek düzenlenmesi işlemi"
+            }
+          ]
+        },
+        {
+          "title": "Dijital İçeriklerin Korunması ve Telif Hakları",
+          "items": [
+            {
+              "answer": "FİLİGRAN",
+              "clue": "İzinsiz kullanımı sınırlamak için dijital görselin üzerine eklenen görünür koruma işareti"
+            },
+            {
+              "answer": "LİSANS",
+              "clue": "Bir içeriğin hangi koşullarda kullanılabileceğini belirleyen kullanım izni"
+            },
+            {
+              "answer": "ATIF",
+              "clue": "Bir eserin orijinal yaratıcısının uygun biçimde belirtilmesi"
+            },
+            {
+              "answer": "ABONELİK",
+              "clue": "Dijital içeriğe belirli koşullar altında erişim sağlayan ücretli veya ücretsiz üyelik modeli"
+            },
+            {
+              "answer": "SAHİPLİK",
+              "clue": "Bir dijital eserin kime ait olduğunun doğrulanmasıyla ilgili hak durumu"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eslestir",
+      "kind": "match",
+      "title": "Eşleştir-Öğren",
+      "intro": "Açıklamayı seçip karşısındaki kavramla eşleştirin.",
+      "activities": [
+        {
+          "title": "Çoklu Ortamın Kuramsal Temelleri ve Görsel Tasarım",
+          "items": [
+            {
+              "term": "Ön Alıştırma İlkesi",
+              "definition": "Konuya ilişkin temel kavramların ve anahtar bilgilerin öğrenme öncesinde sunulmasını önerir."
+            },
+            {
+              "term": "İşaretleme İlkesi",
+              "definition": "İçeriğin önemli noktalarının renk, kalın çizgi veya çerçeveleme gibi yollarla belirginleştirilmesini önerir."
+            },
+            {
+              "term": "Konumsal Yakınlık İlkesi",
+              "definition": "Birbiriyle ilişkili metin ve görsellerin birbirine yakın konumlandırılmasını önerir."
+            },
+            {
+              "term": "Zamansal Yakınlık İlkesi",
+              "definition": "Ekrandaki içerik ile sesli anlatımın eş zamanlı sunulmasını önerir."
+            },
+            {
+              "term": "Ses İlkesi",
+              "definition": "Mekanik veya yapay seslendirmeler yerine doğal insan seslerinin kullanılmasının öğrenmeyi olumlu etkileyebileceğini belirtir."
+            }
+          ]
+        },
+        {
+          "title": "Sesli ve Hareketli İçeriklerin Tasarımı",
+          "items": [
+            {
+              "term": "Adobe Audition",
+              "definition": "Seslerin, müziklerin ve işitsel efektlerin düzenlenmesinde kullanılan profesyonel ses işleme uygulamalarından biridir."
+            },
+            {
+              "term": "Adobe Premiere Pro",
+              "definition": "Sinema, televizyon ve dijital medya içeriklerinde profesyonel video düzenleme olanakları sunan yazılımlardan biridir."
+            },
+            {
+              "term": "Final Cut Pro",
+              "definition": "Video düzenleme aşamasında kullanılan profesyonel kurgu ve montaj yazılımlarından biridir."
+            },
+            {
+              "term": "DaVinci Resolve",
+              "definition": "Video içeriklerinin kayıt sonrasında işlenmesi ve düzenlenmesi için kullanılan profesyonel yazılımlardan biridir."
+            },
+            {
+              "term": "Dron",
+              "definition": "İnsan tarafından kaydedilmesi zor görüntülerin yüksek çözünürlükte elde edilmesine olanak tanıyan insansız hava aracıdır."
+            }
+          ]
+        },
+        {
+          "title": "Dijital İçeriklerin Korunması ve Telif Hakları",
+          "items": [
+            {
+              "term": "CC BY",
+              "definition": "Atıf yapılması koşuluyla ticari ve ticari olmayan kullanım, dağıtım ve uyarlamaya izin verir."
+            },
+            {
+              "term": "CC BY-SA",
+              "definition": "Atıf yapılmasını ve uyarlanan içeriğin aynı koşullarla lisanslanmasını zorunlu kılar."
+            },
+            {
+              "term": "CC BY-NC",
+              "definition": "Atıf koşuluyla yalnızca ticari olmayan kullanımlara izin verir."
+            },
+            {
+              "term": "CC BY-NC-ND",
+              "definition": "Atıf koşuluyla ticari olmayan amaçlarda içeriğin değiştirilmeden kopyalanıp dağıtılmasına izin verir."
+            },
+            {
+              "term": "CC0",
+              "definition": "İçeriğin kamu malı olarak herhangi bir koşul olmaksızın serbestçe kullanılmasına olanak tanır."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dene",
+      "kind": "study",
+      "title": "Dene-Öğren",
+      "intro": "Kısa metni okuyun, öne çıkan noktaları inceleyin ve kontrol sorusunu yanıtlayın.",
+      "activities": [
+        {
+          "title": "Çoklu Ortamın Kuramsal Temelleri ve Görsel Tasarım",
+          "items": [
+            {
+              "category": "Çoklu Ortamın Kuramsal Temelleri",
+              "title": "Bilişsel yük ve çoklu ortam tasarım ilkeleri",
+              "theory": "Çoklu ortamın kuramsal temelleri, bireyin bilgiyi hangi duyusal kanallarla işlediğini ve sınırlı bilişsel kapasitesini nasıl kullandığını açıklayan yaklaşımlarla ele alınmaktadır. Bilişsel yük; içsel, konu dışı ve etkili bilişsel yük olmak üzere üç kategoriye ayrılmaktadır. Etkili tasarımda içsel yükün yönetilmesi, konu dışı yükün azaltılması ve etkili yükün optimize edilmesi amaçlanır. Mayer'in tasarım ilkeleri bu amaç doğrultusunda parçalara bölme, ön alıştırma, biçim, tutarlılık, işaretleme, gereksizlik, yakınlık, çoklu ortam, kişiselleştirme, ses ve resim gibi ilkeleri kapsamaktadır.",
+              "keyPoints": [
+                "Çalışan belleğin aynı anda işleyebileceği bilgi miktarı sınırlıdır.",
+                "Konu dışı bilişsel yük öğrenmeyi desteklemeyen unsurlardan kaynaklanır.",
+                "Çoklu ortam ilkeleri bilişsel yükün dengeli yönetilmesini amaçlar."
+              ],
+              "question": "Öğretim amacına hizmet etmeyen gereksiz bilgi ve dikkat dağıtıcı unsurlar hangi bilişsel yük türünü artırır?",
+              "options": [
+                "İçsel bilişsel yük",
+                "Konu dışı bilişsel yük",
+                "Etkili bilişsel yük",
+                "İkili kodlama"
+              ],
+              "answer": 1,
+              "explanation": "Konu dışı bilişsel yük, öğrenme sürecini desteklemeyen ve zihinsel kaynakları gereksiz yere tüketen unsurlardan kaynaklanır."
+            },
+            {
+              "category": "Görsel İçeriklerin Tasarımı",
+              "title": "Bitmap, vektör, tipografi ve görsel düzenleme",
+              "theory": "Dijital görseller fotoğraf, çizim, 2D ve 3D model, animasyon, video ve görsel efekt gibi farklı biçimlerde üretilebilir. Bitmap görseller piksellerden oluşur ve yüksek çözünürlük dosya boyutunu artırırken büyütme kalite kaybına yol açabilir. Vektör görseller matematiksel çizgi ve şekillere dayanır; ölçeklendirildiğinde görüntü kalitesi korunur. Görsel tasarımda renk, kontrast, katmanlar, renk kanalları ve tipografik kararlar içeriğin bütünlüğünü ve okunabilirliğini etkiler.",
+              "keyPoints": [
+                "Bitmap görseller piksel tabanlıdır.",
+                "Vektör görseller büyütüldüğünde kalite kaybı oluşturmaz.",
+                "Tipografi metnin okunabilirliğini ve görsel etkisini güçlendirir."
+              ],
+              "question": "Yüksek çözünürlüklü bitmap görsellerde piksel yoğunluğunun artması hangi sonucu doğurur?",
+              "options": [
+                "Dosya boyutunun küçülmesi",
+                "Görselin vektöre dönüşmesi",
+                "Dosya boyutunun büyümesi",
+                "Ölçeklenebilirliğin sınırsız hâle gelmesi"
+              ],
+              "answer": 2,
+              "explanation": "Piksel yoğunluğu arttıkça çözünürlük ve ayrıntı seviyesi yükselir; bununla birlikte dosya boyutu da büyür."
+            }
+          ]
+        },
+        {
+          "title": "Sesli ve Hareketli İçeriklerin Tasarımı",
+          "items": [
+            {
+              "category": "Sesli İçerikler",
+              "title": "İnsan sesi, podcast, ses efektleri ve müzik",
+              "theory": "Sesli içerikler insan sesi, podcast, ses efektleri ve müzik gibi farklı bileşenlerden oluşabilir. İnsan sesinin kullanımında ton, konuşma netliği, diksiyon, tonlama ve vurgu gibi özelliklerin bağlama ve hedef kitleye uygun olması önem taşır. Ses efektleri duygusal etkiyi ve geri bildirimi güçlendirebilirken, müzik giriş, çıkış veya arka planda dikkat ve motivasyonu desteklemek amacıyla kullanılabilir. Ses düzenleme yazılımları ham kayıtların kesilmesi, filtrelenmesi, gürültü ve yankının giderilmesi gibi işlemleri gerçekleştirebilir.",
+              "keyPoints": [
+                "Ses tonu ve anlatım biçimi hedef kitleye göre yapılandırılmalıdır.",
+                "Ses efektleri duygu ve geri bildirim amacıyla kullanılabilir.",
+                "Ses düzenleme yazılımları temel ve ileri düzey işitsel düzenlemeleri destekler."
+              ],
+              "question": "Bir orman görselinin rüzgâr, kuş ve su sesleriyle desteklenmesi hangi işlevi güçlendirir?",
+              "options": [
+                "Dosya boyutunu azaltmayı",
+                "Kullanıcıya doğal ortam hissi vermeyi",
+                "Metni vektörleştirmeyi",
+                "Telif statüsünü belirlemeyi"
+              ],
+              "answer": 1,
+              "explanation": "Rüzgâr, kuş ve su gibi çevresel sesler izleyiciye doğal ortamın içindeymiş hissi vererek deneyimi daha etkileyici ve gerçekçi hâle getirebilir."
+            },
+            {
+              "category": "Hareketli İçerikler",
+              "title": "Video, animasyon, görsel efekt ve sanal gerçeklik",
+              "theory": "Hareketli içerikler video, animasyon ve görsel efektleri kapsar ve çoğu zaman sesle birlikte kullanılarak görsel ve işitsel duyulara aynı anda hitap eder. Video içerikleri çekim sonrasında kurgu ve montaj araçlarıyla kesilir, birleştirilir ve çeşitli görsel-işitsel unsurlarla zenginleştirilir. 2D animasyonlar çoğunlukla vektör tabanlı görsellerin, 3D animasyonlar ise üç boyutlu modellerin hareketlendirilmesiyle oluşturulur. Sanal gerçeklik ortamlarında güçlü hareket hissi kullanıcı deneyimini artırırken gerçek dünyada fiziksel güvenlik riskleri de doğurabilir.",
+              "keyPoints": [
+                "Video üretimi çekim sonrası kurgu ve montaj gerektirebilir.",
+                "2D ve 3D animasyonlar farklı görsel üretim yaklaşımlarına dayanır.",
+                "Sanal gerçeklik tasarımında kullanıcı güvenliği dikkate alınmalıdır."
+              ],
+              "question": "Görsel efektlerin konuşma veya anlatımla eş zamanlı sunulmasını destekleyen ilke hangisidir?",
+              "options": [
+                "Gereksizlik ilkesi",
+                "Kişiselleştirme ilkesi",
+                "Zamansal yakınlık ilkesi",
+                "Resim ilkesi"
+              ],
+              "answer": 2,
+              "explanation": "Zamansal yakınlık ilkesi, görsel içerikler ile sesli anlatımın eş zamanlı sunulmasının öğrenme sürecini desteklediğini belirtir."
+            }
+          ]
+        },
+        {
+          "title": "Dijital İçeriklerin Korunması ve Telif Hakları",
+          "items": [
+            {
+              "category": "Dijital İçeriklerin Korunması",
+              "title": "Telif koruması, lisanslar ve blok zincir",
+              "theory": "Dijital içeriklerin küresel ölçekte kolayca paylaşılabilmesi yetkisiz kullanım ve dağıtım riskini artırmaktadır. Lisans anlaşmaları, kullanıcı sözleşmeleri, telif yasaları ve Creative Commons lisansları içeriğin hangi koşullarda kullanılabileceğine ilişkin sınırlar belirler. Filigran uygulaması ve tersine görsel arama gibi yöntemler içeriğin korunmasına ve kaynağının bulunmasına yardımcı olur. Blok zincir tabanlı sistemler ise aidiyet bilgilerinin güvenli biçimde saklanması, telif haklarının doğrulanması ve kullanım sürecinin izlenmesi açısından yeni olanaklar sunmaktadır.",
+              "keyPoints": [
+                "Dijital içeriklerin kolay paylaşılması telif ihlali riskini artırır.",
+                "Creative Commons lisansları kullanım koşullarını açık biçimde belirtir.",
+                "Blok zincir içerik sahipliğinin doğrulanması ve izlenmesinde kullanılabilir."
+              ],
+              "question": "Bir görselin orijinal kaynağına ulaşmak ve hangi platformlarda paylaşıldığını belirlemek için hangi yöntem kullanılır?",
+              "options": [
+                "SEO",
+                "Tersine görsel arama",
+                "Video kurgu",
+                "Renk kanalı düzenleme"
+              ],
+              "answer": 1,
+              "explanation": "Tersine görsel arama, belirli bir görselin orijinal kaynağını ve yayımlandığı platformları tespit etmeye yardımcı olur."
+            },
+            {
+              "category": "Yapay Zekâ İçeriklerinin Telif Sorunları",
+              "title": "İnsan yaratıcılığı ve yapay zekâ destekli üretim",
+              "theory": "Yapay zekâ araçları metin, ses, müzik, fotoğraf, çizim ve video gibi farklı içerik türlerini hızlı biçimde üretebilse de bu içeriklerin telif statüsü tartışmalıdır. Yürürlükteki telif yaklaşımları genellikle eser yaratıcısının insan olması gerektiği kabulüne dayanır. ABD Telif Hakları Ofisi, yalnızca bir komut verilerek yapay zekâ tarafından üretilen içeriklerin tescil edilmeyeceğini; yapay zekânın yaratıcı sürecin bir aracı olarak kullanıldığı durumlarda ise insan katkısının değerlendirilebileceğini belirtmektedir. Türkiye'de 5846 sayılı Fikir ve Sanat Eserleri Kanunu eser ve eser sahibi kavramlarını insan yaratıcılığı çerçevesinde ele almaktadır.",
+              "keyPoints": [
+                "Yapay zekâ tarafından üretilen içeriklerin telif statüsü tartışmalıdır.",
+                "İnsan yaratıcı katkısı telif değerlendirmesinde belirleyici bir ölçüttür.",
+                "Fikir ve Sanat Eserleri Kanunu eser sahibini eseri meydana getiren kişi olarak tanımlar."
+              ],
+              "question": "Yalnızca bir komut verilerek yapay zekâ aracı tarafından üretilen içerikler için ABD Telif Hakları Ofisinin yaklaşımı hangisidir?",
+              "options": [
+                "Her durumda otomatik telif tescili yapılır",
+                "Yalnızca ticari içerikler tescil edilir",
+                "İnsan yaratıcı katkısı yoksa tescil edilmez",
+                "NFT'ye dönüştürülürse zorunlu olarak tescil edilir"
+              ],
+              "answer": 2,
+              "explanation": "Yaratıcı sürecin tüm unsurlarının teknoloji tarafından belirlendiği ve insan katkısının bulunmadığı içeriklerin telif hakkı korumasından yararlanamayacağı belirtilmektedir."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};

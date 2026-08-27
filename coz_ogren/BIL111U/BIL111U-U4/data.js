@@ -1,0 +1,602 @@
+/* Çöz-Öğren — içerik verisi. Elle de düzenleyebilirsiniz. */
+window.EO_DATA = {
+  "meta": {
+    "id": "mmt4auu99gva7g6",
+    "title": "Bölüm 4",
+    "subtitle": "Kelime İşlemciler",
+    "footer": "",
+    "eyebrow": "Çöz-Öğren"
+  },
+  "lessons": [
+    {
+      "id": "tikla",
+      "kind": "cards",
+      "title": "Tıkla-Öğren",
+      "intro": "Kavramları görmek için kartlara tıklayın; ön yüzde kavram, arka yüzde açıklaması yer alır.",
+      "activities": [
+        {
+          "title": "Kelime İşlemciler: Arayüz ve Metin Düzenleme",
+          "items": [
+            {
+              "term": "Kelime İşlemci",
+              "definition": "Metin belgeleri oluşturup düzenlenmesine, kaydedilip yazdırılmasına olanak tanıyan elektronik cihaz ya da yazılımdır."
+            },
+            {
+              "term": "Şerit",
+              "definition": "Farklı işlevlere sahip sekmeleri içeren üst erişim yapısıdır."
+            },
+            {
+              "term": "Sekme",
+              "definition": "Farklı sabit veya açılır menüleri içeren ve şerit bünyesinde yer alan arayüz ögesidir."
+            },
+            {
+              "term": "Menü Grubu",
+              "definition": "Ortak bir özelliğe hizmet eden ve menü, düğme gibi ögeleri içeren sekme alt ögesidir."
+            },
+            {
+              "term": "Düğme",
+              "definition": "Basit ve anlaşılır bir simgeyle gerçekleştireceği işlemin ifade edildiği, tıklandığında işlem başlatan arayüz ögesidir."
+            },
+            {
+              "term": "Durum Çubuğu",
+              "definition": "Belgenin ön plana çıkan özellikleri ile temel görünüm ayarlarını içeren sabit arayüz ögesidir."
+            }
+          ]
+        },
+        {
+          "title": "Stiller, Temalar, Dipnot ve Kaynakça",
+          "items": [
+            {
+              "term": "Stil",
+              "definition": "Belge içerisinde belirli bir alan veya metin için geçerli olan ve metni görsel açıdan düzenlemenin yanında işlevsel hâle de getirebilen biçimlendirme yapısıdır."
+            },
+            {
+              "term": "Tema",
+              "definition": "Belgenin bütünündeki görsel unsurları bütünlük ilkesi temelinde ortak bir çerçevede ele alan ve tüm belgede değişikliğe yol açan tarz seçimidir."
+            },
+            {
+              "term": "Filigran",
+              "definition": "Belge metninin arka planında ve tüm sayfalarda yer alan, yazara veya kuruma özel tanımlayıcı metin veya resimlerdir."
+            },
+            {
+              "term": "Dipnot",
+              "definition": "Metnin standart ilerleyişini bozmadan ek açıklama veya yönlendirme eklemek için yazım alanı dışında kullanılan numaralandırılmış yazım tarzıdır."
+            },
+            {
+              "term": "Alıntı",
+              "definition": "Bir konuya başka bir eserdeki içerikten bahsedilerek gerçekleşen değinme biçimidir."
+            },
+            {
+              "term": "İçindekiler Tablosu",
+              "definition": "Stil kazandırılmış başlıkların hangi sayfalarda bulunduğunu gösteren ve metnin ana başlıklarını ortaya koyan tablodur."
+            }
+          ]
+        },
+        {
+          "title": "Şablonlar ve Gelişmiş Özellikler",
+          "items": [
+            {
+              "term": "Şablon",
+              "definition": "Metinleri, görselleri ve bunların bir arada kullanımını önceden düzenlenmiş bir yapıda sunarak belge hazırlamayı kolaylaştıran içeriktir."
+            },
+            {
+              "term": "Yazım Denetleme",
+              "definition": "Microsoft Word'ün Gözden Geçir sekmesinde yazım ve dilbilgisi, eş anlamlılar ve sözcük sayısı gibi gramer ve metin bilgisi işlemlerini içeren menü grubudur."
+            },
+            {
+              "term": "Değişiklikleri İzle",
+              "definition": "Etkinleştirildiği andan itibaren belge üzerinde yapılan düzenlemeleri kayıt altında tutan ve değişiklikleri görünür hâle getiren özelliktir."
+            },
+            {
+              "term": "Makrolar",
+              "definition": "Microsoft Word'ün Görünüm sekmesinde sık kullanılan görevleri otomatik hâle getirmeye yarayan menü grubudur."
+            },
+            {
+              "term": "Sesle Yazma",
+              "definition": "Google Docs'ta Araçlar menüsü altında bulunan ve mikrofon yardımıyla konuşma anındaki sesi metne dönüştüren özelliktir."
+            },
+            {
+              "term": "E-imza",
+              "definition": "Google Docs'ta belgeyi başka bir sekmeye geçmeden Google Drive üzerinden imzalamaya olanak tanıyan premium özelliktir."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yanitla",
+      "kind": "quiz",
+      "title": "Yanıtla-Öğren",
+      "intro": "Soruları yanıtlayın; her seçimden sonra doğru yanıt ve gerekçesi gösterilir.",
+      "activities": [
+        {
+          "title": "Kelime İşlemciler: Arayüz ve Metin Düzenleme",
+          "items": [
+            {
+              "question": "Kelime işlemcilerin temel işlevleri arasında aşağıdakilerden hangisi yer alır?",
+              "options": [
+                "Metin düzenleme ve oluşturma",
+                "İşletim sistemi çekirdeğini yönetme",
+                "Donanım aygıt sürücüsü geliştirme",
+                "Ağ sunucusu yapılandırma"
+              ],
+              "answer": 0,
+              "explanation": "Metin ekleme, silme, bulma ve değiştirme işlemleri kelime işlemcilerin temel işlevlerinden olan metin düzenleme ve oluşturma kapsamında yer alır."
+            },
+            {
+              "question": "Google Docs arayüzünü Microsoft Word arayüzünden ayıran özelliklerden biri hangisidir?",
+              "options": [
+                "Durum çubuğunun bulunması",
+                "Şerit özelleştirme olanağının bulunmaması",
+                "Yalnızca düğmelerle çalışması",
+                "Menü ve alt menü kullanmaması"
+              ],
+              "answer": 1,
+              "explanation": "Google Docs'ta sekmeler açısından eklenip çıkarılabilen bir şerit özelleştirme olanağı bulunmaz; bunun yerine menüler tamamen gizlenip gösterilebilir."
+            },
+            {
+              "question": "Microsoft Word'te CTRL+H klavye kısayolu hangi işlem için kullanılır?",
+              "options": [
+                "Belgeyi kaydetme",
+                "Yeni belge açma",
+                "Bir metni bulup değiştirme",
+                "Dosyayı yazdırma penceresini açma"
+              ],
+              "answer": 2,
+              "explanation": "CTRL+H, belgede aranan bir metni bulup değiştirme işlemini başlatmak için kullanılır."
+            },
+            {
+              "question": "Microsoft Word'ün Ekle sekmesindeki Çizimler menü grubuyla aşağıdakilerden hangisi belgeye eklenebilir?",
+              "options": [
+                "Yalnızca sayfa numarası",
+                "Yalnızca dipnot",
+                "Yalnızca kaynakça",
+                "SmartArt biçiminde diyagram"
+              ],
+              "answer": 3,
+              "explanation": "Ekle sekmesindeki görsel ağırlıklı menü gruplarıyla resim, şekil, SmartArt biçiminde diyagram, grafik ve ekran görüntüsü eklenebilir."
+            },
+            {
+              "question": "Bir Word belgesinin kaç farklı bölümden oluştuğunu anlamak için hangi menü yolu kullanılır?",
+              "options": [
+                "Giriş-Paragraf-Tümünü Göster",
+                "Düzen-Sayfa Yapısı-Boyut",
+                "Ekle-Sayfalar-Boş Sayfa",
+                "Gözden Geçir-Dil-Çeviri"
+              ],
+              "answer": 0,
+              "explanation": "Giriş sekmesindeki Paragraf menü grubunda yer alan Tümünü Göster düğmesi, belgedeki bölüm ayrımlarını görmeye yardımcı olur."
+            }
+          ]
+        },
+        {
+          "title": "Stiller, Temalar, Dipnot ve Kaynakça",
+          "items": [
+            {
+              "question": "Stil ve tema arasındaki temel fark hangisidir?",
+              "options": [
+                "Stil belirli bir alan veya metne, tema belgenin bütününe uygulanır",
+                "Tema yalnız dipnotlara, stil yalnız kaynakçaya uygulanır",
+                "Stil yalnız sayfa rengine, tema yalnız yazı tipine uygulanır",
+                "Tema yalnız tek paragrafa, stil tüm belgeye uygulanır"
+              ],
+              "answer": 0,
+              "explanation": "Stiller belirli bir alan veya metin için geçerliyken temalar belgenin bütünündeki görsel unsurları ortak bir çerçevede değiştirir."
+            },
+            {
+              "question": "Microsoft Word'te yeni tema renkleri oluşturmak için hangi menü kullanılır?",
+              "options": [
+                "Sayfa Numaralarını Biçimlendir",
+                "Renkleri Özelleştir",
+                "Alıntı Ekle",
+                "Değişiklikleri İzle"
+              ],
+              "answer": 1,
+              "explanation": "Tasarım sekmesindeki Renkleri Özelleştir menüsü üzerinden yeni tema renkleri oluşturulabilir."
+            },
+            {
+              "question": "İçindekiler tablosu oluşturulmadan önce tabloya eklenecek başlıklara hangi özellik tanımlanmalıdır?",
+              "options": [
+                "Filigran",
+                "Sayfa kenarlığı",
+                "Başlık stili",
+                "Dipnot"
+              ],
+              "answer": 2,
+              "explanation": "İçindekiler tablosunun başlıkları tanıyabilmesi için ilgili metinlere önceden başlık stili verilmelidir."
+            },
+            {
+              "question": "Microsoft Word'te kaynak gösterim stili hangi seçeneklerden biri olarak belirlenebilir?",
+              "options": [
+                "Web Düzeni",
+                "Okuma Modu",
+                "Yazdırma Düzeni",
+                "APA"
+              ],
+              "answer": 3,
+              "explanation": "Başvurular sekmesindeki Alıntılar ve Kaynakça menü grubundan APA veya Chicago gibi kaynak gösterim stilleri seçilebilir."
+            },
+            {
+              "question": "Dipnot ekleme işleminde düğmeye tıklanmadan önce ne yapılmalıdır?",
+              "options": [
+                "Dipnot eklenecek metin seçilmelidir",
+                "Belgenin teması değiştirilmelidir",
+                "Sayfa yatay konuma getirilmelidir",
+                "Kaynakça şablonu eklenmelidir"
+              ],
+              "answer": 0,
+              "explanation": "Dipnot Ekle düğmesine tıklanmadan önce dipnotla ilişkilendirilecek metnin seçili olması gerekir."
+            }
+          ]
+        },
+        {
+          "title": "Şablonlar ve Gelişmiş Özellikler",
+          "items": [
+            {
+              "question": "Microsoft Word'te hazır şablonlara hangi menü yoluyla ulaşılır?",
+              "options": [
+                "Dosya-Yeni",
+                "Giriş-Stiller",
+                "Tasarım-Renkler",
+                "Görünüm-Göster"
+              ],
+              "answer": 0,
+              "explanation": "Microsoft Word'deki hazır şablonlara Dosya sekmesindeki Yeni menüsü üzerinden erişilir."
+            },
+            {
+              "question": "Farklı yazarların geri bildirim ve düzeltmeleri için Microsoft Word'te birlikte çalışan menü grubu üçlüsü hangisidir?",
+              "options": [
+                "Görünümler-Göster-Yakınlaştır",
+                "Açıklamalar-İzleme-Değişiklikler",
+                "Temalar-Renkler-Yazı Tipleri",
+                "Sayfalar-Tablolar-Çizimler"
+              ],
+              "answer": 1,
+              "explanation": "Açıklamalar, İzleme ve Değişiklikler menü grupları ortak çalışma, geri bildirim ve düzeltmelerin izlenmesi için birlikte kullanılır."
+            },
+            {
+              "question": "Google Docs'ta konuşmayı metne dönüştürmek için kullanılan özellik hangi menü altında bulunur?",
+              "options": [
+                "Dosya",
+                "Görünüm",
+                "Araçlar",
+                "Yardım"
+              ],
+              "answer": 2,
+              "explanation": "Sesle Yazma özelliğine Google Docs arayüzünde Araçlar menüsü üzerinden ulaşılır ve kullanım için mikrofonun aktif olması gerekir."
+            },
+            {
+              "question": "Google Docs E-imza özelliğinin etkinleştirilebilmesi için hangi plan gereklidir?",
+              "options": [
+                "Ücretsiz çevrim dışı plan",
+                "Temel doküman planı",
+                "Yalnızca mobil plan",
+                "Google Workspace Individual"
+              ],
+              "answer": 3,
+              "explanation": "Google Docs'taki E-imza premium bir özelliktir ve etkinleştirilmesi için Google Workspace Individual planı gerekir."
+            },
+            {
+              "question": "Microsoft Word'ün Görünüm sekmesindeki Makrolar menü grubunun amacı nedir?",
+              "options": [
+                "Sık kullanılan görevleri otomatik hâle getirmek",
+                "Kaynakça stilini seçmek",
+                "Sayfa kenarlığı eklemek",
+                "Yazım dilini değiştirmek"
+              ],
+              "answer": 0,
+              "explanation": "Makrolar menü grubu, sık kullanılan görevlerin otomatikleştirilmesi için kullanılır."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bul",
+      "kind": "crossword",
+      "title": "Bul-Öğren",
+      "intro": "İpuçlarından yola çıkarak kelimeleri bulun. Izgara, verdiğiniz kelimelerden otomatik kurulur.",
+      "activities": [
+        {
+          "title": "Kelime İşlemciler: Arayüz ve Metin Düzenleme",
+          "items": [
+            {
+              "answer": "ŞERİT",
+              "clue": "Üst bölümde işlev gruplarına erişim sağlayan yapı"
+            },
+            {
+              "answer": "MENÜ",
+              "clue": "Temalaştırılmış bir veya birden fazla özelliği içeren satır"
+            },
+            {
+              "answer": "DÜĞME",
+              "clue": "Bir işlemi simgeyle ifade eden tıklanabilir arayüz ögesi"
+            },
+            {
+              "answer": "HECELEME",
+              "clue": "Düzen sekmesinden elle veya otomatik yapılabilen sözcük bölme işlemi"
+            }
+          ]
+        },
+        {
+          "title": "Stiller, Temalar, Dipnot ve Kaynakça",
+          "items": [
+            {
+              "answer": "FİLİGRAN",
+              "clue": "Tüm sayfalarda arka planda yer alan tanımlayıcı metin veya resim"
+            },
+            {
+              "answer": "DİPNOT",
+              "clue": "Ana akışı bozmadan sayfa altında verilen numaralı açıklama"
+            },
+            {
+              "answer": "ALINTI",
+              "clue": "Başka bir eserdeki içeriğe yapılan değinme"
+            },
+            {
+              "answer": "KAYNAKÇA",
+              "clue": "Belge sonunda başvurulan eserlerin ayrıntılı olarak sıralandığı bölüm"
+            },
+            {
+              "answer": "TEMA",
+              "clue": "Belgenin bütünündeki görsel unsurları ortak çerçevede değiştiren tarz"
+            },
+            {
+              "answer": "STİL",
+              "clue": "Belirli bir alan veya metne uygulanan biçimlendirme yapısı"
+            },
+            {
+              "answer": "GEZİNTİ",
+              "clue": "Başlıkların topluca görülmesini sağlayan belge içi dolaşım özelliği"
+            }
+          ]
+        },
+        {
+          "title": "Şablonlar ve Gelişmiş Özellikler",
+          "items": [
+            {
+              "answer": "MAKRO",
+              "clue": "Sık kullanılan görevlerin otomatikleştirilmesini sağlayan özellik"
+            },
+            {
+              "answer": "KORUMA",
+              "clue": "Belgede erişim ve düzenleme kısıtlamalarıyla ilgili güvenlik yaklaşımı"
+            },
+            {
+              "answer": "ÇEVİRİ",
+              "clue": "Gözden Geçir sekmesindeki Dil grubunda yapılabilen işlem"
+            },
+            {
+              "answer": "ERİŞİM",
+              "clue": "Belge güvenliğinde kısıtlanabilen kullanım hakkı"
+            },
+            {
+              "answer": "YORUM",
+              "clue": "Ortak çalışmada belge üzerine eklenebilen geri bildirim türü"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eslestir",
+      "kind": "match",
+      "title": "Eşleştir-Öğren",
+      "intro": "Açıklamayı seçip karşısındaki kavramla eşleştirin.",
+      "activities": [
+        {
+          "title": "Kelime İşlemciler: Arayüz ve Metin Düzenleme",
+          "items": [
+            {
+              "term": "Giriş sekmesi",
+              "definition": "Yazı Tipi, Paragraf, Stiller ve Düzenleme gibi metin düzenleme araçlarının yoğun olarak bulunduğu bölümdür."
+            },
+            {
+              "term": "Ekle sekmesi",
+              "definition": "Kapak sayfası, boş sayfa, tablo, resim, şekil, SmartArt ve grafik gibi ögelerin belgeye eklenebildiği bölümdür."
+            },
+            {
+              "term": "Düzen sekmesi",
+              "definition": "Kenar boşlukları, yönlendirme, boyut, sütunlar, kesmeler, satır numaraları ve heceleme ayarlarının bulunduğu bölümdür."
+            },
+            {
+              "term": "Yazı Tipi menü grubu",
+              "definition": "Metnin yazı tipi, boyutu ve vurgulama özelliklerinin düzenlenmesinde kullanılır."
+            },
+            {
+              "term": "Paragraf menü grubu",
+              "definition": "Maddeleştirme, numaralandırma, hizalama, satır ve paragraf aralığı gibi ayarların yapılmasını sağlar."
+            }
+          ]
+        },
+        {
+          "title": "Stiller, Temalar, Dipnot ve Kaynakça",
+          "items": [
+            {
+              "term": "Stiller",
+              "definition": "Başlık, paragraf veya başka bir ögeye belirli bir biçim kazandırarak belge içi bağlantılar ve içindekiler gibi işlevleri destekler."
+            },
+            {
+              "term": "Temalar",
+              "definition": "Renk paletleri ve diğer görsel tercihlerle bütün belgenin ortak bir görsel tarzda düzenlenmesini sağlar."
+            },
+            {
+              "term": "Filigran",
+              "definition": "Belgenin arka planında tüm sayfalarda görülen, yazara veya kuruma özgü tanımlayıcı ögedir."
+            },
+            {
+              "term": "Dipnot",
+              "definition": "Seçilen metinle ilişkilendirilen ve sayfanın alt kısmında numaralandırılarak verilen ek açıklamadır."
+            },
+            {
+              "term": "Alıntı ve Kaynakça",
+              "definition": "Metin içindeki kaynağa yapılan değinmeyi, kaynak ayrıntılarıyla belge sonundaki listeyle ilişkilendiren gösterim düzenidir."
+            }
+          ]
+        },
+        {
+          "title": "Şablonlar ve Gelişmiş Özellikler",
+          "items": [
+            {
+              "term": "Gözden Geçir sekmesi",
+              "definition": "Yazım denetleme, dil, açıklamalar, izleme, değişiklikler, karşılaştırma ve koruma gibi gelişmiş özellikleri içerir."
+            },
+            {
+              "term": "Görünüm sekmesi",
+              "definition": "Belge görünümleri, cetvel ve gezinti bölmesi, yakınlaştırma, pencere işlemleri ve makrolar gibi seçenekleri içerir."
+            },
+            {
+              "term": "Sesle Yazma",
+              "definition": "Google Docs'ta mikrofon aktifken konuşma anındaki sesi metne dönüştürür."
+            },
+            {
+              "term": "Apps Script",
+              "definition": "Google Docs Uzantılar menüsünden açılan ve uygulama komutu yazımı yapılabilen proje dosyası ortamıdır."
+            },
+            {
+              "term": "E-imza",
+              "definition": "Google Drive üzerinden belgeyi imzalamayı ve tamamlanan imzalı PDF'nin ilgili taraflara gönderilmesini sağlar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dene",
+      "kind": "study",
+      "title": "Dene-Öğren",
+      "intro": "Kısa metni okuyun, öne çıkan noktaları inceleyin ve kontrol sorusunu yanıtlayın.",
+      "activities": [
+        {
+          "title": "Kelime İşlemciler: Arayüz ve Metin Düzenleme",
+          "items": [
+            {
+              "category": "Arayüz ve Temel İşlevler",
+              "title": "Kelime işlemci arayüzünün yapısı",
+              "theory": "Kullanıcı dostu bir kelime işlemci arayüzünde araç çubuğu, şerit, sekmeler, menü grupları, menüler, ek pencereler, düğmeler ve durum çubuğu gibi ögeler bulunabilir. Bu ögelerin amacı, kullanıcının metinler üzerinde basit ve anlaşılır bir yolla çalışabilmesini sağlamaktır. Microsoft Word şerit ve sekme kullanımını öne çıkarırken Google Docs daha basitleştirilmiş menü ve alt menü yapısıyla çalışır. Kelime işlemci arayüzlerindeki ortak özelliklerin başında menü ve alt menü kullanımı gelir.",
+              "keyPoints": [
+                "Şerit farklı işlevlere sahip sekmeleri içerir.",
+                "Menü grupları ortak özelliklere hizmet eden araçları bir araya getirir.",
+                "Microsoft Word ve Google Docs farklı arayüz düzenlerine sahiptir."
+              ],
+              "question": "Kelime işlemci arayüzlerinde ortak olarak ön plana çıkan kullanım hangisidir?",
+              "options": [
+                "Yalnız durum çubuğu",
+                "Menü ve alt menüler",
+                "Yalnız şerit özelleştirme",
+                "Yalnız ek pencereler"
+              ],
+              "answer": 1,
+              "explanation": "Arayüz düzenleri farklı olsa da kelime işlemcilerde menü ve alt menü kullanımı ortak ve temel bir özelliktir."
+            },
+            {
+              "category": "Metin Düzenleme",
+              "title": "Metin ve sayfa biçimlendirme",
+              "theory": "Microsoft Word'ün Giriş sekmesinde Yazı Tipi ve Paragraf menü grupları metinlerin yazı tipi, boyutu, vurgulanması, maddeleştirilmesi, numaralandırılması ve hizalanması için kullanılır. Satır aralığı ve paragraf aralığı farklı ayarlardır ve uygun yerlerde ayrı ayrı düzenlenmelidir. Ekle sekmesinden tablo, resim, şekil, SmartArt ve grafik gibi görsel ögeler eklenebilir. Düzen sekmesi ise kenar boşlukları, sayfa yönü, boyut, sütunlar, kesmeler, satır numaraları ve heceleme gibi sayfa düzeni ayarlarını içerir.",
+              "keyPoints": [
+                "Satır aralığı ile paragraf aralığı farklı düzenleme işlemleridir.",
+                "Ekle sekmesi metinle birlikte görsel ögelerin kullanımını sağlar.",
+                "Düzen sekmesi sayfanın yapısal özelliklerini denetler."
+              ],
+              "question": "Sayfanın dikey veya yatay kullanılmasını belirleyen ayar hangi sekmede bulunur?",
+              "options": [
+                "Başvurular",
+                "Gözden Geçir",
+                "Düzen",
+                "Görünüm"
+              ],
+              "answer": 2,
+              "explanation": "Sayfanın dikey ya da yatay kullanılmasını belirleyen Yönlendirme menüsü Düzen sekmesinde yer alır."
+            }
+          ]
+        },
+        {
+          "title": "Stiller, Temalar, Dipnot ve Kaynakça",
+          "items": [
+            {
+              "category": "Stiller ve Temalar",
+              "title": "Belgenin görsel ve işlevsel yapısı",
+              "theory": "Stiller, belge içinde belirli alanlara veya metinlere uygulanır ve başlıkların gezinti, bağlantı ve içindekiler tablosu gibi özelliklerde tanınmasını sağlar. Temalar ise belgenin bütünündeki görsel unsurları ortak bir çerçevede ele alır. Microsoft Word'ün Tasarım sekmesinde temalar, stil kümeleri, renkler, yazı tipleri, efektler, filigran, sayfa rengi ve sayfa kenarlıkları gibi seçenekler bulunur. Temayla çalışmak, yapılan değişikliğin belgenin bütünü üzerindeki etkisini birlikte değerlendirmeyi kolaylaştırır.",
+              "keyPoints": [
+                "Stiller belirli alan veya metinlere uygulanır.",
+                "Temalar bütün belgenin görsel yapısını etkiler.",
+                "Başlık stilleri gezinti ve içindekiler tablosu gibi işlevleri destekler."
+              ],
+              "question": "Belgenin tamamındaki renk ve görsel uyum üzerinde etkili olan özellik hangisidir?",
+              "options": [
+                "Dipnot",
+                "Tema",
+                "Sayfa sonu",
+                "Alıntı"
+              ],
+              "answer": 1,
+              "explanation": "Tema, belgenin bütünündeki görsel unsurları ortak bir çerçevede ele alarak genel renk ve tarz üzerinde değişiklik yapar."
+            },
+            {
+              "category": "Dipnot ve Kaynakça",
+              "title": "Alıntı ve kaynakça ekleme süreci",
+              "theory": "Microsoft Word'te alıntı ve kaynakça işlemleri Başvurular sekmesindeki Alıntılar ve Kaynakça menü grubundan yürütülür. Önce Alıntı Ekle ve Yeni Kaynak Ekle seçenekleriyle kaynağın yayın türü ve ayrıntıları tanımlanır. Kaynak eklendiğinde alıntı, ilgili yerde yazar soyadı ve yıl biçiminde görünür. Daha sonra Kaynakça menüsünden uygun bir şablon seçilerek tanımlanan kaynakların belge sonuna kaynakça olarak eklenmesi sağlanır.",
+              "keyPoints": [
+                "Kaynak önce yayın türü ve ayrıntılarıyla tanımlanır.",
+                "Alıntı ilgili metin konumunda görüntülenir.",
+                "Kaynakça belge sonunda uygun şablonla oluşturulur."
+              ],
+              "question": "Yeni bir kaynağın Word'e tanımlanmasından sonra alıntının metinde görünmesini sağlayan işlem hangisidir?",
+              "options": [
+                "Sayfa rengi seçmek",
+                "Kaynağı alıntı yapılacak yerde eklemek",
+                "Belgeyi bölümlere ayırmak",
+                "Filigran uygulamak"
+              ],
+              "answer": 1,
+              "explanation": "Kaynak tanımlandıktan sonra alıntı yapılacak konuma eklenir ve metinde yazar soyadı ile yıl bilgisiyle görüntülenir."
+            }
+          ]
+        },
+        {
+          "title": "Şablonlar ve Gelişmiş Özellikler",
+          "items": [
+            {
+              "category": "Belge Şablonları",
+              "title": "Şablonlarla düzenli belge hazırlama",
+              "theory": "Kelime işlemcilerde şablon kullanımı, metin ve görsellerin daha önceden düzenlenmiş bir yapıda işe koşulmasını sağlar. Google Docs'ta mektup, özgeçmiş, broşür, bülten, yemek tarifi, toplantı notları, ders planı, proje, ödev ve rapor gibi şablonlar bulunur. Microsoft Word'te şablonlara Dosya sekmesindeki Yeni menüsünden erişilir. Şablonlarla çalışmak, kullanıcıya biçimsel ayrıntıları baştan tasarlamak yerine şablonun gerektirdiği bilgileri girerek içerik ve dil bilgisine odaklanma olanağı verir.",
+              "keyPoints": [
+                "Şablonlar belge tasarımına baştan düzenli bir yapı kazandırır.",
+                "Microsoft Word şablonlarına Dosya-Yeni yoluyla erişilir.",
+                "Şablonlar biçimsel düzenleme için harcanan zamanı azaltır."
+              ],
+              "question": "Şablon kullanmanın temel kolaylıklarından biri hangisidir?",
+              "options": [
+                "Belgedeki tüm metni otomatik silmek",
+                "Yalnızca tek belge türüne izin vermek",
+                "Kullanıcının içerik ve dil bilgisine daha fazla odaklanmasını sağlamak",
+                "Tüm görselleri belgeden kaldırmak"
+              ],
+              "answer": 2,
+              "explanation": "Şablon, görsel ve biçimsel düzeni hazır sunduğu için yazarın şablonun gerektirdiği bilgileri girerek içerik ve dil bilgisine odaklanmasını kolaylaştırır."
+            },
+            {
+              "category": "Gelişmiş Özellikler",
+              "title": "Ortak çalışma, güvenlik ve otomasyon",
+              "theory": "Microsoft Word'te Açıklamalar, İzleme ve Değişiklikler menü grupları farklı yazarların geri bildirimlerini ve düzenlemelerini yönetmek için kullanılır. Belge güvenliğinde düzenlemeyi ve erişimi kısıtlama, parola ile şifreleme ve dijital imza ekleme gibi işlemler uygulanabilir. Görünüm sekmesindeki Makrolar menü grubu sık kullanılan görevlerin otomatikleştirilmesini sağlar. Google Docs ise gerçek zamanlı ortak çalışma, önerme modu, Sesle Yazma ve E-imza gibi gelişmiş özellikler sunar.",
+              "keyPoints": [
+                "Değişiklikleri İzle düzenlemeleri görünür ve denetlenebilir hâle getirir.",
+                "Belge güvenliği için erişim ve düzenleme kısıtlanabilir.",
+                "Makrolar sık kullanılan görevleri otomatikleştirmek için kullanılır."
+              ],
+              "question": "Belge üzerinde yapılan düzenlemeleri kayıt altında tutup görünür hâle getiren Word özelliği hangisidir?",
+              "options": [
+                "Akıllı Arama",
+                "Değişiklikleri İzle",
+                "Sayfa Rengi",
+                "Kenar Boşlukları"
+              ],
+              "answer": 1,
+              "explanation": "Değişiklikleri İzle etkinleştirildiğinde belge üzerinde yapılan düzenlemeler kayıt altına alınır ve ekranda görünür biçimde gösterilir."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};
