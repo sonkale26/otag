@@ -1,0 +1,613 @@
+{
+  "meta": {
+    "id": "mmt89qfinwti9zr",
+    "title": "Bölüm 5",
+    "subtitle": "Form Tasarımı ve Veri İletimi",
+    "footer": "",
+    "eyebrow": "Çöz-Öğren"
+  },
+  "lessons": [
+    {
+      "id": "tikla",
+      "kind": "cards",
+      "title": "Tıkla-Öğren",
+      "intro": "Kavramları görmek için kartlara tıklayın; ön yüzde kavram, arka yüzde açıklaması yer alır.",
+      "activities": [
+        {
+          "title": "Form Yapısı, Form Özellikleri ve Veri İletimi",
+          "items": [
+            {
+              "term": "Form",
+              "definition": "Kullanıcıların veri girdiği veya seçim yaptığı alanlarla bu bilgileri sunucuya gönderen düğmelerden oluşan yapıdır."
+            },
+            {
+              "term": "Form Elemanı",
+              "definition": "Form içinde kullanıcının veri girişi veya seçim yapmasını sağlayan metin kutusu, açılır liste, onay kutusu, düğme ve benzeri birimdir."
+            },
+            {
+              "term": "action",
+              "definition": "Form verilerinin sunucuda nereye gönderileceğini belirleyen form özelliğidir."
+            },
+            {
+              "term": "method",
+              "definition": "Form verilerinin sunucuya hangi HTTP yöntemiyle gönderileceğini belirleyen ve get veya post değerini alabilen özelliktir."
+            },
+            {
+              "term": "name",
+              "definition": "Forma veya form elemanına isim verilmesini ve form elemanının taşıdığı veri için kullanılacak değişken adının belirlenmesini sağlayan özelliktir."
+            },
+            {
+              "term": "target",
+              "definition": "Form gönderildikten sonra sunucudan gelen cevabın hangi sayfada görüntüleneceğini belirleyen özelliktir."
+            }
+          ]
+        },
+        {
+          "title": "Input Elemanı, HTML5 Giriş Türleri ve Input Özellikleri",
+          "items": [
+            {
+              "term": "Input",
+              "definition": "Genellikle form etiketi içinde kullanılan, type özelliğine göre çok farklı veri girişi ve seçim alanları oluşturabilen form elemanıdır."
+            },
+            {
+              "term": "text",
+              "definition": "Kullanıcının tek satırlık metin girmesini sağlayan input türüdür."
+            },
+            {
+              "term": "password",
+              "definition": "Girilen karakterleri güvenlik amacıyla sembollerle gizleyerek şifre girişi sağlayan input türüdür."
+            },
+            {
+              "term": "email",
+              "definition": "Kullanıcının e-posta adresi girmesi için oluşturulan ve @ simgesini kontrol edebilen HTML5 input türüdür."
+            },
+            {
+              "term": "required",
+              "definition": "İlgili form alanının doldurulmasını zorunlu hâle getiren HTML5 özelliğidir."
+            },
+            {
+              "term": "placeholder",
+              "definition": "Kullanıcı veri girmeden önce form alanında ipucu veya örnek değer gösterilmesini sağlayan HTML5 özelliğidir."
+            }
+          ]
+        },
+        {
+          "title": "Düğmeler, Gruplama, Açılır Listeler ve Diğer Form Elemanları",
+          "items": [
+            {
+              "term": "Submit",
+              "definition": "Form verilerini sunucuya göndermek için kullanılan düğme türüdür."
+            },
+            {
+              "term": "Reset",
+              "definition": "Form elemanlarını sayfa yüklendiğindeki başlangıç değerlerine döndüren düğme türüdür."
+            },
+            {
+              "term": "Button",
+              "definition": "Gerçekleştireceği eylem sayfa tasarımcısı tarafından belirlenen genel amaçlı düğmedir."
+            },
+            {
+              "term": "Fieldset ve Legend",
+              "definition": "Fieldset form elemanlarını görsel olarak gruplar, legend ise bu gruba başlık verir."
+            },
+            {
+              "term": "Select",
+              "definition": "option elemanlarıyla seçeneklerin sunulduğu ve optgroup ile seçenek grupları oluşturulabilen açılır liste elemanıdır."
+            },
+            {
+              "term": "Textarea",
+              "definition": "Kullanıcının çok satırlı metin yazmasını sağlayan, satır sayısı rows ve genişliği cols ile ayarlanabilen form elemanıdır."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yanitla",
+      "kind": "quiz",
+      "title": "Yanıtla-Öğren",
+      "intro": "Soruları yanıtlayın; her seçimden sonra doğru yanıt ve gerekçesi gösterilir.",
+      "activities": [
+        {
+          "title": "Form Yapısı, Form Özellikleri ve Veri İletimi",
+          "items": [
+            {
+              "question": "Form verilerinin sunucuda nereye gönderileceğini hangi özellik belirler?",
+              "options": [
+                "action",
+                "target",
+                "name",
+                "autocomplete"
+              ],
+              "answer": 0,
+              "explanation": "action özelliği form verilerinin sunucuda değerlendirileceği yolu belirler."
+            },
+            {
+              "question": "Form verilerinin hangi HTTP yöntemiyle gönderileceğini hangi özellik belirler?",
+              "options": [
+                "enctype",
+                "method",
+                "target",
+                "accept"
+              ],
+              "answer": 1,
+              "explanation": "method özelliği form verilerinin get veya post yöntemiyle gönderilmesini belirler."
+            },
+            {
+              "question": "POST yönteminin GET yönteminden temel farklarından biri hangisidir?",
+              "options": [
+                "Verileri yalnızca resim olarak göndermesi",
+                "Form gönderimini engellemesi",
+                "Verileri adres satırında göstermeden göndermesi",
+                "Sadece boş formlarda kullanılabilmesi"
+              ],
+              "answer": 2,
+              "explanation": "POST yönteminde form verileri adres satırında görünmeden arka planda sunucuya gönderilir."
+            },
+            {
+              "question": "Form gönderimi sonrasında cevabın yeni bir pencerede açılması için target hangi değeri almalıdır?",
+              "options": [
+                "_self",
+                "_parent",
+                "_top",
+                "_blank"
+              ],
+              "answer": 3,
+              "explanation": "target=\"_blank\" gönderim sonucunun yeni boş sayfada görüntülenmesini sağlar."
+            },
+            {
+              "question": "Bir form elemanındaki verinin sunucuya hangi değişken adıyla gönderileceğini belirleyen özellik hangisidir?",
+              "options": [
+                "name",
+                "action",
+                "enctype",
+                "novalidate"
+              ],
+              "answer": 0,
+              "explanation": "name özelliği form elemanındaki veriyi taşıyacak değişkenin adını belirler."
+            }
+          ]
+        },
+        {
+          "title": "Input Elemanı, HTML5 Giriş Türleri ve Input Özellikleri",
+          "items": [
+            {
+              "question": "Input elemanında veri giriş türünü hangi özellik belirler?",
+              "options": [
+                "type",
+                "name",
+                "value",
+                "size"
+              ],
+              "answer": 0,
+              "explanation": "Input elemanının text, password, email, date veya başka bir türde çalışmasını type özelliği belirler."
+            },
+            {
+              "question": "Bir alanın mutlaka doldurulmasını sağlayan özellik hangisidir?",
+              "options": [
+                "readonly",
+                "required",
+                "checked",
+                "list"
+              ],
+              "answer": 1,
+              "explanation": "required özelliği form alanını zorunlu hâle getirir."
+            },
+            {
+              "question": "Bir e-posta alanına birden fazla adres girilebilmesini hangi özellik sağlar?",
+              "options": [
+                "multiple",
+                "max",
+                "size",
+                "step"
+              ],
+              "answer": 0,
+              "explanation": "multiple özelliği email alanında virgülle ayrılmış birden fazla adres girilmesini sağlar."
+            },
+            {
+              "question": "Kullanıcıya veri girişi öncesinde örnek veya ipucu göstermek için hangi özellik kullanılır?",
+              "options": [
+                "value",
+                "readonly",
+                "checked",
+                "placeholder"
+              ],
+              "answer": 3,
+              "explanation": "placeholder özelliği veri girişi öncesinde kullanıcıya ipucu gösterir."
+            },
+            {
+              "question": "Bir sayısal alanda değerlerin kaçar kaçar artıp azalacağını hangi özellik belirler?",
+              "options": [
+                "step",
+                "min",
+                "max",
+                "pattern"
+              ],
+              "answer": 0,
+              "explanation": "step özelliği sayısal değerlerin artış ve azalış miktarını belirler."
+            }
+          ]
+        },
+        {
+          "title": "Düğmeler, Gruplama, Açılır Listeler ve Diğer Form Elemanları",
+          "items": [
+            {
+              "question": "Form verilerini sunucuya gönderen düğme türü hangisidir?",
+              "options": [
+                "reset",
+                "button",
+                "fieldset",
+                "submit"
+              ],
+              "answer": 3,
+              "explanation": "Submit düğmesi formdaki kullanıcı verilerini sunucuya göndermek için kullanılır."
+            },
+            {
+              "question": "Form elemanlarını başlangıç değerlerine döndüren düğme türü hangisidir?",
+              "options": [
+                "submit",
+                "image",
+                "button",
+                "reset"
+              ],
+              "answer": 3,
+              "explanation": "Reset form alanlarını sayfa ilk yüklendiğindeki değerlerine döndürür."
+            },
+            {
+              "question": "Form elemanlarını görsel olarak bir kutu içinde gruplamak için hangi eleman kullanılır?",
+              "options": [
+                "fieldset",
+                "select",
+                "textarea",
+                "datalist"
+              ],
+              "answer": 0,
+              "explanation": "fieldset form elemanlarını bir grup altında görsel olarak toplar."
+            },
+            {
+              "question": "Açılır listedeki seçeneklerin kendileri hangi etiketle tanımlanır?",
+              "options": [
+                "optgroup",
+                "option",
+                "legend",
+                "label"
+              ],
+              "answer": 1,
+              "explanation": "option etiketi select içindeki tek tek seçenekleri tanımlar."
+            },
+            {
+              "question": "Textarea elemanının satır sayısını hangi özellik belirler?",
+              "options": [
+                "cols",
+                "size",
+                "rows",
+                "step"
+              ],
+              "answer": 2,
+              "explanation": "rows özelliği textarea alanının satır sayısını belirler."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bul",
+      "kind": "crossword",
+      "title": "Bul-Öğren",
+      "intro": "İpuçlarından yola çıkarak kelimeleri bulun. Izgara, verdiğiniz kelimelerden otomatik kurulur.",
+      "activities": [
+        {
+          "title": "Form Yapısı, Form Özellikleri ve Veri İletimi",
+          "items": [
+            {
+              "answer": "FORM",
+              "clue": "Kullanıcıdan bilgi veya seçim toplayıp bunları sunucuya ileten yapı"
+            },
+            {
+              "answer": "ÖZELLİK",
+              "clue": "Bir öğeye ek işlev kazandıran veya kullanımını sınırlandıran HTML kodu"
+            },
+            {
+              "answer": "SUNUCU",
+              "clue": "İstemciden gelen bilgileri alıp işleyen ve web içeriğini barındıran bilgisayar"
+            },
+            {
+              "answer": "İSTEMCİ",
+              "clue": "Web sitesine erişen kullanıcının bilgisayarı veya tarafı"
+            },
+            {
+              "answer": "DEĞİŞKEN",
+              "clue": "name ile adlandırılan ve kullanıcıdan alınan değeri taşıyan veri adı"
+            },
+            {
+              "answer": "GÖNDERİM",
+              "clue": "Kullanıcının girdiği bilgilerin bir düğme aracılığıyla karşı tarafa iletilmesi işlemi"
+            },
+            {
+              "answer": "DOĞRULAMA",
+              "clue": "Girilen bilgilerin kurallara uygun olup olmadığının kontrol edilmesi işlemi"
+            }
+          ]
+        },
+        {
+          "title": "Input Elemanı, HTML5 Giriş Türleri ve Input Özellikleri",
+          "items": [
+            {
+              "answer": "PAROLA",
+              "clue": "Karakterleri ekranda sembollerle gizlenen güvenlik amaçlı kullanıcı bilgisi"
+            },
+            {
+              "answer": "EPOSTA",
+              "clue": "@ işareti denetimi yapılabilen HTML5 iletişim alanının bilgi türü"
+            },
+            {
+              "answer": "TARİH",
+              "clue": "date türüyle takvim üzerinden seçilebilen zaman bilgisi"
+            },
+            {
+              "answer": "ARAMA",
+              "clue": "search türüyle kullanıcıdan alınan sorgu ifadesinin kullanım amacı"
+            },
+            {
+              "answer": "KAYDIRMA",
+              "clue": "range türünde sayı belirlemek için yatay çubuk üzerinde yapılan hareket"
+            }
+          ]
+        },
+        {
+          "title": "Düğmeler, Gruplama, Açılır Listeler ve Diğer Form Elemanları",
+          "items": [
+            {
+              "answer": "DÜĞME",
+              "clue": "Kullanıcının tıklayarak gönderme, sıfırlama veya başka bir eylemi başlattığı form aracı"
+            },
+            {
+              "answer": "SIFIRLAMA",
+              "clue": "Girilen bilgileri sayfa yüklenirken bulunan ilk değerlere döndürme işlemi"
+            },
+            {
+              "answer": "GRUPLAYICI",
+              "clue": "Birden fazla form öğesini görsel olarak aynı kutu içinde toplayan yapı"
+            },
+            {
+              "answer": "SEÇENEK",
+              "clue": "Açılır listede option etiketiyle oluşturulan tek bir tercih"
+            },
+            {
+              "answer": "ETİKET",
+              "clue": "Bir form öğesiyle ilişkilendirildiğinde yazıya tıklanarak ilgili alanın etkinleştirilmesini sağlayan label yapısı"
+            },
+            {
+              "answer": "TEXTAREA",
+              "clue": "Birden çok satırda uzun yazı girilmesini sağlayan HTML form elemanı"
+            },
+            {
+              "answer": "DATALİST",
+              "clue": "Input alanına önceden hazırlanmış değer önerileri sağlayan HTML5 veri listesi"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eslestir",
+      "kind": "match",
+      "title": "Eşleştir-Öğren",
+      "intro": "Açıklamayı seçip karşısındaki kavramla eşleştirin.",
+      "activities": [
+        {
+          "title": "Form Yapısı, Form Özellikleri ve Veri İletimi",
+          "items": [
+            {
+              "term": "action",
+              "definition": "Form verilerinin sunucuda gönderileceği yolu belirler."
+            },
+            {
+              "term": "method",
+              "definition": "Verilerin get veya post yöntemiyle iletilmesini belirler."
+            },
+            {
+              "term": "enctype",
+              "definition": "POST ile gönderilen form verilerinin nasıl kodlanacağını belirler."
+            },
+            {
+              "term": "target",
+              "definition": "Gönderim sonucunun hangi sayfada görüntüleneceğini belirler."
+            },
+            {
+              "term": "autocomplete",
+              "definition": "Önceden girilmiş bilgileri kullanıcıya göstererek form doldurmaya yardımcı olur."
+            }
+          ]
+        },
+        {
+          "title": "Input Elemanı, HTML5 Giriş Türleri ve Input Özellikleri",
+          "items": [
+            {
+              "term": "text",
+              "definition": "Tek satırlık metin girişi sağlar."
+            },
+            {
+              "term": "password",
+              "definition": "Girilen karakterleri ekranda gizler."
+            },
+            {
+              "term": "email",
+              "definition": "E-posta adresi girişi sağlar ve @ simgesini kontrol edebilir."
+            },
+            {
+              "term": "date",
+              "definition": "Tarih girişi veya seçimi için alan oluşturur."
+            },
+            {
+              "term": "number",
+              "definition": "Yukarı ve aşağı oklarla da değiştirilebilen sayı alanı oluşturur."
+            }
+          ]
+        },
+        {
+          "title": "Düğmeler, Gruplama, Açılır Listeler ve Diğer Form Elemanları",
+          "items": [
+            {
+              "term": "submit",
+              "definition": "Form verilerini sunucuya gönderir."
+            },
+            {
+              "term": "reset",
+              "definition": "Form alanlarını başlangıç değerlerine döndürür."
+            },
+            {
+              "term": "fieldset",
+              "definition": "Form elemanlarını görsel açıdan gruplar."
+            },
+            {
+              "term": "legend",
+              "definition": "Fieldset ile oluşturulan gruba başlık verir."
+            },
+            {
+              "term": "label",
+              "definition": "İlişkilendirildiği form elemanını açıklayan etiket oluşturur."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dene",
+      "kind": "study",
+      "title": "Dene-Öğren",
+      "intro": "Kısa metni okuyun, öne çıkan noktaları inceleyin ve kontrol sorusunu yanıtlayın.",
+      "activities": [
+        {
+          "title": "Form Yapısı, Form Özellikleri ve Veri İletimi",
+          "items": [
+            {
+              "category": "Form Yapısı",
+              "title": "Kullanıcıdan Sunucuya Veri Akışı",
+              "theory": "Formlar kullanıcıların web sayfalarında veri girmesini veya seçim yapmasını sağlayan yapılardır. Form yapısı form etiketiyle başlar ve kapatma etiketiyle sona erer. Bu iki etiket arasında bir veya daha fazla form elemanı bulunabilir. Kullanıcı tarafından girilen bilgiler düğme aracılığıyla sunucuya gönderilebilir.",
+              "keyPoints": [
+                "Formlar veri girişi ve seçim amacıyla kullanılır.",
+                "Form yapısı form açılış ve kapanış etiketleri arasında oluşturulur.",
+                "Form elemanlarının verileri birlikte sunucuya gönderilebilir."
+              ],
+              "question": "Bir formun genel HTML yapısında form elemanları nerede yer alır?",
+              "options": [
+                "Yalnızca head bölümünde",
+                "Sadece action özelliğinde",
+                "Yalnızca target değerinde",
+                "form açılış ve kapanış etiketleri arasında"
+              ],
+              "answer": 3,
+              "explanation": "Form elemanları form etiketinin açılışı ile kapanışı arasında yer alır."
+            },
+            {
+              "category": "GET ve POST",
+              "title": "Veri İletim Yöntemleri",
+              "theory": "method özelliği form verilerinin sunucuya nasıl gönderileceğini belirler. GET kullanıldığında form elemanlarının değerleri adres satırında ad-değer çiftleri hâlinde görülebilir ve gönderilebilecek veri miktarı sınırlıdır. POST kullanıldığında veriler adres satırında görünmeden sunucuya iletilir. GET ile oluşturulan sorgu sonuçlarının adresi daha sonra kullanılmak üzere saklanabilir.",
+              "keyPoints": [
+                "GET verileri adres satırında gösterebilir.",
+                "POST verileri adres satırında göstermeden iletir.",
+                "GET ile oluşturulan sorgu adresleri saklanabilir."
+              ],
+              "question": "Adres satırında form verilerinin görünmemesi isteniyorsa hangi yöntem daha uygundur?",
+              "options": [
+                "target",
+                "GET",
+                "POST",
+                "name"
+              ],
+              "answer": 2,
+              "explanation": "POST yönteminde form verileri adres satırında görünmeden sunucuya gönderilir."
+            }
+          ]
+        },
+        {
+          "title": "Input Elemanı, HTML5 Giriş Türleri ve Input Özellikleri",
+          "items": [
+            {
+              "category": "Input Özellikleri",
+              "title": "Veri Girişini Sınırlandırmak ve Kolaylaştırmak",
+              "theory": "Input elemanlarına veri türüne göre çeşitli özellikler eklenebilir. maxlength girilebilecek karakter sayısını, min ve max alt ve üst değeri, required zorunlu alanı, readonly yalnızca görüntülenebilen alanı, placeholder kullanıcıya verilen ipucunu, pattern ise belirli veri giriş kalıplarını tanımlar. value başlangıç değerini, name ise sunucuya gönderilecek değişken adını belirler.",
+              "keyPoints": [
+                "Özellikler form elemanına ek işlev veya sınırlama getirir.",
+                "required zorunlu alanları belirler.",
+                "min, max ve step sayısal veya tarihsel sınırlar oluşturabilir."
+              ],
+              "question": "Bir tarih alanına 1 Ocak 2000 tarihinden önce değer girilmemesi için hangi kullanım uygundur?",
+              "options": [
+                "max=\"2000-01-01\"",
+                "min=\"2000-01-01\"",
+                "step=\"2000-01-01\"",
+                "size=\"2000-01-01\""
+              ],
+              "answer": 1,
+              "explanation": "min özelliği girilebilecek en düşük tarih veya sayı değerini belirler."
+            },
+            {
+              "category": "Seçim ve Dosya Elemanları",
+              "title": "Checkbox, Radio, File, Hidden ve Color",
+              "theory": "Checkbox kullanıcının bir veya daha fazla seçeneği işaretlemesini sağlar. Radio aynı name altında seçeneklerden birinin seçilmesine yönelik kullanılır. File kullanıcıya dosya seçme olanağı verir ve multiple ile birden fazla dosya seçilebilir. Hidden kullanıcıya gösterilmeyen ancak sunucuya gönderilebilen verileri taşır. Color ise kullanıcıdan renk seçimi alır ve seçilen değeri sayısal renk ifadesi olarak gönderir.",
+              "keyPoints": [
+                "Checkbox birden fazla seçeneğin işaretlenmesine uygundur.",
+                "Radio seçeneklerden birinin seçilmesini sağlar.",
+                "File, hidden ve color farklı veri türlerini form içinde taşır."
+              ],
+              "question": "Kullanıcıya gösterilmeyen ancak form gönderildiğinde sunucuya iletilebilen veri için hangi input türü kullanılır?",
+              "options": [
+                "checkbox",
+                "file",
+                "hidden",
+                "color"
+              ],
+              "answer": 2,
+              "explanation": "hidden türü kullanıcıya görünmeyen fakat form verisi olarak gönderilebilen alan oluşturur."
+            }
+          ]
+        },
+        {
+          "title": "Düğmeler, Gruplama, Açılır Listeler ve Diğer Form Elemanları",
+          "items": [
+            {
+              "category": "Button ve Düğme Türleri",
+              "title": "Submit, Reset ve Genel Amaçlı Düğmeler",
+              "theory": "Button elemanında type özelliği button, submit veya reset değerlerini alabilir. Submit form verilerini gönderir, reset form alanlarını başlangıç değerlerine döndürür, button ise tasarımcının belirlediği bir işlemi gerçekleştirmek için kullanılabilir. Button elemanı input ile oluşturulan düğmeden farklı olarak açılış ve kapanış etiketiyle yazılır ve resim veya metinlerle biçimlendirilebilir.",
+              "keyPoints": [
+                "Submit gönderim, reset başlangıç değerlerine dönüş sağlar.",
+                "Button genel amaçlı eylemler için kullanılabilir.",
+                "button etiketi kapanış etiketiyle sonlandırılır."
+              ],
+              "question": "İşlevi tasarımcı tarafından belirlenen ve örneğin JavaScript çalıştırabilen düğme türü hangisidir?",
+              "options": [
+                "submit",
+                "button",
+                "reset",
+                "fieldset"
+              ],
+              "answer": 1,
+              "explanation": "Button genel amaçlıdır ve gerçekleştireceği eylem tasarımcı tarafından belirlenebilir."
+            },
+            {
+              "category": "Select, Datalist ve Label",
+              "title": "Seçim Listeleri ve Eleman İlişkilendirme",
+              "theory": "Select açılır liste oluşturur, option tek tek seçenekleri ve optgroup seçenek gruplarını tanımlar. Datalist, input alanlarına önceden tanımlı veri listesi sağlayabilir; kullanıcı listeden seçim yapabileceği gibi listede olmayan farklı bir değer de girebilir. Label ise for değeriyle bir form elemanının id değeri eşleştirildiğinde yazı ile ilgili form elemanını bütün hâline getirir.",
+              "keyPoints": [
+                "Select seçenekleri açılır liste içinde sunar.",
+                "Datalist seçim yanında farklı veri girişine de izin verebilir.",
+                "Label for değeri ile form elemanının id değeri eşleştirilebilir."
+              ],
+              "question": "Kullanıcının listede olmayan bir değeri de metin kutusuna yazabilmesini sağlayan yapı hangisidir?",
+              "options": [
+                "fieldset",
+                "legend",
+                "datalist",
+                "reset"
+              ],
+              "answer": 2,
+              "explanation": "Datalist input alanına öneriler sunar ancak kullanıcı listede yer almayan farklı bir değer de girebilir."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,512 @@
+/* Çöz-Öğren — içerik verisi. Elle de düzenleyebilirsiniz. */
+window.EO_DATA = {
+  "meta": {
+    "id": "mmt89qfinwti9zr",
+    "title": "Bölüm 7",
+    "subtitle": "Önemli Web Çatıları ve Kullanımları",
+    "footer": "",
+    "eyebrow": "Çöz-Öğren"
+  },
+  "lessons": [
+    {
+      "id": "tikla",
+      "kind": "cards",
+      "title": "Tıkla-Öğren",
+      "intro": "Kavramları görmek için kartlara tıklayın; ön yüzde kavram, arka yüzde açıklaması yer alır.",
+      "activities": [
+        {
+          "title": "Web Çatıları: Kavram, Kullanım Alanları ve Yararları",
+          "items": [
+            {
+              "term": "Web Çatısı",
+              "definition": "İnternet ortamında çalışan siteler, servisler, kaynaklar ve arayüzler üretmek için tasarlanmış; rutin geliştirme işlemlerini azaltmayı amaçlayan yazılımdır."
+            },
+            {
+              "term": "CGI",
+              "definition": "Sunucuda çalışan programların kullanıcıdan gelen veriyi işleyerek statik sonuç sayfaları üretmesini sağlayan standarttır."
+            },
+            {
+              "term": "MVC",
+              "definition": "Model, görünüm ve kontrolcü bileşenleriyle veri ile arayüz arasında ayrım kuran yazılım geliştirme desenidir."
+            },
+            {
+              "term": "Sunucu Taraflı Çatı",
+              "definition": "Web uygulamasına ilişkin işlemlerin sunucu üzerinde yürütüldüğü web çatısı yaklaşımıdır."
+            },
+            {
+              "term": "Tarayıcı Taraflı Çatı",
+              "definition": "Kullanıcı etkileşimine göre sayfanın küçük bölümlerini tarayıcı üzerinde güncelleyebilen web çatısı yaklaşımıdır."
+            },
+            {
+              "term": "Tekrar Kullanılabilirlik",
+              "definition": "Bir web çatısındaki sınanmış kodların farklı projelerde yeniden kullanılabilmesini ifade eder."
+            }
+          ]
+        },
+        {
+          "title": "Bootstrap Projesinin Temel Bileşenleri ve Başlatılması",
+          "items": [
+            {
+              "term": "Bootstrap",
+              "definition": "Kullanıcı arayüzlerini geliştirmek için HTML, CSS ve Javascript teknolojilerine dayanan tarayıcı taraflı web çatısıdır."
+            },
+            {
+              "term": "HTML Dokümanı",
+              "definition": "Gerekli dosyaların bağlandığı, metin ve medya içeriklerinin yer aldığı temel proje dosyasıdır."
+            },
+            {
+              "term": "CSS Dokümanı",
+              "definition": "Yazı tipleri, düğmeler, ızgara sistemi ve diğer görsel özelliklerin tanımlandığı dosyadır."
+            },
+            {
+              "term": "Javascript Dokümanları",
+              "definition": "Açılır menü ve kayan resim gibi etkileşimli bileşenlerin çalışması için gerekli jquery.js ve bootstrap.js dosyalarıdır."
+            },
+            {
+              "term": "fonts Klasörü",
+              "definition": "Bootstrap ile gelen simgelerin yerel projelerde kullanılabilmesi için projeye eklenebilen klasördür."
+            },
+            {
+              "term": "Uzak ve Yerel Yöntem",
+              "definition": "Bootstrap dosyalarının içerik dağıtım ağından bağlanması ya da indirilerek proje içinde tutulması biçimleridir."
+            }
+          ]
+        },
+        {
+          "title": "Bootstrap Elementleri, Boyut Sistemi ve Izgara",
+          "items": [
+            {
+              "term": "Boyut Sistemi",
+              "definition": "xs, sm, md ve lg belirteçleriyle farklı tarayıcı genişliklerine göre sunum kuralları tanımlamayı sağlayan Bootstrap yapısıdır."
+            },
+            {
+              "term": "Izgara Sistemi",
+              "definition": "Sayfa içeriğini container, row ve column bileşenleriyle 12 parçalı yatay düzende yerleştiren sistemdir."
+            },
+            {
+              "term": "container",
+              "definition": "Sayfa içeriğini ve ızgara sistemini kapsayan, tarayıcı genişliğine göre belirli genişlikler alan sınıftır."
+            },
+            {
+              "term": "container-fluid",
+              "definition": "Tarayıcı genişliğinin tamamını kapsayacak şekilde boyutlanan akışkan kapsayıcı sınıfıdır."
+            },
+            {
+              "term": "form-control",
+              "definition": "Input, textarea ve select elemanlarına Bootstrap görünümü kazandıran ve bulundukları ortamın genişliğini kullanmalarını sağlayan sınıftır."
+            },
+            {
+              "term": "Carousel",
+              "definition": "Bootstrap sisteminde kayan resimler oluşturmak için kullanılan bileşendir."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yanitla",
+      "kind": "quiz",
+      "title": "Yanıtla-Öğren",
+      "intro": "Soruları yanıtlayın; her seçimden sonra doğru yanıt ve gerekçesi gösterilir.",
+      "activities": [
+        {
+          "title": "Web Çatıları: Kavram, Kullanım Alanları ve Yararları",
+          "items": [
+            {
+              "question": "Web çatılarının temel amacı hangisidir?",
+              "options": [
+                "Rutin geliştirme işlemlerini azaltmak",
+                "Tüm sayfaları yalnızca statik üretmek",
+                "Tarayıcı kullanımını kaldırmak",
+                "Sunucuları devre dışı bırakmak"
+              ],
+              "answer": 0,
+              "explanation": "Web çatıları geliştiricilerin rutin iş yükünü azaltarak web uygulamalarının geliştirilmesini hızlandırmayı amaçlar."
+            },
+            {
+              "question": "Model, görünüm ve kontrolcü bileşenlerinden oluşan geliştirme deseni hangisidir?",
+              "options": [
+                "CGI",
+                "MVC",
+                "HTML",
+                "CSS"
+              ],
+              "answer": 1,
+              "explanation": "MVC; model, görünüm ve kontrolcü bileşenlerinden oluşan geliştirme desenidir."
+            },
+            {
+              "question": "Aşağıdakilerden hangisi sunucu tarafında çalışan web çatılarına örnek olarak verilmiştir?",
+              "options": [
+                "Bootstrap",
+                "AngularJS",
+                "Django",
+                "Backbone.js"
+              ],
+              "answer": 2,
+              "explanation": "Django, sunucu tarafında çalışan web çatılarına verilen örneklerden biridir."
+            },
+            {
+              "question": "Tarayıcı taraflı yaklaşımın sınırlılıklarından biri hangisidir?",
+              "options": [
+                "Kullanıcı etkileşimi sunmaması",
+                "Veri göstermemesi",
+                "Sunucuyla hiç iletişim kurmaması",
+                "İşlem gücünün kullanıcı bilgisayarı ve tarayıcısıyla sınırlı olması"
+              ],
+              "answer": 3,
+              "explanation": "Tarayıcı taraflı yaklaşımda işlem gücü kullanıcı cihazı ve tarayıcıyla sınırlıdır."
+            }
+          ]
+        },
+        {
+          "title": "Bootstrap Projesinin Temel Bileşenleri ve Başlatılması",
+          "items": [
+            {
+              "question": "Bootstrap temel olarak hangi alanda kullanılmak üzere tanıtılmıştır?",
+              "options": [
+                "Veri tabanı yönetimi",
+                "Kullanıcı arayüzü geliştirme",
+                "Sunucu işletim sistemi kurulumu",
+                "Dosya sıkıştırma"
+              ],
+              "answer": 1,
+              "explanation": "Bootstrap internet siteleri ve uygulamaların kullanıcı arayüzlerini geliştirmek için kullanılan web çatısıdır."
+            },
+            {
+              "question": "Bootstrap projesinde görsel özelliklerin tanımlandığı temel dosya hangisidir?",
+              "options": [
+                "index.html",
+                "jquery.js",
+                "bootstrap.css",
+                "fonts klasörü"
+              ],
+              "answer": 2,
+              "explanation": "Bootstrap'ın görsel özellikleri CSS dokümanında tutulur."
+            },
+            {
+              "question": "bootstrap.js dosyasından önce hangi dosya projeye eklenmelidir?",
+              "options": [
+                "bootstrap.css.map",
+                "index.html",
+                "fonts",
+                "jquery.js"
+              ],
+              "answer": 3,
+              "explanation": "bootstrap.js kodlarının düzgün çalışabilmesi için jquery.js önce eklenmelidir."
+            },
+            {
+              "question": "Bootstrap dosyalarını projeye eklemenin yöntemlerinden biri hangisidir?",
+              "options": [
+                "İçerik dağıtım ağındaki uzak dosyaları bağlamak",
+                "Yalnızca resim dosyalarını kullanmak",
+                "HTML dosyasını kaldırmak",
+                "CSS dosyasını silmek"
+              ],
+              "answer": 0,
+              "explanation": "Bootstrap dosyaları içerik dağıtım ağlarından bağlanabilir veya yerel olarak projeye eklenebilir."
+            }
+          ]
+        },
+        {
+          "title": "Bootstrap Elementleri, Boyut Sistemi ve Izgara",
+          "items": [
+            {
+              "question": "Bootstrap boyut sisteminde 768 pikselden küçük genişlikler hangi belirteçle ifade edilir?",
+              "options": [
+                "sm",
+                "md",
+                "xs",
+                "lg"
+              ],
+              "answer": 2,
+              "explanation": "768 pikselden küçük tarayıcı genişlikleri xs belirteciyle ifade edilir."
+            },
+            {
+              "question": "Bootstrap ızgara sistemi yatay genişliği kaç parçaya böler?",
+              "options": [
+                "8",
+                "16",
+                "24",
+                "12"
+              ],
+              "answer": 3,
+              "explanation": "Bootstrap ızgara sisteminde yatay genişlik 12 parçaya bölünür."
+            },
+            {
+              "question": "col-md-4 sınıfı md boyutunda genişliğin ne kadarını kaplar?",
+              "options": [
+                "Üçte birini",
+                "Yarısını",
+                "Dörtte birini",
+                "Tamamını"
+              ],
+              "answer": 0,
+              "explanation": "col-md-4, 12 parçanın 4'ünü kapsadığı için genişliğin üçte birini kullanır."
+            },
+            {
+              "question": "Bootstrap'ta koyu temalı menü çubuğu için hangi sınıf kullanılır?",
+              "options": [
+                "navbar-default",
+                "navbar-inverse",
+                "navbar-nav",
+                "pull-right"
+              ],
+              "answer": 1,
+              "explanation": "navbar-inverse menü çubuğunda koyu tema sağlar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bul",
+      "kind": "crossword",
+      "title": "Bul-Öğren",
+      "intro": "İpuçlarından yola çıkarak kelimeleri bulun. Izgara, verdiğiniz kelimelerden otomatik kurulur.",
+      "activities": [
+        {
+          "title": "Web Çatıları: Kavram, Kullanım Alanları ve Yararları",
+          "items": [
+            {
+              "answer": "ÇATI",
+              "clue": "Web uygulaması geliştirmede hazır yapı ve servisler sağlayan yazılım türü"
+            },
+            {
+              "answer": "SUNUCU",
+              "clue": "İstemlerden gelen verileri işleyip sayfa veya servis çıktıları üretebilen bilgisayar tarafı"
+            },
+            {
+              "answer": "TARAYICI",
+              "clue": "Kullanıcının web sayfalarını görüntülediği ve istemci taraflı kodların çalışabildiği yazılım"
+            },
+            {
+              "answer": "KONTROLCÜ",
+              "clue": "MVC deseninde veri ile görünüm arasında köprü görevi gören bileşen"
+            },
+            {
+              "answer": "ARAYÜZ",
+              "clue": "Kullanıcının uygulama ile etkileşime geçtiği görsel katman"
+            },
+            {
+              "answer": "GÜVENİRLİK",
+              "clue": "Kodların çok sayıda projede sınanması ve sorunların giderilmesiyle yükselen yazılım niteliği"
+            }
+          ]
+        },
+        {
+          "title": "Bootstrap Projesinin Temel Bileşenleri ve Başlatılması",
+          "items": [
+            {
+              "answer": "BOOTSTRAP",
+              "clue": "HTML, CSS ve Javascript temelli kullanıcı arayüzü geliştirme çatısının adı"
+            },
+            {
+              "answer": "ÖNYÜZ",
+              "clue": "Programlama literatüründe kullanıcının gördüğü arayüz katmanına verilen ad"
+            },
+            {
+              "answer": "ARKAYÜZ",
+              "clue": "Veri tabanı erişimi ve hesaplama rutinleri gibi kullanıcının görmediği işlevlerin bulunduğu katman"
+            },
+            {
+              "answer": "SİMGELER",
+              "clue": "Yerel projelerde fonts klasörüyle birlikte gelen küçük görsel işaretlerin genel adı"
+            },
+            {
+              "answer": "UZAK",
+              "clue": "Dosyaların içerik dağıtım ağındaki sunuculardan bağlandığı yöntemi niteleyen sözcük"
+            },
+            {
+              "answer": "YEREL",
+              "clue": "Gerekli dosyaların indirilip proje klasörleri içinde tutulduğu yöntemi niteleyen sözcük"
+            },
+            {
+              "answer": "KÜÇÜLTME",
+              "clue": "Dosya boyutunu azaltmak amacıyla boşluk ve satır sonu karakterlerini kaldırma işlemi"
+            }
+          ]
+        },
+        {
+          "title": "Bootstrap Elementleri, Boyut Sistemi ve Izgara",
+          "items": [
+            {
+              "answer": "IZGARA",
+              "clue": "Container, row ve column yapılarıyla sayfayı on iki yatay parçaya bölen yerleşim sistemi"
+            },
+            {
+              "answer": "KIRILMA",
+              "clue": "xs, sm, md ve lg aralıklarını birbirinden ayıran ekran genişliği sınırı"
+            },
+            {
+              "answer": "TİPOGRAFİ",
+              "clue": "Yazılı materyallerin okunaklı, kavranabilir ve çekici hazırlanmasıyla ilgilenen alan"
+            },
+            {
+              "answer": "GÖRSEL",
+              "clue": "img-responsive, img-rounded ve img-circle sınıflarıyla sunumu düzenlenebilen medya öğesi"
+            },
+            {
+              "answer": "SEKME",
+              "clue": "nav-tabs ile hazırlanan menüde tıklanarak farklı içerik bölümlerini açan başlık öğesi"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eslestir",
+      "kind": "match",
+      "title": "Eşleştir-Öğren",
+      "intro": "Açıklamayı seçip karşısındaki kavramla eşleştirin.",
+      "activities": [
+        {
+          "title": "Web Çatıları: Kavram, Kullanım Alanları ve Yararları",
+          "items": [
+            {
+              "term": "Django",
+              "definition": "Sunucu tarafında kullanılabilen web çatısı örneğidir."
+            },
+            {
+              "term": "Ruby on Rails",
+              "definition": "Ruby dilinin yeteneklerini geliştirmek için hazırlanmış ve MVC yaklaşımını kullanan web çatısı örneğidir."
+            },
+            {
+              "term": "AngularJS",
+              "definition": "Tarayıcı tarafında kullanılabilen web çatısı örneklerinden biridir."
+            },
+            {
+              "term": "Bootstrap",
+              "definition": "Tarayıcı tarafında çalışan ve kullanıcı arayüzü geliştirmeye yönelik web çatısıdır."
+            },
+            {
+              "term": "MVC",
+              "definition": "Model, görünüm ve kontrolcü bileşenlerinden oluşan geliştirme desenidir."
+            }
+          ]
+        },
+        {
+          "title": "Bootstrap Projesinin Temel Bileşenleri ve Başlatılması",
+          "items": [
+            {
+              "term": "index.html",
+              "definition": "Projenin giriş sayfası olarak kullanılan HTML dokümanıdır."
+            },
+            {
+              "term": "bootstrap.css",
+              "definition": "Bootstrap sistemindeki temel görsel kuralları içerir."
+            },
+            {
+              "term": "jquery.js",
+              "definition": "bootstrap.js dosyasından önce eklenmesi gereken Javascript dosyasıdır."
+            },
+            {
+              "term": "bootstrap.js",
+              "definition": "Etkileşimli Bootstrap bileşenlerinin çalışmasına destek verir."
+            },
+            {
+              "term": "fonts",
+              "definition": "Bootstrap ile gelen simgelerin yerel projelerde kullanılmasına olanak sağlar."
+            }
+          ]
+        },
+        {
+          "title": "Bootstrap Elementleri, Boyut Sistemi ve Izgara",
+          "items": [
+            {
+              "term": "xs",
+              "definition": "Tarayıcı genişliğinin 768 pikselden küçük olduğu aralığı ifade eder."
+            },
+            {
+              "term": "sm",
+              "definition": "768 ile 991 piksel arasındaki tarayıcı genişliklerini ifade eder."
+            },
+            {
+              "term": "img-responsive",
+              "definition": "Görselin bulunduğu ortamın genişliğine göre oranlı biçimde ölçeklenmesini sağlar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dene",
+      "kind": "study",
+      "title": "Dene-Öğren",
+      "intro": "Kısa metni okuyun, öne çıkan noktaları inceleyin ve kontrol sorusunu yanıtlayın.",
+      "activities": [
+        {
+          "title": "Web Çatıları: Kavram, Kullanım Alanları ve Yararları",
+          "items": [
+            {
+              "category": "Web Çatılarının Yararları",
+              "title": "Tekrar Kullanılabilir Kod ve Geliştirici Desteği",
+              "theory": "Web çatıları deneyimli geliştiriciler tarafından tekrar kullanılabilirlik ilkesiyle üretilir. Kodlar farklı projelerde kullanıldıkça sınanır ve sorunları giderilir. Böylece proje güvenirliği yükselirken geliştirme süresi kısalabilir. Geliştirici forumları ve yardım dokümanları da destek sağlar.",
+              "keyPoints": [
+                "Hazır ve sınanmış kodlar tekrar kullanılabilir.",
+                "Geliştirici toplulukları yardım sağlar.",
+                "Rutin işlerin azalması zaman kazandırır."
+              ],
+              "question": "Web çatılarının önemli yararlarından biri hangisidir?",
+              "options": [
+                "Sınanmış kodların yeniden kullanılabilmesi",
+                "Her projede rutin işlevlerin baştan yazılması",
+                "Yardım kaynaklarının azaltılması",
+                "Geliştirme süresinin uzatılması"
+              ],
+              "answer": 0,
+              "explanation": "Tekrar kullanılabilir ve sınanmış kodlar geliştirme süresini kısaltmaya yardımcı olur."
+            }
+          ]
+        },
+        {
+          "title": "Bootstrap Projesinin Temel Bileşenleri ve Başlatılması",
+          "items": [
+            {
+              "category": "Uzak ve Yerel Yöntem",
+              "title": "Bootstrap Dosyalarını Projeye Ekleme",
+              "theory": "Uzak yöntemde Bootstrap dosyaları içerik dağıtım ağlarından çağrılır. Bu yöntem sunucu disk alanı kullanmaz ve önceden indirilmiş dosyalardan yararlanabilir; ancak internet ve dış kaynak bağımlılığı oluşturur. Yerel yöntemde dosyalar indirilerek proje klasörlerinde tutulur.",
+              "keyPoints": [
+                "Uzak yöntem içerik dağıtım ağındaki dosyaları kullanır.",
+                "Uzak yöntemde dış kaynak bağımlılığı vardır.",
+                "Yerel yöntemde dosyalar proje içinde tutulur."
+              ],
+              "question": "Uzak dosya kullanımının sınırlılıklarından biri hangisidir?",
+              "options": [
+                "HTML kullanımını engellemesi",
+                "Projeyi dış kaynağa bağımlı hâle getirmesi",
+                "CSS dosyasını gereksiz kılması",
+                "Simgeleri kaldırması"
+              ],
+              "answer": 1,
+              "explanation": "Uzak yöntem gerekli dosyalar için dış kaynak bağımlılığı oluşturabilir."
+            }
+          ]
+        },
+        {
+          "title": "Bootstrap Elementleri, Boyut Sistemi ve Izgara",
+          "items": [
+            {
+              "category": "Izgara ve Tepkisel Sunum",
+              "title": "Container, Row, Column ve Hazır Sınıflar",
+              "theory": "Bootstrap ızgara sistemi container, row ve column olmak üzere üç temel bileşenden oluşur. Yatay genişlik 12 parçaya bölünür. Sütun sınıflarında xs, sm, md ve lg boyut belirteçleri ile kaplanacak parça sayısı birlikte kullanılır. Bootstrap ayrıca düğme, form, görsel, menü ve kayan resimler için hazır sınıflar sağlar.",
+              "keyPoints": [
+                "Izgara sistemi 12 parçalıdır.",
+                "Sütun sınıflarında boyut ve parça sayısı birlikte belirtilir.",
+                "Hazır sınıflar farklı arayüz elemanlarını biçimlendirir."
+              ],
+              "question": "md boyutunda üç eşit sütunla tüm genişliği kaplamak için hangi sınıf üç kez kullanılabilir?",
+              "options": [
+                "col-md-6",
+                "col-md-3",
+                "col-md-4",
+                "col-md-5"
+              ],
+              "answer": 2,
+              "explanation": "Üç adet col-md-4 sınıfı toplam 12 parçayı kaplayarak üç eşit sütun oluşturur."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};

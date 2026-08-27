@@ -1,0 +1,594 @@
+/* Çöz-Öğren — içerik verisi. Elle de düzenleyebilirsiniz. */
+window.EO_DATA = {
+  "meta": {
+    "id": "mmt4auu99gva7g6",
+    "title": "Bölüm 1",
+    "subtitle": "Temel Kavramlar",
+    "footer": "",
+    "eyebrow": "Çöz-Öğren"
+  },
+  "lessons": [
+    {
+      "id": "tikla",
+      "kind": "cards",
+      "title": "Tıkla-Öğren",
+      "intro": "Kavramları görmek için kartlara tıklayın; ön yüzde kavram, arka yüzde açıklaması yer alır.",
+      "activities": [
+        {
+          "title": "Bilgi Hiyerarşisi ve Bilgiyi İşleme",
+          "items": [
+            {
+              "term": "Veri",
+              "definition": "Sıcaklık, rüzgâr hızı, deprem büyüklüğü, nüfus ve benzeri değerler gibi ilk ortaya çıktığında ham bir öge olarak elde edilen unsurdur."
+            },
+            {
+              "term": "Enformasyon",
+              "definition": "Verinin biçimlendirilerek belirli bir alana ve anlama uygun hâle getirildiği, farklı bağlamlarda farklı biçimde değerlendirilebildiği hâlidir."
+            },
+            {
+              "term": "Bilgi",
+              "definition": "Enformasyonun sınıflandırılıp örgütlenmesi, özümsenmesi ve uzun süreli bellekte gerektiğinde geri çağrılacak biçimde saklanmasıyla oluşan değerdir."
+            },
+            {
+              "term": "Bilgelik",
+              "definition": "Bilgiyi deneyimsel kılarak yerinde ve zamanında kullanmayla yakından ilişkili bir olgunlaşmadır."
+            },
+            {
+              "term": "Bilişim",
+              "definition": "Bilgiyi elde etme, işleme, dağıtımını yapma, işe koşma ve depolama uğraşlarını kapsayan genel alandır."
+            },
+            {
+              "term": "Büyük Veri",
+              "definition": "Geleneksel yöntemlerle işlenmesi ve çözümlenmesi zor olan yüksek hacimli ve hızlı elde edilen veri kümeleridir."
+            }
+          ]
+        },
+        {
+          "title": "Yazılım, İnternet Protokolleri ve Tarayıcılar",
+          "items": [
+            {
+              "term": "Yazılım",
+              "definition": "Bir bilgisayarın işlevsel çalışmasını sağlayan komut temelli işlemlerle oluşturulan programların bütünüdür."
+            },
+            {
+              "term": "Sistem Yazılımı",
+              "definition": "Bilgisayarın kendi çalışma prensibi ile ilişkili görevleri yerine getiren yazılım türüdür."
+            },
+            {
+              "term": "Uygulama Yazılımı",
+              "definition": "Kullanıcı tercihlerine bağlı olarak şekillenen işlevsel yazılımları kapsayan yazılım türüdür."
+            },
+            {
+              "term": "İnternet",
+              "definition": "Bilgisayar ağlarının birbirine bağlanarak oluşturduğu genel ağdır."
+            },
+            {
+              "term": "İnternet Protokolü",
+              "definition": "İnternetteki cihaz ve sunucuların veri paylaşımını, birbirini tanımasını ve iletişimini sağlayan; verilerin paketler hâlinde gönderilmesini ve yönlendirilmesini olanaklı kılan protokoldür."
+            },
+            {
+              "term": "Tarayıcı",
+              "definition": "Web sitelerine erişim ve etkileşim için özelleşmiş, web içeriğini işleyip kullanıcıya grafik kullanıcı arayüzü sunan yazılımdır."
+            }
+          ]
+        },
+        {
+          "title": "Bilgisayar Ağları ve Veri Tabanı",
+          "items": [
+            {
+              "term": "Bilgisayar Ağı",
+              "definition": "Birden fazla bilgisayar ve diğer cihazların veri iletişimi ve paylaşımı için bağlantı hâlinde olduğu sistemdir."
+            },
+            {
+              "term": "LAN",
+              "definition": "Ev veya iş yeri gibi sınırlı alanlarda oluşturulan, dışa kapalı yerel alan ağıdır."
+            },
+            {
+              "term": "WAN",
+              "definition": "Birbirinden çok uzakta bulunan yerel alan ağlarının işlevsel ve verimli kullanılabilmesi için kurgulanan geniş alan ağıdır."
+            },
+            {
+              "term": "MAN",
+              "definition": "Yerel alan ağlarından daha geniş olup büyük iş yerleri, üniversiteler veya devlet dairelerinin farklı şubeleri arasında kullanılabilen metropol alan ağıdır."
+            },
+            {
+              "term": "SAN",
+              "definition": "Yedekleme, depolama ve veri paylaşımına olanak tanıyan paylaşımlı depolama alt sistemlerine erişim sağlayan ağdır."
+            },
+            {
+              "term": "Veri Tabanı",
+              "definition": "Bilgisayar sistemlerinde elektronik olarak depolanmış, düzenli biçimde yapılandırılmış veri veya bilgi dağarcığıdır."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yanitla",
+      "kind": "quiz",
+      "title": "Yanıtla-Öğren",
+      "intro": "Soruları yanıtlayın; her seçimden sonra doğru yanıt ve gerekçesi gösterilir.",
+      "activities": [
+        {
+          "title": "Bilgi Hiyerarşisi ve Bilgiyi İşleme",
+          "items": [
+            {
+              "question": "Duyusal belleğin bilgi tutma süresi aşağıdakilerden hangisidir?",
+              "options": [
+                "0.5 ile 3.5 saniye",
+                "15 ile 30 saniye",
+                "Belirli bir zaman sınırı yoktur",
+                "Yalnızca birkaç dakika"
+              ],
+              "answer": 0,
+              "explanation": "Duyusal bellek 0.5 ile 3.5 saniye arasında bilgi tutar."
+            },
+            {
+              "question": "Kısa süreli belleğin temel görevi aşağıdakilerden hangisidir?",
+              "options": [
+                "Bilgiyi ömür boyu kalıcı tutmak",
+                "Bilgiyi geçici olarak tutmak",
+                "Yalnızca işitsel bilgileri işlemek",
+                "Bilgiyi ağ üzerinden paylaşmak"
+              ],
+              "answer": 1,
+              "explanation": "Kısa süreli bellek bilginin geçici olarak tutulması görevini görür."
+            },
+            {
+              "question": "Uzun süreli belleğe aktarımda aşağıdakilerden hangisi etkili süreçlerden biridir?",
+              "options": [
+                "Deneyim ve tekrar",
+                "Yalnızca ilk duyusal kayıt",
+                "Sadece geçici işlem",
+                "Ağ bağlantısı kurma"
+              ],
+              "answer": 0,
+              "explanation": "Deneyim, tekrar, ilişkilendirme ve değerlendirme yoluyla bilgiler kısa süreli bellekten uzun süreli belleğe aktarılır."
+            },
+            {
+              "question": "Bilgisayarın temel bileşenleri arasında aşağıdakilerden hangisi yer almaz?",
+              "options": [
+                "Giriş birimleri",
+                "Çıkış birimleri",
+                "Aktarma birimleri",
+                "Depolama birimleri"
+              ],
+              "answer": 2,
+              "explanation": "Bilgisayarın beş temel bileşeni giriş, çıkış, sistem, iletişim ve depolama birimleridir."
+            },
+            {
+              "question": "RAM ile ilgili doğru ifade aşağıdakilerden hangisidir?",
+              "options": [
+                "Kalıcı bir bellektir",
+                "Bilgisayar kapatıldığında üzerindeki veriler silinir",
+                "Yalnızca ağ iletişimi için kullanılır",
+                "Optik disk türüdür"
+              ],
+              "answer": 1,
+              "explanation": "RAM geçici bir bellektir ve bilgisayar kapatıldığında üzerindeki veriler silinir."
+            }
+          ]
+        },
+        {
+          "title": "Yazılım, İnternet Protokolleri ve Tarayıcılar",
+          "items": [
+            {
+              "question": "Demo yazılımın temel özelliği aşağıdakilerden hangisidir?",
+              "options": [
+                "Sınırlı bir süre tanıtım amacıyla ücretsiz kullanılabilmesi",
+                "Kaynak kodunun her koşulda açık olması",
+                "Yalnızca işletim sistemi görevlerini yürütmesi",
+                "Kullanım süresinin hiçbir zaman sona ermemesi"
+              ],
+              "answer": 0,
+              "explanation": "Demo yazılım tanıtım amacıyla bir süre ücretsiz kullanılır; süre dolduğunda devam etmek için lisans satın alınması gerekir."
+            },
+            {
+              "question": "Frontend Developer hangi alanlarda tasarımdan sorumludur?",
+              "options": [
+                "Yalnızca veri tabanı ve sunucu",
+                "Kullanıcı arayüzü ve kullanıcı deneyimi",
+                "Sadece ağ güvenliği ve yönlendirme",
+                "Yalnızca test ve yayınlama"
+              ],
+              "answer": 1,
+              "explanation": "Frontend Developer hem kullanıcı arayüzü hem de kullanıcı deneyimi tasarımından sorumludur."
+            },
+            {
+              "question": "TCP protokolünün görevi aşağıdakilerden hangisidir?",
+              "options": [
+                "Verileri paketler hâlinde ayırıp yeniden birleştirmek",
+                "Web sitesinin kimliğini doğrulamak",
+                "Ağ cihazlarını görüntüleyip yönetmek",
+                "Dosya transferini şifrelemek"
+              ],
+              "answer": 0,
+              "explanation": "TCP verilerin paketler hâlinde ayrılmasını ve daha sonra yeniden birleştirilmesini sağlar."
+            },
+            {
+              "question": "HTTPS hangi amaçla kullanılır?",
+              "options": [
+                "Tarayıcı ile sunucu arasındaki veri iletimini şifrelemek",
+                "Ağ cihazlarının durumunu yönetmek",
+                "Sohbet kanallarını düzenlemek",
+                "Veri paketlerini hedef adrese yönlendirmek"
+              ],
+              "answer": 0,
+              "explanation": "HTTPS tarayıcı ile sunucu arasındaki veri iletiminin şifrelenmesi için kullanılır."
+            },
+            {
+              "question": "Tarayıcı bir URL'nin hangi sunucuda bulunduğunu öğrenmek için nereye istek gönderir?",
+              "options": [
+                "DNS sunucusuna",
+                "Yazıcı sürücüsüne",
+                "Depolama alan ağına",
+                "Ekran kartına"
+              ],
+              "answer": 0,
+              "explanation": "Tarayıcı adresin IP'ye çevrilmesi için DNS sunucusuna istek gönderir ve URL'nin hangi sunucuda bulunduğunu öğrenir."
+            }
+          ]
+        },
+        {
+          "title": "Bilgisayar Ağları ve Veri Tabanı",
+          "items": [
+            {
+              "question": "Özel sanal ağların temel özelliği aşağıdakilerden hangisidir?",
+              "options": [
+                "Yerel servis sağlayıcı ile kurumsal yerel ağ arasında güvenli tünel üzerinden veri iletmek",
+                "Yalnızca tek bilgisayarda çevrimdışı çalışmak",
+                "Sadece optik diskleri paylaşmak",
+                "Web sayfalarını görüntülemek"
+              ],
+              "answer": 0,
+              "explanation": "Özel sanal ağlar yerel internet servis sağlayıcı ile kurumsal yerel ağlar arasında güvenli bir tünel üzerinden veri iletir."
+            },
+            {
+              "question": "İstemci/Sunucu ağında büyük kaynaklara sahip sisteme ne ad verilir?",
+              "options": [
+                "İstemci",
+                "Sunucu",
+                "Dağıtıcı",
+                "Ağ kartı"
+              ],
+              "answer": 1,
+              "explanation": "İstemci/Sunucu ağında büyük kaynaklara sahip sisteme sunucu, düşük kaynaklı sisteme istemci denir."
+            },
+            {
+              "question": "Eş düzey ağın ayırt edici özelliği aşağıdakilerden hangisidir?",
+              "options": [
+                "Her bilgisayarın eş düzeyde çalışması",
+                "Yalnızca tek bir sunucunun işlem yapması",
+                "Sadece kablosuz bağlantı kullanması",
+                "Veri tabanı erişimini engellemesi"
+              ],
+              "answer": 0,
+              "explanation": "Eş düzey ağ her bir bilgisayarın eş düzeyde çalıştığı bir anlayışla kurgulanır."
+            },
+            {
+              "question": "İlişkisel veri tabanlarında işlemlerin uygunluğu hangi ilkelerle ifade edilir?",
+              "options": [
+                "ACID ilkeleri",
+                "HTTP ilkeleri",
+                "GUI ilkeleri",
+                "WWW ilkeleri"
+              ],
+              "answer": 0,
+              "explanation": "İlişkisel veri tabanı işlemlerinde atomiklik, tutarlılık, izolasyon ve dayanıklılık olarak sıralanan ACID ilkeleri önemlidir."
+            },
+            {
+              "question": "Veri tabanı performansını artırmak için sık yapılan sorgular açısından hangi işlem önerilir?",
+              "options": [
+                "İndeksler oluşturmak",
+                "Tüm kullanıcı yetkilerini kaldırmak",
+                "Ağ bağlantısını kapatmak",
+                "Verileri yalnızca fiziksel ortamda tutmak"
+              ],
+              "answer": 0,
+              "explanation": "Veri tabanının performansını artırmak için sık yapılan sorgulara yönelik indeksler oluşturulabilir."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bul",
+      "kind": "crossword",
+      "title": "Bul-Öğren",
+      "intro": "İpuçlarından yola çıkarak kelimeleri bulun. Izgara, verdiğiniz kelimelerden otomatik kurulur.",
+      "activities": [
+        {
+          "title": "Bilgi Hiyerarşisi ve Bilgiyi İşleme",
+          "items": [
+            {
+              "answer": "VERİ",
+              "clue": "İlk ortaya çıktığında ham bir öge olarak elde edilen değer"
+            },
+            {
+              "answer": "BİLGELİK",
+              "clue": "Bilgiyi deneyimsel biçimde yerinde ve zamanında kullanma düzeyi"
+            },
+            {
+              "answer": "BİLİŞİM",
+              "clue": "Bilgiyi elde etme, işleme, dağıtma ve depolama uğraşlarını kapsayan alan"
+            },
+            {
+              "answer": "HAPTİK",
+              "clue": "Dokunsal bilgileri işleyen duyusal bellek türü"
+            },
+            {
+              "answer": "EKOİK",
+              "clue": "İşitsel bilgileri işleyen duyusal bellek türü"
+            },
+            {
+              "answer": "EPİZODİK",
+              "clue": "Uzun süreli bellekte deneyimlerle ilişkili bellek türü"
+            }
+          ]
+        },
+        {
+          "title": "Yazılım, İnternet Protokolleri ve Tarayıcılar",
+          "items": [
+            {
+              "answer": "YAZILIM",
+              "clue": "Bilgisayarın işlevsel çalışmasını sağlayan programların bütünü"
+            },
+            {
+              "answer": "LİSANSLI",
+              "clue": "Kullanım hakkının satın alınmasını gerektiren yazılım türü"
+            },
+            {
+              "answer": "ÜCRETSİZ",
+              "clue": "Herhangi bir ücret ödenmeden sınırsız süre kullanılabilen yazılım türü"
+            },
+            {
+              "answer": "TARAYICI",
+              "clue": "Web sitelerine erişim ve etkileşim için kullanılan yazılım"
+            },
+            {
+              "answer": "ÖNBELLEK",
+              "clue": "Sık kullanılan dosyaların daha hızlı yüklenmesi için tutulduğu alan"
+            }
+          ]
+        },
+        {
+          "title": "Bilgisayar Ağları ve Veri Tabanı",
+          "items": [
+            {
+              "answer": "İNTRANET",
+              "clue": "Belirli bir kurum veya kuruluş içindeki bilgisayar ve ağları birbirine bağlayan yapı"
+            },
+            {
+              "answer": "DAĞITICI",
+              "clue": "Bilgisayarların ve diğer ağ birimlerinin birbirine bağlanmasına olanak tanıyan donanım"
+            },
+            {
+              "answer": "SUNUCU",
+              "clue": "İstemcilerden gelen verileri işleyip geri gönderen büyük kaynaklı sistem"
+            },
+            {
+              "answer": "İSTEMCİ",
+              "clue": "Sunucuya veri gönderip işlenmiş sonucu alan düşük kaynaklı sistem"
+            },
+            {
+              "answer": "GÜVENLİK",
+              "clue": "Veri erişimini yetki, şifreleme ve yedekleme gibi önlemlerle koruma teması"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eslestir",
+      "kind": "match",
+      "title": "Eşleştir-Öğren",
+      "intro": "Açıklamayı seçip karşısındaki kavramla eşleştirin.",
+      "activities": [
+        {
+          "title": "Bilgi Hiyerarşisi ve Bilgiyi İşleme",
+          "items": [
+            {
+              "term": "Giriş birimleri",
+              "definition": "Bilgisayara veri girişi için kullanılan dokunmatik ekran, klavye, fare, mikrofon ve benzeri ögelerdir."
+            },
+            {
+              "term": "Çıkış birimleri",
+              "definition": "Bilgisayarın işlediği verileri ekran, hoparlör, yazıcı ve benzeri araçlarla kullanıcıya çıkaran birimlerdir."
+            },
+            {
+              "term": "İletişim birimleri",
+              "definition": "Verilerin bir bilgisayardan diğerine veya farklı cihazlara aktarılmasında aracılık eden birimlerdir."
+            },
+            {
+              "term": "Depolama birimleri",
+              "definition": "Bilgisayarın işlediği verileri ve yazılımları saklamak için kullanılan birimlerdir."
+            }
+          ]
+        },
+        {
+          "title": "Yazılım, İnternet Protokolleri ve Tarayıcılar",
+          "items": [
+            {
+              "term": "SNMP",
+              "definition": "Ağ cihazlarını görüntülemek ve yönetmek için kullanılan yönetim amaçlı protokoldür."
+            },
+            {
+              "term": "ICMP",
+              "definition": "İletişim sorunlarını ve verilerin zamanında hedefine ulaşıp ulaşmadığını belirlemek için kullanılan protokoldür."
+            },
+            {
+              "term": "SSL",
+              "definition": "Tarayıcı ile web sitesi arasında güvenli bağlantı kurulmasını ve web sitesinin kimliğinin doğrulanmasını sağlar."
+            },
+            {
+              "term": "SFTP",
+              "definition": "Ağ üzerindeki dosya transferini güvenli ve şifreli hâle getiren protokoldür."
+            },
+            {
+              "term": "IRC",
+              "definition": "Farklı sunuculardaki kullanıcıların aynı sohbet kanallarında buluşmasını düzenleyen metin tabanlı iletişim protokolüdür."
+            }
+          ]
+        },
+        {
+          "title": "Bilgisayar Ağları ve Veri Tabanı",
+          "items": [
+            {
+              "term": "Modem",
+              "definition": "Bilgisayarların telefon hattı üzerinden internete bağlanmasını sağlayan cihazdır."
+            },
+            {
+              "term": "Ağ kartı",
+              "definition": "Bir bilgisayarın ağ üzerindeki araçlarla iletişimini sağlayan iç donanımdır."
+            },
+            {
+              "term": "Yönlendirici",
+              "definition": "İletişim kuralları aynı olan iki bilgisayar ağı arasındaki veri çerçevelerinin iletilmesini sağlayan ağ donanımıdır."
+            },
+            {
+              "term": "Wi-fi",
+              "definition": "Veriyi iletmek için kablo yerine sinyallerin kullanıldığı kablosuz bağlantıdır."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dene",
+      "kind": "study",
+      "title": "Dene-Öğren",
+      "intro": "Kısa metni okuyun, öne çıkan noktaları inceleyin ve kontrol sorusunu yanıtlayın.",
+      "activities": [
+        {
+          "title": "Bilgi Hiyerarşisi ve Bilgiyi İşleme",
+          "items": [
+            {
+              "category": "Bilgiyi İşleme",
+              "title": "Görsel ve işitsel kanallar",
+              "theory": "Uyaranlar görsel ve işitsel olmak üzere iki ayrı kanal bağlamında ele alınır. Görsel kanal metin, resim ve doğadaki görsellerden gelen uyaranları işler. İşitsel kanal ise doğal ve doğal olmayan sesleri işitme yoluyla alır. İşit-görsel materyallerde iki kanal birlikte çalıştığı için bilişsel yük daha önemli hâle gelir.",
+              "keyPoints": [
+                "Görsel kanal görme duyusuyla alınan uyaranlara dayanır.",
+                "İşitsel kanal seslerin işitme yoluyla alınmasıyla çalışır.",
+                "İşit-görsel materyaller bilişsel yükü artırabilir."
+              ],
+              "question": "İşit-görsel materyallerde özellikle önem kazanan kavram aşağıdakilerden hangisidir?",
+              "options": [
+                "Bilişsel yük",
+                "Kaynak kodu",
+                "Ağ kablosu",
+                "Veri tabanı"
+              ],
+              "answer": 0,
+              "explanation": "İşit-görsel materyaller iki kanalı birlikte kullandığı için bilişsel yük konusu daha önemli hâle gelir."
+            },
+            {
+              "category": "Bilgisayar ve Temel Bileşenleri",
+              "title": "Girdi-işlem-çıktı işleyişi",
+              "theory": "Bilgisayarın çalışma prensibinin ana unsurlarından biri girdi-işlem-çıktı işleyişidir. Bilgisayara dâhil edilen bir öge önce algılanır, ardından sistem ve uygulama yazılımları tarafından işlenir. Kullanıcının sisteme katılımıyla bilgi işleme tamamlanır ve çıktı bir dosya, e-posta, ekran görüntüsü veya fiziksel çıktı olarak ortaya çıkabilir.",
+              "keyPoints": [
+                "Süreç girdi, işlem ve çıktı düzeniyle ilerler.",
+                "Sistem ve uygulama yazılımları gelen ögeyi birlikte işler.",
+                "Çıktı dijital ya da fiziksel olabilir."
+              ],
+              "question": "Bilgisayardaki sistem çıktısına aşağıdakilerden hangisi örnek verilebilir?",
+              "options": [
+                "Oluşturulan bir dosya",
+                "Duyusal belleğin ilk kaydı",
+                "Bir veri toplumunun yapısı",
+                "Bilişsel yükün türü"
+              ],
+              "answer": 0,
+              "explanation": "Bilgisayardaki sistem çıktısı oluşturulan bir dosya, gönderilen bir e-posta, ekrandaki görüntüleme veya fiziksel çıktı olabilir."
+            }
+          ]
+        },
+        {
+          "title": "Yazılım, İnternet Protokolleri ve Tarayıcılar",
+          "items": [
+            {
+              "category": "Yazılım Geliştirme",
+              "title": "Yazılım geliştirme yaşam döngüsü ve roller",
+              "theory": "Yazılım geliştirme yaşam döngüsü gereksinim analizi, tasarlama, kodlama ve programlama, test, yayınlama ve güncelleme-bakım aşamalarıyla sürer. Frontend geliştiriciler arayüz ve kullanıcı deneyimiyle, backend geliştiriciler sunucu ve veri tabanı ayrıntılarıyla ilgilenir. Her iki ana geliştirici rolünde de yetenekli olanlara Full Stack Developer denir. DevOps mühendisleri altyapı ve performansı yazılımcılıkla birleştirir.",
+              "keyPoints": [
+                "Gereksinim analizi geliştirme yaşam döngüsünün parçasıdır.",
+                "Frontend ve backend geliştiricilerin görev alanları farklıdır.",
+                "Full Stack Developer iki ana geliştirici rolünde de yeteneklidir."
+              ],
+              "question": "Altyapı ve performansı yazılımcılıkla birleştiren rol aşağıdakilerden hangisidir?",
+              "options": [
+                "DevOps mühendisi",
+                "Frontend Developer",
+                "Backend Developer",
+                "UX Designer"
+              ],
+              "answer": 0,
+              "explanation": "DevOps mühendisleri altyapı ve performansı yazılımcılıkla birleştiren aktörlerdir."
+            },
+            {
+              "category": "Tarayıcıların Çalışması",
+              "title": "Bir web sayfasının görüntülenmesi",
+              "theory": "Tarayıcıya bir URL girildikten sonra adresin IP'ye çevrilmesi için DNS sunucusuna istek gönderilir. Tarayıcı belirlenen sunucuyla HTTP veya HTTPS üzerinden bağlantı kurar ve web sayfasını ister. Sunucudan gelen HTML, CSS, JavaScript ve diğer içerikler indirilip işlenir. Sayfa kullanıcıya görüntülenirken büyük görseller veya videolar yüklenmeye devam edebilir ve sık kullanılan dosyalar önbelleğe alınabilir.",
+              "keyPoints": [
+                "DNS adresin IP'ye çevrilmesinde kullanılır.",
+                "HTTP veya HTTPS üzerinden sunucuyla bağlantı kurulur.",
+                "HTML, CSS ve JavaScript tarayıcı tarafından işlenir."
+              ],
+              "question": "Tarayıcı sunucudan gelen HTML dosyasını okuduktan sonra neyi belirler?",
+              "options": [
+                "Sayfanın nasıl görüntüleneceğini",
+                "Bilgisayarın RAM kapasitesini",
+                "Ağ kablosunun uzunluğunu",
+                "Veri tabanının indeks sayısını"
+              ],
+              "answer": 0,
+              "explanation": "Tarayıcı gelen HTML dosyasını okur ve sayfayı nasıl görüntüleyeceğini belirler."
+            }
+          ]
+        },
+        {
+          "title": "Bilgisayar Ağları ve Veri Tabanı",
+          "items": [
+            {
+              "category": "Veri Tabanı",
+              "title": "İşlevsel veri tabanı kullanımı",
+              "theory": "Bir veri tabanını işlevsel kullanmak için tasarım, tutarlılık, güncellik, güvenlik ve optimizasyon temalarına dikkat edilir. Tasarım veriler arasındaki ilişkilerin doğru modellenmesini ve kuralların tanımlanmasını gerektirir. Güvenlikte kullanıcılara yalnızca gereksinim duydukları veri kümelerine erişim yetkisi verilmesi ve hassas yapıların şifrelenmesi öne çıkar. Optimizasyonda sık yapılan sorgular için indeks oluşturma ve artan veri ile kullanıcı sayısına göre ölçeklendirme önemlidir.",
+              "keyPoints": [
+                "Tasarım veri ilişkilerinin doğru modellenmesine dayanır.",
+                "Güvenlikte erişim yetkileri sınırlandırılır.",
+                "Optimizasyon performansı artırmaya yöneliktir."
+              ],
+              "question": "Hassas bilgiler içeren veri tabanı yapıları için hangi önlem önerilir?",
+              "options": [
+                "Şifreleme",
+                "Tüm yetkileri genişletme",
+                "Güncellemeleri durdurma",
+                "İndeksleri silme"
+              ],
+              "answer": 0,
+              "explanation": "Hassas bilgiler içeren yapılar şifrelenmeli ve erişim yetkileri gereksinimle sınırlandırılmalıdır."
+            },
+            {
+              "category": "Ağ ve Veri Tabanı İlişkisi",
+              "title": "Ortak veri tabanına ağ üzerinden erişim",
+              "theory": "Bilgisayar ağları birden fazla cihazın aynı veri tabanına erişimine olanak tanır. Üniversitelerde farklı fakülteler ortak bir öğrenci bilgi sistemi veri tabanına ağlar üzerinden bağlanabilir. Kullanıcı cihazları veri tabanına sorgu gönderir, sorgu veri tabanı sunucusu tarafından işlenir ve sonuç istemciye geri gönderilir. Bulut tabanlı yapılarda ağlar üzerinden sürekli erişim ve cihazlar arasında senkronizasyon sağlanabilir.",
+              "keyPoints": [
+                "Ağlar birden fazla cihazın aynı veri tabanına erişmesini sağlar.",
+                "İstemci sorgu gönderir, veri tabanı sunucusu sorguyu işler.",
+                "Bulut yapılarında senkronizasyonla veriler ortaklaştırılabilir."
+              ],
+              "question": "İstemci tarafından veri tabanına gönderilen sorguyu hangi yapı işler?",
+              "options": [
+                "Veri tabanı sunucusu",
+                "Ağ kablosu",
+                "Web tarayıcısının önbelleği",
+                "Çıkış birimi"
+              ],
+              "answer": 0,
+              "explanation": "İstemcinin gönderdiği sorgu veri tabanı sunucusu tarafından işlenir ve sonuç yine istemciye gönderilir."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};

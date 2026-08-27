@@ -1,0 +1,595 @@
+/* Çöz-Öğren — içerik verisi. Elle de düzenleyebilirsiniz. */
+window.EO_DATA = {
+  "meta": {
+    "id": "mmt89qfinwti9zr",
+    "title": "Bölüm 4",
+    "subtitle": "Tablo Yapılarının Oluşturulması",
+    "footer": "",
+    "eyebrow": "Çöz-Öğren"
+  },
+  "lessons": [
+    {
+      "id": "tikla",
+      "kind": "cards",
+      "title": "Tıkla-Öğren",
+      "intro": "Kavramları görmek için kartlara tıklayın; ön yüzde kavram, arka yüzde açıklaması yer alır.",
+      "activities": [
+        {
+          "title": "Tabloların Tanımlanması ve Temel HTML Etiketleri",
+          "items": [
+            {
+              "term": "Tablo",
+              "definition": "Verilerin anlaşılırlığını desteklemek amacıyla satır ve sütun biçiminde gruplandırılarak sunulduğu iki boyutlu yapıdır."
+            },
+            {
+              "term": "Satır",
+              "definition": "Tabloda soldan sağa yan yana gelen ve bir birey, grup, nesne, lokasyon veya benzeri anlamlı bir bütüne ait verileri içeren yapıdır."
+            },
+            {
+              "term": "Sütun",
+              "definition": "Bir satırdan diğerine değişebilen tek bir özelliğe ilişkin verileri içeren dikey tablo bileşenidir."
+            },
+            {
+              "term": "Hücre",
+              "definition": "Tablodaki her bir dikdörtgen alanı ifade eder ve içerisinde veri bulunur."
+            },
+            {
+              "term": "table Etiketi",
+              "definition": "HTML içinde bir tabloyu tanımlamak ve tablo yapısını başlatıp bitirmek için kullanılan etikettir."
+            },
+            {
+              "term": "th Etiketi",
+              "definition": "Bir hücrenin tablo başlığı olduğunu belirten ve varsayılan olarak içeriği koyu ve ortalı gösterebilen etikettir."
+            }
+          ]
+        },
+        {
+          "title": "Tabloların CSS ile Biçimlendirilmesi",
+          "items": [
+            {
+              "term": "border",
+              "definition": "Tablo, tablo başlığı veya hücrelerin çevresindeki kenarlığın kalınlığını, çizgi türünü ve rengini tanımlayan CSS özelliğidir."
+            },
+            {
+              "term": "border-collapse",
+              "definition": "Tablo ve hücre kenarlıklarının çift görünmesini önleyerek kenarlıkları tek çizgi görünümüne düşürmek için kullanılan CSS özelliğidir."
+            },
+            {
+              "term": "border-spacing",
+              "definition": "Tablo kenarlığı ile hücreler arasındaki boşluğu belirlemek için kullanılan CSS özelliğidir."
+            },
+            {
+              "term": "padding",
+              "definition": "Hücre kenarlığı ile hücre içindeki veri arasında bırakılacak boşluğu ayarlayan CSS özelliğidir."
+            },
+            {
+              "term": "text-align",
+              "definition": "Tablo başlığı veya hücre içindeki verinin sola, sağa ya da ortaya hizalanmasını belirleyen CSS özelliğidir."
+            },
+            {
+              "term": "id attribute",
+              "definition": "Tablolara kimlik verilmesini ve belirli tablolara diğerlerinden farklı stil özellikleri uygulanmasını sağlayan özelliktir."
+            }
+          ]
+        },
+        {
+          "title": "Tabloların Bölünmesi: colspan ve rowspan",
+          "items": [
+            {
+              "term": "colspan",
+              "definition": "Bir hücrenin birden fazla sütunu kapsamasını sağlamak için kullanılan tablo özelliğidir."
+            },
+            {
+              "term": "Sütun Bölme",
+              "definition": "colspan kullanılarak bir hücrenin yatay yönde birden fazla sütun alanını kapsayacak biçimde düzenlenmesidir."
+            },
+            {
+              "term": "Birleşik Kullanım",
+              "definition": "Bir tablo yapısında colspan ve rowspan özelliklerinin birlikte kullanılarak daha karmaşık hücre düzenlerinin oluşturulmasıdır."
+            },
+            {
+              "term": "Hiyerarşik Veri",
+              "definition": "HTML tablolarında düzenli bir yapı içinde tutulabilen ve otomatik veri çıkarma çalışmalarına konu olabilen veri düzenidir."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yanitla",
+      "kind": "quiz",
+      "title": "Yanıtla-Öğren",
+      "intro": "Soruları yanıtlayın; her seçimden sonra doğru yanıt ve gerekçesi gösterilir.",
+      "activities": [
+        {
+          "title": "Tabloların Tanımlanması ve Temel HTML Etiketleri",
+          "items": [
+            {
+              "question": "HTML'de bir tabloyu tanımlamak için hangi etiket kullanılır?",
+              "options": [
+                "<table>",
+                "<tr>",
+                "<td>",
+                "<th>"
+              ],
+              "answer": 0,
+              "explanation": "table etiketi tablo yapısını başlatmak ve tamamlamak için kullanılır."
+            },
+            {
+              "question": "Tabloda yeni bir satır oluşturmak için hangi etiket kullanılır?",
+              "options": [
+                "<td>",
+                "<tr>",
+                "<caption>",
+                "<th>"
+              ],
+              "answer": 1,
+              "explanation": "tr etiketi table rows ifadesinin kısaltmasıdır ve tabloda bir satır oluşturur."
+            },
+            {
+              "question": "Bir tablo hücresine veri yazmak için hangi etiket kullanılır?",
+              "options": [
+                "<table>",
+                "<caption>",
+                "<td>",
+                "<style>"
+              ],
+              "answer": 2,
+              "explanation": "td etiketi bir hücre oluşturur ve açılış ile kapanış etiketi arasındaki veriyi hücreye yazar."
+            },
+            {
+              "question": "Tablo başlığı olarak tanımlanan hücre için hangi etiket kullanılır?",
+              "options": [
+                "<td>",
+                "<tr>",
+                "<table>",
+                "<th>"
+              ],
+              "answer": 3,
+              "explanation": "th etiketi hücrenin tablo başlığı olduğunu belirtir."
+            },
+            {
+              "question": "Bir tabloya açıklayıcı ad eklemek için hangi etiket kullanılır?",
+              "options": [
+                "<caption>",
+                "<td>",
+                "<tr>",
+                "<body>"
+              ],
+              "answer": 0,
+              "explanation": "caption etiketi tabloya bir ad veya açıklayıcı başlık eklemek için kullanılır."
+            }
+          ]
+        },
+        {
+          "title": "Tabloların CSS ile Biçimlendirilmesi",
+          "items": [
+            {
+              "question": "Tablo ve hücre kenarlıklarının çift görünmesini önlemek için hangi CSS özelliği kullanılır?",
+              "options": [
+                "border-spacing",
+                "border-collapse",
+                "padding",
+                "text-align"
+              ],
+              "answer": 1,
+              "explanation": "border-collapse kullanıldığında tablo ve hücre kenarlıkları tek kenarlık görünümüne düşürülebilir."
+            },
+            {
+              "question": "Hücre kenarlığı ile veri arasındaki boşluğu hangi özellik belirler?",
+              "options": [
+                "border",
+                "width",
+                "padding",
+                "height"
+              ],
+              "answer": 2,
+              "explanation": "padding hücre çerçevesi ile hücre içindeki veri arasındaki boşluğu ayarlar."
+            },
+            {
+              "question": "Hücre içindeki verinin sola, sağa veya ortaya yerleşimini hangi özellik belirler?",
+              "options": [
+                "height",
+                "border-spacing",
+                "background-color",
+                "text-align"
+              ],
+              "answer": 3,
+              "explanation": "text-align hücre içindeki verinin yatay hizalanmasını belirler."
+            },
+            {
+              "question": "Belirli bir tabloya diğer tablolardan farklı biçim vermek için hangi yapı kullanılabilir?",
+              "options": [
+                "id attribute",
+                "caption",
+                "rowspan",
+                "colspan"
+              ],
+              "answer": 0,
+              "explanation": "id attribute ile tabloya kimlik verilerek belirli stil kuralları yalnızca o tabloya uygulanabilir."
+            },
+            {
+              "question": "Tek ve çift numaralı satırlara farklı arka plan renkleri vermek için hangi seçici yapısından yararlanılabilir?",
+              "options": [
+                "padding-left",
+                "nth-child",
+                "border-collapse",
+                "caption"
+              ],
+              "answer": 1,
+              "explanation": "nth-child(odd) ve nth-child(even) kullanılarak tek ve çift numaralı satırlar farklı biçimlendirilebilir."
+            }
+          ]
+        },
+        {
+          "title": "Tabloların Bölünmesi: colspan ve rowspan",
+          "items": [
+            {
+              "question": "Bir hücrenin iki sütunu kapsamasını sağlamak için hangi özellik kullanılır?",
+              "options": [
+                "rowspan",
+                "border",
+                "colspan",
+                "padding"
+              ],
+              "answer": 2,
+              "explanation": "colspan sütunlara ilişkin işlem yapar ve hücrenin birden fazla sütun alanını kapsamasını sağlar."
+            },
+            {
+              "question": "Telefon Numarası başlığının iki sütunu kapsaması için hangi kullanım uygundur?",
+              "options": [
+                "<th colspan=\"2\">Telefon Numarası<\/th>",
+                "<th rowspan=\"2\">Telefon Numarası<\/th>",
+                "<td width=\"2\">Telefon Numarası<\/td>",
+                "<tr colspan=\"2\">Telefon Numarası<\/tr>"
+              ],
+              "answer": 0,
+              "explanation": "colspan=\"2\" başlık hücresinin iki sütunluk alanı kapsamasını sağlar."
+            },
+            {
+              "question": "colspan ve rowspan için doğru karşılaştırma hangisidir?",
+              "options": [
+                "İkisi de yalnızca renk değiştirir",
+                "colspan sütunlara, rowspan satırlara ilişkin işlem yapar",
+                "colspan satırlara, rowspan sütunlara ilişkin işlem yapar",
+                "İkisi de yalnızca tablo başlığında kullanılabilir"
+              ],
+              "answer": 1,
+              "explanation": "colspan sütunlara, rowspan ise satırlara ilişkin kapsama işlemlerinde kullanılır."
+            },
+            {
+              "question": "colspan ve rowspan birlikte kullanılabilir mi?",
+              "options": [
+                "Hayır, aynı tabloda bulunamaz",
+                "Yalnızca caption içinde kullanılabilir",
+                "Evet, aynı tablo yapısında birlikte kullanılabilir",
+                "Yalnızca CSS içinde kullanılabilir"
+              ],
+              "answer": 2,
+              "explanation": "Bu iki özellik ayrı ayrı kullanılabildiği gibi aynı tablo yapısında birlikte de kullanılabilir."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bul",
+      "kind": "crossword",
+      "title": "Bul-Öğren",
+      "intro": "İpuçlarından yola çıkarak kelimeleri bulun. Izgara, verdiğiniz kelimelerden otomatik kurulur.",
+      "activities": [
+        {
+          "title": "Tabloların Tanımlanması ve Temel HTML Etiketleri",
+          "items": [
+            {
+              "answer": "TABLO",
+              "clue": "Verileri yatay ve dikey gruplar hâlinde düzenleyerek sunan iki boyutlu yapı"
+            },
+            {
+              "answer": "SÜTUN",
+              "clue": "Aynı özelliğe ait değerlerin yukarıdan aşağıya sıralandığı dikey bölüm"
+            },
+            {
+              "answer": "HÜCRE",
+              "clue": "Yatay ve dikey bölümlerin kesişmesiyle oluşan ve içinde değer bulunan kutucuk"
+            },
+            {
+              "answer": "VERİ",
+              "clue": "Bir kutucuğun içinde yer alan ad, soyad, puan veya benzeri bilgi"
+            },
+            {
+              "answer": "BAŞLIK",
+              "clue": "Bir bölümün ne içerdiğini açıklayan ve th ile tanımlanabilen üst ifade"
+            },
+            {
+              "answer": "CAPTİON",
+              "clue": "Bir çizelgeye genel ad vermek için kullanılan HTML öğesinin adı"
+            }
+          ]
+        },
+        {
+          "title": "Tabloların CSS ile Biçimlendirilmesi",
+          "items": [
+            {
+              "answer": "KENARLIK",
+              "clue": "border özelliğiyle bir çizelgenin veya kutucuğun çevresine eklenen çizgi"
+            },
+            {
+              "answer": "BOŞLUK",
+              "clue": "padding veya border-spacing ile hücre çevresinde ayarlanabilen mesafe"
+            },
+            {
+              "answer": "HİZALAMA",
+              "clue": "text-align ile değerin sola, sağa ya da ortaya yerleştirilmesi işlemi"
+            },
+            {
+              "answer": "KİMLİK",
+              "clue": "id attribute ile belirli bir öğeyi diğerlerinden ayırmak için verilen tanımlayıcı"
+            },
+            {
+              "answer": "BİÇİM",
+              "clue": "Bir çizelgenin çizgi, renk, dolgu ve yerleşim özelliklerinin genel görünümü"
+            },
+            {
+              "answer": "BÜTÜNLÜK",
+              "clue": "Aynı sayfadaki çizelgelerin ortak görünüm kullanmasıyla desteklenen tasarım ilkesi"
+            }
+          ]
+        },
+        {
+          "title": "Tabloların Bölünmesi: colspan ve rowspan",
+          "items": [
+            {
+              "answer": "COLSPAN",
+              "clue": "Bir kutucuğun yatay yönde birden fazla alanı kapsamasını sağlayan HTML özelliği"
+            },
+            {
+              "answer": "ROWSPAN",
+              "clue": "Bir kutucuğun dikey yönde birden fazla alanı kapsamasını sağlayan HTML özelliği"
+            },
+            {
+              "answer": "BÖLÜNME",
+              "clue": "Çizelgede hücre alanlarının yatay veya dikey yönde çoğaltılmasıyla ilgili işlem"
+            },
+            {
+              "answer": "TELEFON",
+              "clue": "Kişisel bilgiler örneğinde iki farklı numaranın yer aldığı iletişim bilgisi türü"
+            },
+            {
+              "answer": "KİŞİSEL",
+              "clue": "Adı Soyadı ve iletişim numaralarının yer aldığı örnek çizelgenin bilgi türünü niteleyen sözcük"
+            },
+            {
+              "answer": "HİYERARŞİK",
+              "clue": "Web çizelgelerinden otomatik veri çekme çalışmalarında ele alınan düzenli veri yapısını niteleyen sözcük"
+            },
+            {
+              "answer": "VERİTABANI",
+              "clue": "Çizelge bilgilerinin aktarılabileceği yapılandırılmış bilgi saklama sistemi"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eslestir",
+      "kind": "match",
+      "title": "Eşleştir-Öğren",
+      "intro": "Açıklamayı seçip karşısındaki kavramla eşleştirin.",
+      "activities": [
+        {
+          "title": "Tabloların Tanımlanması ve Temel HTML Etiketleri",
+          "items": [
+            {
+              "term": "<table>",
+              "definition": "Tablo yapısını tanımlar."
+            },
+            {
+              "term": "<tr>",
+              "definition": "Tablo satırını tanımlar."
+            },
+            {
+              "term": "<td>",
+              "definition": "Tablo hücresindeki veriyi tanımlar."
+            },
+            {
+              "term": "<th>",
+              "definition": "Tablo başlığı olarak kullanılacak hücreyi tanımlar."
+            },
+            {
+              "term": "<caption>",
+              "definition": "Tabloya açıklayıcı başlık ekler."
+            }
+          ]
+        },
+        {
+          "title": "Tabloların CSS ile Biçimlendirilmesi",
+          "items": [
+            {
+              "term": "border",
+              "definition": "Kenar çizgisini tanımlar."
+            },
+            {
+              "term": "border-collapse",
+              "definition": "Çift kenarlık görünümünü tek çizgiye düşürür."
+            },
+            {
+              "term": "border-spacing",
+              "definition": "Tablo kenarlığı ile hücre arasındaki boşluğu ayarlar."
+            },
+            {
+              "term": "padding",
+              "definition": "Hücre kenarlığı ile veri arasındaki boşluğu ayarlar."
+            },
+            {
+              "term": "text-align",
+              "definition": "Hücre içindeki verinin hizalanmasını belirler."
+            }
+          ]
+        },
+        {
+          "title": "Tabloların Bölünmesi: colspan ve rowspan",
+          "items": [
+            {
+              "term": "colspan=\"2\"",
+              "definition": "Bir hücrenin iki sütunluk alanı kapsamasını sağlar."
+            },
+            {
+              "term": "rowspan=\"2\"",
+              "definition": "Bir hücrenin iki satırlık alanı kapsamasını sağlar."
+            },
+            {
+              "term": "colspan",
+              "definition": "Sütunlara ilişkin kapsama işlemi yapar."
+            },
+            {
+              "term": "rowspan",
+              "definition": "Satırlara ilişkin kapsama işlemi yapar."
+            },
+            {
+              "term": "Birlikte Kullanım",
+              "definition": "Daha karmaşık tablo düzenlerinde colspan ve rowspan aynı tabloda birlikte kullanılabilir."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dene",
+      "kind": "study",
+      "title": "Dene-Öğren",
+      "intro": "Kısa metni okuyun, öne çıkan noktaları inceleyin ve kontrol sorusunu yanıtlayın.",
+      "activities": [
+        {
+          "title": "Tabloların Tanımlanması ve Temel HTML Etiketleri",
+          "items": [
+            {
+              "category": "Temel Tablo Yapısı",
+              "title": "Satır, Sütun, Hücre ve Veri",
+              "theory": "Tablolar verileri satır ve sütun biçiminde düzenleyen iki boyutlu yapılardır. Bir tabloda dört temel bileşen bulunur: satır, sütun, hücre ve veri. Satırlar bir bütüne ait bilgileri yatay biçimde toplarken sütunlar belirli bir özelliğin farklı satırlardaki değerlerini içerir. Satır ve sütunların kesiştiği her kutucuk bir hücredir ve hücrelerin içinde veriler bulunur.",
+              "keyPoints": [
+                "Tablolar iki boyutlu veri yapılarıdır.",
+                "Temel bileşenler satır, sütun, hücre ve veridir.",
+                "Hücreler verilerin yer aldığı kutucuklardır."
+              ],
+              "question": "Bir tabloda aynı özelliğe ait değerleri farklı satırlarda taşıyan yapı hangisidir?",
+              "options": [
+                "Sütun",
+                "Hücre",
+                "Başlık",
+                "Caption"
+              ],
+              "answer": 0,
+              "explanation": "Sütun, bir satırdan diğerine değişebilen tek bir özelliğe ilişkin verileri içerir."
+            },
+            {
+              "category": "HTML Tablo Etiketleri",
+              "title": "Tabloyu Kodla Oluşturmak",
+              "theory": "HTML'de tablo table etiketiyle oluşturulur. Her satır tr etiketiyle, satır içindeki veri hücreleri td etiketiyle tanımlanır. Tablo başlığı olarak kullanılacak hücrelerde th etiketi tercih edilir. th ile tanımlanan içerik birçok tarayıcıda koyu ve ortalı gösterilir. Tabloya genel bir ad vermek için caption etiketi kullanılabilir.",
+              "keyPoints": [
+                "table tabloyu, tr satırı ve td hücre verisini tanımlar.",
+                "th tablo başlığı hücresini belirtir.",
+                "caption tabloya genel bir ad ekler."
+              ],
+              "question": "Birinci satırdaki hücreleri tablo başlığı hâline getirmek için hangi etiket kullanılmalıdır?",
+              "options": [
+                "<td>",
+                "<tr>",
+                "<caption>",
+                "<th>"
+              ],
+              "answer": 3,
+              "explanation": "th etiketi bir hücreyi tablo başlığı olarak tanımlar."
+            }
+          ]
+        },
+        {
+          "title": "Tabloların CSS ile Biçimlendirilmesi",
+          "items": [
+            {
+              "category": "CSS ile Tablo Biçimlendirme",
+              "title": "Standart ve Yönetilebilir Görünüm",
+              "theory": "Web sayfasında birden fazla tablo bulunabileceği için tabloların ortak biçimlendirme kurallarıyla düzenlenmesi bütünlük sağlar. Stil tanımlamaları table, th ve td öğelerine uygulanabilir. border kenarlıkları, width genişliği, height yüksekliği, padding hücre içi boşluğu ve text-align veri hizalamasını düzenler. Gömülü stil tanımlaması aynı etikete sahip tüm tablolar üzerinde etkili olabilir.",
+              "keyPoints": [
+                "CSS tabloların ortak biçimde görünmesini sağlar.",
+                "table, th ve td için ayrı veya ortak stil kuralları yazılabilir.",
+                "Biçimlendirme yönetilebilirliği ve algılama kolaylığını destekler."
+              ],
+              "question": "Bir sayfadaki tüm tabloların genişliğini sayfanın tamamını kaplayacak şekilde ayarlamak için hangi değer kullanılabilir?",
+              "options": [
+                "width:50%",
+                "width:75%",
+                "width:100%",
+                "height:100%"
+              ],
+              "answer": 2,
+              "explanation": "width:100% tablo genişliğini web sayfasının enine tamamını kaplayacak biçimde ayarlar."
+            },
+            {
+              "category": "Farklı Tablo Formatları",
+              "title": "Kimlik ve Satır Seçicileriyle Özelleştirme",
+              "theory": "Bazı durumlarda aynı sayfada farklı biçimlere sahip tablolar kullanmak gerekebilir. id attribute ile bir tabloya kimlik verilebilir ve table#t01 gibi seçicilerle yalnızca o tabloya ek özellikler uygulanabilir. table#t01 th ile başlık hücreleri ayrıca biçimlendirilebilir. nth-child(odd) ve nth-child(even) seçicileri tek ve çift numaralı satırların farklı renklerle gösterilmesini sağlar.",
+              "keyPoints": [
+                "id attribute belirli bir tabloyu diğerlerinden ayırır.",
+                "table#t01 gibi seçiciler tabloya özgü stil tanımlar.",
+                "odd ve even seçenekleri satırları dönüşümlü biçimlendirmede kullanılabilir."
+              ],
+              "question": "Yalnızca t01 kimlikli tablonun başlık hücrelerini biçimlendirmek için hangi seçici kullanılabilir?",
+              "options": [
+                "table#t01 th",
+                "table th",
+                "td#t01",
+                "tr table"
+              ],
+              "answer": 0,
+              "explanation": "table#t01 th seçicisi t01 kimlikli tablodaki th öğelerine stil uygular."
+            }
+          ]
+        },
+        {
+          "title": "Tabloların Bölünmesi: colspan ve rowspan",
+          "items": [
+            {
+              "category": "Sütunların Bölünmesi",
+              "title": "colspan ile Yatay Kapsama",
+              "theory": "colspan bir hücrenin birden fazla sütunu kapsamasını sağlar. Örneğin Telefon Numarası başlığının altında iki ayrı numara gösterilecekse th colspan=\"2\" kullanılarak başlık iki sütunluk alana yayılabilir. Sonraki satırda ise bu iki sütuna ayrı td hücreleriyle farklı değerler yazılabilir.",
+              "keyPoints": [
+                "colspan sütunlara ilişkin işlem yapar.",
+                "Değer, hücrenin kaç sütunluk alanı kapsayacağını belirtir.",
+                "Başlık veya veri hücrelerinde kullanılabilir."
+              ],
+              "question": "Bir hücrenin üç sütunluk alanı kapsaması için hangi kullanım uygundur?",
+              "options": [
+                "rowspan=\"3\"",
+                "colspan=\"3\"",
+                "width=\"3\"",
+                "tr=\"3\""
+              ],
+              "answer": 1,
+              "explanation": "colspan=\"3\" ilgili hücrenin üç sütunluk alanı kapsamasını sağlar."
+            },
+            {
+              "category": "Satırların Bölünmesi",
+              "title": "rowspan ile Dikey Kapsama",
+              "theory": "rowspan bir hücrenin birden fazla satırı kapsamasını sağlar. Telefon Numarası gibi bir başlık iki farklı satırdaki değerlerle ilişkilendirilecekse th rowspan=\"2\" kullanılarak başlık iki satırlık alana yayılabilir. colspan ve rowspan birlikte kullanıldığında hem yatay hem dikey yönde birleşik yapılar oluşturulabilir.",
+              "keyPoints": [
+                "rowspan satırlara ilişkin işlem yapar.",
+                "Değer, hücrenin kaç satırlık alanı kapsayacağını belirtir.",
+                "colspan ve rowspan birlikte kullanılabilir."
+              ],
+              "question": "Bir başlık hücresinin iki satırı kapsaması için hangi kullanım doğrudur?",
+              "options": [
+                "<th colspan=\"2\">",
+                "<td width=\"2\">",
+                "<tr rowspan=\"2\">",
+                "<th rowspan=\"2\">"
+              ],
+              "answer": 3,
+              "explanation": "th rowspan=\"2\" başlık hücresinin iki satırlık alanı kapsamasını sağlar."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};

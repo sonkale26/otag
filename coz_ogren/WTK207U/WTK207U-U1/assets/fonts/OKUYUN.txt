@@ -1,0 +1,15 @@
+GRAVITY YAZI TİPİ
+
+Etiketler, sayaçlar ve numaralar Gravity yazı tipiyle görüntülenir.
+Gravity Google Fonts'ta bulunmadığı için pakete gömülmemiştir.
+
+Kullanmak için:
+  1. Gravity dosyalarını edinin (woff2 ve woff biçimleri önerilir).
+  2. Bu klasöre şu adlarla koyun (woff2 biçimi):
+       Gravity-Regular.woff2
+       Gravity-Bold.woff2
+  3. Başka bir ayar gerekmez; sayfa yenilendiğinde devreye girer.
+
+Dosyaları koymazsanız görünüm bozulmaz: tarayıcı Inter'e döner.
+Yalnızca geliştirici konsolunda bir adet 404 kaydı görürsünüz; öğrenciyi
+etkilemez. Yazı tipi sisteminizde kuruluysa dosya olmadan da kullanılır.

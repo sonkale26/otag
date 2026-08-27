@@ -1,0 +1,241 @@
+{
+  "meta": {
+    "id": "mmt89qfinwti9zr",
+    "title": "Bölüm 8",
+    "subtitle": "Web Teknolojisinin Geleceği",
+    "footer": "",
+    "eyebrow": "Çöz-Öğren"
+  },
+  "lessons": [
+    {
+      "id": "tikla",
+      "kind": "cards",
+      "title": "Tıkla-Öğren",
+      "intro": "Kavramları görmek için kartlara tıklayın; ön yüzde kavram, arka yüzde açıklaması yer alır.",
+      "activities": [
+        {
+          "title": "Web Teknolojisinin Geleceği",
+          "items": [
+            {
+              "term": "Web 3.0",
+              "definition": "Semantik veya anlamsal Web olarak da adlandırılan, verilerin ve ilişkilerin makineler tarafından anlaşılmasını amaçlayan Web yaklaşımıdır."
+            },
+            {
+              "term": "XML",
+              "definition": "Yapılandırılmış belge ve veriler için kullanılan, bilgi yapısını tanımlayan ve veri alışverişini destekleyen işaretleme dilidir."
+            },
+            {
+              "term": "Ontoloji",
+              "definition": "Bir alana ait kavramları ve bu kavramlar arasındaki ilişkileri biçimsel olarak tanımlayan yapıdır."
+            },
+            {
+              "term": "Bulut Bilişim",
+              "definition": "İnternet üzerinden veri depolama, yazılım, platform ve altyapı gibi hizmetlerin sanal biçimde sunulmasına dayanan yapıdır."
+            },
+            {
+              "term": "SaaS, PaaS ve IaaS",
+              "definition": "Bulut bilişimde sırasıyla yazılım, platform ve altyapının hizmet olarak sunulduğu üç temel modeldir."
+            },
+            {
+              "term": "Mobil Web",
+              "definition": "Akıllı telefon ve tablet gibi taşınabilir cihazlarla, kablosuz ağlar üzerinden zaman ve yerden bağımsız Web erişimini ifade eder."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yanitla",
+      "kind": "quiz",
+      "title": "Yanıtla-Öğren",
+      "intro": "Soruları yanıtlayın; her seçimden sonra doğru yanıt ve gerekçesi gösterilir.",
+      "activities": [
+        {
+          "title": "Web Teknolojisinin Geleceği",
+          "items": [
+            {
+              "question": "Web teknolojisinin ortaya çıkışı hangi gelişmeyle ilişkilendirilmektedir?",
+              "options": [
+                "Tim Berners-Lee'nin HTML'i geliştirmesi",
+                "Bulut bilişimin yaygınlaşması",
+                "Akıllı telefonların üretilmesi",
+                "Sosyal ağların kurulması"
+              ],
+              "answer": 0,
+              "explanation": "Web teknolojisinin ortaya çıkışı Tim Berners-Lee'nin 1989 yılında HTML'i geliştirmesiyle ilişkilendirilmektedir."
+            },
+            {
+              "question": "Semantik Web'in temel amacı hangisidir?",
+              "options": [
+                "Tüm sayfaları statik yapmak",
+                "Web içeriklerini makinelerin de anlayabileceği hâle getirmek",
+                "Sadece görsel içerik kullanmak",
+                "Kullanıcı etkileşimini kaldırmak"
+              ],
+              "answer": 1,
+              "explanation": "Semantik Web, verilerin ve ilişkilerin yazılımlar tarafından anlaşılabilir, yorumlanabilir ve kullanılabilir olmasını amaçlar."
+            },
+            {
+              "question": "Semantik Web'in temel bileşenlerinden biri hangisidir?",
+              "options": [
+                "JPEG",
+                "CSS",
+                "XML",
+                "FTP"
+              ],
+              "answer": 2,
+              "explanation": "XML, Web servisleri ve ontoloji Semantik Web'in temel bileşenleri arasında gösterilmektedir."
+            },
+            {
+              "question": "Kullanıcının kurulum yapmadan buluttaki yazılımı kullanmasını sağlayan model hangisidir?",
+              "options": [
+                "IaaS",
+                "PaaS",
+                "XML",
+                "SaaS"
+              ],
+              "answer": 3,
+              "explanation": "SaaS modelinde kullanıcılar yazılımı internet üzerinden bulut ortamında kullanabilir."
+            },
+            {
+              "question": "Mobil Web uygulamalarının en önemli üstünlüğü hangisidir?",
+              "options": [
+                "Zaman ve yerden bağımsız erişim",
+                "Her zaman daha yüksek işlem gücü",
+                "Daha büyük ekran kullanımı",
+                "Kablolu bağlantı zorunluluğu"
+              ],
+              "answer": 0,
+              "explanation": "Mobil Web uygulamalarının temel üstünlüğü bilgiye ve hizmetlere zaman ve yerden bağımsız biçimde erişilebilmesidir."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bul",
+      "kind": "crossword",
+      "title": "Bul-Öğren",
+      "intro": "İpuçlarından yola çıkarak kelimeleri bulun. Izgara, verdiğiniz kelimelerden otomatik kurulur.",
+      "activities": [
+        {
+          "title": "Web Teknolojisinin Geleceği",
+          "items": [
+            {
+              "answer": "SEMANTİK",
+              "clue": "Bilginin anlamı ve bağlamı üzerinden makinelerce işlenmesini hedefleyen yaklaşımı niteleyen sözcük"
+            },
+            {
+              "answer": "ONTOLOJİ",
+              "clue": "Bir konu alanındaki kavramları ve aralarındaki bağlantıları biçimsel olarak tanımlayan yapı"
+            },
+            {
+              "answer": "ŞEMA",
+              "clue": "Yapılandırılmış verilerin düzenini tanımlamak için kullanılan yapı"
+            },
+            {
+              "answer": "BULUT",
+              "clue": "İnternet üzerinden sanal depolama, yazılım ve altyapı hizmetleri sağlayan teknoloji yaklaşımı"
+            },
+            {
+              "answer": "GİZLİLİK",
+              "clue": "Çevrimiçi hizmetlerde kişisel ve kurumsal verilerin korunmasıyla ilgili önemli sınırlılık"
+            },
+            {
+              "answer": "KABLOSUZ",
+              "clue": "Taşınabilir cihazların fiziksel ağ kablosu olmadan internete bağlanmasını sağlayan iletişim biçimi"
+            },
+            {
+              "answer": "TARAYICI",
+              "clue": "Web sayfalarının internet üzerinden görüntülenmesini sağlayan yazılım"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eslestir",
+      "kind": "match",
+      "title": "Eşleştir-Öğren",
+      "intro": "Açıklamayı seçip karşısındaki kavramla eşleştirin.",
+      "activities": [
+        {
+          "title": "Web Teknolojisinin Geleceği",
+          "items": [
+            {
+              "term": "Web 1.0",
+              "definition": "Statik ve etkileşimsiz Web yapısını ifade eder."
+            },
+            {
+              "term": "Web 2.0",
+              "definition": "Kullanıcıların içerik sağlayabildiği etkileşimli Web yapısıdır."
+            },
+            {
+              "term": "OWL",
+              "definition": "Ontoloji geliştirmek için kullanılan Web Ontoloji Dili'dir."
+            },
+            {
+              "term": "PaaS",
+              "definition": "Bulut ortamında yazılım geliştirmek için platform hizmeti sağlar."
+            },
+            {
+              "term": "IaaS",
+              "definition": "Depolama gibi altyapı hizmetlerini bulut üzerinden sunar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dene",
+      "kind": "study",
+      "title": "Dene-Öğren",
+      "intro": "Kısa metni okuyun, öne çıkan noktaları inceleyin ve kontrol sorusunu yanıtlayın.",
+      "activities": [
+        {
+          "title": "Web Teknolojisinin Geleceği",
+          "items": [
+            {
+              "category": "Semantik ve Ontolojik Web",
+              "title": "Makinelerin Anlayabildiği Web",
+              "theory": "Web'in statik ilk sürümünü etkileşimli Web 2.0 izlemiştir. Web 3.0 olarak da ifade edilen Semantik Web, Web üzerindeki bilgilerin ve ilişkilerin yalnızca insanlar tarafından değil makinelerce de anlaşılmasını amaçlar. Bu yapıda XML, Web servisleri ve ontoloji temel bileşenlerdir. Ontoloji geliştirilirken önce belirli ve sonlu sayıdaki kavramlar belirlenir, ardından bu kavramların hiyerarşileri ve ilişkileri tanımlanır.",
+              "keyPoints": [
+                "Web 3.0 Semantik Web olarak da adlandırılır.",
+                "XML bilgi yapısını tanımlayan bir işaretleme dilidir.",
+                "Ontolojiler kavramları ve ilişkileri biçimsel olarak ifade eder."
+              ],
+              "question": "Ontoloji oluşturma sürecinde kavramlar belirlendikten sonra hangi işlem yapılır?",
+              "options": [
+                "Mobil uygulama geliştirilir",
+                "Bulut hizmeti kiralanır",
+                "Kavramların hiyerarşi ve ilişkileri belirlenir",
+                "HTML görünümü değiştirilir"
+              ],
+              "answer": 2,
+              "explanation": "Ontoloji geliştirmede kavramlar belirlendikten sonra bunların hiyerarşileri ve birbirleriyle ilişkileri ortaya konur."
+            },
+            {
+              "category": "Bulut Bilişim ve Mobil Uygulamalar",
+              "title": "Sanal Hizmetler ve Taşınabilir Erişim",
+              "theory": "Bulut bilişim, veri depolama ve ortak bilgi paylaşımı yanında yazılım, platform ve altyapının hizmet olarak sunulmasına dayanır. SaaS, PaaS ve IaaS temel hizmet modelleridir. Bulut bilişimde maliyet, esneklik ve hizmet kalitesi avantaj; güvenlik, gizlilik, performans ve yasal engeller ise sınırlılık olarak ele alınır. Mobil teknolojiler ise akıllı telefon ve tabletlerle bilgiye ve iletişime zaman ve yerden bağımsız erişim sağlar.",
+              "keyPoints": [
+                "SaaS, PaaS ve IaaS temel bulut hizmet modelleridir.",
+                "Güvenlik ve gizlilik bulut bilişim sınırlılıkları arasındadır.",
+                "Mobil Web zaman ve yerden bağımsız erişim sağlar."
+              ],
+              "question": "Bulut bilişimin sınırlılıklarından biri hangisidir?",
+              "options": [
+                "Esneklik",
+                "Hizmet kalitesi",
+                "Zaman ve yerden bağımsız erişim",
+                "Güvenlik ve gizlilik"
+              ],
+              "answer": 3,
+              "explanation": "Güvenlik ve gizlilik bulut bilişim teknolojisinin önemli sınırlılıkları arasında gösterilmektedir."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

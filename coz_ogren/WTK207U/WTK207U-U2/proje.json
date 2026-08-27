@@ -1,0 +1,595 @@
+{
+  "meta": {
+    "id": "mmt89qfinwti9zr",
+    "title": "Bölüm 2",
+    "subtitle": "Metinlerin Biçimlendirilmesi",
+    "footer": "",
+    "eyebrow": "Çöz-Öğren"
+  },
+  "lessons": [
+    {
+      "id": "tikla",
+      "kind": "cards",
+      "title": "Tıkla-Öğren",
+      "intro": "Kavramları görmek için kartlara tıklayın; ön yüzde kavram, arka yüzde açıklaması yer alır.",
+      "activities": [
+        {
+          "title": "HTML'de Metin Kullanımı ve Karakter Ayarları",
+          "items": [
+            {
+              "term": "HTML Etiketi",
+              "definition": "Küçüktür ve büyüktür işaretleri arasında yazılan ve metin ile diğer öğelerin nasıl gösterileceğini belirleyen kod yapısıdır."
+            },
+            {
+              "term": "Karakter Seti",
+              "definition": "Web sayfasındaki karakterlerin doğru görüntülenmesini sağlayan ve meta etiketi üzerinden tanımlanabilen ayardır."
+            },
+            {
+              "term": "UTF-8",
+              "definition": "Türkçe karakter sorunlarının giderilmesinde charset parametresine atanabilen karakter kodlamasıdır."
+            },
+            {
+              "term": "Başlık Etiketi",
+              "definition": "h1 ile h6 arasında kullanılan ve sayı arttıkça görüntülenen büyüklüğü azalan başlık yapısıdır."
+            },
+            {
+              "term": "Metin Vurgusu",
+              "definition": "Metni koyu, italik veya altı çizili göstermek için b, i ve u etiketleriyle yapılan biçimlendirmedir."
+            },
+            {
+              "term": "Font Etiketi",
+              "definition": "Yazı rengi, büyüklüğü ve tipini color, size ve face parametreleriyle değiştirmek için kullanılan etikettir."
+            }
+          ]
+        },
+        {
+          "title": "Paragraflar, Listeler ve Köprüler",
+          "items": [
+            {
+              "term": "Paragraf",
+              "definition": "p ve /p etiketleri arasında tanımlanan ve gerektiğinde hizalama özellikleri verilebilen metin bloğudur."
+            },
+            {
+              "term": "Hizalama",
+              "definition": "Paragraf metninin align parametresiyle sağa, sola, ortaya veya iki yana yaslı biçimde düzenlenmesidir."
+            },
+            {
+              "term": "Sıralı Liste",
+              "definition": "ol etiketiyle oluşturulan ve maddeleri li etiketleriyle tanımlanan numaralı veya harfli liste yapısıdır."
+            },
+            {
+              "term": "Sırasız Liste",
+              "definition": "ul etiketiyle oluşturulan ve madde işareti biçimi type parametresiyle değiştirilebilen liste yapısıdır."
+            },
+            {
+              "term": "Tanım Listesi",
+              "definition": "dl, dt ve dd etiketleriyle oluşturulan, madde işareti veya numarası göstermeden kategorik yapı sunan liste türüdür."
+            },
+            {
+              "term": "Köprü",
+              "definition": "a etiketi ve href parametresi kullanılarak başka bir sayfaya, web adresine veya dosyaya geçiş sağlayan bağlantıdır."
+            }
+          ]
+        },
+        {
+          "title": "Metinlerde Stil ve CSS Kullanımı",
+          "items": [
+            {
+              "term": "Stil",
+              "definition": "Web sayfasındaki nesnelerin biçimlendirilmesini sağlayan kurallar bütünüdür."
+            },
+            {
+              "term": "CSS",
+              "definition": "Web sayfalarını ve metinleri biçimlendirmek için kullanılan Stil Şablonları yapısıdır."
+            },
+            {
+              "term": "Satır İçi Stil",
+              "definition": "Style parametresinin doğrudan bir HTML etiketinin içinde kullanılmasıyla yalnızca ilgili öğeye uygulanan stil biçimidir."
+            },
+            {
+              "term": "Gömülü Stil",
+              "definition": "Head bölümünde style etiketleri arasında kurallar tanımlanarak sayfadaki ilgili etiketlere topluca uygulanan stil biçimidir."
+            },
+            {
+              "term": "Class Seçici",
+              "definition": "Nokta işaretiyle tanımlanan ve aynı stil grubunun birden çok HTML öğesine uygulanabilmesini sağlayan seçicidir."
+            },
+            {
+              "term": "ID Seçici",
+              "definition": "Kare işaretiyle tanımlanan ve isimlendirilmiş stil kurallarının id parametresiyle ilgili öğeye uygulanmasını sağlayan seçicidir."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yanitla",
+      "kind": "quiz",
+      "title": "Yanıtla-Öğren",
+      "intro": "Soruları yanıtlayın; her seçimden sonra doğru yanıt ve gerekçesi gösterilir.",
+      "activities": [
+        {
+          "title": "HTML'de Metin Kullanımı ve Karakter Ayarları",
+          "items": [
+            {
+              "question": "Türkçe karakter sorunu yaşandığında meta etiketinde hangi parametre kullanılmalıdır?",
+              "options": [
+                "charset",
+                "align",
+                "href",
+                "type"
+              ],
+              "answer": 0,
+              "explanation": "Türkçe karakterlerin doğru gösterilmesi için charset parametresine UTF-8 veya Windows-1254 gibi bir değer atanabilir."
+            },
+            {
+              "question": "HTML'de bir metni koyu göstermek için hangi etiket kullanılır?",
+              "options": [
+                "<i>",
+                "<b>",
+                "<u>",
+                "<br>"
+              ],
+              "answer": 1,
+              "explanation": "Koyu gösterilmek istenen metin b etiketiyle başlatılır ve /b etiketiyle sonlandırılır."
+            },
+            {
+              "question": "h1 ile h6 başlıkları arasındaki ilişki için hangisi doğrudur?",
+              "options": [
+                "Sayı arttıkça başlık büyür",
+                "Tüm başlıklar aynı büyüklüktedir",
+                "Sayı arttıkça başlık küçülür",
+                "Sadece h1 ve h2 kullanılabilir"
+              ],
+              "answer": 2,
+              "explanation": "Başlık etiketlerinde sayı 1'den 6'ya doğru arttıkça başlığın görüntülenen büyüklüğü azalır."
+            },
+            {
+              "question": "Font etiketiyle yazı tipini değiştirmek için hangi parametre kullanılır?",
+              "options": [
+                "color",
+                "size",
+                "align",
+                "face"
+              ],
+              "answer": 3,
+              "explanation": "Font etiketi içinde face yazı tipini, size büyüklüğü ve color ise yazı rengini belirler."
+            },
+            {
+              "question": "HTML'de kelimeler arasına fazladan boşluk eklemek için hangi özel kod kullanılır?",
+              "options": [
+                "&nbsp;",
+                "&lt;",
+                "&gt;",
+                "&quot;"
+              ],
+              "answer": 0,
+              "explanation": "Fazladan boşluk oluşturmak için gerekli sayıda &nbsp; kodu kullanılabilir."
+            }
+          ]
+        },
+        {
+          "title": "Paragraflar, Listeler ve Köprüler",
+          "items": [
+            {
+              "question": "Bir paragrafı iki yana yaslamak için align parametresine hangi değer verilmelidir?",
+              "options": [
+                "center",
+                "left",
+                "right",
+                "justify"
+              ],
+              "answer": 3,
+              "explanation": "Paragrafı iki yana yaslamak için align değerine justify atanır."
+            },
+            {
+              "question": "Sıralı liste oluşturmak için hangi etiket kullanılır?",
+              "options": [
+                "<ol>",
+                "<ul>",
+                "<dl>",
+                "<li>"
+              ],
+              "answer": 0,
+              "explanation": "Sıralı listeler ordered list ifadesinin kısaltması olan ol etiketiyle oluşturulur."
+            },
+            {
+              "question": "Sırasız listelerde madde işareti biçimini değiştirmek için hangi parametre kullanılır?",
+              "options": [
+                "href",
+                "type",
+                "align",
+                "face"
+              ],
+              "answer": 1,
+              "explanation": "ul etiketi içindeki type parametresi disk, circle ve square gibi madde işareti seçeneklerinin belirlenmesini sağlar."
+            },
+            {
+              "question": "Bir bağlantının hedef adresi hangi parametre ile tanımlanır?",
+              "options": [
+                "face",
+                "charset",
+                "href",
+                "size"
+              ],
+              "answer": 2,
+              "explanation": "a etiketi içinde kullanılan href parametresi bağlantının açacağı sayfa veya dosyanın adresini belirtir."
+            },
+            {
+              "question": "Tanım listelerinde kategori başlığını oluşturmak için hangi etiket kullanılır?",
+              "options": [
+                "<dd>",
+                "<li>",
+                "<ol>",
+                "<dt>"
+              ],
+              "answer": 3,
+              "explanation": "Tanım listelerinde kategori başlığı dt, kategori altındaki açıklama veya seçenekler ise dd etiketiyle tanımlanır."
+            }
+          ]
+        },
+        {
+          "title": "Metinlerde Stil ve CSS Kullanımı",
+          "items": [
+            {
+              "question": "Satır içi stil kullanımında temel parametre hangisidir?",
+              "options": [
+                "href",
+                "charset",
+                "style",
+                "type"
+              ],
+              "answer": 2,
+              "explanation": "Satır içi stil, HTML etiketinin içinde style parametresine özellik ve değerlerin yazılmasıyla uygulanır."
+            },
+            {
+              "question": "Paragraf girintisini belirleyen CSS özelliği hangisidir?",
+              "options": [
+                "font-family",
+                "text-align",
+                "text-transform",
+                "text-indent"
+              ],
+              "answer": 3,
+              "explanation": "text-indent özelliği paragraf girintisini belirlemek için kullanılır."
+            },
+            {
+              "question": "Class seçiciler tanımlanırken seçici adının önüne hangi işaret konur?",
+              "options": [],
+              "answer": 0,
+              "explanation": "Class seçiciler nokta işaretiyle, id seçiciler ise kare işaretiyle tanımlanır."
+            },
+            {
+              "question": "Bir metnin belirli bir kelime veya cümle bölümüne stil uygulamak için hangi etiket kullanılabilir?",
+              "options": [
+                "<body>",
+                "<span>",
+                "<title>",
+                "<meta>"
+              ],
+              "answer": 1,
+              "explanation": "Span etiketi bir metnin belirli bölümünü seçerek class veya id aracılığıyla o bölgeye stil uygulanmasını sağlar."
+            },
+            {
+              "question": "Harici CSS dosyasını HTML sayfasına bağlamak için kullanılabilen yöntemlerden biri hangisidir?",
+              "options": [
+                "<font>",
+                "<br>",
+                "<link>",
+                "<ol>"
+              ],
+              "answer": 2,
+              "explanation": "Harici CSS dosyası link etiketiyle veya @import kullanımıyla HTML sayfasına çağrılabilir."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bul",
+      "kind": "crossword",
+      "title": "Bul-Öğren",
+      "intro": "İpuçlarından yola çıkarak kelimeleri bulun. Izgara, verdiğiniz kelimelerden otomatik kurulur.",
+      "activities": [
+        {
+          "title": "HTML'de Metin Kullanımı ve Karakter Ayarları",
+          "items": [
+            {
+              "answer": "ETİKET",
+              "clue": "Küçüktür ve büyüktür işaretleri arasında yazılan temel işaretleme kodu"
+            },
+            {
+              "answer": "KARAKTER",
+              "clue": "Bir yazı sistemindeki harf, rakam ve özel işaretlerin genel adı"
+            },
+            {
+              "answer": "BAŞLIK",
+              "clue": "h1 ile h6 arasında tanımlanan ve önem derecesini gösteren yazı bölümü"
+            },
+            {
+              "answer": "İTALİK",
+              "clue": "i etiketiyle eğik biçimde gösterilen yazı vurgusu"
+            },
+            {
+              "answer": "KOYU",
+              "clue": "b etiketiyle daha kalın görünüm kazandırılan yazı özelliği"
+            },
+            {
+              "answer": "BOŞLUK",
+              "clue": "&nbsp; kodunun kullanılmasıyla kelimeler arasında oluşturulan aralık"
+            },
+            {
+              "answer": "METİN",
+              "clue": "Web sayfasında başlık, paragraf ve vurgu etiketleriyle biçimlendirilen yazılı içerik"
+            }
+          ]
+        },
+        {
+          "title": "Paragraflar, Listeler ve Köprüler",
+          "items": [
+            {
+              "answer": "PARAGRAF",
+              "clue": "p etiketleri arasında tanımlanan ve hizalama gibi ayarların uygulanabildiği yazı bloğu"
+            },
+            {
+              "answer": "HİZALAMA",
+              "clue": "Metni sağa, sola, ortaya veya iki yana yerleştirme işlemi"
+            },
+            {
+              "answer": "SIRALI",
+              "clue": "ol etiketiyle oluşturulan ve maddeleri sayı ya da harfle gösterilen liste türünü niteleyen sözcük"
+            },
+            {
+              "answer": "SIRASIZ",
+              "clue": "ul etiketiyle oluşturulan ve maddeleri simgelerle gösterilen liste türünü niteleyen sözcük"
+            },
+            {
+              "answer": "HEDEF",
+              "clue": "Tıklanan bağlantının açması istenen sayfa, adres veya dosyanın konumu"
+            }
+          ]
+        },
+        {
+          "title": "Metinlerde Stil ve CSS Kullanımı",
+          "items": [
+            {
+              "answer": "STİL",
+              "clue": "Bir web sayfasındaki nesnelerin görünümünü belirleyen biçimlendirme kuralları"
+            },
+            {
+              "answer": "SEÇİCİ",
+              "clue": "Belirli kuralların hangi HTML öğelerine uygulanacağını belirleyen class veya id yapısı"
+            },
+            {
+              "answer": "GÖMÜLÜ",
+              "clue": "Kuralların head bölümünde style etiketleri arasında tanımlandığı kullanım türünü niteleyen sözcük"
+            },
+            {
+              "answer": "HARİCİ",
+              "clue": "Biçimlendirme kurallarının ayrı bir .css dosyasında tutulduğu kullanım türünü niteleyen sözcük"
+            },
+            {
+              "answer": "GİRİNTİ",
+              "clue": "text-indent özelliğiyle paragrafın ilk satırında oluşturulan iç boşluk"
+            },
+            {
+              "answer": "DÖNÜŞÜM",
+              "clue": "text-transform özelliğiyle büyük-küçük harf görünümünde yapılan değişiklik"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eslestir",
+      "kind": "match",
+      "title": "Eşleştir-Öğren",
+      "intro": "Açıklamayı seçip karşısındaki kavramla eşleştirin.",
+      "activities": [
+        {
+          "title": "HTML'de Metin Kullanımı ve Karakter Ayarları",
+          "items": [
+            {
+              "term": "<br>",
+              "definition": "Alt satıra geçiş için kullanılır ve kapanış etiketi gerektirmez."
+            },
+            {
+              "term": "<b>",
+              "definition": "Metni koyu göstermek için kullanılır."
+            },
+            {
+              "term": "<u>",
+              "definition": "Metnin altını çizmek için kullanılır."
+            },
+            {
+              "term": "<font>",
+              "definition": "Yazı rengi, büyüklüğü ve yazı tipi gibi özellikleri değiştirmek için kullanılır."
+            }
+          ]
+        },
+        {
+          "title": "Paragraflar, Listeler ve Köprüler",
+          "items": [
+            {
+              "term": "<p>",
+              "definition": "Bir paragraf bloğu oluşturur ve align gibi parametrelerle hizalanabilir."
+            },
+            {
+              "term": "<ol>",
+              "definition": "Numara, harf veya Roma rakamı gibi sıralama biçimleriyle liste oluşturur."
+            },
+            {
+              "term": "<ul>",
+              "definition": "Disk, daire veya kare gibi madde işaretleriyle sırasız liste oluşturur."
+            },
+            {
+              "term": "<dl>",
+              "definition": "dt ve dd etiketleriyle birlikte kategorik veya tanım listesi oluşturur."
+            },
+            {
+              "term": "<a href>",
+              "definition": "Bir metni veya nesneyi başka bir sayfaya, adrese ya da dosyaya bağlar."
+            }
+          ]
+        },
+        {
+          "title": "Metinlerde Stil ve CSS Kullanımı",
+          "items": [
+            {
+              "term": "color",
+              "definition": "Yazı rengini belirleyen stil özelliğidir."
+            },
+            {
+              "term": "font-family",
+              "definition": "Yazı tipini belirleyen stil özelliğidir."
+            },
+            {
+              "term": "font-size",
+              "definition": "Yazı büyüklüğünü belirleyen stil özelliğidir."
+            },
+            {
+              "term": "text-align",
+              "definition": "Metnin sola, sağa, ortaya veya iki yana hizalanmasını belirleyen stil özelliğidir."
+            },
+            {
+              "term": "background-color",
+              "definition": "Bir öğenin zemin rengini belirleyen stil özelliğidir."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dene",
+      "kind": "study",
+      "title": "Dene-Öğren",
+      "intro": "Kısa metni okuyun, öne çıkan noktaları inceleyin ve kontrol sorusunu yanıtlayın.",
+      "activities": [
+        {
+          "title": "HTML'de Metin Kullanımı ve Karakter Ayarları",
+          "items": [
+            {
+              "category": "HTML Yapısı",
+              "title": "Head ve Body Bölümleri",
+              "theory": "Bir HTML sayfasında head bölümünde başlık ve karakter seti gibi üst düzey ayarlar tanımlanabilir. Türkçe karakter sorunu yaşandığında charset parametresine UTF-8 veya Windows-1254 atanabilir. Body bölümünde ise resim, yazı, video ve tablo gibi kullanıcıya gösterilecek içerikler yer alır.",
+              "keyPoints": [
+                "Head üst düzey sayfa ayarlarını içerir.",
+                "Charset karakterlerin doğru görüntülenmesinde önemlidir.",
+                "Body kullanıcıya gösterilecek içeriği barındırır."
+              ],
+              "question": "Sayfanın tarayıcıda görünen başlığını tanımlamak için hangi etiket kullanılır?",
+              "options": [
+                "<body>",
+                "<title>",
+                "<font>",
+                "<span>"
+              ],
+              "answer": 1,
+              "explanation": "Tarayıcı başlığında gösterilecek metin title etiketleri arasında tanımlanır."
+            },
+            {
+              "category": "Metin Biçimlendirme",
+              "title": "Başlık, Vurgu ve Font Özellikleri",
+              "theory": "HTML'de h1-h6 etiketleri başlık düzeylerini, b koyu, i italik ve u altı çizili vurguyu belirtir. Font etiketi ise color, size ve face parametreleriyle yazı rengi, büyüklüğü ve tipinin değiştirilmesini sağlar.",
+              "keyPoints": [
+                "h1-h6 başlık düzeylerini belirler.",
+                "b, i ve u metin vurgusunda kullanılır.",
+                "Font etiketi color, size ve face parametrelerini alabilir."
+              ],
+              "question": "Yazının rengini değiştirmek için font etiketiyle hangi parametre kullanılır?",
+              "options": [
+                "face",
+                "size",
+                "color",
+                "type"
+              ],
+              "answer": 2,
+              "explanation": "Font etiketi içinde color parametresi yazının rengini belirlemek için kullanılır."
+            }
+          ]
+        },
+        {
+          "title": "Paragraflar, Listeler ve Köprüler",
+          "items": [
+            {
+              "category": "Paragraf ve Liste",
+              "title": "Metni Düzenli Yapılara Dönüştürmek",
+              "theory": "Paragraf yapısı p etiketiyle oluşturulur ve align parametresiyle left, right, center veya justify değerleri kullanılarak hizalanabilir. Listeler sıralı, sırasız ve tanım listesi olmak üzere üç biçimde oluşturulabilir. ol ve ul listelerinde her madde li etiketiyle tanımlanır.",
+              "keyPoints": [
+                "Paragraflar p etiketiyle tanımlanır.",
+                "ol ve ul listelerinde maddeler li etiketiyle oluşturulur.",
+                "Tanım listelerinde dl, dt ve dd birlikte kullanılır."
+              ],
+              "question": "İç içe liste oluşturmak için hangi yaklaşım kullanılır?",
+              "options": [
+                "Bir li etiketi içinde yeniden ol veya ul yapısı oluşturmak",
+                "Her maddeyi yalnızca p etiketiyle yazmak",
+                "Listeyi head bölümünde tanımlamak",
+                "Sadece href kullanmak"
+              ],
+              "answer": 0,
+              "explanation": "İç içe listelerde bir li öğesinin içinde yeniden ol veya ul etiketi ve yeni li öğeleri kullanılabilir."
+            },
+            {
+              "category": "Köprüler",
+              "title": "Sayfalar ve Dosyalar Arasında Geçiş",
+              "theory": "Köprü oluşturmak için a etiketi ve href parametresi kullanılır. Hedef aynı sitedeki başka bir HTML dosyası, mevcut bir web adresi, resim, ses veya başka bir dosya olabilir. Dosya alt klasörde tutuluyorsa href değeri içinde klasör yolu da belirtilmelidir.",
+              "keyPoints": [
+                "href bağlantının hedefini belirtir.",
+                "Bağlantı sayfaya veya medya dosyasına verilebilir.",
+                "Alt klasördeki dosyalar için klasör yolu hedefe eklenmelidir."
+              ],
+              "question": "Aynı sitenin resimler klasöründeki balik.jpg dosyasına bağlantı vermek için href değeri nasıl olmalıdır?",
+              "options": [
+                "balik.jpg/resimler",
+                "resimler/balik.jpg",
+                "href/resimler",
+                "resimler.html"
+              ],
+              "answer": 1,
+              "explanation": "Dosya resimler adlı alt klasörde bulunduğu için hedef yolu klasör adı ve dosya adı birlikte yazılır."
+            }
+          ]
+        },
+        {
+          "title": "Metinlerde Stil ve CSS Kullanımı",
+          "items": [
+            {
+              "category": "Stil Kullanım Biçimleri",
+              "title": "Satır İçi, Gömülü ve Harici CSS",
+              "theory": "HTML'de stil üç farklı biçimde kullanılabilir. Satır içi kullanımda style parametresi doğrudan etiket içinde tanımlanır. Gömülü kullanımda head bölümündeki style etiketleri arasında kurallar yazılır. Harici kullanımda ise kurallar ayrı bir .css dosyasında tutulur ve HTML sayfasına link veya @import aracılığıyla bağlanır.",
+              "keyPoints": [
+                "Satır içi stil doğrudan etikette tanımlanır.",
+                "Gömülü stil head bölümünde gruplanır.",
+                "Harici CSS aynı şablonun birden çok sayfada kullanılmasını kolaylaştırır."
+              ],
+              "question": "Birden çok HTML sayfasında aynı stil kurallarını kullanmak için en uygun yapı hangisidir?",
+              "options": [
+                "Her etikete ayrı style yazmak",
+                "Tüm metinleri font etiketiyle biçimlendirmek",
+                "Sadece body etiketini çoğaltmak",
+                "Harici CSS dosyası kullanmak"
+              ],
+              "answer": 3,
+              "explanation": "Harici CSS dosyası ortak kuralların bir kez tanımlanıp farklı HTML sayfalarında yeniden kullanılmasını sağlar."
+            },
+            {
+              "category": "Seçiciler ve Span",
+              "title": "Belirli Metin Bölgelerine Stil Uygulamak",
+              "theory": "Class ve id seçicileri belirli stil kurallarını isimlendirerek kullanmayı sağlar. Class seçici nokta, id seçici kare işaretiyle tanımlanır. Span etiketi ise paragrafın tamamı yerine belirli bir kelime, cümle veya metin bölümüne bu stil kurallarının uygulanmasını kolaylaştırır.",
+              "keyPoints": [
+                "Class seçici nokta işaretiyle tanımlanır.",
+                "ID seçici kare işaretiyle tanımlanır.",
+                "Span belirli bir metin bölümüne stil uygulamak için kullanılabilir."
+              ],
+              "question": "ID seçicinin tanımlanmasında hangi işaret kullanılır?",
+              "options": [],
+              "answer": 0,
+              "explanation": "ID seçici adının önüne kare işareti konularak tanımlanır."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

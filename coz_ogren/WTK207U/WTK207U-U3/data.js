@@ -1,0 +1,606 @@
+/* Çöz-Öğren — içerik verisi. Elle de düzenleyebilirsiniz. */
+window.EO_DATA = {
+  "meta": {
+    "id": "mmt89qfinwti9zr",
+    "title": "Bölüm 3",
+    "subtitle": "Çokluortam Öğelerinin Sunumu",
+    "footer": "",
+    "eyebrow": "Çöz-Öğren"
+  },
+  "lessons": [
+    {
+      "id": "tikla",
+      "kind": "cards",
+      "title": "Tıkla-Öğren",
+      "intro": "Kavramları görmek için kartlara tıklayın; ön yüzde kavram, arka yüzde açıklaması yer alır.",
+      "activities": [
+        {
+          "title": "Resimlerin Görüntülenmesi ve Resim Haritaları",
+          "items": [
+            {
+              "term": "Çokluortam",
+              "definition": "Dijital ortamlarda etkileşimli yazıyla birlikte resim, video, animasyon ve ses gibi farklı nesnelerin bir arada kullanılmasıdır."
+            },
+            {
+              "term": "Resim Etiketi",
+              "definition": "Web sayfasında bir resim dosyasını göstermek için kullanılan img etiketidir."
+            },
+            {
+              "term": "src Parametresi",
+              "definition": "Gösterilecek resim dosyasının konumunu ve dosya adını img etiketi içinde belirtir."
+            },
+            {
+              "term": "alt Parametresi",
+              "definition": "Resim açılmadığında veya üzerine gelindiğinde gösterilmesi istenen metni tanımlamak için kullanılır."
+            },
+            {
+              "term": "Resim Haritası",
+              "definition": "Bir resmin üzerindeki bir veya daha fazla alana bağlantı verilmesini sağlayan yapıdır."
+            },
+            {
+              "term": "area Etiketi",
+              "definition": "Resim haritası üzerindeki bağlantı verilecek alanları shape, coords ve href gibi parametrelerle tanımlar."
+            }
+          ]
+        },
+        {
+          "title": "HTML5 ile Video ve Ses Kullanımı",
+          "items": [
+            {
+              "term": "HTML5",
+              "definition": "Yeni etiketler ve parametrelerle video, ses, veri girişi ve çizim gibi işlemleri daha işlevsel hâle getiren HTML sürümüdür."
+            },
+            {
+              "term": "video Etiketi",
+              "definition": "Web sayfasına video eklemek için kullanılan ve src, width, height, autoplay, controls, loop ve poster gibi parametreler alabilen etikettir."
+            },
+            {
+              "term": "audio Etiketi",
+              "definition": "Web sayfasına mp3, ogg veya wav türündeki ses dosyalarını eklemek için kullanılan etikettir."
+            },
+            {
+              "term": "controls",
+              "definition": "Video veya ses oynatıcısında başlatma, durdurma, ses ve benzeri kullanıcı denetimlerinin görüntülenmesini sağlar."
+            },
+            {
+              "term": "poster",
+              "definition": "Video oynatılmadan önce videoyu temsil eden bir başlangıç resminin gösterilmesini sağlar."
+            },
+            {
+              "term": "source Etiketi",
+              "definition": "Tarayıcı desteğine göre birden fazla video veya ses kaynağının sırayla denenebilmesini sağlar."
+            }
+          ]
+        },
+        {
+          "title": "Harici İçeriklerin Entegrasyonu ve Çokluortamda CSS",
+          "items": [
+            {
+              "term": "embed Etiketi",
+              "definition": "Flash animasyonu ve PDF gibi harici dosyaları web sayfasına eklemek için kullanılan etikettir."
+            },
+            {
+              "term": "iframe Etiketi",
+              "definition": "YouTube videosu veya harita gibi başka hizmetler tarafından üretilen içerikleri web sayfasına yerleştirmede kullanılan etikettir."
+            },
+            {
+              "term": "Flash Animasyonu",
+              "definition": "swf uzantılı, iki boyutlu tasarım ürünü olan ve embed etiketiyle web sayfasına eklenebilen animasyon dosyasıdır."
+            },
+            {
+              "term": "PDF Entegrasyonu",
+              "definition": "PDF dosyasının embed etiketi ve src parametresiyle web sayfasında görüntülenmesidir."
+            },
+            {
+              "term": "Çokluortam Stili",
+              "definition": "Resim, ses ve video gibi nesnelerin görünümünü CSS özellikleriyle düzenleme işlemidir."
+            },
+            {
+              "term": "box-shadow",
+              "definition": "Resim veya video çevresindeki kutuya gölge eklemek için kullanılan CSS özelliğidir."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yanitla",
+      "kind": "quiz",
+      "title": "Yanıtla-Öğren",
+      "intro": "Soruları yanıtlayın; her seçimden sonra doğru yanıt ve gerekçesi gösterilir.",
+      "activities": [
+        {
+          "title": "Resimlerin Görüntülenmesi ve Resim Haritaları",
+          "items": [
+            {
+              "question": "Bir resim dosyasının konumunu img etiketi içinde belirtmek için hangi parametre kullanılır?",
+              "options": [
+                "src",
+                "align",
+                "border",
+                "alt"
+              ],
+              "answer": 0,
+              "explanation": "src parametresi gösterilecek resmin dosya yolunu ve dosya adını belirtir."
+            },
+            {
+              "question": "Resmin sayfa içinde genişlik ve yüksekliğini belirlemek için hangi iki parametre kullanılır?",
+              "options": [
+                "src ve alt",
+                "width ve height",
+                "align ve border",
+                "shape ve coords"
+              ],
+              "answer": 1,
+              "explanation": "width ve height parametreleri resmin sayfadaki yatay ve dikey boyutlarını piksel olarak belirleyebilir."
+            },
+            {
+              "question": "Bir img etiketinde resim haritası kullanılacağını belirtmek için hangi parametre gereklidir?",
+              "options": [
+                "name",
+                "href",
+                "usemap",
+                "quality"
+              ],
+              "answer": 2,
+              "explanation": "usemap parametresi img etiketi ile map yapısı arasında ilişki kurulmasını sağlar."
+            },
+            {
+              "question": "Resim haritasında dikdörtgen, daire veya çokgen alan türünü hangi parametre belirler?",
+              "options": [
+                "coords",
+                "href",
+                "name",
+                "shape"
+              ],
+              "answer": 3,
+              "explanation": "shape parametresi rect, circle veya poly değerlerinden biriyle alanın şeklini belirler."
+            },
+            {
+              "question": "Bir resim haritasındaki tıklanabilir alanın hedefini hangi parametre belirler?",
+              "options": [
+                "href",
+                "width",
+                "height",
+                "border"
+              ],
+              "answer": 0,
+              "explanation": "area etiketi içindeki href parametresi tıklanan alanın açacağı sayfa veya dosyayı belirtir."
+            }
+          ]
+        },
+        {
+          "title": "HTML5 ile Video ve Ses Kullanımı",
+          "items": [
+            {
+              "question": "HTML5 ile web sayfasına video eklemek için hangi etiket kullanılır?",
+              "options": [
+                "<embed>",
+                "<figure>",
+                "<iframe>",
+                "<video>"
+              ],
+              "answer": 3,
+              "explanation": "HTML5'te video ekleme işlemi video etiketiyle yapılır."
+            },
+            {
+              "question": "Videonun sayfa yüklenir yüklenmez başlamasını sağlayan parametre hangisidir?",
+              "options": [
+                "autoplay",
+                "controls",
+                "poster",
+                "loop"
+              ],
+              "answer": 0,
+              "explanation": "autoplay parametresi video veya ses içeriğinin otomatik olarak başlatılmasını sağlar."
+            },
+            {
+              "question": "Videonun bitince yeniden başlamasını sağlayan parametre hangisidir?",
+              "options": [
+                "src",
+                "loop",
+                "width",
+                "poster"
+              ],
+              "answer": 1,
+              "explanation": "loop parametresi medya içeriğinin tamamlandıktan sonra yeniden oynatılmasını sağlar."
+            },
+            {
+              "question": "HTML5 audio etiketiyle kullanılabilen ses dosyası uzantılarından biri hangisidir?",
+              "options": [
+                "pdf",
+                "jpg",
+                "wav",
+                "swf"
+              ],
+              "answer": 2,
+              "explanation": "HTML5 audio etiketi için mp3, ogg ve wav dosya türleri desteklenen biçimler arasında yer alır."
+            },
+            {
+              "question": "Bir videoya oynatılmadan önce temsilî bir resim eklemek için hangi parametre kullanılır?",
+              "options": [
+                "controls",
+                "type",
+                "align",
+                "poster"
+              ],
+              "answer": 3,
+              "explanation": "poster parametresi video başlamadan önce gösterilecek resmi belirler."
+            }
+          ]
+        },
+        {
+          "title": "Harici İçeriklerin Entegrasyonu ve Çokluortamda CSS",
+          "items": [
+            {
+              "question": "Flash animasyonu veya PDF dosyasını web sayfasına eklemek için hangi etiket kullanılır?",
+              "options": [
+                "<video>",
+                "<audio>",
+                "<embed>",
+                "<map>"
+              ],
+              "answer": 2,
+              "explanation": "Flash animasyonları ve PDF dosyaları embed etiketiyle web sayfasına eklenebilir."
+            },
+            {
+              "question": "YouTube videosunu web sayfasına eklerken hizmet tarafından üretilen hangi etiket kullanılır?",
+              "options": [
+                "<img>",
+                "<figure>",
+                "<area>",
+                "<iframe>"
+              ],
+              "answer": 3,
+              "explanation": "YouTube paylaşım kodu iframe etiketiyle oluşturulur ve bu kod web sayfasına eklenir."
+            },
+            {
+              "question": "Flash animasyonunda gösterim kalitesini belirleyen embed parametresi hangisidir?",
+              "options": [
+                "quality",
+                "poster",
+                "controls",
+                "usemap"
+              ],
+              "answer": 0,
+              "explanation": "quality parametresi high, medium ve low değerleriyle animasyonun gösterim kalitesini belirler."
+            },
+            {
+              "question": "Bir çokluortam nesnesinin kenarlık ile içerik arasındaki boşluğunu hangi CSS özelliği ayarlar?",
+              "options": [
+                "margin",
+                "padding",
+                "width",
+                "height"
+              ],
+              "answer": 1,
+              "explanation": "padding, nesne ile kenarlık arasındaki iç boşluğu belirler."
+            },
+            {
+              "question": "Bir video nesnesinin köşelerini yuvarlamak için hangi CSS özelliği kullanılabilir?",
+              "options": [
+                "background-image",
+                "max-width",
+                "border-radius",
+                "box-shadow"
+              ],
+              "answer": 2,
+              "explanation": "border-radius değeri artırılarak video veya kutunun köşeleri yuvarlatılabilir."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bul",
+      "kind": "crossword",
+      "title": "Bul-Öğren",
+      "intro": "İpuçlarından yola çıkarak kelimeleri bulun. Izgara, verdiğiniz kelimelerden otomatik kurulur.",
+      "activities": [
+        {
+          "title": "Resimlerin Görüntülenmesi ve Resim Haritaları",
+          "items": [
+            {
+              "answer": "ÇOKLUORTAM",
+              "clue": "Yazı, görsel, hareketli görüntü ve ses gibi farklı içerik türlerinin birlikte sunulduğu yapı"
+            },
+            {
+              "answer": "RESİM",
+              "clue": "Web sayfalarında metinden sonra sık kullanılan görsel içerik türü"
+            },
+            {
+              "answer": "ÇERÇEVE",
+              "clue": "border parametresiyle görselin çevresine eklenebilen çizgisel sınır"
+            },
+            {
+              "answer": "HİZALAMA",
+              "clue": "Bir görselin sayfada sağa ya da sola yerleştirilmesini sağlayan düzenleme işlemi"
+            },
+            {
+              "answer": "HARİTA",
+              "clue": "Bir görselin farklı alanlarını ayrı bağlantılara dönüştüren yapı"
+            },
+            {
+              "answer": "KOORDİNAT",
+              "clue": "Tıklanabilir bir alanın konum ve sınırlarını sayısal olarak belirleyen değer"
+            }
+          ]
+        },
+        {
+          "title": "HTML5 ile Video ve Ses Kullanımı",
+          "items": [
+            {
+              "answer": "VİDEO",
+              "clue": "Hareketli görüntülerin web sayfasında özel bir medya etiketiyle sunulduğu içerik türü"
+            },
+            {
+              "answer": "MÜZİK",
+              "clue": "mp3, ogg veya wav uzantılarıyla web sayfasına eklenebilen işitsel içerik"
+            },
+            {
+              "answer": "OYNATICI",
+              "clue": "Medya dosyasını başlatma, durdurma ve ses düzeyi gibi araçlarla sunan arayüz"
+            },
+            {
+              "answer": "BAŞLANGIÇ",
+              "clue": "poster parametresiyle video oynatılmadan önce gösterilen temsilî görselin zaman konumu"
+            },
+            {
+              "answer": "DENETİM",
+              "clue": "controls parametresiyle kullanıcıya sunulan oynatma ve ses kontrol araçlarının genel adı"
+            }
+          ]
+        },
+        {
+          "title": "Harici İçeriklerin Entegrasyonu ve Çokluortamda CSS",
+          "items": [
+            {
+              "answer": "ENTEGRASYON",
+              "clue": "Başka bir hizmet veya dosyanın web sayfasının yapısına dâhil edilmesi işlemi"
+            },
+            {
+              "answer": "ANİMASYON",
+              "clue": "swf uzantısıyla karşılaşılabilen hareketli iki boyutlu görsel içerik"
+            },
+            {
+              "answer": "KALİTE",
+              "clue": "Flash gösteriminde high, medium veya low değerleriyle belirlenebilen özellik"
+            },
+            {
+              "answer": "KONUM",
+              "clue": "Harita hizmeti üzerinden işaretlenip iframe koduyla sayfaya eklenebilen adres bilgisi"
+            },
+            {
+              "answer": "KENARLIK",
+              "clue": "border özelliğiyle bir resim ya da video çevresinde oluşturulan çizgisel sınır"
+            },
+            {
+              "answer": "GÖLGE",
+              "clue": "box-shadow özelliğiyle bir kutu veya medya öğesinin çevresine eklenen görsel etki"
+            },
+            {
+              "answer": "ZEMİN",
+              "clue": "background-color veya background-image ile biçimlendirilebilen arka yüzey"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eslestir",
+      "kind": "match",
+      "title": "Eşleştir-Öğren",
+      "intro": "Açıklamayı seçip karşısındaki kavramla eşleştirin.",
+      "activities": [
+        {
+          "title": "Resimlerin Görüntülenmesi ve Resim Haritaları",
+          "items": [
+            {
+              "term": "width",
+              "definition": "Resmin yatay boyutunu belirler."
+            },
+            {
+              "term": "height",
+              "definition": "Resmin dikey boyutunu belirler."
+            },
+            {
+              "term": "border",
+              "definition": "Resmin çevresindeki çizginin kalınlığını belirler."
+            },
+            {
+              "term": "usemap",
+              "definition": "Resmi bir map yapısıyla ilişkilendirir."
+            },
+            {
+              "term": "coords",
+              "definition": "Resim haritasındaki alanın koordinatlarını belirler."
+            }
+          ]
+        },
+        {
+          "title": "HTML5 ile Video ve Ses Kullanımı",
+          "items": [
+            {
+              "term": "MP4",
+              "definition": "video/mp4 mime tipiyle kullanılabilen video dosyası biçimidir."
+            },
+            {
+              "term": "Ogg",
+              "definition": "Video ve ses kullanımında karşılaşılabilen desteklenen dosya biçimlerinden biridir."
+            },
+            {
+              "term": "autoplay",
+              "definition": "Medya dosyasını sayfa açıldığında otomatik başlatır."
+            },
+            {
+              "term": "controls",
+              "definition": "Kullanıcı denetim düğmelerini görünür hâle getirir."
+            }
+          ]
+        },
+        {
+          "title": "Harici İçeriklerin Entegrasyonu ve Çokluortamda CSS",
+          "items": [
+            {
+              "term": "quality",
+              "definition": "Flash animasyonunun gösterim kalitesini high, medium veya low değerleriyle ayarlar."
+            },
+            {
+              "term": "pluginspage",
+              "definition": "Gerekli oynatıcı kurulu değilse kullanıcıyı ilgili yazılımın bulunduğu adrese yönlendirmek için kullanılır."
+            },
+            {
+              "term": "border",
+              "definition": "Çokluortam nesnesine kenarlık ekler."
+            },
+            {
+              "term": "padding",
+              "definition": "Nesne ile kenarlık arasındaki boşluğu ayarlar."
+            },
+            {
+              "term": "border-radius",
+              "definition": "Kenarlık köşelerini yuvarlatır."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dene",
+      "kind": "study",
+      "title": "Dene-Öğren",
+      "intro": "Kısa metni okuyun, öne çıkan noktaları inceleyin ve kontrol sorusunu yanıtlayın.",
+      "activities": [
+        {
+          "title": "Resimlerin Görüntülenmesi ve Resim Haritaları",
+          "items": [
+            {
+              "category": "Resim Kullanımı",
+              "title": "Dosya Yolu, Boyut ve Alternatif Metin",
+              "theory": "Web sayfasında resim göstermek için img etiketi kullanılır. Resim HTML dosyasıyla aynı klasördeyse src parametresine yalnızca dosya adı yazılabilir. Resim alt klasördeyse klasör adı da dosya yoluna eklenir. width ve height ile görüntü boyutu ayarlanabilir. border çerçeve kalınlığını, alt alternatif metni ve align sağa ya da sola hizalamayı sağlar.",
+              "keyPoints": [
+                "Resim dosyasının yolu src ile belirtilir.",
+                "Alt klasördeki resimler için klasör adı da dosya yoluna yazılır.",
+                "width, height, border, alt ve align temel img parametrelerindendir."
+              ],
+              "question": "Resimler klasöründeki manzara.jpg dosyasını göstermek için uygun src değeri hangisidir?",
+              "options": [
+                "manzara.jpg/resimler",
+                "resimler/manzara.jpg",
+                "src/manzara.jpg",
+                "resimler.html"
+              ],
+              "answer": 1,
+              "explanation": "Dosya resimler adlı alt klasörde bulunduğu için klasör adı ve dosya adı birlikte yazılır."
+            },
+            {
+              "category": "Resim Haritaları",
+              "title": "Bir Resmin Farklı Bölgelerine Bağlantı Vermek",
+              "theory": "Resim haritası oluşturmak için img etiketi usemap parametresiyle bir map adına bağlanır. map etiketi içinde her tıklanabilir alan area etiketiyle tanımlanır. shape alanın biçimini, coords konum ve boyutunu, href ise tıklama sonrasında açılacak hedefi belirler. Dikdörtgen, daire ve çokgen alanlar oluşturulabilir.",
+              "keyPoints": [
+                "usemap ile img ve map arasında ilişki kurulur.",
+                "area etiketi her tıklanabilir bölgeyi ayrı ayrı tanımlar.",
+                "shape seçimine göre coords değerlerinin kullanımı değişir."
+              ],
+              "question": "Dairesel bir alan tanımlanırken coords parametresinde hangi tür bilgiler kullanılır?",
+              "options": [
+                "İki köşe noktası",
+                "Yalnızca dosya adı",
+                "Merkez koordinatları ve yarıçap",
+                "Sadece bağlantı adresi"
+              ],
+              "answer": 2,
+              "explanation": "Dairesel bir alan için merkez noktasının koordinatları ve yarıçap değeri kullanılır."
+            }
+          ]
+        },
+        {
+          "title": "HTML5 ile Video ve Ses Kullanımı",
+          "items": [
+            {
+              "category": "Video",
+              "title": "HTML5 Video Etiketi ve Temel Parametreler",
+              "theory": "HTML5 ile video eklemek için video etiketi kullanılır. src video dosyasının yolunu, width ve height boyutlarını belirler. autoplay otomatik başlatmayı, controls kullanıcı denetimlerini, loop yeniden oynatmayı ve poster başlangıç resmini sağlar. Birden fazla biçim sunmak için video etiketi içinde birden fazla source kullanılabilir.",
+              "keyPoints": [
+                "Video etiketi HTML5 ile medya kullanımını kolaylaştırır.",
+                "controls oynatma denetimlerini kullanıcıya sunar.",
+                "Birden fazla source farklı dosya biçimlerinin denenmesini sağlar."
+              ],
+              "question": "Bir videoda kullanıcı denetimlerinin görünür olması için hangi parametre gereklidir?",
+              "options": [
+                "controls",
+                "width",
+                "src",
+                "poster"
+              ],
+              "answer": 0,
+              "explanation": "controls parametresi video oynatıcısındaki kullanıcı denetimlerini görünür hâle getirir."
+            },
+            {
+              "category": "Ses ve Figure",
+              "title": "Ses Dosyaları ve Çokluortamı Düzenleme",
+              "theory": "Ses dosyaları audio etiketiyle eklenir ve video etiketinde kullanılan autoplay, controls ve loop gibi parametrelerin çoğu ses için de kullanılabilir. figure etiketi resim, gösterim, diyagram veya kod listesi gibi çokluortam öğelerini bir bütün hâlinde tanımlar. figcaption ise figure içindeki çokluortam öğesine başlık ekler.",
+              "keyPoints": [
+                "audio etiketi ses dosyalarını web sayfasına ekler.",
+                "autoplay, controls ve loop ses için de kullanılabilir.",
+                "figure ve figcaption çokluortam öğelerinin düzenlenmesine yardımcı olur."
+              ],
+              "question": "Bir figure öğesine başlık eklemek için hangi etiket kullanılır?",
+              "options": [
+                "<source>",
+                "<figcaption>",
+                "<title>",
+                "<map>"
+              ],
+              "answer": 1,
+              "explanation": "figcaption etiketi figure tarafından tanımlanan çokluortam öğesine başlık ekler."
+            }
+          ]
+        },
+        {
+          "title": "Harici İçeriklerin Entegrasyonu ve Çokluortamda CSS",
+          "items": [
+            {
+              "category": "Harici İçerik",
+              "title": "Flash, PDF, YouTube ve Harita Entegrasyonu",
+              "theory": "Flash animasyonları ve PDF dosyaları embed etiketiyle web sayfasına eklenebilir. YouTube videoları ise hizmetin ürettiği iframe kodunun sayfaya eklenmesiyle gösterilebilir. Harita konum bilgisi de benzer biçimde harita hizmetinin ürettiği iframe kodunun kopyalanıp web sayfasına yerleştirilmesiyle sunulabilir.",
+              "keyPoints": [
+                "embed Flash ve PDF dosyalarında kullanılabilir.",
+                "YouTube videosu iframe ile sayfaya yerleştirilebilir.",
+                "Harita konum bilgisi de iframe koduyla eklenebilir."
+              ],
+              "question": "Bir PDF dosyasını sayfa içinde göstermek için hangi yapı kullanılabilir?",
+              "options": [
+                "<audio src=\"dokumanlar/kaynak.pdf\">",
+                "<map name=\"kaynak.pdf\">",
+                "<video src=\"dokumanlar/kaynak.pdf\">",
+                "<embed src=\"dokumanlar/kaynak.pdf\">"
+              ],
+              "answer": 3,
+              "explanation": "PDF dosyaları embed etiketi içinde src parametresiyle gösterilebilir."
+            },
+            {
+              "category": "Çokluortamda CSS",
+              "title": "Resim ve Video Görünümünü Biçimlendirmek",
+              "theory": "Çokluortam öğelerine stil, metinlerde olduğu gibi etiket içinde, gömülü veya harici CSS dosyasıyla uygulanabilir. Resim ve video için width, height, max-width, border, padding, margin, border-radius, background-color, background-image ve box-shadow gibi özellikler kullanılabilir. Gömülü stil kullanıldığında aynı etikete sahip tüm öğeler bu kurallardan etkilenebilir.",
+              "keyPoints": [
+                "Çokluortam öğelerinde CSS farklı kullanım biçimleriyle uygulanabilir.",
+                "border, padding ve box-shadow görsel çerçeve ve etki sağlar.",
+                "Harici CSS aynı görünümün farklı sayfalarda tekrar kullanılmasını kolaylaştırır."
+              ],
+              "question": "Bir video kutusuna gölge eklemek için hangi CSS özelliği kullanılır?",
+              "options": [
+                "box-shadow",
+                "padding",
+                "height",
+                "max-width"
+              ],
+              "answer": 0,
+              "explanation": "box-shadow özelliği video veya diğer nesnelerin çevresindeki kutuya gölge ekler."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};
