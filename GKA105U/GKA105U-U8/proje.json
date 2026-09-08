@@ -1,0 +1,471 @@
+{
+  "meta": {
+    "id": "mmtsosageimyzbn",
+    "title": "Bölüm 8",
+    "subtitle": "Uluslararası Gıda Mevzuatı ve İlgili Kuruluşlar",
+    "footer": "",
+    "eyebrow": "Çöz-Öğren"
+  },
+  "lessons": [
+    {
+      "id": "tikla",
+      "kind": "cards",
+      "title": "Tıkla-Öğren",
+      "intro": "Kavramları görmek için kartlara tıklayın; ön yüzde kavram, arka yüzde açıklaması yer alır.",
+      "activities": [
+        {
+          "title": "Uluslararası Gıda Güvenliği ve Önemi",
+          "items": [
+            {
+              "term": "Uluslararası gıda güvenliği",
+              "definition": "Gıdanın kalitesi ve güvenliğini küresel ölçekte destekleyen standartlar, yasal düzenlemeler ve uygulamalar bütünüdür; tarımsal faaliyetler, hayvan sağlığı, üretim, tedarik ve sürdürülebilirlik gibi alanları kapsar."
+            },
+            {
+              "term": "Gıda kaynaklı hastalık",
+              "definition": "Gıda veya içecek tüketiminin neden olduğu bulaşıcı ya da toksik nitelikteki akut veya kronik hastalıktır."
+            },
+            {
+              "term": "Dünya Gıda Güvenliği Günü",
+              "definition": "Birleşmiş Milletler kararıyla 7 Haziran olarak ilan edilen ve ilk kez 2019 yılında kutlanan uluslararası farkındalık günüdür."
+            },
+            {
+              "term": "Ulusal gıda kontrol sistemi",
+              "definition": "Tüketici sağlığını korumaya ve gıda ticaretinde adil uygulamaları destekleyerek yerel ve uluslararası paydaş güveni oluşturmaya yardımcı olan sistemdir."
+            }
+          ]
+        },
+        {
+          "title": "Uluslararası Gıda Güvenliği Standartları ve Sistemleri",
+          "items": [
+            {
+              "term": "Codex Alimentarius",
+              "definition": "FAO ve WHO iş birliğiyle oluşturulan ve gıda standartları, uygulama kuralları ve kılavuzlarıyla tüketici sağlığını ve gıda ticaretinde adil uygulamaları destekleyen uluslararası referanstır."
+            },
+            {
+              "term": "BRC",
+              "definition": "Gıda güvenliğini tedarik zinciri boyunca sürdürmeye ve uluslararası gıda güvenliği kriterlerini ortak bir çerçevede toplamaya yönelik küresel standarttır."
+            },
+            {
+              "term": "IFS",
+              "definition": "Tedarik sürecinde karşılaştırılabilirlik, şeffaflık ve maliyet azaltma amacıyla kullanılan uluslararası belgelendirme sistemidir."
+            },
+            {
+              "term": "SSOP",
+              "definition": "Üretim öncesi ve üretim sırasındaki sanitasyon uygulamalarını düzenleyen standart sanitasyon uygulama prosedürleridir."
+            },
+            {
+              "term": "GlobalGAP",
+              "definition": "Uluslararası gıda güvenliği standartları ve sistemleri arasında sayılan iyi tarım uygulamaları temelli sistemdir."
+            }
+          ]
+        },
+        {
+          "title": "Gıda Güvenliğiyle İlgili Uluslararası Kuruluşlar",
+          "items": [
+            {
+              "term": "FAO",
+              "definition": "Birleşmiş Milletler Gıda ve Tarım Teşkilatı; gıda ve tarım alanında uluslararası çalışmalarda yer alan kuruluşlardan biridir."
+            },
+            {
+              "term": "WHO",
+              "definition": "Dünya Sağlık Örgütü; gıda kaynaklı hastalıklar ve gıda güvenliği dâhil halk sağlığı alanında uluslararası çalışmalar yürütür."
+            },
+            {
+              "term": "EFSA",
+              "definition": "Avrupa Gıda Güvenliği Otoritesi; gıda zincirine ilişkin riskleri bilimsel açıdan değerlendirir ve risk iletişimi sağlar."
+            },
+            {
+              "term": "FVO",
+              "definition": "Gıda ve Hayvan Sağlığı Ofisi; Avrupa Birliği'nde gıda güvenilirliği ve hayvan sağlığı kurallarına uygunluğa yönelik denetimlerle ilişkilidir."
+            },
+            {
+              "term": "FDA",
+              "definition": "Gıda ve İlaç İdaresi; ABD'nin gıda tedariki ile bazı sağlıkla ilişkili ürünlerin güvenliğini sağlama görevleri bulunan kurumdur."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yanitla",
+      "kind": "quiz",
+      "title": "Yanıtla-Öğren",
+      "intro": "Soruları yanıtlayın; her seçimden sonra doğru yanıt ve gerekçesi gösterilir.",
+      "activities": [
+        {
+          "title": "Uluslararası Gıda Güvenliği ve Önemi",
+          "items": [
+            {
+              "question": "Uluslararası gıda güvenliği düzenlemelerinin odağında hangi konular bulunmaktadır?",
+              "options": [
+                "Küreselleşme, gelişmiş teknoloji ve küresel çevresel konular",
+                "Tarımsal faaliyetler, hayvan sağlığı, üretim ve tedarik",
+                "Gıdadaki kimyasal ve mikrobiyolojik riskler",
+                "Ulusal gıda kontrol sistemleri"
+              ],
+              "answer": 0,
+              "explanation": "Uluslararası boyutta hazırlanan düzenlemelerin odağında küreselleşme, gelişmiş teknoloji ve küresel çevresel konular bulunmaktadır."
+            },
+            {
+              "question": "WHO'nun güvenli gıda için önerdiği davranışlardan biri hangisidir?",
+              "options": [
+                "Pişmiş gıdayı çiğ gıdayla aynı kapta tutmak",
+                "Çiğ ve pişmiş yemekleri ayrı saklamak",
+                "Güvenilir olmayan su kullanmak",
+                "Gıdaları yetersiz pişirmek"
+              ],
+              "answer": 1,
+              "explanation": "WHO güvenli gıda için çiğ ve pişmiş gıdaların ayrı tutulmasını öneren beş anahtar davranıştan birini belirtir."
+            },
+            {
+              "question": "Kaynakta dünyada her yıl güvenli olmayan gıda nedeniyle kaç kişinin hastalandığı belirtilmektedir?",
+              "options": [
+                "Yaklaşık 6 milyon kişi",
+                "Yaklaşık 60 bin kişi",
+                "Yaklaşık 600 milyon kişi",
+                "Yaklaşık 420 bin kişi"
+              ],
+              "answer": 2,
+              "explanation": "Güvenli olmayan gıdanın yılda yaklaşık 600 milyon gıda kaynaklı hastalık vakasına temel oluşturduğu belirtilmektedir."
+            },
+            {
+              "question": "Dünya Gıda Güvenliği Günü hangi tarihte kutlanır?",
+              "options": [
+                "24 Aralık",
+                "1 Ocak",
+                "16 Ekim",
+                "7 Haziran"
+              ],
+              "answer": 3,
+              "explanation": "Birleşmiş Milletler kararıyla 7 Haziran Dünya Gıda Güvenliği Günü olarak ilan edilmiştir."
+            }
+          ]
+        },
+        {
+          "title": "Uluslararası Gıda Güvenliği Standartları ve Sistemleri",
+          "items": [
+            {
+              "question": "Codex Alimentarius'un temel amaçlarından biri hangisidir?",
+              "options": [
+                "Tüketici sağlığını korumak ve gıda ticaretinde adil uygulamaları desteklemek",
+                "Gıda etiketlerini tamamen kaldırmak",
+                "Yalnızca ulusal ticareti sınırlandırmak",
+                "Gıda analizlerini yasaklamak"
+              ],
+              "answer": 0,
+              "explanation": "Codex metin ve standartları tüketici sağlığının korunmasını ve gıda ticaretinde adil uygulamaların sağlanmasını amaçlar."
+            },
+            {
+              "question": "Codex Alimentarius hangi konularda hükümler içerir?",
+              "options": [
+                "Tedarik zincirinde gıda güvenliği standardizasyonu",
+                "Gıda hijyeni, katkılar, kalıntılar, etiketleme ve analiz yöntemleri",
+                "Üretim öncesi ve üretim sırasındaki sanitasyon prosedürleri",
+                "Gıda zinciri risklerinin bilimsel değerlendirmesi ve risk iletişimi"
+              ],
+              "answer": 1,
+              "explanation": "Codex; katkı maddeleri, hijyen, veteriner ilaç ve pestisit kalıntıları, kirleticiler, etiketleme, ithalat-ihracat ve analiz-numune alma gibi konuları kapsar."
+            },
+            {
+              "question": "SSOP üretim öncesi sanitasyon kapsamında hangi alanı içerir?",
+              "options": [
+                "İç ve dış sanitasyon denetimleri",
+                "BRC gıda güvenliği kriterleri",
+                "Üretim alanları ile ekipman ve araç gereçlerin temizliği",
+                "IFS karşılaştırılabilirlik ve şeffaflık uygulamaları"
+              ],
+              "answer": 2,
+              "explanation": "Üretim öncesi SSOP kapsamında üretim alanları ile kullanılacak ekipman ve araç gereçlerin temizliği ve sanitasyonu yer alır."
+            },
+            {
+              "question": "IFS hangi amaçlarla kullanılan bir sistemdir?",
+              "options": [
+                "Yalnızca ürünlerin coğrafi adını değiştirme",
+                "Sadece depoları büyütme",
+                "Gıda güvenliği kayıtlarını kaldırma",
+                "Karşılaştırılabilirlik, şeffaflık ve maliyetleri azaltma"
+              ],
+              "answer": 3,
+              "explanation": "IFS tüm tedarik süreci boyunca karşılaştırılabilirlik, şeffaflık ve maliyetleri azaltma amacıyla kullanılan uluslararası bir belgelendirme sistemidir."
+            }
+          ]
+        },
+        {
+          "title": "Gıda Güvenliğiyle İlgili Uluslararası Kuruluşlar",
+          "items": [
+            {
+              "question": "Gıda zincirindeki riskleri bilimsel olarak değerlendiren ve risk iletişimi sağlayan kuruluş hangisidir?",
+              "options": [
+                "EFSA",
+                "FVO",
+                "FDA",
+                "BRC"
+              ],
+              "answer": 0,
+              "explanation": "EFSA'nın görevi gıda zincirine ilişkin riskleri bilimsel açıdan değerlendirmek ve risk iletişimini sağlamaktır."
+            },
+            {
+              "question": "AB'de gıda güvenilirliği ve hayvan sağlığı kurallarına uygunluğa yönelik denetimlerle ilişkili kuruluş hangisidir?",
+              "options": [
+                "WHO",
+                "FVO",
+                "IFS",
+                "SSOP"
+              ],
+              "answer": 1,
+              "explanation": "Gıda ve Hayvan Sağlığı Ofisi, AB'deki gıda güvenilirliği ve hayvan sağlığı kurallarının uygunluğuna yönelik denetimlerle ilişkilidir."
+            },
+            {
+              "question": "Dünya Sağlık Asamblesinin görevlerinden biri hangisidir?",
+              "options": [
+                "Gıda işletmelerine BRC sertifikası vermek",
+                "Tarım ilaçlarını doğrudan üretmek",
+                "Örgütün yıllık planlarını ve bütçesini gözden geçirip onaylamak",
+                "Tüm ülkelere aynı ulusal kanunu yazmak"
+              ],
+              "answer": 2,
+              "explanation": "Dünya Sağlık Asamblesinin görevleri arasında örgütün yıllık plan ve bütçesini gözden geçirmek ve onaylamak bulunmaktadır."
+            },
+            {
+              "question": "FAO ve WHO iş birliğiyle oluşturulan uluslararası gıda komisyonu hangisidir?",
+              "options": [
+                "FVO",
+                "FDA",
+                "IFS",
+                "Codex Alimentarius Komisyonu"
+              ],
+              "answer": 3,
+              "explanation": "Codex Alimentarius Komisyonu FAO ve WHO iş birliğiyle kurulmuştur."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bul",
+      "kind": "crossword",
+      "title": "Bul-Öğren",
+      "intro": "İpuçlarından yola çıkarak kelimeleri bulun. Izgara, verdiğiniz kelimelerden otomatik kurulur.",
+      "activities": [
+        {
+          "title": "Uluslararası Gıda Güvenliği ve Önemi",
+          "items": [
+            {
+              "answer": "GÜVENLİ",
+              "clue": "İnsan sağlığına zarar vermemesi hedeflenen gıdayı niteleyen sözcük"
+            },
+            {
+              "answer": "KÜRESEL",
+              "clue": "Dünya çapında ele alınan düzenleme ve sorunları niteleyen sözcük"
+            },
+            {
+              "answer": "HASTALIK",
+              "clue": "Uygun olmayan gıda tüketiminin bulaşıcı veya toksik nitelikte oluşturabildiği sağlık sorunu"
+            },
+            {
+              "answer": "TEDARİK",
+              "clue": "Gıdanın tüketiciye ulaşması için sağlanması gereken zincir süreçlerinden biri"
+            }
+          ]
+        },
+        {
+          "title": "Uluslararası Gıda Güvenliği Standartları ve Sistemleri",
+          "items": [
+            {
+              "answer": "KODEKS",
+              "clue": "FAO ve WHO iş birliğiyle oluşturulan uluslararası gıda standartları bütününe verilen kısa ad"
+            },
+            {
+              "answer": "SANİTASYON",
+              "clue": "SSOP prosedürlerinde üretim öncesi ve sırasında düzenlenen temizlik koşulları"
+            },
+            {
+              "answer": "ŞEFFAFLIK",
+              "clue": "IFS sisteminin tedarik sürecinde artırmayı amaçladığı özelliklerden biri"
+            },
+            {
+              "answer": "STANDART",
+              "clue": "Gıda güvenliğinde ortak kriterleri belirleyen kurallar bütünü"
+            }
+          ]
+        },
+        {
+          "title": "Gıda Güvenliğiyle İlgili Uluslararası Kuruluşlar",
+          "items": [
+            {
+              "answer": "SAĞLIK",
+              "clue": "WHO'nun temel çalışma alanını ifade eden kavram"
+            },
+            {
+              "answer": "TARIM",
+              "clue": "FAO'nun gıda ile birlikte adında yer alan faaliyet alanı"
+            },
+            {
+              "answer": "DENETİM",
+              "clue": "FVO'nun kurallara uygunluğu incelemek için yürüttüğü faaliyet"
+            },
+            {
+              "answer": "BİLİMSEL",
+              "clue": "EFSA'nın gıda zinciri risklerini değerlendirme yaklaşımını niteleyen sözcük"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eslestir",
+      "kind": "match",
+      "title": "Eşleştir-Öğren",
+      "intro": "Açıklamayı seçip karşısındaki kavramla eşleştirin.",
+      "activities": [
+        {
+          "title": "Uluslararası Gıda Güvenliği ve Önemi",
+          "items": [
+            {
+              "term": "Yetersiz gıda sistemleri",
+              "definition": "Ulusal gıda kontrol sistemlerinin güçlendirilmesiyle ele alınması önerilir."
+            },
+            {
+              "term": "Gıdadaki kimyasal riskler",
+              "definition": "Kimyasal risk değerlendirmesi yapılması önerilir."
+            },
+            {
+              "term": "Gıda işlemedeki tehlikeler",
+              "definition": "Güvenli gıda işlemeyi teşvik etmek çözüm olarak önerilir."
+            },
+            {
+              "term": "Gıda kaynaklı hastalıklar",
+              "definition": "Hastalık yükünü tahmin etmek çalışma alanlarından biridir."
+            }
+          ]
+        },
+        {
+          "title": "Uluslararası Gıda Güvenliği Standartları ve Sistemleri",
+          "items": [
+            {
+              "term": "Codex Alimentarius",
+              "definition": "Gıda kalite, güvenlik ve ticaret adaletine katkı sağlayan uluslararası standartlar bütünüdür."
+            },
+            {
+              "term": "BRC",
+              "definition": "Tedarik zinciri boyunca gıda güvenliği için ortak çerçeve ve takip prosedürleri oluşturur."
+            },
+            {
+              "term": "IFS",
+              "definition": "Tedarik sürecinde şeffaflık ve karşılaştırılabilirliği destekleyen belgelendirme sistemidir."
+            },
+            {
+              "term": "SSOP",
+              "definition": "Üretim öncesi ve üretim sırasındaki sanitasyon prosedürlerini kapsar."
+            }
+          ]
+        },
+        {
+          "title": "Gıda Güvenliğiyle İlgili Uluslararası Kuruluşlar",
+          "items": [
+            {
+              "term": "FAO",
+              "definition": "Gıda ve tarım alanında Birleşmiş Milletler bünyesinde faaliyet gösterir."
+            },
+            {
+              "term": "WHO",
+              "definition": "Küresel halk sağlığı ve gıda kaynaklı hastalıklar konusunda çalışmalar yürütür."
+            },
+            {
+              "term": "EFSA",
+              "definition": "Avrupa'da gıda zinciri risklerini bilimsel olarak değerlendirir ve risk iletişimi yapar."
+            },
+            {
+              "term": "FVO",
+              "definition": "AB gıda ve hayvan sağlığı kurallarının uygulanmasına yönelik denetim işleviyle ilişkilidir."
+            },
+            {
+              "term": "FDA",
+              "definition": "ABD'de gıda tedarikinin güvenliği ve halk sağlığına ilişkin görevleri bulunan kurumdur."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dene",
+      "kind": "study",
+      "title": "Dene-Öğren",
+      "intro": "Kısa metni okuyun, öne çıkan noktaları inceleyin ve kontrol sorusunu yanıtlayın.",
+      "activities": [
+        {
+          "title": "Uluslararası Gıda Güvenliği ve Önemi",
+          "items": [
+            {
+              "category": "Uluslararası Gıda Güvenliği",
+              "title": "Küresel riskler ve güvenli gıda davranışları",
+              "theory": "Nüfus artışı, beslenme sorunları, ekonomik yetersizlikler ve gıda tedarikindeki sıkıntılar güvenli gıdaya erişimi zorlaştırmaktadır. Uluslararası gıda güvenliği standartları ve düzenlemeleri bu sorunlara küresel ölçekte yaklaşır. WHO gıda kaynaklı hastalıkları yaygın sağlık sorunlarından biri olarak değerlendirir ve güvenli gıda için temizlik, çiğ-pişmiş ayrımı, iyi pişirme, güvenli sıcaklık ve güvenilir su-hammadde kullanımını öne çıkarır. Dünya Gıda Güvenliği Günü de gıda kaynaklı risklerin saptanması, önlenmesi ve yönetilmesine dikkat çekmeyi amaçlar.",
+              "keyPoints": [
+                "Uluslararası düzenlemeler küresel risklere ortak yaklaşım sağlar.",
+                "WHO beş anahtar güvenli gıda davranışı önermektedir.",
+                "7 Haziran gıda güvenliği farkındalığına ayrılmıştır."
+              ],
+              "question": "WHO'nun beş anahtar davranışından biri hangisidir?",
+              "options": [
+                "Çiğ ve pişmiş gıdaları karıştırmak",
+                "Gıdaları güvenli sıcaklıkta tutmak",
+                "Güvenilir olmayan hammadde kullanmak",
+                "Pişirme süresini azaltmak"
+              ],
+              "answer": 1,
+              "explanation": "Gıdaları güvenli sıcaklıkta tutmak WHO'nun güvenli gıda için önerdiği beş anahtar davranıştan biridir."
+            }
+          ]
+        },
+        {
+          "title": "Uluslararası Gıda Güvenliği Standartları ve Sistemleri",
+          "items": [
+            {
+              "category": "Uluslararası Standartlar",
+              "title": "Kodeksten sanitasyon prosedürlerine",
+              "theory": "Uluslararası gıda standartları gıda güvenliği, üretim ve dağıtım, mikrobiyolojik yapı, gıdadaki maddeler ve gıda ile temas eden malzemeler gibi farklı alanlara yönelik hazırlanabilir. Codex Alimentarius tüketici sağlığı ve adil gıda ticareti için uluslararası referans görevi görür. BRC ve IFS tedarik zincirinde güvenlik, şeffaflık ve standardizasyonu destekleyen sistemlerdir. SSOP ise işletmedeki sanitasyonun üretim öncesi ve üretim sırasında nasıl yürütüleceğini düzenler.",
+              "keyPoints": [
+                "Codex uluslararası gıda standartları için temel referanslardan biridir.",
+                "BRC ve IFS tedarik zinciri güvenliğiyle ilişkilidir.",
+                "SSOP sanitasyon uygulamalarını prosedürleştirir."
+              ],
+              "question": "Üretim öncesi ve üretim sırasındaki sanitasyonu düzenleyen sistem hangisidir?",
+              "options": [
+                "IFS",
+                "Codex Alimentarius",
+                "SSOP",
+                "EFSA"
+              ],
+              "answer": 2,
+              "explanation": "SSOP, üretim öncesindeki ve üretim esnasındaki sanitasyonu iki temel başlık altında ele alır."
+            }
+          ]
+        },
+        {
+          "title": "Gıda Güvenliğiyle İlgili Uluslararası Kuruluşlar",
+          "items": [
+            {
+              "category": "Uluslararası Kurumsal Yapılar",
+              "title": "Risk değerlendirmeden denetime",
+              "theory": "Gıda güvenliğinin küresel niteliği farklı uluslararası kuruluşların görev paylaşımını önemli hâle getirir. FAO gıda ve tarım alanında, WHO halk sağlığı ve gıda kaynaklı hastalıklar konusunda çalışır. EFSA Avrupa'da gıda zinciri risklerini bilimsel olarak değerlendirir ve risk iletişimi sağlar. FVO uygunluk denetimleriyle, FDA ise ABD'deki gıda tedarikinin güvenliği ve halk sağlığına ilişkin görevleriyle öne çıkar.",
+              "keyPoints": [
+                "FAO gıda ve tarım alanında uluslararası çalışmalar yürütür.",
+                "EFSA bilimsel risk değerlendirmesi ve risk iletişimi yapar.",
+                "FVO denetim, FDA ise ABD gıda tedariki güvenliği işlevleriyle ilişkilidir."
+              ],
+              "question": "Bilimsel risk değerlendirmesi ve risk iletişimi hangi kuruluşun temel görevidir?",
+              "options": [
+                "FVO",
+                "FDA",
+                "BRC",
+                "EFSA"
+              ],
+              "answer": 3,
+              "explanation": "EFSA gıda zincirine ilişkin riskleri bilimsel açıdan değerlendirir ve risk iletişimi sağlar."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

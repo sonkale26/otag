@@ -1,0 +1,484 @@
+/* Çöz-Öğren — içerik verisi. Elle de düzenleyebilirsiniz. */
+window.EO_DATA = {
+  "meta": {
+    "id": "mmtsosageimyzbn",
+    "title": "Bölüm 7",
+    "subtitle": "Sahte Gıda Üretimi ve Tüketicilerin Bilgilendirilmesi",
+    "footer": "",
+    "eyebrow": "Çöz-Öğren"
+  },
+  "lessons": [
+    {
+      "id": "tikla",
+      "kind": "cards",
+      "title": "Tıkla-Öğren",
+      "intro": "Kavramları görmek için kartlara tıklayın; ön yüzde kavram, arka yüzde açıklaması yer alır.",
+      "activities": [
+        {
+          "title": "Gıda Etiği ve İzlenebilirlik",
+          "items": [
+            {
+              "term": "Gıda etiği",
+              "definition": "Gıda ile ilgili konuların etik açıdan sorgulanmasını ve gıda bilimi ile uygulamalarında doğru kabul edilecek değerlerin araştırılıp sistemleştirilmesini amaçlayan uygulamalı etik alanıdır."
+            },
+            {
+              "term": "Tüketici etiği",
+              "definition": "Ürün ve hizmetlerin elde edilmesi ve kullanımı sırasında kişilerin davranışlarında belirleyici olan ahlaki ilke ve kavramlardır."
+            },
+            {
+              "term": "Etik tüketici",
+              "definition": "Etik yaklaşımları dikkate alarak satın alma ve tüketim süreçlerini şekillendiren kişidir."
+            },
+            {
+              "term": "İzlenebilirlik",
+              "definition": "Üretim, işleme ve dağıtım aşamalarında ürün, girdi ve ilgili maddelerin izinin sürülebilmesi ve takip edilebilmesidir."
+            },
+            {
+              "term": "Etik izlenebilirlik",
+              "definition": "Gıdanın üretimden tüketiciye ulaşmasına kadar insan ve hayvan hakları, çevre, ticaret kuralları, inançlar ve beslenme tercihleri gibi etik konuların dikkate alınmasıyla ilişkili izlenebilirliktir."
+            }
+          ]
+        },
+        {
+          "title": "Taklit, Tağşiş ve Gıda Hileleri",
+          "items": [
+            {
+              "term": "Gıda hilesi",
+              "definition": "Haksız kazanç elde etmek amacıyla mevzuata aykırı şekilde gıdaların kullanılmasıdır."
+            },
+            {
+              "term": "Taklit",
+              "definition": "Gıda maddesinin yapısında bulunmayan özelliklere sahipmiş veya başka bir ürünün aynısıymış gibi gösterilmesidir."
+            },
+            {
+              "term": "Tağşiş",
+              "definition": "Gıdaya temel özelliğini veren ögelerin veya besin değerlerinin tamamının ya da bir bölümünün mevzuata aykırı biçimde çıkarılması, miktarının değiştirilmesi veya eşdeğer olmayan başka bir maddenin yerine katılmasıdır."
+            },
+            {
+              "term": "Seyreltme",
+              "definition": "Yüksek değere sahip bir sıvının daha düşük değere sahip bir sıvıyla karıştırılmasıdır; süte su katılması örnek verilir."
+            },
+            {
+              "term": "İkame",
+              "definition": "Yüksek değerli bir bileşenin veya ürünün bir bölümünün daha düşük değerli başka bir bileşen veya ürün parçasıyla değiştirilmesidir."
+            },
+            {
+              "term": "Gri pazar",
+              "definition": "Ürünlerin yetkisiz veya izinsiz satış kanalları yoluyla pazarlanmasıdır."
+            }
+          ]
+        },
+        {
+          "title": "Gıda Etiketleme ve Türkiye'de Gıda Kontrolü",
+          "items": [
+            {
+              "term": "Gıda etiketi",
+              "definition": "Tüketiciyi bilgilendirmek amacıyla gıdanın adı, bileşenleri, miktarı, tarih bilgileri, saklama koşulları ve diğer zorunlu bilgileri taşıyan bilgilendirme alanıdır."
+            },
+            {
+              "term": "Bileşenler listesi",
+              "definition": "Gıdanın bütün bileşenlerinin üretimde kullanıldıkları miktara göre ağırlıkça azalan sırayla verildiği listedir."
+            },
+            {
+              "term": "Son tüketim tarihi",
+              "definition": "Etikette yer alması gereken tarih bilgilerinden biridir ve tavsiye edilen tüketim tarihinden ayrı bir kavramdır."
+            },
+            {
+              "term": "Alo 174 Gıda Hattı",
+              "definition": "Tüketicilerin gıda kaynaklı problem, ihbar ve şikâyetlerini iletebilmesi ve kontrol sürecine katılabilmesi için oluşturulmuş hattır."
+            },
+            {
+              "term": "Resmî gıda kontrolü",
+              "definition": "Gıda ve yemin piyasa kontrollerinin ilgili mevzuat kapsamında Tarım ve Orman Bakanlığı tarafından kontrol görevlileri aracılığıyla yürütülmesidir."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yanitla",
+      "kind": "quiz",
+      "title": "Yanıtla-Öğren",
+      "intro": "Soruları yanıtlayın; her seçimden sonra doğru yanıt ve gerekçesi gösterilir.",
+      "activities": [
+        {
+          "title": "Gıda Etiği ve İzlenebilirlik",
+          "items": [
+            {
+              "question": "Gıda etiğinin temel amacı hangisidir?",
+              "options": [
+                "Gıda ile ilgili değerleri etik açıdan sorgulayıp sistemleştirmek",
+                "İzlenebilirlik sistemini kurmak",
+                "Tüketici etiğini tanımlamak",
+                "Gıda kontrolünü yürütmek"
+              ],
+              "answer": 0,
+              "explanation": "Gıda etiği, gıda bilimi ve uygulamalarındaki değerleri etik açıdan sorgulayıp doğru kabul edilecek ilkeleri araştırmayı ve sistemleştirmeyi amaçlar."
+            },
+            {
+              "question": "Aşağıdakilerden hangisi kaynakta gıda etiği sorunları arasında sayılır?",
+              "options": [
+                "Ürünlerin izlenebilir olması",
+                "Yanıltıcı etiket ve ürün tanıtımları",
+                "Güvenli üretim uygulamaları",
+                "Doğru tüketici bilgilendirmesi"
+              ],
+              "answer": 1,
+              "explanation": "Yanıltıcı etiketler ve ürün tanıtımları gıda etiği sorunları arasında sayılmaktadır."
+            },
+            {
+              "question": "5996 sayılı Kanunun 24. maddesi gereğince gıda işletmelerinin yükümlülüğü hangisidir?",
+              "options": [
+                "Ürün hareketlerini kaydetmemek",
+                "Etiketlemeyi tamamen bırakmak",
+                "Ürettikleri gıdanın izlenebilirliğini sağlamak",
+                "Hammaddeyi tanımlamadan kullanmak"
+              ],
+              "answer": 2,
+              "explanation": "Gıda işletmeleri ürettikleri gıdanın izlenebilirliğini sağlamakla yükümlüdür."
+            },
+            {
+              "question": "Etkin bir izlenebilirlik sistemi riskli bir ürün ortaya çıktığında ne sağlar?",
+              "options": [
+                "Ürün kaynağının gizlenmesini sağlar",
+                "Kayıtların silinmesini gerektirir",
+                "Denetimi gereksiz kılar",
+                "Ürünün dağıtıldığı yerlerin belirlenmesi ve geri toplanmasına yardımcı olur"
+              ],
+              "answer": 3,
+              "explanation": "İzlenebilirlik, riskli ürünlerin nerelere dağıtıldığını saptamaya, geri toplamaya ve sorunun kaynağını geriye dönük bulmaya yardımcı olur."
+            }
+          ]
+        },
+        {
+          "title": "Taklit, Tağşiş ve Gıda Hileleri",
+          "items": [
+            {
+              "question": "Süte su karıştırılması hangi gıda hilesine örnektir?",
+              "options": [
+                "Seyreltme",
+                "Gizleme",
+                "Sahtecilik",
+                "Gri pazar"
+              ],
+              "answer": 0,
+              "explanation": "Yüksek değerli bir sıvının daha düşük değerli bir sıvıyla karıştırılması seyreltme olarak tanımlanır."
+            },
+            {
+              "question": "Dana kıymasına tavuk eti karıştırılması hangi hile türüne örnektir?",
+              "options": [
+                "Seyreltme",
+                "İkame",
+                "Gizleme",
+                "Yanlış depolama"
+              ],
+              "answer": 1,
+              "explanation": "Yüksek değerli ürünün bir kısmının daha düşük değerli bir ürünle değiştirilmesi ikame işlemidir."
+            },
+            {
+              "question": "Taze meyvedeki bozulmayı gıda boyasıyla saklamak hangi hile türüdür?",
+              "options": [
+                "İkame",
+                "Gri pazar",
+                "Gizleme",
+                "Seyreltme"
+              ],
+              "answer": 2,
+              "explanation": "Düşük kaliteli ürünün uygun olmayan özelliğini saklamak gizleme yoluyla yapılan gıda hilesidir."
+            },
+            {
+              "question": "Natürel sızma zeytinyağına daha düşük maliyetli bitkisel yağların karıştırılması hangi kavramla ilişkilidir?",
+              "options": [
+                "Etik tüketim",
+                "İzlenebilirlik",
+                "Sanitasyon",
+                "Tağşiş"
+              ],
+              "answer": 3,
+              "explanation": "Değerli zeytinyağına daha düşük maliyetli yağlar karıştırılması tağşiş örneği olarak verilmektedir."
+            }
+          ]
+        },
+        {
+          "title": "Gıda Etiketleme ve Türkiye'de Gıda Kontrolü",
+          "items": [
+            {
+              "question": "Etikette bileşenler hangi sırayla listelenir?",
+              "options": [
+                "Üretimde kullanılan miktara göre ağırlıkça azalan sırayla",
+                "Gıdanın adıyla başlayan sırayla",
+                "Net miktara göre sıralanarak",
+                "Parti işareti veya numarasına göre"
+              ],
+              "answer": 0,
+              "explanation": "Gıdanın bütün bileşenleri üretimde kullanıldıkları miktara göre ağırlıkça azalan sırayla listelenir."
+            },
+            {
+              "question": "Etikette belirtilmesi gereken içerik kaynaklı sağlık bilgisi hangisidir?",
+              "options": [
+                "Gıdanın adı",
+                "Alerjik veya intoleratif etki gösterebilecek içerikler",
+                "Net miktar",
+                "Parti işareti veya numarası"
+              ],
+              "answer": 1,
+              "explanation": "Alerjik veya intoleratif etki gösterebilecek içeriklerin etikette belirtilmesi gerekir."
+            },
+            {
+              "question": "Türkiye’de gıda ve yemin piyasa resmî kontrollerini hangi kurum yürütür?",
+              "options": [
+                "Alo 174 Gıda Hattı",
+                "Gıda işletmecisi",
+                "Tarım ve Orman Bakanlığı",
+                "İthalatçı"
+              ],
+              "answer": 2,
+              "explanation": "Gıda ve yemin piyasa resmî kontrolleri Tarım ve Orman Bakanlığı tarafından yürütülür."
+            },
+            {
+              "question": "Alo 174 Gıda Hattının temel işlevi hangisidir?",
+              "options": [
+                "Gıda etiketinin doğruluğundan sorumlu olmak",
+                "Bileşenler listesini düzenlemek",
+                "Parti işaretini belirlemek",
+                "Tüketici ihbar ve şikâyetlerini gıda kontrol sürecine taşımak"
+              ],
+              "answer": 3,
+              "explanation": "Alo 174, tüketicilerin gıda kaynaklı problem, ihbar ve şikâyetlerini iletmesini ve kontrol sürecine katılmasını hedefler."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bul",
+      "kind": "crossword",
+      "title": "Bul-Öğren",
+      "intro": "İpuçlarından yola çıkarak kelimeleri bulun. Izgara, verdiğiniz kelimelerden otomatik kurulur.",
+      "activities": [
+        {
+          "title": "Gıda Etiği ve İzlenebilirlik",
+          "items": [
+            {
+              "answer": "ETİK",
+              "clue": "Ahlaki ilke ve değerlerle ilişkili değerlendirme yaklaşımı"
+            },
+            {
+              "answer": "İZLENEBİLİR",
+              "clue": "Üretimden dağıtıma kadar hareketleri takip edilebilen durumu niteleyen sözcük"
+            },
+            {
+              "answer": "TÜKETİCİ",
+              "clue": "Gıda seçiminde kişisel değer ve ilkeleri de dikkate alabilen son kullanıcı"
+            },
+            {
+              "answer": "KAYIT",
+              "clue": "Ürün ve girdilerin yer ve zaman hareketlerini takip etmek için tutulan bilgi"
+            }
+          ]
+        },
+        {
+          "title": "Taklit, Tağşiş ve Gıda Hileleri",
+          "items": [
+            {
+              "answer": "TAKLİT",
+              "clue": "Bir ürünü başka bir ürünün aynısıymış gibi gösterme fiili"
+            },
+            {
+              "answer": "TAĞŞİŞ",
+              "clue": "Gıdanın temel bileşenlerini mevzuata aykırı değiştirme fiili"
+            },
+            {
+              "answer": "SEYRELTME",
+              "clue": "Yüksek değerli sıvıyı daha düşük değerli sıvıyla karıştırma yöntemi"
+            },
+            {
+              "answer": "İKAME",
+              "clue": "Değerli bir bileşenin yerine daha düşük değerli bir bileşen koyma yöntemi"
+            },
+            {
+              "answer": "GİZLEME",
+              "clue": "Üründeki bozuk veya düşük nitelikli özelliği görünmez kılmaya yönelik hile"
+            }
+          ]
+        },
+        {
+          "title": "Gıda Etiketleme ve Türkiye'de Gıda Kontrolü",
+          "items": [
+            {
+              "answer": "ETİKET",
+              "clue": "Ürün üzerindeki zorunlu tüketici bilgilendirme alanı"
+            },
+            {
+              "answer": "BİLEŞEN",
+              "clue": "Bir gıdanın üretiminde kullanılan içeriklerden her biri"
+            },
+            {
+              "answer": "SAKLAMA",
+              "clue": "Etikette gerekli olduğunda belirtilen özel kullanım koşullarından biri"
+            },
+            {
+              "answer": "PARTİ",
+              "clue": "Ürünün ait olduğu üretim grubunu tanımlayan işaret veya numarayla ilişkili kavram"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eslestir",
+      "kind": "match",
+      "title": "Eşleştir-Öğren",
+      "intro": "Açıklamayı seçip karşısındaki kavramla eşleştirin.",
+      "activities": [
+        {
+          "title": "Gıda Etiği ve İzlenebilirlik",
+          "items": [
+            {
+              "term": "Gıda etiği",
+              "definition": "Gıda ile ilgili uygulamaları etik değerler bakımından sorgular."
+            },
+            {
+              "term": "Etik tüketici",
+              "definition": "Satın alma ve tüketim davranışlarını etik yaklaşımlarla şekillendirir."
+            },
+            {
+              "term": "İzlenebilirlik",
+              "definition": "Ürün ve girdilerin üretim, işleme ve dağıtım boyunca izinin sürülmesini sağlar."
+            },
+            {
+              "term": "Geriye dönük izleme",
+              "definition": "Sorunun kaynağını belirlemeye ve gerekli tedbirleri almaya yardımcı olur."
+            }
+          ]
+        },
+        {
+          "title": "Taklit, Tağşiş ve Gıda Hileleri",
+          "items": [
+            {
+              "term": "Seyreltme",
+              "definition": "Süte su katılması gibi bir sıvının daha düşük değerli sıvıyla karıştırılmasıdır."
+            },
+            {
+              "term": "İkame",
+              "definition": "Dana kıymasına tavuk eti karıştırılması gibi değerli bileşenin daha düşük değerli bileşenle değiştirilmesidir."
+            },
+            {
+              "term": "Gizleme",
+              "definition": "Meyvedeki bozulmayı boya ile örtmek gibi düşük kalite özelliğinin saklanmasıdır."
+            },
+            {
+              "term": "Sahtecilik",
+              "definition": "Marka, ambalaj veya içeriğin ekonomik kazanç için kopyalanmasıdır."
+            },
+            {
+              "term": "Gri pazar",
+              "definition": "Yetkisiz veya izinsiz satış kanallarıyla pazarlamadır."
+            }
+          ]
+        },
+        {
+          "title": "Gıda Etiketleme ve Türkiye'de Gıda Kontrolü",
+          "items": [
+            {
+              "term": "Gıdanın adı",
+              "definition": "Varsa resmî, yoksa alışılagelen veya tanımlayıcı ad kullanılarak etikette belirtilir."
+            },
+            {
+              "term": "Bileşenler listesi",
+              "definition": "İçerikler üretimde kullanılan miktara göre ağırlıkça azalan sırada verilir."
+            },
+            {
+              "term": "Parti işareti veya numarası",
+              "definition": "Gıdanın ait olduğu üretim grubunu tanımlayan bilgidir."
+            },
+            {
+              "term": "Alo 174 Gıda Hattı",
+              "definition": "Tüketicilerin gıda şikâyetlerini tek merkezde iletmesini sağlayan hattır."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dene",
+      "kind": "study",
+      "title": "Dene-Öğren",
+      "intro": "Kısa metni okuyun, öne çıkan noktaları inceleyin ve kontrol sorusunu yanıtlayın.",
+      "activities": [
+        {
+          "title": "Gıda Etiği ve İzlenebilirlik",
+          "items": [
+            {
+              "category": "Gıda Etiği",
+              "title": "Etik sorumluluk ve izlenebilirlik",
+              "theory": "Gıda etiği, üretim ve tüketim sürecinde doğru kabul edilen değerlerin gözetilmesini amaçlar. Taklit ve tağşiş, güvenlik ilkelerine aykırı uygulamalar, teknolojinin kötü amaçlı kullanımı, izlenemeyen ürünler ve yanıltıcı tanıtımlar etik sorunlar arasındadır. İzlenebilirlik sistemi hammadde ve girdilerin tanımlanmasını, yer ve zaman hareketlerinin kaydedilmesini ve bu verilerin ilişkilendirilmesini gerektirir. Risk ortaya çıktığında bu sistem ürünün dağıtıldığı yerlerin belirlenmesine ve geri çağırmaya yardımcı olur.",
+              "keyPoints": [
+                "Gıda etiği üretim ve tüketim değerlerini sorgular.",
+                "İzlenebilirlik ürün ve girdi hareketlerinin takip edilmesini gerektirir.",
+                "İzlenebilirlik geri çağırma ve kaynak belirleme süreçlerini destekler."
+              ],
+              "question": "İzlenebilirliğin risk yönetimindeki katkısı hangisidir?",
+              "options": [
+                "Ürün kayıtlarını ortadan kaldırmak",
+                "Riskli ürünün dağıtım yerlerini ve kaynağını belirlemeye yardımcı olmak",
+                "Etiketleri kaldırmak",
+                "Denetimi tamamen engellemek"
+              ],
+              "answer": 1,
+              "explanation": "İzlenebilirlik ürünün nerelere dağıtıldığını ve sorunun kaynağını belirleyerek geri toplama gibi önlemleri destekler."
+            }
+          ]
+        },
+        {
+          "title": "Taklit, Tağşiş ve Gıda Hileleri",
+          "items": [
+            {
+              "category": "Gıda Hileleri",
+              "title": "Hile türlerini ayırt etme",
+              "theory": "Gıda hilesi ekonomik kazanç amacıyla mevzuata aykırı uygulamaları kapsar. Seyreltmede değerli bir sıvı daha düşük değerli sıvıyla karıştırılır; ikamede değerli bileşenin bir kısmı daha düşük değerli bileşenle değiştirilir. Gizleme, düşük kalite veya bozulma gibi özelliklerin saklanmasıdır. Taklit ve tağşiş ise mevzuatta ayrıca tanımlanan ve tüketiciyi yanıltıp sağlık riski de oluşturabilen fiillerdir.",
+              "keyPoints": [
+                "Seyreltme sıvıların değer farkına dayalı karıştırılmasıdır.",
+                "İkame değerli bileşenin daha düşük değerli bileşenle değiştirilmesidir.",
+                "Taklit ve tağşiş tüketiciyi yanıltan gıda hileleridir."
+              ],
+              "question": "Değerli bir bileşenin bir kısmını daha düşük değerli bileşenle değiştirme hilesi hangisidir?",
+              "options": [
+                "Seyreltme",
+                "Gizleme",
+                "İkame",
+                "Gri pazar"
+              ],
+              "answer": 2,
+              "explanation": "İkame, yüksek değerli bileşen veya ürünün bir kısmının daha düşük değerli başka bir bileşenle değiştirilmesidir."
+            }
+          ]
+        },
+        {
+          "title": "Gıda Etiketleme ve Türkiye'de Gıda Kontrolü",
+          "items": [
+            {
+              "category": "Tüketici Bilgilendirme",
+              "title": "Etiketten resmî kontrole",
+              "theory": "Gıda etiketinde ürünün adı, bileşenler listesi, net miktar, belirli bileşenlerin yüzdesi, alerjenler, tarih bilgileri, kullanım ve saklama koşulları, ülke, işletmeci bilgileri ve beslenme bildirimi gibi zorunlu bilgiler bulunur. Bileşenler ağırlıkça azalan sırada verilir. Türkiye'de resmî kontroller Tarım ve Orman Bakanlığı tarafından ilgili kanun ve yönetmelikler kapsamında yürütülür. Taklit ve tağşiş yasaktır; tüketiciler Alo 174 aracılığıyla ihbar ve şikâyet sürecine katılabilir.",
+              "keyPoints": [
+                "Etiket tüketiciye zorunlu ürün bilgilerini sunar.",
+                "Bileşenler ağırlıkça azalan sırayla yazılır.",
+                "Alo 174 tüketiciyi gıda kontrol sürecine dâhil eder."
+              ],
+              "question": "Bileşenler listesinde sıralama hangi ölçüte göre yapılır?",
+              "options": [
+                "Gıdanın adına göre",
+                "Net miktara göre",
+                "Parti işaretine göre",
+                "Üretimde kullanılan miktara göre ağırlıkça azalan sıraya"
+              ],
+              "answer": 3,
+              "explanation": "Bütün bileşenler üretimde kullanıldıkları miktara göre ağırlıkça azalan sırada listelenir."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};

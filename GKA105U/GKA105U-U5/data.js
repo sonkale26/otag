@@ -1,0 +1,449 @@
+/* Çöz-Öğren — içerik verisi. Elle de düzenleyebilirsiniz. */
+window.EO_DATA = {
+  "meta": {
+    "id": "mmtsosageimyzbn",
+    "title": "Bölüm 5",
+    "subtitle": "Gıda Kalite Kontrolünün Esasları ve Uygulaması",
+    "footer": "",
+    "eyebrow": "Çöz-Öğren"
+  },
+  "lessons": [
+    {
+      "id": "tikla",
+      "kind": "cards",
+      "title": "Tıkla-Öğren",
+      "intro": "Kavramları görmek için kartlara tıklayın; ön yüzde kavram, arka yüzde açıklaması yer alır.",
+      "activities": [
+        {
+          "title": "Kalite ve Gıda Kalitesi",
+          "items": [
+            {
+              "term": "Kalite",
+              "definition": "Belirtilen veya ima edilen ihtiyaçları karşılama yeteneğine dayanan ürün, süreç veya hizmet özelliklerinin toplamıdır."
+            },
+            {
+              "term": "Gıda kalitesi",
+              "definition": "En temel ifadeyle tüketime uygunluk olup gıdanın bileşimi, üretim yöntemi, besleyici değeri, olası taklit-tağşiş-kontaminasyon durumu, ambalajı ve etiketlemesi gibi özellikleri kapsar."
+            },
+            {
+              "term": "Tasarım kalitesi",
+              "definition": "Ürün veya hizmetin tüketicilerin istek ve ihtiyaçlarına uygun biçimde tasarlanma derecesidir."
+            },
+            {
+              "term": "Uygunluk kalitesi",
+              "definition": "Ürün veya hizmetin tasarım kalitesiyle belirlenmiş spesifikasyonlara uygunluk derecesidir."
+            },
+            {
+              "term": "Kullanım kalitesi",
+              "definition": "Ambalajlama, paketleme, taşıma, gönderim ve kullanım sonrası bakım gibi süreçlerin kalite gereklerine uygun yürütülmesini kapsayan nihai kalitedir."
+            }
+          ]
+        },
+        {
+          "title": "Standart, Standardizasyon, ISO ve TSE",
+          "items": [
+            {
+              "term": "Standart",
+              "definition": "Bir ürünün imalatı, bir sürecin yönetilmesi, bir hizmetin sağlanması veya malzeme tedarikinin belirlenmesi için oluşturulan kurallar ve faaliyetler bütünüdür."
+            },
+            {
+              "term": "Standardizasyon",
+              "definition": "İlgili tarafların iş birliği ve uzlaşmasıyla belirli bir faaliyete düzenli yaklaşım sağlayacak kuralların oluşturulması ve uygulanması sürecidir."
+            },
+            {
+              "term": "ISO",
+              "definition": "Ürün ve hizmetlere değer katan, dünya ticaretini kolaylaştıran uluslararası standartlar geliştiren standardizasyon kuruluşudur."
+            },
+            {
+              "term": "TSE",
+              "definition": "Türkiye'de standardizasyon ve uygunluk değerlendirmesi yapan, Sanayi ve Teknoloji Bakanlığına bağlı kurumdur."
+            },
+            {
+              "term": "ISO 22000",
+              "definition": "Üretimden tüketime kadar gıda güvenliğini yönetmek amacıyla geliştirilen gıda güvenliği yönetim sistemi standardıdır."
+            }
+          ]
+        },
+        {
+          "title": "Diğer Uluslararası Gıda Standartları",
+          "items": [
+            {
+              "term": "IFS",
+              "definition": "Gıda ürünleri ve üretim süreçlerinin güvenliği ile kalitesini belgeleyen, sürekli süreç iyileştirmesine odaklanan gıda güvenliği sertifika programıdır."
+            },
+            {
+              "term": "BRC",
+              "definition": "Tedarik zinciri boyunca gıda güvenliği standartlarını uyumlaştırmak amacıyla İngiliz perakendecileri tarafından oluşturulan standarttır."
+            },
+            {
+              "term": "GLOBALG.A.P.",
+              "definition": "Tüketici gereksinimlerini iyi tarım uygulamalarına dönüştüren ve çiftlik yönetimi uygulamalarını kapsayan güvence programıdır."
+            },
+            {
+              "term": "EUREPGAP",
+              "definition": "1997 yılında Avrupa süpermarket zincirleri ve tedarikçileri tarafından oluşturulan, daha sonra GLOBALG.A.P. adını alan standarttır."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yanitla",
+      "kind": "quiz",
+      "title": "Yanıtla-Öğren",
+      "intro": "Soruları yanıtlayın; her seçimden sonra doğru yanıt ve gerekçesi gösterilir.",
+      "activities": [
+        {
+          "title": "Kalite ve Gıda Kalitesi",
+          "items": [
+            {
+              "question": "Kalitenin ortak amacı aşağıdakilerden hangisidir?",
+              "options": [
+                "Müşteri istek ve ihtiyaçlarını karşılayarak memnuniyet sağlamak",
+                "Üründeki kusurları artırmak",
+                "Standartlara uyumu azaltmak",
+                "Teslimatı geciktirmek"
+              ],
+              "answer": 0,
+              "explanation": "Farklı kalite tanımlarının ortak noktasında müşteri istek ve ihtiyaçlarını karşılamak ve müşteri memnuniyetini sağlamak yer alır."
+            },
+            {
+              "question": "Gıda kalitesinin en temel ifadesi hangisidir?",
+              "options": [
+                "Standartlara uyum",
+                "Tüketime uygunluk",
+                "Müşteri ihtiyaçlarına uygunluk",
+                "Kusurların yokluğu"
+              ],
+              "answer": 1,
+              "explanation": "Gıda kalitesi en temel ifadeyle tüketime uygunluk olarak tanımlanmaktadır."
+            },
+            {
+              "question": "Bir ürünün belirlenmiş spesifikasyonlara uygunluk derecesi hangi kalite unsurudur?",
+              "options": [
+                "Tasarım kalitesi",
+                "Kullanım kalitesi",
+                "Uygunluk kalitesi",
+                "Pazar kalitesi"
+              ],
+              "answer": 2,
+              "explanation": "Uygunluk kalitesi, ürünün tasarımda belirlenen spesifikasyonlara uygunluk derecesini ifade eder."
+            },
+            {
+              "question": "Spesifikasyon neyi ifade eder?",
+              "options": [
+                "Tüketici beklentilerini",
+                "Tasarım kalitesini",
+                "Uygunluk kalitesini",
+                "Bir ürün veya hizmetin taşıması gereken özellikleri yazılı olarak belirten belgeyi"
+              ],
+              "answer": 3,
+              "explanation": "Spesifikasyon, ürün veya hizmetin taşıması gereken özellikleri yazılı olarak belirten şartnamedir."
+            }
+          ]
+        },
+        {
+          "title": "Standart, Standardizasyon, ISO ve TSE",
+          "items": [
+            {
+              "question": "Standartların uygulanması için genel yaklaşım hangisidir?",
+              "options": [
+                "Genellikle tercihe bağlıdır; mevzuata alınırsa zorunlu olabilir",
+                "Her durumda ve her sektörde zorunludur",
+                "Hiçbir zaman güncellenemez",
+                "Yalnızca kamu kurumları için geçerlidir"
+              ],
+              "answer": 0,
+              "explanation": "Standartlar genel olarak gönüllüdür; mevzuata dâhil edilerek zorunlu hâle getirilebilir ve ihtiyaçlara göre güncellenebilir."
+            },
+            {
+              "question": "Standardizasyonun temel özelliği hangisidir?",
+              "options": [
+                "Kuralların hiçbir zaman yenilenmemesi",
+                "İlgili tarafların iş birliği ve uzlaşması",
+                "Tüketici görüşünün tamamen dışlanması",
+                "Sadece tek işletmenin karar vermesi"
+              ],
+              "answer": 1,
+              "explanation": "Standardizasyon, ilgili tarafların planlı ve iş birliğine dayalı katılımıyla ortak kurallar oluşturulmasına dayanır."
+            },
+            {
+              "question": "Türkiye'de ISO standartları ve kalite sistem belgelendirmesi hangi kurum tarafından yürütülür?",
+              "options": [
+                "WHO",
+                "FAO",
+                "TSE",
+                "BRC"
+              ],
+              "answer": 2,
+              "explanation": "Türkiye'de ISO standartlarıyla ilgili kalite sistem belgelendirmesi TSE tarafından yürütülmektedir."
+            },
+            {
+              "question": "Aşağıdakilerden hangisi gıda işletmelerinin yararlandığı başlıca ISO standartlarından biridir?",
+              "options": [
+                "IFS 2003",
+                "BRC 1997",
+                "GAP 1963",
+                "ISO 14001"
+              ],
+              "answer": 3,
+              "explanation": "Kaynakta ISO 9001, ISO 14001 ve ISO 22000 gıda işletmelerinin yararlandığı başlıca ISO standartları arasında sayılmaktadır."
+            }
+          ]
+        },
+        {
+          "title": "Diğer Uluslararası Gıda Standartları",
+          "items": [
+            {
+              "question": "IFS standardının temel odağı hangisidir?",
+              "options": [
+                "Gıda ürünleri ve üretim süreçlerinin güvenliği ile kalitesini belgelemek",
+                "Tedarik zinciri boyunca gıda güvenliği şartlarını uyumlaştırmak",
+                "İyi tarım uygulamalarını çiftlik güvence sistemine dönüştürmek",
+                "ISO yönetim sistemi standartları geliştirmek"
+              ],
+              "answer": 0,
+              "explanation": "IFS, gıda ürünleri ve üretim süreçlerinin güvenliğini ve kalitesini belgeleyen bir sertifika programıdır."
+            },
+            {
+              "question": "BRC standardının temel amacı hangisidir?",
+              "options": [
+                "Gıda ürünleri ve üretim süreçlerinin güvenliğini belgelemek",
+                "Tedarik zinciri boyunca gıda güvenliği standartlarını uyumlaştırmak",
+                "Çiftlik yönetimi uygulamalarını güvence altına almak",
+                "ISO 22000 yönetim sistemini oluşturmak"
+              ],
+              "answer": 1,
+              "explanation": "BRC, tedarik zincirinde gıda güvenliği şartlarını uyumlaştırmak amacıyla oluşturulmuştur."
+            },
+            {
+              "question": "EUREPGAP hangi yıl GLOBALG.A.P. adını almıştır?",
+              "options": [
+                "1997",
+                "2003",
+                "2007",
+                "2018"
+              ],
+              "answer": 2,
+              "explanation": "EUREPGAP, küresel erişim hedefi doğrultusunda 2007 yılında GLOBALG.A.P. adını almıştır."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bul",
+      "kind": "crossword",
+      "title": "Bul-Öğren",
+      "intro": "İpuçlarından yola çıkarak kelimeleri bulun. Izgara, verdiğiniz kelimelerden otomatik kurulur.",
+      "activities": [
+        {
+          "title": "Kalite ve Gıda Kalitesi",
+          "items": [
+            {
+              "answer": "KALİTE",
+              "clue": "Ürün ya da hizmetin ihtiyaçları karşılama yeteneğini anlatan temel kavram"
+            },
+            {
+              "answer": "TASARIM",
+              "clue": "Tüketici beklentilerine göre ürünün biçimlendirilmesiyle ilgili aşama"
+            },
+            {
+              "answer": "UYGUNLUK",
+              "clue": "Belirlenmiş şartlara ne ölçüde uyulduğunu ifade eden kavram"
+            },
+            {
+              "answer": "ŞARTNAME",
+              "clue": "Bir ürünün taşıması gereken özellikleri yazılı biçimde belirten belge"
+            }
+          ]
+        },
+        {
+          "title": "Standart, Standardizasyon, ISO ve TSE",
+          "items": [
+            {
+              "answer": "STANDART",
+              "clue": "Ürün, süreç veya hizmet için ortak kuralları belirleyen ölçütler bütünü"
+            },
+            {
+              "answer": "UZLAŞMA",
+              "clue": "İlgili tarafların ortak kurallar üzerinde anlaşmasını anlatan kavram"
+            },
+            {
+              "answer": "KALİBRASYON",
+              "clue": "TSE’nin faaliyet alanları arasında yer alan ölçüm doğrulama işlemi"
+            },
+            {
+              "answer": "METROLOJİ",
+              "clue": "TSE'nin faaliyet alanları arasında bulunan ölçüm bilimi"
+            }
+          ]
+        },
+        {
+          "title": "Diğer Uluslararası Gıda Standartları",
+          "items": [
+            {
+              "answer": "PERAKENDE",
+              "clue": "IFS ve BRC standartlarının oluşumunda etkili olan satış alanı"
+            },
+            {
+              "answer": "TEDARİK",
+              "clue": "BRC'nin güvenlik şartlarını uyumlaştırmayı amaçladığı zincirin adı"
+            },
+            {
+              "answer": "ÇİFTLİK",
+              "clue": "GLOBALG.A.P. programının güvence sağladığı üretim ortamı"
+            },
+            {
+              "answer": "ŞEFFAFLIK",
+              "clue": "Küreselleşmeyle artan uluslararası kalite gereksinimlerinden biri"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eslestir",
+      "kind": "match",
+      "title": "Eşleştir-Öğren",
+      "intro": "Açıklamayı seçip karşısındaki kavramla eşleştirin.",
+      "activities": [
+        {
+          "title": "Kalite ve Gıda Kalitesi",
+          "items": [
+            {
+              "term": "Tasarım kalitesi",
+              "definition": "Tüketici istek ve beklentilerinin ürün tasarımına yansıtılma derecesidir."
+            },
+            {
+              "term": "Uygunluk kalitesi",
+              "definition": "Üretimin belirlenmiş standart ve şartlara uyma derecesidir."
+            },
+            {
+              "term": "Kullanım kalitesi",
+              "definition": "Ambalajlama, taşıma ve kullanım sonrası süreçlerin kalite gereklerine uygunluğudur."
+            },
+            {
+              "term": "Gıda kalitesi",
+              "definition": "Gıdanın tüketime uygunluğunu ve mevzuata uygun özelliklerinin bütününü ifade eder."
+            }
+          ]
+        },
+        {
+          "title": "Standart, Standardizasyon, ISO ve TSE",
+          "items": [
+            {
+              "term": "ISO 9001",
+              "definition": "Gıda işletmelerinin yararlandığı kalite yönetim sistemi standartlarından biridir."
+            },
+            {
+              "term": "ISO 22000",
+              "definition": "Gıda güvenliği yönetim sistemi standardıdır."
+            },
+            {
+              "term": "TSE",
+              "definition": "Standart hazırlama, uygunluk değerlendirme, muayene, deney, kalibrasyon ve belgelendirme faaliyetleri yürütür."
+            }
+          ]
+        },
+        {
+          "title": "Diğer Uluslararası Gıda Standartları",
+          "items": [
+            {
+              "term": "IFS",
+              "definition": "Süreç iyileştirmesine odaklanan uluslararası gıda güvenliği ve kalite sertifika programıdır."
+            },
+            {
+              "term": "BRC",
+              "definition": "İngiliz perakendecilerince tedarik zincirinde güvenlik şartlarını uyumlaştırmak için geliştirilmiştir."
+            },
+            {
+              "term": "GLOBALG.A.P.",
+              "definition": "İyi tarım uygulamalarını çiftlik güvence sistemine dönüştüren uluslararası programdır."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dene",
+      "kind": "study",
+      "title": "Dene-Öğren",
+      "intro": "Kısa metni okuyun, öne çıkan noktaları inceleyin ve kontrol sorusunu yanıtlayın.",
+      "activities": [
+        {
+          "title": "Kalite ve Gıda Kalitesi",
+          "items": [
+            {
+              "category": "Kalite Yönetimi",
+              "title": "Kalitenin çok boyutlu yapısı",
+              "theory": "Kalite tek bir özellikten ibaret değildir ve farklı disiplinlerde farklı biçimlerde tanımlanabilir. Genel yaklaşım, ürün veya hizmetin ihtiyaçlara ve kullanıma uygun olmasıdır. Gıda kalitesinde tüketici kabulü yanında bileşim, besleyici değer, üretim yöntemi, kontaminasyon, ambalaj ve etiketleme gibi unsurlar da dikkate alınır. Tasarım, uygunluk ve kullanım kalitesi bir ürünün farklı kalite boyutlarını açıklar.",
+              "keyPoints": [
+                "Kalite ihtiyaçlara ve kullanıma uygunlukla ilişkilidir.",
+                "Gıda kalitesi çok sayıda ürün özelliğini kapsar.",
+                "Tasarım, uygunluk ve kullanım farklı kalite boyutlarıdır."
+              ],
+              "question": "Gıda kalitesi kapsamında doğrudan değerlendirilen özelliklerden biri hangisidir?",
+              "options": [
+                "Tasarım ve teslimat",
+                "Bileşim ve üretim yöntemi",
+                "Müşteri memnuniyeti ve bağlılığı",
+                "Maliyet ve pazar payı"
+              ],
+              "answer": 1,
+              "explanation": "Gıda kalitesi; bileşim, üretim teknolojisi, besleyici değer, ambalaj ve etiketleme gibi birçok özelliği kapsar."
+            }
+          ]
+        },
+        {
+          "title": "Standart, Standardizasyon, ISO ve TSE",
+          "items": [
+            {
+              "category": "Standardizasyon",
+              "title": "Standartların oluşumu ve uygulanması",
+              "theory": "Standartlar farklı tarafların bilgi ve ihtiyaçlarının ortak bir çerçevede buluşmasıyla oluşur. Uygulanmaları genel olarak tercihe bağlı olmakla birlikte mevzuat içinde yer aldıklarında zorunlu hâle gelebilir. Gelişmeler ve ihtiyaçlar doğrultusunda standartlar yenilenebilir veya yürürlükten kaldırılabilir. ISO uluslararası standartlar geliştirirken, Türkiye'de TSE standardizasyon ve belgelendirme faaliyetlerini yürütür.",
+              "keyPoints": [
+                "Standartlar paydaş uzlaşmasına dayanır.",
+                "Standartlar güncellenebilir veya kaldırılabilir.",
+                "TSE Türkiye'de standardizasyon ve belgelendirme görevleri yürütür."
+              ],
+              "question": "Bir standardın zaman içinde değişmesinin temel nedeni hangisidir?",
+              "options": [
+                "Standartların hiçbir kurala dayanmaması",
+                "Belgelendirmenin yasaklanması",
+                "İlgili alandaki gelişmeler ve yeni ihtiyaçlar",
+                "Tüketici ihtiyaçlarının değişmemesi"
+              ],
+              "answer": 2,
+              "explanation": "Standartlar alandaki gelişmeler ve ihtiyaçlar doğrultusunda yenilenebilir ya da güncelliğini yitirirse yürürlükten kaldırılabilir."
+            }
+          ]
+        },
+        {
+          "title": "Diğer Uluslararası Gıda Standartları",
+          "items": [
+            {
+              "category": "Uluslararası Standartlar",
+              "title": "Perakende ve çiftlik temelli güvence sistemleri",
+              "theory": "ISO ve TSE standartlarının dışında uluslararası gıda ve perakendeci birlikleri tarafından geliştirilen farklı standartlar da bulunmaktadır. IFS, gıda ürünleri ile üretim süreçlerinin güvenliği ve kalitesini belgelendirir. BRC tedarik zinciri boyunca gıda güvenliği şartlarını uyumlaştırmaya yöneliktir. GLOBALG.A.P. ise EUREPGAP kökenli bir çiftlik güvence programı olarak ürün güvenliği, çevresel etki ve canlıların refahı gibi çiftlik yönetimi konularını kapsar.",
+              "keyPoints": [
+                "IFS ürün ve süreç güvenliği ile kaliteyi belgelemeye odaklanır.",
+                "BRC tedarik zincirindeki güvenlik şartlarını uyumlaştırır.",
+                "GLOBALG.A.P. çiftlik yönetimi ve iyi tarım uygulamalarına yöneliktir."
+              ],
+              "question": "Çiftlik güvence programı olarak tanımlanan standart hangisidir?",
+              "options": [
+                "ISO 9001",
+                "TSE",
+                "BRC",
+                "GLOBALG.A.P."
+              ],
+              "answer": 3,
+              "explanation": "GLOBALG.A.P., tüketici gereksinimlerini iyi tarım uygulamalarına dönüştüren bir çiftlik güvence programıdır."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};
