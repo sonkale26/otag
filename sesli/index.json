@@ -1,0 +1,283 @@
+{
+  "course_title": "Bölüm 3: Etik ve Sosyal Sorumluluk",
+  "schema_version": 2,
+  "audio_mode": "single",
+  "audio_file": "audio/ders.mp3",
+  "audio_codec": "MP3 128 kbps",
+  "sample_rate": 44100,
+  "total_duration": 3178.53,
+  "tts_engine": "ElevenLabs · eleven_multilingual_v2",
+  "generated_at": "2026-09-03T12:34:47.191Z",
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Giriş",
+      "start": 0,
+      "end": 186.549,
+      "chunks": [
+        {
+          "id": "c001",
+          "title": "Giriş",
+          "text": "Toplumun ihtiyaçlarını karşılamak için faaliyette bulunan işletmeler, toplumun refah düzeyini artırır. İş dünyasında uzun dönem yaşamını sürdürmek isteyen işletmeler, iş etiğine gerekli özeni gösterip faaliyet ve kararlarını ona göre yönlendirmeli, davranış standartları ve ahlaki değerlere önem vermelidir. İşletmeler yüksek verimlilik peşinde koşarken tüm paydaşlarının refah düzeyini de göz önünde bulundurmalıdır. Günümüzde toplumun önemli bir üyesi olan işletme yöneticilerinin ticari faaliyetlerini gerçekleştirirken kararlarının ekonomik, sosyal ve çevresel sonuçlarını dikkate alması sorumlulukları olduğu yönündeki anlayış geniş kesimlerce kabul görmektedir.\n\nEtik ve sosyal sorumluluk konusu, yirmi birinci yüzyıl işletmelerinin öncelikli konuları arasına yerleşmiştir. Günümüz işletmeleri karmaşık işletme etiği sorunlarını tanıma ve üstesinden gelebilme yeteneğine ihtiyaç duymaktadır. Son yıllarda toplumun işletmelerden beklentileri artmakta, bu beklentilerin karşılanmaması, halkın işletmelere karşı öfkesi ve güven kaybıyla sonuçlanmaktadır. Başlangıçta tüketici ve baskı gruplarından gelen işletmelerin daha etik ve doğal çevreye daha duyarlı iş yapması talepleri, bugün daha geniş platformlarda dile getirilmekte ve konuyla ilgili sürdürülebilir kalkınma amaçları, yeşil mutabakat gibi küresel çözümler geliştirilmeye çalışılmaktadır. Günümüzde görünürlüğü artan yasal ve etik kusurlar, tüm işletme kararlarına etik ve sorumluluğun entegrasyonu konusundaki ihtiyacı ortaya çıkarmaktadır. Ayrıca tüketici, çalışan, yatırımcı ve hükûmetler, özel ilgi gruplarını içeren pek çok farklı kesim, işletme karar ve eylemlerini muazzam şekilde mercek altına alıp incelemektedir.\n\nKonunun zorlu yanı etik sorunların karmaşıklığıdır. Çünkü işletme karar ve eylemlerinin doğruluğuna ilişkin hüküm idealler, beklentiler, algılar, çıkarlar, kültürel değerler gibi pek çok faktörün etkisinde verilmektedir. Ayrıca temponun yüksek olduğu, hızlı iş yaşamında çoğu zaman neyin doğru neyin yanlış olduğunu değerlendirmek kolay değildir. İş etiği alanındaki meselelerin çoğu tartışmaya açıktır çünkü etik sorunlara bulunan çözümlerin olumlu ve olumsuz yönleri bulunabilmektedir. Bu ünitenin amacı, işletmelerde karşılaşılan etik sorunlar ve işletmelerin sosyal sorumlulukları hakkında sizleri bilgilendirmek ve anlayışlardaki değişmeleri ortaya koymaktır.",
+          "start": 0,
+          "end": 186.549,
+          "duration": 186.549,
+          "tts_parts": 1,
+          "chars": 2360
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "İşletmelerde Etik",
+      "start": 187.449,
+      "end": 484.543,
+      "chunks": [
+        {
+          "id": "c002",
+          "title": "İşletmelerde Etik Giriş",
+          "text": "Bu bölüm kapsamında; etik kavramı, işletmeler ve etik alan konuları ele alınacak ve açıklamalar gerçekleştirilecektir.",
+          "start": 187.449,
+          "end": 199.756,
+          "duration": 12.307,
+          "tts_parts": 1,
+          "chars": 144
+        },
+        {
+          "id": "c003",
+          "title": "Etik Kavramı",
+          "text": "Ahlak, bir toplumda birey ya da grupların uymak zorunda oldukları davranış biçimleri ve kurallardır. Ahlak bilimi olan etik ise birey veya grubun davranışlarının doğruluğu ya da yanlışlığı hakkında hüküm vermeyi sağlayan ahlaki yargıların statüsünü analiz eder ve insanların ahlaki tutumlarının ardında yatan yargıları ele alır. Kurumların toplumla etkileşimi sonucu oluşan karar ve eylemlerinde geçerli olan ahlaki ilke, değer ve standartlar ise iş etiğini oluşturur. Bu bağlamda iş etiği, ahlak norm ve kurallarının iş hayatında işletme, şirket ve kuruluşlarda uygulanması ile ilgilidir.\n\nAhlak, genellikle insanların kendilerine göre benimsedikleri bir ilkeler topluluğu ve kurallar toplamı anlamına gelir; bireyin karar alma ve uygulamada neyin iyi, neyin kötü olduğuna ilişkin standartlarını ortaya koyar. Etiğin bireysel, örgütsel ve toplumsal boyutları bulunur. İşletmeler farklı kültürlere sahip bireylerin bir arada ve belli bir birliktelik içinde çalıştıkları birimlerdir. İşletmeler açısından etik meseleler kurum kültürünün bir parçası olan kurum içi değerlerle doğrudan ilişkilidir. Değerler işletmelerin iç ve dış çevreye karşı sorumlulukları konusundaki kararlarını etkiler. Çalışanlar iç çevre, müşteri ve yatırımcılar dış çevre unsurlarına örnektir. Etik bir mesele, işletme veya bireyin eylemlerinin diğerlerine çıkar sağlayabileceği veya zararlı olabileceği bir durumda ortaya çıkar. Bizler bulunduğumuz noktadan meselenin etik ve etik olmayan çözümleri konusunda görüş bildiririz.",
+          "start": 200.206,
+          "end": 320.299,
+          "duration": 120.094,
+          "tts_parts": 1,
+          "chars": 1515
+        },
+        {
+          "id": "c004",
+          "title": "İşletmeler ve Etik Alan",
+          "text": "İnsan davranışları, dışsal kontrolün yoğunluğu açısından üç kategoriden birine denk düşer. Bunlardan ilki bir hukuk sistemi içinde değerler ve standartların yazılı hâlde bulunduğu yasalarla tanımlanmış davranışlardır. Bu alanda kanun yapıcılar, insanlar ve şirketlerin nasıl davranmaları gerektiğine ilişkin kuralları net olarak belirlerler. Örneğin, asgari ücret ya da şirketlerin vergi ödeme yükümlülükleri yasalarla belirlenmiştir. Dışsal kontrolün en yoğun olduğu alan, bu alandır. Diğer uçta ise özgür seçim alanı yer alır. Burası yasalarda hiçbir şekilde yer almayan davranışlara aittir. Bireylerin neye yatırım yapacakları ya da şirketlerin ne kadar mamul üretecekleri onların özgür seçimlerine bağlıdır.\n\n**İşletme Davranışlarında Dışsal Kontrolün Derecesi**\n\n(Betimleme Paragrafı): Bu tablo, işletme davranışlarında dışsal kontrolün derecesine göre üç farklı alanı (Hukuk alanı, Etik alanı ve Özgür seçim alanı) karşılaştırmaktadır. Yüksek kontrolün olduğu hukuk alanında yasalar belirleyici iken, etik alanında toplumun beklentileri, düşük kontrolün olduğu özgür seçim alanında ise işletmenin kendi standartları esas alınmaktadır.\n\nBu iki uç arasında kalan alan, etik alandır. Bu alanda spesifik bir yasa yoktur ancak etik davranış konusunda birey ya da şirkete yol gösterecek, toplumda genel kabul görmüş ilke ve değerlere dayalı davranış standartları söz konusudur. Özgür seçim alanında bir itaat kurumu yoktur; kişi sadece kendi kendisini sınırlayabilir. Hukuk alanında uyulması zorunlu kurallar, yasal sistem içinde tanımlanmış kanunlarla belirtilmiştir. Etik davranış bölgesinde ise birey ya da şirketin hangi norm ve standartları dikkate alacağı, yasaların kapsama alanında değildir. Başka bir deyişle, bu norm ve standartlar hakkında yasaların bir yaptırım gücü yoktur. Etik açıdan kabul edilebilir davranış, hem yasal olarak hem de toplumun büyük bir kesimi tarafından ahlaki açıdan kabul edilebilir olandır. Özetle hukuk alanında yasal standartlar, etik alanında toplumsal standartlar, özgür seçim alanında da bireysel standartlar söz konusudur.",
+          "start": 320.749,
+          "end": 484.543,
+          "duration": 163.794,
+          "tts_parts": 1,
+          "chars": 2086
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Etik Davranışı Etkileyen Faktörler",
+      "start": 485.443,
+      "end": 792.571,
+      "chunks": [
+        {
+          "id": "c005",
+          "title": "Etik Davranışı Etkileyen Faktörler Giriş",
+          "text": "Yöneticiler de dâhil olmak üzere örgüt içindeki bireylerin, etik ya da etik olmayan davranışlarının arkasında pek çok faktör bulunur. Davranışlar bireyin ahlaki gelişmişlik düzeyi gibi içsel faktörler ile örgüt kültürü gibi dışsal faktörler arasındaki etkileşim sonucu oluşur. Bireyin etik sorunlar karşısındaki tutum ve davranışını etkileyen faktörler aşağıda Şekil 3.1’de sunulmuştur.\n\n**Şekil 3.1: Etik/etik olmayan davranışı etkileyen faktörler**\n\n(Betimleme Paragrafı): Bu şema, bireylerin etik sorunlarla karşılaştıklarında sergileyecekleri etik veya etik olmayan davranışların hangi faktörlerden etkilendiğini göstermektedir. Şemaya göre davranışlar; bireysel karakteristikler, ahlaki gelişmişlik düzeyi, yapısal değişkenler, örgüt kültürü ve sorunun etki gücünün muhakeme süreci üzerindeki ortak etkileşimiyle şekillenmektedir.",
+          "start": 485.443,
+          "end": 554.22,
+          "duration": 68.778,
+          "tts_parts": 1,
+          "chars": 874
+        },
+        {
+          "id": "c006",
+          "title": "Bireyin Ahlaki Gelişim Seviyesi",
+          "text": "Bireyin ahlaki gelişmişlik düzeyini belirlemek için kullanılan göstergelerden biri olan üç aşamalı gelişim basamağı, Kohlberg tarafından bilişsel gelişim yaklaşımına göre oluşturulmuştur. İlk aşamadaki bireyler sadece kendi çıkarlarına uygun olduğu durumlarda ve/veya fiziksel cezalandırılmadan kaçınmak için kurallara uyarlar. İkinci gelişmişlik düzeyi ise bireylerin kendisine yakın olan kişilerin beklentileri doğrultusunda yaşadığı ve kendisinin de onayladığı yükümlülükleri yerine getirmek suretiyle var olan düzeni koruduğu bir düzeydir. En üst basamak ise ilkelere dayalı davranışın söz konusu olduğu bir düzeydir. Bu gelişmişlik düzeyindeki bireyler, çoğunluğun fikrine aldırmaksızın diğerlerinin haklarına saygı ve etik değerlere sıkı sıkıya bağlılık gösterir. Kanuna aykırı olsa bile kendi seçimi olan etik ilkelere uygun olarak kararını verir.",
+          "start": 554.67,
+          "end": 622.658,
+          "duration": 67.988,
+          "tts_parts": 1,
+          "chars": 888
+        },
+        {
+          "id": "c007",
+          "title": "Bireysel Özellikler",
+          "text": "Herkes çalıştığı örgüte nispeten yerleşik değerleriyle birlikte gelir. Bireyin erken yaşlarda ailesi, arkadaşları, öğretmenleri ve diğerlerinden öğrendiği ve geliştirdiği bu değerler, neyin doğru neyin yanlış olduğu konusunda temel muhakemelerini belirler. İşletme yöneticilerinin birbirinden çok farklı bireysel değerlere sahip çalışanlarla karşı karşıya olduklarının farkında olmaları gerekir.",
+          "start": 623.108,
+          "end": 656.777,
+          "duration": 33.669,
+          "tts_parts": 1,
+          "chars": 417
+        },
+        {
+          "id": "c008",
+          "title": "Yapısal Değişkenler",
+          "text": "Örgütün yapısal tasarımı, örgüt üyelerinin etik davranışlarının oluşmasında yardımcı olur. Bazı yapılar belirsizliği yaratırken bazıları çalışanlara güçlü bir şekilde yol gösterir. Resmî kural ve düzenlemeler, iş tanımları, etik kodlar, örgüt içinde etik davranışı teşvik eden ve tutarlı davranmayı yerleştiren önemli unsurlardır. Bu unsurlar, aynı zamanda örgüt içindeki belirsizliği ve yanlış anlamayı da önemli ölçüde azaltır.",
+          "start": 657.227,
+          "end": 693.404,
+          "duration": 36.177,
+          "tts_parts": 1,
+          "chars": 451
+        },
+        {
+          "id": "c009",
+          "title": "Örgüt Kültürü",
+          "text": "Örgüt kültürünün özellikleri ve güçlü olması etik davranışı etkiler. Güçlü kültürlerin bireyler üzerinde çok etkisi vardır. Güçlü ve yüksek etik standartların desteklendiği bir kültürün, etik davranışlar üzerinde olumlu etkisi olacaktır. Zayıf örgütsel kültürlerde bireyler, büyük olasılıkla altkültürün normlarına uygun olarak davranacaklardır. Çalışma grupları ve bölüm standartları, örgüt içindeki davranışı güçlü bir şekilde etkileyebilecektir.",
+          "start": 693.854,
+          "end": 732.26,
+          "duration": 38.406,
+          "tts_parts": 1,
+          "chars": 464
+        },
+        {
+          "id": "c010",
+          "title": "Sorunun Etki Gücü",
+          "text": "Herhangi bir çalışan, iş yerinden birkaç malzemeyi evine götürmekte tereddüt etmezken şirketin parasını zimmete geçirme konusunda son derece duyarlılık gösterebilir. Bu da göstermektedir ki etik meselenin özellikleri etik davranışı etkilemektedir. Sorunun etki gücünü belirlemek için kullanılan birtakım ölçütler vardır. Örneğin sorgulanan davranış, taraflarına ne büyüklükte zarar ya da yarar sağlamaktadır, davranışın iyi olduğu ya da kötü olduğu konusunda bir uzlaşma var mıdır, öngörülen zarar ya da faydanın gerçekleşme olasılığı nedir? gibi sorulara verilen yanıtlar, etik meselenin ne kadar önemli olduğu konusunda belirleyici olacaktır. Çalışanlar önemli olduğu düşünülen konularda etik davranmaya daha özenli yaklaşabilirler.",
+          "start": 732.71,
+          "end": 792.571,
+          "duration": 59.861,
+          "tts_parts": 1,
+          "chars": 754
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "İşletmelerde Sosyal Sorumluluk",
+      "start": 793.471,
+      "end": 2152.448,
+      "chunks": [
+        {
+          "id": "c011",
+          "title": "İşletmelerde Sosyal Sorumluluk Giriş",
+          "text": "İşletmelerde sosyal sorumluluk başlığı kapsamında; sosyal sorumluluk kavramı ve temel yaklaşımlar, sosyal sorumluluk düzeyleri, sosyal sorumluluk ve sürdürülebilirlik ve sosyal sorumluluk ve paydaş yaklaşımı konuları üzerinde durulacaktır.",
+          "start": 793.471,
+          "end": 816.134,
+          "duration": 22.663,
+          "tts_parts": 1,
+          "chars": 278
+        },
+        {
+          "id": "c012",
+          "title": "Sosyal Sorumluluk Kavramı ve Temel Yaklaşımlar",
+          "text": "İşletmeler kime karşı sorumludur? Bu konuda iki farklı görüş vardır. Bir uçta tamamıyla klasik/ekonomik görüş; diğer uçta ise sosyoekonomik görüş yer almaktadır.\n\nKlasik görüş, işletme yönetimlerinin tek sosyal sorumluluğunun kâr maksimizasyonu olduğunu savunmaktadır. Bu yaklaşımın en hararetli savunucusu ekonomist ve Nobel Ödülü sahibi Milton Friedman’dır. Friedman, yöneticilerin temel sorumluluğunun hissedarların ya da şirket sahiplerinin çıkarlarını en iyi koruyacak şekilde işi yürütmek olduğunu iddea eder. Friedman, aynı zamanda yöneticilerin hiçbir zaman işletmenin kaynaklarını “toplumun iyiliği” için harcama kararı alamayacağını, bunun işletmeye ilave maliyet getireceğini savunur. Burada şunu gözden kaçırmamak gerekir. Friedman, işletmelerin bir tek sosyal sorumluluğu bulunduğunu; o sorumluluğun da hissedarlar için kârın maksimize edilmesi olduğunu belirtmiştir.\n\nSosyoekonomik görüş ise yönetimin sosyal sorumluluğunun kâr elde etmenin ötesinde, toplumun refahını korumayı ve iyileştirmeyi de kapsadığını savunur. Bu duruş, şirketlerin sadece patronlarına karşı sorumlu, bağımsız varlıklar olmadığı inancına dayanır. Bu görüşe göre yöneticiler çeşitli kanunlar ve düzenlemelerle yapılarını oluşturan; işletmenin ürün ve hizmetlerini satın alarak destekleyen toplumun daha büyük bir kesimine karşı da sorumludur. Bu görüşün taraftarları işletme örgütlerinin tümüyle ekonomik kurumlar olmadığına inanırlar. Toplum işletmelerin sosyal, politik, yasal, doğal çevre ile ilgili meselelerle uğraşmasını bekler hatta bu konuda onları teşvik eder. Günümüzde çok sayıda işletme yönetimi sosyoekonomik görüşü benimsemektedir.",
+          "start": 816.584,
+          "end": 950.191,
+          "duration": 133.608,
+          "tts_parts": 1,
+          "chars": 1682
+        },
+        {
+          "id": "c013",
+          "title": "Sosyal Sorumluluk ve Etik",
+          "text": "Sosyal sorumluluk ve etik; her ikisinin farklı anlamları olmasına rağmen etik ve sosyal sorumluluk kavramı birbiri yerine kullanılabilmektedir.\n\nSosyal sorumluluk, organizasyonun paydaşları üzerindeki olumsuz etkisini minimize, olumlu etkisini maksimize etme yükümlülüğüdür. Pek costly pek çok işletme kendisi ile çeşitli paydaşları arasında uygun ilişkiler, yükümlülükler ve görev belirleme çabası içindedir. İş etiği karar almaya rehberlik eden, dikkatli bir şekilde oluşturulmuş kuralları veya keşfedilmiş iş yapma biçimlerini içerirken sosyal sorumluluk toplumla yapılmış bir sözleşme olarak görülebilir. Bu sözleşmeye göre toplum işletmelerden sorumlu ve etik davranışlar bekler. Sosyal sorumlu davranış, etik kavramına dayanan ve toplumun beklentilerini karşılayan eyleme dönüşmüş davranış biçimidir.",
+          "start": 950.641,
+          "end": 1017.608,
+          "duration": 66.966,
+          "tts_parts": 1,
+          "chars": 834
+        },
+        {
+          "id": "c014",
+          "title": "Sosyal Sorumluluk Düzeyleri",
+          "text": "İşletmeler açısından sosyal sorumluluk dört bölümde incelenebilir (Şekil 3.2). Bunlar sosyal sorumluluğun birbiriyle ilişkili ve ayırt edilebilir dört yüzünü ifade etmektedir. Ekonomik, yasal, etik ve gönüllü/hayırseverlik sorumluluklar başlıkları altında toplanan bu sorumluluklar ardışık katmanlardan oluşmaktadır. Sorumluluk açısından katmanların hepsi önemlidir. Ancak en alt basamaktan üst basamaklara doğru çıkıldıkça işletmelerin toplumun daha geniş kesimine karşı duyarlılık gösterdiği ve mevcut sorunlara çözüm üretmede katkı sağladığı görülür.\n\nİlk basamakta yer alan ekonomik sorumlulukların kapsamı, esas olarak iktisadi bir birim olan işletmelerin toplum içindeki varlık nedeni ve temel sorumluluğuyla ilişkilidir. Bunlar işletmenin işlevini uygun bir şekilde yerine getirmesi ve varlığını sürdürmesidir. Bu basamakta yatırımcılar yatırımlarının karşılığını almayı, çalışanlar iş güvenliği ve adil ücreti, müşteriler ise uygun fiyatlı, kaliteli ürünleri beklerler.\n\nİkinci basamakta yasal sorumluluklar yer almaktadır. İşletmeler faaliyetlerini gerçekleştirirken ilgili yasa ve düzenlemelere uymakla yükümlüdür. Örneğin rekabet stratejilerini oluştururken yasalara uymak zorundadır.\n\nÜçüncü basamakta, etik sorumluluklar yer alır. Bu sorumluluk, yasal engel olmasa bile toplum ve paydaşların beklentilerine uygun, doğru faaliyetlere işaret eder. Örneğin, bir ülkede iklim değişikliğiyle mücadelede işletmelerden beklenen yasal yükümlülükler olmamasına rağmen tüketici baskısı, işletmelerin bu konudaki gönüllü girişimleriyle sonuçlanmıştır.\n\nPiramidin üst alanında hayırseverlik sorumlulukları yer alır. Gönüllü sorumluluklar olarak da anılan hayırseverlik sorumluluğu basamağında, topluma kaynakların aktarımı (para, zaman, bilgi gibi) ya da yürütülen projelerle toplumun refahının artırılması ve yaşam kalitesinin iyileştirilmesi amacı ön plana çıkar.\n\n**Şekil 3.2: Carroll’ın Dört Parçalı Kurumsal Sosyal Sorumluluk Modeli**\n\n(Betimleme Paragrafı): Bu şekil, işletmelerin kurumsal sosyal sorumluluklarını katmanlar halinde gösteren bir piramit modelidir. Piramidin en tabanında toplum tarafından gerekli görülen \"Ekonomik Sorumluluklar\" yer alırken, onun üzerinde sırasıyla toplum tarafından gerekli görülen \"Yasal Sorumluluklar\", toplum tarafından beklenen \"Etik Sorumluluklar\" ve en tepede toplum tarafından arzu edilen \"Hayırseverlik Sorumluluğu\" basamağı bulunmaktadır.\n\nOrganizasyonların sorumlulukları bağlamında iki önemli konudan da söz etmek gerekir. Bunlardan biri makro amaçlı “sürdürülebilirlik”, diğeri de bir yönetsel yaklaşım ve stratejilerin dayanağı bağlamında “paydaş kuramı”dır. Aşağıda sırasıyla bu konular ele alınmıştır.",
+          "start": 1018.058,
+          "end": 1228.941,
+          "duration": 210.884,
+          "tts_parts": 1,
+          "chars": 2676
+        },
+        {
+          "id": "c015",
+          "title": "Sosyal Sorumluluk ve Sürdürülebilirlik",
+          "text": "Küreselleşmenin hızlanmasıyla birlikte, toplum içinde şirketlerin çeşitli etkilerini düzenlemede yeni yollar geliştirmeye yönelik büyük bir ihtiyaç ortaya çıkmıştır. Zira bu etkilerin bazıları geniş kapsamlı ve derin niteliktedir. Örneğin, iklim değişikliği üzerinde etkili olan çevre kirliliği, “kullan at” kültürünün baskınlığı ve aşırı ürün paketleme sonucu ortaya çıkan atıkların yok edilmesi ya da yönetilmesi problemi, şirketlerin küçülmesi ya da kapanmasının yerel halk ve bireyler üzerindeki yıkıcı etkisi, yerel kültürlerin erozyonu gibi. Bu tür problemler işletmelerin amaç ve sonuçları konusunda yeniden düşünmenin gerekliliğini görünür hâle getirmiştir. 1992’de Rio de Janeiro’da düzenlenen BM Çevre ve Kalkınma Konferansı (UNCED), ulusların çevreye duyarlı yönetim yaklaşımları benimsemelerine yönelik bir dizi ilkenin kabulü açısından önemli olmuştur.",
+          "start": 1229.391,
+          "end": 1301.28,
+          "duration": 71.889,
+          "tts_parts": 1,
+          "chars": 906
+        },
+        {
+          "id": "c016",
+          "title": "Sürdürülebilir Kalkınma Amaçları ve Kurumsal Sosyal Sorumluluk",
+          "text": "Sürdürülebilirlik kavramının geçmişi 18. yüzyıla uzansa da popülerliği 1987’den bugüne gerçekleşmiştir. 1987’de Birleşmiş Milletler Dünya Çevre ve Kalkınma Komisyonu, bugünün ve geleceğin nesillerinin ihtiyaçlarını karşılamaları için etik bir vizyon geliştirmiştir. Sürdürülebilir kalkınma anlayışı genel olarak “gelecek nesillerin kendi ihtiyaçlarını karşılama yeteneğine zarar vermeksizin bugünkü nesillerin ihtiyaçlarını karşılayacak kalkınma” olarak tanımlanmaktadır. Bu anlayış 20. yüzyılın sonlarına doğru dünya çapında ilgi odağı olmuş ve imzalanan uluslararası antlaşmalarla küresel bir uygulama planı hâline gelmiştir. Sürdürülebilir kalkınma ile bağlantılı bir kavram olarak sürdürülebilirlik çevresel, ekonomik ve sosyal açıdan tüm sistemin uzun dönemli korunması anlamına gelir.\n\nEylül 2015’te düzenlenen Birleşmiş Milletler Sürdürülebilir Kalkınma Zirvesi’nde kabul edilen “Dünyamızı Dönüştürmek: 2030 Sürdürülebilir Kalkınma Gündemi” planı tüm dünyada yeni bir dönüşümü hedeflemektedir. Sürdürülebilir Kalkınma Amaçlarına (SKA) ulaşılmasında tüm kurum, işletme ve bireylerin üzerlerine düşen sorumlulukları almaları beklenmektedir.\n\nBu plana göre, Birleşmiş Milletler üyesi ülkeler tarafından kabul edilen ve 2030 yılına kadar erişilmek üzere 17 sürdürülebilir kalkınma amacı belirlenmiştir. Bunlar:\n\n**17 Sürdürülebilir Kalkınma Amacı Görseli**\n\n(Betimleme Paragrafı): Bu görsel, Birleşmiş Milletler üyesi ülkeler tarafından 2030 yılına kadar ulaşılmak üzere belirlenen 17 sürdürülebilir kalkınma amacını renkli piktogramlarla göstermektedir. Bu amaçlar; yoksulluğun ve açlığın sona erdirilmesi, nitelikli eğitim, toplumsal cinsiyet eşitliği, temiz su ve enerjiye erişim, iklim eylemi ile sudaki ve karadaki yaşamın korunması gibi küresel refahı ve çevresel sürdürülebilirliği hedefleyen geniş bir alanı kapsamaktadır.\n\nSürdürülebilir kalkınma çerçevesinde 17 adet amaç, 169 alt amaç ve 500’den fazla gösterge bulunmaktadır. İşletmeler düzeyinde sürdürülebilirlik konusundaki farkındalık hızla büyümektedir. Son zamanlarda işletmeler finansal sağlamlılığın sağlanması kapsamı dışındaki eylemlerinden de gittikçe daha fazla sorumlu tutulmaktadır. Ayrıca sürdürülebilir kalkınma amaçlarına ulaşma arzusu işletmelerin kurumsal sosyal sorumluluklarını yerine getirmesini gerektirmektedir. Bu beklentiler bazen toplumun işletmelerdeki bu yönlü uygulamalara şüpheyle yaklaşmaları ile sonuçlanmaktadır. “Greenwashing” (yeşil göz boyama olarak çevirebiliriz) olarak bilinen bu kavram işletmelerin toplumda olumlu bir algı yaratmak amacıyla mal ve hizmetlerinin sürdürülebilir kalkınma amaçlarıyla uyumlu ve çevre dostu olarak rapor edildiği inancını ifade etmektedir.\n\nYeşil göz boyama (greenwashing), tüketicileri bir şirketin ürünlerinin çevre dostu olduğuna veya gerçekte olduğundan daha fazla olumlu çevresel etkiye sahip olduğuna inandırmak için asılsız bir iddiada bulunmayı içerir.\n\nİşletmelerin kurumsal sosyal sorumluluk uygulamalarındaki çeşitlilik, topluma etkisinin değerlendirilmesinde de söz konusudur. Bu durum yerel ve küresel alanda bu uygulamaların sürdürülebilir kalkınmaya katkısını değerlendirmeyi de güçleştirmektedir. Kurumsal sosyal sorumluluğun farklı şekillerde anlaşılması, greenwashing gibi olumsuz yaklaşıma da neden olabilmektedir. Bu da kurumsal itibar açısından arzu edilen bir durum değildir.\n\nİşletmelerin amacı ve sorumluluğu konusunda bir çerçeve önerisi olan sürdürülebilirlik, daha net olarak “üçlü sorumluluk - triple bottom line” olarak ifade edilmiştir. John Elkington’un (1998) isim babası ve hararetli savunucusu olduğu bu anlayış, işletmelerin bir tek hedefi olduğu fikrini reddeder. İşletmelerin bir amaç setine sahip olduklarını ve amaçlarının ekonomik, sosyal ve çevresel değer üretmek olduğunu savunur. Bu bağlamda sürdürülebilirlik, iş etiği ve sorumluluk için yeni bir hedef olarak görülmelidir. Burada bu üçlü sorumluluğun finansal sorumlulukları dışlamadığını da belirtmek gerekir. Şekil 3.3’te yer alan üçlü sorumluluk, işletmelerden beklentilerin genişlediğini açıkça ortaya koymaktadır.\n\n**Şekil 3.3: Sürdürülebilirlik hedefinden işletmelere yansıyan sorumluluk alanları**\n\n(Betimleme Paragrafı): Bu şemada, sürdürülebilirlik hedefleri doğrultusunda işletmelerin üstlenmesi gereken üç temel sorumluluk alanı olan Ekonomik, Sosyal ve Çevresel boyutlar kesişen dairelerle gösterilmektedir. Şema, modern işletmelerin yalnızca finansal kârlılığa değil, aynı zamanda bu üç alan arasında sağlıklı bir denge kurarak toplumsal ve ekolojik değer yaratmaya odaklanması gerektiğini vurgulamaktadır.\n\nDaha önce de belirttiğimiz gibi kurumsal sosyal sorumluluk gönüllülük veya kurumsal bir hayırseverlikten öte, bir işletmenin uzun vadede sosyal, çevresel ve ekonomik performansıyla ilgili düzenleyici (mevzuata dayalı) bir çerçeveye de dayalı olan sürdürülebilirlik kavramına dönüşmüştür. O nedenle kimi işletmeler “sosyal sorumluluk” raporlarını “sürdürülebilirlik” raporu başlığında yayımlamaktadır. Bu raporlarda şirketler tüm paydaşlarına kurumsal değerlerini, iş yapış biçimlerini ve ekonomik, sosyal, çevresel alandaki performanslarıyla ilgili doğru ve güncel bilgiyi uluslararası standartlara uygun olarak sunmaktadır. Bu standartlardan yaygın olarak kabul görmüş olanı GRI – Küresel Raporlama Girişimi standardıdır.\n\nÖzetleyecek olursak kurumsal sosyal sorumlulukla ilişkili olan kavramları şöyle listeleyebiliriz:\n\n* Sürdürülebilirlik\n* Kurumsal sürdürülebilirlik\n* Kurumsal vatandaşlık\n* Kurumsal sorumluluk\n* Kurumsal sosyal performans\n* Kurumsal itibar\n* İşletme etiği\n* Kurumsal hayırseverlik\n\nKurumsal sosyal sorumluluğun sınırlarını devlet, piyasa ve sivil toplum şekillendirir. Genel olarak kurumsal sosyal sorumluluk, bir işletmenin toplumun öne çıkan beklentilerine uygun olarak hareket etme yükümlülüğüdür ve bu nedenle sürdürülebilir kalkınma kavramıyla doğrudan bağlantılıdır. Kurumsal sosyal sorumluluk sürdürülebilirliğin 3 boyutunu göz önünde bulundurmalıdır: (1) Verimlilik ve değer yaratmaya odaklanan ekonomik sürdürülebilirlik, (2) Doğal kaynakların korunması ve emisyonların azaltılması odaklı ekolojik/çevresel sürdürülebilirlik, (3) Nesiller arası eşitlik, işletme paydaşlarının memnuniyeti ve gönüllülük eylemlerine odaklı sosyal sürdürülebilirlik. Kurumsal sosyal sorumluluk bu sayede işletmelerin dışsal maliyetlerini azaltabilme ve paydaşları ile arasındaki çatışmalardan kaçınmayı sağlayabilme potansiyeli de taşımaktadır.",
+          "start": 1301.73,
+          "end": 1811.037,
+          "duration": 509.306,
+          "tts_parts": 1,
+          "chars": 6449
+        },
+        {
+          "id": "c017",
+          "title": "Sosyal Sorumluluk ve Paydaş Yaklaşımı",
+          "text": "Paydaş yaklaşımı 1980’lerde Edward Freeman tarafından geliştirilmiştir. Kavram iş dünyasında ilk olarak 1960’larda kullanılmasına rağmen, popüler ve etkili olması daha sonraları olmuştur. Sosyal sorumluluk yaklaşımı işletmelerin sorumlulukları üzerine odaklanırken paydaş yaklaşımı, işletmelerin sorumlu olduğu çeşitli gruplara odaklanır. Temel iddiası, işletmelerin sorumluluğu konusundaki sosyoekonomik görüşle paraleldir. Paydaş yaklaşımı işletmelerin sadece hissedarlar ya da sahiplerin çıkarları doğrultusunda değil, aynı zamanda işletme içinde ve etrafında bulunan önemli birçok birey veya grubun göz önüne alınarak yönetilmesi gerektiğini savunur. Yaklaşım, şirketlerden kendi amaçlarını gerçekleştirirken diğerlerinin haklarını ihlal etmemelerini diğerleri üzerindeki etkilerinden sorumlu olmalarını talep eder.\n\nKurumsal sosyal sorumluluk uygulamalarının hedef kitlesi, işletmelerden kurumsal davranış ve sonuçlar itibarıyla belirgin beklentileri olan mevcut ve gelecekteki paydaşlarıdır. Paydaşlar, işletmeyle ilişki içinde olan, işletmenin işle ilgili faaliyetlerinden olumlu ya da olumsuz olarak etkilenen veya işletme üzerinde belirli bir etkiye sahip olan kişi veya gruplardır. Paydaşlar işletme içinde ve dışında bulunurlar. İç paydaşlar olarak yönetim kurulu üyelerini, hissedarları, ortakları, girişimciyi, yöneticileri ve çalışanları sıralayabiliriz. Dış paydaşlar arasında ise tedarikçiler, müşteriler, doğal çevre, devlet, yerel halk yer alabilir.\n\nGenel olarak sekiz paydaş grubu tanımlanmıştır:\n\n* Müşteriler\n* Çalışanlar\n* Yatırımcılar\n* Rakipler\n* Hükûmetler (ulusal, yerel)\n* Toplum (Sivil toplum kuruluşları, medya, akademi)\n* Topluluklar\n\nPaydaşların kimler olduğu işletmeden işletmeye değişebileceği gibi, aynı işletmenin farklı durum, görev ya da projeleri için de değişebilir. Aşağıda yer alan Şekil 3.4, bir işletmenin geleneksel modele ve paydaş yaklaşımına göre paydaşlarla olan ilişkilerini temsil etmektedir. Burada paydaş yaklaşımında ilişkilerin iki yönlü olduğuna dikkat edilmelidir. Birinci modelde işletme sahipleri, işletmenin faaliyetlerinde çıkarları gözetilecek baskın gruptur. İşletmeden işletmeye değişmekle birlikte bir üretim işletmesi için devlet, işletme sahipleri, tedarikçiler, çalışanlar, müşteriler ve yerel toplum paydaşlar grubu içinde sıralanabilir. Özel ilgi grupları, kitlesel medya, ticari birlikler ve rakipler de paydaşlar arasında yer alabilir. Bu bakış açısı, işletme yönetimlerine yeni bir rol tanımlar.\n\n**Şekil 3.4: Geleneksel yönetim modeli - Paydaşlara dayalı yönetim modeli**\n\n(Betimleme Paragrafı): Bu şema iki farklı işletme yönetimi modelini karşılaştırmaktadır. \"Geleneksel Yönetim Modeli\"nde işletmenin sadece hissedarlar, tedarikçiler, müşteriler ve çalışanlar gibi doğrudan çıkar gruplarıyla ilişkisi gösterilirken; \"Paydaş Modeli\"nde bunlara ek olarak sivil toplum, devlet ve rakipler gibi çok daha geniş bir çevreyle iki yönlü ve karşılıklı etkileşim halinde olduğu gösterilmektedir.\n\nKurumsal sosyal sorumluluk taşıyan bir işletme, belirledikleri paydaşları üzerindeki olumlu etkilerini maksimize, olumsuz etkilerini minimize etmek için uygun ilke ve süreçlere sahiptir. Toplumun doğal çevreyle ilgili işletmelerden temel beklentisi temiz bir çevre; ortak ve yatırımcıların beklentisi kâr ve güvenilir bilgi akışıdır. Tüketicilerin beklentisi ise güvenilir ürünler, satın alma esnasında doğru bilgilendirilme ve ürün seçme hakkına saygı gösterilmesidir. Çalışanların beklentileri ise istihdamda fırsat eşitliğinin sağlanması, cinsiyete göre ayrımcılık yapılmaması, iş güvencesi ve işle ilgili kazançlarının korunması, engelli çalışanların dikkate alınması, çalışanlara mesleğini yapabilmesi için güvenli ve sağlıklı bir ortam sunulmasıdır. Yöneticiler ise yüksek ücret, yetki ve statü beklerler. Paydaş modeli işletmelerin yönetiminde farklı kesimlerin beklentilerine göre bir denge gözetilmesini önerir. Bu zorlu bir süreçtir. Günümüzün işletmelerine düşen yeni görev de budur.\n\nİşletmelerin sosyal sorumluluğu ile bağlantılı iki önemli kavram vardır. Bunlar kurumsal vatandaşlık ve itibardır. Kurumsal vatandaşlık, işletmelerin çeşitli paydaş gruplarının işletmeden bekledikleri sorumlulukları stratejik kararlarında göz önünde bulundurmasını vurgulamak için kullanılan bir kavramdır. İtibar ise paydaşlar nezdinde şirketin eylem, seçim, davranış ve sonuçlarına göre oluşan ya da değişen, işletmelerin fiziksel olmayan en değerli varlıklarından biridir. Her ikisi de şirketlerin paydaşlarına karşı sorumluluklarıyla ilgilidir; onların yaşaması ve başarısında önemli bir paya sahiptir. En iyi kurumsal vatandaş ya da en itibarlı şirket olarak algılanmak için tek atımlık sosyal projeler yeterli değildir. Tüm düzeyleri kapsayan sosyal sorumluluk anlayışının, sistematik bir şekilde işletmenin uygulamalarına yerleştirilmesi gerekir.",
+          "start": 1811.487,
+          "end": 2152.448,
+          "duration": 340.962,
+          "tts_parts": 1,
+          "chars": 4831
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Anadolu’da Etik ve Sosyal Sorumluluk: Ahi Evran ve Ahilik",
+      "start": 2153.348,
+      "end": 3178.53,
+      "chunks": [
+        {
+          "id": "c018",
+          "title": "Anadolu’da Etik ve Sosyal Sorumluluk: Ahi Evran ve Ahilik",
+          "text": "Bir işletmede farklı mesleklerden pek çok çalışan bulunur. Bunlar arasında yönetici, mühendis, doktor, avukat, satış uzmanı, halkla ilişkiler uzmanı, akademisyen gibi meslekleri örnek olarak verebiliriz. Her kurumun olduğu gibi mesleklerin de etik ilkeleri bulunur. Meslek etiği ilkeleri, genel ahlaki ilkelerin söz konusu meslek özelinde spesifikleştirilerek yeniden düzenlenmesiyle oluşturulur. Bunun bir işlevi de bir mesleği yerine getirenler ya da o mesleği seçmeyi düşünenlerle o mesleğe ait gereklilikler arasındaki uyum derecesinin belirlenmesine yardımcı olmasıdır. Meslek etiği konusunda ahilik kurumunun özel bir yeri vardır. Ahi teşkilatı temel değerlerini İslam dininden almış, Anadolu topraklarında kendine özgü iş ahlakı yaklaşımını geliştirmiştir. Bu sayede Selçuklu döneminde Türkler, kendi aralarında birlik kurarak ve dayanışma sağlayarak sağlam ve standart mal üretip satmaları sayesinde o bölgedeki rakipleri ile rekabet edebilmişlerdir. İzleyen bölümde bu anlayışın gelişmesi ve değerleri yer almaktadır.",
+          "start": 2153.348,
+          "end": 2227.559,
+          "duration": 74.211,
+          "tts_parts": 1,
+          "chars": 1086
+        },
+        {
+          "id": "c019",
+          "title": "Ahilik Tanımı",
+          "text": "Bir görüşe göre “Ahi” kelimesi Arapça kökenli olup kardeş anlamına gelen ve “kardeşim” şeklinde ifade edilen “ah” kelimesinden türemiştir. Bir başka görüşe göre de “Ahi” ifadesi, “Kutadgu Bilig”, “Divan-ı Lugati’t Türk” gibi eski Türkçe yazıtlarda “cömert, eli açık” anlamına gelen “akı” kelimesinden türemiştir. Türk Dil Kurumu sözlüğünde “Ahi” kelimesi “cömert, kardeş”, “Ahilik” ise “kökeni eski Türk örf ve adetlerine dayanan ve Türk örf ve adetleri gibi bütün iş kollarını içine alan lonca” olarak tanımlanmaktadır. Anadolu’da yüksek düzeyde gelişmişlik gösteren esnaf, sanatkâr, çiftçi vb. sanatkâr ve esnafların yer aldığı birliktir.\\n\\nAhilik anlayışı ahlak ve disiplin içinde yaşamayı, bu disiplin ve ahlakı işine yansıtmayı, çalışarak topluma katkıda bulunmayı yücelten bir düşünce sistemidir. Ahi insanlar yardımseverliğe, dürüstlüğe ve doğruluğa çok değer vermektedir. Bu değerler zamanla Anadolu’da yer alan tüm topluma yayılarak ekonomik, sosyal ve kültürel konularda değişime neden olmuştur. Nitekim Ahilik kültürünün etkisinde ortaya çıkan Ahilik teşkilatları, sistemsel bir hiyerarşi içinde (usta-çırak-kalfa gibi) topluma hizmet amacı güden özel kurallarla (fütüvvetname) açıklanan iş ahlakına uygun hareket etmeyi amaçlayan ticari, sosyal ve kültürel faaliyetlerde bulunan kurumlardır.",
+          "start": 2228.009,
+          "end": 2323.165,
+          "duration": 95.155,
+          "tts_parts": 1,
+          "chars": 1320
+        },
+        {
+          "id": "c020",
+          "title": "Ahilik’in Tarihsel Süreci",
+          "text": "Bu teşkilatın oluşumunda dört husus etkili olmuştur. Hayatın bu yönleri, XIII. yüzyılda Türk insanı için yapısal dönüşümün ifadeleridir:\\n\\n1. Türklerin Anadolu’ya gelişi\\n2. Göçebe hayattan yerleşik hayata geçiş\\n3. Dinî faktörler\\n4. Türklerin kültürel değerleri ve bu teşkilatın kurucusu Ahi Evran\\n\\nTarihsel süreç içinde değerlendirildiğinde Ahilik teşkilatları, Türk örf ve adetlerinin İslami esaslarla bütünleşmesi sonucu Anadolu’da 13. yüzyıldan itibaren görülmeye başlanan kurumsal bir sistemdir. Fütüvvet geleneğinden gelen Ahilik teşkilatları, Türk-İslam sentezi ile Ahilik kültürünün temelini oluşturmuştur. Ahilik teşkilatlarının temeli fütüvvet anlayışıdır. Ahilik teşkilatlarının kurallarının oluşturulmasında fütüvvet anlayışının bir sonucu olarak şekillenen “fütüvvet-nâme” Anadolu’da esnaflık ve ticaretin gelişmesinde büyük etkisi vardır.\\n\\nFütüvvet anlayışı yiğitlik, alçak gönüllülük, eli açık olmak, hoşgörü, yardımsever ve dünya malına önem vermemek gibi ahlaki temellere dayanan bir anlayış olarak öne çıkıyor. Özellikle İslam ülkelerinde benimsenen bu anlayış türü esnaf ve zanaatçı teşkilatlarına verilen bir ad olarak da değerlendiriliyor.\\n\\nAnadolu’daki Ahilik sisteminin kurucusu sayılan Ahi Evran, 12. yüzyılda İran’da yaşayan Türkmen boylarından gelmektedir. Ahi Evran, 13. yüzyılın ilk yarısında İran’ın Hoy şehrinden ayrılarak önce Şam’a, ardından Bağdat ve Mekke’ye oradan da Anadolu’ya gelmiştir. Anadolu’ya geldikten sonra 1206 yılında Kayseri bölgesinde kayınpederi Evhahüddin-i Kirmani ile birlikte esnaf ve sanatkârları fütüvvet-nâme kuralları çerçevesinde örgütleyerek Anadolu’da Ahilik teşkilatının kurulmasını sağlamıştır. Ahi Evran, 32 farklı koldan esnafı yönlendirerek Ahilik anlayışını şehir merkezlerinden köylere kadar Anadolu’nun her köşesine yaymıştır.\\n\\nBugünkü esnaf odalarının temelini oluşturan, Ahilik teşkilatının kurucusu, iktisatçı, filozof Ahi Evran’dır.\\n\\nAhilik teşkilatları 13. yüzyıldan 20. yüzyılın başına kadar Anadolu’da etkili olmaya devam etmiştir. Bu teşkilatlar, Osmanlı Devleti’nin uzun süre hâkim olduğu Anadolu dışında dahi birçok bölge, şehir, kasaba ve köyde sosyal ve ekonomik hayatı etkilemiştir. Ayrıca Ahilik anlayışı ve Ahilik teşkilatları sosyal hayatı da düzenlemiştir. Dolayısıyla Ahilik anlayışı toplumdaki siyasi, sosyal, askerî, ekonomik ve dinî ilişkileri tamamlayıcı bir düzen sağlamıştır. Ahilik teşkilatlarının amacı, Anadolu’da bulunan veya daha sonra Anadolu’ya gelen Müslümanların ticaret ve sanata yönelik felsefe ve yaklaşımlarını belirlemektir. Ahilik teşkilatları, tüm esnafı tek bir çatı altında birleştirerek onların manevi, mesleki ve askerî gelişimine katkı sağlayan faaliyetler yürütmüştür. Ahilik teşkilatları sadece ticari olarak kurulmuş topluluklar olmayıp bilime saygılı olması ve o dönemin yöneticilerini de bünyesinde barındırmasından toplumların sosyal refah ve huzurunu da sağlamıştır.\\n\\nAhilikte dürüstlük, cömertlik, misafirperverlik, hoşgörü, fedakârlık, insana saygı ve sevgi, dayanışma, adalet, eşitlik, tevazu, utanma duygusuna sahip olma, yalandan sakınma gibi ahlaki erdemler ön planda yer almaktadır. Ahilikte ahlaki bir bağ görevi gören bu etik ve ahlaki ilkeler, kişinin kamu yararına sadık kalmasına ve toplumsal uyumu korumasına yardımcı olduğundan kişinin özel ve çalışma yaşamında hem ahlaki hem de etik bir yaşam sürmesi açısından önemlidir. Ayrıca bu ilkeler, yerel kültürde yer alan disiplin ve davranış kuralları ile örtüşen sürekli bir eğitim sistemi aracılığıyla topluma uygulanmıştır. Eğitim ve öğretim sistemi, üyelerden köylülere kadar uzanarak kişiyi hem toplumsal hayata hem de profesyonel çalışma hayatına hazırlamayı amaçlamıştır. Ahi olmak isteyenler, öğrenme hızına ve iş yerindeki davranışlarına bağlı olarak 2 yıldan az olmayacak şekilde çıraklık, yardakçılık, kalfalık ve ustalık gibi çeşitli eğitim aşamalarını deneyimlemek zorunda kalmışlardır. Bu aşamalardan sonra, meslek sahibi olmanın tüm gereklerini yerine getiren kişinin iş kurmasına izin vermek için bir tören düzenlenir. İş kurma izni verilmeyen veya kendi iş yerinden diploması olmayan kişi ustalık kazanamaz. Bu da sistemin sonuç odakli değil süreç odaklı olduğunu göstermektedir. Eğitim mesleki bilgiyi, dinî, sosyal bilimler ve davranış bilimlerini içermektedir. Bunun nedeni, mesleki eğitimde sadece meslekle ilgili bilgiye değil, dinî ve sosyal bilgilerde ahlaki ve etik temellere dayalı olması gerektiğine inanmalarıdır. Çünkü ahlak ve etik, kişinin iş yeri ve toplum içindeki davranışlarını yönlendirmektedir ve mesleki açıdan nasıl davranacağının bir göstergesidir. Ahilik’te üretimin amacı toplumsal faydayı maksimize etmek ve bugünkü kadar kâr odaklı olmamaktır. Bu nedenle Ahilik, insan davranışlarına, güzel ahlaka ve kişiliğe dayalı iş birliğinin izlerini taşıyan bir “ahlak mektebi” olarak değerlendirilmiştir.\\n\\nAhiliğin birçok sosyal sorumluluk çalışmasında inanç, din ve mezhep gözetmeksizin insanlığa karşı cömertliği ve sevgisi görülmüştür. Ahiler, yolculara hizmet vermek için bir dizi tekkeye sahipti. Ticaretten elde edilen kârlar da yetim, komşu ve dezavantajlı kişilere yardım gibi toplumsal faaliyetlere aktarılmaktaydı. Başkalarına yardım etmek hem dinî bir görev hem de ahlaki bir sorumluluk olarak görülüyordu. Bu sayede kıskançlık, nefret, hırsızlık, adaletsiz gelir dağılımı, hileli mal satışı, yolsuzluk, rüşvet ve yoksulluk gibi sosyal ahlaksızlıklar fazlasıyla kontrol altına alınmıştır.",
+          "start": 2323.615,
+          "end": 2724.066,
+          "duration": 400.451,
+          "tts_parts": 1,
+          "chars": 5460
+        },
+        {
+          "id": "c021",
+          "title": "Ahilik’te Meslek Ahlakı",
+          "text": "Etik davranış, mesleki alanda olduğu kadar toplumsal yaşamda da ahlaki bir sorumluluktur. Bu durum etiğin mesleki boyutuyla ele alındığında meslek etiğinin etik içinde kritik bir yere sahip olmasının belki de en önemli nedeni, meslek etiğinin insan hakları ile yakından ilişkili olmasıdır. Bu nedenle hemen hemen her işletme için etik kavramı artık insan hakları kavramlarıyla bütünleşmiştir. Ahilik’te mesleki ahlak kuralları oldukça önemli kurallardır. Ahilik’te üretim anlayışı, çok üretmek değil, daha iyi mal üretmek üzerine kuruludur. Üretimde standardizasyon sağlanarak tüketici korunmuştur. Ahilik kurumunda kurulan denetim ve ceza sistemi ile üyelerin kurallara uygunluğu kontrol edilmiş ve bu kurallara uymayanlara para cezası uygulanmıştır. Bu kurallara uymayan kişiler toplumda yer alan herkes tarafından dava edilebilirdi. Ahilik’te üretim ve satışta tüm esnafın dikkat etmesi gereken noktalar ayrıntılı olarak anlatılırdı. Ahilerde arzu edilen manevi değerler, meslek hayatlarında da olması beklenen niteliklerdi. Dürüstlük temel kuraldı, kalitesiz ya da bozuk mal katı ceza gerektiriyordu. Olması gereken fiyattan daha fazla para talep etmek, başka bir satıcının malını taklit etmek ağır suçlardı ve bu tür kişiler sendikadan atılırdı. Ahilerin toplumdan uzaklaştırılmasına yol açan diğer davranışlar ise gevezelik etmek, dedikodu yapmak veya iftira atmak, böbürlenmek, kibirlenmek, sert ve acımasız olmak, kıskançlık, kin beslemek, affetmemek, sözden dönmek, yalan söylemek, hıyanet etmek, başkalarının ayıplarını ortaya çıkarmak, cimrilik etmek, arkasından konuşmak, hırsızlıktır. Meslek ahlakına uymayanlara verilen ibretlik bir ceza da bizzat Ahi Evran’a ait olduğu söylenen cezadır. Buna göre Ahi Evran ayakkabı pazarından geçerken ayakkabıları kontrol eder, arızalıları dama atardı. Bu olayda dikkat çeken en önemli nokta, uygulamanın bir iç denetim olması ve şikâyete bakılmaksızın oto kontrolün esnafın kendisinden çıkmasıdır. Ayakkabıyı çatıya atmak Anadolu’da bugün bile kullanılan bir deyimdir.\\n\\nAhilik teşkilatı Anadolu’da uzun süre varlığını sürdördükten sonra Osmanlı Devleti’nin topraklarının genişlemesi ve gayrimüslimlerin ticaretle uğraşması nedeniyle nüfus içinde artan gayrimüslim varlığı neticesinde zayıflamaya başlamıştır. Osmanlı Devleti’nin özel yatırımcılara imkân veren kendine has ekonomik anlayışı ile İslam inanç esaslarını benimsemeyen farklı din mensuplarının bu etkisi, Ahilik teşkilatlarının yapısının önce gedik teşkilatlarına, sonra da lonca teşkilatlarına dönüşmesine neden olmuştur. Ahilik teşkilatının bu yapısal dönüşümü, iş hayatında farklı kurumların ortaya çıkmasına neden olsa da Anadolu insanının İslam esasları ile şekillenen felsefesi sonucunda sosyal hayatta tamamen ortadan kalkmamış ve bir örfi miras olarak yazılı olmayan etik çerçevesinde günümüze kadar sürmüştür.",
+          "start": 2724.516,
+          "end": 2937.257,
+          "duration": 212.741,
+          "tts_parts": 1,
+          "chars": 2859
+        },
+        {
+          "id": "c022",
+          "title": "Ahilik Sisteminin Temel İlkeleri",
+          "text": "Ahilik sisteminin temelinde, iyi insan olmak ve bunu tüm topluma yayma fikri bulunmaktadır. Bu yüzden de Ahilik sisteminde sadece mesleki eğitimlere önem verilmemiş ayrıca manevi, sosyal ve ahlaki yönden de insanlar yetiştirilmeye çalışılmıştır. Ahilik öğretisinde en yaygın kabul görmüş Burgazi fütüvvetnamesindeki ilkeler etik kurallara vurgu yapmaktadır:\\n\\n* Ahiler birkaç iş veya sanatla değil, yeteneklerine göre en uygun olan iş veya sanatla uğraşmalıdırlar.\\n* Ahinin yeteneğini değerlendirecek ve onurunu koruyacak bir işi, özellikle bir sanatı olmalıdır.\\n* Ahi doğru olmalı, emeğiyle hak ettiğinden fazlasını kazanma yoluna sapmamalıdır.\\n* Ahi, işinin ve sanatının geleneksel pirlerinden kendi ustasına kadar bütün büyüklere içten bağlanmalı, sanatında, davranışlarında onları örnek almalıdır.\\n* Ahi bilgi sahibi olmalı, bilginleri sevmeli, onlara karşı küçük düşmemeli, aldığı bilgileri yerinde ve zamanında kullanmalıdır.\\n\\nAhilik sisteminin bu temel ilkelerine kenetlenmiş Ahiler, cömertlikleri, misafirperverlikleri, ahlaklı kişilikleri, çalışkanlıkları ve adaletlilikleri ile Ahilik teşkilatının yapısını oluşturmuşlardır. Ahilik anlayışı bugün de Anadolu insanı arasında bir gelenek ve görenek olarak varlığını sürdürmektedir.",
+          "start": 2937.707,
+          "end": 3034.024,
+          "duration": 96.316,
+          "tts_parts": 1,
+          "chars": 1276
+        },
+        {
+          "id": "c023",
+          "title": "Ahilik’in Toplumsal Yönleri",
+          "text": "Ahilik teşkilatı, toplumsal faydayı amaçlayan, genellikle esnaf ve sanatkârlar tarafından kurulan bir sivil toplum kuruluşudur. Ahilik bir teşkilat olarak toplumun ekonomik hayatını doğrudan etkilemektedir. Ahilik teşkilatının işlevleri günümüzdeki diğer teşkilatlarla benzerlikler göstermektedir. Bu teşkilatlar: Sanayi ve Ticaret Odaları, sanayi ve ticaret ile ilgili problemleri çözmeyi amaçlar; İşçi ve İşveren sendikaları işçi haklarını ve ilişkilerini düzenler; Rekabet Kurumu tekeli engeller; TSE, mal ve hizmetlerin kalitesini kontrol ederek tüketicileri korur. Dolayısıyla Ahilik teşkilatı da birçok modern teşkilatla benzer misyonlar üstlenmiş ve benzer bir yapıya sahip olmuştur.\\n\\nAhilik, farklı din, dil ve ırktan insanlara karşı ayrım gözetmeme ilkelerini savunmuş ve yaygınlaştırmıştır. Dürüstlük, iyilikseverlik, hayırseverlik gibi erdemlerin yanı sıra insan kardeşliği, misafirperverlik, sadakat gibi ilkelerle meslek ahlakına ilişkin ilkeleri de yaygınlaştırmıştır. Ahilik teşkilatı dayanışma ilkesini adeta yeni bir sermaye kaynağına dönüştürmüştür. Ahilik sistem olarak zengin kişilerden ziyade yüksek ahlaklı insan yetiştirmeyi amaçlamıştır.\\n\\nAhilik, özellikle Osmanlı İmparatorluğu döneminde Türk toplumunun şekillenmesinde önemli bir rol oynamıştır. Osmanlı hükümdarları Ahilik’in değerini anlamış ve ilkelerini İmparatorluğun yasal ve ekonomik sistemlerine dâhil ederek aktif bir şekilde desteklemiştir. Ahilik, Osmanlı vatandaşları arasında güçlü bir cemaat ve sosyal sorumluluk duygusu oluşturmaya yardımcı olmuş ve dürüst ve adil ticari uygulamaları teşvik ederek imparatorluğun ekonomik başarısına katkıda bulunmuştur.\\n\\nAhilik bugün de Türk kültürü ve toplumu üzerinde önemli bir etkiye sahip olmaya devam etmektedir. Eskisi kadar öne çıkmasa da Ahilik ilkeleri günümüzde de iş sahiplerinin iş, ahlak ve sosyal sorumluluk hakkındaki düşüncelerini şekillendirmeye devam etmektedir.",
+          "start": 3034.474,
+          "end": 3178.53,
+          "duration": 144.057,
+          "tts_parts": 1,
+          "chars": 1943
+        }
+      ]
+    }
+  ]
+}

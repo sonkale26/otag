@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Bölüm 3: Etik ve Sosyal Sorumluluk</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0d1117;--card:#161b27;--card2:#1e2535;--b:rgba(255,255,255,.07);--b2:rgba(255,255,255,.13);--t:#dde3f5;--t2:#8892b0;--t3:#4a5275;--ac:#4f8ef7;--ac2:#3a6fd8;--gr:#2ecc85}
+[data-theme="light"]{--bg:#e2e8f0;--card:#fff;--card2:#f1f5f9;--b:rgba(0,0,0,.08);--b2:rgba(0,0,0,.14);--t:#0f172a;--t2:#475569;--t3:#64748b}
+html,body{height:100%;height:100dvh;overflow:hidden}
+body{font-family:"Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--t);display:flex}
+.pl-theme-btn{position:absolute;top:20px;right:20px;width:40px;height:40px;border-radius:50%;background:var(--card2);border:1px solid var(--b);color:var(--t);font-size:1.1rem;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:.2s;z-index:50}
+.pl-theme-btn:hover{background:var(--b);transform:scale(1.05)}
+@media(max-width:768px){.pl-theme-btn{top:12px;right:12px;width:34px;height:34px;font-size:.95rem;background:var(--card)}}
+.sidebar{width:360px;background:var(--card);border-right:1px solid var(--b);display:flex;flex-direction:column;z-index:10}
+.main-view{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--bg);position:relative;min-width:0}
+.hdr{padding:24px 24px 12px;flex-shrink:0}
+.hdr-title{font-size:1.35rem;font-weight:800;letter-spacing:-.4px;line-height:1.25}
+.hdr-sub{font-size:.72rem;color:var(--t3);margin-top:6px;font-weight:600}
+.toc{flex:1;overflow-y:auto;padding:0 0 16px}
+.toc::-webkit-scrollbar{width:4px}.toc::-webkit-scrollbar-thumb{background:var(--b2);border-radius:2px}
+.toc-ch{font-size:.66rem;text-transform:uppercase;letter-spacing:1.2px;color:var(--t3);font-weight:800;padding:16px 24px 6px;border-top:1px solid var(--b);margin-top:6px}
+.toc-ch:first-child{border-top:none;margin-top:0}
+.toc-item{display:flex;align-items:center;gap:13px;padding:11px 24px;cursor:pointer;transition:background .15s;border-left:3px solid transparent}
+.toc-item:hover{background:rgba(79,142,247,.06)}
+.toc-item.active{background:rgba(79,142,247,.1);border-left-color:var(--ac)}
+.toc-num{width:34px;height:34px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:700;background:var(--card2);color:var(--t3);border:1px solid var(--b2);transition:.15s}
+.toc-item.active .toc-num{background:var(--ac);color:#fff;border-color:var(--ac);box-shadow:0 0 0 4px rgba(79,142,247,.2)}
+.toc-item.active .toc-num-inner{display:none}
+.toc-item.active .toc-num::before{content:"🔊";font-size:.78rem}
+.toc-label{font-size:.83rem;font-weight:500;color:var(--t2);line-height:1.4;flex:1;transition:.15s}
+.toc-item.active .toc-label{color:var(--ac);font-weight:700}
+.toc-item.done .toc-num{background:rgba(46,204,133,.15);color:#34d399;border-color:rgba(46,204,133,.3)}
+.toc-time{font-size:.66rem;color:var(--t3);font-family:monospace;flex-shrink:0}
+.player-card{width:100%;max-width:500px;background:var(--card);padding:40px;border-radius:24px;box-shadow:0 20px 60px rgba(0,0,0,.5);border:1px solid var(--b);text-align:center}
+.cover-art{width:110px;height:110px;border-radius:20px;background:linear-gradient(135deg,rgba(79,142,247,.12),rgba(155,108,247,.12));border:1px solid var(--b);margin:0 auto 20px;display:flex;align-items:center;justify-content:center;font-size:2.8rem;color:var(--ac)}
+.now-ch{font-size:.68rem;text-transform:uppercase;letter-spacing:1.2px;color:var(--t3);font-weight:800;margin-bottom:6px}
+.now-title{font-size:1.08rem;font-weight:700;margin-bottom:18px;line-height:1.4;color:var(--t)}
+.prog-track{height:7px;background:rgba(128,128,128,.22);border-radius:4px;cursor:pointer;position:relative;overflow:hidden}
+.prog-seg{position:absolute;top:0;bottom:0;background:rgba(79,142,247,.28);border-radius:4px;pointer-events:none}
+.prog-fill{position:absolute;top:0;bottom:0;left:0;background:var(--ac);border-radius:4px;width:0%;pointer-events:none}
+.times{display:flex;justify-content:space-between;font-size:.7rem;color:var(--t3);margin-top:8px;font-weight:600}
+.ctrls{display:flex;align-items:center;justify-content:center;gap:22px;margin-top:18px}
+.ctrl-btn{width:44px;height:44px;border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;background:transparent;color:var(--t2);transition:.15s}
+.ctrl-btn:hover{color:var(--t);background:rgba(128,128,128,.12)}
+.ctrl-btn svg{width:24px;height:24px;fill:currentColor}
+.skip-btn{position:relative}
+.skip-label{position:absolute;bottom:-16px;left:50%;transform:translateX(-50%);font-size:.6rem;color:var(--t3);white-space:nowrap;font-weight:600}
+.play-btn{width:64px;height:64px;border-radius:50%;background:var(--ac);color:#fff;font-size:24px;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(79,142,247,.4);transition:.15s}
+.play-btn:hover{background:var(--ac2)}.play-btn:active{transform:scale(.95)}
+.spd-btn{margin-top:18px;background:var(--card2);border:1px solid var(--b2);color:var(--t2);border-radius:100px;padding:5px 14px;font-size:.72rem;font-weight:700;cursor:pointer;font-family:inherit}
+.spd-btn:hover{color:var(--t)}
+@media(max-width:768px){body{flex-direction:column}.sidebar{width:100%;flex:1;border-right:none;border-bottom:1px solid var(--b);min-height:0}
+.main-view{flex:none;align-items:stretch;justify-content:flex-end;padding:0;background:transparent;width:100%;z-index:20}
+.player-card{max-width:100%;border-radius:0;padding:14px 18px;padding-bottom:calc(14px + env(safe-area-inset-bottom));border:none;border-top:1px solid var(--b);box-shadow:0 -10px 30px rgba(0,0,0,.5);background:var(--card2);margin:0}
+.cover-art{display:none}.now-ch{display:none}
+.now-title{font-size:.95rem;margin-bottom:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ctrls{gap:18px;margin-top:10px}.play-btn{width:54px;height:54px}.spd-btn{margin-top:10px}}
+</style>
+</head>
+<body>
+<button class="pl-theme-btn" id="pl-theme-btn" onclick="togglePlayerTheme()" title="Tema Değiştir">🌙</button>
+<aside class="sidebar">
+  <div class="hdr">
+    <div class="hdr-title">Bölüm 3: Etik ve Sosyal Sorumluluk</div>
+    <div class="hdr-sub" id="hdr-sub"></div>
+  </div>
+  <div class="toc" id="toc"></div>
+</aside>
+<main class="main-view">
+  <div class="player-card">
+    <div class="cover-art">🎙️</div>
+    <div class="now-ch" id="now-ch"></div>
+    <div class="now-title" id="now-title">Başlamak için bir bölüm seçin</div>
+    <div class="progress">
+      <div class="prog-track" id="prog-track" onclick="seek(event)">
+        <div class="prog-seg" id="prog-seg"></div>
+        <div class="prog-fill" id="prog-fill"></div>
+      </div>
+      <div class="times"><span id="t-cur">00:00</span><span id="t-dur">00:00</span></div>
+    </div>
+    <div class="ctrls">
+      <button class="ctrl-btn" onclick="prevTrack()" title="Önceki parça"><svg viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6 8.5 6V6z"/></svg></button>
+      <button class="ctrl-btn skip-btn" onclick="skipTime(-10)" title="-10s"><svg viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg><span class="skip-label">-10s</span></button>
+      <button class="play-btn" id="play-btn" onclick="togglePlay()">▶</button>
+      <button class="ctrl-btn skip-btn" onclick="skipTime(10)" title="+10s"><svg viewBox="0 0 24 24"><path d="M12 5V1l5 5-5 5V7c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6h2c0 4.42-3.58 8-8 8s-8-3.58-8-8 3.58-8 8-8z"/></svg><span class="skip-label">+10s</span></button>
+      <button class="ctrl-btn" onclick="nextTrack()" title="Sonraki parça"><svg viewBox="0 0 24 24"><path d="M6 18l8.5-6L6 6v12zM16 6h2v12h-2z"/></svg></button>
+    </div>
+    <button class="spd-btn" id="spd-btn" onclick="cycleSpeed()">1.0×</button>
+  </div>
+</main>
+<audio id="ap" preload="metadata"></audio>
+<script>
+var D = {"title":"Bölüm 3: Etik ve Sosyal Sorumluluk","audio":"audio/ders.mp3","total":3178.53,"chapters":[{"id":1,"title":"Giriş"},{"id":2,"title":"İşletmelerde Etik"},{"id":3,"title":"Etik Davranışı Etkileyen Faktörler"},{"id":4,"title":"İşletmelerde Sosyal Sorumluluk"},{"id":5,"title":"Anadolu’da Etik ve Sosyal Sorumluluk: Ahi Evran ve Ahilik"}],"items":[{"ci":0,"chapterTitle":"Giriş","id":"c001","title":"Giriş","start":0,"end":186.549},{"ci":1,"chapterTitle":"İşletmelerde Etik","id":"c002","title":"İşletmelerde Etik Giriş","start":187.449,"end":199.756},{"ci":1,"chapterTitle":"İşletmelerde Etik","id":"c003","title":"Etik Kavramı","start":200.206,"end":320.299},{"ci":1,"chapterTitle":"İşletmelerde Etik","id":"c004","title":"İşletmeler ve Etik Alan","start":320.749,"end":484.543},{"ci":2,"chapterTitle":"Etik Davranışı Etkileyen Faktörler","id":"c005","title":"Etik Davranışı Etkileyen Faktörler Giriş","start":485.443,"end":554.22},{"ci":2,"chapterTitle":"Etik Davranışı Etkileyen Faktörler","id":"c006","title":"Bireyin Ahlaki Gelişim Seviyesi","start":554.67,"end":622.658},{"ci":2,"chapterTitle":"Etik Davranışı Etkileyen Faktörler","id":"c007","title":"Bireysel Özellikler","start":623.108,"end":656.777},{"ci":2,"chapterTitle":"Etik Davranışı Etkileyen Faktörler","id":"c008","title":"Yapısal Değişkenler","start":657.227,"end":693.404},{"ci":2,"chapterTitle":"Etik Davranışı Etkileyen Faktörler","id":"c009","title":"Örgüt Kültürü","start":693.854,"end":732.26},{"ci":2,"chapterTitle":"Etik Davranışı Etkileyen Faktörler","id":"c010","title":"Sorunun Etki Gücü","start":732.71,"end":792.571},{"ci":3,"chapterTitle":"İşletmelerde Sosyal Sorumluluk","id":"c011","title":"İşletmelerde Sosyal Sorumluluk Giriş","start":793.471,"end":816.134},{"ci":3,"chapterTitle":"İşletmelerde Sosyal Sorumluluk","id":"c012","title":"Sosyal Sorumluluk Kavramı ve Temel Yaklaşımlar","start":816.584,"end":950.191},{"ci":3,"chapterTitle":"İşletmelerde Sosyal Sorumluluk","id":"c013","title":"Sosyal Sorumluluk ve Etik","start":950.641,"end":1017.608},{"ci":3,"chapterTitle":"İşletmelerde Sosyal Sorumluluk","id":"c014","title":"Sosyal Sorumluluk Düzeyleri","start":1018.058,"end":1228.941},{"ci":3,"chapterTitle":"İşletmelerde Sosyal Sorumluluk","id":"c015","title":"Sosyal Sorumluluk ve Sürdürülebilirlik","start":1229.391,"end":1301.28},{"ci":3,"chapterTitle":"İşletmelerde Sosyal Sorumluluk","id":"c016","title":"Sürdürülebilir Kalkınma Amaçları ve Kurumsal Sosyal Sorumluluk","start":1301.73,"end":1811.037},{"ci":3,"chapterTitle":"İşletmelerde Sosyal Sorumluluk","id":"c017","title":"Sosyal Sorumluluk ve Paydaş Yaklaşımı","start":1811.487,"end":2152.448},{"ci":4,"chapterTitle":"Anadolu’da Etik ve Sosyal Sorumluluk: Ahi Evran ve Ahilik","id":"c018","title":"Anadolu’da Etik ve Sosyal Sorumluluk: Ahi Evran ve Ahilik","start":2153.348,"end":2227.559},{"ci":4,"chapterTitle":"Anadolu’da Etik ve Sosyal Sorumluluk: Ahi Evran ve Ahilik","id":"c019","title":"Ahilik Tanımı","start":2228.009,"end":2323.165},{"ci":4,"chapterTitle":"Anadolu’da Etik ve Sosyal Sorumluluk: Ahi Evran ve Ahilik","id":"c020","title":"Ahilik’in Tarihsel Süreci","start":2323.615,"end":2724.066},{"ci":4,"chapterTitle":"Anadolu’da Etik ve Sosyal Sorumluluk: Ahi Evran ve Ahilik","id":"c021","title":"Ahilik’te Meslek Ahlakı","start":2724.516,"end":2937.257},{"ci":4,"chapterTitle":"Anadolu’da Etik ve Sosyal Sorumluluk: Ahi Evran ve Ahilik","id":"c022","title":"Ahilik Sisteminin Temel İlkeleri","start":2937.707,"end":3034.024},{"ci":4,"chapterTitle":"Anadolu’da Etik ve Sosyal Sorumluluk: Ahi Evran ve Ahilik","id":"c023","title":"Ahilik’in Toplumsal Yönleri","start":3034.474,"end":3178.53}]};
+function initPlayerTheme(){var s=localStorage.getItem("sd-theme"),p=window.matchMedia("(prefers-color-scheme: light)").matches;if(s==="light"||(!s&&p)){document.documentElement.setAttribute("data-theme","light");document.getElementById("pl-theme-btn").textContent="☀️";}}
+function togglePlayerTheme(){var e=document.documentElement;if(e.getAttribute("data-theme")==="light"){e.removeAttribute("data-theme");localStorage.setItem("sd-theme","dark");document.getElementById("pl-theme-btn").textContent="🌙";}else{e.setAttribute("data-theme","light");localStorage.setItem("sd-theme","light");document.getElementById("pl-theme-btn").textContent="☀️";}}
+initPlayerTheme();
+var ap=document.getElementById("ap");
+var ITEMS=D.items, cur=-1, playing=false, spd=1, maxTime=0, doneSet={}, seeking=false;
+var SPEEDS=[1,1.25,1.5,0.85];
+var KEY="sdp-"+(D.title||"ders").replace(/\s+/g,"_");
+function fmt(s){s=Math.floor(s||0);var h=Math.floor(s/3600),m=Math.floor((s%3600)/60),x=s%60;var mm=String(m).padStart(2,"0"),ss=String(x).padStart(2,"0");return h?(h+":"+mm+":"+ss):(mm+":"+ss);}
+function buildTOC(){var toc=document.getElementById("toc");var lastCh=null;
+  ITEMS.forEach(function(it,i){
+    if(it.chapterTitle!==lastCh){var h=document.createElement("div");h.className="toc-ch";h.textContent=it.chapterTitle||"Bölüm";toc.appendChild(h);lastCh=it.chapterTitle;}
+    var row=document.createElement("div");row.className="toc-item";row.id="ti"+i;
+    row.onclick=function(){goTo(i,true);};
+    row.innerHTML='<div class="toc-num"><span class="toc-num-inner">'+(i+1)+'</span></div><div class="toc-label"></div><div class="toc-time">'+fmt(it.start)+'</div>';
+    row.querySelector(".toc-label").textContent=it.title||("Parça "+(i+1));
+    toc.appendChild(row);
+  });
+  document.getElementById("hdr-sub").textContent=ITEMS.length+" parça · "+fmt(D.total)+" toplam süre";
+}
+function indexAt(t){for(var i=ITEMS.length-1;i>=0;i--){if(t>=ITEMS[i].start-0.05)return i;}return 0;}
+function setActive(i){
+  if(i===cur)return;cur=i;var it=ITEMS[i];if(!it)return;
+  var nodes=document.querySelectorAll(".toc-item");
+  for(var k=0;k<nodes.length;k++)nodes[k].classList.toggle("active",k===i);
+  var el=document.getElementById("ti"+i);if(el)el.scrollIntoView({behavior:"smooth",block:"nearest"});
+  document.getElementById("now-ch").textContent=it.chapterTitle||"";
+  document.getElementById("now-title").textContent=it.title||("Parça "+(i+1));
+  var seg=document.getElementById("prog-seg");var tot=D.total||ap.duration||1;
+  seg.style.left=(it.start/tot*100)+"%";seg.style.width=((it.end-it.start)/tot*100)+"%";
+}
+function goTo(i,play){if(i<0||i>=ITEMS.length)return;setActive(i);seekTo(ITEMS[i].start);if(play)doPlay();}
+function seekTo(t){if(!ap.duration||isNaN(ap.duration)){seeking=t;return;}try{ap.currentTime=t;}catch(e){seeking=t;}}
+function doPlay(){ap.playbackRate=spd;ap.play().then(function(){playing=true;document.getElementById("play-btn").textContent="⏸";}).catch(function(){});}
+function togglePlay(){if(playing){ap.pause();playing=false;document.getElementById("play-btn").textContent="▶";}else doPlay();}
+function nextTrack(){goTo(cur+1,true);}
+function prevTrack(){var it=ITEMS[cur];if(it&&ap.currentTime-it.start>3){seekTo(it.start);return;}goTo(cur-1,playing);}
+function skipTime(s){seekTo(Math.max(0,Math.min(ap.duration||D.total,ap.currentTime+s)));}
+function seek(e){var d=ap.duration||D.total;if(!d)return;var r=e.currentTarget.getBoundingClientRect();seekTo((e.clientX-r.left)/r.width*d);}
+function cycleSpeed(){var i=SPEEDS.indexOf(spd);spd=SPEEDS[(i+1)%SPEEDS.length];ap.playbackRate=spd;document.getElementById("spd-btn").textContent=spd.toFixed(2).replace(/0$/,"")+"×";}
+ap.addEventListener("loadedmetadata",function(){if(seeking!==false){var t=seeking;seeking=false;ap.currentTime=t;}document.getElementById("t-dur").textContent=fmt(ap.duration||D.total);});
+ap.addEventListener("timeupdate",function(){
+  var d=ap.duration||D.total;if(!d)return;
+  document.getElementById("prog-fill").style.width=(ap.currentTime/d*100)+"%";
+  document.getElementById("t-cur").textContent=fmt(ap.currentTime);
+  document.getElementById("t-dur").textContent=fmt(d);
+  var i=indexAt(ap.currentTime);
+  if(i!==cur){if(cur>=0&&i>cur){doneSet[cur]=1;var pe=document.getElementById("ti"+cur);if(pe)pe.classList.add("done");}setActive(i);}
+  if(ap.currentTime>maxTime){maxTime=ap.currentTime;saveProgress(d);}
+});
+ap.addEventListener("ended",function(){playing=false;document.getElementById("play-btn").textContent="▶";var pe=document.getElementById("ti"+cur);if(pe)pe.classList.add("done");completeSCORM();});
+var lastSave=0;
+function saveProgress(d){var now=Date.now();if(now-lastSave<5000)return;lastSave=now;
+  try{localStorage.setItem(KEY,JSON.stringify({t:ap.currentTime,m:maxTime}));}catch(e){}
+  if(scormAPI){try{scormAPI.SetValue("cmi.location",String(Math.floor(ap.currentTime)));scormAPI.SetValue("cmi.progress_measure",String(Math.min(1,maxTime/(d||1)).toFixed(3)));scormAPI.Commit("");}catch(e){}}
+  if(d&&maxTime>=d*0.95)completeSCORM();
+}
+var scormAPI=null;
+function findAPI(win){var a=0;while((win.API_1484_11==null)&&(win.parent!=null)&&(win.parent!=win)){a++;if(a>7)return null;win=win.parent;}return win.API_1484_11;}
+function initSCORM(){scormAPI=findAPI(window);if(scormAPI){try{scormAPI.Initialize("");var st=scormAPI.GetValue("cmi.completion_status");if(st==="not attempted"||st==="unknown"||st===""){scormAPI.SetValue("cmi.completion_status","incomplete");scormAPI.Commit("");}var loc=parseFloat(scormAPI.GetValue("cmi.location"));if(loc>0)restore(loc);}catch(e){}}}
+function completeSCORM(){if(scormAPI){try{if(scormAPI.GetValue("cmi.completion_status")!=="completed"){scormAPI.SetValue("cmi.completion_status","completed");scormAPI.SetValue("cmi.success_status","passed");scormAPI.SetValue("cmi.progress_measure","1");scormAPI.Commit("");}}catch(e){}}}
+function restore(t){seekTo(t);setActive(indexAt(t));}
+window.addEventListener("load",initSCORM);
+window.addEventListener("beforeunload",function(){if(scormAPI){try{scormAPI.Terminate("");}catch(e){}}});
+buildTOC();
+ap.src=D.audio;
+(function(){var t=0;try{var s=JSON.parse(localStorage.getItem(KEY)||"null");if(s&&s.t){t=s.t;maxTime=s.m||0;}}catch(e){}
+  document.getElementById("t-dur").textContent=fmt(D.total);
+  setActive(indexAt(t));if(t>1)seekTo(t);})();
+</script>
+</body>
+</html>

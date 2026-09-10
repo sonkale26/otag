@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest identifier="SesliDers_Manifest" version="1.0"
+          xmlns="http://www.imsglobal.org/xsd/imscp_v1p1"
+          xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_v1p3"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd
+                              http://www.adlnet.org/xsd/adlcp_v1p3 adlcp_v1p3.xsd">
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>2004 2nd Edition</schemaversion>
+  </metadata>
+  <organizations default="sesliders_org">
+    <organization identifier="sesliders_org">
+      <title>Bölüm 3: Etik ve Sosyal Sorumluluk</title>
+      <item identifier="item_1" identifierref="resource_1">
+        <title>Bölüm 3: Etik ve Sosyal Sorumluluk</title>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="resource_1" type="webcontent" adlcp:scormType="sco" href="player.html">
+      <file href="player.html"/>
+      <file href="index.json"/>
+      <file href="audio/ders.mp3"/>
+    </resource>
+  </resources>
+</manifest>
