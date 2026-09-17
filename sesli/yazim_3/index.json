@@ -1,0 +1,687 @@
+{
+  "course_title": "Akademik ve Yaygın Kısaltmalar",
+  "schema_version": 2,
+  "audio_mode": "single",
+  "audio_file": "audio/ders.mp3",
+  "audio_codec": "MP3 128 kbps",
+  "sample_rate": 44100,
+  "audio_level": {
+    "inPeakDb": -0.7553892434254168,
+    "inRmsDb": -21.61259920213675,
+    "gainDb": 0,
+    "clipped": 0
+  },
+  "total_duration": 339.74,
+  "tts_engine": "ElevenLabs · eleven_multilingual_v2",
+  "generated_at": "2026-09-17T10:29:56.758Z",
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Akademik ve Yaygın Kısaltmalar",
+      "start": 0,
+      "end": 339.74,
+      "chunks": [
+        {
+          "id": "c001",
+          "title": "Parça 1",
+          "text": "Elma, armut vb. meyveleri veya vb şeyleri sepete koy.",
+          "start": 0,
+          "end": 4.783,
+          "duration": 4.783,
+          "tts_parts": 1,
+          "chars": 68
+        },
+        {
+          "id": "c002",
+          "title": "Parça 2",
+          "text": "Masa, sandalye vs. eşyaları vs taşıdık.",
+          "start": 5.683,
+          "end": 9.306,
+          "duration": 3.622,
+          "tts_parts": 1,
+          "chars": 50
+        },
+        {
+          "id": "c003",
+          "title": "Parça 3",
+          "text": "Ahmet, Mehmet vd. öğrenciler de toplantıya katıldı.",
+          "start": 10.206,
+          "end": 14.246,
+          "duration": 4.04,
+          "tts_parts": 1,
+          "chars": 60
+        },
+        {
+          "id": "c004",
+          "title": "Parça 4",
+          "text": "Bu duruma örn. vermek gerekirse, ör. diyerek başlayabiliriz.",
+          "start": 15.146,
+          "end": 19.186,
+          "duration": 4.04,
+          "tts_parts": 1,
+          "chars": 63
+        },
+        {
+          "id": "c005",
+          "title": "Parça 5",
+          "text": "Daha fazla detay için bkz. veya bkz notuna, hatta bk. kısmına odaklanın.",
+          "start": 20.086,
+          "end": 25.287,
+          "duration": 5.201,
+          "tts_parts": 1,
+          "chars": 83
+        },
+        {
+          "id": "c006",
+          "title": "Parça 6",
+          "text": "İki konuyu kıyaslamak için krş. ibaresini inceleyin.",
+          "start": 26.187,
+          "end": 29.903,
+          "duration": 3.715,
+          "tts_parts": 1,
+          "chars": 63
+        },
+        {
+          "id": "c007",
+          "title": "Parça 7",
+          "text": "Olaylar 19. yy. ve 20. yy içinde yaşandı.",
+          "start": 30.803,
+          "end": 34.564,
+          "duration": 3.762,
+          "tts_parts": 1,
+          "chars": 62
+        },
+        {
+          "id": "c008",
+          "title": "Parça 8",
+          "text": "Kitabın İng. çevirisi yapıldı ve huk. dili oldukça ağırdı.",
+          "start": 35.464,
+          "end": 39.69,
+          "duration": 4.226,
+          "tts_parts": 1,
+          "chars": 64
+        },
+        {
+          "id": "c009",
+          "title": "Parça 9",
+          "text": "Yazarın doğ. ve d. tarihi ile öl. yılı belirsizdir.",
+          "start": 40.59,
+          "end": 44.398,
+          "duration": 3.808,
+          "tts_parts": 1,
+          "chars": 63
+        },
+        {
+          "id": "c010",
+          "title": "Parça 10",
+          "text": "Antik buluntular M.Ö. 100 ve MÖ 50 yıllarına aittir.",
+          "start": 45.298,
+          "end": 50.035,
+          "duration": 4.737,
+          "tts_parts": 1,
+          "chars": 74
+        },
+        {
+          "id": "c011",
+          "title": "Parça 11",
+          "text": "Bu eserler M.S. 200 veya MS 300 döneminden günümüze kaldı.",
+          "start": 50.935,
+          "end": 56.601,
+          "duration": 5.666,
+          "tts_parts": 1,
+          "chars": 87
+        },
+        {
+          "id": "c012",
+          "title": "Parça 12",
+          "text": "Referans olarak a.g.e., age. ve agy. kaynakları kullanıldı.",
+          "start": 57.501,
+          "end": 63.167,
+          "duration": 5.666,
+          "tts_parts": 1,
+          "chars": 88
+        },
+        {
+          "id": "c013",
+          "title": "Parça 13",
+          "text": "Makaleler için agm. ve a.g.m. kaynaklarına da bakıldı.",
+          "start": 64.067,
+          "end": 68.896,
+          "duration": 4.83,
+          "tts_parts": 1,
+          "chars": 76
+        },
+        {
+          "id": "c014",
+          "title": "Parça 14",
+          "text": "Metni çev. Ali, ed. Ayşe, haz. Veli yaptı.",
+          "start": 69.796,
+          "end": 74.162,
+          "duration": 4.365,
+          "tts_parts": 1,
+          "chars": 54
+        },
+        {
+          "id": "c015",
+          "title": "Parça 15",
+          "text": "Şiirleri drl. Hasan, metni dzl. Zeynep üstlendi.",
+          "start": 75.062,
+          "end": 79.195,
+          "duration": 4.133,
+          "tts_parts": 1,
+          "chars": 58
+        },
+        {
+          "id": "c016",
+          "title": "Parça 16",
+          "text": "Kitabın syf. 5 ve sf. 6 kısmını açın.",
+          "start": 80.095,
+          "end": 83.253,
+          "duration": 3.158,
+          "tts_parts": 1,
+          "chars": 45
+        },
+        {
+          "id": "c017",
+          "title": "Parça 17",
+          "text": "Lütfen s. 10 ve ss. 12-15 aralığını dikkatlice okuyun.",
+          "start": 84.153,
+          "end": 89.354,
+          "duration": 5.201,
+          "tts_parts": 1,
+          "chars": 78
+        },
+        {
+          "id": "c018",
+          "title": "Parça 18",
+          "text": "Dergimiz S. 4 ve C. 2 ile yayımlandı.",
+          "start": 90.254,
+          "end": 93.458,
+          "duration": 3.204,
+          "tts_parts": 1,
+          "chars": 46
+        },
+        {
+          "id": "c019",
+          "title": "Parça 19",
+          "text": "Bu kitap Yay. tarafından 3. bs. olarak çıktı.",
+          "start": 94.358,
+          "end": 98.027,
+          "duration": 3.669,
+          "tts_parts": 1,
+          "chars": 56
+        },
+        {
+          "id": "c020",
+          "title": "Parça 20",
+          "text": "Unvanlar, Meslekler ve Kurumsal Terimler\nToplantıya Prof., Doç. ve Dr. unvanlı hocalar geldi.",
+          "start": 98.927,
+          "end": 105.382,
+          "duration": 6.455,
+          "tts_parts": 1,
+          "chars": 101
+        },
+        {
+          "id": "c021",
+          "title": "Parça 21",
+          "text": "Akademik kurula Dr. Öğr. Üyesi ve Öğr. Gör. katıldı.",
+          "start": 106.282,
+          "end": 110.369,
+          "duration": 4.087,
+          "tts_parts": 1,
+          "chars": 66
+        },
+        {
+          "id": "c022",
+          "title": "Parça 22",
+          "text": "Eskiden üniversitelerde Yrd. Doç. ve Okt. unvanları vardı.",
+          "start": 111.269,
+          "end": 115.681,
+          "duration": 4.412,
+          "tts_parts": 1,
+          "chars": 67
+        },
+        {
+          "id": "c023",
+          "title": "Parça 23",
+          "text": "Ekipten Yrd. personeller, Öğr. üyeleri ve Gör. unvanlılar ayrıldı.",
+          "start": 116.581,
+          "end": 121.457,
+          "duration": 4.876,
+          "tts_parts": 1,
+          "chars": 78
+        },
+        {
+          "id": "c024",
+          "title": "Parça 24",
+          "text": "Odaya Arş. Gör., Av. ve Sn. Müdür girdi.",
+          "start": 122.357,
+          "end": 126.026,
+          "duration": 3.669,
+          "tts_parts": 1,
+          "chars": 55
+        },
+        {
+          "id": "c025",
+          "title": "Parça 25",
+          "text": "İlacı Ecz. verdi, ameliyatı Opr. yaptı, raporu Uzm. yazdı.",
+          "start": 126.926,
+          "end": 131.616,
+          "duration": 4.69,
+          "tts_parts": 1,
+          "chars": 65
+        },
+        {
+          "id": "c026",
+          "title": "Parça 26",
+          "text": "Kurumda Md. ve Bşk. ortak bir karar aldı.",
+          "start": 132.516,
+          "end": 135.395,
+          "duration": 2.879,
+          "tts_parts": 1,
+          "chars": 45
+        },
+        {
+          "id": "c027",
+          "title": "Parça 27",
+          "text": "Projeyi Müh. çizdi, Mim. onayladı, Hemş. hastaya yardım etti.",
+          "start": 136.295,
+          "end": 140.707,
+          "duration": 4.412,
+          "tts_parts": 1,
+          "chars": 68
+        },
+        {
+          "id": "c028",
+          "title": "Parça 28",
+          "text": "Şirket Ar-Ge bütçesini artırdı.",
+          "start": 141.607,
+          "end": 143.558,
+          "duration": 1.95,
+          "tts_parts": 1,
+          "chars": 31
+        },
+        {
+          "id": "c029",
+          "title": "Parça 29",
+          "text": "Kitapta Hz. Ali'nin sözleri yer alıyor.",
+          "start": 144.458,
+          "end": 146.687,
+          "duration": 2.229,
+          "tts_parts": 1,
+          "chars": 43
+        },
+        {
+          "id": "c030",
+          "title": "Parça 30",
+          "text": "Üniversitenin Ens. ve Fak. binalarına yeni Şb. eklendi.",
+          "start": 147.587,
+          "end": 150.977,
+          "duration": 3.39,
+          "tts_parts": 1,
+          "chars": 62
+        },
+        {
+          "id": "c031",
+          "title": "Parça 31",
+          "text": "Kurum Ort. ve ort. yapısını tic. siciline kaydetti.",
+          "start": 151.877,
+          "end": 155.36,
+          "duration": 3.483,
+          "tts_parts": 1,
+          "chars": 62
+        },
+        {
+          "id": "c032",
+          "title": "Parça 32",
+          "text": "Şirketimiz Ltd., Şti. ve AŞ olarak tescillidir.",
+          "start": 156.26,
+          "end": 160.114,
+          "duration": 3.855,
+          "tts_parts": 1,
+          "chars": 65
+        },
+        {
+          "id": "c033",
+          "title": "Parça 33",
+          "text": "Derneğe Gön. üye arıyoruz.",
+          "start": 161.014,
+          "end": 162.918,
+          "duration": 1.904,
+          "tts_parts": 1,
+          "chars": 30
+        },
+        {
+          "id": "c034",
+          "title": "Parça 34",
+          "text": "Hukuk, Kurumlar ve İletişim\nKanunun 5. Mad., 3. md. ve 2. fık. maddeleri değişti.",
+          "start": 163.818,
+          "end": 170.227,
+          "duration": 6.409,
+          "tts_parts": 1,
+          "chars": 98
+        },
+        {
+          "id": "c035",
+          "title": "Parça 35",
+          "text": "Cihazın KDV dahil fiyatı yüz TL oldu.",
+          "start": 171.127,
+          "end": 174.332,
+          "duration": 3.204,
+          "tts_parts": 1,
+          "chars": 51
+        },
+        {
+          "id": "c036",
+          "title": "Parça 36",
+          "text": "Kanunlar T.B.M.M. ve TBMM tarafından yapılır.",
+          "start": 175.232,
+          "end": 178.436,
+          "duration": 3.204,
+          "tts_parts": 1,
+          "chars": 55
+        },
+        {
+          "id": "c037",
+          "title": "Parça 37",
+          "text": "Vatandaşlar T.C. ve TC anayasasına sıkıca uyar.",
+          "start": 179.336,
+          "end": 182.68,
+          "duration": 3.344,
+          "tts_parts": 1,
+          "chars": 51
+        },
+        {
+          "id": "c038",
+          "title": "Parça 38",
+          "text": "Sınavları YÖK, AÖF ve ÖSYM düzenler.",
+          "start": 183.58,
+          "end": 186.041,
+          "duration": 2.461,
+          "tts_parts": 1,
+          "chars": 42
+        },
+        {
+          "id": "c039",
+          "title": "Parça 39",
+          "text": "Eğitimde YKS sonuçları MEB ile paylaşılır.",
+          "start": 186.941,
+          "end": 189.541,
+          "duration": 2.601,
+          "tts_parts": 1,
+          "chars": 47
+        },
+        {
+          "id": "c040",
+          "title": "Parça 40",
+          "text": "Haberler TRT, yayınlar TV, kargolar PTT ile gelir.",
+          "start": 190.441,
+          "end": 194.342,
+          "duration": 3.901,
+          "tts_parts": 1,
+          "chars": 61
+        },
+        {
+          "id": "c041",
+          "title": "Parça 41",
+          "text": "Emekliler SGK, işletmeler KOBİ, dernekler STK üyesidir.",
+          "start": 195.242,
+          "end": 199.84,
+          "duration": 4.598,
+          "tts_parts": 1,
+          "chars": 65
+        },
+        {
+          "id": "c042",
+          "title": "Parça 42",
+          "text": "Yeni kurallar TDK ve TTK tarafından incelendi.",
+          "start": 200.74,
+          "end": 204.316,
+          "duration": 3.576,
+          "tts_parts": 1,
+          "chars": 56
+        },
+        {
+          "id": "c043",
+          "title": "Parça 43",
+          "text": "Veriler TÜİK, bilimsel destek TÜBİTAK tarafından verilir.",
+          "start": 205.216,
+          "end": 209.117,
+          "duration": 3.901,
+          "tts_parts": 1,
+          "chars": 57
+        },
+        {
+          "id": "c044",
+          "title": "Parça 44",
+          "text": "Güvenliği TSK sağlar, davalar TCK ve TMK ile görülür.",
+          "start": 210.017,
+          "end": 214.661,
+          "duration": 4.644,
+          "tts_parts": 1,
+          "chars": 68
+        },
+        {
+          "id": "c045",
+          "title": "Parça 45",
+          "text": "Küresel çapta NATO, UNESCO ve UNICEF faaliyet gösterir.",
+          "start": 215.561,
+          "end": 219.601,
+          "duration": 4.04,
+          "tts_parts": 1,
+          "chars": 57
+        },
+        {
+          "id": "c046",
+          "title": "Parça 46",
+          "text": "Toplantıya A.B.D., ABD, AB ve BM temsilcileri katıldı.",
+          "start": 220.501,
+          "end": 225.517,
+          "duration": 5.016,
+          "tts_parts": 1,
+          "chars": 64
+        },
+        {
+          "id": "c047",
+          "title": "Parça 47",
+          "text": "Bana Tel., tel. veya telg. yoluyla acilen ulaşın.",
+          "start": 226.417,
+          "end": 230.318,
+          "duration": 3.901,
+          "tts_parts": 1,
+          "chars": 57
+        },
+        {
+          "id": "c048",
+          "title": "Parça 48",
+          "text": "Adresimiz Cumhuriyet Mah., Atatürk Cad., Çiçek Sok. içindedir.",
+          "start": 231.218,
+          "end": 235.862,
+          "duration": 4.644,
+          "tts_parts": 1,
+          "chars": 69
+        },
+        {
+          "id": "c049",
+          "title": "Parça 49",
+          "text": "İnönü Bul. ve Gazi Blv. üzerindeki o Apt. önüne gelin.",
+          "start": 236.762,
+          "end": 240.755,
+          "duration": 3.994,
+          "tts_parts": 1,
+          "chars": 64
+        },
+        {
+          "id": "c050",
+          "title": "Parça 50",
+          "text": "Adres detayı Kapı No. 5, K. 2, D. 4 ve PK 34000 şeklindedir.",
+          "start": 241.655,
+          "end": 247.693,
+          "duration": 6.037,
+          "tts_parts": 1,
+          "chars": 92
+        },
+        {
+          "id": "c051",
+          "title": "Parça 51",
+          "text": "Teknoloji ve Bilişim\nBilgisayarın CPU, GPU, RAM ve ROM parçaları yenilendi.",
+          "start": 248.593,
+          "end": 254.212,
+          "duration": 5.619,
+          "tts_parts": 1,
+          "chars": 85
+        },
+        {
+          "id": "c052",
+          "title": "Parça 52",
+          "text": "Bellekler SRAM, DRAM, SDRAM ve DDR olarak ayrılır.",
+          "start": 255.112,
+          "end": 260.174,
+          "duration": 5.062,
+          "tts_parts": 1,
+          "chars": 63
+        },
+        {
+          "id": "c053",
+          "title": "Parça 53",
+          "text": "Veriyi SSD, HDD, CD, DVD veya USB belleğe aktarın.",
+          "start": 261.074,
+          "end": 267.808,
+          "duration": 6.734,
+          "tts_parts": 1,
+          "chars": 72
+        },
+        {
+          "id": "c054",
+          "title": "Parça 54",
+          "text": "Cihazın işlemcisi AMD veya ARM mimarilidir.",
+          "start": 268.708,
+          "end": 272.516,
+          "duration": 3.808,
+          "tts_parts": 1,
+          "chars": 48
+        },
+        {
+          "id": "c055",
+          "title": "Parça 55",
+          "text": "Akıllı sistemde gelişmiş bir OS ve AI var.",
+          "start": 273.416,
+          "end": 276.481,
+          "duration": 3.065,
+          "tts_parts": 1,
+          "chars": 47
+        },
+        {
+          "id": "c056",
+          "title": "Parça 56",
+          "text": "Televizyonda LED ve LCD ekran teknolojisi kullanıldı.",
+          "start": 277.381,
+          "end": 280.771,
+          "duration": 3.39,
+          "tts_parts": 1,
+          "chars": 56
+        },
+        {
+          "id": "c057",
+          "title": "Parça 57",
+          "text": "Dosyayı PDF, HTML, CSS, XML ve JSON olarak kaydet.",
+          "start": 281.671,
+          "end": 286.965,
+          "duration": 5.294,
+          "tts_parts": 1,
+          "chars": 76
+        },
+        {
+          "id": "c058",
+          "title": "Parça 58",
+          "text": "Ağ güvenliği için IP, TCP, DNS, VPN kullanıldı.",
+          "start": 287.865,
+          "end": 292.834,
+          "duration": 4.969,
+          "tts_parts": 1,
+          "chars": 65
+        },
+        {
+          "id": "c059",
+          "title": "Parça 59",
+          "text": "Veri bağlantısını HTTP, HTTPS, FTP, URL veya API ile kur.",
+          "start": 293.734,
+          "end": 300.189,
+          "duration": 6.455,
+          "tts_parts": 1,
+          "chars": 90
+        },
+        {
+          "id": "c060",
+          "title": "Parça 60",
+          "text": "Telefon GSM, SMS, GPS, Wi-Fi ve WiFi destekliyor.",
+          "start": 301.089,
+          "end": 305.501,
+          "duration": 4.412,
+          "tts_parts": 1,
+          "chars": 69
+        },
+        {
+          "id": "c061",
+          "title": "Parça 61",
+          "text": "Depolama hafızası KB, MB, GB ve TB cinsinden ölçülür.",
+          "start": 306.401,
+          "end": 310.58,
+          "duration": 4.18,
+          "tts_parts": 1,
+          "chars": 77
+        },
+        {
+          "id": "c062",
+          "title": "Parça 62",
+          "text": "Web adresi için www, .com ve .tr kullan, bana detaylı bir e-posta at.",
+          "start": 311.48,
+          "end": 317.239,
+          "duration": 5.759,
+          "tts_parts": 1,
+          "chars": 102
+        },
+        {
+          "id": "c063",
+          "title": "Parça 63",
+          "text": "Bilim ve Ölçüm\nHer canlı hücrede DNA, RNA ve ATP molekülleri bulunur.",
+          "start": 318.139,
+          "end": 323.665,
+          "duration": 5.526,
+          "tts_parts": 1,
+          "chars": 81
+        },
+        {
+          "id": "c064",
+          "title": "Parça 64",
+          "text": "Suyun pH değeri ve formülü olan H₂O daima sabittir.",
+          "start": 324.565,
+          "end": 328.513,
+          "duration": 3.947,
+          "tts_parts": 1,
+          "chars": 61
+        },
+        {
+          "id": "c065",
+          "title": "Parça 65",
+          "text": "Bitkiler havadan CO₂ emer ve atmosfere O₂ verir.",
+          "start": 329.413,
+          "end": 333.36,
+          "duration": 3.947,
+          "tts_parts": 1,
+          "chars": 56
+        },
+        {
+          "id": "c066",
+          "title": "Parça 66",
+          "text": "Güneşin zararlı UV ışınlarından korun, bu senin IQ seviyeni etkilemez.",
+          "start": 334.26,
+          "end": 339.74,
+          "duration": 5.48,
+          "tts_parts": 1,
+          "chars": 82
+        }
+      ]
+    }
+  ]
+}
