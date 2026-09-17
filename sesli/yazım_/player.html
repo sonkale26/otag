@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Yaygın Kısaltmalar</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0d1117;--card:#161b27;--card2:#1e2535;--b:rgba(255,255,255,.07);--b2:rgba(255,255,255,.13);--t:#dde3f5;--t2:#8892b0;--t3:#4a5275;--ac:#4f8ef7;--ac2:#3a6fd8;--gr:#2ecc85}
+[data-theme="light"]{--bg:#e2e8f0;--card:#fff;--card2:#f1f5f9;--b:rgba(0,0,0,.08);--b2:rgba(0,0,0,.14);--t:#0f172a;--t2:#475569;--t3:#64748b}
+html,body{height:100%;height:100dvh;overflow:hidden}
+body{font-family:"Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--t);display:flex}
+.pl-theme-btn{position:absolute;top:20px;right:20px;width:40px;height:40px;border-radius:50%;background:var(--card2);border:1px solid var(--b);color:var(--t);font-size:1.1rem;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:.2s;z-index:50}
+.pl-theme-btn:hover{background:var(--b);transform:scale(1.05)}
+@media(max-width:768px){.pl-theme-btn{top:12px;right:12px;width:34px;height:34px;font-size:.95rem;background:var(--card)}}
+.sidebar{width:360px;background:var(--card);border-right:1px solid var(--b);display:flex;flex-direction:column;z-index:10}
+.main-view{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--bg);position:relative;min-width:0}
+.hdr{padding:24px 24px 12px;flex-shrink:0}
+.hdr-title{font-size:1.35rem;font-weight:800;letter-spacing:-.4px;line-height:1.25}
+.hdr-sub{font-size:.72rem;color:var(--t3);margin-top:6px;font-weight:600}
+.toc{flex:1;overflow-y:auto;padding:0 0 16px}
+.toc::-webkit-scrollbar{width:4px}.toc::-webkit-scrollbar-thumb{background:var(--b2);border-radius:2px}
+.toc-ch{font-size:.66rem;text-transform:uppercase;letter-spacing:1.2px;color:var(--t3);font-weight:800;padding:16px 24px 6px;border-top:1px solid var(--b);margin-top:6px}
+.toc-ch:first-child{border-top:none;margin-top:0}
+.toc-item{display:flex;align-items:center;gap:13px;padding:11px 24px;cursor:pointer;transition:background .15s;border-left:3px solid transparent}
+.toc-item:hover{background:rgba(79,142,247,.06)}
+.toc-item.active{background:rgba(79,142,247,.1);border-left-color:var(--ac)}
+.toc-num{width:34px;height:34px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:700;background:var(--card2);color:var(--t3);border:1px solid var(--b2);transition:.15s}
+.toc-item.active .toc-num{background:var(--ac);color:#fff;border-color:var(--ac);box-shadow:0 0 0 4px rgba(79,142,247,.2)}
+.toc-item.active .toc-num-inner{display:none}
+.toc-item.active .toc-num::before{content:"🔊";font-size:.78rem}
+.toc-label{font-size:.83rem;font-weight:500;color:var(--t2);line-height:1.4;flex:1;transition:.15s}
+.toc-item.active .toc-label{color:var(--ac);font-weight:700}
+.toc-item.done .toc-num{background:rgba(46,204,133,.15);color:#34d399;border-color:rgba(46,204,133,.3)}
+.toc-time{font-size:.66rem;color:var(--t3);font-family:monospace;flex-shrink:0}
+.player-card{width:100%;max-width:500px;background:var(--card);padding:40px;border-radius:24px;box-shadow:0 20px 60px rgba(0,0,0,.5);border:1px solid var(--b);text-align:center}
+.cover-art{width:110px;height:110px;border-radius:20px;background:linear-gradient(135deg,rgba(79,142,247,.12),rgba(155,108,247,.12));border:1px solid var(--b);margin:0 auto 20px;display:flex;align-items:center;justify-content:center;font-size:2.8rem;color:var(--ac)}
+.now-ch{font-size:.68rem;text-transform:uppercase;letter-spacing:1.2px;color:var(--t3);font-weight:800;margin-bottom:6px}
+.now-title{font-size:1.08rem;font-weight:700;margin-bottom:18px;line-height:1.4;color:var(--t)}
+.prog-track{height:7px;background:rgba(128,128,128,.22);border-radius:4px;cursor:pointer;position:relative;overflow:hidden}
+.prog-seg{position:absolute;top:0;bottom:0;background:rgba(79,142,247,.28);border-radius:4px;pointer-events:none}
+.prog-fill{position:absolute;top:0;bottom:0;left:0;background:var(--ac);border-radius:4px;width:0%;pointer-events:none}
+.times{display:flex;justify-content:space-between;font-size:.7rem;color:var(--t3);margin-top:8px;font-weight:600}
+.ctrls{display:flex;align-items:center;justify-content:center;gap:22px;margin-top:18px}
+.ctrl-btn{width:44px;height:44px;border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;background:transparent;color:var(--t2);transition:.15s}
+.ctrl-btn:hover{color:var(--t);background:rgba(128,128,128,.12)}
+.ctrl-btn svg{width:24px;height:24px;fill:currentColor}
+.skip-btn{position:relative}
+.skip-label{position:absolute;bottom:-16px;left:50%;transform:translateX(-50%);font-size:.6rem;color:var(--t3);white-space:nowrap;font-weight:600}
+.play-btn{width:64px;height:64px;border-radius:50%;background:var(--ac);color:#fff;font-size:24px;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(79,142,247,.4);transition:.15s}
+.play-btn:hover{background:var(--ac2)}.play-btn:active{transform:scale(.95)}
+.spd-btn{margin-top:18px;background:var(--card2);border:1px solid var(--b2);color:var(--t2);border-radius:100px;padding:5px 14px;font-size:.72rem;font-weight:700;cursor:pointer;font-family:inherit}
+.spd-btn:hover{color:var(--t)}
+.aud-err{margin-top:16px;padding:12px 14px;border-radius:12px;background:rgba(224,85,85,.1);border:1px solid rgba(224,85,85,.35);color:#f87171;font-size:.8rem;line-height:1.55;text-align:left}
+.aud-err[hidden]{display:none}
+[data-theme="light"] .aud-err{color:#b91c1c}
+.aud-err b{color:var(--t)}
+@media(max-width:768px){body{flex-direction:column}.sidebar{width:100%;flex:1;border-right:none;border-bottom:1px solid var(--b);min-height:0}
+.main-view{flex:none;align-items:stretch;justify-content:flex-end;padding:0;background:transparent;width:100%;z-index:20}
+.player-card{max-width:100%;border-radius:0;padding:14px 18px;padding-bottom:calc(14px + env(safe-area-inset-bottom));border:none;border-top:1px solid var(--b);box-shadow:0 -10px 30px rgba(0,0,0,.5);background:var(--card2);margin:0}
+.cover-art{display:none}.now-ch{display:none}
+.now-title{font-size:.95rem;margin-bottom:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ctrls{gap:18px;margin-top:10px}.play-btn{width:54px;height:54px}.spd-btn{margin-top:10px}}
+</style>
+</head>
+<body>
+<button class="pl-theme-btn" id="pl-theme-btn" onclick="togglePlayerTheme()" title="Tema Değiştir">🌙</button>
+<aside class="sidebar">
+  <div class="hdr">
+    <div class="hdr-title">Yaygın Kısaltmalar</div>
+    <div class="hdr-sub" id="hdr-sub"></div>
+  </div>
+  <div class="toc" id="toc"></div>
+</aside>
+<main class="main-view">
+  <div class="player-card">
+    <div class="cover-art">🎙️</div>
+    <div class="now-ch" id="now-ch"></div>
+    <div class="now-title" id="now-title">Başlamak için bir bölüm seçin</div>
+    <div class="progress">
+      <div class="prog-track" id="prog-track" onclick="seek(event)">
+        <div class="prog-seg" id="prog-seg"></div>
+        <div class="prog-fill" id="prog-fill"></div>
+      </div>
+      <div class="times"><span id="t-cur">00:00</span><span id="t-dur">00:00</span></div>
+    </div>
+    <div class="ctrls">
+      <button class="ctrl-btn" onclick="prevTrack()" title="Önceki parça"><svg viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6 8.5 6V6z"/></svg></button>
+      <button class="ctrl-btn skip-btn" onclick="skipTime(-10)" title="-10s"><svg viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg><span class="skip-label">-10s</span></button>
+      <button class="play-btn" id="play-btn" onclick="togglePlay()">▶</button>
+      <button class="ctrl-btn skip-btn" onclick="skipTime(10)" title="+10s"><svg viewBox="0 0 24 24"><path d="M12 5V1l5 5-5 5V7c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6h2c0 4.42-3.58 8-8 8s-8-3.58-8-8 3.58-8 8-8z"/></svg><span class="skip-label">+10s</span></button>
+      <button class="ctrl-btn" onclick="nextTrack()" title="Sonraki parça"><svg viewBox="0 0 24 24"><path d="M6 18l8.5-6L6 6v12zM16 6h2v12h-2z"/></svg></button>
+    </div>
+    <button class="spd-btn" id="spd-btn" onclick="cycleSpeed()">1.0×</button>
+    <div class="aud-err" id="aud-err" role="alert" hidden></div>
+  </div>
+</main>
+<audio id="ap" preload="metadata"></audio>
+<script>
+var D = {"title":"Yaygın Kısaltmalar","audio":"audio/ders.mp3","total":427.465,"chapters":[{"id":1,"title":"Yaygın Kısaltmalar"}],"items":[{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c001","title":"Parça 1","start":0,"end":5.712},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c002","title":"Parça 2","start":6.612,"end":11.628},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c003","title":"Parça 3","start":12.528,"end":16.568},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c004","title":"Parça 4","start":17.468,"end":21.926},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c005","title":"Parça 5","start":22.826,"end":29.885},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c006","title":"Parça 6","start":30.785,"end":35.383},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c007","title":"Parça 7","start":36.283,"end":41.205},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c008","title":"Parça 8","start":42.105,"end":47.585},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c009","title":"Parça 9","start":48.485,"end":53.361},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c010","title":"Parça 10","start":54.261,"end":60.391},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c011","title":"Parça 11","start":61.291,"end":69.14},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c012","title":"Parça 12","start":70.04,"end":76.634},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c013","title":"Parça 13","start":77.534,"end":83.664},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c014","title":"Parça 14","start":84.564,"end":89.533},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c015","title":"Parça 15","start":90.433,"end":94.892},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c016","title":"Parça 16","start":95.792,"end":99.6},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c017","title":"Parça 17","start":100.5,"end":106.769},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c018","title":"Parça 18","start":107.669,"end":111.988},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c019","title":"Parça 19","start":112.888,"end":116.557},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c020","title":"Parça 20","start":117.457,"end":125.723},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c021","title":"Parça 21","start":126.623,"end":130.942},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c022","title":"Parça 22","start":131.842,"end":137.275},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c023","title":"Parça 23","start":138.175,"end":143.934},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c024","title":"Parça 24","start":144.834,"end":149.478},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c025","title":"Parça 25","start":150.378,"end":155.718},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c026","title":"Parça 26","start":156.618,"end":160.287},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c027","title":"Parça 27","start":161.187,"end":166.342},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c028","title":"Parça 28","start":167.242,"end":169.75},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c029","title":"Parça 29","start":170.65,"end":173.343},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c030","title":"Parça 30","start":174.243,"end":178.934},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c031","title":"Parça 31","start":179.834,"end":184.617},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c032","title":"Parça 32","start":185.517,"end":190.3},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c033","title":"Parça 33","start":191.2,"end":193.522},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c034","title":"Parça 34","start":194.422,"end":204.732},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c035","title":"Parça 35","start":205.632,"end":209.765},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c036","title":"Parça 36","start":210.665,"end":215.495},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c037","title":"Parça 37","start":216.395,"end":221.271},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c038","title":"Parça 38","start":222.171,"end":226.304},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c039","title":"Parça 39","start":227.204,"end":231.384},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c040","title":"Parça 40","start":232.284,"end":237.114},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c041","title":"Parça 41","start":238.014,"end":243.308},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c042","title":"Parça 42","start":244.208,"end":249.316},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c043","title":"Parça 43","start":250.216,"end":255.789},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c044","title":"Parça 44","start":256.689,"end":263.376},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c045","title":"Parça 45","start":264.276,"end":270.267},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c046","title":"Parça 46","start":271.167,"end":277.297},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c047","title":"Parça 47","start":278.197,"end":284.049},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c048","title":"Parça 48","start":284.949,"end":290.289},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c049","title":"Parça 49","start":291.189,"end":296.483},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c050","title":"Parça 50","start":297.383,"end":305.603},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c051","title":"Parça 51","start":306.503,"end":311.751},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c052","title":"Parça 52","start":312.651,"end":318.967},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c053","title":"Parça 53","start":319.867,"end":327.251},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c054","title":"Parça 54","start":328.151,"end":332.655},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c055","title":"Parça 55","start":333.555,"end":337.688},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c056","title":"Parça 56","start":338.588,"end":343.232},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c057","title":"Parça 57","start":344.132,"end":352.306},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c058","title":"Parça 58","start":353.206,"end":360.776},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c059","title":"Parça 59","start":361.676,"end":371.335},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c060","title":"Parça 60","start":372.235,"end":379.712},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c061","title":"Parça 61","start":380.612,"end":387.949},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c062","title":"Parça 62","start":388.849,"end":398.23},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c063","title":"Parça 63","start":399.13,"end":407.025},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c064","title":"Parça 64","start":407.925,"end":413.962},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c065","title":"Parça 65","start":414.862,"end":420.899},{"ci":0,"chapterTitle":"Yaygın Kısaltmalar","id":"c066","title":"Parça 66","start":421.799,"end":427.465}]};
+function initPlayerTheme(){var s=localStorage.getItem("sd-theme"),p=window.matchMedia("(prefers-color-scheme: light)").matches;if(s==="light"||(!s&&p)){document.documentElement.setAttribute("data-theme","light");document.getElementById("pl-theme-btn").textContent="☀️";}}
+function togglePlayerTheme(){var e=document.documentElement;if(e.getAttribute("data-theme")==="light"){e.removeAttribute("data-theme");localStorage.setItem("sd-theme","dark");document.getElementById("pl-theme-btn").textContent="🌙";}else{e.setAttribute("data-theme","light");localStorage.setItem("sd-theme","light");document.getElementById("pl-theme-btn").textContent="☀️";}}
+initPlayerTheme();
+var ap=document.getElementById("ap");
+function showAudErr(){var e=document.getElementById("aud-err");if(!e||!e.hidden)return;e.hidden=false;
+  e.innerHTML="<b>Ses dosyası açılamadı</b> ("+D.audio+")<br>Paketi ZIP içinden doğrudan açtıysanız ses dosyası yanında gelmez. ZIP dosyasına sağ tıklayıp <b>Tümünü ayıkla</b> deyin ve çıkan klasördeki <b>player.html</b> dosyasını açın. LMS'e yüklerken ZIP'i açmadan olduğu gibi yükleyin.";}
+ap.addEventListener("error",showAudErr);
+var ITEMS=D.items, cur=-1, playing=false, spd=1, maxTime=0, doneSet={}, seeking=false;
+var SPEEDS=[1,1.25,1.5,1.75,2,0.85];
+var KEY="sdp-"+(D.title||"ders").replace(/\s+/g,"_");
+function fmt(s){s=Math.floor(s||0);var h=Math.floor(s/3600),m=Math.floor((s%3600)/60),x=s%60;var mm=String(m).padStart(2,"0"),ss=String(x).padStart(2,"0");return h?(h+":"+mm+":"+ss):(mm+":"+ss);}
+function buildTOC(){var toc=document.getElementById("toc");var lastCh=null;
+  ITEMS.forEach(function(it,i){
+    if(it.chapterTitle!==lastCh){var h=document.createElement("div");h.className="toc-ch";h.textContent=it.chapterTitle||"Bölüm";toc.appendChild(h);lastCh=it.chapterTitle;}
+    var row=document.createElement("div");row.className="toc-item";row.id="ti"+i;
+    row.onclick=function(){goTo(i,true);};
+    row.innerHTML='<div class="toc-num"><span class="toc-num-inner">'+(i+1)+'</span></div><div class="toc-label"></div><div class="toc-time">'+fmt(it.start)+'</div>';
+    row.querySelector(".toc-label").textContent=it.title||("Parça "+(i+1));
+    toc.appendChild(row);
+  });
+  document.getElementById("hdr-sub").textContent=ITEMS.length+" parça · "+fmt(D.total)+" toplam süre";
+}
+function indexAt(t){for(var i=ITEMS.length-1;i>=0;i--){if(t>=ITEMS[i].start-0.05)return i;}return 0;}
+function setActive(i){
+  if(i===cur)return;cur=i;var it=ITEMS[i];if(!it)return;
+  var nodes=document.querySelectorAll(".toc-item");
+  for(var k=0;k<nodes.length;k++)nodes[k].classList.toggle("active",k===i);
+  var el=document.getElementById("ti"+i);if(el)el.scrollIntoView({behavior:"smooth",block:"nearest"});
+  document.getElementById("now-ch").textContent=it.chapterTitle||"";
+  document.getElementById("now-title").textContent=it.title||("Parça "+(i+1));
+  var seg=document.getElementById("prog-seg");var tot=D.total||ap.duration||1;
+  seg.style.left=(it.start/tot*100)+"%";seg.style.width=((it.end-it.start)/tot*100)+"%";
+}
+function goTo(i,play){if(i<0||i>=ITEMS.length)return;setActive(i);seekTo(ITEMS[i].start);if(play)doPlay();}
+function seekTo(t){if(!ap.duration||isNaN(ap.duration)){seeking=t;return;}try{ap.currentTime=t;}catch(e){seeking=t;}}
+function doPlay(){ap.playbackRate=spd;ap.play().then(function(){playing=true;document.getElementById("play-btn").textContent="⏸";}).catch(function(){if(ap.error)showAudErr();});}
+function togglePlay(){if(playing){ap.pause();playing=false;document.getElementById("play-btn").textContent="▶";}else doPlay();}
+function nextTrack(){goTo(cur+1,true);}
+function prevTrack(){var it=ITEMS[cur];if(it&&ap.currentTime-it.start>3){seekTo(it.start);return;}goTo(cur-1,playing);}
+function skipTime(s){seekTo(Math.max(0,Math.min(ap.duration||D.total,ap.currentTime+s)));}
+function seek(e){var d=ap.duration||D.total;if(!d)return;var r=e.currentTarget.getBoundingClientRect();seekTo((e.clientX-r.left)/r.width*d);}
+function cycleSpeed(){var i=SPEEDS.indexOf(spd);spd=SPEEDS[(i+1)%SPEEDS.length];ap.playbackRate=spd;document.getElementById("spd-btn").textContent=spd.toFixed(2).replace(/0$/,"")+"×";}
+ap.addEventListener("loadedmetadata",function(){if(seeking!==false){var t=seeking;seeking=false;ap.currentTime=t;}document.getElementById("t-dur").textContent=fmt(ap.duration||D.total);});
+ap.addEventListener("timeupdate",function(){
+  var d=ap.duration||D.total;if(!d)return;
+  document.getElementById("prog-fill").style.width=(ap.currentTime/d*100)+"%";
+  document.getElementById("t-cur").textContent=fmt(ap.currentTime);
+  document.getElementById("t-dur").textContent=fmt(d);
+  var i=indexAt(ap.currentTime);
+  if(i!==cur){if(cur>=0&&i>cur){doneSet[cur]=1;var pe=document.getElementById("ti"+cur);if(pe)pe.classList.add("done");}setActive(i);}
+  if(ap.currentTime>maxTime){maxTime=ap.currentTime;saveProgress(d);}
+});
+ap.addEventListener("ended",function(){playing=false;document.getElementById("play-btn").textContent="▶";var pe=document.getElementById("ti"+cur);if(pe)pe.classList.add("done");completeSCORM();});
+var lastSave=0;
+function saveProgress(d){var now=Date.now();if(now-lastSave<5000)return;lastSave=now;
+  try{localStorage.setItem(KEY,JSON.stringify({t:ap.currentTime,m:maxTime}));}catch(e){}
+  if(scormAPI){try{scormAPI.SetValue("cmi.location",String(Math.floor(ap.currentTime)));scormAPI.SetValue("cmi.progress_measure",String(Math.min(1,maxTime/(d||1)).toFixed(3)));scormAPI.Commit("");}catch(e){}}
+  if(d&&maxTime>=d*0.95)completeSCORM();
+}
+var scormAPI=null;
+function findAPI(win){var a=0;while((win.API_1484_11==null)&&(win.parent!=null)&&(win.parent!=win)){a++;if(a>7)return null;win=win.parent;}return win.API_1484_11;}
+function initSCORM(){scormAPI=findAPI(window);if(scormAPI){try{scormAPI.Initialize("");var st=scormAPI.GetValue("cmi.completion_status");if(st==="not attempted"||st==="unknown"||st===""){scormAPI.SetValue("cmi.completion_status","incomplete");scormAPI.Commit("");}var loc=parseFloat(scormAPI.GetValue("cmi.location"));if(loc>0)restore(loc);}catch(e){}}}
+function completeSCORM(){if(scormAPI){try{if(scormAPI.GetValue("cmi.completion_status")!=="completed"){scormAPI.SetValue("cmi.completion_status","completed");scormAPI.SetValue("cmi.success_status","passed");scormAPI.SetValue("cmi.progress_measure","1");scormAPI.Commit("");}}catch(e){}}}
+function restore(t){seekTo(t);setActive(indexAt(t));}
+window.addEventListener("load",initSCORM);
+window.addEventListener("beforeunload",function(){if(scormAPI){try{scormAPI.Terminate("");}catch(e){}}});
+buildTOC();
+ap.src=D.audio;
+(function(){var t=0;try{var s=JSON.parse(localStorage.getItem(KEY)||"null");if(s&&s.t){t=s.t;maxTime=s.m||0;}}catch(e){}
+  document.getElementById("t-dur").textContent=fmt(D.total);
+  setActive(indexAt(t));if(t>1)seekTo(t);})();
+</script>
+</body>
+</html>

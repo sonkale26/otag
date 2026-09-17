@@ -11,9 +11,9 @@
   </metadata>
   <organizations default="sesliders_org">
     <organization identifier="sesliders_org">
-      <title>Yazım</title>
+      <title>Yaygın Kısaltmalar</title>
       <item identifier="item_1" identifierref="resource_1">
-        <title>Yazım</title>
+        <title>Yaygın Kısaltmalar</title>
       </item>
     </organization>
   </organizations>
