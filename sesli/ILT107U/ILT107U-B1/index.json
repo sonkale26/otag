@@ -1,0 +1,256 @@
+{
+  "course_title": "Bölüm 1: İletişime Giriş",
+  "schema_version": 2,
+  "audio_mode": "single",
+  "audio_file": "audio/ders.mp3",
+  "audio_codec": "MP3 128 kbps",
+  "sample_rate": 44100,
+  "audio_level": {
+    "inPeakDb": -6.333855257275806,
+    "inRmsDb": -33.967967293238914,
+    "gainDb": 11.921,
+    "clipped": 0,
+    "perPart": true,
+    "gainMinDb": 5.334,
+    "gainMaxDb": 15.216,
+    "targetRmsDb": -10
+  },
+  "total_duration": 2394.507,
+  "tts_engine": "ElevenLabs · eleven_multilingual_v2",
+  "ai_disclosure": {
+    "level": "ai4",
+    "label": "Yüksek ÜYZ katkısı",
+    "text": "Yüksek ÜYZ katkısı (ai4)"
+  },
+  "tts": {
+    "engine": "elevenlabs",
+    "generated_at": "2026-09-21T08:17:20.156Z",
+    "max_chars_per_request": 10000,
+    "model": "eleven_multilingual_v2",
+    "voice": {
+      "id": "uvU9jrgGLWNPeNA4NgNT",
+      "name": "İrem - Authoritarian Female Voice",
+      "gender": "female",
+      "category": "professional"
+    },
+    "voice_settings": {
+      "speed": 0.93,
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0,
+      "use_speaker_boost": true,
+      "request_stitching": true
+    },
+    "pauses": {
+      "after_title_s": 0.9,
+      "between_paragraphs_s": 0.9,
+      "between_chunks_ms": 900,
+      "between_chapters_ms": 1200,
+      "between_parts_ms": 250,
+      "lead_in_ms": 400,
+      "tail_ms": 500
+    },
+    "text_rules": {
+      "numbers_to_words": true,
+      "fix_all_caps": true,
+      "abbreviations": true,
+      "spell_unknown_acronyms": true,
+      "builtin_list_edited": true,
+      "builtin_rule_count": 94,
+      "user_lexicon_rule_count": 8,
+      "user_lexicon": "I.=Bir\nII.=İki\nIII.=Üç\nIV.=Dört\nI=Bir\nII=İki\nIII=Üç\nIV=Dört"
+    },
+    "audio": {
+      "codec": "MP3 128 kbps",
+      "sample_rate": 44100,
+      "gain_mode": "auto",
+      "gain_per_part": true,
+      "target_rms_dbfs": -10,
+      "gain_applied_db": 11.921,
+      "gain_min_db": 5.334,
+      "gain_max_db": 15.216,
+      "input_peak_dbfs": -6.334,
+      "input_rms_dbfs": -33.968,
+      "limiter_hits": 0,
+      "ramp_in_ms": 20,
+      "ramp_out_ms": 50
+    },
+    "manual_edited_chunks": [
+      "c001",
+      "c002",
+      "c003",
+      "c004",
+      "c005",
+      "c006",
+      "c007",
+      "c008",
+      "c009",
+      "c010",
+      "c011",
+      "c012"
+    ]
+  },
+  "generated_at": "2026-09-21T08:17:20.156Z",
+  "chapters": [
+    {
+      "id": 1,
+      "title": "GİRİŞ",
+      "start": 0.4,
+      "end": 418.824,
+      "chunks": [
+        {
+          "id": "c001",
+          "title": "GİRİŞ",
+          "text": "İnsanı, uçsuz bucaksız evren içinde tek başına bırakılmış, öylesine bir varlık olarak nitelendirmek ne mümkün. İnsan doğayla birlikte var ve aynı zamanda toplumsal da bir varlık. Yaşamını devam ettirmesi ve üretmesi; klan, aşiret, topluluk ya da toplum içinde var olabilmesi için ötekine muhtaç. Öteki sadece içine doğduğu fiziki çevreye ait bir olgu değil. Öteki aynı zamanda fiziki olduğu kadar insani ihtiyaçları için bir arada olmak zorunda olduğu diğerleri. Belki de bu yüzden insan, Antik dönemden bu yana politik bir hayvan olarak nitelendiriliyor. Her ne kadar modern üretim biçimi ile birlikte, bireysellik yerine bireyciliğe vurgu yapılsa da bu hep böyle. Kapitalist toplum feodal bağları bir daha kavuşmamak üzere çözmüş ve bu bağların koşullandırdığı birincil ilişkiler yerine, insanın insanın kurdu olduğu bir kabul içinde serbest piyasanın görünmez ellerinin şekillendirdiği kurallar manzumesi ile birlikte ikincil ya da olabildiğince rasyonel bir biçimde düzenlenmiş bir toplumsal düzene mahkûm edilmiş olsa da ötekine insani olarak da muhtacız. Yani ister birincil ilişkilerin yumuşak evreni içinde insani bir toplumsal düzen içinde isterse de serbest piyasa ilkesinin biçimlendirdiği ikincil ilişkilerin rasyonel evreni içinde yer alsın insanın yaşamak ve üretmek için diğerlerine ihtiyacı var. Aydınlanma eleştirmenleri, kapitalist toplumsal düzenin, modern üretim biçiminin ya da ikinci ilişkilerin rasyonel zorunluluklarının dayattığı biçimde insanı toplumdan soyutlayarak, rekabetçi piyasanın emrine amade haline getiren bu bireyci vurguyu çoktan tartışmalı hâle getirmiş. Bu yüzden biz insanı, vahşi bir biçimde sadece hayatta kalmak için çabalayan bir varlık olarak görmekten daha çok insani ihtiyaçlarını karşılamak, bir arada yaşamanın zorunluluğuna ahlaki bir anlam atfetmeye uğraşan, yani kültürel bir varlık olarak görmeyi yeğleyeceğiz.\n\nFiziki ve daha da ötesi kültürel bir varlık olarak insanı insan yapan en önemli özelliği tabii ki dildir. Dil denilince akla hemen konuşma gelebilir dolayısıyla iletişim denilince onu hemen konuşma, insan ile insan arasındaki sözel bir süreç olarak tanımlama eğiliminin ağır bastığı görülür. Bu ilk bakışta doğru olabilir ama sadece bu kadarla yetinmemek gerekir. Çünkü iletişim insanın varlık sürdürme biçiminin bir ürünü, daha da ötesi bu varlık sürdürme biçimine göre değişime uğrayan, anlam kazanan ve bu yönüyle insana özgü bir olgudur. Yani iletişim, doğal çevresi, araç gereçleri, üretim sürecindeki öbürleri ile ilişkileri, bu ilişkilerin taraflar nezdinde kabulünü sağlayan değerler sistemi ile insanın kültürel varlığının temelinde yer alır. Bir anlamda, doğayı dönüştürürken, kendi yaşamsal ihtiyaçları için onu kullanırken ürettiği her ne varsa bunu üretme yöntemi, bu yöntemin zorunlu kıldığı ilişki biçimleri ve bu yöntem ile onun zorunlu kıldığı ilişki biçimlerine yüklediği anlamların devamlılığı için iletişim bir gerekliliktir. Bu nedenle iletişim sadece insan ile insan arasındaki basit bir sözel süreç değil, bu sözel sürecin temsil ettiği anlamların inşa edilişidir (Oskay, iki bin on dört: on beş ile on yedi).\n\nTekrar insana özgü en önemli özelliğe, dile dönelim. Dil, sevinç, acı, şaşırma gibi tepke seslerin ötesinde; doğayı dönüştürme sürecinin de bir sonucudur. Bunu iki şekilde açıklamak mümkün: İlki, ihtiyaçlarına yönelik üretirken ve tabii ki çok önceleri avlanırken yapıp ettiklerinin ürünüdür; yani dil ile hareket birbirine sıkı sıkıya bağlıdır. İnsanın benzer olay, durum ve zamanlarda eylerken çıkardığı sesler, zamanla sözcüklere dönüşür. İkincisi ise yine ihtiyaçlarına yönelik doğayı dönüştürme kaygısı ile eylerken önce doğal olana benzer ve daha sonra da ondan farklılaştırarak, giderek incelen yeteneği ile araçlar üretirken çıkardığı tepke seslerin bir süre sonra, o aracı anlatmak için bildirişme yani iletişim amaçlı kullanılması sonucu sözcüklere dönüşmesidir. Böylece biz dili, insanın çalışırken, yaşamını devam ettirebilmek için doğa ile mücadelesi içinde eylerken ve üretirken, olayları ve nesneleri yansıtma amacıyla ürettiği, somuttan soyuta, doğadan kültürel yaşama geçişi sağlayan işaretler düzeni olarak tanımlayabiliriz. İnsan yalnız acıyı, sevinci duyabildiği, şaşırabildiği için değil, aynı zamanda üreten bir varlık olduğu için yaratmıştır açık seçik, birbirinden ayrı sözcükleri (Fischer, iki bin on: yirmi dört ile otuz).\n\nSözcüklerin kullanım biçimi ve hatta anlamı, bu üretim biçiminden ötekine, o kültürden bu kültüre de değişir. Her üretim biçimi, kendine özgü ilişkileri zorunlu kıldığı gibi; bu ilişkiler kültürden kültüre değişir. Örneğin Orta Çağ feodal ilişkiler ile örülüdür ve tarımsal üretim biçimi bu ilişkileri koşullandırır ancak İngiliz feodalitesi ile Rus feodalitesi birbirinden oldukça farklıdır. İngilizlerin büyük bir bölümü Protestan’dır ve Anglikan kilisesine biat etmektedir. Anglikan kilisesi ise kraliyet ailesine bağlıdır ve kraliçe kilisenin başkanıdır. Ülkenin dini lideri ise Birleşik Krallık kilisesinin başpiskoposudur. Bugün İngiltere’de kapitalist üretim biçimine özgü ilişkiler hâkimken; kraliyet ailesinin, dolayısıyla feodal ilişkilerin, aristokrasinin ve tabii ki Anglikan kilisesinin özgün ağırlığı hâlâ devam etmektedir. Oysa Rusya Ortodoks’tur ve çarlık rejiminden bu yana bu mirasın, Rus toplumunun bütün kültürel dokusuna sızmış olduğunu görmek mümkündür. Dolayısıyla her iki toplum da Hristiyan dinine mensup olsa da Hristiyanlık sözcüğünün anlamı, her iki toplumda da bağlı bulundukları kiliselerin etkisiyle farklılaşır.\n\nDilin doğuşu, dolayısıyla iletişim olgusu sadece aktarımla değil; aktarılan sözcüklerin anlamlandırılma süreciyle de yakından ilişkilidir. İletişim bir anlamlandırma sürecidir. Kültürel devamlılığın koşuludur. Bu nedenle iletişim çalışmalarının ilk tohumlarını atan ve iletişimin bilim olmasında oldukça etkili olduğu söylenen Chicago Okulu üyeleri için kavram, bir yerden bir yere mesaj yollama, diğerlerine enformasyon verme gibi anlamlara gelebilecek biçimde sadece aktarım olarak değil daha çok toplumun ve o topluma ait kültürün devamlılığı sağlayan bir işlev ile birlikte ele alınır (Morva: iki bin on üç: yüz yedi). Biz de bu ünitede hem aktarım olarak iletişimin ne anlama geldiğini ve süreci tanımlarken dikkate alınması gereken kavramları hem de anlamların üretimi ve değişimi olarak iletişimi tanımlarken; anlam üretimi sürecinde gözden kaçırılmaması gereken bazı temel kavramları açıklamaya çalışacağız.",
+          "start": 0.4,
+          "end": 418.824,
+          "duration": 418.424,
+          "tts_parts": 1,
+          "chars": 6418
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "İLETİŞİMİN KÜLTÜREL BAĞLAMI",
+      "start": 420.024,
+      "end": 718.307,
+      "chunks": [
+        {
+          "id": "c002",
+          "title": "İLETİŞİMİN KÜLTÜREL BAĞLAMI",
+          "text": "İletişim nedir sorusunu cevaplandırabilmek aslında oldukça kolay. İlk olarak Latince commūnicāre sözcüğünden türetilmiş bir kavramdan söz ettiğimizi söyleyelim. Commūnicāre sözcüğü İngilizceye communication olarak geçmiş. Genel bir ifade ile kavramı birbirilerine ortamlardaki nesneler, olaylar ve olgularla ilgili değişimleri haber veren; bu nesne, olay ve olgular karşısında benzer yaşam deneyimlerinden dolayı sahip olunan benzer duyguları birbirine ifade eden insanların oluşturduğu topluluk ya da toplum yaşamı içinde gerçekleştirilen tutum, yargı, düşünce ve duygu bildirişimi olarak tanımlamak mümkün. Burada gözden kaçırılmaması gereken nokta, en basit anlamıyla iletişimin benzer yaşam deneyimlerinden dolayı benzer duygulara sahip olanların oluşturduğu bir topluluk ya da toplumdaki insanlar arasında gerçekleşiyor olması. İster aktarım süreci olarak ister bir anlam yaratımı olarak ele alınıyor olsun, iletişim kazalarının yaşanmaması için ortak paydaların mevcut olması ön koşul. Kavramın latince karşılığının türediği communis sözcüğü de bu nedenle, benzeşenlerin oluşturduğu ortaklık ya da topluluk anlamına geliyor. Öyleyse tekrar edelim: İletişim, belirli bir zaman ve mekânda, aynı fiziki ya da çevresel koşullar içinde yaşamlarını sürdürebilmek için araç ve gereçler üreten, bu araç ve gereçlerin çalışma biçimleri ile ilgili bilgileri derleyen, bunları belirli bir işbölümüne göre kullanan, bu iş bölümünden kaynaklanan farklılıkları olumlayacak değerler ya da bu kişilerin kendilerinin rızasını üreterek bir kimlikte kaynaştırmayı amaçlayan bir etkinliktir (Oskay, iki bin on dört: yirmi üç).\n\nİletişimin gerçekleştiği kültürel bağlam oldukça önemli. Sadece iletişimin sözel bir süreç olması ve dille ilgisi nedeniyle önemli değil bu kültürel bağlam. Örneğin, merhaba sözcüğünü ele alalım. Eğer dil bilgimiz ana dilimiz ile sınırlıysa sözcüğün İngilizce (Hello), Fransızca (Bonjour), Almanca (Hallo) ya da İtalyanca (Ciao) karşılıklarını duyduğumuzda bize hiçbir şey ifade etmez. İletişim için aynı dili konuşuyor olmak tabii ki önemli ancak burada sözünü ettiğimiz çok daha ötesi; anlamların üretimi ve değişimi olarak iletişim söz konusu olduğunda kültürel bağlamın ne anlama geldiği. Yine bir örnek verelim. Hepimiz Türkçede ‘sümen altı etmek’ deyiminin ne anlama geldiğini biliriz. Sümen, “üzerinde yazı yazmaya ve arasında evrak saklamaya yarayan deri kaplı, altlık”tır (Türk Dil Kurumu Sözlüğü’ne göre). Düz anlamıyla değerlendirdiğimizde sümen altına bir evrakın konulmuş olduğundan söz ediyor olduğumuz sanılabilir. Ancak burada, belirli bir kültürel bağlam içinde anlam kazanmış dilsel bir kodlama söz konusu. Sözcük diğer sözcüklerle bir arada, “bir evrakın işleme konulmasını engellemek ya da bir işin yapılmasını geciktirmek” (Türk Dil Kurumu Sözlüğü’ne göre) gibi yan anlamlar kazanmış. Biz aynı kültürel bağlam içinde ya da aynı zaman ve mekânda, benzer fiziki koşullar içinde yetişmiş ve bu paylaşım içinde bir toplumun üyeleri haline gelmiş kişiler olarak ‘sümen altı etmenin’ bu yan anlama geldiğini biliriz. Başka bir örnek daha verelim: Bugün çok eskide kalmış olsa da bankamatikler önünde maaş zamanı biriken emekli kuyruklarını düşünün! Türkiye’yi herhangi bir amaçla ziyaret etmiş bir yabancının yıllar öncesine ait bu manzaranın ne anlama geldiğini tahmin etmesini beklemek oldukça zor. Oysa bu manzarayı gören bizden biri için bu kuyruğun sembolik anlamı, bankamatikte her an paranın bitebileceği düşüncesiyle maaşlarını alamayacağı korkusuna kapılmış emeklilerin sabahın erken saatlerinden itibaren katlanmak zorunda kaldıkları durumun anlatımıdır.\n\nÖrnekleri çoğaltmak ve kendi kültürel bağlamımız içinde yaygınlaştırmak mümkün. Ama kısaca, iletişimin kültürel bağlamı ya da bu bağlamın niçin önemli olduğunu özetleyelim: İletişim gündelik yaşamımızda bize nesneleri, insanları tanımlar; iş bölümü içinde değişik toplumsal roller yüklenmiş insanlara bu rolleri yerine getirirken, bu rol dağılımı çerçevesinde oluşan toplumun o tarih dönemine ait hayat tarzını öğretir, olumlatır ve bu hayat tarzının devamı için gereken değerleri oluşturur, aşılar (Oskay, iki bin on dört:on yedi). Toplumsal sistemin sürmesini, kendini yeniden üretmesini sağlar. İletişim, belirli bir kültürel bağlamda gerçekleşir; nesneler, olgular ve olaylar belirli bir kültürel bağlamda anlam kazanır ve bu kültürel bağlamın devamlılığı iletişime bağlıdır. İletişim ister bir süreç olarak ele alınsın ister anlamların yaratımı ve değiş tokuşu olarak görülsün, belirli bir ortak kültürel bağlamı gerektirir.",
+          "start": 420.024,
+          "end": 718.307,
+          "duration": 298.284,
+          "tts_parts": 1,
+          "chars": 4554
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "BİR SÜREÇ OLARAK İLETİŞİM VE ÖGELERİ",
+      "start": 719.507,
+      "end": 1728.706,
+      "chunks": [
+        {
+          "id": "c003",
+          "title": "BİR SÜREÇ OLARAK İLETİŞİM VE ÖGELERİ",
+          "text": "İletişim bir süreç olarak ele alındığında da bir toplumsal etkileşim biçimidir. Bu etkileşim biçimi de belirli bir ortak kültürel bağlamı gerektirir ancak süreç olarak iletişim söz konusu olduğunda sözü edilen kültürel bağlamdan daha çok bu süreçte etkili olan temel bazı iletişim ögeleri ön plana çıkar. Süreç olarak iletişim, iletilerin ya da mesajların aktarılması ile ilgilenir. Gönderici ve alıcının bu iletileri ya da mesajları nasıl kodladığı ya da bu kodları nasıl açtığı önemli hâle gelir. İletişim kanallarının ve araçlarının nasıl kullanıldığı konu edilir. Etkili olunmasına ve iletilerin ya da mesajların doğru bir biçimde aktarılmasına dikkat kesililir. İletişim, bir kişinin diğerinin ya da diğerlerinin davranışlarını, tutumlarını, düşüncelerini ya da alışkanlıklarını etkileme süreci olarak görülür. Eğer istenilen etki sağlanamadı ise iletişimin başarısız olduğu kanaatine varılır ve bu başarısızlığın nedenleri aranıp bulunarak etkili bir iletişimin olasılıkları tartışılır. Böyle bir başarısızlığa neden olan etkenler araştırılırken bu etkenler gürültü gibi kavramlar çerçevesinde tarif edilir (Fiske, iki bin üç: on altı).\n\nGörüldüğü gibi iletişim ile ilgili sürecin anlaşılabilmesi için bilinmesi zorunlu bazı temel kavramların varlığı söz konusu. Bunlar; kaynak, alıcı, ileti ya da mesaj, kanal ya da araç, kod, kodlama, kodaçımı, gürültü ve geri besleme’dir. Şimdi kısaca bu ögeleri tanımlayalım.",
+          "start": 719.507,
+          "end": 808.858,
+          "duration": 89.35,
+          "tts_parts": 1,
+          "chars": 1458
+        },
+        {
+          "id": "c004",
+          "title": "Kaynak ve Alıcı",
+          "text": "İnsanlar iletişim sürecinde temelde iki role sahiptir: Hem kaynak olarak hem de alıcı ya da hedef kişi ya da kitle olarak işlev görür. Kaynak ileti ya da mesaj gönderimini başlatan kişidir. Alıcı ya da hedef kişi ya da kitle ise bu iletinin ya da mesajın gönderilmesine niyetlenilen kişi, kişiler ya da kitledir (Pearson and Nelson, bin dokuz yüz doksan yedi: dokuz). Örnekle açıklayalım: Bir konferans düşünün. Konu etkili iletişim. Konu uzmanı, kendisini dinleyen doktorlara etkili iletişim metotlarını anlatıyor. Burada kaynak, konu uzmanıdır. Etkili iletişim metotlarını anlatmaya çalıştığı kişiler yani doktorlar, hedef kitle, alıcıdır. Kaynak burada tek kişidir: konuyu anlatan uzman. Ancak kimi zaman kaynak, yani mesajı hazırlayan ve gönderimini başlatan radyo, televizyon, gazete ya da dergi gibi kitle iletişim araçları olabilir. Bu durumda kaynak denildiğinde kast edilen kurumsal bir yapıdır (Oskay, iki bin on dört: yirmi dört).\n\nBurada can alıcı nokta bu iki rolün birbirinden ayrılamayacağıdır. Kaynak ve alıcı bu rollerini yerine getirirken birbirlerinden bağımsız hareket edemez. Daha doğrusu kaynak ve alıcı kişi, aynı anda ve sürekli olarak birbirinin yerine geçer; yani eş zamanlı bir biçimde kaynak mesajın alıcısı, alıcı da kaynak hâline gelebilir. Bu durum daha çok söylenildiği gibi yüz yüze, bireyler arası ve eş zamanlı iletişim süreci için geçerlidir (Pearson and Nelson, bin dokuz yüz doksan yedi: dokuz). Örneğe geri dönersek, konferans esnasında doktorlardan biri iletişim uzmanına, mesleki yaşamına özgü özel bir soru yönelterek uzmanın konferans akışını bozabilir ve sorusuna cevap alabilir. Bu durumda soruyu sorduğu anda doktor alıcı konumundan, bir ileti gönderimini başlatan kişi olarak kaynak konumuna; iletişim uzmanı da kendisine ileti gönderilen kişi olarak kaynak konumundan alıcı konumuna geçer.\n\nRadyo, televizyon, gazete ve dergi gibi eski medya ya da kitle iletişim araçlarının sahibi kurumsal yapıların kaynak olduğu durumlarda, alıcı hedef kitlenin ya da kişilerin eş zamanlı bir biçimde kaynak hâline gelerek istedikleri iletileri ya da mesajları bu kurumsal yapılara iletmesi ve bu iletilerin bu kurumsal yapılarda istenilen düşünce, davranış, tutum ya da alışkanlık değişikliği meydana getirmesi zordur. Dolayısıyla aynı anda bu kurumsal yapıların alıcı yani hedef kişi ya da kitle hâline gelmesi mümkün değildir. Bu zorluk geçmişte oldukça revaçta olan ama bugün güncelliğini yitiren, anlık telefon bağlantılarını mümkün kılan televizyon yayınlarında ya da anlık olmasa da mektup gibi alıcılardan yani okuyuculardan, dinleyicilerden ya da izleyicilerden gelen istekleri ya da kaynağın ilettiği; daha doğrusu radyo, televizyon, gazete ya da dergi gibi kurumsal yapıların ilettiği iletiye ya da mesaja karşı ürettikleri cevabı gönderen iletişim araçlarıyla kısmen aşılabilmiştir. Günümüzde ise İnternet teknolojilerinin gelişmesi ile birlikte eş zamanlı iletişim mümkün hâle gelirken kaynak; yani radyo, televizyon, gazete ve dergi gibi kurumsal yapılar; dinleyicilerden, izleyicilerden ve okurlardan gelen anlık iletiler sonucu eş zamanlı bir biçimde alıcı konumuna geçebilmektedir.\n\nBir başka dikkatle üzerinde durulması gereken husus ise yüz yüze iletişim sürecinde ya da eş zamanlı iletişimi mümkün kılan iletişim teknolojilerinin söz konusu olduğu durumlarda kaynak ya da alıcının bir bilgisayar ya da makine gibi davranmasını beklemenin anlamsızlığıdır. Kaynağın alıcı, alıcının da kaynak olabildiği bu iletişim süreçlerinde iletilerin değiş tokuşu tek bir biçimde ve aynı içerikte olmaz. Kişilerin, geçmişi, yaşı, kültürleri, değerleri, beklentileri ya da alışkanlıkları, iletişim sürecinde iletiler ya da mesajlar karşısında farklı davranılmasında etkilidir (Pearson and Nelson, bin dokuz yüz doksan yedi: on).",
+          "start": 809.758,
+          "end": 1054.542,
+          "duration": 244.785,
+          "tts_parts": 1,
+          "chars": 3785
+        },
+        {
+          "id": "c005",
+          "title": "İleti ya da Mesaj",
+          "text": "Herhangi birisiyle (alıcı) iletişim kurma niyetinde olan bir kişinin (kaynak) tasarılarının, düşüncelerinin ya da duygularının sözlü ya da sözsüz biçimidir, ileti ya da mesaj. Etkileşimin özüdür. İletişim sürecinde iletilen şeydir. Bir alıcı için hazırlanmış, onda belirli bir duygu, düşünce, davranış, tutum ve alışkanlık değişikliği meydana getirmek üzere kaynak tarafından kodlanmış semboller bütünüdür. İletiler ya da mesajlar, sözlü ya da sözsüz sembollerden oluşur. Harfler semboldür, sözcükler ve cümleler de. Rakamlar, çizgiler, renkler, notalar semboldür. Yüz ifadelerimiz, mimiklerimiz, jestlerimiz, ses tonumuz, vücut hareketlerimiz de birer semboldür (Pearson and Nelson, bin dokuz yüz doksan yedi: on).\n\nTekrar aynı örneğe dönelim. Etkili iletişim konferansı veren uzmanın doktorlar karşısında ayakta, bir sahne üzerinde dolaşarak sunumunu yaptığını hayal edin. Sahnenin hemen arkasında da beyaz bir perde var. Perdeye konferans için iletişim uzmanı tarafından hazırlanmış sunu yansıtılmış ve yansılarda konu ile ilgili ortamı şenlendirmek için bazı karikatürlerin yer aldığını düşünün. Uzman konuşurken zaman zaman elindeki kumanda ile yansıyan sunuyu yönlendiriyor, zaman zaman gülüyor ve zaman zaman da ses tonu alçalıp yükseliyor olabilir. Bunların tamamı sözlü sözsüz bütün semboller bir araya gelerek etkili iletişim konusu ile ilgili iletiler ya da mesajlar hâline gelir.",
+          "start": 1055.442,
+          "end": 1152.084,
+          "duration": 96.641,
+          "tts_parts": 1,
+          "chars": 1411
+        },
+        {
+          "id": "c006",
+          "title": "Kanal ve Araç",
+          "text": "Sık sık birbirine karıştırılan iletişim sürecinin iki önemli ögesidir kanal ve araç. Kanalı tanımlamak kolaydır. Sembollerin aktarıldığı fiziksel nesnelerdir: ışık dalgaları, ses dalgaları, radyo dalgaları, sinir sistemi gibi (Fiske, iki bin üç: otuz beş).\n\nİletiyi sembole dönüştüren teknik ve fiziki nesnelere de araç denir ya da daha teknik bir ifade ile söylemek gerekirse iletinin sinyale dönüşmesini sağlayan bu araçlardır (Fiske, iki bin üç: otuz beş). Radyo alıcıları ve vericileri bir araçtır; konuşmaları ses dalgalarına dönüştürür: ses dalgaları ise bir kanal. Televizyon bir araçtır; alıcıları ve vericileri yardımıyla görüntü ve sesleri, ışık ve ses dalgalarına dönüştürür: ışık ve ses dalgaları ise kanal. Bir başka örnek daha verelim. Telefon da bir araçtır; konuşmaları, konuşmaya ait sembolleri ses dalgalarına dönüştürür ve yine ses dalgaları ise kanaldır. İnsan gözü sinirlerden oluşan bir araçtır; karşısındaki kişiden, onun jestleri, mimikleri, ses ve yüz hareketlerinden oluşan görüntüye dayalı eylemlerinden yansıyan ışık dalgalarını (görüntü bir iletidir) mercekleri yardımıyla elektrik dalgalarına dönüştürür ve sinirler sistemi ile beyne iletimini sağlar. Burada elektrik dalgaları ise kanaldır. Görüntü iletisini oluşturan sembolleri beyne aktarır.\n\nÜç tür araçtan söz edilebilir: Bunlardan ilki, ses, yüz ve beden gibi konuşulan sözcüklerin, ifadelerin, jest ve mimiklerin doğal dilini kullanan sunumsal araçlardır ki bu araçlar, iletişim hâlinde bulunan kişileri zorunlu kılar çünkü araç kişidir; eş zamanlılığı yani şimdi ve burada olmayı gerektirir. İkincisi, kitap, resim, fotoğraf, yazı, heykel, mimari, peyzaj gibi iletişimsel bir metin yaratmak için kültürel ve estetik uzlaşımları, ortaklıkları kullanan temsili araçlardır. Bu araçlar, birinci kategorideki araçların kaydedilmiş hâlleridir ki bu yüzden iletişimsel metin olarak adlandırılabilir. Bunlar iletişim hâlinde bulunan kişileri gerektirmez, eş zamanlılık söz konusu değildir; yani şimdi ve burada olma zorunluluğu yoktur. Son araçlar ise telefon, radyo, televizyon, İnternet gibi birinci ve ikinci kategorideki araçların aktarımını sağlarken mühendislik tarafından yaratılan kanalları kullanan mekanik araçlardır. Şimdi ve burada olan ya da iletişimsel metin hâline gelmiş mesajları ya da iletileri, elektrik, ışık, ses ve radyo dalgalarına dönüştürür (Fiske, iki bin üç:otuz altı).\n\nEtkili iletişim konulu konferansta iletişim uzmanının kendisi, sahnede dolaşırken ve konuşma yaparken beden ve yüz hareketlerini, jest ve mimiklerini kullandığı için sunumsal bir araçtır; konferans verdiği doktorlar için şimdi ve buradadır, yani bireyler arası, eş zamanlı bir iletişim söz konusudur. Bu iletişim uzmanı, konu ile ilgili karikatürlerden ya da fotoğraflardan oluşan bir sunuyu arkasındaki beyaz perdeye yansıtıyor olabilir. Bu yansılar da birer iletişimsel metin olarak temsili araçtır. Son olarak eğer biri kamera ile bu konferansı çekiyor ve bu konferansı İnternet üzerinden yayımlıyor ise konferans bu yolla ses, ışık ve elektrik dalgalarına çevriliyor anlamına gelmektedir. Öyleyse kamera ve İnternet burada mekanik araçlardır.",
+          "start": 1152.984,
+          "end": 1374.456,
+          "duration": 221.472,
+          "tts_parts": 1,
+          "chars": 3141
+        },
+        {
+          "id": "c007",
+          "title": "Kod, Kodlama ve Kodaçımı",
+          "text": "Kod, belirli bir zaman ve mekânda aynı kültürün üyeleri tarafından kabul görmüş ve paylaşılan anlam sistemidir. Sembollerin hangi bağlamda ve nasıl kullanılacaklarını; iletilerin ya da mesajların oluşturulması için nasıl biraraya getirileceklerini belirleyen kurallar ya da uzlaşımlardan oluşur (Fiske, iki bin üç: otuz yedi).\n\nBaşka bir biçimde tanımlayacak olursak, iletilerin ya da mesajların nasıl düzenleneceğine dair üzerinden uzlaşmaya varılmış anlam ve anlatım biçimleridir. Anlamlarının rastlantısal bir şekilde oluştuğu ve iletişim için kullanılan sembollerin, harflerin ve sözcüklerin sistematik bir biçimde düzenlenişi ya da geniş kapsamlı birlikteliği olarak da tarif edilebilir (Pearson and Nelson, bin dokuz yüz doksan yedi: on).\n\nİletişimde kullanılan iki tür koddan söz edilebilir. Bunlardan ilki semboller ve bu sembollerin dil bilgisi kuralları içerecek biçimde düzenlenişinden oluşan sözel kodlardır. Bütün diller sözel kodlardan oluşur; yani sembol, harf ve sözcüklerden (Pearson and Nelson, bin dokuz yüz doksan yedi: on virgül bir bir). Türkçeyi, sözcüklerin oluşumu ve cümle kuruluşunu düşünün. Bu sistematik düzenleme, tıpkı diğer dillerde olduğu gibi tamamen rastlantısal bir biçimde oluşmuştur. Örneğin, ben-Türkçe-konuşabiliyorum cümlesinde, ben-özne, Türkçe-belirtisiz nesne ve konuşabiliyorum-yüklemdir. Cümle, özne-nesne-yüklem birlikteliğinden meydana gelir.\n\nSözel olmayan kodlar ise beden hareketlerinden, jestlerden ve mimiklerden, giyimler ve süslenme biçimlerinden, şaşırma, korkma ve heyecan ifade eden seslerden oluşur. Aslında sözcükleri içermeyen bütün kodlar sözel olmayan kodlar olarak tarif edilebilir (Pearson and Nelson, bin dokuz yüz doksan yedi: on bir).\n\nKodlama; duygu, düşünce, tasarı ya da hayallerin ileti ya da mesaj hâline getirilmesi işidir. Bu kodlama sözel olduğu gibi sözel olmayan biçimde de olabilir. Kodaçımı ise kodlanarak ileti ya da mesaj hâline getirilen duygu, düşünce, tasarı ya da hayallere anlam atfedilmesidir (Pearson and Nelson, bin dokuz yüz doksan yedi: on bir). Kodlama ve kodaçımı işlemini, kaynak ve alıcı yani hedef kişi ya da kitle yapar. Bilinen örnek üzerinden açıklamaya çalışırsak, etkili iletişim konferansını veren iletişim uzmanı kaynak kişi olarak konusu ile ilgili duygu, düşünce, tasarı ve hayallerini sözlü ya da sözsüz kodlar yardımıyla kodlayarak ileti ya da mesaj hâline getirir. Bu ileti ve mesajı alan doktorlar, kendi deneyim ve birikimlerine göre bu iletiye ya da mesaja anlam atfederek kodaçımını gerçekleştirir.",
+          "start": 1375.356,
+          "end": 1550.295,
+          "duration": 174.939,
+          "tts_parts": 1,
+          "chars": 2538
+        },
+        {
+          "id": "c008",
+          "title": "Gürültü",
+          "text": "Gürültü, kodlama ve kodaçımı sürecinde ileti ya da mesajın anlaşılırlığına herhangi bir biçimde engel olan her şeydir. Yüksek sesler, dikkat dağıtan görüntüler ve sıra dışı davranışlar, fiziksel gürültü olarak nitelendirilirken akılsal, ruhsal ve anlamsal olarak da ortaya çıkabilir (Pearson and Nelson, bin dokuz yüz doksan yedi: on bir). Örneğe dönelim. Etkili iletişim konusu konferansın verildiği salonunun olduğu merkezin çok yakınında bir havaalanı olduğunu düşünün. Sunum sırasında sürekli uçak geçişi söz konusu olacağından, uzmanın sesini bastıran, söylediklerinin anlaşılırlığını sınırlayan bir gürültü oluşacaktır ya da birden sahnenin ışıklarının sönmesi de dikkat dağıtan bir görsel gürültüdür. Kodlama ve kodaçımı sürecine engel teşkil eden önemli gürültü olasılıklarından biri de söylenildiği gibi anlamsal ya da kültürel bağlam ile ilgili olandır. İletişim uzmanının konferansta söylediklerini anlaması için dinleyenlerin oldukça dikkatli olması gerekir. Çünkü dinleyenler doktor olduğu için iletişim uzmanı ile aralarında kişisel deneyim ve mesleki birikim açısından oldukça büyük bir kültürel fark söz konusu olacaktır. İletişim uzmanının kullandığı kavramlar, eğer açıklama içermezse daha önce bu kavramla hiç karşılaşmamış olan doktorlar için iletişim sürecini sekteye uğratacak bir gürültü nedenidir. Uzman örneğin kodlama kavramının ne olduğundan hiç söz etmemişse bu kavramı kullandığı anda dinleyenler sözü edilen kavramı telefon ile ilişkilendirebilir. Dolayısıyla iletişim uzmanının etkili iletişim konferansı ile ulaşmak istediği amaç bu tür anlamsal gürültü içeren kültürel farklılıklar nedeniyle kodlar üzerinde herhangi bir anlamsal uzlaşım sağlanamadığı için gerçekleşmeyecektir.",
+          "start": 1551.195,
+          "end": 1661.397,
+          "duration": 110.202,
+          "tts_parts": 1,
+          "chars": 1720
+        },
+        {
+          "id": "c009",
+          "title": "Geri Besleme",
+          "text": "Geri dönüt ya da alıcının kaynaktan gelen iletiye cevabı olarak tanımlanabilir. Söylenildiği gibi yüz yüze ya da eş zamanlı iletişimde kaynak alıcı, alıcı kaynak hâline dönüşebilmektedir. Dolayısıyla geri besleme eş zamanlı gerçekleşebilir. Yüz yüze ve eş zamanlı olmayan iletişim süreçlerinde de geri besleme söz konusudur. Ancak bu geri besleme, kaynağın istediği ve amaçladığı biçimde olabileceği gibi, farklı bir anlamın yaratılarak istenilen ya da amaçlanan etkinin dışında da gerçekleşebilir. Etkili iletişim konferansında konferansı veren iletişim uzmanının kaynak olarak amacı dinleyenlerin kendi mesleklerinde etkili bir iletişim için sözü edilen gereklilikleri yerine getirmesi ve anlatılanları öğrenmiş olmasıdır. Bu hemen orada, konferans sırasında, konu ile ilgili sorduğu sorulara verilen cevaplarla ortaya çıkabileceği gibi, bir süre sonra doktorlara yapılacak bir anket ile de ölçülebileceği gibi, o doktorların hastaları ile yapılacak görüşme ve benzeri ölçümlerle de amaca ulaşılıp ulaşılamadığı ile ilgili bir geri besleme sağlanabilir.",
+          "start": 1662.297,
+          "end": 1728.706,
+          "duration": 66.409,
+          "tts_parts": 1,
+          "chars": 1070
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "BİR ANLAM ÜRETİMİ VE ANLAMLARIN DEĞİŞİM SÜRECİ OLARAK İLETİŞİM",
+      "start": 1729.906,
+      "end": 2157.171,
+      "chunks": [
+        {
+          "id": "c010",
+          "title": "BİR ANLAM ÜRETİMİ VE ANLAMLARIN DEĞİŞİM SÜRECİ OLARAK İLETİŞİM",
+          "text": "Süreç olarak iletişimde, iletişim sürecinin olabildiğince akılcı bir biçimde düzenlenmesine dikkat edilir çünkü süreçte belirleyici olan kaynağın alıcı üzerindeki etkisidir. Alıcıda kalıcı düşünce, duygu, davranış, tutum ve alışkanlık değişikliğini amaçladığı için bunun başarılarak tam denetim sağlayabilmenin önemi üzerinde durulur. Eğer alıcı yani hedef herhangi bir kişi değil de kitle ise iletişimin başlatılma nedeni yine o kitlenin ya da toplumun denetim altına alınarak, istenilen amaç çerçevesinde hareket etmesinin sağlanmasıdır. Ancak anlamların üretimi ve değişimi olarak iletişimde, iletiler ya da mesajlar; yani ileti ve mesaj olarak kodlanmış ürünler, bir metin olarak değerlendirilir ve bu metinlerin insanlarla nasıl etkileştiği üzerinde durulur (Fiske, iki bin üç:on altı). Buradaki temel fark, süreç olarak iletişim alıcı olarak tanımlanan hedef kişi ya da kişilerde (kitlede) istenilen duygu, düşünce, davranış, tutum ve alışkanlık değişikliğinin hiçbir itiraz söz konusu olmadan gerçekleşebileceğini iddia ederken anlamların üretimi ve değişimi olarak iletişimde, ileti ya da mesaj olarak kodlanan metinlerin istenilen duygu, düşünce, davranış, tutum ve alışkanlık değişikliğini sağlayabileceği gibi, itiraz ile karşılanarak tartışılabileceği ve kabul edilmeyebileceği iddiasını öne sürer.\n\nDaha doğrusu kodaçımına uğratılan ileti ya da mesaj olarak metinler kültürel bağlam içerisinde değerlendirilir. Anlamın üretimi kültürel bağlam ile ilişkilendirilir. İletişim başarısızlığı gibi bir durum söz konusu değildir. Eğer kaynak ile alıcı arasında bir yanlış anlama söz konusu ise bu kültürel farklılıktan kaynaklanır (Fiske, iki bin üç: on altı) ve alıcının edilgen olmadığı, ileti ya da mesajı olduğu gibi kabul ederek geri dönütleri bu kabule dayalı istenildiği biçimde gerçekleştirmeyebileceği kabulü çok önemlidir. Alıcı etkendir.\n\nBu iletişim anlayışına göre kaynaktan gelen, kaynak tarafından kodlanan ve alıcıda, hedef kişide ya da kitlede istenilen doğrultuda bir duygu, düşünce, davranış, tutum ve alışkanlık değişikliği meydana getirmesi amaçlanan iletiye ya da mesaja alıcı, hedef kişi ya da kitle üç biçimde cevap üretir. Bunlardan ilki, kaynağın istediği biçimde gerçekleşen yeğlenen okumadır. Bu okumada, var olan kültürel bağlam, bu bağlamı var eden başat egemen sistemin istediği gibi yeniden üretilir. İkinci okuma, ileti ya da mesaj olarak kodlanan metnin, olduğu gibi kabul edilmemesi müzakere yoluyla tartışılır hâle getirilmesidir. Aslında bu okuma biçiminde egemen sistemin ürettiği kültürel bağlam benimsenmiştir ancak yine de alıcı, bu kültürel bağlama ait metni sorgular. Bu metnin atıfta bulunduğu egemen sisteme ait konuya özgü değişiklikler yapılmasına yönelik düşünceler geliştirir. Son okuma biçimi ise egemen sistemin ürettiği kültürel bağlamın içinden çıkan ve kodlanarak alıcıya, hedef kişi ya da kitleye gönderilen ileti ya da mesaj olarak metnin istediği okuma gerçekleşmez ve bu okuma tamamen muhalif bir biçimde reddedilir. İstenilen okuma biçimini alıcı fark eder ve kendine dayatılan bu okuma biçiminin dışında bir düşünce ile okumasını gerçekleştirir (Fiske, iki bin üç: yüz kırk altı, yüz kırk yedi, yüz kırk sekiz). Öyleyse üç tür okuma, yani alıcı tarafından gerçekleştirilen üç tür kod açımı söz konusudur: Yeğlenen, müzakereci ve tamamen muhalif.\n\nBir örnekle açıklayalım. Yeni bir saç şampuanı reklamını düşünün. Reklamın verildiği ya da yaptırıldığı ajans burada kaynaktır. Firma, herhangi bir reklam ajansına yaptırdığı reklamında bu yeni şampuanın saç dökülmesini tamamen önlediğini iddia etmektedir. Yani ileti ve mesaj olarak kodlanmış metin şampuan ile ilgili bu iddiayı dillendirmekte ve alıcının, yani hedef kişinin ya da kitlenin, bu iddiaya inanarak bu şampuanı almasını istemektedir. Bu reklamın alıcısı, yani hedef kişisi ya da kitlesi doğal olarak saç dökülmesi sorununu yaşayanlardır. Bu kitlenin var olan alışkanlığını değiştirerek bu şampuanı almaya yönelik bir davranış değişikliği göstermesi istenmektedir. Süreç olarak iletişim bu etkiyi hedefler. Ancak anlamların üretimi ve değişimi olarak iletişim söz konusu olduğunda, yeğlenen okuma biçimi ile bu etkinin gerçekleşmesi beklenebileceği gibi müzakereci okuma, sözü edilen şampuanın saç dökülmesini tamamen önleme olasılığını kabul etse de; sözü edilen iddianın serbest piyasa koşullarının güdüsü ile tamamen bir satış stratejisi ürünü olarak kullanıldığını da düşündürebilir. Alıcının, yani hedef kişi ya da kitlenin bu reklama inanarak denemek için kullanageldiği şampuanını değiştirme olasılığı vardır. Son okuma yani muhalif biçim ise sözü edilen reklamı sınırsız sermaye güdüsü ile hareket eden kapitalist firmaların yaptığının bir benzeri olarak görüp, iddiayı bir kandırmaca olarak kabul edip, reddeder ve kullanageldiği şampuanını asla değiştirmez. Çünkü reklamdaki şampuanın saç dökülmesini önlediğine asla inanmaz.",
+          "start": 1729.906,
+          "end": 2042.4,
+          "duration": 312.494,
+          "tts_parts": 1,
+          "chars": 4927
+        },
+        {
+          "id": "c011",
+          "title": "İletişimin Tanımları",
+          "text": "Buraya kadar anlatılanlar ile alıcıda, yani hedef kişide ya da kitlede belirli bir etki yaratmayı düşünen ve bu etkiye bağlı olarak belirli bir duygu, düşünce, davranış, tutum ve alışkanlık değişikliği amaçlayan süreç olarak iletişim ve kaynak tarafından kodlanan, ileti ya da mesaj olarak üretilen metnin alıcı tarafından sadece istenildiği biçimde değil; aynı zamanda müzakere edilerek ve reddedilerek de okunabileceği üzerinde duran anlamların üretimi ve değiş tokuşu olarak iletişim nedir sorusuna cevap bulunmaya çalışıldı. Şimdi bu bilgiler ışığında iletişimi tanımlayalım: İletişim, kaynak ile alıcı arasında eş zamanlı ya da değil, bir bilgi aktarım sürecidir. ; İletişim, kaynak tarafından kodlanan iletilerin ya da mesajların alıcıya uygun bir kanal yardımıyla iletimidir. ; İletişim, alıcıda, hedef kişide ya da kitlede herhangi bir etki yaratarak duygu, düşünce, davranış, tutum ve alışkanlık değişikliği amaçlayan bir etkinliktir. ; İletişim, rastlantısal bir biçimde ve üzerinde belirli bir uzlaşmaya varılmış kodlama yöntemleri ile bir araya getirilen sembollerle belirli anlamların yaratımı ve bu anlamların değiş tokuşudur. ; İletişim, var olan kültürel bağlamı kabul ettiren ve genleştiren anlamların üretimi ve bu kültürel bağlamı biçimlendiren egemen sistemin değerleri ile ilgili toplum üyelerini ikna etme sürecidir. ; İletişim, içinde yeşerdiği kültürel bağlamın devamlılığını sağlayan metinlerin aktarımıdır. ; İletişim, var olan kültürel bağlam ile ilgili iletilen iletilerin ya da mesajların alıcı, yani hedef kişi ya da kitle tarafından tartışılarak, sorgulandığı ve bu tartışma ve sorgu sonunda yeni anlamlar içeren iletilerin ya da mesajların üretildiği bir anlam değiş tokuşudur. Bu tanımlar kuşkusuz daha da çoğaltılabilir. Ancak bunlar temel olarak iki iletişim biçimini de tanımlamak için yeterlidir.",
+          "start": 2043.3,
+          "end": 2157.171,
+          "duration": 113.871,
+          "tts_parts": 1,
+          "chars": 1850
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Neler öğrendik?",
+      "start": 2158.371,
+      "end": 2394.007,
+      "chunks": [
+        {
+          "id": "c012",
+          "title": "Neler öğrendik?",
+          "text": "1. Soru\n\nİletişimin gerçekleşebilmesi için, üzerinde uzlaşılmış değerleri kullanması ve yeniden üretmesi gereken kavram aşağıdakilerden hangisidir?\n\nA. İleti ya da mesaj\nB. Geri besleme\nC. Kültürel bağlam\nD. Eş zamanlılık\nE. Gürültü\n\n1. Sorunun Yanıtı: C\n\n2. Soru\n\nEtkili bir iletişim amaçlanıyor ve alıcı, hedef kişi ya da kitle üzerinde istenilen duygu, düşünce, davranış, tutum ve alışkanlık değişikliği isteniyorsa, burada hangi iletişimden söz edilir?\n\nA. Kültürel iletişim\nB. Süreç olarak iletişim\nC. Anlamların üretimi ve değişimi olarak iletişim\nD. Eş zamanlı iletişim\nE. Bireylerarası iletişim\n\n2. Sorunun Yanıtı: B\n\n3. Soru\n\nKodun tanımı aşağıdakilerden hangisidir?\n\nA. Belirli bir zaman ve mekânda aynı kültürün üyeleri tarafından kabul görmüş ve paylaşılan anlam sistemidir.\nB. Sembollerin aktarıldığı fiziksel nesnelerdir.\nC. Kodlama ve kodaçımı sürecinde ileti ya da mesajın anlaşılırlığını herhangi bir biçimde engel olan her şeydir.\nD. İleti ya da mesaj olarak kodlanan metnin, olduğu gibi kabul edilmemesidir.\nE. Alıcının kaynaktan gelen iletiye cevabı olarak tanımlanabilir.\n\n3. Sorunun Yanıtı: A\n\n4. Soru\n\nHerhangi birisiyle iletişim kurma niyetinde olan bir kişinin tasarılarının, düşüncelerinin ya da duygularının sözlü ya da sözsüz biçimine ne ad verilir?\n\nA. Gürültü\nB. Kodlama\nC. Müzakereci okuma\nD. İleti ya da mesaj\nE. Geri besleme\n\n4. Sorunun Yanıtı: D\n\n5. Soru\n\nGürültünün tanımı aşağıdakilerden hangisidir?\n\nA. Alıcının kaynaktan gelen iletiye cevabıdır.\nB. Duygu, düşünce, tasarı ya da hayallerin ileti ya da mesaj haline getirilmesidir.\nC. İletiyi sembole dönüştüren teknik ve fiziki nesnelerdir.\nD. Kaynak ile alıcı arasında eş zamanlı ya da değil, bir bilgi aktarım sürecidir.\nE. Kodlama ve kodaçımı sürecinde ileti ya da mesajın anlaşılırlığını herhangi bir biçimde engel olan her şeydir.\n\n5. Sorunun Yanıtı: E\n\n6. Soru\n\nAşağıdakilerden hangisi temsili bir araçtır?\n\nA. Ses\nB. Beden dili\nC. Fotoğraf\nD. Telefon\nE. Radyo\n\n6. Sorunun Yanıtı: C\n\n7. Soru\n\nAşağıdakilerden hangisi mekanik bir araçtır?\n\nA. Televizyon\nB. Resim\nC. Roman\nD. İnsan\nE. Sözcükler\n\n7. Sorunun Yanıtı: A\n\n8. Soru\n\nİletiler ya da mesajlar; yani ileti ve mesaj olarak kodlanmış ürünler, bir metin olarak değerlendiriliyor ve bu metinlerin insanlarla nasıl etkileştiği üzerinden duruluyorsa, hangi iletişim türünden söz edilir?\n\nA. Bireylerarası iletişim\nB. Sözlü iletişim\nC. Sözsüz iletişim\nD. Anlamların üretimi ve değişimi olarak iletişim\nE. Süreç olarak iletişim\n\n8. Sorunun Yanıtı: D\n\n9. Soru\n\nAşağıdakilerden hangisi kaynaktan gelen, kaynak tarafından kodlanan ve alıcıda, hedef kişide ya da kitlede istenilen doğrultuda bir duygu, düşünce, davranış, tutum ve alışkanlık değişikliği meydana getirmesi amaçlanan iletiye ya da mesaja alıcı, hedef kişi ya da kitlenin ürettiği cevaplardan biridir?\n\nA. Kodlama\nB. Müzakereci okuma\nC. Sunumsal okuma\nD. Temsili okuma\nE. Eş zamanlı okuma\n\n9. Sorunun Yanıtı: B\n\n10. Soru\n\nAşağıdakilerden hangisi iletişimin tanımlarından biridir?\n\nA. Dilin kullanımının olmazsa olmaz olduğu bir etkinliktir.\nB. Sadece bireylerarası ve eş zamanlı gerçekleşen bir etkinliktir.\nC. İçinde yeşerdiği kültürel bağlamın devamlılığını sağlayan metinlerin aktarımıdır.\nD. Yeni medya araçları ile mümkün olan bir haberleşme biçimidir.\nE. Haber metinlerine verilen addır.\n\n10. Sorunun Yanıtı: C",
+          "start": 2158.371,
+          "end": 2394.007,
+          "duration": 235.636,
+          "tts_parts": 1,
+          "chars": 3272
+        }
+      ]
+    }
+  ]
+}

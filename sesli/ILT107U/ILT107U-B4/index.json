@@ -1,0 +1,739 @@
+{
+  "course_title": "Bölüm 4: Bireylerarası İletişim ve Grup İletişimi",
+  "schema_version": 2,
+  "audio_mode": "single",
+  "audio_file": "audio/ders.mp3",
+  "audio_codec": "MP3 128 kbps",
+  "sample_rate": 44100,
+  "audio_level": {
+    "inPeakDb": -8.266479458505202,
+    "inRmsDb": -34.478055829604095,
+    "gainDb": 13.724,
+    "clipped": 0,
+    "perPart": true,
+    "gainMinDb": 7.266,
+    "gainMaxDb": 19.237,
+    "targetRmsDb": -10
+  },
+  "total_duration": 4605.014,
+  "tts_engine": "ElevenLabs · eleven_multilingual_v2",
+  "ai_disclosure": {
+    "level": "ai4",
+    "label": "Yüksek ÜYZ katkısı",
+    "text": "Yüksek ÜYZ katkısı (ai4)"
+  },
+  "tts": {
+    "engine": "elevenlabs",
+    "generated_at": "2026-09-21T10:21:21.475Z",
+    "max_chars_per_request": 10000,
+    "model": "eleven_multilingual_v2",
+    "voice": {
+      "id": "uvU9jrgGLWNPeNA4NgNT",
+      "name": "İrem - Authoritarian Female Voice",
+      "gender": "female",
+      "category": "professional"
+    },
+    "voice_settings": {
+      "speed": 0.93,
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0,
+      "use_speaker_boost": true,
+      "request_stitching": true
+    },
+    "pauses": {
+      "after_title_s": 0.8,
+      "between_paragraphs_s": 0.8,
+      "between_chunks_ms": 900,
+      "between_chapters_ms": 1200,
+      "between_parts_ms": 250,
+      "lead_in_ms": 400,
+      "tail_ms": 600
+    },
+    "text_rules": {
+      "numbers_to_words": true,
+      "fix_all_caps": true,
+      "abbreviations": true,
+      "spell_unknown_acronyms": true,
+      "builtin_list_edited": true,
+      "builtin_rule_count": 172,
+      "user_lexicon_rule_count": 1,
+      "user_lexicon": "@ = et"
+    },
+    "audio": {
+      "codec": "MP3 128 kbps",
+      "sample_rate": 44100,
+      "gain_mode": "auto",
+      "gain_per_part": true,
+      "target_rms_dbfs": -10,
+      "gain_applied_db": 13.724,
+      "gain_min_db": 7.266,
+      "gain_max_db": 19.237,
+      "input_peak_dbfs": -8.266,
+      "input_rms_dbfs": -34.478,
+      "limiter_hits": 0,
+      "ramp_in_ms": 20,
+      "ramp_out_ms": 50
+    },
+    "manual_edited_chunks": null
+  },
+  "generated_at": "2026-09-21T10:21:21.475Z",
+  "chapters": [
+    {
+      "id": 1,
+      "title": "GİRİŞ",
+      "start": 0.4,
+      "end": 64.255,
+      "chunks": [
+        {
+          "id": "c001",
+          "title": "GİRİŞ",
+          "text": "İnsan olarak varlığımızın temel gereği ilişkilerdir. Kendimizi birçok ilişki içinde buluruz. Bizim ailemiz, eşimiz, çocuklarımız, arkadaşlarımızla ya da diğer yakınlarımızla olan ilişkimiz önemlidir. Hem bireysel hem de daha geniş olan bu ilişkilerin niteliği bizim yaşamımızın niteliğini tanımlar. Bizim iletişimimiz de bu ilişkilerin niteliğini belirler. İletişim bizi biz yapan bir süreçtir.\n\nBireylerarası iletişim yaşam için nefes almak kadar önemlidir ve tıpkı nefes almak gibi bireylerarası iletişim de kaçınılmazdır. Yaşamımız boyunca diğerleriyle iletişim kurmamamız imkânsızdır. Doğmadan önce bile harekete ve sese yanıt veririz. İlk ağlamamızla birlikte bizim de orada olduğumuzu diğerlerine bildiririz.\n\nYaşamdan izole olmadıkça her gün bireylerarası iletişimde bulunuruz. Ev arkadaşımızı dinleriz, öğretmenimizle konuşuruz, bir arkadaşımızla yemek için buluşuruz ve ebeveynlerimizle ya da eşimizle konuşuruz. Bunların hepsi bireylerarası iletişimdir ve bireylerarası iletişim her yerdedir.",
+          "start": 0.4,
+          "end": 64.255,
+          "duration": 63.855,
+          "tts_parts": 1,
+          "chars": 1079
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "BİREYLERARASI İLETİŞİM NEDİR?",
+      "start": 65.455,
+      "end": 497.625,
+      "chunks": [
+        {
+          "id": "c002",
+          "title": "BİREYLERARASI İLETİŞİM NEDİR?",
+          "text": "Bireylerarası iletişim, birbiriyle ilişkide ya da bağlantıda olan insanlar arasında meydana gelen iletişimdir. Genel olarak örgütlü yer ve zamanda iki kişi arasındaki iletişim olarak da değerlendirilir. Bireylerarası iletişim içinde olan insanlar birbirinin farkındadır ve birbiriyle olan bağlantının bilincindedir. Birbirleri ile bağımlıdırlar; birinin söylediği diğerinin düşüncesini ve söyleyeceği şeyi etkiler.\n\nBireylerarası iletişim bir ilişki içinde yer alır, bir ilişkiyi etkiler ya da bir ilişkiyi tanımlar. İletişim, ilişkinin bir fonksiyonudur ve içinde bulunduğu ilişkiye özgüdür. Siz öğretmeninizle farklı bir iletişim kurarsınız, en iyi arkadaşınızla farklı; sizin kız kardeşinizle kurduğunuz iletişimle bir komşunuz, iş arkadaşınız ya da tanıdık bir kişiyle kurduğunuz iletişim farklıdır. Ayrıca sizin iletişim biçiminiz, geliştirmek istediğiniz ilişkiyi etkileyecektir: Eğer bir insanla arkadaşça bir iletişim kurarsanız muhtemelen arkadaşlığınızı geliştireceksiniz; eğer düzenli olarak nefret dolu ve incitici mesajların değişimi söz konusuysa muhtemelen düşmanca bir ilişki içinde olacaksınız; eğer düzenli olarak birbirinize saygı ve destek söz konusuysa saygılı ve birbirini destekleyici bir ilişki gelişecektir.\n\nBireylerarası iletişim sıklıkla yüz yüze gerçekleşir. Bu, bireylerarası iletişim dediğimizde ilk aklımıza gelendir. Örneğin, ders öncesi diğer öğrencilerle konuşmak, aile ya da arkadaşlarla yemekte konuşmak gibi. Bununla birlikte teknolojik gelişmelerin sonucu olarak bugün iletişimimizin bir kısmını bilgisayar aracılığı ile gerçekleştirmekteyiz. Çevrim içi iletişim ya da bilgisayar aracılı iletişim insanların yaşamında önemli bir yer tutuyor ve dünyadaki insanların bireylerarası deneyimlerinin temel bir bölümünü oluşturuyor. Bu tür iletişimin bir kısmı gerçek zamanlı anlık iletiler, sohbetler olabileceği gibi bir kısmı da mesajınıza belli bir süre sonra yanıt almanızı gerektirecek biçimde gerçek zamanlı olmayabilir. e-posta, anlık ileti, sosyal ağlar, bloglar ve etkileşimli web siteleri bunlara örnek gösterilebilir.\n\nGörselde yüz yüze iletişim kuran iki kişi yer almaktadır. Karşılıklı bakış ve yüz ifadeleri, bireylerarası iletişimde sözel mesajlara sözsüz göstergelerin de eşlik ettiğini örneklemektedir.\n\nBuraya kadar söylediklerimizi özetlersek: Bireylerarası iletişim, Yüz yüze ya da teknoloji aracılığıyladır; Şimdi ya da araç nedeniyle gecikmiştir; Değişen yakınlıkta kişisel ya da resmîdir; Değişen yoğunlukta dostça ya da düşmancadır; Farklı örgütlü yer ve zamandadır; Farklı amaçlarla ve nedenlerledir. Bireylerarası iletişim, bireysel olmayandan oldukça bireysel olana doğru değişim aşamalarını gösteren bir düzlem üzerindedir. Bireysel olmayanın başında gerçekten birbirini tanımayan insanlar arasındaki iletişim vardır; diğerinde ise birbirini yakından tanıyan insanlar söz konusudur.\n\nŞekil 4.1 DeVito, 2009: 5\n\nŞekil, bireylerarası olmayan ilişkilerden oldukça bireysel ilişkilere uzanan bir iletişim düzlemi göstermektedir. Taksi şoförü ve yolcu gibi daha resmî ilişkilerden hayat arkadaşları ve eşler gibi daha yakın ilişkilere doğru bir sıralama yapılmaktadır.\n\nBireysel olmayan örnekte, bireyler içinde bulundukları role göre birbirine yanıt verirler. Bir taksi şoförü, eğer tanımıyorsa, yolcusuna diğer yolculardan biri gibi davranır, özel bir insan olarak değil; yolcu da aynı şekilde şoföre. İkisinin etkileşimi toplumdaki hâkim kurallar çerçevesinde olacaktır. Örneğin birbirlerine hitap etmeleri, dokunma dereceleri, fiziksel yakınlık derecesi gibi şeyler kendilerinden çok toplum tarafından oluşturulan kurallar çerçevesindedir. Diğer yandan bir baba oğlu düşünürseniz bireysel kurallar temeli üzerine bir etkileşim kuracaklardır. Şoför ve yolcu arasındaki ilişki bireysel olmayan etkileşimlerdir. Bireye tahminin ölçülmesini sunar. Örneğin bir dersin başlangıç döneminde siz sınıfınızdaki diğer öğrencilerin davranışlarının bazılarını tahmin edebilirsiniz fakat zaman içinde siz sınıf arkadaşlarınızı gözlemleyip etkileşim içine girdiğinizde – ki bu onları daha iyi tanımanızdır – sizin tahmininizin doğruluğu artacaktır. En önemlisi de onların davranışlarını bir dereceye kadar açıklayabiliyor olmanızdır. Bu durum sizin bireysel olmayandan bireysel olana hareketinizin de bir göstergesidir. Şoför ve yolcu arasındaki mesaj değişimi bireysel değildir. Hâlâ çok az kendini açma ve duygusal bir görünümdedir. Baba ve oğul örneğinde ise oldukça bireyseldir ve çok fazla duygu ve kendini açma vardır.\n\nBireylerarası iletişim hem sözel hem de sözel olmayan mesajların değişimini kapsar. Kullandığınız sözcükler kadar sizin yüz ifadeniz, göz temasınız ve vücut duruşunuz da bireylerarası mesajlar gönderir. Sessizlik bile bir bireylerarası mesajdır. Bu mesajlar büyük oranda etkileşim içindeki diğer faktörlere bağlıdır. Siz üniversitedeki hocanızla en iyi arkadaşınızla ya da ailenizle konuştuğunuz gibi konuşmazsınız. İletişimde sözel veya sözel olmayan mesajların etkililiği duruma göre değişebilir. Bazı durumlarda sözel olmayan mesajlar sözel mesajlardan daha anlamlı olurken bazı durumlarda da sözel mesajlar daha çok bilgi iletecektir (Bu konuyla ilgili daha geniş bilgi bölüm içinde ayrı bir başlık altında verilecektir).\n\nBireylerarası iletişim bir kişinin kendi inisiyatifi dahilinde ya da kendi dışında gelişen zorunluluklardan dolayı bir ilişkiyi başlatma ve kurmayı gerektirir. Belli onaylama seviyeleri dahilinde aynı fikirde değilsek ilişkiye yanıt vermeme ya da olumsuz nitelikte yanıt verme, görmezlikten gelme ya da dinlememe yoluna gideriz. Bu süreçte kendini açma ilişkinin kurulması ve geliştirilmesinde önemli rol oynar. İlişkinin doğasına, ilişkide tarafların amaçlarına ve koşullara göre, kendini açma farklı anlam, önem ve sonuçlar içerir. Bu, iki tarafın gönüllü ve isteyerek katıldığı bir ilişki olabileceği gibi bir egemenlik ve mücadele ilişkisi olabilir.\n\nİnsanlar bir ilişki kurma çabası içine girdiklerinde, doğal olarak bir yakınlaşma da başlar. Yakınlaşma çeşitli amaç ve gereksinimlerin günlük yaşam koşulları içinde gerçekleştirilmesiyle bağlantılıdır. Bu durum ilişkide paylaşmayı sağlamaya ve ilişkiyi yoğunlaştırmaya yardım eder. Burada belirsizlik kavramı önemlidir. İlişkinin başlangıcında diğer kişi hakkındaki bilginin azlığı belirsizliğe neden olur. Bireyler birbirinden bilgi edinmeye çalışırlar ve bilgi çoğaldıkça da belirsizlik azalır. Düşük seviyede belirsizlik yüksek seviyede yakınlığa, yüksek seviyede belirsizlik de yüksek seviyede karışıklığa neden olur. Bireylerarası benzerlikler belirsizliği azaltır. Belirsizlik azaldıkça insanlar birbirini daha iyi anlar.",
+          "start": 65.455,
+          "end": 497.625,
+          "duration": 432.17,
+          "tts_parts": 1,
+          "chars": 6887
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "BİREYLERARASI İLETİŞİM UNSURLARI, MODELİ VE İLKELERİ",
+      "start": 498.825,
+      "end": 1744.099,
+      "chunks": [
+        {
+          "id": "c003",
+          "title": "BİREYLERARASI İLETİŞİM UNSURLARI, MODELİ VE İLKELERİ",
+          "text": "Bireylerarası iletişim tartışılırken, iletişimin temel unsurlarını tekrar gözden geçirmekte; bireylerarası iletişim modeli ve ilkelerini tartışmakta yarar var.",
+          "start": 498.825,
+          "end": 514.011,
+          "duration": 15.186,
+          "tts_parts": 1,
+          "chars": 237
+        },
+        {
+          "id": "c004",
+          "title": "Bireylerarası İletişimin Unsurları",
+          "text": "Bireylerarası iletişimin temel unsurları Şekil dört nokta ikide olduğu gibi kaynak/alıcı, mesaj, kanal, kodlama, ileri-geri bildirim ve gürültüdür.\n\nŞekil 4.2 Devito, 2009.\n\nŞemada iki kaynak ve alıcı arasında mesajların, kanalların, ileri ve geri bildirimin karşılıklı işleyişi gösterilmektedir. Gürültü merkeze yerleştirilerek iletişim sürecinin bütün aşamalarını etkileyebilen bir unsur olduğu vurgulanmaktadır.",
+          "start": 514.911,
+          "end": 547.697,
+          "duration": 32.787,
+          "tts_parts": 1,
+          "chars": 540
+        },
+        {
+          "id": "c005",
+          "title": "Kaynak – Alıcı",
+          "text": "Bireylerarası iletişim en az iki insanı gerektirir. Her insan hem kaynağın fonksiyonlarını (mesajları hazırlamak ve göndermek) hem de alıcının fonksiyonlarını (mesajları algılamak ve idrak etmek) yerine getirir. Kaynak mesajın algılanmasında önemli bir role sahiptir. Kaynağın sahip olduğu özellikler iletişimin istenilen düzeyde gerçekleşmesini sağlar. Aynı şekilde alıcının sahip olduğu özellikler de bu süreci etkileyecektir. Sizin kim olduğunuz, ne bildiğiniz, neye inandığınız, ne istediğiniz, ne anlattığınız, tutumlarınız, bütün bunların hepsi, ne söylediğinizi, nasıl söylediğinizi, ne tür mesajlar aldığınızı ve nasıl yanıt verdiğinizi etkiler.",
+          "start": 548.597,
+          "end": 592.158,
+          "duration": 43.561,
+          "tts_parts": 1,
+          "chars": 693
+        },
+        {
+          "id": "c006",
+          "title": "Mesaj",
+          "text": "Mesaj etkileşimin içeriğidir; fikirlerimizi iletmek için kullandığımız sözel ya da sözel olmayan sembolleri içerir. Mesajlar alıcıyı duyma, görme, dokunma, koku alma, tatma ya da herhangi bir kombinasyonda uyarma görevi yaparlar. Sözcükler ve cümleler kadar hareketler ve dokunarak da mesaj iletiriz.Giydiğimiz bir elbise bizim olduğu kadar, karşımızdaki için de bir mesajdır. Yürüme biçimimiz bir şey anlatır; tokalaşma biçimimiz, başımızı eğmemiz, saçımızı tarama biçimimiz, oturma, gülümseme ya da kaşımızı çatmamız. Mesajlar kasıtlı ya da tesadüfi olabilir ve bir şekilde alıcıyı etkiler.",
+          "start": 593.058,
+          "end": 632.671,
+          "duration": 39.613,
+          "tts_parts": 1,
+          "chars": 623
+        },
+        {
+          "id": "c007",
+          "title": "Kanal",
+          "text": "Bir mesajın kaynaktan alıcıya iletilme biçimidir. Bir nevi kaynak ve alıcı arasındaki bağlantıyı yapan köprüdür. İletişim nadiren tek kanaldan olur; sık sık aynı anda iki, üç veya dört kanal kullanılabilir. Örneğin yüz yüze iletişimde hem konuşur hem dinleriz; fakat aynı zamanda mesajları görsel olarak alır ve hareket ederiz; koku yayar, diğerlerini de koklarız. Sık sık dokunma yoluyla iletişim kurarız. Telefon, e-posta, chat grupları, film, televizyon, radyo, fax ve benzeri araçlar da kanallar arasında sayılabilir. Burada da görme duyma eylemi, ses ve ışık dalgaları ve başka teknolojik durumlar söz konusudur. İletişimin etkili ve başarılı olabilmesi için kanal seçiminin önemi büyüktür.",
+          "start": 633.571,
+          "end": 680.754,
+          "duration": 47.183,
+          "tts_parts": 1,
+          "chars": 726
+        },
+        {
+          "id": "c008",
+          "title": "Kodlama - Kod Açma",
+          "text": "Kodlama mesajların üretimi eylemidir. Duygu ve düşüncelerimizi iletmek için onları biçimlendirir ve mesaj haline dönüştürürüz. Başka bir deyişle kodlarız. İletişimde iki temel kod kullanılır: sözel kodlar ve sözel olmayan kodlar. Bütün diller bir koddur. İletişim sürecinde hem kodlama hem kod açımı söz konusudur. Kod açımı mesajları anlama, onlara anlam atfetme eylemidir. Bu aşamada duyguların ve düşüncelerin diğer insanlarla paylaşımı temeldir. Biz fikirlerimizi ses dalgalarıyla ya da ışık dalgalarıyla yollayarak fikirlerimizi kodlarız. Ses ve ışık dalgaları içindeki fikirleri çevirerek de kodu açarız. Kodlama ve kod açımı her katılımcı tarafından yerine getirilmiş iki eylemi kapsar. İletişimde kodlama çok önemlidir; yoksa mesajı istenilen biçimde alıcıya ulaştıramayız. Ayrıca kaynak ve alıcının yaşam deneyimlerinin kesişmesi de önemli olan diğer bir noktadır.",
+          "start": 681.654,
+          "end": 739.611,
+          "duration": 57.957,
+          "tts_parts": 1,
+          "chars": 917
+        },
+        {
+          "id": "c009",
+          "title": "Geri Bildirim",
+          "text": "Bireylerarası iletişim süreci boyunca biz söylenen şeye bağlı olarak, karşımızdakine geri bildirim mesajları yollarız. Geri bildirim kaynağa karşısındaki üzerindeki etkisi ile ilgili bilgi verir. Bunun üzerine kaynak mesajlarının içeriğini ya da biçimini düzenler, değişiklik yapar, güçlendirir, önemsizleştirir ya da değiştirir. Geri bildirim bizden ya da karşımızdakinden gelebilir. Biz bir mesaj gönderdiğimizde aynı zamanda kendimizi de işitiriz, yazdığımızı görürüz. Böylece kendi mesajımızdan da geri bildirim alırız. Diğerlerinden aldığımız geri bildirim değişik biçimlerde olabilir. Hoşnutsuz bir bakış ya da gülümseme olabilir; evet ya da hayır olabilir; sırtı olumluca sıvazlama ya da ağza bir yumruk olabilir. Hiç tepki vermemek de bir geri bildirimdir. Geri bildirim her zaman kolay anlaşılamayabilir.",
+          "start": 740.511,
+          "end": 792.291,
+          "duration": 51.78,
+          "tts_parts": 1,
+          "chars": 852
+        },
+        {
+          "id": "c010",
+          "title": "İleri Bildirim",
+          "text": "İleri bildirim bizim asıl mesajımızı göndermeden önce hazırladığımız bilgidir. Daha sonra gelecek mesajlar hakkında bir şeyleri belli eder. Örneğin bir kitabın başındaki önsöz ya da içindekiler tablosu, bir bölümün giriş paragrafı, bir filmin ön gösterimleri, dergi kapakları, bir konuşmanın giriş bölümü gibi. Bizim birisine “Önce şuraya bir otur; söylediklerim seni şok edecek.” dememiz de bir ileri bildirimdir. Ya da birisiyle sohbet etme isteğimizi “Seni bütün hafta görmedim; neler yapıyorsun?” diyerek belirtiriz. Ya da diğerlerine yargılamadan önce dinlemelerini söyleriz.",
+          "start": 793.191,
+          "end": 831.551,
+          "duration": 38.359,
+          "tts_parts": 1,
+          "chars": 620
+        },
+        {
+          "id": "c011",
+          "title": "Gürültü",
+          "text": "Gürültü iletişim sürecinde mesajın anlaşılmasını engelleyen her şeydir. Gürültünün dört tipi özellikle konuyla uygun görülmektedir.\n\nFiziksel Gürültü: Yüksek bir ses, güneş gözlüğü takmak, konu ile ilgisi olmayan mesajlar, okunaksız el yazısı, engellenen bir görüntü, telefon hatlarındaki bozukluk, bir insanın birden çok yakınınıza oturması ve benzeri\n\nFizyolojik Gürültü: Görme engeli, işitme kaybı, konuşma problemi ya da hafıza kaybı. Psikolojik Gürültü: Ön yargılar, dalıp gitmeler, peşin hükümler, dar görüşlülük, aşırı duygusallık ve benzeri Anlamsal Gürültü: Konuşmacı ve dinleyicinin farklı anlamsal sistemlere sahip olması. Örneğin dil ve diyalektik farklılıklar, jargon kullanılması, karmaşık terimler, belirsizlik ve benzeri",
+          "start": 832.451,
+          "end": 883.72,
+          "duration": 51.27,
+          "tts_parts": 1,
+          "chars": 816
+        },
+        {
+          "id": "c012",
+          "title": "Bireylerarası İletişim Modeli",
+          "text": "Bireylerarası iletişim modeli birbiriyle etkileşim içindeki iki insan arasında gerçekleşen iletişim üzerine odaklanır. Etkileşimi anlamak için temel bileşenleri anlamak gerekir. Bunlar iletişimciler, mesajların içeriği ve iletişimin gerçekleştiği bağlamdır.",
+          "start": 884.62,
+          "end": 903.847,
+          "duration": 19.226,
+          "tts_parts": 1,
+          "chars": 312
+        },
+        {
+          "id": "c013",
+          "title": "İletişimciler",
+          "text": "İletişimciler, mesajların gönderilmesini ve alınmasını gerçekleştiren etkileşim halindeki kişilerdir. İletişimcileri anlamak için biz kimliğin rolünü, motivasyonu, algıyı ve iletişim kaynaklarını iyi değerlendirmek zorundayız.",
+          "start": 904.747,
+          "end": 920.211,
+          "duration": 15.464,
+          "tts_parts": 1,
+          "chars": 265
+        },
+        {
+          "id": "c014",
+          "title": "Kimlik",
+          "text": "Bir iletişimcinin kimliği ya da benlik kavramı bireylerarası iletişimin bütün görüntüsünü biçimlendirir. Bir kişinin kendisiyle ilgili durumunu, motivasyonunu, kendisine ya da diğerlerine yönelik davranışını ve iletişim kaynaklarını etkileyecektir. Aynı zamanda insanların bizimle iletişim kurma biçimi de bizim kimliğimizi etkileyecektir. Bu sembolik iletişim kuramının en temel katkısıdır.",
+          "start": 921.111,
+          "end": 945.12,
+          "duration": 24.009,
+          "tts_parts": 1,
+          "chars": 423
+        },
+        {
+          "id": "c015",
+          "title": "Motivasyon",
+          "text": "Şekil 4.3 Jones, Remland & Sanford, 2007: 11\n\nŞema, bireylerarası iletişimdeki iki iletişimcinin aynı temel özelliklerle ele alındığını göstermektedir. Kimlik, motivasyon, algı ve iletişim kaynakları; her iki tarafın iletişim sürecine getirdiği başlıca bileşenler olarak sıralanmaktadır.\n\nBiz neden yaparız; niçin yaparız? Bizi ne motive eder? İletişimciler duyguları, kişisel gereksinimleri ve amaçları tarafından motive edilirler. Duygular, bir iletişimcinin bir durumla ilgili hissettiği şeydir. Aşk, acı, kızgınlık ya da kıskançlık bizim deneyimleyebileceğimiz duygulardır. Onları yaşayarak bizim iletişimimizdeki gücünü anlarız. Duygular, hislerden daha fazlasını ifade eder; onlar bir durumla ve diğeriyle ilgili değerlendirmelerdir. Gerçekte duygu sözcüğü motivasyonla aynı sözcük kökeninden gelir. Duygusal olmak motive edilmek demektir.\n\nİnsan olmanın bir gereği de gereksinimlerimizdir. Bizim neye ve nasıl gereksinim duyduğumuz bizi tanımlar ve belirli bir yönde davranmamız için bizi motive eder. Biz, dahil olma/bağlılık, kontrol/bağımsızlık ve yakınlık/samimiyet gereksinimlerine sahibiz. Bu gereksinimleri hangi oranda hissettiğimiz, ne zaman hissettiğimiz ve bu gereksinimler sonucu nasıl davrandığımızla ilgili farklılık gösterebiliriz. Bunlar insan olmanın bir parçasıdır. Dahil olma/bağlılık, bir grubun parçası olma gereksiniminden kaynaklanır. Biz diğerleri olmadan var olamayız; bu nedenle bir grubun ya da grupların üyesi olma yönünde kuvvetli bir biçimde motive ediliriz. Biz yaşamlarımızı kontrol etme gereksinimi duyarız. Bizim bütün isteğimiz bize ne olduğunu saptayabilmektir. İnsanlar gereksinimlerini kontrol etme ölçüsünde farklılık gösterse de bütün bireylerarası ilişkilerde bir kontrol gereksinimi vardır. Bununla birlikte arkadaşlarımızla beraber olmaktan hoşlanmamıza karşın onların devamlı olarak nereye gittiğimizi, zamanımız nasıl harcadığımızı ya da kiminle zaman harcadığımızı sormalarından hoşlanmayız. Bizim bütün isteğimiz biri tarafından sevilmektir. Sağlıklı ve mutlu olmak için biri tarafından sevilmeye gereksinim duyarız. Yakınlık, hoşlanma ve sevilme gereksinimidir, sevgiyi gösterebilmektir. Samimiyet diğerleri tarafından bilinme ve diğerlerini bilme gereksinimidir. Bizim hoşlandığımız, hoşlanmadığımız şeyleri, acılarımızı, korkularımızı, başarılarımızı ve bizi benzersiz bir insan olarak tanımlayan yeteneklerimizi paylaşma gereksinimidir. Kısaca, birçoğumuzun gereksinimi ve isteği hoşlandığımız ya da sevdiğimizle sırdaş, samimi ve yakın olmaktır.\n\nBizim gereksinimlerimiz ilişkimizi biçimlendirmeyi de etkiler. Biz gereksinimlerimizi dengeleyecek ilişiler ararız. Üç temel bireylerarası gereksinimden bahsedebiliriz: Kendini sunma gereksinimi ; İlişkisel gereksinimler ; Araçsal gereksinimler Biz belirli bir tarzda görünmek isteriz ve bu imajı desteklemek için kendimizi stratejik olarak sunarız. Bizim ilişkisel gereksinimlerimiz ilişkimizi geliştirmek ve sürdürmek için ne istediğimizle ilgilidir. Araçsal gereksinimler de diğerlerini etkilemek için düzenlenir.",
+          "start": 946.02,
+          "end": 1146.92,
+          "duration": 200.899,
+          "tts_parts": 1,
+          "chars": 3170
+        },
+        {
+          "id": "c016",
+          "title": "Algı",
+          "text": "Bir insann belli bir yönde eyleme geçebilmesi için ön koşul, o insanın o yönde bir alternatifin varlığını bilmesi ve bu bilgiyi algılamasıdır. Bizim algılarımız dünya ile ilgili deneyimlerimizdir. Biz dünyayı kendi görüş açımızdan görüyoruz. Algılamalarımız ailemiz, tanıdıklarımız, etnik özelliklerimiz ve benzeri birçok faktör tarafından oluşur. Algılama aktif bir eylemdir. Diğer insanla ilişkimizde de algılama çok önemli bir yer tutar. Genel algılama çerçevemiz diğer insanı algılamamızı da etkileyecektir. Biz diğer insanı nasıl algılarsak ona göre davranışımızı düzenleriz. İletişimin en güçlü çıktılarından biri, diğeri ile ilgili algılamayı değiştirmek için etkileşim yeteneğidir. Birisiyle memnuniyet verici bir etkileşim, onunla ilgili algılamamızı değiştirebilir.",
+          "start": 1147.82,
+          "end": 1195.931,
+          "duration": 48.112,
+          "tts_parts": 1,
+          "chars": 805
+        },
+        {
+          "id": "c017",
+          "title": "İletişim Kaynakları",
+          "text": "Bireylerarası iletişim, motivasyonumuzu etkili bir şekilde eylemin içine sokabilmemiz için belirli kaynakları gerektiren bilinçli bir çabadır. Biz neyi yapmak istediğimizi biliriz fakat bunu gerçekleştirmek için gerekli kaynaklara sahip olmayabiliriz. Bunun için gerekli olan şeyleri bazı kavramlarla açıklayabiliriz. Bunlardan bir tanesi dikkatlilik’tir. Dikkatlilik kendinin ya da diğer insanın davranışının, iletişim sürecini de göz önünde bulundurarak, farkında olmaktır. Eğer bizim ilişkimizi ve gerçeği neyin oluşturduğunun farkında değilsek onu etkilemek biraz zor olacaktır.\n\nNe olduğunu açıklayamazsak ne olduğunun farkında olmak yeterli olmayacaktır. Bilgi önemlidir. Biz, belirli iletişim davranışlarının niye belli etkilere sahip olduğunu anlayabiliyor muyuz? Örneğin, farklı mesajların nasıl ve niçin duyguları tetiklediğini anlayabiliyor muyuz? Eğer bir farkındalığa ve bilgiye sahipsek biz etkileşimin ve iletişimin geleceğini tasavvur edebiliriz. Bu konuda becerilerimizi geliştirmeye gereksinimimiz vardır. Beceri gelişimi yavaş, pratik yapma ve yardımla artacak bir süreçtir.",
+          "start": 1196.831,
+          "end": 1264.959,
+          "duration": 68.127,
+          "tts_parts": 1,
+          "chars": 1161
+        },
+        {
+          "id": "c018",
+          "title": "İçerik",
+          "text": "Mesajın içeriği, etkileşim sürecinde karşılıklı olarak ilettiğimiz ve anladığımız bilgidir. Biz mesajları sözel ya da sözel olmayan kodlarla inceleyeceğiz (Bu konuyla ilgili daha geniş bilgi bölüm içinde ayrı bir başlık altında verilecektir).",
+          "start": 1265.859,
+          "end": 1280.952,
+          "duration": 15.093,
+          "tts_parts": 1,
+          "chars": 274
+        },
+        {
+          "id": "c019",
+          "title": "Bağlam",
+          "text": "İletişim bağlamsaldır. Başka bir deyişle iletişimde şartlar, ortam önemlidir. Bağlamı çeşitli başlıklar altında değerlendirebiliriz.\n\nFiziksel Bağlam: İç mekân – dış mekân; kalabalık – sakin; kamu – özel; birbirine yakın – uzak; sıcak – soğuk; karanlık – aydınlık gibi şeyleri içerir. Fiziksel bağlamın iletişimi etkilemesi kaçınılmazdır. Örneğin kalabalık bir caddede öğleden sonra yapılacak bir konuşma ile akşam mum ışığında yapılan bir konuşma pek çok yönden farklıdır.\n\nSosyal Bağlam: Bu, toplumsal olaylara karşı insanların beklentileriyle ilgilidir. Bir sınıf ortamındaki iletişim biçimiyle bir futbol ortamındaki iletişim biçimi farklıdır. Ya da bir düğün ortamıyla yas ortamındaki beklentiler de farklıdır. Bu aynı kültürler için benzer şeyi içerirken farklı kültürlerde farklılık gösterir.\n\nBireylerarası bağlam: Bireylerarası ilişkilerdeki farklılıkların sonucu olarak diğerlerinin davranışları ile ilgili beklentiler söz konusudur. Örneğin öğrenci - öğretmen arasındaki iletişim, ister sınıf içi isterse sınıf dışı, yakın arkadaşlarla olan iletişimden farklılık gösterir. Aynı şekilde çok yakın olmadığınız kişiler ve aile üyeleriyle olan iletişim de farklıdır. İnsanlar birbirlerini tanıdıkça deneyimlerini paylaşırlar. Kısaca bütün ilişkilerin doğası farklıdır.",
+          "start": 1281.852,
+          "end": 1365.908,
+          "duration": 84.056,
+          "tts_parts": 1,
+          "chars": 1376
+        },
+        {
+          "id": "c020",
+          "title": "Bireylerarası İletişimin İlkeleri",
+          "text": "Buraya kadar anlattıklarımızı bazı kavramlar çerçevesinde değerlendirdiğimiz zaman bireylerarası iletişimle ilgili temel ilkeler aşağıdaki gibi oluşturulabilir.",
+          "start": 1366.808,
+          "end": 1379.718,
+          "duration": 12.91,
+          "tts_parts": 1,
+          "chars": 219
+        },
+        {
+          "id": "c021",
+          "title": "Bireylerarası İletişim Bir Süreçtir",
+          "text": "Bireylerarası iletişim sürekli değişen bir süreçtir; her şey bir değişim halindedir. Biz değişiriz, iletişimde bulunduğumuz insanlar değişir ve ortam değişir. Bu değişimler bazen belirgin bir şekilde bazen de farkedilmeden olur ama her zaman gerçekleşen bir şeydir. Bu süreç daireseldir; bir kişinin mesajı diğerinin mesajı için uyaran olarak hizmet eder. O da ilk mesajı gönderen için bir uyarandır. Bu böylece devam edip gider. Bu özelliklerinden dolayı bireylerarası iletişim süreci karşılıklı bir etkileşim sürecidir.",
+          "start": 1380.618,
+          "end": 1417.956,
+          "duration": 37.338,
+          "tts_parts": 1,
+          "chars": 582
+        },
+        {
+          "id": "c022",
+          "title": "Unsurlar Birbirine Bağlıdır",
+          "text": "Bireylerarası iletişimde sadece bireyler birbirine bağlı değildir; iletişimin çeşitli unsurları da birbirine bağlıdır. Bireylerarası iletişimin her bir unsuru birbirleriyle ve bütünle yakından bağlantılıdır. Bu nedenle bir unsurdaki herhangi bir değişim diğerlerinde de değişime neden olur. Örneğin siz öğrenci arkadaşlarınızla son sınav hakkında konuşurken öğretmeniniz yanınıza gelince sizin konuştuğunuz konunun içeriği, bunu ifade tarzı gibi şeylerde bazı değişiklikler olur.",
+          "start": 1418.856,
+          "end": 1451.689,
+          "duration": 32.833,
+          "tts_parts": 1,
+          "chars": 532
+        },
+        {
+          "id": "c023",
+          "title": "İletişim Süreci Kurallarla Yönetilir",
+          "text": "İletişim sürecinde insanların ne yapması gerektiğini ve diğerinin ne yaptığını nasıl algılayacağını bilmesi için belirli kurallar takip edilir. Size bir soru sorulur siz yanıtlarsınız. Neden? Çünkü bu, iletişimde temel kurallardan biridir. Bir sorunun bir yanıtı olması gerekir. Yanıt vermeme ilgisizlik ya da saygısızlığı gösterir. Karşınızdaki kişi konuşurken siz de aynı anda konuşmazsınız. Neden? Çünkü anlaşılmak ve anlamak için bu gereklidir. Siz anlamadıkça iletişimde yetkin olamazsınız.",
+          "start": 1452.589,
+          "end": 1486.769,
+          "duration": 34.18,
+          "tts_parts": 1,
+          "chars": 557
+        },
+        {
+          "id": "c024",
+          "title": "İletişim Kültür Tarafından Belirlenmiştir",
+          "text": "Kültürü ve iletişimi anlamanın bir yolu, kültürün bizim kullandığımız iletişim kanallarının kaynağı olduğunun farkında olmaktır. Biz aile kültürü, bölgesel kültür, dînî kültür, ırksal/etnik kültür, mesleki kültür, ulusal kültür ve diğerlerini düşünebiliriz. Bizim geldiğimiz kültür iletişim eylemi boyunca anlamı nasıl nakledeceğimiz ve diğerinin iletişim eylemindeki anlamı nasıl yorumlayacağını sağlar. İletişim problemleri sık sık biz farklı kültürlerle iletişim kurduğumuz zaman olur. Böyle durumlarda kişisel iletişim kurallarını takip edemeyebiliriz; bu konuda beceriksiz ya da kaba görülebiliriz. Kültürel farklılıklar sık sık yanlış anlamalara temel oluşturabilir; bunlar da çatışmaya neden olabilirler.",
+          "start": 1487.669,
+          "end": 1536.431,
+          "duration": 48.762,
+          "tts_parts": 1,
+          "chars": 778
+        },
+        {
+          "id": "c025",
+          "title": "İletişimin Yorumlanması Niyetinden Daha Önemlidir",
+          "text": "Bir kişinin bir davranışı nasıl yorumladığını anlamak diğerinin iletmeye niyetlendiği şeyi anlamaktan daha önemlidir. Birçok iletişim durumunda, bizim bir iletişimci olarak niyetlendiğimiz şeyi diğer kişi bizim iletmek istediğimiz anlamda yorumlayamayabilir ve kendi yorumlarına göre yanıt verebilir. Yorum iletişim durumunu çerçeveler ve hangi iletişim kurallarının kullanılacağını belirtir; daha sonraki iletişimin yörüngesi olur.\n\nİletişim geri alınamaz ve tekrar edilemez. Biz iletişim kurma niyetinde olalım ya da olmayalım diğerlerinin davranışını etkileriz. Belirli bir mesajı silme girişimleri (örneğin, “Onu demek istemedim.” “Söylediğimi unut.” ya da “Başka şeyler konuşalım?” gibi) onu daha çok vurgular.",
+          "start": 1537.331,
+          "end": 1585.767,
+          "duration": 48.437,
+          "tts_parts": 1,
+          "chars": 813
+        },
+        {
+          "id": "c026",
+          "title": "Bireylerarası İletişim Amaçsaldır",
+          "text": "Her bireylerarası iletişim bir amaca sahiptir ya da belli amaçların bileşenidir. Bununla ilgili beş amaç tanımlanabilir: Öğrenmek: Bireylerarası iletişim dış dünyayı daha iyi anlamamız için objelerin, olayların ve insanların dünyasını öğrenmemizi sağlar. Bilginin büyük bir oranını kitle iletişim araçları aracılığıyla alsak da bilgiyi bireylerarası etkileşim sonucu tartışır, öğrenir ve özümseriz. Gerçekte bizim inançlarımız, tutumlarımız ve değerlerimiz medya ya da biçimsel eğitim sisteminden çok bireylerarası karşılaşmalardan daha çok etkilenir. En önemlisi de bireylerarası iletişimin kendimizi tanımaya yardım etmesidir. Diğerleri ile kendimiz hakkında konuşarak düşüncelerimiz, duygularımız ve davranışlarımızla ilgili değerli geri bildirimler alırız. Bu iletişimlerle diğer insanlara nasıl gözüktüğümüzü öğreniriz; kim bizden hoşlanıyor, kim hoşlanmıyor, niçin?\n\nİlişki kurmak: Bireylerarası iletişim bize ilişki kurmayı öğretir. Biz arkadaşlığımızı ya da sevgimizi bireylerarası iletişim aracılığı ile iletiriz. Aynı zamanda diğerlerinin arkadaşlık ve sevgi mesajlarına tepki ya da yanıt veririz. Bu tür iletişim, yakın ilişkiler kurmak ve sürdürmek için duyulan en temel gereksinimlerin de merkezine oturur. Biz sevmek ve sevilmek, hoşlanmak ve hoşlanılmak isteriz. Böyle ilişkiler yalnızlığın ve depresyonun azalmasına hizmet eder; paylaşmamızı sağlar ve memnuniyetimiz çoğaltır. Genelde kendimizle ilgili daha pozitif düşünmemizi sağlar.\n\nEtkilemek: Bireylerarası karşılaşmalarda diğerlerinin tutumlarını ve davranışlarını etkileriz. Örneğin diğerlerinin belirli bir yönde karar vermelerini ya da düşünmelerini, yeni bir kitap almalarını, bir kaydı dinlemelerini, bir filmi izlemelerini, özel bir kurs almalarını, bir şeyin doğruluğuna ya da yanlışlığına inanmalarını ya da bir fikre değer vermelerini isteyebiliriz. Bu nedenle ikna çabalarına gireriz. İletişim ikna edici bir süreç olarak kabul edilir ve bizim bütün iletişimlerimiz ikna amaçlı aramalardır.\n\nEğlenmek: Hafta sonu etkinlikleri için arkadaşlarımızla konuşmak, spor tartışmak, öyküler anlatmak, şakalar yapmak ve genelde sadece zaman geçirmek eğlenme fonksiyonlarıdır.\n\nYardım Etmek: Bireylerarası iletişim sürecinde yardım etme amacı da önemlidir. Örneğin üzgün bir arkadaşımıza yardım ederiz, bazı iş arkadaşlarımıza işle ilgili önerilerde bulunuruz. Profesyonelce ya da başka bir biçimde bu yardım fonksiyonunun başarı ile tanımlanması bizim bireylerarası iletişim bilgi ve becerimize bağlıdır.",
+          "start": 1586.667,
+          "end": 1744.099,
+          "duration": 157.431,
+          "tts_parts": 1,
+          "chars": 2627
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "BİREYLERARASI İLETİŞİMDE MESAJLARIN YAPISI",
+      "start": 1745.299,
+      "end": 3205.572,
+      "chunks": [
+        {
+          "id": "c027",
+          "title": "BİREYLERARASI İLETİŞİMDE MESAJLARIN YAPISI",
+          "text": "Bireylerarası iletişimde hem sözel hem de sözel olmayan mesajlar kullanılır. Diğerleri ile olan iletişimimizde pozitif bir ortam olmasını, iletmek istediklerimizin istediğimiz yönde, doğru bir şekilde anlaşılmasını istiyorsak sözel iletişimimiz tek başına yetmeyebilir. Bununla birlikte mesajlarımızın sözel içeriğine önem vermezsek diğerleri bizim neyi ifade etmeye çalıştığımızı anlamayabilir. Bundan dolayı hem sözel hem de sözel olmayan iletişim unsurları bir alıcı için tüm mesajı ve onun arkasındaki anlamı almak için gereklidir.",
+          "start": 1745.299,
+          "end": 1782.636,
+          "duration": 37.338,
+          "tts_parts": 1,
+          "chars": 603
+        },
+        {
+          "id": "c028",
+          "title": "Sözel Mesajlar",
+          "text": "Bireylerarası iletişimde dil merkezdedir. Dili kafamızın içindeki düşünceleri başkasına aktarmak için kullanırız. Sembollerin toplamı olan dil bizim bir parçamızdır. Her birimiz kendimize özgü bir dil içinde düşünür, konuşur ve dinleriz. Dilimiz kültürümüzden, komşularımızdan, mesleklerimizden, kişiliğimizden, eğitimimizden, aileden, arkadaşlardan, yeniden düzenlemelerden, deneyimlerden, cinsiyetten, yaştan ve buna benzer birçok şeyden etkilenir. Örneğin bir fotoğrafı üç farklı yapıdaki insana gösterirseniz üç farklı tanım getirecektir. Bu tanımları kendine göre sözcüklerle yapacaktır. Bu, dilin kişisel doğasını göstermektedir.\n\nBir dili anlamamız için sözcüklerin nasıl anlamlı hâle geldiğini bilmemiz gerekiyor. Öncelikle anlamlar sözcüklerin doğasında yoktur; o anlamları biz onlara veririz. İkincisi, sözcüklerin bir özetleme ya da sadeleştirme olduğudur. Örneğin bulunduğunuz şehir bir haritada bir nokta olarak görülebilir. Bu nokta, şehrinizin nerede olduğunun sadeleştirilerek verilmesidir. Sözcükler de benzer işlevleri görürler. Üçüncü olarak da sözcüklerin gerçeği organize ettiği ve sınıfladığıdır. Konuşmamız esnasında dünyadaki bütün şeyleri sayamayız; onları gruplar içinde toplarız. Örneğin kalabalık içindeki birini yanımızdaki kişiye tanımlarken, onu uzun boylu, kısa kahverengi saçlı ve gözlüklü olarak tarif ederek ayırt edilebilmesini sağlamak gibi.\n\nSözel mesajlara temel oluşturan dil diğerleri ile olan iletişimimizde çok önemlidir. Bireylerarası iletişimde dili kullanma biçimimiz bizim karşımızdaki kişiyle olan iletişimimizi de yönlendirecektir. Dili kullanma ile ilgili davranışlarımız bizimle ilgili ipuçları da verecektir. Sözel mesajların iletilme biçimi bizim diğerleriyle olan ilişkilerimizi değişik açılardan etkiler. Örneğin duyguların açıklanması, kişiliğin yargılanması, öğrenme yeteneği, diğerlerini ikna etme yeteneği gibi. Bizim duygu ve düşüncelerimizi karşımızdakine sözel mesajlar aracılığı ile aktarırken eğer dilin kabul edilmiş düzenini takip etmezsek iletişimimiz de kesintiye uğrayacaktır. Yaptığımız gramer hataları, seçtiğimiz sözcükler, cümle yapıları, üslup, klişeler, argo kullanımı, jargon, bölgesellik ya da cadde dili ve benzer şeyler diğeriyle olan iletişimimize engel olan dil kullanımları olarak karşımıza çıkacaktır.\n\nSözel iletişimimiz esnasında sesle ilgili davranışlarımız önemlidir. Biz iletişimimizin akışını beden dili ya da göz hareketlerimizle birlikte sesimizi kullanma biçimimiz ve vurgulamalarımızla da sağlarız. Hepsi bizimle ilgili karşımızdakine belli ipuçları verir. Bu ipuçları birçok mesajın iletilmesine de yardımcı olur. Bizim konuşma biçimimiz diğerlerine geçmiş deneyimlerimiz, yaşımız, sosyo-ekonomik statümüz, nerede yetiştiğimiz ve buna benzer pek çok ipucu verir.\n\nSesle ilgili konuşurken değinmemiz gereken bir başka nokta da “sessizlik”tir. Birçok inanışın tersine, sessizlik konuşmanın tersi değildir. Duruma bağlı olarak bizim düşüncelerimiz, duygularımız, tutumlarımız ve diğerleriyle ilgili birtakım bilgiyi içerir. Sessizlik konuşmanın akışı sırasındaki duraklamalara karşılık gelir. Bu duraklamalar hem “doldurulmuş” hem de “doldurulmamış” duraklamalar olarak tanımlanabilir. Doldurulmuş duraklamalar konuşma esnasında “uh” “er” “ah” gibi yapılan kesilmeler, kekelemeler ya da tekrarlardır. Doldurulmamış duraklamalar ya da sessizlik ise konuşma esnasında sesle ilgili etkinlik durduğu zaman olur. Bunlar değişik olabilir. Örneğin tereddütle ilgili bir sessizlik genellikle bir sonraki konuşmayla ilgili belirsizliğin neden olduğu duraklamalardır. Bazen konuşmayı kodlarken ya da kod açarken duraklamalar olabilir. Bu, konuşmanın gramerle ilgili akışının başlangıcında yoğundur. Düşünceleri sözcüklerle aktarma esnasında duraklamalar olabilir. Bir başka durum etkileşimli sessizlik ya da duraklamalardır. Bu, etkileşimde bulunanlarla ilgilidir. Örneğin, yaşlı insanlara saygıyı belirtmek için ortaya çıkan sessizlik, çatışma halindeki bireyler arasındaki soğuk sessizlik gibi. Bazen de sessizliği ilişkimizdeki uzaklığı oluşturmak için kullanırız. Fiziksel olarak hareket etmesek de sessiz kalarak psikolojik bir sessizlik yaratabiliriz.",
+          "start": 1783.536,
+          "end": 2043.971,
+          "duration": 260.435,
+          "tts_parts": 1,
+          "chars": 4270
+        },
+        {
+          "id": "c029",
+          "title": "Sözel İletişim ile İlgili Beceriler",
+          "text": "Sözel iletişimi daha etkili bir kanal olarak kullanmak için aşağıda sıralanan becerileri doğru kavramak her iletişimci için önem taşımaktadır.",
+          "start": 2044.871,
+          "end": 2056.667,
+          "duration": 11.796,
+          "tts_parts": 1,
+          "chars": 203
+        },
+        {
+          "id": "c030",
+          "title": "Kasıtlı Düzensizlikten Kaçınma",
+          "text": "Biz dili kendi kullanımlarımız içinde rahatızdır. Alışkanlık haline getirdiğimiz bazı sözel örnekler vardır ki herhangi bir düzensizlik yarattığımızı düşünmeyiz. Herkesle benzer konuştuğumuzu zannederiz bizi anladıklarını düşünürüz; ancak bu her zaman mümkün değildir, anlaşılamayabiliriz. Biz klişelerimiz içinde rahatızdır. Oysa ki bu konu çaba gerektirmektedir. Boş, merak uyandırıcı, klişeler içeren yapıdan ve yapmacıklıktan uzaklaşmak iletişimi daha istenilen yönde geliştirecektir. Bu nedenle temel amaç basit olmak üzerine odaklanmalıdır.",
+          "start": 2057.567,
+          "end": 2093.79,
+          "duration": 36.223,
+          "tts_parts": 1,
+          "chars": 602
+        },
+        {
+          "id": "c031",
+          "title": "Tanımlayıcı Olmak",
+          "text": "Bu, gözlemsel pratiği tanımlama eylemidir. Biz değişik açılardan tanımlayıcı olabiliriz. Bunlardan en basiti algımızı kontrolden geçirmekle başlar. Başka bir insanla iletişime girdiğimizde bir olayla ilgili genel anlamı bilmek, onu yakalamak önemli. Diğer insanların bizimle aynı algıya sahip olup olmadıklarını kontrol etmemiz önem kazanmaktadır. Örneğin diğer insana “Burası sıcak değil mi? ”, “Uzun bir hafta olacağa benzer.” ya da “Zor bir sınavdı değil mi?” diye sorduğumuzda aslında onay alma, açıklık getirme durumu vardır. Ayrıca duyduğumuz şeyleri daha tanımlayıcı, açıklayıcı bir tavırla dinleyip yanıtlamak iletişime yön vermektedir. Bu davranış önce duyduğumuzun tekrarı daha sonra da onun imasıyla ilgilidir. Bunu cümleler aracılığı ile yaparız. Bazen de beklenmedik sözcükler kullandığımızda ya da bir sözcüğü özel anlamıyla kullandığımızda bir karışıklık meydana gelebilir. Eğer karşımızdaki insanın bu nedenle söylediklerimizi anlamadığının farkına varırsak o kavramı başka bir yolla açıklamak önemlidir. Aynı şekilde biz de aynı şeyle karşılaştığımızda bizim de daha tanımlayıcı olunmasına gereksinimimiz vardır.",
+          "start": 2094.69,
+          "end": 2170.201,
+          "duration": 75.511,
+          "tts_parts": 1,
+          "chars": 1172
+        },
+        {
+          "id": "c032",
+          "title": "Somut Olmak",
+          "text": "İletişimde belirsiz ve özetleyici konuşmaktan çok somut ve net olmak önemlidir. Örneğin, “Benim de görüşlerimi dikkate alsan iyi olur.” cümlesi net değildir; bir kesinlik yoktur. Oysaki “Konuşmaya başladığımdan itibaren üç kez konuşmamı kestin. Benim görüşlerimin senin görüşlerin kadar önemli olmadığını düşündüğünü hissediyorum.” netleştirilmiş, somut bir konuşmadır.",
+          "start": 2171.101,
+          "end": 2196.318,
+          "duration": 25.217,
+          "tts_parts": 1,
+          "chars": 406
+        },
+        {
+          "id": "c033",
+          "title": "Duyarlılık",
+          "text": "Mesaj alıp verirken kendi kullandığımız dil kadar karşımızdakinin de kullandığı dile duyarlılık göstermemiz gerekmektedir. Dilimizin, deneyimlerimizin ve gerçeklerimiz arasındaki farkın unutulmaması önemlidir. Anlamlar uyuşmuyorsa unutmamamız gereken şey anlamların insanlarda olduğudur. Böyle durumlarda anlaşamamazlıklar üzerinde durmak yerine anlama düzeyleri üzerinde durmak gerekmektedir. Diğer insanı konuştuğu dil yüzünden yargılamaktan kaçınmak ve farklılığı vurgulamamak önemlidir.",
+          "start": 2197.218,
+          "end": 2228.101,
+          "duration": 30.883,
+          "tts_parts": 1,
+          "chars": 526
+        },
+        {
+          "id": "c034",
+          "title": "Açıklık",
+          "text": "Bir mesajı aktarmak istediğimiz zaman açık bir ifade tarzı gerekmektedir. Birçok sade, basit sözcüğün de anlaşılamaması doğaldır. Anlamak ve anlamlandırmak için alıcının aynı algı, duygu ve düşüncelere sahip olması kolaylık sağlayacaktır. Bununla birlikte aktarmak istediklerimizdeki açıklık, sadelik önemlidir. Karşımızdakine çok fazla bilgi vermeye çalıştığımız zaman dikkati dağılacaktır. Mesajımızın anlaşılmadığı durumlarda farklı yolları denemek iletişimi pozitif anlamda yönlendirecektir. Kısacası karşımızdaki ile aynı dilde konuşmanın yollarını bulmamız gerekmektedir.",
+          "start": 2229.001,
+          "end": 2266.292,
+          "duration": 37.291,
+          "tts_parts": 1,
+          "chars": 610
+        },
+        {
+          "id": "c035",
+          "title": "Esneklik",
+          "text": "Dil kullanımında ve anlamada esneklik önemlidir. İletişim esnasında birçok yanlış anlama, değerlendirme ve yanlış yorumlama olabilir. Bunların farkında olup bir esneklik payı bırakmak gerekmektedir.",
+          "start": 2267.192,
+          "end": 2280.567,
+          "duration": 13.375,
+          "tts_parts": 1,
+          "chars": 232
+        },
+        {
+          "id": "c036",
+          "title": "Sözel Olmayan Mesajlar",
+          "text": "Bireylerarası iletişimde sözel mesajlar kadar sözel olmayan mesajlar da önemlidir. Biz birisiyle iletişim kurduğumuz zaman yalnızca onun sözel ifadelerine değil yüz ifadelerine, el kol hareketlerine, bedeninin duruş tarzına ya da sesinin tonu gibi şeylere de dikkat ederiz. Sözcüklerin dışında da biz devamlı karşımızdakine bir şeyler iletiriz. Sözel mesajlar bir devamlılık gerektirir. Biz bir şeyler söyleriz, susarız. Sonra biraz daha konuşuruz. Sözel olmayan mesajlar süreklidir; asla kesintiye uğramaz. Başka bir deyişle biz iletişimde bulunmadan duramayız. Sözel olmayan mesajlara baktığımızda aslında bazı kesintiler olduğunu görürüz. Örneğin jestler başlar ve biter, göz kontağı başlar ve biter, dokunma başlar ve biter, gülme başlar ve biter ancak bütün bunlar sözel olmayan mesajların belli parçalarıdır. Bu açıdan bakıldığında bir devamlılık söz konusudur.\n\nSözel olmayan mesajlar kültürden etkilenir. Belirli konularda nasıl davranacağımızı, kültürümüz öğretir. Benzer bir şekilde kültürümüz diğer insanların sözel olmayan davranışlarının oluşturduğu iletişimi nasıl yorumlayacağımızı da öğretir. Böylece sözel olmayan bir davranış kültürümüz içinde bize güçlü mesajlar gönderirken başka bir kültür için bir şey ifade etmeyebilir ya da hafif bir niteliğe sahip olabilir. Bazen farklı kültürlerdeki aynı tip davranış çok zıt anlamlara sahip olabilir.",
+          "start": 2281.467,
+          "end": 2367.52,
+          "duration": 86.053,
+          "tts_parts": 1,
+          "chars": 1432
+        },
+        {
+          "id": "c037",
+          "title": "Sözel Olmayan Mesajların İşlevleri",
+          "text": "Sözel olmayan mesajlar iletişim sürecinde birçok işlev üstlenirler. Bu işlevleri bilmek hem etkin kullanabilmeyi hem de sorunları tanımlayabilmeyi sağlar.",
+          "start": 2368.42,
+          "end": 2380.401,
+          "duration": 11.981,
+          "tts_parts": 1,
+          "chars": 214
+        },
+        {
+          "id": "c038",
+          "title": "Tamamlama",
+          "text": "Bazı sözel olmayan mesajlar sözel mesajlarla beraber tutarlı bir görünüm sunarlar. Sözel bir mesajı tamamlayan sözel olmayan bir mesaj onu güçlendirir, aydınlatır, genişletir ya da gerçek anlamını açıklar. Örneğin birbirini seven iki insan düşünelim. Biri diğerine “Seni seviyorum” dediği zaman bunu hoş, güzel bir ses tonu ve duygularını pozitif bir biçimde yansıtan yüz ifadesi ile yapıyorsa mesaj daha güçlü olacaktır.",
+          "start": 2381.301,
+          "end": 2411.952,
+          "duration": 30.65,
+          "tts_parts": 1,
+          "chars": 456
+        },
+        {
+          "id": "c039",
+          "title": "Yalanlama",
+          "text": "Sözel mesajları tamamlama yerine onlarla çatışma halindedir, onları yalanlar, reddeder ya da karşı koyar. Bir yönetici tarafından uyarılan bir çalışanı düşünelim. Yönetici “Bana tekrar hata yapmayacağını söyle.” dediği zaman çalışan tekrar hata yapmayacağını suratını asarak, biraz da alaylı bir ifadeyle ve masasına bakarak söylediği zaman bu çalışanın aynı hatayı yapmayacağına inanabilir miyiz? Eğer sözel ve sözel olmayan mesajlarda bir çelişki varsa insanlar sözel olmayan mesajlara inanmaya meyillidirler.",
+          "start": 2412.852,
+          "end": 2448.936,
+          "duration": 36.084,
+          "tts_parts": 1,
+          "chars": 546
+        },
+        {
+          "id": "c040",
+          "title": "Tekrar Etme",
+          "text": "Sözel olmayan bir mesaj tekrarlama fonksiyonu da sunar. Bu, sözel mesajı yeniden ifade etmek olarak da görülebilir. Örneğin bir yerde otururken iki çay istediğinizi düşünelim. Çoğu zaman parmaklarınızla iki işareti yaparak bunu tekrar edersiniz.",
+          "start": 2449.836,
+          "end": 2467.39,
+          "duration": 17.554,
+          "tts_parts": 1,
+          "chars": 282
+        },
+        {
+          "id": "c041",
+          "title": "Düzenleme",
+          "text": "Sözel etkileşimler düzenleme ve yönlendirme aracılığı ile koordine edilir. Bu tür düzenlemeler ve yönetmeler öncelikle sözel olmayan mesajlar tarafından olur. Bu düzenleyici mesajlar örneğin bir insana bakmak ya da bakışını başka yere çevirmek, birisine konuşmanızın bitmediğini söylemek için parmağınızla (bir dakika) gibi işaret yapmak, sesi alçaltmak ya da yükseltmek gibi şeyler olabilir.",
+          "start": 2468.29,
+          "end": 2493.739,
+          "duration": 25.449,
+          "tts_parts": 1,
+          "chars": 427
+        },
+        {
+          "id": "c042",
+          "title": "Yerine Geçme",
+          "text": "Başka bir şeyin yerini alma sözel mesajlar yerine sözel olmayan mesajlar kullanıldığı zaman olur. Örneğin el sallamak ya da el işaretiyle çağırmak gibi. Bir insana negatif bir sözcük kullanmak yerine kötü ve dik dik bakmak yeterli olacaktır.",
+          "start": 2494.639,
+          "end": 2511.311,
+          "duration": 16.672,
+          "tts_parts": 1,
+          "chars": 279
+        },
+        {
+          "id": "c043",
+          "title": "Vurgulama",
+          "text": "Sözel olmayan mesajlar sözel bir mesaja daha dikkat çekmek, vurgulamak için kullanılır. Örneğin konuşurken ses tonunu belirli bir yerde yükseltmek ya da birine dokunmak gibi. Yapılan belli vurgulamalar sözel bir mesajı güçlendirir ya da zayıflatır.\n\nYukarıda belirttiğimiz bu fonksiyonlar her zaman ayrı ayrı meydana gelmez. Bazen birden fazlası aynı anda kullanılabilir.",
+          "start": 2512.211,
+          "end": 2537.288,
+          "duration": 25.078,
+          "tts_parts": 1,
+          "chars": 429
+        },
+        {
+          "id": "c044",
+          "title": "Bireylerarası İletişim Sürecindeki Etkin Sözel Olmayan Mesaj Kategorileri",
+          "text": "Bireylerarası iletişim süreci yalnızca konuşmayı kapsamaz, iletişimin çok kanallığı gözden kaçırılmamalıdır. Bu minvalde sözel olmayan iletişim davranışları önemlidir.",
+          "start": 2538.188,
+          "end": 2554.21,
+          "duration": 16.022,
+          "tts_parts": 1,
+          "chars": 266
+        },
+        {
+          "id": "c045",
+          "title": "Yüz İfadeleri",
+          "text": "İnsan yüzü duyguların ifadesinde en temel araç olarak kabul edilir. Bunun nedeni genellikle etkileşim anında açık bir şekilde görülür olmasındandır. Bizim duygularımız ve bu duyguların yüzümüze yansıması birbirinden ayrılmaz bir bütündür. Yüzümüz bir ayna gibidir; diğerleri ile etkileşimimizi düzenler ve yönetir. Biz yüzümüzdeki ifadeyle diğerlerinin mesajını onaylayıp onaylamadığımızı, inanıp inanmadığımızı ve benzeri belirtiriz.\n\nYüzdeki ifadelerle ilgili değişik görüşler vardır. Bir görüşe göre bazı yüz ifadeleri insanın doğuştan getirdiği özelliklerdir. Dünyadaki değişik kültürlerdeki insanlarda da benzer ifadeleri görebiliriz. Örneğin üzüntü, kızgınlık, nefret, korku, şaşırma ve mutluluk gibi. Başka bir görüş çevre, toplumsal kurallar ve kültürün bizim yüz ifadelerimize etkisi olduğunu söyler. İlk yıllardan itibaren çocuklar belli durumlar için çeşitli rol modelleri ile ilgili yüz ifadelerini öğrenirler. Bir başka temel görüş daha vardır. Bu görüşe göre de yüz ifadeleri hem doğuştandır hem de sonradan öğrenilir. Eğer yeni doğan ya da küçük yaştaki çocuklara bakarsanız onların duygularını ne kadar spontan gösterdiğini görebilirsiniz. Bununla birlikte büyümeye başladıkça kendi kültürlerinin yetişkin dünyası içinde toplumsallaşmaya da başlarlar. Bu süreçle birlikte duyguların ifade edilmesinde neyin uygun neyin uygun olmadığı da öğrenilir.\n\nYüz ifadelerinin kontrolünü sağlayan bazı uygulamalar vardır. Bunlardan ilki “maskeleme”dir. Biz maskelemeyi belli kültürel ve toplumsal etkiler sonucu öğreniriz. Burada duygularla ilgili ifadelerin bastırılması söz konusudur. Bunun yerine şartlara uygun kabul edilebilir ifadeler yer alır. Başkaları ile girdiğiniz bir yarışta kaybettiğinizi düşünün. Nasıl bir duygu içinde olacaksınız? Büyük bir ihtimalle çok üzüleceksiniz ve belki karşınızdakine de kızacaksınız ancak bunu açıkça göstermekten kaçınabilirsiniz. İyi görünmek ve onu kutlamak durumunda kalırsınız çoğu zaman. Diğer uygulama “kuvvetlendirme”dir. Burada hissettiğimiz duygunun abartılarak sunumu söz konusudur. Örneğin çeşitli Akdeniz ülkelerinde üzüntü ve keder çoğu zaman abartılabilir. Bazı insanlar da bunu konuşma biçimine yansıtır ve duygularını fazlaca abartarak iletişimde bulunur. “Tepki sergilememe” de bir başka uygulamadır. Bazı insanların yüzlerinde duygularını belli edici hiçbir ifade göremezsiniz. Bazı durumlarda bu gerekli olabilir. İnsanın ifadelerini yansıtmaması zor olduğu için biraz da yetenek gerektiren bir uygulamadır.\n\nYüz ifadeleri ile birlikte le alacağımız göz, insanın iletişim sürecinde çok önemlidir. Dışarıdaki dünya hakkındaki bilgimizin yaklaşık yüzde sekseni gözümüz aracılığıyla bize ulaşır. Konuşma, dinleme, dokunma eylemlerimize karşın biz hâlâ “görsel yönü ağır basan” canlılarız. İnsanlar arasındaki ilk temas gözler aracılığıyla kurulur. Eğer gözle kurulan temasta bir taraf ya da iki taraf belli bir memnuniyetsizlik duyarsa bu iletişimin devamı büyük bir olasılıkla gelmeyecektir. Gözlerimizle başlangıçlar yaparız, kontrol ederiz, severiz, nefret ederiz, saldırırız ya da aşağılarız. Bütün bunları tek bir söz bile etmeden yapabiliriz.\n\nBireylerarası iletişimde gözle kurulan teması değerlendirirken dikkat edeceğimiz kategoriler vardır. Bunlar; “cinsiyet”, “kişilik özellikleri” ve “kültürel geçmiş”tir. Ayrıca göz temasındaki yoğunluk ilişkinin niteliği ile de çok ilgilidir. Örneğin düşük statülü bir birey saygısını göstermek için daha fazla göz teması kurma çabasındadır. Bir insandan hoşlanıp hoşlanmamamız da göz teması kurmamızda önemli bir faktördür. Bu çok yakın ilişki kurduğumuz kişilerde daha yoğundur. Göz temasını karşımızdakine doğru yoğunlaştırmamız bizim onun söylediği şeyle ilgilendiğimiz ya da dikkat ettiğimizin de bir göstergesidir ancak bu kültürlerarası iletişimde farklılık gösterebilir. Bir insanın kültürü bu konumda çok önemlidir.",
+          "start": 2555.11,
+          "end": 2796.18,
+          "duration": 241.07,
+          "tts_parts": 1,
+          "chars": 3968
+        },
+        {
+          "id": "c046",
+          "title": "Jestler ve Vücut Hareketleri",
+          "text": "Jestler ve vücut hareketleri bir insanın sözcüklerinin arkasındaki gerçek duygularını ifade eder. Burada dört farklı kategori söz konusudur: işaretler, tasvir ediciler, düzenleyiciler ve uyarlayıcılar.\n\nİşaretler, sözel olmayan iletişim kategorisi içinde ele alınmalarına karşın sözel iletişimle birlikte daha çok anılırlar. Doğrudan sözel mesajların taşıyıcısı olabilirler ve kasti olarak kullanılabilirler. Birçok durumda sözcüklerin yerine geçmesi için kullanılır. Toplumda kullanılan dil gibi bu işaret dili de öğrenilir. Bu yüzden farklı kültürlerden olanlar için anlaşılması güç olabilir.\n\nTasvir ediciler, genellikle belli kategorilerden oluşurlar. İlk kategori konuşmayı açıklayıcı ya da ima edici jestlerdir. Örneğin yakaladığınız balığın büyüklüğünü karşınızdakine anlatmak için ellerinizle bunu gösteren bir tasvirde bulunursunuz. Bir başka kategori mesajın vurgulanmasıdır. Örneğin biz üç fikirden bahsederken parmaklarımızla da bu sayma işlemini gösteririz. Kaynağa konuşmayı yönlendiren bir başka kategori daha vardır. Bunlar konuşma ile aynı zamanda olur. Örneğin diğer insanın konuşmaya devam etmesi için başımızla, gözümüzle ya da vücut hareketimizle belli işaretler göndeririz. Tasvir ediciler daha çok yüz yüze iletişimde ortaya çıkar çünkü bizim yüz yüze iletişimimizde kaynak olarak konuşmamızı açıklayıcı bir şanstır bu. Tasvir ediciler kullanıldığı zaman konuşma daha yumuşak, açık ve daha az karmaşık geçer.\n\nDüzenleyiciler, işaretler ve tasvir ediciler gibi kasti değildir. Örneğin bir toplantıda söz almak istediğinizde muhtemelen biraz ileri doğru uzanacaksınız, elinizi yukarı kaldıracaksınız, nefesinizi ayarlayacaksınız ve doğrudan konuşmacıya bakacaksınız. Eğer konuşmacı söz vermeye istekli ise size bakacak ve konuşmanızı isteyici bazı hareketler yapacaktır. Size söz vermeyip konuşmasına devam edecekse sesini daha yükseltecek, konuşmasını hızlandıracak ve eğer çok yakınsanız eliyle size dokunup “bir dakika bekle” mesajı verecektir. Bütün bunlar çok çabuk olur. Biz bu düzenleyicileri nadiren algılarız ancak bunlar etkileşimi düzenleyici niteliktedir.",
+          "start": 2797.08,
+          "end": 2929.666,
+          "duration": 132.586,
+          "tts_parts": 1,
+          "chars": 2211
+        },
+        {
+          "id": "c047",
+          "title": "Duruş",
+          "text": "Duruşlar duygusal durum ve ilişkiler için zengin bir bilgi kaynağıdır. Bizim yürüyüşümüz, oturuşumuz diğerleri için bir mesajdır. Siz bir insana bakarak duygularını anlayabilirsiniz. Vücut nadiren yalan söyler. Örneğin yabancı bir ortamda ve özellikle ayaktaysak kollarımızı kavuşturur ve savunmaya geçeriz. Eğer ön sırada ve açıkta oturuyorsanız ellerinizi ve ayaklarınızı nereye koyacağınızı bilemezsiniz. Eğer bir bardağı elinizde tutuyorsanız yine bir savunma durumundasınızdır ancak bunu genellikle daha yabancı olarak gördüğünüz insanların yanında yaparsınız. Bacak bacak üstüne atma yine savunmanın bir başka şeklidir. Eğer bir kişi fikrini açıklamak için konuya girerse bacak bacak üstüne atmaktan vazgeçecektir. Eğer birkaç kişi yanınızdaysa muhtemelen ayağınızın yönü kendinize daha yakın hissettiğiniz kişiye doğru olacaktır. Bu örnekleri çoğaltabiliriz. Tabii ki bir hareketten yola çıkarak yorum yapmak bazen yanıltıcı olabilir. Başka faktörler de önemlidir.",
+          "start": 2930.566,
+          "end": 2989.777,
+          "duration": 59.211,
+          "tts_parts": 1,
+          "chars": 1002
+        },
+        {
+          "id": "c048",
+          "title": "Dokunma",
+          "text": "Dokunma iletişimin temellerinden biridir ve ilişkilerde önemlidir. İlişkinin niteliği hakkında bize bilgi verir. Bizim dokunma davranışımızın fonksiyonları çeşitli yollarla olur. Diğerleriyle ilişkimiz, bizim onlara dokunma biçimimiz ve bunun miktarı değişik fonksiyonlar sunar.\n\nNormal bir dokunma nedir? Bu sorunun yanıtı birçok faktöre bağlıdır. Sizin normal olarak kabul ettiğiniz şeyi ben normal olarak görmeyebilirim. Dokunmanın kuralları, içinde bulunduğumuz bireylerarası ilişkideki etkileşime ve bu etkileşimle ilgili durumlara bağlıdır. Bazı durumlarda dokunma daha sık olabilir; o yüzden keskin normlardan bahsedemeyiz. Bazı durumlarda dokunma ön plana çıkıyor; birine öneride bulunurken, daha derin konuşmalarda ve ilgi ve destek durumlarında.\n\nBazı insanlar çok fazla dokunma eyleminde bulunurken bazı insanlar dokunmaktan kaçınır. Bu tür insanlar hem kendileri dokunmaz hem de kendilerine dokunulmasından hoşlanmazlar. Dokunma ile biz pozitif duygularımızı iletiyoruz. Yakınlık dokunma ile ilgilidir. Çok fazla dokunma varsa bu kişiler arasında bir yakınlığın olduğunu anlarız. Dokunma bir hoşlanma belirtisidir de. Hoşlanmadığımız birine dokunmayız. Dokunma etkileşimin güçlenmesine de neden olur. Dokunmanın artmasıyla duygular da artar. Dokunma olumsuz anlamda itme hareketiyle karşımıza çıkar. Yine dokunmayı da ele alırken kültürel faktörleri de düşünmemiz gerekmektedir.",
+          "start": 2990.677,
+          "end": 3076.126,
+          "duration": 85.449,
+          "tts_parts": 1,
+          "chars": 1469
+        },
+        {
+          "id": "c049",
+          "title": "Alan Kullanımı",
+          "text": "Alan kontrol edilebilir bir iletişim ögesidir. Bu nedenle yüz yüze ikili ilişkilerde alanı bilinçli olarak kullanmak büyük yarar sağlar. Kişinin diğer insanlarla arasına koyduğu uzaklık onlara karşı olan duygularıyla da ilgilidir. Birlikte yaşayan her canlının beslenmek, hareket etmek, uyumak ve birtakım ihtiyaçlarını karşılamak için kendisine özgü bir alana gereksinimi vardır. Herkes kendine ait bir alan belirler ve sonra da bu alanı savunma içine girer.\n\nAlan farklı mesafelerle bölünmektedir: Özel Alan (Mahremiyet bölgesi): Sadece anne – babamız, eşimiz ya da yakınlarımızın girebildiği bir alandır. Bazen aile üyeleri, arkadaşlar bile bu alana giremeyebilir. Birinin kulağına bir şey fısıldamak isterseniz mahrem alana girmiş olursunuz. Bu alana yabancı biri girerse kalp daha hızlı atmaya başlar. Kaçma isteği ya da saldırganlık hissi duyulabilir.\n\nKişisel Alan: kırk beş ile elli santimlik mesafeden başlar yüz yirmi santime kadar çıkar. İş yerlerinde, davetlerde birbirini tanıyan kişiler bu uzaklıkta durur. Çok samimi olmadığınız birisiyle aranızdaki mesafeyi kişisel alana girecek kadar azalttığınızda karşınızdakinin rahatsız olduğunu göreceksiniz. Büyük bir ihtimalle bu kişi o alanı korumak için sizden uzaklaşacaktır.\n\nSosyal Alan: Bu alan yüz yirmi santimden üç yüz elli santime kadar ulaşan bir alandır. Yakın sosyal alan ve uzak sosyal alan olmak üzere ikiye ayrılır. Gişe ya da bankonun olduğu yerlerde görevli kişi ve halk arasında, öğretmen ve öğrenci velisi arasında, aynı odadaki beraberliklerde ve benzeri\n\nKamusal Alan: Otobüs durakları, tren istasyonları, büyük otellerin lobileri gibi bir toplumda birbirini tanımayan insanların yer aldığı mekânlarda olur. Araya konan mesafe en az iki virgül beş metredir.\n\nBireylerarası iletişimde bunların dışında başka sözel olmayan iletişim unsurları da etkili olur. Fiziksel görünüm, sesin kullanımı, zaman kullanımı ve mekân gibi unsurlar da önemlidir.",
+          "start": 3077.026,
+          "end": 3205.572,
+          "duration": 128.546,
+          "tts_parts": 1,
+          "chars": 2078
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "BİREYLERARASI İLETİŞİMDE DİNLEMENİN ÖNEMİ",
+      "start": 3206.772,
+      "end": 3894.449,
+      "chunks": [
+        {
+          "id": "c050",
+          "title": "BİREYLERARASI İLETİŞİMDE DİNLEMENİN ÖNEMİ",
+          "text": "İletişim sürecinde meydana gelen kopukluklar ilişkilerimizi olumsuz yönde etkiler. Farkında olarak ya da olmayarak bu kopukluğa neden olan önemli davranışlardan bir tanesi de dinlemedir. Konuşmaya son derece istekli olmamıza karşın, dinleme konusunda çoğu zaman yetersiz kalırız. Oysa dinleme, iletişimin yeterliliğini arttırır ve bireylerarası iletişim sürecinde bir beceri olarak kabul edilir. Olumlu ilişkiler geliştirmede, bilgi almada, başkalarını tanımada ve anlamada dinleme temel öge olmaktadır.\n\nDinlemenin çeşitli amaçları vardır. Bu amaçlar genel olarak iletişimin amaçlarıyla aynıdır. Bunlar; öğrenmek, ilişki kurmak, etkilemek, eğlenmek ve yardım etmektir.\n\nÖğrenmek: Dinlemenin bir amacı öğrenmek içindir. Siz diğer insanlar hakkında öğrenmek, onları anlamak için dinlersiniz aynı zamanda sorunlardan uzaklaşıp, daha makul kararlar verebilmek için.\n\nİlişki Kurmak: Sağlıklı ilişkiler için en önemli iletişim becerilerinden biri de arkadaşlarınızı, aile üyelerinizi, meslektaşlarınızı ya da ilişki içinde olduğunuz herhangi birini dinlemektir. Biz sosyal kabul ve popülerlik kazanmak ve insanların bizden hoşlanmasını sağlamak için dinleriz. En çok konuşmak istediğimiz insanlar dinlemesini bilen insanlardır. Siz dikkatli ve destek verir biçimde dinlediğiniz zaman diğerleri için gerçek, samimi bir ilgi iletirsiniz; bu diğer insanları önemsediğiniz anlamına gelir.\n\nEtkilemek: Siz diğer insanların tutumlarını, değerlerini, düşüncelerini ve davranışlarını etkilemek için dinlersiniz. Sizin hayatınızda etkili olan insanları düşünün. Büyük olasılıkla bunlar sizi dinleyen, sizi bilen ve anlayan insanlardır. Sizi gerçekten dinlediğini hissettiğiniz insanın tavsiyelerine uyarsınız; çünkü sizin görüşleriniz ve ilgileriniz işitilmiş ve anlaşılmıştır.\n\nEğlenmek: Müzik dinlemek ya da benzeri şeyler eğlenme amaçlıdır. Buradaki dinlemenin bizim için bir kazanç ifade etmesi gerekmez. O sadece bir anlık bir hoşlanmadır. Aile üyelerinden hoş öyküler ve meslektaşlarımızın anekdotlarını dinlemek, iş dünyası ve eğlence dünyasıyla aramızda rahatlatıcı bir denge sağlayacaktır.\n\nYardım etmek: Yardım için dinlemeyi, yetişme dönemimizde ailemizin bizim ilgilerimizi dinlediğinde ya da sorunlarımızı çözmek için dinlediğinde deneyimleriz. Bazen hiçbir tavsiyede bulunmadan dinlemek daha yardımcı olabilir. Destekleyici ve bir etkide bulunmadan dinlemek diğer insanın düşüncelerini aydınlatmak için yardım eder.",
+          "start": 3206.772,
+          "end": 3369.033,
+          "duration": 162.261,
+          "tts_parts": 1,
+          "chars": 2620
+        },
+        {
+          "id": "c051",
+          "title": "Dinleme Süreci",
+          "text": "Şekil 4.4 Devito, 2009\n\nŞekil, dinleme sürecini alma, anlama, hatırlama, değerlendirme ve karşılık verme aşamalarından oluşan döngüsel bir yapı olarak göstermektedir. Her aşama, işitme ve ilgilenmeden geri bildirime kadar uzanan alt işlevlerle ilişkilendirilmektedir.\n\nEtkili dinleme süresi; işitilenleri alma, yorumlama, hatırlama, değerlendirme ve karşılık vermeyi gerektirir.\n\nAlma (mesajı işitme ve ilgilenme): Dinleme konuşmacının gönderdiği mesajları alma sürecinde işitme ile başlar. Bilinen yanlışlardan bir tanesi de işitme ve dinlemenin aynı olarak kabulüdür. İşitme pasif bir süreçtir. Bu süreçte hiçbir dikkat ya da güç sarf etmemiz gerekmez; oysa dinleme düşünce ve dikkat gerektirir.\n\nAnlama (işitilen mesajın yorumlanması): Bu aşamada konuşmacının ne demek istediğini öğreniriz. Bize açıklanan duyguları ve düşünceleri kavrarız.\n\nHatırlama (duyulanın hafızada tutulması): Etkili dinleme hatırlamayla yakın ilişkilidir. Hatırlanan şey söylenen şey değildir; bizim söylenenden ne hatırladığımızdır. Hafıza yeniden inşa edicidir; biz işittiğimiz mesajı bizim için bir anlam ifade edecek bir sistem içinde yeniden inşa ederiz.\n\nDeğerlendirme (mesaj hakkında eleştirel düşünme ve yargılama): Değerlendirme mesajların bir şekilde yargılanmasından meydana gelir. Bazen bu değerlendirme süreci çok farkında olarak, bilinçli yapılmaz. Bizim değerlendirmemiz daha çok eleştirel analizin doğası içindedir.\n\nKarşılık verme (konuşmacıya yanıt ya da geri bildirim verme): Bu, iki aşamada olur: Ya konuşmacı konuşmasına devam ederken ya da konuşmasını bitirdiği zaman. Bu karşılık vermeler geribildirimdir. Bu, konuşmacıya onun mesajları ile ilgili neler hissettiğimiz ve düşündüğümüz ile ilgilidir. Destekleyici karşılıklar konuşmacı konuşurken daha etkilidir; bizim dinlediğimizi gösterir. Konuşmacının konuşması bittikten sonra verilen karşılıklar ise daha ayrıntılıdır ve empatiyi içerebilir.",
+          "start": 3369.933,
+          "end": 3502.147,
+          "duration": 132.214,
+          "tts_parts": 1,
+          "chars": 2118
+        },
+        {
+          "id": "c052",
+          "title": "Dinleme Engelleri",
+          "text": "Fiziksel ve zihinsel engel: Dinlemedeki fiziksel engeller işitme kaybı, gürültülü bir çevre, yüksek müzik ve benzeri olabilir. Bu durumda dinleme başarısızdır. Örneğin televizyon izlerken bir insanı destekleme amaçlı dinleyemeyiz. O nedenle içinde bulunduğunuz ortamın fiziksel koşulları dinlemede önemli bir etken olmaktadır. Zihinsel engeller de fiziksele benzerdir. Dinlemeye odaklanmamızı engeller. Örneğin birisini dinlerken zihnimiz başka bir şeyle meşgulse sağlıklı dinleyemeyiz.\n\nÖn yargı: Gruplara ya da bireylere karşı ön yargılı olmak dinlemeyi her zaman bozacaktır. Buna ek olarak dar görüşlülüğü de ekleyebiliriz.\n\nOdaklanma eksikliği: Bir insanın söylediğine odaklanmak dinlemenin bir gereğidir. Odaklanmayı engelleyecek pek çok şey vardır. Dinleyici olarak temel fikir üzerine odaklanmak detaylara dalmaktan daha iyidir. Konuşmacı olarak da temel fikri dağıtacak detaylardan kaçınmak gerekir.\n\nErken yargılama: Bunun en açık örneği, konuşmacının ne söyleyeceğini bildiğimizi varsaymaktan kaynaklanır; bize göre dinlemeye gerek yoktur. Dinlemeden, konuşma tamamlanmadan sonuca yönelmek yaygın bir dinleyici reaksiyonudur.",
+          "start": 3503.047,
+          "end": 3578.187,
+          "duration": 75.14,
+          "tts_parts": 1,
+          "chars": 1247
+        },
+        {
+          "id": "c053",
+          "title": "Etkin Dinleme",
+          "text": "Eğer bir insanın ne demek istediğini ve hissettiklerini anlamak istiyorsak onunla empati kurmamız gerekmektedir. Bir insanla empati kurmak onun hissettiğini hissetmek, dünyayı onun gördüğü gözle görmeye çalışmaktır. Empatik dinleme bizim ilişkilerimizi de geliştirir ancak birçok iletişim biçiminde empatik dinleme tercih edilse de bazen nesnel bir dinlemeye de gereksinim vardır. Nesnel gerçekliği göz önünde bulundurarak anlamları ve hisleri değerlendirmek gerekmektedir. Bazen empatik dinleme yerine tarafsız olma ve nesnellik daha yararlı olmaktadır.\n\nEtkin dinleme bir başka açıdan da hem yargısal olmayan hem de eleştirel dinlemeyi gerektirir. Biz yargısal olmadan dinlemek zorundayız; açık fikirlilikle ve anlamaya yönelik. Bununla birlikte aynı zamanda da eleştirel olmak durumundayız; belirli bir görüş bildirmeye yönelik değerlendirmeleri ya da yargıyı içeren. Bunun için öncelikle anlamaya yönelik dinlememiz gerekiyor; tamamen anladıktan sonra da değerlendirme ya da yargı olabilir. Açık fikirli olarak dinlemek mesajları daha iyi anlamayı sağlar; eleştirel dinleme de mesajları analiz etme ve değerlendirmeye yardım eder.\n\nİletişim sürecindeki bazı mesajlar açıktır ve çok çaba sarf etmeden söylenmek istenen şeyi anlarız; fakat bazen anlamın başka bir düzeyi vardır. Bu da derin bir dinlemeyi gerektirir. Biz sadece yüzeydeki şeyi dinlersek altı çizilen mesajları kaçırabiliriz. Bu da diğer insanların duygularını ve gereksinimlerini anlamamamıza neden olur.",
+          "start": 3579.087,
+          "end": 3672.06,
+          "duration": 92.973,
+          "tts_parts": 1,
+          "chars": 1557
+        },
+        {
+          "id": "c054",
+          "title": "Bireylerarası İletişimde Çatışma",
+          "text": "Bireylerarası çatışma, birbirleri ile etkileşimde olan bireyler arasındaki anlaşmazlıktır; çeşitli fikir, duygu ve görüş ayrılıklarını ifade eder. Bu süreçte her iki insan da birbirini etkiler. Farklı biliş, algı, duygu, bilinç dışı gereksinimler, iletişim becerileri, rol farklılıkları, sosyal ve fiziksel çevre ya da iletişim sürecinde verilen mesajın niteliği gibi pek çok faktörden kaynaklanabilir.\n\nBireylerarası çatışma kaçınılmazdır; her bireylerarası iletişimin bir parçasıdır. Ebeveyn ve çocuklar, kardeşler, arkadaşlar, eşler ya da iş arkadaşları arasında olabilir. Bireylerarası çatışma her zaman gerginlik yaratsa da onun hem negatif hem de pozitif bir tarafı vardır. Bilinmesi gereken önemli noktalardan biri çatışmanın saldırganlık olmadığıdır. Diğeri de rekabet ve çatışmanın farklı şeyler olduğudur ancak rekabet çatışmaya neden olabilir.",
+          "start": 3672.96,
+          "end": 3731.288,
+          "duration": 58.329,
+          "tts_parts": 1,
+          "chars": 935
+        },
+        {
+          "id": "c055",
+          "title": "Çatışma Yönetimi Biçimleri",
+          "text": "Bir çatışmayı doğru yönetmek etkili bir iletişimin önemli bir parçasıdır. Aşağıda farklı durumlar için farklı yönetim biçimlerini değinilmiştir.\n\nRekabetçi çatışma biçimi bizim kendi arzu ve gereksinimlerimizle büyük, diğerlerininkilerle ise çok küçük oranda ilgilidir. Bizim gereksinimlerimiz karşılandığı ölçüde çatışma bizim açımızdan başarılıdır. Rekabet tarafından motive edilen çatışma içinde biz muhtemelen sözel olarak saldırgan oluruz ve diğer insanı suçlarız. Bu ben kazanayım sen kaybet felsefesidir ancak bu durum kaybeden üzerinde bir dargınlığa yol açabilir ve buna bağlı çatışmalar da doğabilir. Ayrıca burada çatışma çözülmemiştir, sadece o an için sonuçlanmıştır.\n\nÇatışmadan kaçanlar, kendilerinin ya da karşı tarafın gereksinimlerine ve arzularına nispeten ilgisizdirler. Sorunla ilgili gerçek iletişimden kaçınırlar; sorun ortaya çıkınca konuyu değiştirirler ve genellikle hem fiziksel hem de psikolojik olarak ortamdan uzaklaşırlar. Bu biçimde, herhangi bir çatışmayı çözmek için çok az şey yapılır ve bu nedenle ben kaybedeyim sen de kaybet felsefesi olarak görülür. Bireylerarası sorunlar kendiliklerinden çözülemeyeceği için, onlarla yüz yüze gelip etkili bir şekilde ele almak gerekir. Yoksa kapanmış gibi görünüp sonra tekrar ortaya çıkarlar.\n\nBurada biz, diğer insanın gereksinimleri için kendimizinkilerden fedakârlık yaparız. Bizim temel amacımız ilişkimizdeki uyumu ve huzuru korumaktır. Bu biçim, huzurun korunmasına yardım edebilir ve karşı tarafı tatmin edebilir; fakat kendi gereksinimlerimizi göz ardı etmiş oluruz. Uyum sağlama, ben kaybedeyim sen kazan felsefesidir. Bu karşı tarafı mutlu etse bile bireylerarası çatışma için kalıcı bir çözüm elde edileceğinin kanıtı değildir. Bir eşitsizlik ve haksızlık söz konusudur.\n\nİş birliğinde, hem bizim hem diğer insanın gereksinimlerine hitap etme durumu vardır. Bu biçim ideal olarak düşünülür; iletişim için isteklilik vardır. İdeal olarak her insanın gereksiniminin karşılanmasına olanak verir; ben kazanayım sen de kazan felsefesi söz konusudur.\n\nBu ortada bir durumdur. Hem bizim hem karşımızdakinin gereksinimleri ile ilgilenmek gerekmektedir. Buradaki strateji bir nevi “Orta yolu bulmak”tır ya da “Al gülüm ver gülüm”. Burada huzurun devamı sağlanabilir ancak hâlâ her iki taraf için de kayıplardan dolayı memnuniyetsizlikler söz konusu olacaktır. Ben kazanayım ve kaybedeyim, sen de kazan, kaybet felsefesi vardır. Her iki taraf da istediğini tam olarak elde edemeyecektir. Burada bazı kazanımlar olsa da bu her şey için söz konusu değildir.",
+          "start": 3732.188,
+          "end": 3894.449,
+          "duration": 162.261,
+          "tts_parts": 1,
+          "chars": 2699
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "GRUP İLETİŞİMİ",
+      "start": 3895.649,
+      "end": 4410.303,
+      "chunks": [
+        {
+          "id": "c056",
+          "title": "GRUP İLETİŞİMİ",
+          "text": "Erdoğan (iki bin iki), insanların toplum içinde örgütlü bir yaşam sürdüklerini bu nedenle herkesin bir ya da bir den fazla grubun üyesi olduğunu söylemektedir. Güngör (iki bin on bir), grup tanımını birden çok kişinin amaçsal, zamansal ve çoğu zaman uzamsal paylaşımlar için bir araya gelmeleri olarak aktarmaktadır. Belli bir amaç etrafında toplanmış, çoğunlukla aynı mekânı paylaşan ve aynı zaman dilimi içinde bulunan kişilerin grupsal nitelikleri, grubun yapısına göre sürekli ya da geçici olabilir. Peki, insanlar neden bir grubun üyesi olmak isterler? Doğa karşısında olan insan bireysel olarak doğa ile başa çıkamayacaktır, bu nedenle karşılıklı bağımlılık ilkesi çerçevesinde insanlar bir veya daha fazla grubun üyesi olurlar. Gruplar sayı, amaç, örgütlenme biçimleri, mekân ve kalıcılıklarına göre farklı özellikler göstermektedir.\n\nSayı: Gruplar içerdikleri insan sayısına göre küçük, orta ve büyük olarak adlandırılırlar.\n\nMekân: Grubun bir arada oldukları yer de onların örgütlenme biçimlerini etkilemektedir. Aile, sokak, eğlence mekânları, sosyal alanlar grubun mekânlarını oluşturur ve bireyin davranışları mekânlara göre değişiklikler gösterir.\n\nAmaç: İster çok basit ister çok karmaşık olsun her grup bir amaca sahiptir. Arkadaşların futbol maçına gitmesi ya da birlikte ders çalışmalarının bir amacı vardır ve bunlar grup faaliyetlerinin bir parçasıdır.\n\nKalıcılık: Gruplar üyelerinin bireysel amaçlarından çok grup amaçlarına odaklanırlarsa grubun kalıcılığı artacaktır.",
+          "start": 3895.649,
+          "end": 4000.046,
+          "duration": 104.397,
+          "tts_parts": 1,
+          "chars": 1621
+        },
+        {
+          "id": "c057",
+          "title": "Grup Türleri",
+          "text": "Gruplar, birincil veya ikincil, resmî veya gayri resmî olabilecekleri gibi, iki üç kişiden oluşan küçük gruplar ya da milyonlarca kişiden oluşan büyük gruplar da oluşturabilir.\n\nBirincil resmi olmayan gruplar: Bu tür gruplara üyelik açısından bireyler için bir zorlama söz konusu değildir ancak her ne kadar gönüllülük esasına dayalı olsa da zaman zaman bireyleri birlikteliğe zorlayan durumlar da olabilir. Bu nedenler resmi bir nitelik taşımaz. Yurt dışında yaşayan Türklerin biraraya gelerek grup oluşturmalarında olduğu gibi ya da yaşadığı şehirden göçen insanların bu şehirde hemşehrileri ile oluşturdukları gruplar da olduğu gibi.\n\nBirincil yarı resmî gruplar: Bazı zamanlarda grupların oluşumunda üyelerin istekleri belirleyici olmayabilir. Irksal, dinsel, etnik ve benzeri etmenler grubun oluşumunda etkin olur.\n\nİkincil resmî olamayan gruplar: Sevdiğimiz kişileri kendimize arkadaş olarak seçeriz, dolayısıyla kendi isteğimizle bir arkadaş grubu oluştururuz. Bu tür gruplar üyelerin kendi isteği ile oluşur ve gruba katılım ya da gruptan ayrılma kararı bireyin kendisine aittir.\n\nİkincil resmî gruplar: Eş zamanda, eş mekânda belli bir amaç için bir araya gelen gruplardır. Grup amacını tamamladığında dağılır. Yabancı dil kursuna gidenler bir grup oluşturur, kurs tamamlandığında grup dağılır.\n\nAile: Aile, birincil gruplara örnektir. Aile, kendine özgü işleyiş yapısı olan bir gruptur. İlişkiler yüz yüze ve birincil düzeyde gerçekleşir, aile üyeleri hem grubun doğal üyesidir hem de isterlerse bir süre sonra grup bağlarını koparabilirler.\n\nÇalışma grupları: Belli bir zaman diliminde, belli bir konuda çalışma yapmak üzere bir araya gelir, çalışma bitince grup dağılır. Birkaç öğrencinin bir derste sunum yapacağını düşünelim. Bir çalışma grubu olarak sunum öncesi hazırlıkları yapacaklar, sunumu gerçekleştirdikten sonra da grubu dağıtacaklardır.\n\nReferans gruplar: Bireyler aynı zamanda birkaç grubun üyesidirler. Hem ailemizin bir üyesiyiz hem de arkadaş ya da çalışma gruplarının birer üyesi olabiliriz. Referans gruplar düzeyinde kurulan ilişkilerde birey, farklı amaçlar için farklı gruplarla iletişim kurar. Bu grup çevresi için örnek oluşturur aynı zamanda da hayranları ya da taklitçileri bulunur. Müzik toplulukları ya da oyuncular buna bir örnektir.",
+          "start": 4000.946,
+          "end": 4149.136,
+          "duration": 148.19,
+          "tts_parts": 1,
+          "chars": 2472
+        },
+        {
+          "id": "c058",
+          "title": "Grup İletişiminin Dinamikleri",
+          "text": "Beebe ve Masterson (iki bin dokuz)’a göre grup iletişiminin dinamikleri aşağıdaki gibidir: İletişim: Hayatı nasıl anlamlandırdığımız ve diğer kişilerle paylaştığımız anlamlardan oluşur. İletişim insanların ne söylediği, nasıl söylediği ve kime söylediği ile ilgilidir.\n\nLiderlik: Liderlik, grubu etkilemeye yönelik faaliyetleri içerir. Amaçlar: Bütün gruplar bir amaç etrafında toplanır. Belirli bir görevi yerine getirmek ya da sadece eğlenmek bir grup amacı olabilir.\n\nKurallar: Hangi davranış biçimlerinin grup içinde kabul edileceği ya da hangilerinin grup tarafından kabul edilmeyeceğini belirler. Bazı kurallar resmi bazı kurallar ise gayri resmîdir.\n\nGörevler: Görevler, belirli bir durum içinde oluşması gereken beklentilerle ilgilidir. Farklı gruplar farklı görevleri gerektirebilir. Grup içinde yapılacak doğru görev dağılımı grubun motivasyonunu ve verimliliğini arttıracaktır.\n\nBağlayıcılık: Grup üyelerinin, diğer grup üyelerine ve giderek grubun kendisine hissettikleri sempati düzeyini belirler. Sadakat duygusu arttıkça grubun bir bütün olması da kolaylaşır.\n\nDurum: Grup iletişiminin oluştuğu en yüksek öneme sahip konudur. Grubun büyüklüğü, fiziksel düzenlemeler ya da mekân gibi çeşitli durumlar grup başarısına etki eder.\n\nŞekil 4.5 Grup İletişiminin Dinamikleri\n\nŞema, grup iletişiminin iletişim, bireysel ve grup amaçları, durum, kurallar, bağlayıcılık, liderlik ve görevler gibi dinamiklerden oluştuğunu göstermektedir. Bu unsurların birlikte işlemesi grubun iletişim yapısını ve işleyişini biçimlendirmektedir.\n\nYukarıdaki dinamikleri göz önünde bulundurarak grup iletişimi nasıl gerçekleşir sorusuna cevap verelim. Aziz (iki bin on), grup iletişiminin esasen bireylerarası iletişim olduğunu aradaki farkı kişi sayısındaki fazlalığın oluşturduğunu söylemektedir. Grup iletişim küçük gruplar, takımlar arasında yapılan iletişimdir. Grup iletişimi grup olarak hareket edebilme özelliğine sahip olan kişiler tarafından yapılır. Bazı durumlarda grup iletişimi aracılandırılmış iletişim olarak da gerçekleşebilir. Gruplara göre iletişimin nasıl gerçekleştiğine bakalım.",
+          "start": 4150.036,
+          "end": 4287.452,
+          "duration": 137.416,
+          "tts_parts": 1,
+          "chars": 2338
+        },
+        {
+          "id": "c059",
+          "title": "Gruplarda İletişim",
+          "text": "Birincil gruplarda iletişim: Birincil gruplarda her üye aynı zamanda hem kaynak hem de alıcı pozisyonundadır. Grup üyeleri birbirini tanır ve resmî olamayan ilişkiler söz konusudur.\n\nİkincil gruplarda iletişim: Bu gruplarda gerçekleşen ilişkiler ve iletişim yapı resmîdir, daha çok yarar sağlamaya yönelik faaliyetler gerçekleştirilir. Grup üyeleri hiyerarşinin en üst düzeyinde yer alan kişinin belirlediği davranış biçimleri içerisinde hareket ederler. İletişim duygulardan çok akla dayalı çıkar ilişkilerini içermektedir.\n\nÇalışma gruplarında iletişim: Çalışma grupları daha çok profesyonel amaçlarla bir araya gelirler böylelikle iletişim, eşit düzeyli olarak gerçekleşir. Grup üyeleri belli yetenekleri ve nitelikleri nedeniyle bir araya geldiğinden saygıya dayalı bir iletişim söz konusudur.\n\nReferans gruplarında iletişim: Bireyler çoğunlukla bir konuda bilgisi ya da deneyimi olduğuna inandıkları insanlara danışırlar, onları referans olarak kabul ederler. Referans kişilerle zaman zaman grup içinde iletişim kurmak gerekir. Öğrencilerin bir hocadan alanıyla ilgili bilgi almak istemelerinde olduğu gibi. Çoğunlukla referans gruplarında resmi ilişkiler ön plandadır.\n\nGruplar arası iletişim: Gruplar arası iletişim farklı düzeylerde gerçekleşmektedir, katı kurallara sahip grupların arasındaki iletişim genellikle liderler arasında gerçekleşir. Kuralların demokratik olarak oluşturulduğu gruplarda iletişim hem liderler arasında hem de grup üyeleri arasında gerçekleşebilir. İletişimin dikey ya da yatay olması bu durumu etkilemektedir.\n\nAracılandırılmış grup iletişimi: Grup üyeleri arasında her zaman yüz yüze iletişim kurma imkânı olmayabilir. Zaman zaman grup kitle iletişim araçlarını (televizyon, radyo, gazete ve benzeri) kullanarak ya da iletişim araçlarını (elektronik posta, mektup, telefon) kullanarak iletişime geçerler. Dolayısıyla bir aracı üzerinden grup üyeleri birbirleri arasında iletişim kurabilir.",
+          "start": 4288.352,
+          "end": 4410.303,
+          "duration": 121.951,
+          "tts_parts": 1,
+          "chars": 2084
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Neler öğrendik?",
+      "start": 4411.503,
+      "end": 4604.414,
+      "chunks": [
+        {
+          "id": "c060",
+          "title": "Neler öğrendik?",
+          "text": "1. Soru\n\nBireylerarası iletişim kavramı ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?\n\nA. Değişen yakınlıkta kişisel ya da resmîdir\nB. Yüz yüze ya da teknoloji aracılığıyladır\nC. Farklı amaçlarla ve nedenlerledir\nD. Değişen yakınlıkta ve dostçadır\nE. Şimdi ya da araç nedeniyle gecikmiştir\n\n1. Sorunun Yanıtı: D\n\n2. Soru\n\nAşağıdakilerden hangisi bireylerarası ilişkileri başlatma ve kurma sürecinde gösterilen onaylamama göstergelerinden biri değildir?\n\nA. Yanıt vermeme\nB. Olumsuz nitelikte yanıt verme\nC. Görmezlikten gelme\nD. Dinlememe\nE. Şikayet etme\n\n2. Sorunun Yanıtı: E\n\n3. Soru\n\nAşağıdakilerden hangisi bireylerarası iletişim sürecindeki yakınlaşmanın sonuçlarıyla ilgili değildir?\n\nA. Paylaşımın sağlanması\nB. İlişkinin yoğunlaştırılması\nC. Ortak kararlar alınması\nD. Belirsizlik kavramının azaltılması\nE. Tarafların birbirini daha iyi tanıması\n\n3. Sorunun Yanıtı: C\n\n4. Soru\n\nAşağıdakilerden hangisi gürültü tiplerinden değildir?\n\nA. Fizyolojik gürültü\nB. Anlamsal gürültü\nC. Fiziksel gürültü\nD. Psikolojik gürültü\nE. Mekânsal gürültü\n\n4. Sorunun Yanıtı: E\n\n5. Soru\n\nBir insanın belli bir yönde eyleme geçebilmesi için gerekli ön koşulu ifade eden kavram aşağıdakilerden hangisidir?\n\nA. Algı\nB. Bellek\nC. İçerik\nD. Motivasyon\nE. Bağlam\n\n5. Sorunun Yanıtı: A\n\n6. Soru\n\nBireylerarası iletişimin ilkeleri ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?\n\nA. İletişim sürecindeki unsurlar birbirine bağlıdır\nB. İletişim süreci kurallarla yönetilir\nC. İletişim geri alınamaz, tekrarlanamaz\nD. İletişim kültür tarafından belirlenmiştir\nE. İletişimin niyeti yorumlanmasından daha önemlidir\n\n6. Sorunun Yanıtı: E\n\n7. Soru\n\nAşağıdakilerden hangisi sözel iletişimle ilgili beceriyi ifade eden kavramlardan biri değildir?\n\nA. Yerine geçme\nB. Duyarlılık\nC. Somut olmak\nD. Tanımlayıcı olmak\nE. Açıklık\n\n7. Sorunun Yanıtı: A\n\n8. Soru\n\nAile hangi grup yapısını gösterir?\n\nA. Birincil grup\nB. İkincil grup\nC. Çalışma grubu\nD. Aracılı grup\nE. Resmî ikincil grup\n\n8. Sorunun Yanıtı: A\n\n9. Soru\n\nAşağıdakilerden hangisi grup iletişiminin dinamiği içinde yer almaz?\n\nA. Liderlik\nB. Kurallar\nC. Referans\nD. Durum\nE. Görev\n\n9. Sorunun Yanıtı: C\n\n10. Soru\n\nBireylerin yetenekleri ve niteliklerine göre biraraya geldikleri grup aşağıdakilerden hangisidir?\n\nA. Birincil grup\nB. İkincil grup\nC. Arkadaş grupları\nD. Çalışma grupları\nE. Referans grupları\n\n10. Sorunun Yanıtı: D",
+          "start": 4411.503,
+          "end": 4604.414,
+          "duration": 192.911,
+          "tts_parts": 1,
+          "chars": 3297
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,361 @@
+{
+  "course_title": "Bölüm 5: Örgütsel İletişim",
+  "schema_version": 2,
+  "audio_mode": "single",
+  "audio_file": "audio/ders.mp3",
+  "audio_codec": "MP3 128 kbps",
+  "sample_rate": 44100,
+  "audio_level": {
+    "inPeakDb": -0.36956889240492896,
+    "inRmsDb": -18.44746810137406,
+    "gainDb": -0.371,
+    "clipped": 0,
+    "perPart": true,
+    "gainMinDb": -0.63,
+    "gainMaxDb": -0.017,
+    "targetRmsDb": -10
+  },
+  "total_duration": 3877.184,
+  "tts_engine": "ElevenLabs · eleven_multilingual_v2",
+  "ai_disclosure": {
+    "level": "ai4",
+    "label": "Yüksek ÜYZ katkısı",
+    "text": "Yüksek ÜYZ katkısı (ai4)"
+  },
+  "tts": {
+    "engine": "elevenlabs",
+    "generated_at": "2026-09-21T10:46:50.394Z",
+    "max_chars_per_request": 10000,
+    "model": "eleven_multilingual_v2",
+    "voice": {
+      "id": "7VqWGAWwo2HMrylfKrcm",
+      "name": "Fatih Yıldırım - Deep, Clear and Rich",
+      "gender": "male",
+      "category": "professional"
+    },
+    "voice_settings": {
+      "speed": 0.97,
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0,
+      "use_speaker_boost": true,
+      "request_stitching": true
+    },
+    "pauses": {
+      "after_title_s": 0.8,
+      "between_paragraphs_s": 0.8,
+      "between_chunks_ms": 900,
+      "between_chapters_ms": 1200,
+      "between_parts_ms": 250,
+      "lead_in_ms": 400,
+      "tail_ms": 600
+    },
+    "text_rules": {
+      "numbers_to_words": true,
+      "fix_all_caps": true,
+      "abbreviations": true,
+      "spell_unknown_acronyms": true,
+      "builtin_list_edited": true,
+      "builtin_rule_count": 172,
+      "user_lexicon_rule_count": 1,
+      "user_lexicon": "@ = et"
+    },
+    "audio": {
+      "codec": "MP3 128 kbps",
+      "sample_rate": 44100,
+      "gain_mode": "auto",
+      "gain_per_part": true,
+      "target_rms_dbfs": -10,
+      "gain_applied_db": -0.371,
+      "gain_min_db": -0.63,
+      "gain_max_db": -0.017,
+      "input_peak_dbfs": -0.37,
+      "input_rms_dbfs": -18.447,
+      "limiter_hits": 0,
+      "ramp_in_ms": 20,
+      "ramp_out_ms": 50
+    },
+    "manual_edited_chunks": null
+  },
+  "generated_at": "2026-09-21T10:46:50.394Z",
+  "chapters": [
+    {
+      "id": 1,
+      "title": "GİRİŞ",
+      "start": 0.4,
+      "end": 218.807,
+      "chunks": [
+        {
+          "id": "c001",
+          "title": "GİRİŞ",
+          "text": "Bir örgüt için iletişim temeldir. Bilgi yönünden zengin ve karmaşık bugünün toplumlarında, örgütsel mükemmellik için etkili iletişim anahtar bir kavram olarak karşımıza çıkmaktadır. Örgütteki hem teknik hem de insani iletişim sistemleri giderek artan karmaşık problemleri yaratıcı bir şekilde çözmekle sorumludur. Örgütsel mükemmellikte iletişimin anahtar kavram olarak görülmesi yeni değildir. Hem geçmişteki endüstri toplumunda hem de bugünün enformasyon ve bilgi toplumu için örgütsel iletişimin merkezî rolü ile ilgili geniş bir mutabakat vardır.\n\nArtan ekonomik baskılar, küreselleşme, hızla çeşitlenen çalışan ve müşteri tabanları, örgütler ve çalışanlar arasındaki yeni ilişkiler ve bütün örgütsel yaşamdaki karmaşıklık günümüz örgütlerinin öne çıkan sorunlarından bazılarıdır. Bu bağlamda insanlar iletişim ile ilgili araçları kullanarak yeni ve dinamik görevlerin performansı için büyük yoğunluktaki bilgiyi koordine etmek zorundadırlar. Bu süreçte “bilgi” yaşamsal bir kavram olmaktadır. Örneğin bir şirketteki planlamacıların bilimsel ve teknik gelişmeler, ekonomik ve toplumsal gidiş, tüketici davranışındaki değişiklik, nüfus yoğunluğu ve buna benzer konularda bilgiye; mali işlerle uğraşan bir çalışanın kazanç raporları, ekonomik tahminler, yatırım harcamaları gibi bilgilere; pazarlama yöneticilerinin yeni ürünler, toplumsal güçler, tüketici harcama örnekleri gibi bilgilere; bir halkla ilişkiler uzmanının medya tarafından algılanan şirketin pozisyonu, ilgili halk grupları, şirketle ilgili çevresel faaliyetler, hissedarlarla ilişkiler, özel girişimlerle ilgili halkın tutumu gibi bilgilere gereksinimi vardır. Bu örnekleri çoğaltmak olası. Ne ile ilgili olursa olsun bizim çok fazla bilgiye en kısa sürede ulaşmaya gereksinimimiz vardır.\n\nÖrgütsel mükemmellik için bilgi önemlidir. Bilgi yeterliliği örgütsel iletişim ortamını anlama yeteneğidir; bizim belirli bir alanda ne bilmemiz gerektiği ile ilgilidir. Bilgi yeterliliği örgütsel yaşama olan duyarlılığımızı desteklemede temeldir; becerilerimizin gelişmesine rehberlik eder ve çeşitli örgütsel ortamlardaki kişisel değerlerimizi, etik standartların kullanımını anlamamızda bize yardım eder. Örgütsel mükemmellikte bilgi yeterliliği ile birlikte ele alınan diğer kavramlar da duyarlılık, beceri ve değerler olarak karşımıza çıkmaktadır.\n\nDuyarlılık, örgütsel anlamları ve duyguları doğru olarak değerlendirebilmektir. Bu, bizim diğerlerinin yaptığını ve hissettiğini anlamak için istekliliğimiz ve yeteneğimiz ile ilişkilidir. Beceri, örgütsel durumları doğru olarak analiz etme ve örgütsel mesajları etkin bir biçimde paylaşma yeterliliğidir. Bu yeterlilik, analitik yeteneklerin geliştirilmesi üzerine odaklanır. Değerlerle ilgili yeterlilik ise etkili iletişim için kişisel sorumluluk almanın önemi ile ilgilidir. Bu bağlamda örgütsel iletişime katkı için kişisel sorumluluğun tartışılması ve örgütlerdeki yaygın etik ve değerlerle ilgili sorunların tanımlanması söz konusudur. Böylece örgütsel mükemmelliğe katkıda bulunulur.",
+          "start": 0.4,
+          "end": 218.807,
+          "duration": 218.407,
+          "tts_parts": 1,
+          "chars": 3104
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "ÖRGÜT İLE İLGİLİ TEMEL YAKLAŞIMLAR",
+      "start": 220.007,
+      "end": 1301.541,
+      "chunks": [
+        {
+          "id": "c002",
+          "title": "ÖRGÜT İLE İLGİLİ TEMEL YAKLAŞIMLAR",
+          "text": "Örgütler, insanların herhangi bir nedenle belli zaman ve yer bağlamı içinde birlikte yaşadığı belli üretim tarzı ve ilişkileriyle oluşturulmuş yapılardır (Erdoğan, iki bin iki). Örgütleri bir arada tutan iki temel faktör vardır: amaçlar ve yönetim. Örgütsel katılımlar değişik amaçları içerir. Bu nedenle örgütün amacını tanımlamak zorlaşabilir. Bazı insanlar örgütün toplumsal problemlerden sorumlu olması gerektiğini söylerken bazıları bunu reddederek bir örgütün temel düşüncesinin katılanların memnuniyeti, refah düzeyi ve entelektüel gelişimi üzerine olması gerektiğini söyler. Bir başka grup da temel düşüncenin sadece üretim üzerine kurulması gerektiğini savunur. Bu anlaşmazlıklar belirli bir örgütün gelişmesiyle ilgili alınacak kararlarda bazı problemlere neden olur. Amaçlarda belli bir anlaşmaya varmaksızın belli kararlar almak zorlaşır. Bu karmaşıklık, yöneticiler için de belli zorluklara neden olur. Düzenleme ve bütünleştirme daha zorlaşır. Bu durumda kontrol ve uygunluk temel problem hâline gelir. Değişik tipteki insanların değişik değerleri ve amaçları barındırması nedeniyle, katılıma teşvik etmek de artan oranda zorlaşır.\n\nÖrgütlerin büyüklüklerinin gün geçtikçe artması ile birlikte bazı problemler de ortaya çıkmaktadır. İnsanlar çoğu zaman örgütün diğer bölümlerinde ne olup bittiğini bilememektedirler. Örgüt ve onun amaçlarıyla ilgili daha az tanımlamalar yapabilmektedirler. Çoğu zaman amaçlarda birlikteliği sağlamak ve ortak bir zemin oluşturmak zorlaşmaktadır.\n\nBilim ve teknoloji örgütler için artan ölçüde önemli bir rol oynamaya başlamıştır. Farklı disiplinler insanın daha fazla üretken olmasını bilimsel ve teknik yollardan bulmaya çalışmaktadır. Bunların içinde karar verme modelleri, insan – makine sistemleri, zamanla ve harekete geçmeyle ilgili çalışmalar ve sınıflama testleri sayılabilir. Bütün bunlar da geliştirme, yerine getirme ve değerlendirme için çok becerikli profesyonelleri gerektirmektedir.\n\nÖrgütlerdeki bu genel görünümle ilgili durum bazı sorunları ve bu sorunların çözümüyle ilgili farklı yaklaşımları beraberinde getirmiştir. Her yaklaşım, sorunları kendi bakış açısıyla çözmeye çalışmıştır. Alanla ilgili literatürde önemli yere sahip temel yaklaşımlar aşağıdaki başlıklar altında açıklanabilir (Shockley – Zalabak, iki bin altı; Miller, iki bin altı; Goldhaber, bin dokuz yüz seksen altı; Zaremba, iki bin altı):",
+          "start": 220.007,
+          "end": 403.537,
+          "duration": 183.531,
+          "tts_parts": 1,
+          "chars": 2503
+        },
+        {
+          "id": "c003",
+          "title": "Klasik Yaklaşım",
+          "text": "Bu kuramın doğuşunu endüstrileşme sürecinin yaşandığı döneme kadar götürmek mümkündür. Bu sürecin içinde yer alan örgütler belli etkilenmelerden kendilerini korumak için yeni düzenlemelere girmişlerdir. Taylor, Fayol ve Weber bu yaklaşımın en ünlü kuramcılarıdır. Taylor bilimsel kuramcı, Fayol ve Weber de bürokratik kuramcılar olarak tanımlanmaktadır. Bilimsel kuramcılar örgütün gelişmesinin çalışanların etkinliği ile olacağını savunurken bürokratik kuramcılar da üretimin artmasının yönetimin kontrolü ile olacağını savunmaktadırlar. İkisinde de tek yönlü, yukarıdan aşağıya ve kişisel olmayan bir iletişim söz konusudur.\n\nBürokratik model klasik yaklaşıma temel oluşturacak ilkeler ortaya koyar. Bu yapısal ilkeler birçok önemli noktayı ifade eder. Öncelikle iş; hoş, memnuniyet verici bir şekilde düzenlenmek zorunda değildir. Duygusal olmadan etkili bir biçimde düzenlenmeli ve ilgililerle çatışma çok az olmalıdır. İkinci olarak her şey açık olarak ifade edilmelidir. Pozisyonlar açık, net bir şekilde tanımlanmalıdır. Buradan görülmektedir ki örgütün yapısal ve yönetimsel durumuna insanın yaşamı ve işiyle ilgili durumdan daha fazla önem verilmektedir. Bu ilkeleri aşağıdaki gibi özetleyebiliriz: Kurallar ve düzenlemeler açıktır. Bunların buyurulmaya ve devamlılığa gereksinimi vardır.\n\nBelirli yetki alanları olmalıdır. İnsanlar iyi tanımlanmış işlere ve bu işleri aktaracakları bir otoriteye sahip olmalıdırlar. ; Otoritenin kaynağı teknik eğitim, yeterlilik ve uzmanlıktır. ; Yönetici sınıfa üyelikle üretim araçlarına sahipliğin birbirinden ayrılması gerekmektedir. Bunun nedeni alınan kararlarda daha mantıklı ve objektif olma zorunluluğudur. ; Hiyerarşik ilkeye göre her düzeydeki çalışanlar daha üst düzeyde çalışanların doğrudan kontrolü ve denetimi altındadır. ; Hareketler, kararlar ve kurallar yazılı olarak kayıt ve muhafaza edilir. Bürokratik modelin temelinde otorite kavramı ve yasal kontrol söz konusudur. Örgüt içindeki pozisyonlar bunlara bağlı doğrular ve sorumluluklar oluşturur. Weber geleneksel, karizmatik ve bürokratik olmak üzere üç türlü otoriteden bahseder. Geleneksel otorite, bir güç tarafından temsil edilir. Bu bir pozisyonu gösterir. Karizmatik otorite kişisel etkililikle ilgilidir. Liderin kişiliği diğerlerinin onu izlemesini sağlar. Bürokratik otorite ise o kişinin uzmanlığı ve yasal olarak onaylanmış nitelikleri sonucu oluşur.\n\nWeber’in ileri sürdükleri, örgütler için ideal bir tipin oluşmasıyla ilgilidir. Fayol ise bu ideal tipi oluşturmak yerine başarılı bir örgütün görünüşünü tanımlamaya çalışmıştır. Fayol, yönetici ile ilgili beş, yönetim ile ilgili on dört temel ilke belirlemiştir. Planlama; Düzenleme; Emretme; Koordinasyonu Sağlama ve Kontrol yönetici ile ilgili ilkelerdir. Görev Bölümü; Yetki ve Sorumluluk; Disiplin; Emir Kumanda Birimi; Yönetim Birimi; Bireysel İlgilerin Genel İlgilere İtaati; Personelin Ödüllendirilmesi; Merkezîleşme; Emir – Kumanda Zinciri; Düzen; Adalet; Personelin Haklarının Korunması; Kişisel Teşebbüs ve Birlik Duygusu ise yönetimle ilgili ilkelerin ana başlıklarıdır. Weber de bu ilkelerin önemine değinmiştir ancak aynı zamanda yeni şeylerin varlığına da dikkat çekmiştir.\n\nTaylor ise yönetim ve yönetimden olmayan çalışanların ilgilerinin belli ilkeler çerçevesinde bir araya gelebileceğinden bahseder. Taylor’a göre insanların işlerini doğru olarak yapmaları için iyi bir yol vardır. Yoğun bir çalışma ile insanlar neleri yapıp neleri yapamayacaklarının ayırdına varacaklardır. Eğer bazı tanımlamalar doğru yapılırsa iş her durumda belli bir standartta yapılacaktır. Taylor, işin bilimsel olarak analiz edilmesini söyler. Zamanlama ve doğru hareket etme, işi yapmada önemli faktörler olacaktır. Bunun yanında seçme, sınıflama, yerleştirme ve eğitim sürecinde belli standartları tutturma bazı şeyleri daha kolaylaştıracaktır. Bir bütün olarak, insan - makine - sistem ilişkisinin iyi çözümlenmesi gereklidir.\n\nÖzetle iş bölümü, hiyerarşik ve fonksiyonel süreç, yasal güç ve otorite, standartlaşma, açık ve net kurallar ve prosedür klasik yaklaşımda önem kazanan kavramlardır.",
+          "start": 404.437,
+          "end": 717.024,
+          "duration": 312.587,
+          "tts_parts": 1,
+          "chars": 4223
+        },
+        {
+          "id": "c004",
+          "title": "İnsan İlişkileri Yaklaşımı",
+          "text": "Bu yaklaşımı bin dokuz yüz yirmili yılların sonu ve bin dokuz yüz otuzlu yılların başına kadar indirebiliriz. Özellikle Amerika Birleşik Devletleri’nde bunalımlı dönemin başlamasıyla birlikte gelişen memnuniyetsizlik makinalaşma ve fazlaca standartlaştırılmış bazı değişmeleri de beraberinde getirdi. Yönetim bilimi, yönetimsel ve örgütsel davranış modellerinin etkinliğini oluşturmakla ilgili teknik bir disiplin olarak gelişti. Niceliksel teknikler karar vericilerin daha etkili olmalarına yardım etmek için geliştirildi. Karmaşık sorunların çözümü için matematiksel ve teknik çözümler üzerine vurgulamalar yapıldı. Çalışanın memnuniyeti aracılığı ile üretimin temel alındığı bu yaklaşımda Elton Mayo, alanda çalışma yapanların başında gelir.\n\nYapılan çalışmaları aşağıdaki gibi özetleyebiliriz: Bir örgüt, insan – makine ilişkisinden çok daha fazla şeyi ifade etmektedir. İnsanlar sahip olduğu özellikleri ile bir örgütün oluşmasına katkıda bulunurlar. ; Üretim düzeyi, yönetim tarafından oluşturulmuş bazı normlardan daha çok gruplar tarafından oluşturulmuş bazı norm ve standartlar tarafından belirlenir. ; Çalışanlar her zaman yalnız hareket etmezler. Gerçekte kararları gruplar alır ve bu gruplar ve diğer alt gruplar biçimsel örgütün bir parçası olarak tanımlanabilirler. ; Birçok durumda ekonomik olmayan ödüller ekonomik olanlar kadar önemlidir. ; Araştırma yöntemleri iş çevresi ile ilgili çalışmalarda kullanılabilir. Toplumbilimciler örgüt içindeki çalışanların davranışlarını anlamakta önemli katkılarda bulunabilir.\n\nBu yaklaşımda biçimsel olduğu kadar biçimsel olmayan bir yapı da söz konusudur. İnsanlar diğerleriyle biçimsel olarak belirtilmeyen yollarla da iletişim kurabilirler. Yatay ilişkiler dikey ilişkiler kadar önemlidir.\n\nÖzetle, insan ilişkileri yaklaşımı dikkati daha çok çalışan bireyler üzerine çekmiştir. Onların iş durumuna ve çevredeki insanlara gösterdikleri tepkiler, bir grup içinde çalışmanın biçimsel görünüşü kadar önemlidir. Bu yaklaşıma göre insanlar ait olma, hoşlanılma ve saygı duyulma gibi bir dizi gereksinime sahiptir. Bireysel olarak tanınma ve örgüt içinde faydalı bir unsur olarak bilinme gereksinimi insanlara yüksek moral veriri. Karar sürecine katılma da insanlar için bir diğer önemli konudur.",
+          "start": 717.924,
+          "end": 890.449,
+          "duration": 172.524,
+          "tts_parts": 1,
+          "chars": 2365
+        },
+        {
+          "id": "c005",
+          "title": "İnsan Kaynakları Yaklaşımı",
+          "text": "bin dokuz yüz altmışlarda İnsan Kaynakları Yaklaşımı yavaş yavaş İnsan İlişkileri Yaklaşımı’nın yerini aldı. Bu görüşü savunanlara göre, eğer astlara uygun koşullar sağlanıp örgütsel amaçların gerçekleşmesinde tüm yeteneklerini koyabilecekleri bir çevre yaratılırsa verimli çalışabileceklerdir. Bazen çok yakın yönetici ve ödüller pek işe yaramamaktadır. Ayrıca yönetici rutin kararlara astın katılmasını teşvik etmekten çok önemli durumlarda onu devreye sokmalıdır. Astın kendini yönetme ve kontrol etme yeteneği kendisini geliştirmesi yönünde genişletilmelidir.\n\nMaslow, McGregor, Likert, Black ve Mouton bu yaklaşım için önemli görüşler belirtmişlerdir. Maslow insanın gereksinimleri ile ilgili hiyerarşik bir yapıdan söz eder. Bu hiyerarşik yapı Fiziksel Gereksinimler, Güvenlik Gereksinimi, Kabul Görme Gereksinimi, Onaylanma - Takdir Edilme Gereksinimi ve Kendini Gerçekleştirme Gereksinimi olarak sıralanır. McGregor da X ve Y olarak adlandırdığı iki yaklaşımdan söz eder. X yaklaşımını benimseyen yöneticilere göre birçok insan çalışmaktan hoşlanmaz ve mümkün olduğu kadar ondan kaçar. Sıradan insan yönetilmeyi tercih eder, sorumluluktan kaçmayı arzular. Çok az hırsa sahiptir ve güvenlik ister. Bu nedenlerden dolayı örgütsel amaçlar için çalışması güçtür. Bunun sonucu olarak da yöneticiler bazı davranışları benimserler: Aşağıdan yukarıya iletişim sınırlıdır; Karar verme örgütün tepesindeki birkaç insanın elindedir; Çalışanlar arasındaki etkileşim korku ve güvensizliğe dayalıdır; Bilgilendirici mesajlar sınırlıdır; karar vermede sınırlılık vardır; Moral ve üretim düşüktür. Y yaklaşımında ise insanların motive edilmeleri önem kazanır. Bu yaklaşımı benimseyen yöneticilere göre insanlar örgütsel amaçlara bağlı olarak hareket ederler. Kendi kendilerini kontrol edebilir, yönetebilirler. İnsanlar sorumluluklarını öğrenir ve onlardan kaçmazlar; yaratıcı ve marifetlidirler. Böyle bir ortamda mesajlar örgüt içinde aşağıdan yukarı, yukarıdan aşağı ve yatay olarak dolaşır; Karar vermede örgütteki her düzeydeki insandan fikir alınır; güvene dayalı bir atmosfer söz konusudur.\n\nLikert düşüncelerini dört aşamada açıklar. Sistem bir, Sistem iki, Sistem üç ve Sistem dört olarak adlandırdığı bu aşamalar McGregor’un X ve Y yaklaşımının bir başka görünümdür. Sistem birde McGregor’un X yaklaşımına yakın bir görünüm söz konusuyken Sistem dörte gelindiğinde artık Y yaklaşımının özellikleri görülür. Sistem bir: Yukarıdan aşağıya iletişim söz konusudur; Sistem iki: Aşağıdan yukarıya iletişim olmakla beraber bu genellikle yöneticinin istediği ya da duymaya ihtiyacı olan şeylerdir; Sistem üç: Sistem ikiye yakın olmakla beraber karar verme süreci değişiklik gösterir; Sistem dört: Yukarıdan aşağıya iletişim tartışıldığı ölçüde kabul edilir, daha çok etkileşim vardır. Blake ve Mouton da yöneticinin insanlara ve üretime yaklaşımını derecelendirerek karar verme süreci, güven oluşturma, iletişimde geribildirim ve bütünleşme gibi kavramlar üzerinde dururlar.",
+          "start": 891.349,
+          "end": 1116.722,
+          "duration": 225.373,
+          "tts_parts": 1,
+          "chars": 3066
+        },
+        {
+          "id": "c006",
+          "title": "Sistem Yaklaşımı",
+          "text": "Bir örgüt birbiriyle bağlantılı birçok alt sistemden oluşmuştur. Bir parçada olan bir şey hem diğerlerini hem de sistemin kendisini etkiler. Bu yaklaşıma göre iletişim bir yapıştırıcı gibidir ve örgütü bir arada tutar. İletişim aynı zamanda örgütün çevresiyle etkileşiminde de önemlidir. Sistem yaklaşımına göre örgütler açık sistemlerdir ve açık sistemler dinamik, esnek ve çevresindeki değişimlere yanıt verici niteliktedir. bin dokuz yüz altmış altıda başlayan Katz ve Khan’ın yaptığı çalışmalar, bin dokuz yüz altmış yedide Thompson’ın ve yine bin dokuz yüz yetmiş yedide Farace, Monge ve Russels’in yaptığı çalışmalar alanla ilgili önemli görüşler sunmuştur.\n\nSistem yaklaşımının temel ilkeleri aşağıdaki gibi özetlenebilir: Bir sistem birbiriyle ilişkili parçalardan meydana gelir. ; Bütün, sadece parçaların özeti değildir. Sistem kendi kendine bir bütün olarak açıklanabilir. ; Sistemler iki açıdan ele alınır: a. Açık Sistem b. Kapalı Sistem. ; Açık sistem bir dönüşüm modeli olarak görülebilir. Eşitli girdiler olur. Bu girdiler bazı aşamalardan sonra çıktılar olarak gönderilir. ; Kapalı sistemler içine girilmesi ve anlaşılması zor sınırları barındırırken açık sistemler kendisi ve çevresi arasında daha kolay tanımlanan geçirgen sınırlara sahiptir. ; Kapalı sistemler belirsizliği daha çok barındırırlar. Açık sistemlerde bu belirsizlik durdurulabilir. ; Açık sistemlerde geri bildirim büyük önem kazanır. Geribildirim girdi olarak sisteme girer ve gelecek çıktılar ya da sürecin dönüşümünde değişmeye izin verir. ; Sistemdeki parçalar arasında hiyerarşik bir düzen vardır.",
+          "start": 1117.622,
+          "end": 1239.666,
+          "duration": 122.044,
+          "tts_parts": 1,
+          "chars": 1644
+        },
+        {
+          "id": "c007",
+          "title": "Olasılık Yaklaşımı",
+          "text": "Bu yaklaşım karmaşık örgütler için geçerlidir ve iletişim hem üretimde hem de çalışanların memnuniyeti için önem kazanmaktadır. Bu yaklaşıma göre bütün durumlar için geçerli belli bir liderlik tipi ve örgütsel yapı söz konusu değildir. En iyi olan birden fazla yöntem olabilir. Örneğin herhangi bir durumda en iyi liderlik tipini seçmek için üç değişken önem kazanır: Nasıl tip liderden hoşlanılır? Liderin gücü nedir? Görev nasıl tanımlanır? Eğer bir yöneticiden hoşlanılmıyor ama büyük bir güce sahipse ve görev çok iyi tanımlanmışsa muhtemelen görevle ilgili yaklaşım kullanıldığında daha etkili olunacaktır. Aynı şey tersi için de geçerli olabilir. Değişkenlerin göz önüne alınıp ona göre bir liderlik tipi oluşturulması gerekmektedir. Olasılık yaklaşımında iletişim biçimi duruma göre değişebilir.",
+          "start": 1240.566,
+          "end": 1301.541,
+          "duration": 60.976,
+          "tts_parts": 1,
+          "chars": 846
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "ÖRGÜTSEL İLETİŞİM SÜRECİ",
+      "start": 1302.741,
+      "end": 2262.928,
+      "chunks": [
+        {
+          "id": "c008",
+          "title": "ÖRGÜTSEL İLETİŞİM SÜRECİ",
+          "text": "Hangi örgütsel ortamda olursak olalım kendimizi bir iletişim süreci içinde buluruz. Bu, farklı yaklaşımlarda değişik görünümler kazansa da iletişimin temel özellikleri açısından değerlendirmek gerekmektedir. Goldhaber’in örgütsel iletişim ile ilgili yaptığı “Örgütün yaşaması için gerekli olan kan” “Örgütü birbirine birleştiren yapıştırıcı” “Örgüt fonksiyonlarını yumuşatan yağ” ve “Sistemi birbirine bağlayan ip” benzetmeleri konuyu çok iyi özetlemektedir.\n\nGörselde farklı renklerdeki yapboz parçaları üzerinde duran insan figürleri yer almaktadır. Düzenleme, örgütte farklı bireylerin ve görevlerin birbirine bağlanarak bir bütün oluşturmasını simgelemektedir.\n\nÖrgütsel iletişim, çevresel belirsizliğin üstesinden gelmek için birbirleriyle bağlantılı ilişkiler ağı içindeki mesajların yaratılması ve değiş tokuş sürecidir (Goldhaber, bin dokuz yüz seksen altı). Bu tanım yedi anahtar kavramı içerir: süreç, mesaj, iletişim ağı, karşılıklı bağlılık, ilişki, çevre ve belirsizlik.\n\nSüreç Bir örgüt, üyeleri arasında ve üyeleri ve çevre arasında mesajların değiş – tokuşu ve yaratımı olan dinamik bir açık sistemdir. Bir süreç vardır çünkü mesajların yaratımı ve değiş – tokuşu hareketlilik, değişme ve devamlılık arz eder.\n\nMesaj Bir örgüt içinde mesaj dolaşımının genel nedenleri örgütteki belli durumlarla ilgili üretimler, servisler ve etkinlikleri içeren görev; örgütün ayakta kalması ve kendi kendisini idame ettirmesi için devamlılık ve örgütteki insanların tutumları, moralleri, memnuniyetleri ile ilgilidir. Burada önemli olan mesajların nasıl dağıtıldığıdır. Örgütsel iletişimde dağılma yöntemi iki genel kategoride toplanabilir: İlkini yerine getirebilmek için elektriksel ve mekanik güce gereksinim vardır. Diğer kategori ise bizim kişisel yeteneklerimize ve becerilerimize bağlıdır; özellikle düşünme, yazma, konuşma ve dinlemeye. Mesajların kullanımı hem örgüt hem de örgüt dışında olabilir. Dışarıyla ilgili mesajlar örgütü çevresine ve halka bağlayarak açık bir sistemin gereksinimine karşılık verir. Bir örgüt içinde dört belirli mesaj fonksiyonundan bahsetmek mümkündür: bilgi vermek, düzenlemek, ikna etmek, birleştirmek. Bilgilendirici ve ikna edici mesajlar görevle ilgili mesajlara benzer fonksiyona sahiptir. Düzenleyici fonksiyonlar devamla ilgili mesajlara yakındır. Bunun dışında bir de yenilikçi mesajlardan söz edilebilir: Örneğin yeni planlar, yeni etkinlikler, yeni programlar ya da problem çözümü ve planlamadaki yönlendirmeler tipik yenilikçi mesajlardır. ; İletişim Ağı Örgütteki insanlar belirli bir pozisyon ve roldedir. Bu insanlar arasında mesajın yaratımı ve değişimi iletişim ağı dediğimiz bir dizi yolu gerektirir. Bir iletişim ağı yalnızca iki insanı, az sayıda insanı ya da bütün bir örgütü içerebilir. İletişim ağının etkinlik alanını ve doğasını rol ilişkileri, mesajların akış yönü, mesaj akışının doğal yapısı gibi faktörler etkileyebilir. İletişim ağının dağılımı geleneksel olarak üç kısma ayrılır. Yukarıdan aşağıya, aşağıdan yukarıya ve yatay iletişim. Yukarıdan aşağıya iletişim üstlerden astlara doğru bir mesaj dolaşımıdır. Görev ve devamlılıkla ilgili birçok mesaj emirler, yönergeler ve sorularla ilgilidir. Aşağıdan yukarı iletişim de astlardan üstlere doğru mesaj dolaşımına karşılık gelir. Genellikle soru sorma, geri bildirim ve öneriler yapmak söz konusudur. Aşağıdan yukarıya iletişimin genellikle çalışanın tutumunu, moralini yükseltmek gibi bir etkisi vardır. Bu tür mesajlar genellikle bütünleyici ve insancıl olarak tanımlanır. Yatay iletişim aynı örgütsel düzeydeki insanlar arasında mesajın yatay olarak dağılımıdır. Yatay olarak iletilen mesajlar genel olarak problem çözme, düzenleme, çatışmaların çözümü ve söylentilerle ilgilidir. Bir örgütte iletişimi geliştirmek ve bilginin sağlıklı bir biçimde dağılımı için aşağıdan yukarı, yukarıdan aşağı ve yatay olmak üzere bütün iletişim yönlerinin kullanılması gereklidir. Bu yollarla insanlar örgütte ne olup bittiğini, niçin olduğunu öğrenirler ve böylece uyum sağlama yolları kolaylaşır. Bilgi örgüt içinde farklı yöntemlerle dağılır. Bunlardan bir tanesi yüz yüze iletişimdir. Kısa bilgi verici toplantılar, büyük grup toplantıları, görüşmeler, gidip görmeler, danışma kurulları, komisyonlar, toplu görüşme kurulları, işe alma programları ve dedikodu bu çerçevede değerlendirilebilir. Bilginin iki yönlü olarak dağılmasına olanak sağlanır. Yazılı iletişim belli bir istisnanın dışında tek yönlüdür. Cevap sistemleri, panolar, raporlar, notlar, gazeteler, el kitapları, bültenler, anketler, mektuplar, e-postalar gibi yöntemleri içerir. ; Karşılıklı Bağlılık Örgüt bütün alt parçaların bütünle ve onun da çevresiyle ilişkide olduğu bir açık sistemdir. Bu ilişkiye karşılıklı bağlılık denir. Sistemdeki bütün parçalar bir alt sistemdir ve birbirini etkiler. Sistemdeki parçalardan birinin değişmesi diğer parçaları da etkileyecektir. ; İlişki Bir örgütte mesajların dolaşımını sağlayan ağ insanlarla bağlantılıdır. Bunun için de örgütteki insan ilişkilerinde belli sınıflamalar yapmak gerekir: bireysel, grup, örgütsel. Bir başka sınıflama da dört grubu içerir: ikili iletişim, seri iletişim, küçük grup iletişimi, örgüt iletişimi. İkili iletişimde iki insanın karşılıklı etkileşimi söz konusudur. Seri iletişimde mesaj A’dan B’ye, B’den C’ye, C’den D’ye ve D’den de E’ye devam eden bir dolaşım izler. Küçük grup iletişiminde üç kişiden on iki kişiye ulaşan bir grup söz konusudur. Örgüt ya da geniş dinleyici kitlesi ile ilgili iletişim de daha fazla kişiyi içerir. ; Çevre Örgütün ve bireylerin karar verme süreçlerini etkileyen fiziksel ve toplumsal faktörlerin bütünü çevreyi içerir. Bunlar iç ve dış unsurlar olarak ele alınır. İç ile ilgili unsurlar personel, amaçlar, ürünler, servisler; dış ile ilgili unsurlar da müşteriler, diğer rakip firmalar, teknoloji gibi unsurlardır. Örgütlerin iç unsurlarını ele alırken değinilmesi gereken önemli kavram “örgüt kültürü” dür. Kültür bir örgütteki bireylerin paylaştığı beklenti ve inançlardır. Örgütsel başarı güçlü bir kültürün gelişmesiyle arttırılabilir. Eğer bir kültür güçlü bileşenlere sahipse bu, hem bireyin hem de örgütün performansını geliştirecektir. Güçlü bir kültür için dört anahtar kavram vardır: Değerler: Bir örgütün üyesi olmak, değerleri benimseyip uymakla mümkündür. Değerler örgütle ilgili inançları ve beklentileri içerir. ; Kahramanlar: Bir örgütün değerlerine örnek oluşturacak bireylerdir. Bunlar kurucular ya da başarılı yöneticiler olabilir; kendileriyle ilgili mitler ve öyküler aracılığı ile tanınırlar. Bu da diğer çalışanları güdüleyici bir durumdur. ; Tören ve ritüeller: Bir örgütün değerlerinin önemini vurgulamak ve bu anlamda devamlılığı sağlamak için gerçekleştirilirler.\n\nKültürel ağ: İletişim sistemi. Bu ağ hem örgütteki biçimsel hem de biçimsel olmayan kanallarla oluşturulur. Örgüt içindeki grupların ve bireylerin davranışını biçimlendiren kuralları öğreten kültür, içinde birçok unsurun olduğu karmaşık bir yapılanmayı da beraberinde getirir. Bu bağlamda farklı yapılanmalar içinde olan her örgüt kendi kimliğini oluşturarak bir diğerinden ayrılır. Bir örgüt onun dış çevresiyle karşılıklı etkileşimde olduğu için açık sistemdir. Örgütün dış çevresini birçok unsur oluşturur. Örgütün çevresindeki değişiklikler örgütü de etkiler. Bu değişim hem iç ile ilgili birimlerde mesajların yeniden üretimi – değişimi şeklinde hem de dışsal olarak çevreye uyum şeklinde olur. ; Belirsizlik Var olan bilgi ile gereksinim olan bilgi arasındaki fark olarak tanımlanan belirsizlik, az bilgiden doğacağı gibi örgütteki üyelerin çok fazla bilgi alma durumunda da olur. Örgütsel iletişimle ilgili temel kurallardan biri belirsizlikleri azaltmak için insanların ne kadar bilgiye gereksinimi olduğunu tanımlamaktır. Bir örgüt çevresine bilgi vererek ya da bilgi alarak tepki vermektedir. Bazı durumlarda örgütler çevrelerine hükmetmek için bilgiyi kendi gereksinimleri doğrultusunda kullanacak ve özümseyeceklerdir. Başka bir deyişle çevreyle ilişkilerinde kendi çıkarları doğrultusunda hareket edecek ve belirsizliği kaldırmaya çalışacaktır. Bu yedi anahtar kavramdan sonra bir iletişim sürecinde önemli olan bir diğer unsur da iletişimin yönüdür.",
+          "start": 1302.741,
+          "end": 1924.432,
+          "duration": 621.691,
+          "tts_parts": 1,
+          "chars": 8301
+        },
+        {
+          "id": "c009",
+          "title": "Örgütlerde Tek Yönlü - İki Yönlü İletişim",
+          "text": "Bir örgüt içindeki iletişimi anlayabilmek için “tek yönlü iletişim” ve “iki yönlü iletişim” kavramlarının iletişim sürecindeki rolünü bilmek gerekmektedir. Tek yönlü iletişimde mesaj göndericiden alıcıya gider ve orada kalır. Bu durumda alıcıdan herhangi bir yanıt gelmediğinden mesajın alınıp alınamadığı da bilinemez. İki yönlü iletişimde ise gönderici herhangi bir negatif durumda mesajını daha açık bir duruma getirme ve anlaşılmayı kolaylaştıracak eklemeler yapma şansına sahiptir. Burada görülen geribildirim mesajın istenilen biçimde alınıp alınmadığı konusunda bilgi verir. Büyük ve biçimsel örgütlerde yöneticiler yetersiz görünme korkusuyla geribildirim mekanizmasını kullanmakta isteksiz görünebilirler. Bazı insanlar için de soru sormak ve bazı şeylerden emin olmak için kontrol etmek zayıflık ya da cahilliğin işareti olabilir.\n\nBir örgüt için hem tek yönlü hem de iki yönlü iletişim kendi avantaj ve dezavantajlarına sahiptir. Bu bağlamda ikisinin de genel özellikleri aşağıdaki gibi sıralanabilir: Tek yönlü iletişim ile ilgili özellikler: İtaatkâr bir yapı gösterirler çünkü göndericiye soru sorulmaz. ; Gönderici için daha fazla prestij ve otorite sağlanır. ; Gönderici kendini güvende ve saldırıdan uzakta hisseder. ; Hızlıdır. ; Bilgi hakkında az güven vardır. ; Alıcılara bir engel söz konusudur. İki yönlü iletişim ile ilgili özellikler: Gerçekliği tek yönlü iletişimden daha fazladır. ; Yüksek güven duygusu verir. ; Yüksek moral verir. ; Gönderici üzerinde bir baskı vardır. ; Göndericinin prestijini aşağı çekebilir. ; Zaman tüketimi söz konusu olabilir.",
+          "start": 1925.332,
+          "end": 2052.345,
+          "duration": 127.013,
+          "tts_parts": 1,
+          "chars": 1658
+        },
+        {
+          "id": "c010",
+          "title": "Bir Örgütteki İletişim ile İlgili Özellikler",
+          "text": "Her iletişim düzeyinin olduğu gibi örgütsel iletişimin de kendine has farklılıkları vardır. Bunları bilmek örgütsel iletişimi anlamak açısından da önemlidir. Bu farklılıklar ve özellikler aşağıdaki gibi ifade edilebilir.",
+          "start": 2053.245,
+          "end": 2073.725,
+          "duration": 20.48,
+          "tts_parts": 1,
+          "chars": 290
+        },
+        {
+          "id": "c011",
+          "title": "İletişim Kural Temellidir",
+          "text": "İletişim etkinliklerindeki davranışlar alışkanlık hâline gelir ve belli bir düzene girerse bunun sonucu belli “kurallar” oluşur. İletişim kuralları çok fonksiyoneldir. Genelde düzenleme, değerlendirme, doğruluğunu kanıtlama ve önceden haber verme gibi fonksiyonları içerir. Bir örgütte “ne yapmamız” ve “ne yapmamamız” gereken şeyleri tanımlar. Eğer bu kurallar bir örgütte yoğun olarak kullanılırsa “iletişim politikaları” ndan bahsedilir.\n\nBir örgütte iletişimin doğası ile ilgili dört çeşit kuraldan söz edilir: Hiyerarşik Kurallar: Bir örgütün tepesinden diğer düzeylere iletilecek politikaları, ilkeleri içerir. Bu kurallar yöneticiler tarafından oluşturulur ve diğer düzeylere iletilme ve yorumlama sürecinde bazı değişikliklere uğrayabilir. ; Görev ile İlgili Kurallar: Bunlar uzmanlar tarafından oluşturulmuş, görevlerin yerine getirilmesine rehberlik eden ve çoğunlukla çalışanlara eğitim dönemlerinde gösterilen kurallardır. Çalışanların işlerini öğrenmesine olanak sağlar. ; Çalışma Grubu Kuralları: Dayanışma, birbirine bağlılığı oluşturmak, örgüt içinde hiyerarşi ve itaatin sınırlarını belirlemek ve güçlenmek için çalışanların birbirleri ile etkileşime girmeleri sonucu oluşur. ; Bireysel Kurallar: Bireylerin örgüt dışından getirdikleri kurallardır. Bireyin örgüt dışından getirdiği kurallar eğer örgüt kuralları ile çatışırsa bu değişik yöntemlerle düzeltilmeye ve devam ettiği sürece de bireyi soyutlamaya gidecektir.",
+          "start": 2074.625,
+          "end": 2186.406,
+          "duration": 111.781,
+          "tts_parts": 1,
+          "chars": 1506
+        },
+        {
+          "id": "c012",
+          "title": "İletişim Kişiseldir",
+          "text": "Bir örgüt içindeki bireyler farklı kültür ve aile tiplerinden geldiklerinden dolayı algılamalarda da farklılıklar olacaktır. Algılama bizim çevreden aldığımız duygusal verileri alma ve oluşturma sürecidir. Bu süreçte bireysel gereksinimler, değerlerimiz, duygularımız, fiziki koşullarımız ve geçmişteki deneyimlerimiz etkili olacağından iletişim kişisel bir özellik kazanabilir. Bir örgütte daha iyi bir iletişim için bu algısal farklılıkları göz ardı etmemek ve mesajların açık ve basit bir dilde olması önem kazanır. Aksi durumda çatışmaların olması kaçınılmazdır.",
+          "start": 2187.306,
+          "end": 2234.814,
+          "duration": 47.508,
+          "tts_parts": 1,
+          "chars": 611
+        },
+        {
+          "id": "c013",
+          "title": "İletişim Seridir",
+          "text": "Her türlü insan iletişiminde olduğu gibi örgütlerde de iletişim seridir. Mesajın ulaşmasında ve yanıtlanmasında bir sırayı içerir. Bu süreçte iletişimdeki kişisel ve aktarımsal doğadan dolayı farklı algılamalar ya da anlamalar oluşacaktır. Mesajın dağılması esnasında kanalların fazlalığı bozulma olasılığını da beraberinde getirecektir.",
+          "start": 2235.714,
+          "end": 2262.928,
+          "duration": 27.214,
+          "tts_parts": 1,
+          "chars": 379
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "ÖRGÜTSEL İKLİM",
+      "start": 2264.128,
+      "end": 2655.57,
+      "chunks": [
+        {
+          "id": "c014",
+          "title": "ÖRGÜTSEL İKLİM",
+          "text": "İletişim bir örgütsel iklim üzerinde biçimlenir. Yatay, aşağıdan yukarı, yukarıdan aşağı, biçimsel ya da biçimsel olmayan iletişim olsun bir örgüt içinde yer alan iletişimin tümü onun iklimini de oluşturacaktır. İklim örgüt üyeleri arasındaki ilişkilerin tümünün niteliğini ölçen bir barometre olarak düşünülebilir. Örgütsel iklimi anlamak için bireylerce yaşanan özgürlüğün miktarını çalışanlar ve pozisyonlar üzerinde etkili olan yapıyı bir örgütün ödülle ilgili eğilimini saygının, sıcaklığın ve desteğin miktarını gözlemlemek gerekir.\n\nÖrgütsel iklimden ayrı olarak düşünemeyeceğimiz örgüt kültürü daha önceki satırlarda da belirtildiği gibi bir örgütteki üyeler tarafından paylaşılan değer ve inançlardır. Eğer çalışanların görüşleri örgüt kültürüyle uyumlu ise iklim pozitif olacaktır. Eğer örgüt kültürü ve çalışanların görüşleri arasında geniş ayrılıklar varsa iklim negatif olacaktır. İklim genellikle kısa dönemlidir ve örgütün o an geçerli olan yönetimine bağlıdır. Buna karşılık kültür uzun dönemlidir. Değerler tarafından sıkı sıkıya oluşturulur ve değiştirmek oldukça zordur.\n\nÖrgütsel iletişimde destekleyici iklim önemlidir. Örgütün iklimi, etkili bir örgüt yaratmada iletişim becerilerinden ya da tekniklerinden daha önemlidir. Temel inanç şudur: Bir bireyin örgütle ilgili kavramsal ve duygusal algılamaları örgüt içindeki insan davranışlarını etkiler. Destekleyici iklimde yargıda bulunmama, bilgi için soru sorma (betimleme); karşılıklı problemin tanımlanması ve alıcının amaçlarını ve gelişmesini engellemeden çözüm yolları arama (problem oryantasyonu); hileden, aldatıcılıktan uzak kalmak, dürüst olmak (kendiliğindenlik); güç, statü ve görüntünün etkisi olmadan katılımı sağlamak (eşitlik); ön plana çıkarken savunmacı iklimde rastgele yargılama, ayıplama, standartları sorgulama (değerlendirme); diğerinin tutumu ve davranışını sorgulama (kontrol); diğerlerine hile yapma; diğerine karşı ilgisizlik; birçok konuda diğerlerine karşı üstün bir tutum içinde olmak (üstünlük); kesinlik öne çıkan özelliklerdendir.\n\nBir örgütsel iklimde ikili ilişkiler önemlidir. Bir örgüt bir binanın ötesinde içindeki ilişkilerle vardır. McCroskey örgütsel iletişimi “soğuk binalarda sıcak ilişkiler” olarak tanımlar (aktaran Goldhaber, bin dokuz yüz seksen altı). Konu ile ilgili yapılan araştırmalar ilişkideki ortakların algılanan özellikleri üzerinde odaklanır.\n\nGüven, etki, destekleme, karşılıklı etkileşim arzusu, ilişkinin yönü, doğruluk, açıklık, dürüstlük, güvenilirlik, anlama ve yetenek gibi kavramlar mesleki tatmin ve örgütsel yeterlilikte önem taşır. Başka bir deyişle örgütsel yaşamda ilişkilerin niteliği bu kavramlarla ilgilidir. Bunlar hem ast – üst ilişkisi için hem de aynı düzeyde çalışanlar için geçerlidir. Özellikle astların üstleri ile olan ilişkisinde güvenilirliğin ön planda olduğu görülmektedir. Ast – üst ilişkisinde üstlerin sahip olduğu özellikler örgüt içindeki iletişimin daha sağlıklı olmasını sağlamaktadır. Üstlerin iletişime karşı pozitif tutumları; dinleme yetenekleri; otoriter bir tavırdan çok istekli ve meraklı bir tavır içinde olmaları; çalışanların duygularına karşı duyarlılık; bilgiyi paylaşmaya isteklilik ikili ilişkilerde son derece önemli olmaktadır.\n\nToplumsal yaşamdaki ilişkilerimizde olduğu gibi örgüt içi ilişkilerde de dinleme önemlidir. Çoğu zaman dinleme ve duyma aynı şey olarak düşünülür. Oysa duyma sadece dinlemenin ilk aşamasıdır. Dinleme dört aşamalı bir süreçtir: Duyma, yorumlama, değerlendirme ve yanıt vermedir. Etkili bir dinleme için bu sıralama önemlidir. Örgütlerde ilişkilerde dinlemeye verilen önem iletişimde savunmacı yerine destekleyici bir iklim yaratacaktır. İyi bir dinleme dikkatin, ilginin ve motivasyonun bir karışımıdır.\n\nÖrgütlerde destekleyici bir iklimin oluşmasında ikili ilişkilerle birlikte grupların da işlevsel bir rolü vardır. Bir örgüt içindeki gruplar birbirleriyle karşılıklı bağımlılıklarının olduğu alt sistemlerdir. Gruplar örgütün amaçlarının gerçekleşmesine yardım ederler, bilgi dolaşımını hızlandırırlar ve belirli bireysel amaçlara hizmet ederler. Gruplar üyelerinin davranışlarını düzenleyen normlar tarafından özellik kazanır. Grup üyeleri ayrıca belli roller içindedir. En belirgin rollerden bir tanesi liderlik davranışı olarak yansır. Liderlik grupların etkililiğinde temel faktör olarak kabul edilir. Örgütlerde gruplar küçük grup ya da örgüt içi büyük grup olarak ayrılır. Grupların farklı işlevleri olabilir: Örgütlerde biçimsel olmayan iletişimin bel kemiği olan tesadüfi gruplar; öğrenme grupları; örgüt politikasını oluşturucu gruplar; çalışma grupları olarak da sınıflamak mümkündür. Küçük gruplar karar verici toplantılarda, uyum ve eğitim ile ilgili toplantılarda, düzenli bölüm toplantılarında, yönetici toplantılarında, problem çözücü toplantılarda ya da biçimsel olmayan toplantılarda; örgüt içi - büyük gruplar ise bütün bölüm başkanlarının düzenli toplantılarında, genel örgüt içi toplantılarda, çalışan toplantılarında, sosyal etkinliklerde ya da yöneticinin tüm çalışanlara verdiği partilerde biçimsel ya da biçimsel olmayan ortamlarda görülür.",
+          "start": 2264.128,
+          "end": 2655.57,
+          "duration": 391.442,
+          "tts_parts": 1,
+          "chars": 5254
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "ÖRGÜTSEL İLETİŞİM ORTAMINDA ÇATIŞMA, SÖZSÜZ İLETİŞİM VE HALKLA İLİŞKİLER",
+      "start": 2656.77,
+      "end": 3644.903,
+      "chunks": [
+        {
+          "id": "c015",
+          "title": "ÖRGÜTSEL İLETİŞİM ORTAMINDA ÇATIŞMA, SÖZSÜZ İLETİŞİM VE HALKLA İLİŞKİLER",
+          "text": "Örgütsel iletişim ortamında çatışma, sözsüz iletişim ve halkla ilişkiler kavramları oldukça önemlidir.",
+          "start": 2656.77,
+          "end": 2670.795,
+          "duration": 14.025,
+          "tts_parts": 1,
+          "chars": 200
+        },
+        {
+          "id": "c016",
+          "title": "Örgütsel İletişim Ortamında Çatışma",
+          "text": "Örgütsel yapılanmalarda çok yaygın olan çatışma uzun süre kötü bir şey olarak nitelendiyse de daha sonra birçok etkili, olumlu sonuca da yol açacağı konusunda görüş birliğine varıldı. Bir örgütte en çok “rol çatışmaları” ve “ast – üst ilişkilerinden doğan çatışma”ya rastlanır.\n\nÖrgüt içindeki çatışmalar değişik düzeylerde olabilir. Örneğin ast – üst çatışmasında üst astı denetlediği zaman ast bunu reddetme yoluna gidebilir çünkü kontrolün kendi özgürlüğünü elinden aldığını düşünür. Ayrıca uygun olmayan iletişim biçimi ya da değerlerle ilgili algılamalar da çatışmaya neden olabilir. Bu çatışmalar aynı hiyerarşik yapıdaki bölümler ya da çalışanlar arasında da bu söz konusudur. Bir örgütte gruplar biçimsel ya da biçimsel olmayarak bir araya geldiklerinde çatışmalar kaçınılmazdır. Çatışmalar değişik kişilik özelliklerinden, değişik yorumlardan, deneyimden ya da rekabetten meydana gelebileceği gibi kalıplaşmış düşünceler, aşırı genellemeler, değiştirme çabaları, kişilerin kendilerini ya da çevrelerini algılama kapasiteleri, gereksinimler, kültürel faktörler ya da mesajın niteliğinden de kaynaklanabilir.\n\nÖrgütlerde çatışma hem pozitif hem de negatif bir güç olarak görülebilir.",
+          "start": 2671.695,
+          "end": 2763.878,
+          "duration": 92.183,
+          "tts_parts": 1,
+          "chars": 1297
+        },
+        {
+          "id": "c017",
+          "title": "Pozitif Bir Güç Olarak Çatışma",
+          "text": "Çatışma, bir çözüme ulaşma gereksinimi ya da denenen yolları değiştirmek için bir neden olabilir. Böylece bir örgütteki olumlu bir değişmeye teşvik edebilir. Ayrıca karar verme sürecinde çatışmaya kasten girmek, böyle bir şeye olanak sağlamak faydalı olabilir. Öncelikle bir grup içinde bu fayda sağlar.\n\nÇatışmaya izin veren rekabet bazen faydalı olabilir. Aynı düzeydeki arkadaşları ile rekabet olan bir ortamda çalışanlar daha fazla güç harcama yolunda güdülenebilirler. Kısa bir zaman aralığında çok sayıda üretim yapmayı öncelikli amaç hâline getiren örgütler rekabetçi bir ortamdan yarar sağlayabilir.",
+          "start": 2764.778,
+          "end": 2814.005,
+          "duration": 49.226,
+          "tts_parts": 1,
+          "chars": 686
+        },
+        {
+          "id": "c018",
+          "title": "Negatif Bir Güç Olarak Çatışma",
+          "text": "Çatışma aynı zamanda çok ciddi olumsuzluklara neden olabilir. Çalışanın psikolojik durumunu olumsuz yönde etkileyebilir. Çatışmaya sebep olan düşüncelerin ortaya çıkması kızma, endişe ya da gerilmeye neden olabilir. Bu duygular çatışmanın önemli kişisel amaçları ve inançları tehdit ettiği zaman daha yoğun görülür. Uzun dönemli olarak düşünüldüğünde, çatışma durumları, güvenilir ve destekleyici ilişkilerin oluşmasını zora sokar.\n\nBir örgütteki çatışmaların düzenlenmesinde çeşitli çözüm yolları vardır: Yöneticiler otoritelerini kullanarak bir çözüme giderler ancak bu her zaman yeterli olmaz. En üst düzeydeki bir yöneticinin alt düzeylerde meydana gelen çatışmaların hepsini çözmesi gerçekçi değildir. Belli çatışmaları azaltmak için etkili olabilir. ; Çatışmalar görüşme ile çözülebilir. Taraflar bazı şeyler hakkında farklı düşünüyorlar ancak anlaşmaya da varmak istiyorlarsa bir görüşme düzenlenebilir. Taraflar kazanma kaybetme düşüncesi yerine her iki taraf için de kazanma olmasını hedeflerlerse görüşme, çatışmanın yapıcı bir çözüme ulaşmasını sağlayacaktır. Bunun için açık bir şekilde iletişimde bulunmak, karşılıklı amaçları ortaya çıkarmak, belli bir esnekliğe sahip olmak ve tehditten kaçınmak gerekmektedir. ; Diğer bir yaklaşım üçüncü taraf olayıdır. İkili görüşmelerin yanında tarafsız bir insan çatışmaların çözümü için yardımcı olabilir. Bunun için her iki tarafın da çatışmanın çözümü için harekete geçici unsurlara sahip olması yönünde karşılıklı motivasyonu sağlar. Eğer taraflar arasında o anki güçler eşit değilse belli bir güven oluşturmak ve açık bir iletişim sağlamak olanaklı değildir. Bu eşitliği sağlamak gerekir. Diyaloglarda açıklık sağlanmasına yardımcı olunmalıdır. Bunun için de üçüncü kişi bu açıklığın kurallarını koyabilir.",
+          "start": 2814.905,
+          "end": 2945.54,
+          "duration": 130.635,
+          "tts_parts": 1,
+          "chars": 1841
+        },
+        {
+          "id": "c019",
+          "title": "Örgütlerde Sözsüz İletişim",
+          "text": "Bir örgütte sözsüz iletişim alanları önem kazanır. Örgütsel şartlarda beş tip sözel olmayan mesajdan bahsedilebilir: vücut hareketleri, alan kullanımı, fiziksel özellikler, dil ve dokunma.\n\nVücut hareketleri: Duruş, jest, yüz ifadeleri ve göz hareketleri örgütsel iletişimde önemli rol oynar. Bunlar fiziksel ve duygusal tepkilerin kesiştiği sözsüz hareketlerdir. Ayrıca statü ve genel durumlarla ilgili de ipucu verirler. Örneğin daha yüksek statüde olanlar daha alt seviyede olanlara göre daha rahat bir duruş sergilerler.\n\nAlan kullanımı: Bir örgütte alan ile ilgili durumları güç, statü, pozisyon, sahiplik, kişisel bölge kavramları içinde değerlendirebiliriz. Alan, bir örgütte bireylerarası dinamikler içinde bir unsurdur. Bireyler alanları çeşitli faktörlere göre ayarlarlar. Bir örgüt içinde çok yakın durumlar sınırlıdır. Bu tür bir yakınlık bireyleri iş ilişkileri içinde rahatsız eder. Kişisel uzaklık, karşılıklı normal ölçülerde oturma ya da bir masa çevresinde ya da kahve – çay molalarındaki masalar etrafındaki uzaklığı içerir. Bu durum bir örgütte çok yaygındır. Sosyal uzaklık çoğunlukla örgütte çok yakından tanımadığımız ya da diğer örgütlerden kişilerle biçimsel, kişisel olmayan ortamlarda oluşur. Alan kullanımı hem doğrudan hem de ima yoluyla yapılabilir. Her iki durumda da duyarlı olmak, örgütteki bireylerin birbiriyle iletişimi kolaylaştırır.\n\nFiziksel özellikler: Örgütün imajına uyum sağlayacak fiziksel görünümle ilgili düzenlemeler bir örgüt için önemlidir. Bu doğrudan ya da dolaylı yoldan bireye iletilir. Başta giyim olmak üzere bu tür düzenlemeler statüde de kendini gösterir.\n\nDil: Bir şeyin nasıl söylendiği, konuşma dilinin sözel olmayan bir unsurudur. Kelimelerden bazılarına belirli vurgulamalar yapılarak mesaja değişik anlamlar yüklenebilir. Bu tür bir iletişim örgüt içindeki bir bireyle ve onun konumu ile ilgili önemli ipuçları verebilir.\n\nDokunma: Bir örgütte dokunma, sınırlı da olsa, önceden haber verici bir iletişim rolü oynar. Dokunma ile ilgili beş fonksiyon birçok örgütte görülür.\n\nFonksiyonel – profesyonel, mesleki bir amaçla kişisel olmayan bir dokunmadır (doktorun hastasını muayene etmesi); Toplumsal – nazik, toplumsal etkileşim içinde geleneksel olarak tanımlanmış bir dokunmadır (meslekten iki insanın tokalaşması); Sevgi gösterisi yakın kişisel alanı ihlal edici dokunmadır (birinin sırtına hafifçe vurmak); Mantıklı – hâkim, ast – üst ilişkisini pekiştirici bir dokunmadır (bir yöneticinin çalışanına sarılmakta kendini rahat hissetmesi); Mantıklı – belli bir amaç, bir insanın belirli bir çıkar için yaptığı dokunmadır (herkesin elini sıkma bazen de samimiyet gösterisi olarak onlara sarılma).\n\nBir örgütte alan kullanımı ve dokunma ile ilgili yazılı kurallar olması gerekmez. Daha rahat bir etkileşim için yazılı olmasa da belli kurallara uymak yarar sağlar. Bunlar belli zamanlarda esneklik kazanabilir hatta kültürden kültüre değişebilir.\n\nSözsüz iletişimle ilgili bir başka önemli konu da örgütlerdeki çevresel düzenlemelerdir. Örgütlerdeki çevresel düzenlemeler çalışanların örgüte karşı tepkilerini de önemli ölçüde etkiler. Örneğin kalabalık ve karanlık çalışma ortamlarının daha düşük iş tatminine sebep olduğu ve oda dışı molaları çok fazla artırdığı bilinen bir gerçektir. Ya da mobilyaların düzenlenmesi çalışanların birbiri ile etkileşimini de etkileyecektir. Bu, içinde bulunulan pozisyon, statü ve gücü de ilgilendiren bir durumdur. Birçok örgüt binası örgütün imajını pekiştirmek ya da arttırmak için düzenlenmiştir. Çalışanların rahatı, üretkenliği göz ardı edilmiştir. Bu da iş performansını etkileyici bir unsurdur.\n\nHiyerarşide üst sıralarda oldukça mekânsal olarak diğerlerinden ayrılma durumları da artacaktır. Odanın büyüklüğü örgütsel statüyü vurgulayan bir özelliktir. Odanın düzenlenişi, kullanılan mobilyalar hiyerarşik sıralama ile ilgili ipuçları verir. Statü ve güç örgütteki odaların düzenlenişinde açıkça görülebilir. Bu tür düzenlemeler çoğu zaman iletişim için engel olarak değerlendirilir.\n\nZaman kavramı da önemli diğer bir unsurdur ve sözsüz iletişim içinde değerlendirilir. Bir örgütte zamanın kullanımı çoğu zaman statü ile ilgilidir. Daha yüksek statüdekiler diğerlerini bekletebilirler. Bekleme zamanı, konuşma zamanı ve çalışma zamanı bir örgütteki kişinin gücünden ve pozisyonundan etkilenir. Statü tanımlamalarının yanında örgütsel zaman kullanımı ast ve üstün ilişkilerini de etkiler. Örneğin istenilen bir raporun geç verilmesi yöneticinin çalışanın yeterliliği konusunda algılamasını etkileyebilir. Dakiklik ve zaman yönetimi bir örgütteki önemli konulardan biridir.",
+          "start": 2946.44,
+          "end": 3310.297,
+          "duration": 363.857,
+          "tts_parts": 1,
+          "chars": 4860
+        },
+        {
+          "id": "c020",
+          "title": "Örgütlerde Halkla İlişkiler",
+          "text": "Örgütler iç iletişimsel ilişkilerini dış iletişimsel ilişkileriyle tamamladıkları ölçüde başarılı olurlar. Üretilen ürün ve hizmetlerin, dünya görüşü ve ideallerinin bir hedef kitlesi vardır. Bunlar ilişki içinde oldukları diğer örgütsel yapılar, halk ve örgüt içi çalışanlar olarak değerlendirilebilir (Güngör, iki bin on bir).\n\nHalkla ilişkileri çok genel olarak “bir örgüt ve onun ilişkide olduğu halk arasında karşılıklı bir anlayışı oluşturmak ve sürdürmek için düşünülen, planlanan ve kuvvetlendirilen güç” olarak tanımlayabiliriz. Halkla ilişkiler iki yönlü bir iletişimi içerir. İyi bir halkla ilişkiler seçicidir ve dikkatlice tanımlanmış hedef kitlenin belirli gereksinimlerine ve ilgilerine göre mesajların düzenlenmesini gerektirir. Ayrı bir fonksiyon olarak ele alındığında örgütün hem iç hem de dış çevresiyle ilgili kaynaklarını ve becerilerini bilmek zorundadır.\n\nHalkla ilişkilerin ikili ya da küçük grup iletişiminden farklı yönleri vardır: İkili ya da küçük grup iletişiminde iletişim kaynağı ve alıcı arasında karşılıklı bir iletişim söz konusuyken halkla ilişkilerdeki iletişim konuşmacı ağırlıklıdır. ; İkili ve küçük grup iletişimi sınırlı sayıda insanı içermesine karşılık, halkla ilişkiler çok sayıda insanı içerir. Hiçbir keyfî sınırlama getirilemez. ; Halkla ilişkilerde konuşmacı ve dinleyiciler arasında etkileşim azdır. ; Halkla ilişkilerde dil çok geneldir. Çok sayıda insana hitap edildiği için çoğunluğun hoşuna giden bir dil kullanılır.",
+          "start": 3311.197,
+          "end": 3423.86,
+          "duration": 112.663,
+          "tts_parts": 1,
+          "chars": 1566
+        },
+        {
+          "id": "c021",
+          "title": "Halkla İlişkilerin Sorumlulukları",
+          "text": "Örgütlerdeki halkla ilişkiler bölümlerine büyük görevler düşer Bir örgütün zayıf ya da kuvvetli olduğu yönlerin iyi analiz edilmesi gerekmektedir. Eğer sorunlar varsa iyice tanımlanmalıdır. Gerek iç gerekse dışla ilgili gelişmeler takip edilmelidir. Etkili halkla ilişkiler çalışanları diğerlerinin gereksinimlerine karşı duyarlı olmak zorundadırlar.\n\nHalk kavramı çok iyi tanımlanmalı ve sınıflandırılmalıdır. Halk “bir örgütten mal ya da hizmet alan bir insan ya da insan grubu” dur. Buna ortaklar ve çalışanlar da dahildir. Halk bir örgüt için en önemli unsurdur denebilir. Birçok örgütün en önemli amacı kâr etmektir. Kâr edebilmek için de örgütler müşterilerinin satın alabileceği mal ya da hizmetleri sağlayabilmek için örgütlenirler. Bazı durumlarda müşteri olarak da ifade edilebilecek halk olmadan örgütler kâr edemez ya da var olamaz. Bu nedenle örgütün muhatabı olduğu halkın gereksinimini çok iyi bilmesi gerekir.\n\nHalkla ilişkilerin avantajlarından bahsedilirken iki yönden ele alınır: içsel olarak “uygulamaların etkinliği”, dışsal olarak “daha iyi bir toplumsal imaj yaratma”. Örgütlerdeki halkla ilişkiler etkinliğinden bahsederken iç ve dış etkinlikler olarak bir sınıflama yapılabilir.\nİç etkinlikler\nToplantılar ; Öneri sistemleri ; Dedikodu ; Sosyal etkinlikler (piknikler, hafta sonu partileri, ödül törenleri ve benzeri) ; Sunuşlar ; Eğitim programları ; Oryantasyon programları ; Bilgi verici toplantılar ; Yıllık raporlar ; İletişim teknolojilerinin kullanımı\nDış etkinlikler\nTicari konuşmalar ya da reklam ; Politik konuşmalar ; Lobi yapma ; Sivil ve toplumsal örgütlenmelerde konuşmalar ; Kongre ve konferanslar ; Resmî halk konuşmaları ; Danışma büroları ; İletişim teknolojilerinin kullanımı",
+          "start": 3424.76,
+          "end": 3562.454,
+          "duration": 137.694,
+          "tts_parts": 1,
+          "chars": 1809
+        },
+        {
+          "id": "c022",
+          "title": "İmaj Yaratma",
+          "text": "Her örgütsel yapı kendi kimliğini daha çok ortaya çıkarabilmek için imaj oluşturma yoluna gider. Bununla ilgili de örgütlerde birimler mevcuttur. Ürünler, hizmetler ve örgütlerin toplumsal konumları başarılı bir pazarlama için en önemli unsur olarak belirtilir. Buradaki en büyük amaç örgütün hizmet ettiği pazarda en doğru şekilde yer almasını sağlayacak bir imaj yaratmaktır. Bunda başarılı olabilmek için onun pozitif çehresinin ve kendine özgü özellikleri üzerinde vurgulama yapmak gerekmektedir. Burada sorulması gereken soru şudur: Örgütün kendisi ya da ürünleri/hizmetleri hakkında insanların algılamasını istediği şey nedir? Buradan da imajın bir yeni baştan yaratmaktan çok, var olanın daha iyi bir şekilde ortaya çıkarılması olduğu anlaşılabilir.\n\nAşağıdaki sorular bunu biraz daha detaylandırabilir: Eğer varsa daha önce pazarda sahip olunan pozisyon nedir? ; Örgüt hangi pozisyona sahip olmak istiyor? ; Bu pozisyonu oluşturmak için hangi örgütlerle mücadele etmek gerekir? ; Bu pozisyona ulaşmak için yeterli kaynak var mıdır?",
+          "start": 3563.354,
+          "end": 3644.903,
+          "duration": 81.548,
+          "tts_parts": 1,
+          "chars": 1097
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Neler öğrendik?",
+      "start": 3646.103,
+      "end": 3876.584,
+      "chunks": [
+        {
+          "id": "c023",
+          "title": "Neler öğrendik?",
+          "text": "1. Soru\n\nİş bölümü, hiyerarşik ve fonksiyonel süreç, yasal güç ve otorite, standartlaşma, açık ve net kurallar ve prosedür aşağıdaki hangi örgüt yaklaşımı ile ilgilidir?\n\nA. İnsan kaynakları yaklaşımı\nB. Klasik yaklaşım\nC. İnsan ilişkileri yaklaşımı\nD. Sistem yaklaşımı\nE. Olasılık yaklaşımı\n\n1. Sorunun Yanıtı: B\n\n2. Soru\n\nİnsan ilişkileri yaklaşımı ile birlikte anılan kişi aşağıdakilerden hangisidir?\n\nA. Likert\nB. Weber\nC. Mayo\nD. McGregor\nE. Thompson\n\n2. Sorunun Yanıtı: C\n\n3. Soru\n\nİnsan kaynakları yaklaşımı ile ilgili aşağıdaki ifadelerden hangisi doğrudur?\n\nA. Eğer astlara uygun koşullar sağlanıp yeteneklerini ortaya koyabilecekleri bir çevre yaratılırsa verimli olabileceklerdir.\nB. Üretim düzeyi, yönetim tarafından oluşturulmuş normlardan daha çok gruplar tarafından oluşturulmuş norm ve standartlar tarafından belirlenir.\nC. İnsanlar iyi tanımlanmış işlere ve bu işleri aktaracakları bir otoriteye sahip olmalıdır.\nD. Örgütler açık sistemlerdir ve açık sistemler dinamik, esnek ve çevresindeki değişikliklere yanıt verici niteliktedir.\nE. Bütün durumlar için geçerli bir liderlik tipi ve örgütsel yapı söz konusu değildir.\n\n3. Sorunun Yanıtı: A\n\n4. Soru\n\nAşağıdaki kavramlardan hangisi örgütsel iletişim sürecini oluşturan temel kavramlardan biri değildir?\n\nA. İletişim ağı\nB. Süreç\nC. Karşılıklı bağlılık\nD. Çevre\nE. Ritüel\n\n4. Sorunun Yanıtı: E\n\n5. Soru\n\nÖrgütlerde iki yönlü iletişim ile ilgili aşağıdaki ifadelerden hangisi doğrudur?\n\nA. Göndericinin prestijini aşağı çekebilir.\nB. Hızlıdır.\nC. İtaatkar bir yapısı vardır.\nD. Bilgi hakkında az güven vardır.\nE. Gönderici için daha fazla prestij ve otorite sağlanır.\n\n5. Sorunun Yanıtı: A\n\n6. Soru\n\nAşağıdakilerden hangisi bir örgütteki ilietişim ile ilgili kurallardan biri değildir?\n\nA. Hiyerarşik kurallar\nB. Görev ile ilgili kurallar\nC. Söylentiler ile ilgili kurallar\nD. Çalışma grubu ile ilgili kurallar\nE. Bireysel kurallar\n\n6. Sorunun Yanıtı: C\n\n7. Soru\n\nAşağıdakilerden hangisi destekleyici iklim ile ilgili değildir?\n\nA. Standartları sorgulama\nB. Yargıda bulunmama\nC. Bilgi için soru sorma\nD. Problem oryantasyonu\nE. Katılımı sağlama\n\n7. Sorunun Yanıtı: A\n\n8. Soru\n\nAşağıdakilerden hangisi dinlemenin aşamalarından biri değildir?\n\nA. Değerlendirme\nB. Duyma\nC. Yorumlama\nD. Not alma\nE. Yanıt verme\n\n8. Sorunun Yanıtı: D\n\n9. Soru\n\nÇatışma ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?\n\nA. Çatışma her zaman bir rekabeti barındırır.\nB. İletişim biçimi çatışmaya neden olur.\nC. Değişik kişilik özellikleri çatışmaya neden olur.\nD. Çatışma hem pozif hem de negatif bir güçtür.\nE. Ast – üst ilişkileri çatışmaya neden olur.\n\n9. Sorunun Yanıtı: A\n\n10. Soru\n\nAşağıdakilerden hangisi bir örgütün dış halkla ilişkiler etkinliklerinden biri değildir?\n\nA. Lobi yapma\nB. Danışma büroları\nC. Politik konuşmalar\nD. Öneri sistemleri\nE. Kongre ve konferanslar\n\n10. Sorunun Yanıtı: D",
+          "start": 3646.103,
+          "end": 3876.584,
+          "duration": 230.481,
+          "tts_parts": 1,
+          "chars": 3778
+        }
+      ]
+    }
+  ]
+}

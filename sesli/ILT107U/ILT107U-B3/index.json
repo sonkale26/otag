@@ -1,0 +1,495 @@
+{
+  "course_title": "Bölüm 3: Sözsüz İletişim",
+  "schema_version": 2,
+  "audio_mode": "single",
+  "audio_file": "audio/ders.mp3",
+  "audio_codec": "MP3 128 kbps",
+  "sample_rate": 44100,
+  "audio_level": {
+    "inPeakDb": -7.141778309818813,
+    "inRmsDb": -33.62764205882115,
+    "gainDb": 12.329,
+    "clipped": 0,
+    "perPart": true,
+    "gainMinDb": 6.142,
+    "gainMaxDb": 17.576,
+    "targetRmsDb": -10
+  },
+  "total_duration": 4510.432,
+  "tts_engine": "ElevenLabs · eleven_multilingual_v2",
+  "ai_disclosure": {
+    "level": "ai4",
+    "label": "Yüksek ÜYZ katkısı",
+    "text": "Yüksek ÜYZ katkısı (ai4)"
+  },
+  "tts": {
+    "engine": "elevenlabs",
+    "generated_at": "2026-09-21T09:57:50.759Z",
+    "max_chars_per_request": 10000,
+    "model": "eleven_multilingual_v2",
+    "voice": {
+      "id": "uvU9jrgGLWNPeNA4NgNT",
+      "name": "İrem - Authoritarian Female Voice",
+      "gender": "female",
+      "category": "professional"
+    },
+    "voice_settings": {
+      "speed": 0.93,
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0,
+      "use_speaker_boost": true,
+      "request_stitching": true
+    },
+    "pauses": {
+      "after_title_s": 0.8,
+      "between_paragraphs_s": 0.8,
+      "between_chunks_ms": 900,
+      "between_chapters_ms": 1200,
+      "between_parts_ms": 250,
+      "lead_in_ms": 400,
+      "tail_ms": 600
+    },
+    "text_rules": {
+      "numbers_to_words": true,
+      "fix_all_caps": true,
+      "abbreviations": true,
+      "spell_unknown_acronyms": true,
+      "builtin_list_edited": true,
+      "builtin_rule_count": 172,
+      "user_lexicon_rule_count": 1,
+      "user_lexicon": "@ = et"
+    },
+    "audio": {
+      "codec": "MP3 128 kbps",
+      "sample_rate": 44100,
+      "gain_mode": "auto",
+      "gain_per_part": true,
+      "target_rms_dbfs": -10,
+      "gain_applied_db": 12.329,
+      "gain_min_db": 6.142,
+      "gain_max_db": 17.576,
+      "input_peak_dbfs": -7.142,
+      "input_rms_dbfs": -33.628,
+      "limiter_hits": 0,
+      "ramp_in_ms": 20,
+      "ramp_out_ms": 50
+    },
+    "manual_edited_chunks": [
+      "c034"
+    ]
+  },
+  "generated_at": "2026-09-21T09:57:50.760Z",
+  "chapters": [
+    {
+      "id": 1,
+      "title": "GİRİŞ",
+      "start": 0.4,
+      "end": 90.958,
+      "chunks": [
+        {
+          "id": "c001",
+          "title": "GİRİŞ",
+          "text": "Hatırlamaya çalıştığınız bir konuşmadaki tüm sözcükleri anımsayamasanız da bunların nasıl söylendiğini hatırlarsınız. Anlamın oluşmasında nasıl söylendiği en az ne söylendiği kadar önemlidir. Fakat bu örnek durum iletişimin farklı kanal ve boyutlarından yalnızca birini ifade eder. İletişimin iki önemli boyutundan biri olan sözsüz iletişim, iletişim yokluğunu hayatımızda olanaksız kılan ve birçok kanalı iletişimde önümüze seren bir boyuttur.\n\nSizinle konuşan birinin ses tonundan ciddi mi olduğunu şaka mı yaptığını kavrayabilirsiniz. Ya da ilk kez gördüğünüz bir mekândaki renk kullanımı size bir fikir verebilir. İletişime geçtiğiniz insanın kıyafetleri, saç biçimi, vücut tipi, takıları, yüz ifadesi size bir şeyler anlatır. Bir toplantıdaki ayaküstü sohbette kişinin vücudunun duruşu grubun size açık mı kapalı mı olduğunu ifade edebilir. Örnekleri tüm yaşantınıza yayabilirsiniz.\n\nSözsüz iletişim birçok farklı kanalı işe koşmamızı sağlayarak zengin bir iletişim ortamının oluşmasına ve aktarmak istediğimiz anlamları daha etkili ve doğru biçimde aktarmamıza olanak vermektedir.\n\nTemel olarak bu dünyaya belli sözsüz iletişim kodlarının yetisine sahip olarak geliriz fakat yaşamımız ilerledikçe karmaşıklaşan toplumsal ilişkiler ve anlamlar bu iletişim boyutunda da kendimizi geliştirmemizi gerekli kılar.\n\nBu açıdan daha doğru ve etkili bir iletişim kurmak istiyorsak sözsüz iletişim becerilerimizi de geliştirmeye ihtiyaç duyuyoruz demektir.",
+          "start": 0.4,
+          "end": 90.958,
+          "duration": 90.558,
+          "tts_parts": 1,
+          "chars": 1574
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "SÖZSÜZ İLETİŞİM TANIMI",
+      "start": 92.158,
+      "end": 874.661,
+      "chunks": [
+        {
+          "id": "c002",
+          "title": "SÖZSÜZ İLETİŞİM TANIMI",
+          "text": "İletişimin önemli bir bölümünü oluşturan sözsüz iletişim boyutunda da kendimizi geliştirmek istiyorsak öncelikle sözsüz iletişimin anlamı ve tanımı üzerinde durmamız gerekmektedir. Çoğu kitapta önce iletişimin tanımı üstüne durulup sonra sözsüz iletişim tanımına geçilmektedir. Bu daha doğru bir yoldur. Öncelikle iletişim tanımını verelim: İletişim, belirli bir bağlam veya durumda ileti alışverişi yaptığımız ve bu iletileri yorumladığımız dinamik ve geri döndürülmez bir süreçtir.\n\nBu tanımı daha iyi kavramak için tanımda geçen bazı kavramları açmakta fayda vardır. Öncelikle iletişim dinamiktir. Burada dinamik yalnızca hareketli olarak algılanmamalıdır. Hareket hep aynı yörüngede yeknesak bir çizgi izliyorsa buna dinamik diyemeyiz. Bu sebeple iletişim bir çemberden çok bir helezona benzer şekilde ilerler.\n\nİletişim geri döndürülmezdir. Gönderilen bir ileti yaydan çıkan bir ok gibidir. Artık geri dönüşü söz konusu değildir. Doğada geri döndürülebilir sistemler vardır. Örneğin, su sıvı haldeyken ısıtılıp gaz haline dönüştürülebilir sonra da yine soğutularak sıvı hale dönüştürülebilir. Fakat iletişim doğası gereği geri döndürülebilir bir süreç değildir. Çünkü başka bir insan tarafından algılanmış olan bir iletiyi, bir anlamı onun zihninden belleğinden söküp geri alamayız. İyi bir iletişimci olmak istiyorsak buna son derece dikkat etmeliyiz. O yüzden göndereceğimiz iletileri geri döndürülmez bir süreç olduğunu hesaba katarak düzenlemeli ve göndermeliyiz.\n\nİletişim bir süreçtir. Süreç, spesifik ve belli bir amaca yönelmiş sürekli eylemler serisidir. Rastgele sıralanmış davranışlar ya da eylemlerden bahsedemeyiz. Belirli bir niyet ve amaç söz konusudur. Bu durumda amaç iletilerin değiş tokuşu ve anlamlandırılmasıdır.\n\nİletişim anlamların değiş tokuşu ve yorumlanmasıdır. Burada insan davranışı ile insan iletişiminin ayrıştırıldığı bir noktaya geldik. İnsan iletişimi diyebilmemiz için niyetli olarak belli bir amaçla gönderilmiş bir mesaj olması ve bu mesajın ada bir başka insan tarafından algılanmasına ihtiyaç duyarız.\n\nSon olarak iletişim belli bir durum ya da bağlamda ortaya çıkar. İletişim sırasında bu durum ve bağlamdan habersizsek ya da bu durum ve bağlamı hesaba katmamışsak yanlış anlaşmalara sebep olabiliriz.\n\nBöylece artık iletişim tanımından yola çıkarak bir sözsüz iletişim tanımı yapabiliriz: Verili bir durum ya da bağlamda sözsüz davranışların, sözel iletişim davranışlarıyla birlikte ya da tekil olarak kullanılarak anlamların değiş tokuş edilip yorumlandığı dinamik ve geri döndürülmez bir süreçtir.\n\nİlk tanımımızı burada biraz genişlettik. Tanıma iletişim davranışlarını farklılaştırdığımız iki boyut olan sözsüz ve sözel davranışları ekledik. Aşağıdaki iletişim davranışları matrisinde iletişim davranışlarının nasıl ayrıştırıldığını görebilirsiniz(Mallandro, Barker ve Barker, bin dokuz yüz seksen dokuz).",
+          "start": 92.158,
+          "end": 271.973,
+          "duration": 179.815,
+          "tts_parts": 1,
+          "chars": 3063
+        },
+        {
+          "id": "c003",
+          "title": "Sesli Sözel İletişim Davranışları",
+          "text": "Diğer insanlarla iletişim kurarken kullandığımız sözcükler ve semboller olarak bu davranışları tanımlayabiliriz. Örneğin, karnım acıktı derken sesli ve sözül bir iletişim davranışında bulunmuş oluruz. Fakat dikkat edilmesi gereken nokta şudur ki burada bu sözcük ve sembollerin nasıl söylenmiş olduğu söz konusu değildir. Yani; alaycı, sevinçli, üzgün, kısık sesle, buğulu bir sesle söylenmesi bu tür davranışların içinde yer almaz. Düz olarak kullandığımız sesli sözcükler ve sembollerdir diyebiliriz. Bu iletişim davranışları sözsüz iletişim davranışları olarak değerlendirilmez. Konuşma bu kategoriye örnek verilebilecek bir iletişim davranışıdır.\n\nTablo 3.1 İletişim Davranışları Matrisi\n\nTablo, iletişim davranışlarını sesli ve sessiz olma ile sözel ve sözsüz olma eksenlerinde dört gruba ayırmaktadır. Böylece sesli sözel, sessiz sözel, sesli sözsüz ve sessiz sözsüz davranışların matristeki konumu birlikte görülebilmektedir.",
+          "start": 272.873,
+          "end": 342.208,
+          "duration": 69.335,
+          "tts_parts": 1,
+          "chars": 1046
+        },
+        {
+          "id": "c004",
+          "title": "Sessiz Sözel İletişim Davranışları",
+          "text": "Bir önceki sırada belirttiğimiz iletişim davranışlarıyla ortak birçok yönleri olmalarına rağmen sesin kullanılmadığı bir iletişim davranışı olarak değerlendirilenler bu kategoriye girer. Sözlü sessiz davranışlar yapılandırılmış sembol sistemleridir. Çoğunlukla da kendi gramer kuralları vardır. Yazı bu tür iletişim davranışlarına örnek olarak verilebilir. Ayrıca Amerikan İşaret Dili de denilen sağır alfabesini de burada örnek olarak sayabiliriz.",
+          "start": 343.108,
+          "end": 373.387,
+          "duration": 30.279,
+          "tts_parts": 1,
+          "chars": 508
+        },
+        {
+          "id": "c005",
+          "title": "Sesli Sözsüz İletişim Davranışları",
+          "text": "Konuşmanın içeriğinden çok nasıl söylendiğini belirleyen, anlam konusunda ipuçları veren iletişim davranışları da bu kategoriye girer. Örneğin, konuşmanın hızı, sesin yüksekliği, ses tonu gibi ses karakteristikleri bu tür iletişim davranışlarındır. Yukarıdaki örneğimiz olan karnım acıktı cümlesini ele alalım. Bunu yalvarır şekilde ya da emreder gibi yüksek bir sesle söyleyebilirsiniz. İçeriğin aktarılma biçimi ya da başka bir ifadeyle nasıl söylendiği sesli sözsüz iletişim davranışlarını temsil eder. Matriste ilk kez saf olarak sözsüz iletişim davranışları diyebileceğimiz davranışlar bunlardır.",
+          "start": 374.287,
+          "end": 414.411,
+          "duration": 40.124,
+          "tts_parts": 1,
+          "chars": 661
+        },
+        {
+          "id": "c006",
+          "title": "Sessiz Sözsüz İletişim Davranışları",
+          "text": "Bu kategoriye giren davranışlar ses yoluyla olmayan tüm ileti değiş tokuşlarını ifade eder. Örneğin, vücut tipi, şekli, duruşunuz sizin hakkınızda bir mesaj verir. Giyim kuşam tercileriniz ya da saç biçiminiz de öyle. Konuşurken yaptığınız jestler, yüz ifadeleriniz, mekânı kullanım biçiminiz de bu kategori içine girer. Ayrıca dokunma davranışları da burada değerlendirilir. Sözsüz iletişim olarak en çok değerlendirilen iletişim davranışları bu kategorideki iletişim davranışlarıdır.\n\nBöylece bir iletişim tanımı ve tanımdaki kavramları açıkladık. Buradan yola çıkarak bir sözsüz iletişim tanımı yaptık ve iletişim davranışlarını sınıflandırarak iletişim davranışları içerisinde sözsüz iletişim davranışlarının konumunu belirledik.\n\nSözsüz iletişimi daha iyi kavramak için sözel iletişimle karşılaştırmak da fayda sağlayabilir. Bir sonraki bölümde sözsüz ve sözel iletişimi karşılaştırarak sözsüz iletişim tanımını daha da netleştirmeye çalışacağız.",
+          "start": 415.311,
+          "end": 476.983,
+          "duration": 61.672,
+          "tts_parts": 1,
+          "chars": 1058
+        },
+        {
+          "id": "c007",
+          "title": "Sözel ve Sözsüz İletişimin Karşılaştırılma Boyutları",
+          "text": "Her ne kadar iletişim davranışları matrisinde sözsüz ve sözel iletişim davranışları konusunda bir fikir edinmiş olsak da birbirinden farklarını bazı boyutlarda daha açıklıkla görebiliriz. Sözsüz iletişimin konturlarını daha net çizmiş olacağız. Sözel ve sözsüz iletişimin karşılaştırılma boyutlarını şöyle sıralayabiliriz(Mallandro, Barker ve Barker, bin dokuz yüz seksen dokuz): Yapılandırılmışlık X Yapılandırılmamışlık ; Linguistik X Linguistik olmayan ; Sürekli X Kesintili ; Doğuştan gelme X Öğrenilmiş ; Sağ X Sol beyin lobunda işlenme Şimdi bu boyutları açarak sözel ve sözsüz iletişim arasındaki farkları daha da belirginleştirebiliriz.",
+          "start": 477.883,
+          "end": 525.855,
+          "duration": 47.972,
+          "tts_parts": 1,
+          "chars": 718
+        },
+        {
+          "id": "c008",
+          "title": "Yapılandırılmışlık X Yapılandırılmamışlık",
+          "text": "Burada sözel iletişim yapılandırılmış, sözsüz iletişim ise yapılandırılmamış olarak algılanır. Yapılandırılmışlık derken dünyadaki tüm dilleri örnek gösterebiliriz. Her dilin bazı biçimsel kuralları ve grameri vardır. Bizim dilimizdeki özne, yüklem, tümleç gibi. Bu öğeler belirli bir yapılandırılmışlık içerisinde bireylerce kullanılır. Bu kurallar ve gramer aynı dili konuşan insanların birbirlerini anlamalarını da sağlayan ortaklaşılmış kurallardır. Örneğin, “Ali okula gitti” cümlesini ele alalım. Burada belli bir yapı vardır. Özne tümleç ve yüklem sırasındadır. Bu yapılandırılmışlığa tanıdık olanlar yani o dili iyi kullananların dışındakiler bu sıralamayı düzgün kuramayabilir. Bu da onların o dilin yapılandırılmışlığı konusunda fazla bilgileri olmamasından ileri gelebilir. Oysa sözsüz iletişimde böyle bir yapılandırılmışlık söz konusu değildir. Biçimsel kurallar ve gramer sözsüz iletişimde söz konusu değildir. Çoğu sözsüz iletişim mesajları bilinçsizce de gönderilebilir. Doğru değerlendirilmediğinde yanlış anlaşmalara da sebep olabilir. Çünkü bir sözsüz iletişim davranışı bir ortamda ve durumda bir anlama gelirken başka bir ortamda başka bir anlama gelebilir. Örneğin, kişinin kendi saçıyla oynaması bir kur davranışı olarak da algılanabilir, kişinin canının sıkıldığını da ifade edebilir.",
+          "start": 526.755,
+          "end": 610.022,
+          "duration": 83.267,
+          "tts_parts": 1,
+          "chars": 1375
+        },
+        {
+          "id": "c009",
+          "title": "Linguistik X Linguistik Olmayan",
+          "text": "Sözsüz iletişimin spesifik bir yapısı olmaması yüzünden bir davranışa bir anlamın atfedildiği nadirdir. Bir yapılandırılmış dilde bir kelimeye bir anlam atfedilmişken sözsüz iletişim davranışlarından herhangi birine kesin ve evrensel bir anlam atfetmek çok güçtür. Her ne kadar insanların tümünün ortaklaştıkları bazı sözsüz semboller değerlendirilse de bir sözsüz iletişim dil sisteminden bahsetmek mümkün değildir. Ayrıca cümleleri kelimelere, kelimeleri harflere bölebiliriz. Ama sözsüz iletişim davranışlarını bu şekilde parçalayamayız. Sözsüz iletişim davranışlarının bir zaman kalıbı ya da kişiye göre fiil çekimi de söz konusu değildir. Anlamlar o duruma, niyete, bağlama ve yorumlamaya göre değişkenlik gösterebilir.",
+          "start": 610.922,
+          "end": 661.635,
+          "duration": 50.712,
+          "tts_parts": 1,
+          "chars": 781
+        },
+        {
+          "id": "c010",
+          "title": "Sürekli X Kesintili",
+          "text": "Sözsüz iletişim sürekliyken sözel iletişim kesintili parçalar temelinde yükselir. Sözsüz iletişimi konuşmamızı kestiğimiz gibi kesintiye uğratmamız söz konusu değildir. Sizin vücudunuzu, sesinizi, yüzünüzü, kokunuzu algılayacak diğer insanlar ya da kendinizi görebileceğiniz bir ayna oldukça sözsüz iletişim sürekliliğini korur. Bunun karşısında sözel iletişimdeki kelimeler ve semboller belirlenmiş başlangıç ve bitişlere sahiptir. Aynı şu anda okumakta olduğunuz cümleler gibi sözsüz iletişim ifadelerine nokta koymak mümkün değildir. Sözsüz iletişim mesajları süreklidir. Sert bir tartışmada konuşma kesildiğinde dahi yüz ifadeleri, çatık kaşlar, nefes sesleri ve gergin vücutlar hâlâ mesaj göndermeye devam ederler.",
+          "start": 662.535,
+          "end": 713.154,
+          "duration": 50.62,
+          "tts_parts": 1,
+          "chars": 764
+        },
+        {
+          "id": "c011",
+          "title": "Doğuştan Gelme X Öğrenilmiş",
+          "text": "Sözsüz iletişim ile ilgili olarak gözlem ile birçok şey öğrenseniz de nadiren sözsüz iletişim konusunda eğitim alırız. Hatta bazı temel sözsüz davranışları çok küçük çocuklarda da gözleyebiliriz. Bir bebek konuşamasa da gülmeyi, ağlamayı bilir. Oysa ses çıkarma yeteneğiyle doğmuş olsa da kelimeleri öğrenmesi, kelimeleri birbirine katarak cümleler kurması ve bunlara anlam yüklemesi bir öğrenme sürecinin sonucunda gerçekleşecektir. Bazı durumlarda bu doğuştan getirdiğimiz sözsüz kodları bilinçli olmadan da sergileyebiliriz. Fakat bir dil ancak öğrenilebilir. İnsanlar dil öğrenme yetisi ile doğarlar ama dili sonradan öğrenirler. Örneğin, konuştuğunuz dili bilmeyen biri yanınıza geldiğinde size bir şeyler ifade edebilmek için yanında taşıdığı küçük sözlüğe sürekli bakmak zorunda kalacaktır. Ama elleriyle yeme içme hareketleri yapsa öğrenilmiş dil farkı ortadan kalkar ve sözsüz iletişim devreye girer. Dolayısıyla sözel iletişim yani dil öğrenilir fakat sözsüz iletişimin birçok kodu doğuştan gelir. Zaman içerisinde içinde yaşadığımız toplumun üzerinde uzlaştığı birçok sözsüz iletişim kodunu da öğreniriz fakat sözel iletişime göre daha az öğrenilmişlik düzeyinde kalır.",
+          "start": 714.054,
+          "end": 791.377,
+          "duration": 77.322,
+          "tts_parts": 1,
+          "chars": 1233
+        },
+        {
+          "id": "c012",
+          "title": "Sağ X Sol Beyin Lobunda İşlenme",
+          "text": "Sözel ve sözsüz iletişimin farklarını değerlendirdiğimiz bu son boyut sözsüz iletişime nörofizyolojik bir yaklaşım olarak değerlendirilebilir. Bu yaklaşıma göre, uzamsal, resimsel ve geştalt görevlerini içeren birçok sözsüz uyaran beynin sağ lobunda işlem görmektedir. Bunun aksine analitik olan ve akıl yürütmeleri de içeren sözel uyaranların çoğunluğu da sol beyin lobunda işlem görmektedir. Bu konudaki araştırmalar devam etse de sözel ve sözsüz iletilerin beynin farklı yerlerinde işlem gördükleri açıktır. İşlem görme yerindeki farklılıklar sözel ve sözsüz iletilerin değiş tokuşunda ve yorumlanmasında da farklılıklara neden olmaktadır. Örneğin, bir kişinin doğru zamanda doğru beyin yarısını kullanmaması sonucu bir mesajı ve onun karşılığı olan anlamı doğru algılayamaması da olasıdır.\n\nSözlü ve sözsüz iletişim farklarından yola çıkarak sözsüz iletişimin sınırlarını biraz daha belirginleştirmiş olduk. Şimdi sözsüz iletişime daha fazla odaklanabiliriz. Sözsüz iletişim kodları o kadar çeşitlidir ki her birini ele almak oldukça güçtür. Bir sonraki bölümde tüm bu sözsüz iletişim kodlarının ortak özelliklerini açıklayarak sözsüz iletişimi bu kez kendi sınırları içinde daha iyi kavramaya çalışacağız.",
+          "start": 792.277,
+          "end": 874.661,
+          "duration": 82.384,
+          "tts_parts": 1,
+          "chars": 1290
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "SÖZSÜZ İLETİŞİM KODLARININ ORTAK ÖZELLİKLERİ",
+      "start": 875.861,
+      "end": 1453.308,
+      "chunks": [
+        {
+          "id": "c013",
+          "title": "SÖZSÜZ İLETİŞİM KODLARININ ORTAK ÖZELLİKLERİ",
+          "text": "Sözsüz iletişim içerisinde yer alan kodların ya da sözsüz iletişim davranışlarının her ne kadar birbirlerinden farklı olsalar da bazı ortak özellikleri vardır. Bunları şu şekilde sıralamak mümkündür (Zıllıoğlu, bin dokuz yüz doksan üç): İletişim yokluğunu olanaksız kılma ; Duygu ve coşkuları yetkin biçimde dile getirme ; Kişiler arasındaki ilişkileri tanımlama ve belirleme ; Sözlü iletişimin içeriği hakkında bilgi verme ; Güvenilir iletiler aktarma ; Kültüre göre biçimlenme Şimdi bunları sırayla ele alalım:",
+          "start": 875.861,
+          "end": 911.991,
+          "duration": 36.13,
+          "tts_parts": 1,
+          "chars": 577
+        },
+        {
+          "id": "c014",
+          "title": "İletişim Yokluğunu Olanaksız Kılma",
+          "text": "Sözel ve sözsüz iletişimin karşılaştırma boyutlarından sürekli ve kesintili boyutunu hatırlamanız burada yardımcı olacaktır. Sözel iletişim kodları iletişim yokluğunu olanaksız kılar. Sözel bir iletişimi durdurabilir, kesebilirsiniz fakat kişilerin gözleri, yüz ifadeleri, vücutlarının duruşu, jestleri, el kol hareketleri, kıyafetleri halen konuşmaya devam edecektir. Hiçbir sözel ifadenin olmadığı bir anda dahi mimari öğeler, renkler hatta ortamın kokusu bir mesaj iletecektir. Elbette bu mesajları algılayabilmek için belli bir farkındalık ve eğitimli bir algı gereklidir. Sesin olmadığı susma anları dahi bir mesaj vermektedir. Suskunluk bazen büyük bir cevaptır. Bu noktada farkındalık konusuna değinmekte fayda vardır. Sözel iletişimi istediğimiz zaman kesebilsek de sözsüz iletişim üzerindeki hakimiyetimiz o denli büyük değildir. Bunu hem bir avantaj hem de bir dezavantaj olarak düşünebilirsiniz. Sözsüz iletişimin hep devam ettiğini bilen bir kişi tüm sözsüz iletişim kanallarını kendi anlatmak istediğini ifade etmek için işe koşabilir ya da sözel iletişimin olmadığı noktalarda tüm bu kanallardan gelen iletileri algılayabilir. Bir başka açıdan da dezavantaj olarak algılanabilir bu durum. Örneğin, konuşmamızı durdurmak kadar açık bir hakimiyetimizin olmadığı gözlerimiz bizim hakimiyetimiz dışında hareket edebilir. Yani bize bir şey sorulduğunda cevabı bilmiyorsak önümüze bakabilir, bir kişi ile karşılaşmak, konuşmak istemiyorsak gözlerimizi istemsizce kaçırabiliriz. Bu açıdan sözsüz iletişim kanallarının çokluğunu göz önüne alarak bu ortak özelliği iyi düşünmeli ve farkındalığımızı arttırmalıyız.",
+          "start": 912.891,
+          "end": 1016.406,
+          "duration": 103.515,
+          "tts_parts": 1,
+          "chars": 1678
+        },
+        {
+          "id": "c015",
+          "title": "Duygu ve Coşkuları Yetkin Biçimde Dile Getirme",
+          "text": "Bazen sözler yetersiz kalır. İnsanların duygularını ve coşkularını dile getirmekte her birey şairler ya da yazarlar kadar yetenekli olmayabilir. Sözsüz iletişim kodları duyguları ve coşkuları dile getirmekte sözel kodlara göre çok daha yetkindir. Bu açıdan duygu yüklü konuşmalarda sözsüz iletilerin çok daha fazla olduğu görülür. Bir kişinin konuşmasının ardından ne söylediğini kelimesi kelimesine hatırlamayabilir ama nasıl söylediğini kesinlikle hatırlarsınız. Bir metni dümdüz okuyan bir kişinin yaratacağı duygusal ve coşkusal etki ile sesinin tonunu, yüz ifadesini, jest ve mimiklerini metnin anlamındaki duyguyu aktaracak biçimde kullanan birinin ileteceği anlamlar elbette birbirinden farklı olacaktır. Bazen kelimeler duygularımızı ifade etmekte yetersiz de kalabilir. Bir dudak bükülmesi, gözlerin kısılması ya da ellerin titremesi, ses tonumuz o anda aktarmaya çalıştığımız sözel içerikten çok daha fazlasını anlatacaktır. Bu açıdan duyguların ve coşkuların ifade edilmesinde sözsüz iletişim kodlarının önemi de fazladır. Bu konuda kendimizi geliştirmeye çalıştığımızda duygu ve coşkularımızı da daha yetkin bir biçimde dile getirebilir, kendimizi ifade edebiliriz.",
+          "start": 1017.306,
+          "end": 1094.489,
+          "duration": 77.183,
+          "tts_parts": 1,
+          "chars": 1249
+        },
+        {
+          "id": "c016",
+          "title": "Kişiler Arasındaki İlişkileri Tanımlama ve Belirleme",
+          "text": "Özellikle tanımadığınız bir kişi ile iletişime geçmeden önce iletişim tarzınızı, biçiminizi belirlemeniz gerekir. İşte bu noktada sözsüz iletişim kodları bize ipuçları sağlarlar. Bir insanın giysilerinden onun sosyal statüsünü ya da kültürel tercihlerini tahmin etmek hiç de zor değildir. Özellikle profesyonel bir iletişimci iseniz mesajlarınızı göndermeden önce karşı tarafın referans çerçevesine göre düzenlemek gerektiğine büyük önem verirsiniz. Karşı tarafın yani alıcının sözsüz iletişim kodlarını iyi okuyarak onun referans çerçevesi hakkında bir kanaat sahibi olabilir ve mesajınızı karşı taraf için daha kolay anlaşılır bir hâle getirebilirsiniz. Bir görüşmeye gittiğinizi varsayalım, masanın büyüklüğü ile masanın sahibinin hiyerarşideki yeri arasında olasılıkla bir ilişki vardır. Ya yüz ifadesi, vücudunun duruşu? Mesafeli mi? Ses tonu dostça ve sıcak mı yoksa emredici bir tonda mı? Aranızdaki mesafeyi nasıl oluşturuyor? Oturma şekli nasıl, hemen kaçmak gitmek ister gibi mi? Bunun gibi belki binlerce sözsüz iletişim mesajı kimin ast kimin üst olduğunu ya da bir hiyerarşide nasıl bir yapı içinde bulunduğunuzu size sezdirecektir. En temel örnek ise askerlerin kıyafetlerindeki rütbelerdir. Bu giyim kuşam kodu buradaki iletişimi tanımlar ve belirler. Kısaca, sözsüz iletişim kodları iletişim sırasında bu iletişimin tarzını öncelikle tanımlayan ve belirleyen ipuçları taşırlar. Bu ipuçlarına dikkat etmek doğru bir iletişim biçimini tercih etmek için son derece önemlidir.",
+          "start": 1095.389,
+          "end": 1196.396,
+          "duration": 101.007,
+          "tts_parts": 1,
+          "chars": 1566
+        },
+        {
+          "id": "c017",
+          "title": "Sözlü İletişimin İçeriği Hakkında Bilgi Verme",
+          "text": "Konuşmanın anlamını oluşturan önemli bölüm ne söylendiğinden çok nasıl söylendiğidir. Anlam sözel içerikte çalkantılı bir denizdeki küçük bir tekne gibidir. Sözsüz iletişim bu tekneyi bir yere demirleyen çapadır diyebiliriz. Bir başka deyişle, bir kelime, bir cümle birçok anlamda anlaşılabilir. Sözsüz iletişim kodları bunların nasıl anlaşılması gerektiğini bize ifade eder. Sözsüz iletişim kodlarına özellikle dikkat göstererek yanlış anlamaların önüne geçebiliriz.\n\nSadece dinleyen değil, anlatan tarafta iken de sözsüz iletişimin bu özelliği çok işimize yarayacaktır. Ne ifade etmek istediğimizi sözel içerikten çok sözsüz iletişim ile biçimlendiririz. Örneğin ses kodlarını kullanarak söylediğimizin ciddi mi yoksa alaycı mı olduğunu, söylediğiniz şeye katılıp katılmadığınızı ya da söylediğiniz şeye ne kadar güçle bağlı olduğunuzu ifade edebilirsiniz. Kelimeleri nasıl vurguladığınız onların anlamlarını doğrudan değiştirecektir.",
+          "start": 1197.296,
+          "end": 1260.408,
+          "duration": 63.112,
+          "tts_parts": 1,
+          "chars": 1030
+        },
+        {
+          "id": "c018",
+          "title": "Güvenilir İletiler Aktarma",
+          "text": "Sözsüz iletişimin sözel iletişime göre daha fazla doğuştan gelen öğeler barındırdığını ifade etmiştik. Bu açıdan sözel içeriğe göre sözsüz iletişim kodları üzerindeki hakimiyet insanlarda daha zayıftır. Örneğin insanlar konuşmalarında yanlış bir şey söylediklerinde hemen konuşmayı kesebilirler ya da düzeltebilirler. Fakat yalan söylerken gözlerini kaçıran bir insan göz hareketlerine istediği gibi kumanda edemiyor demektir. Çünkü insanların sözsüz iletişim kodları üzerindeki kontrolleri çok daha azdır. Elbette eğitimli insanlar bu kodların da büyük bölümünü kontrol edebilmektedirler fakat yine de iyi bir gözlemci bu kişinin sözsüz iletişim kodlarından birçok bilgi edinebilir.\n\nÖrneğin, poker oyuncuları birbirlerini çok iyi gözlemlerler. İyi bir poker oyuncusunun da yüz ifadesiyle elindeki kartlar hakkında hiçbir bilgi sezdirmemesi gerektiği söylenir. Hatta öyle ifadesiz yüzlere poker yüzü denir. Buna rağmen birbirlerini iyi gözlemleyen oyuncular birçok bilgiye ulaşır. Örneğin, ne zaman yüzüğüyle oynuyor? Göz kırpma hızı arttı mı? Göz bebekleri ne zaman büyüyor? Oturuşunu değiştiriyor mu? ve benzeri birçok örnek insanların kontrol etmekte zorlandıkları davranışları ifade eder. Utandığınızda yüzümüzdeki kan damarları genişler ve yüzümüz kızarır; ne kadar uğraşsak da bunu engelleyemeyiz. Bu açıdan sözsüz iletişim kodları sözel iletişim kodlarına göre çok daha güvenilir iletiler sağlamaktadır.",
+          "start": 1261.308,
+          "end": 1349.358,
+          "duration": 88.05,
+          "tts_parts": 1,
+          "chars": 1486
+        },
+        {
+          "id": "c019",
+          "title": "Kültüre Göre Biçimlenme",
+          "text": "Biçimsel kuralları ve grameri olan bir sözsüz iletişim dilinden bahsetmek olanaksızdır. Aynı davranış ya da hareket farklı kültürlerde farklı anlamlara gelebilir. Bir kültürde hayır demek başı yukarı kaldırmakken bir başka kültürde sağa sola sallamak olabilir. Birçok sözsüz iletişim kodu için örnekleri çoğaltabiliriz. Bizim kültürümüzde etek yalnızca kadınların giydiği bir kıyafet olarak kabul edilmişken örneğin İskoçya’da erkekler de eteğe benzeyen kıyafetler giyerler.\n\nToplumların yaşam tarzları, doğa ile girdikleri etkileşim birbirinden en azından coğrafi olarak farklı olacağı için elbette kültürleri de birbirinden farklı olacaktır. Bu kültürler farklı gereksinimlere ve üretim ve yaşam biçimlerine göre şekillenmiştir. Bu yönden sözsüz iletişimin kullanılışı da farklılıklar gösterecektir. Örneğin, doğuya gidildikçe insanların iletişimlerinde dokunma oranlarının arttığı saptanmıştır. Doğu kültürleri batıya göre daha çok birbirine dokunan kültürlerdir. Aynı şey, kişiler arasındaki mesafe için de söylenebilir.\n\nKısaca, sözsüz iletişimin grameri olan bir dil olmadığını, kültürlere göre biçimlendiğini ve farklı kültürlerde farklı sözsüz iletişim kodlarının bulunabileceğini ayrıca aynı kodların farklı anlamlara da gelebileceğini hesaba katarak iletişim kodlarını çözümlemek ve yorumlamak daha sağlıklı sonuçlar verecektir.\n\nSözsüz iletişim hakkında genel bilgilere böylece sahip olduktan sonra artık farklı sözsüz iletişim kodlarını ele almaya başlayabiliriz. En genelden başlayarak insan vücuduna doğru bir yol takip edeceğiz.",
+          "start": 1350.258,
+          "end": 1453.308,
+          "duration": 103.05,
+          "tts_parts": 1,
+          "chars": 1661
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "SÖZSÜZ İLETİŞİMDE ÇEVRE, BEDEN DİLİ VE SES KODLARI",
+      "start": 1454.508,
+      "end": 4304.064,
+      "chunks": [
+        {
+          "id": "c020",
+          "title": "SÖZSÜZ İLETİŞİMDE ÇEVRE, BEDEN DİLİ VE SES KODLARI",
+          "text": "Sözsüz iletişim söz konusu olduğunda iletişimi etkileyen çevresel etmenler ile birlikte beden dili ile sesin kullanımı ve özellikle sessizliğe de dikkat çekmek gerekir.",
+          "start": 1454.508,
+          "end": 1468.997,
+          "duration": 14.489,
+          "tts_parts": 1,
+          "chars": 244
+        },
+        {
+          "id": "c021",
+          "title": "Çevre ve Kalabalık",
+          "text": "Çevre ve mekân insan iletişiminde önemli bir yere sahiptir. İnsanların içinde yaşadıkları doğal çevreden, şehir planlarına, mimariden odaların tasarımlarına dek birçok unsur iletişimsel amaçlar için de kullanılmıştır.\n\nSözsüz iletişimde bu alandaki çalışmalara proxemics adı verilir. Hall, bin dokuz yüz altmış sekiz yılında yayınladığı makalesinde çevrenin, mimarinin ve mesafenin kültürün özel bir biçimlenişi olarak ele alındığı çalışmalara atıfta bulunmak için bu kavramı ortaya atmıştır(aktaran, Leathers, bin dokuz yüz doksan yedi).\n\nBu alan içerisinde çevrenin, mesafenin, mimarinin, mekânın iletişime etkileri, nedenleri ve çözümlemeleri değerlendirilir.\n\nHer birimiz farklı yerlerde yaşamaktayız. Yaşadığımız çevrenin özellikleri iletişim biçimlerimize de etki etmektedir. Örneğin şehirlerde yaşayanlar kırsal alanlarda yaşayanlara göre daha fazla insanla iletişime geçerler. Dolayısıyla mesajlarını daha fazla çeşitte insana göre düzenlemek zorundadırlar. Ya da yine şehirlerden yaşayan insanlar kırsal alanlarda yaşayanlara nazaran çok daha fazla ileti bombardımanına maruz kalırlar ve bunun için de kendilerince algı süzgeçleri geliştirmişlerdir. Aynı durum kırsal alanda yaşayanlar için doğa olaylarıyla ilgili olarak geçerlidir.\n\nŞimdi çevreyi en genelden başlayarak ele almaya başlayalım",
+          "start": 1469.897,
+          "end": 1557.622,
+          "duration": 87.725,
+          "tts_parts": 1,
+          "chars": 1439
+        },
+        {
+          "id": "c022",
+          "title": "Doğal Çevre",
+          "text": "Yalnızca şehir ve kırsal ayrımı durumu kavramak için yeterli değildir. Coğrafi farklılıklar insanların yaşam biçimlerinde de farklılıklar göstermektedir. Örneğin, tropikal iklimlerde yaşayanlar daha az üretken bir yaşam sürerken daha soğuk bölgelerde yaşayanlar imkânlar daha kısıtlı olduğu için paylaşımı sağlayabilmek adına çok daha fazla kural oluşturmuştur. Ayrıca sosyal ilişkileri daha karmaşık ve kurallar da daha serttir(Knapp ve Hall, bin dokuz yüz doksan yedi).\n\nİklimin ve sıcaklığın da insan etkileşimine etkisi konusunda araştırmalar yapılmıştır. Yüksek barometrik basınç sağlıkla ilişkilendirilmiş, düşük barometrik basınç ise ağrı ve depresyon ile ilişkilendirilmiştir. Öğrencilerin ise yüksek barometrik basınçta, hafif rüzgarlı ve serin günlerde daha başarılı oldukları gözlenmiştir.\n\nHindistan’da ise yirmi iki yıllık bir çalışmada toplumsal olayların en çok sıcaklığın kırk derece ve üstünde olduğu zamanlarda yoğunluk kazandığı saptanmıştır.\n\nBunların yanında ayın hareketlerinin de insanların davranışları üzerine etkisi olduğunu iddia eden çalışmalar vardır. Fakat bu çalışmalar büyük eleştiriler almıştır. Çünkü insan davranışı üzerinde etkisi olan faktörlerin karşılıklı etkilerini ve ağırlıklarını hesap etmekten uzak araştırmalardır(Knapp ve Hall, bin dokuz yüz doksan yedi)",
+          "start": 1558.522,
+          "end": 1644.714,
+          "duration": 86.192,
+          "tts_parts": 1,
+          "chars": 1407
+        },
+        {
+          "id": "c023",
+          "title": "Kent ve Mimari",
+          "text": "Binalar rastgele tasarlanmazlar. Bunların önünden geçen ya da bunlara bakan insanlarda bir izlenim yaratmak için de tasarlanırlar. Binaların tasarımları yalnızca insanlara bir ileti göndermek için değil aynı zamanda o binada yaşayanlar ve sahipleri hakkında bir fikir verir(Richmond ve McCroskey, iki bin). Bankaların granit ile kaplanması sonsuza kadar duracaklarmış gibi bir güven izlenimi vermektedir. Ya da ölümsüzlük talepleri için gerçekleştirdikleri piramitler ile Mısır firavunlarının kültürleri hakkında bir izlenim edinebiliriz. Bunun yanında gerçek dünyadan neredeyse insanları koparan ışıltılı sokaklar da insanlarda farklı izlenimlere neden olurlar.\n\nÖrnekler yalnızca günümüz ile sınırlı değildir elbette, örneğin Gombrich(bin dokuz yüz doksan iki) erken Orta Çağda Hristiyanlığın benimsetilmeye çalışıldığı toplumlarda, ezici büyüklükleriyle kilise ve katedrallerin önemli bir toplumsal gösterge olduğunu belirtmektedir.\n\nBerman(bin dokuz yüz doksan dokuz)ise kitabında Brezilya’nın başkenti Brasil’i değerlendirirken bir demokrasi başkenti olarak bir fiyaskodur demektedir. Bu kentin tasarımını yapan mimarlar kentin ortasına Eski Yunan’dan beri gelenek olan büyük bir alan yani plaza mayor koymamışlardır. Büyük bir alan aynı zamanda bir toplanma alanıdır ve demokrasi için gerekli olarak adledilir. Nitekim bir süre sonra askeri darbeler demokrasiyi Brasil’den uzaklaştırmıştır diye belirtmektedir Berman.\n\nÜlkemizden de örnekler bulmak mümkündür. Osmanlı İmparatorluğunun son dönemlerinde büyük bir deprem yaşanan Bursa kentinin yeniden inşası için Ahmet Vefik Paşa görevlendirilir. Ahmet Vefik Paşa, Batı’yı gayet iyi bilen, Paris’de sefirlik yapmış ve Paris’i yeniden tasarlayan Vali Haussman’ın yaptıklarına Vâkıf bir kişiliktir. Osmanlının modernleşme çabaları içinde değerlendirilebilecek olan bu çalışma ile Ahmet Vefik Paşa önce büyük caddeler açmıştır. Kenti modern bir kent görünümüne sokmak için binaları, sokakları yeniden düzenlemiştir. Fakat Çekirge ile eski Bursa’yı birbirine bağlayan yolu Müslüman mezarlığından geçirmek zorunda kalınca tepki çekmiş ve İstanbul’a geri alınmıştır(Saint-Laurent, bin dokuz yüz doksan altı).\n\nAmerika’da Mallandro, Barker ve Barker(bin dokuz yüz seksen dokuz) ise Las Vegas şehrini değerlendirmişlerdir. Bu şehir zorunluluklar yüzünden değil duygusal tepkiler yaratmak için böylesi ışıklı ve göz alıcı biçimde biçimlendirilmiştir. Las Vegas’da dünyanın hiç bir yerinde kullanılmadığı kadar yoğun kullanılan ışıklar sıkıcı gündelik hayattan bir fantezi dünyasına geçişi sembolize etmektedir.\n\nLas Vegas örneğindeki gibi büyük alışveriş merkezleri de belli amaçlar ve mesajlar içerecek şekilde biçimlendirilmiştir. Örneğin buralarda günün her saati yapay ışıkla aydınlatma tercih edilir, bunun yanında parlak ve göz alıcı stantlara, müzik eşlik eder. Sanki herşey insanları daha fazla harcayabilmeleri için yaşadıkları dünyanın gerçekliğinden koparmak için düzenlenmiştir.\n\nÇizgen’e(bin dokuz yüz doksan dört) göre kentli demek uygar bir çevrede yaşayan insan demektir. Uygarlıktan kasıt insanların manevi beslenmesine de olanak tanıyacak bir çevredir. bin sekiz yüz altmış yedi yılında Thames Nehri kokarken, kanalizasyon ve metro çalışmaları başlamıştır. Aynı zamanda British Museum’da Karl Marx kitabını yazmaktadır. Aynı yıl Paris’de Uluslararası Paris Sergisi yapılmaktadır ve Sultan Aziz, üç. Napolyon’un davetlisi olarak oradadır. Yenilenmiş ve modern bir başkent ile karşılaşmıştır Sultan Aziz. O tarihte İstanbul ise yüzlerce cami silueti ile ve küçük sokakları ile şarklı bir ruhu temsil etmektedir. Yabancılar mezarlıklar ile iç içe yaşayan bu kenti anlamakta güçlük çekmektedirler. bin dokuz yüz ellilere kadar İstanbul bu hâlini koruyacaktır. Sonrasında ise toplumsal çalkantılar ile başka türlü bir çarpık yapılaşmanın esiri haline düşecektir.\n\nKent bir toplumsal karakter sunmaktadır bize. Simgeleri ile yeni bir dünya kurmaktadır. Her simge ise bir çağa damgasını vurmaktadır. Bu simgelerin bize kurduğu dış dünya özgün bir bileşimdir(Çizgen, bin dokuz yüz doksan dört).\n\nİnsanlar şehirler, kültürler kurarlar. Bazen coğrafi zorluklarla belli biçimde yaşamaya mecbur kalırlar. Bazen de belli biçimde oluşmuş kültür ve çevre onları belli bir şekilde yaşamaya iter. Her ne olursa olsun çevrenin ve mekânın insan etkileşimi üzerinde doğrudan bir etkisi vardır. Bu etkiyi sorgulamak insanların kendi toplumsal yapılarını ve doğrudan kendilerini anlamalarına da olanak tanıyacaktır.",
+          "start": 1645.614,
+          "end": 1942.923,
+          "duration": 297.308,
+          "tts_parts": 1,
+          "chars": 4681
+        },
+        {
+          "id": "c024",
+          "title": "Kalabalık ve Yoğunluk",
+          "text": "Bu konu çevrenin ve mekânın iletişime etkisi içerisinde önemli bir araştırma alanı hâlindedir. Öncelikle bu iki kavramı anlamsal olarak birbirinden ayırarak başlayalım. Yoğunluk metrekare başına düşen insan sayısını ifade ederken kalabalık kişilerin arzu ettikleri mahremiyet düzeyine ulaşamadıkları ya da istenilenden fazla sosyal ilişkinin olduğu durumlarda hissedilen bir şeydir. Konuya böyle baktığımızda kalabalığın sübjektif, yoğunluğun ise objektif bir değerlendirme olduğu görülmektedir. Kalabalık daha çok algılama ile ilgilidir. Örneğin, dört kişinin aynı odada kalması söz konusu olduğunda bu belli düzeyde bir yoğunluğu ifade etse de o odada kalan her bireyin durumu aynı kalabalık düzeyinde algılamayacakları açıktır.(Leathers, bin dokuz yüz doksan yedi).\n\nKalabalık algısını etkileyen birçok faktörden bahsetmek mümkündür. Bu faktörleri şöyle sıralamak mümkündür(Knapp ve Hall, bin dokuz yüz doksan yedi): Çevresel Faktörler: Azalan alan, istenmeyen gürültü, ihtiyaç duyulan kaynakların azlığı ya da onları elde etme yetisinin azalması, egemenlik alanı belirleyicilerinin yokluğu. ; Kişisel Faktörler: Cinsiyet farklılığı, sosyal ilişki isteği, baskınlık, kontrol, düşük özgüven ve benzeri yansıtan kişilik karakteristikleri ve yüksek yoğunlukla ilgili olumsuz deneyimler. ; Sosyal Faktörler: Aynı alan içindeki yakın insanlardan istenmeyen derecede fazla sosyal ilişki ve bu durumu değiştirme yetisi yoksunluğu, farklı bir grup içinde etkileşim ve rekabetçi, düşmanca ve istenmeyen etkileşimler.\n\nAmaç İlişkili Faktörler: İsteneni başaramamak, tamamlama yetisinden yoksun kalınan durumlar. Bu alandaki çalışmalar genel olarak içinde bulunulan çevre koşullarını değiştirme yetisinin yoksunluğunun kalabalık algısını arttırdığı görüşünde birleşmektedirler. Kalabalık algısı ise kalabalığa kimlerin katıldığı, kalabalığın ne zaman, ne için, nerede ve nasıl ortaya çıktığı ile doğrudan ilişkilidir.\n\nKalabalığın ve yoğunluğun etkileri konusunda ilk çalışmalar yüksek yoğunluk ve aşırı nüfus koşullarında hayvan davranışlarını konu alan çalışmalara temellendirilebilir. Bilim adamları uzun zaman, fare gibi deney hayvanlarının büyük sayılardaki intiharları konusunda araştırma yapmışlardır. Bu intiharların artan nüfus ile oluşan stres yüzünden ortaya çıkan endokrin reaksiyonu yüzünden olduğu iddia edilmektedir.\n\nBu çalışmalarda hayvan davranışları için ortaya konanlar kadar belirleyici olmasa da toplumsal yaşamda kalabalığın ve yoğunluğun olumsuz etkilerini araştıran birçok araştırma da yapılmıştır. Şehirlerde suç oranının artmasıyla birlikte, nüfus yoğunluğu ve sapkın davranışlar arasındaki bağlantı araştırılmıştır. Yoğunluk fiziksel bir durumdur ama kalabalık algısına sebep olabilir ve bu da toplumsal sorunları ortaya çıkarabilir.\n\nKalabalık birçok insanı rahatsız eder. Kalabalık ve insan sağlığına olan olumsuz etkileri üzerine de araştırmalar yapılmıştır. Bu araştırmalarda olumsuz etkileri ortaya çıkaran üç mekanizmadan bahsedilmektedir. Bunlar, Davranışsal sınırlanma ; Azalan kontrol ; Aşırı uyaran yüklemesidir. Aşırı sıcağın da kalabalık algısını arttırdığı bulunmuştur. Fakat ilginçtir, çevre üzerindeki kontrol arttıkça kalabalık algısı düşmektedir.\n\nHapishanelerde yapılan araştırmalar ise hane içi kalabalık algısı üzerine ilginç veriler sunmaktadır. Koğuşlarda yaşayan mahkumlar bir veya iki kişilik hücrelerde yaşayan mahkumlara göre daha fazla hastalık şikayetinde bulunmakta ve daha az yaşadıkları ortamdan memnuniyetlerini belirtmektedirler. Hapishanelerde elbette çevre üzerinde kontrol imkânı daha azdır ve kişilerin kişisel egemenlik alanları talepleri daha geniştir.\n\nKalabalık herkes için bir sorun haline gelebilmektedir. Knapp ve Hall (bin dokuz yüz doksan yedi), bu sorun ile başa çıkabilmek için bazı yollar önermektedirler: Her uyaran ileti ile daha az zaman harcamak, örneğin diğer insanlarla olan görüşmelerin süresini kısa tutmak. ; Düşük önemdeki mesajları göz önüne almamak, örneğin yanınızdan geçen bir sarhoşa veya trende metroda yolda gördüğümüz insanlara dikkat etmemek, onları görmezden gelmek. ; Bazı işler için sorumluluğu diğerleriyle değiştirmek, örneğin otobüs şoförlerinden değişiklik talep etmemek, vardiya sistemlerinde değişiklik sorumluluğu kişilerin kendilerinde değildir. ; Mesajları bloke etmek, örneğin apartmanların, yerleşim birimlerinin önüne korumalar koymak, erişimi sınırlandırmak. Knapp ve Hall bu çözüm yollarını önermiş olsalar da bu çözüm yolları insanları birbirine yabancılaştıran yöntemlerdir. Özellikle modern dönemde insanların önemli bir problemi haline gelen yabancılaşmayı daha da arttıracak çözüm yolları kişilerin daha bireyselleşmiş ve atomik bir yaşam sürmelerine neden olabilir.",
+          "start": 1943.823,
+          "end": 2236.626,
+          "duration": 292.804,
+          "tts_parts": 1,
+          "chars": 4877
+        },
+        {
+          "id": "c025",
+          "title": "Vücut Dili, Duruşu ve Jestler",
+          "text": "Sözsüz iletişim, iletişim süreci içerisinde birçok işlev üstlenir. Bunlar daha önce belirtilmişti. Biz sözsüz iletişim ortamı olarak bedenimizi sıklıkla kullanırız. İnsanlar bedenleri ile hareket ederler, davranışlar sergilerler. Görünümümüzün en temel iskeletini bedenimiz oluşturur. Aktarmak istediğimiz sözsüz iletişim mesajlarından birçoğunu bedenimizi kullanarak aktarırız. Bedenimizin, durağan olduğu hâlde ilettiği mesajlar da vardır.\n\nGörünüş, ilk izlenimin birincil etkileyenidir. Görünüşümüz, kuracağımız iletişimi büyük ölçüde etkilemektedir. Toplumsal yaşam içerisinde, sözlerle dile getirmesek de iletişim içerisindeyizdir. Bir ortamda yalnızca var olmamız bile birtakım iletiler iletmekte olduğumuzu göstermektedir. İletişim yokluğu varlığımız sürdükçe olanaksızdır.",
+          "start": 2237.526,
+          "end": 2290.189,
+          "duration": 52.663,
+          "tts_parts": 1,
+          "chars": 858
+        },
+        {
+          "id": "c026",
+          "title": "İletişimin İki Düzeyi",
+          "text": "Birçok araştırmacı, kurduğumuz iletişimin en azından yüzde yetmişinin sözsüz iletişim ağırlığını taşıdığını belirtmişlerdir. Bu konuda en yoğun literatürü Amerikalı bir psikolog olan Mehrebian’da buluruz. Mehrebian’a göre: İletişimimizin yüzde elli beşini beden dili oluşturur, yüzde otuz sekiz ses kodlarıdır ve yalnızca yüzde yedisi sözel kodlardan oluşmaktadır.\n\nHiçbirimiz sürekli konuşmayız. Ama sürekli olarak beden dilini kullanırız. Spesifik olarak söylenecek olursa içeriği sözel mesajlarla ve ilişkisel olanı beden dili ile ifade ederiz. Burada iletişimin iki düzeyinden bahsedilmektedir. Birincisi içerik düzeyidir: İçerik düzeyi, basitçe, ne hakkında konuştuğumuzdur. İçerik düzeyinde, biz ne hakkında konuştuğumuzu ifade etmeye çalışırız. Bunun için en uygun iletişim yolu konuşma dili ya da en genelde sözel iletişimdir. Sözel iletişim, “gösterdiği şey ile benzerlik taşımak” zorunda değildir. Bir başka deyişle, konuştuğumuz kelimeler, işaretler, semboller, tek taraflı olarak üzerinde uzlaşılmış şeylerdir. İfade biçimleri gösterdikleri şey ile bir benzerlik taşımak zorunda değildir. İletişim için kullandığımız kelimeler, işaretler ve benzeri gösterdiği şeyle bir benzerlik taşımıyorsa o zaman buna dijital dil de denir.\n\nİlişkisel düzeyde ise içerik ile aktarmadıklarımızı ifade ederiz. İletişim süreci yalnızca içerikten oluşmamaktadır. Sözlerimizi söylerken karşımızdakini nasıl gördüğümüzü, onun hakkında ne düşündüğümüzü de söylediklerimizi “nasıl” anlaması gerektiğini gösteren mesajları da iletiriz. İlişkisel düzeyde, mesajın alıcısı ile nasıl bir ilişki içinde olduğumuzu ve mesajın ne “anlama” geldiğini ifade ederiz. İlişkileri ve duyguları ifade etmekte daha önce bahsedilen “dijital dil” oldukça yetersiz kalmaktadır. İnsanlar için, “ne demek istediklerini” yalnızca sözlerle ifade etmek oldukça güçtür. Yoksa şairlik ve yazarlık çok kolay bir şey olmaz mıydı?\n\nNiyetlerimizi ve duygularımızı daha açık bir biçimde ifade etmek için bir başka iletişim yolunu da işe koşmamız gerekir. Bu iletişim biçiminde, ifade edilen şeyi gösteren şeyler üzerinde özellikle kesin bir uzlaşıma gerek olmadan ya da daha önceden öğretilmiş olmadan, davranış ya da işaretin kendisinden ifade edilen şey anlaşılabilir. Örneğin saate bakıp saati anlamaktan farklı olarak, saatimi işaret etmemi ele alalım, bundan bir şeyler anlaşılması için illa ki üzerinde kesin ve özel olarak uzlaşılmasını ya da saati nasıl okuyacağımı öğrenmemi gerektirmemektedir. Buna “analog dil” denir.\n\nİlişkisel düzeydeki bir iletişim biçiminde, aktardığımız mesajın anlamını veya diğer kişilerle olan ilişkimizi daha açık hâle getirebiliriz. İki durumda da ortaya çıkan iletişime meta communication üst-iletişim denir. Üst iletişim, kurulan iletişim hakkında gerçekleştirdiğimiz iletişimdir. Bununla birlikte, karşılıklı ilişkiler ve duygular hakkında konuşmak oldukça zordur. Karşımızdaki bir insanın duygularını incitmeden ona ne hissettiğimizi anlatacak “doğru kelimeleri” nasıl bulabiliriz? Sırf bu yüzden insanları eleştirmeyi erteleyebiliriz ya da yeterli ilgiyi göstermeyebiliriz görüştüğümüz insanlara. Bu yüzden, gün boyunca, üst iletişim için beden dilini diğerlerine göre daha etkili bir biçimde, sürekli kullanırız. Bir düşünün, kızgın bir bakış, gayriciddi bir el sıkma, dostça bir dokunuş ve benzeri duygularımızı ifade etmekte zorlandığımız durumlarda daha çok şey anlatmaz mı?",
+          "start": 2291.089,
+          "end": 2502.716,
+          "duration": 211.627,
+          "tts_parts": 1,
+          "chars": 3519
+        },
+        {
+          "id": "c027",
+          "title": "Vücut Dili",
+          "text": "Beden dili, duyguları ifade etmek için konuşma diline göre daha kolay bir yoldur. Birinden hoşlanmadığınızı sözlerle anlatmak zordur. Ama beden dili ile bunu çok açık bir biçimde ifade edebilirsiniz.\n\nBeden diline duruş ile başlayalım.",
+          "start": 2503.616,
+          "end": 2519.963,
+          "duration": 16.347,
+          "tts_parts": 1,
+          "chars": 294
+        },
+        {
+          "id": "c028",
+          "title": "Vücudun Duruşu",
+          "text": "Hiç hareket etmediğimiz zamanlarda da iletiler göndeririz. Vücudumuzun duruş biçimi bizim ruhsal yapımız hakkında da birçok iletiler gönderir. Örneğin, kendinizi kötü hissettiğiniz zamanlarda, omuzlarınız düşük, başınız önde, çok az göz kontağı kurmaya meyilli hâlinizle, çevrenin umurunuzda olmadığını iletişim kurmak istemediğinizi iletmez misiniz? Eğer vücut ve ruhun da birbirinden ayrılmaz bir bütün olduklarına inanıyorsak o hâlde, şu önermeyi dikkate alabiliriz: Nasıl hissediyorsak öyle duruyoruz. Öyleyse nasıl duruyorsak öyle de hissedebilir miyiz? Kendinizi kötü hissettiğiniz bir zamanda, zor olsa da başınız dik, derin nefes alarak, dik durmaya ve enerjik adımlar atmaya çalışarak, gülümseyerek hareket edin ve farklı hissedip hissetmediğinize kendiniz karar verin.\n\nBir iletişimci olarak iletiyi göndereceğimiz alıcının durumunu kavramak iletişim süreci için bize büyük avantajlar sağlayacaktır. İnsanların hepsi birbirinden farklıdır. Kimisi daha cana yakınken kimisi daha ketum bir görünümdedir. İnsanlar her zaman iletişim kurmak için istekli de olmayabilirler. O zaman insanların nasıl bir durumda olduklarını, kurmak istediğiniz iletişime verecekleri muhtemel tepkileri önceden tahmin edebilmenizi sağlayacak bazı ipuçlarına ihtiyacınız olacak demektir. Kapalı veya açık vücut pozisyonları bu ipuçlarını sağlayabilecek niteliktedir. Kollar ve bacaklar, ayrıca bütün bir vücut ile(body wall)vücut duvarı insan açık vücut pozisyonunda ise davetkâr, istekli bir görünüm sergilemektedir. Tersi halde ise kollarını kavuşturmuş ya da bacak bacak üstüne atmış, ya da vücudunu sizden başka bir yöne sanki hemen kaçmak istermişçesine çevirmiş olabilir. Bu durumda da en iyi şey iletişim sürecini fazla zorlamamaktır. Bunları özetleyen bir şema aşağıda verilmiştir.",
+          "start": 2520.863,
+          "end": 2636.545,
+          "duration": 115.682,
+          "tts_parts": 1,
+          "chars": 1837
+        },
+        {
+          "id": "c029",
+          "title": "Vücut Dili İşaretlerinin Sınıflandırılması",
+          "text": "Aşağıda belirli boyutlarıyla beden dili işaretleri sınıflandırılmışlardır. Bu boyutlar: Kullanım, Kod ve İşlevdir.\n\nKullanım: Burada kodların bilinçsiz ya da amaçlı ve kasıtlı yapılıp yapılmadığına göre bir gruplama yapılmıştır. Eğer alıcı kodun kasıtlı olup olmadığını çözerse anlamın doğruluğu hakkında daha kesin yargılara varabilmektedir.\n\nKodlama: Vücut işaretlerinin kodlaması da kodun türü vücut işaretleri ile onun işaret ettiği şey arasındaki ilişkiyi belirlediği için önemlidir. Bu bölüm altında şu tür beden dili işaretleri bulunur: Arbitrary(keyfi) kodlar: En çok kullanılan kod türü budur. Bunlar keyfi olarak adlandırılır çünkü kod ile işaret ettiği şey arasında doğrudan bir ilişki yoktur. En çok bilinen örnek, merhabalaşmalarda elini kaldırmak, el sallamak vesaire\n\nİkonik Kodlar: Bu kodlar görünüşleri yüzünden anlamları hakkında bazı ipuçları taşırlar. Yani kodlar işaret ettikleri şey hakkında görsel olarak ipuçları içerirler. Örneğin, birini öldüreceğini işaret eden birinin boğaz kesme işareti yapması.\n\n(Intrinsic)İçsel Kodlar: Bunlar intrinsic olarak adlandırılırlar çünkü sembolik anlam ve fiziksel görünüşleri ayrılamaz biçimde birbirlerine yapışıktırlar. İşaret ettikleri şey ile doğrudan görsel bir ilişkileri vardır. Örneğin kızgın bir insanın titremesi, kızarması, yumruğunu sallaması gibi.\n\nVücut dilini çözmek konusunda kendini geliştirmek isteyenler işe koşulan kod türüne dikkat etmek zorundadırlar. Bazı belli vücut dili işaretleri birkaç kod türünün kombinasyonu da olabilir.\n\nİşlev: Aşağıda vücut dili işaretlerinin işlev açısından bir sınıflandırması yapılmıştır: Amblemler ; Illustratörler ; Duygu Göstergeleri ; Düzenleyiciler ; Uyumlandırıcılar Amblemler: Bunlar, verili bir kültürde üyelerin çoğunluğunca kesin anlamı bilinen ve sözel dilde bir ya da birkaç sözcükle ifade edilebilecek kodlardır. Jest amblemleri: Gel, git, dur, dişim ağrıyor anlamına gelen işaretler örnek olarak kullanılabilir. Amblemler daha çok kasıtlı, amaçlı ve bilinçli olarak kullanılırlar bu yüzden çok az kişisel veri taşırlar.\n\nİllüstratörler: Bunlar da farkındalık ve kasıtla kullanılırlar. Örneğin, bir nesne ile işaret etmek(baton), bir olayı ya da bir şeyi vücudun bir bölümü ile işaret etmek(diectic hareket), anlatılan nesnenin ya da şeyin resmini çizmek(pictograph). Bunlar, sözel açıklamaların açıklığını arttırmak için kullanılırlar. İllüstratörler farkındalık ve kasıtlılıkla yapıldıkları için göndericinin psikolojik durumunu, kendine güveni ve verili bir durumdaki iktidar konumları hakkında bilgi de sağlayabilirler.\n\nBir kişi, morali bozuksa, cesareti kırılmışsa, yorgunsa, istekli değilse, karşısındakinin kendisi hakkındaki izlenimini düşünüyorsa, formal bir etkileşim ortamında baskın değilse geneldeki illüstratör kullanma sıklığından daha düşük bir sıklıkta bu hareketleri yapar.\n\nAnlatımda zorluk yaşandığında, dinleyenden söylenenleri anlamadığına dair bir geri bildirim alındığında illustratörlerin kullanım sıklığı artış gösterir.\n\nDuygu Göstergeleri: Duygu ve hislerin ifadesi genellikle yüz ile ilişkilendirilir. İletişimcilin yaşadığı hissi anlamak için yüzüne bakarız, yaşanan hissin yoğunluğunu anlamak için de vücut diline bakarız.\n\nBunlar önceki ikisine göre daha az kasıtlılık, farkındalık ve bilinçlilikle yapılan hareketlerdir. Bu yüzden de daha fazla güvenilirdirler ve daha fazla veri taşırlar.\n\nDüzenleyiciler: İletişim sırasını ve süresini belirleyen hareketlerdir. İyi bir iletişimci için bu kodları çözmek ve kodlamak önemlidir. Bunlar da az farkındalık ve kasıtlılıkla yapılır. Bu kodlara duyarlı olunmadığında kaba olarak değerlendirilmek işten bile değildir. Örneğin, dokunarak konuşmak, parmak kaldırmak ve hızlı baş hareketleri yapmak ya da tam tersine rahat bir pozisyonda oturup bir başka şeyle ilgilenmek örnek olarak verilebilir.\n\nUyumlandırıcılar: Bunlara extracommunicative gestures adı da verilmektedir. Bireyin; tutumları, kaygı düzeyi, kendine güveni konusunda diğer türlere göre daha fazla veri taşır. Kodlayıcı bunları kasıtla yapmaz ve çoğu zaman farkında da değildir. Örneğin, rahatsız vücut hareketleri, tırnak yeme, parmak kütletmek, ritm tutmak verilebilir. Ayrıca, iletişim sırasında kalem gibi, bir başka nesne gibi sürekli oynanan nesneler de obje-uyumlandırıcılar olarak adlandırılmaktadır.\n\nŞimdi de birkaç uygulamaya dönük açıklamaya bakalım. Örneğin, bir iletişim ortamındaki güçXgüçsüzlük ayrımını belirten, iktidar olanı ortaya koyan vücut duruş ve beden dili özelliklerinden oluşan aşağıdaki örneğe bakalım. Bir iletişim ortamındaki güçlüyü ifade eden beden dili özellikleri şöyle sıralanmış: Rahat bir duruş ; Dik bir vücut pozisyonu ; Dinamik ve amaçlı jestler ; Durağan ve doğrudan bakışlar ; Konuşma ritminde değişiklikler ; Duruş pozisyonlarında çeşitlilik ; İlişkiye göre duruş şekli değiştirmek ; Dokunmak konusunda rahat olmak ; İletişimi kesmek konusunda rahat olmak ; Dik bakmak ; Diğerine göre, yakın durmak konusunda daha rahat olmak.\n\nBu belirtilenden daha ayrıntılı bir biçimde içinde bulunulan durumu çözümlemek için aşağıdaki tablo daha da açıklayıcı bilgiler taşımaktadır:\n\nTablo 3.2 Bir İletişim Ortamındaki Beden Dili Özellikleri\n\nTablo, bir iletişim ortamında beden dilini oluşturan başlıca özellikleri düzenli biçimde bir araya getirmektedir. Beden duruşu, yüz ve göz davranışları ile diğer sözsüz göstergeler aynı çerçevede değerlendirilmektedir.",
+          "start": 2637.445,
+          "end": 3000.512,
+          "duration": 363.067,
+          "tts_parts": 1,
+          "chars": 5813
+        },
+        {
+          "id": "c030",
+          "title": "Çekicilik ve Güzellik",
+          "text": "Araştırmalar çekici insanların daha iyi işler bulduklarını, kendine güvenlerinin yüksek olduğunu, çekici olmayan insanlarla karşılaştırıldıklarında daha fazla toplumsal güce sahip olduklarını söylüyorlar.\n\nBöyle bir mantıkla ilerlersek fiziksel çekiciliğin, sahip olan kişinin kişisel ve ekonomik değerini arttıran bir ürün olarak da değerlendirebiliriz.\n\nReklamlar, fiziksel güzelliğin son derece önemli bir özellik olduğunu sürekli vurgularlar. Ayrıca, kendilerine önerilen mallarla çekiciliklerini arttırabileceklerini de düşünen müşteriler için çekicilik önemlidir ve bunun tüketim ile arttırılabileceğine inanırlar.\n\nBazılarımız için, bazen vücutlarımızın içine hapsolmuş gibi hissetmek çok nadir bir durum değildir. Dış görünüşümüz her fırsatta bize bizden daha çekici biriyle çıkamayacağımızı söyler durur. Toplumsal ve cinsel yaşamımız büyük ölçüde fiziksel çekiciliğimize bağlıdır. Anormal bir fiziksel görünümü olanlar için çocukluk hiç de kolay geçirilen bir dönem değildir ve çok hoş hatıralar da bırakmaz.\n\nToplumdaki çekici insan stereotipi “güzel iyidir” varsayımı üzerine kurulmuştur. Güzellik “iyiliği” de ima eder, yeteneği ve başarıyı da. Bu yüzden çekici insanlar insanların gözünden daha “iyi” görünmektedir. Çünkü herkes onları öyle görmeyi istemektedir. Başarısız olduklarında bile bu bir düşüş olarak değil bir sendeleme olarak değerlendirilir.\n\nİyi iletişimin temelini fiziksel çekiciliğe dayandırmaya birçok insan karşı çıkar. Çekicilik sorunu insanları gündelik hayatlarında rahatsız eder. Bu yüzden de fiziksel görünümü göz ardı etme eğilimi taşırlar. Fakat bu davranış kötü haber getiren haberciyi cezalandırmak davranışının neredeyse aynıdır.\n\nMilyar dolarlarla ifade edilen kozmetik sektörünün finansal büyüklüğü yukarıda belirttiğimiz argümanı desteklemektedir. Ayrıca plastik cerrahların gittikçe artan kazançlarını da görmezden gelemeyiz. Birer plastik cerrah olan Kurt Wagner ve Gould şöyle söylemektedirler: “Eskiden iç niteliklerin dış görünüşe göre daha önemli olduğu, eskilerin dediği gibi güzelliğin ancak derinin kalınlığı kadar olduğu kabul edilirdi. Ama biz, şimdi biliyoruz ki akıl ve vücut ayrılmaz bir bütündür”.\n\nBireyler arası iletişimde, katılımcıların görünümünün toplumsal kimliği kurduğu ileri sürülmektedir.\n\nObjektif olarak, etkileşim içine girdiğimiz kişilerin fiziksel çekiciliğinin düzeyini hemen belirleyebiliriz. Burada toplumsal olarak üzerinde uzlaşılmış bir fiziksel çekicilik idealine kendi fiziksel çekiciliğimizi, mümkün olduğunca yaklaştırmaya çalıştığımızı da görebiliriz.\n\nKişisel görünüş ile ilgili toplumsal stereotipte neyin güzel neyin güzel olmadığı ile ilgili ipuçları bulunur.\n\nYapılan araştırmalar göstermiştir ki Amerikalılar, erkeklere göre kadınlar hakkında daha detaylı bir stereotip ya da zihinsel resme sahiptirler. Ayrıca, yine araştırmalar yüz güzelliğiyle ilgili fiziksel özelikleri tanımlamakta, vücut çekiciliği ile ilgili fiziksel özelliklere göre daha kesin yargılara sahiptirler.",
+          "start": 3001.412,
+          "end": 3189.447,
+          "duration": 188.035,
+          "tts_parts": 1,
+          "chars": 3246
+        },
+        {
+          "id": "c031",
+          "title": "Vücut Çekiciliği",
+          "text": "Bir insan vücudunu diğerinden ayıran fiziksel özellikler de toplumsal olarak bazı karakterlerle özdeşleştirilir. Örneğin, şişman kişiler daha yumuşak başlı, zayıflar daha sinirli olarak düşünülürler. Fakat bu farkların ilk olarak sistematik biçimde ölçülmesi ve bilimsel olarak değerlendirmesini, Kretschmer’in bin dokuz yüz yirmi beş yılındaki çalışmasında görürüz.\n\nbin dokuz yüz yirmi beş yılında Kretchmer, morfolojik olarak benzer olan vücut tiplerini üç ana grupta toplamıştır: a. asthenic(zayıf, ince, zarif vücut tipi) b. athletic(kaslı, atletik vücut tipi) c. pyknic(şişman, yuvarlak hatlara sahip vücut tipi) bin dokuz yüz elli dört yılında ise Sheldon bir başka sınıflandırma önermiştir.\n\na. Endomorphic(yuvarlar hatlara sahip, şişman vücut) b. Mesomorphic(kemikli, atletik, kaslı vücut) c. Ectomorphic(ince, zayıf, narin vücut) Sheldon, ayrıca vücut tipi ile kişilik özellikleri arasında da bir ilişki olduğunu iddia etmiştir. Vücut tipleri ve kişilik özellikleri arasında bir eşleştirme yaptığı sınıflandırma şöyledir: a. Endomophic.....................Viscerotonic (çekingen, tembel, üşengeç, rahat kişiler) b. Mesomorphic.....................Somatotonic (kendine güveni yüksek, görev odaklı, agresif kişi) c. Ectomorphic.....................Cerebrotonic (gergin, sinirli, diğerlerine karşı eleştirel kişiler) Sheldon’un iki önermesi de oldukça yoğun eleştiriler almış olsa da insanları vücutları itibarıyla birbirinden farklılaştıran özelliklere vurgu yapması bakımından ilginçtir. Ayrıca, belirtilen kişilik özellikleri de vücut tiplerinin karşıdakilerce anlaşılmasında ortaklaştıkları noktalar olduğunu göstermektedir.\n\nAmerikan toplumunda (belki bizde de) fiziksel çekiciliği getiren vücut özelliklerin sahip olmak kadınlar tarafından daha önemli olarak algılanmaktadır.\n\nKadın vücut çekiciliğinde omuz/kalça oranı önemlidir. Singh’in yaptığı araştırmaya göre, vücut yağ dağılımı da önemlidir. Normal ağırlıktaki kadınlardan bahsedersek düşük omuz/kalça oranı daha yüksek çekicilik anlamına gelmektedir.\n\nErkekler içinse ideal vücut tipi geniş omuzlar ve kaslı bir göğüs olarak belirtilmektedir. İdeal olarak erkek en azından ortalama bir kas yapısına ve uzun bir boya sahip olmalıdır.\n\n“Geleneksel” kadınlar yukarıda belirtilen, geniş omuzlar, geniş ve kaslı bir göğüs ve kaslı kollar gibi maskulen vücut özelliklerine, erkek çekiciliği açısından daha birincil bir önem vermektedirler. “Geleneksel olmayan” kadınlar kas yapısına o kadar yüksek değer vermemektedirler. Fakat geleneksel ya da değil kadınlar, küçük göğüs ve kollara sahip erkekleri maskulenlik ve fiziksel anlamda çekici olmayan olarak değerlendirmektedir.\n\nKısaca, fiziksel olarak çekici olanı çekici olmayandan ayıran özellikler olarak yüz ve vücut önemlidir. Kadınlar için çekicilik profili daha iyi temellenmiş, detaylı ve kesindir. Buna göre de kadınlar fiziksel çekiciliğe erkeklere nazaran daha fazla önem vermektedirler.",
+          "start": 3190.347,
+          "end": 3393.429,
+          "duration": 203.082,
+          "tts_parts": 1,
+          "chars": 3114
+        },
+        {
+          "id": "c032",
+          "title": "Vücut Algısı",
+          "text": "İnsanlar başkalarının vücutlarını algıladıkları gibi kendi vücutlarını da algılarlar. Kendi zihinlerinde kendi vücutlarının bir resmini oluştururlar. Birinin kendi vücut imajından memnuniyet derecesine “body cathexis” denir. Birinin kendi zihninde kendi vücut imajını bozundurmasına ise “body distortion” denir.\n\nKendi vücudundan memnun olmayan insanlar, kendi kişisel görünüşlerini zihinlerinde görselleştirmekte alışılmadık bir zorluk çekerler. Toplumsal cinsiyet de vücut bozundurmasında önemli bir yere sahiptir. Aşağıda toplumsal cinsiyet farkları ve vücut algısı ile ilgili bazı ipuçları verilmiştir: Kadınlar, erkeklere göre, vücutlarından memnuniyetsizliklerini ifade etmeye daha yatkındırlar. ; Fiziksel çekiciliğe kadınlar daha büyük önem atfederler. ; Kadınlar vücut bozundurmasına da erkeklere göre daha yatkındırlar. Irk değişkeni burada büyük bir fark yaratmamaktadır. ; Kadınlar kendi vücutlarını gerçekte olduğundan daha büyük, erkekler ise daha küçük olarak algılamaktadırlar. ; Hem kadınlar hem erkekler kendi vücutlarının imajını, ideal olana yaklaşmak adına zihinlerinde farklı biçimlerde bozundurmaktadırlar. ; Kadınlar ağırlık olarak yaklaşık dört kilo daha az, erkekler ise yaklaşık iki kilo daha fazla olmak istediklerini belirtmişlerdir. Bu da fiziksel çekicilik stereotipine uygundur. Kadınlar ince ve erkekler ise daha kaslı olan ideale yaklaşmak istemektedirler. ; Ek olarak, Gabriel ve Gitell’in bin dokuz yüz doksan dört tarihli araştırmalarına göre, narsistik erkekler ve narsistik olmayan kadınlar kendi fiziksel çekicilik düzeylerini daha yüksek tahmin etmektedirler.\n\nHem kadınlar hem erkekler idealleştirilmiş vücut tipine uygun bir hâle farklı yollardan ulaşmaya çalışmaktadırlar. Kadınlar diet yaparak zayıflamaya çalışmakta, erkekler ise salonlarda (stereoidlerle) kas yapmaya çalışmaktadır. ; Daha çok, bekar kadınlar vücutlarından memnuniyetsizliklerini sık ve açıkça dile getirmektedir. ; Bir kez endomorphic tip kurulduktan sonra damgalanma ve bireyler arası ilişkilerde normal kabul edilmenin önünde büyük bir engel oluşmaktadır. ; Eğer biri, kilolu insanların sıklıkla, ilgisiz, tembel, toplumsal olmayan tipler oldukları gibi olumsuz kişilik özelliklerinin bu vücut tipiyle özdeşleştiği düşüncesine kapılırsa ve kiloluysa kişi, bilinç altında vücut bozundurmasına gidebilir ve en azından zihninde kendi vücut oranlarını inceltmek düşüncesine sahip olabilir. Bu da onun çarpık bir kendi vücut algısına sahip olmasını beraberinde getirir. ; İnsanlar karşılarındaki kişinin fiziksel çekicilik düzeylerini daha kolay ve kesin belirlerken kendilerinin fiziksel çekicilik düzeylerinin diğerlerince nasıl algılandığı konusunda kolay ve kesin yargılara varmakta güçlük çekmektedirler. Vücut imajının oluşmasının üç yönünden bahsedilebilir: Ben, Öteki ve Reflektif.\n\nBen dediğimiz, kendi kendimize vücudumuzu algılamamızdır. Vücudumuzun zihnimizdeki imajıdır. Öteki dediğimiz, bizimle etkileşim kuranların vücudumuz hakkındaki görüşleridir. Reflektif dediğimizde ise vücudumuzun objektif ve ölçü aletleriyle ölçülen özellikleriyle oluşan imajından ve algılanmasından bahsederiz.\n\nReflektif imaj önemlidir. Kişinin objektif ölçülerini ifade eder. Kişi diğer algıları bununla karşılaştırarak sapmaları görebilir. Reflektif imajın ben kavramı üzerine böyle bir etkisi vardır. Bu da bizim toplumdaki yerimizi algılamamıza etki eder.\n\nGüzellik ve çekicilik toplumda bir stereotip olarak var olmaktadırlar. Bunun nedeni güzel olanın iyi olanla birlikte olduğu varsayımıdır. Toplumda güzel olan iyi olanla özdeşleştirilir. Daha güzel olmak daha iyi özelliklere sahip olmak ve sonuçta toplumun koyduğu amaçlara ulaşmak demektir. Ve günümüz kültür endüstrisinde güzellik iyi özelliklere sahip olmak ve bu amaçlara ulaşmak için üzerinde uzlaşılmış bir ideal de taşıyan araç haline gelmiştir. Arttırılabilen, geliştirilebilen bir şeydir. Başarılı olmak için güzel ve çekici olmak gerekmektedir, güzellik ve çekicilik arttırılırsa başarı da arttırılır. Güzellik ve çekicilik ürünleri de bunları vermektir. Böylece şöyle bir sıralama ortaya çıkmaktadır. Daha çok güzellik ürünü tüketmek, daha güzel olmak, böylece daha başarılı olmak için potansiyel kazanmak. En temelde başarılı olmak görüldüğü gibi tüketmek ile ilişkilendirilmiştir.",
+          "start": 3394.329,
+          "end": 3661.08,
+          "duration": 266.751,
+          "tts_parts": 1,
+          "chars": 4401
+        },
+        {
+          "id": "c033",
+          "title": "Ses Kodları ve Susma",
+          "text": "Ses de kendi başına anlam taşımaktadır. Sesle taşınan anlamlar özellikle, duygusal durumu, algılanan kişilik özelliklerini, iletişimcinin yarattığı izlenimi önemli ölçüde etkilemektedir.\n\nSes kodlarının özellikle izlenim yaratmak konusunda sıkça kullanıldığı bilinmektedir. Bir öğretmen düşünün; karısı ya da çocuğuyla konuşurken kullandığı ses kodları ile bir öğrencisi kendisine soru sorduğunda ya da ders anlatırken kullandığı ses kodları birbirinden farklı olacaktır.\n\nSes kodları birçok işlev de yerine getirirler. İçe dönüklük ya da dışa dönüklüğü, baskınlık ya da bastırılmışlığı, hoşlanmayı ya da hoşlanmamayı, iletişimde sıra düzenini ve toplumsal cinsiyet, yaş, ırk hakkındaki bilgilerin aktarılmasını sağlar ya da desteklerler.\n\nBunların yanında ses kodları bireyler arası tutumlar konusunda da bilgiler sağlar. Toplumsal sınıf kullandığımız aksan ile anlaşılabilir.\n\nSes kodları birçok işlevi yerine getiriyorsa da en temelde üç işlevden bahsedebiliriz: Duygusal işlev ; İzlenim yönetimi işlevi ; Düzenleme işlevi",
+          "start": 3661.98,
+          "end": 3734.797,
+          "duration": 72.818,
+          "tts_parts": 1,
+          "chars": 1162
+        },
+        {
+          "id": "c034",
+          "title": "Sesin Semantiği",
+          "text": "Sesin semantiği konusunda bin dokuz yüz seksen yedi yılında Siegman ses kodlarını tanımlayıp sınıflandırabilecek genel bir sistem olmadığını belirtmiş olsa da bir kişinin sesine kendine has olma özelliklerini kazandıran bazı temel vasıflardan bahsedilebilir: a. Sesin Yüksekliği(Loudness) b. Sesin Perdesi(Pitch) c. Sesin ritim hızı(rate) d. Süre(duration) e. Sesin niteliği(Quality) f. Sesin düzenliliği(regularity) g. Boğumlama(articulation) h. Telaffuz(pronunciation) ı. Sessizlik(Silence) Sesin Yüksekliği: İnsanın sesinin gücüdür. Bu en temeldeki özelliktir. Kimsenin duymadığı bir ses diğer özellikleri ile de bir anlam taşımaz. Sesin yüksekliği decibel ile ifade edilir. Decibel: Birim saniyede alıcıya ulaşan aqustik enerjinin ölçüsüdür.\n\nSesin Perdesi: Müzikle uğraşanlar bu özelliğe yabancı değildirler. Ses perdesi, sesin ürettiği müzik notasıdır. Örneğin piyanoda bir tuşa basın ve örneğin C, C’ye bağlı tel saniyede iki yüz elli altı kez titreşir bu C notasıdır. İnsan sesi de buna benzer bir perdeye gelebilir. Her konuşmacının bir ses perdesi vardır. Bazen bu ses perdesi iletişim sırasında değişir; bunun nedenleri ya da etkenlerini Fisher şöyle anlatmaktadır: “ Hisler normal ses perdesini etkiler. Örneğin üzgünken alt notalarda, perdelerde konuşulur, heyecanlıyken üst perdelerden konuşulur. Konuşmacının perde aralığı denen şey ise konuşma sırasından sesin en düşük perdesi ile en yüksek perdesi arasında kalan aralıktır. Duygusal konularda perde aralığı daha geniştir. Monoton ve formal konularda ise çok dardır.”\n\nSesin ritm hızı: Bu özellik, anlamın aktarılmasını kolaylaştırabilir de zorlaştırabilir de. Burada konuşma hızı verili bir zaman biriminde (genelde dakikada) duyulan ses sayımına işaret eder. Anglo Saksonlar için dakikada iki yüz yetmiş beş ile üç yüz kelimelik bir hızın üstündeki konuşma hızında algılama ve kavrama oranı düşmektedir. Bununla birlikte bireyler kurs alarak daha yüksek hızdaki anlamları da kavrayacak yetkinliğe erişebilirler.\n\nNormal bir bireyin düşünme hızı, konuşma hızından daha yüksek olsa da yüksek konuşma hızı her zaman istenen bir özellik değildir. Ayrıca çok düşük konuşma hızları da dinleyicilerin dikkatini dağıtabilir.\n\nKonuşma hızı yalnızca konuşmacının konuşmasının akıcılığını belirlemekle ve iletişim etkililiğini arttırmakla kalmaz, konuşmacının konuşma hızının artması ile konuşmacı daha yoğun bir konuşma yaptığı izlenimini de uyandırır.\n\nSüre: Bir önceki madde ile doğrudan ilişkilidir. Konuşma süresi mesajların daha rahat anlaşılabilmesi için iyi kullanılmalıdır. Zaman harca zaman kazan mottosu burada geçerlidir. Her bir cümleye gerektirdiği zamanı tanımak gerekir.\n\nNitelik: Bir kişinin sesini o kişinin sesi yapan ya da bir başka deyişle o kişinin sesini diğer kişilerin seslerinden ayırt etmemizi sağlayan şeydir. Geçmiş yıllarda suç davalarında “voiceprints” denilen yazılı ses kayıtları kullanılmıştır. Bir kişinin baskın kişisel ses kalitesi onun yaratacağı izlenimi de önemli ölçüde etkilemektedir. Örneğin düz bir ses daha maskulen, buğulu sesler kolay ve seksi kadın stereotipinin değişmez temsilcisidir.\n\nDüzenlilik:Çıkarılan sesin tempolu ve tahmin edilebilir özelliklerini ifade eder. Ani ve beklenmedik bir düzen içindeki konuşma ile sıradan ve tekdüze bir konuşma arasında bu özelliğin farkını gözlemleyebilirsiniz. Tekdüzeliği yıkmak için bu özellik çoğu zaman aşılmaya çalışılır.\n\nBoğumlama: Sözleri söylerken sesleri doğru çıkarmak ile ilgilidir. Boğumlama ile ilgili hatalara özellikle açık e ve kapalı e kullanımları örnek gösterilebilir. Örneğin genç kelimesi açık e ile değil kapalı e ile söylenir.\n\nTelaffuz: Kelimeleri doğru söylemeyi ve anlamı sağlayan vurguyu doğru yerde sunabilmeyi içerir. Örneğin kirpik yerine kiprik demek bir telaffuz hatası olarak kabul edilir.\n\nSessizlik ve Susma: Susma konusu içinde ses barındırmamasına rağmen bu kategori içerisinde ele alınmıştır. Nasıl ki ışık karanlık ile bir ilişki içindeyse sessizlik ve susma da öyle bir ilişki içindedir. Susma rastlantısal bir olgu değildir. İçinde anlam taşır. Belli anlamları aktarmak için kullanılır. Aşağıda susma tipleri sıralanmıştır: bir. Psikolinguistik susma: Hem psikolojik hem de dilsel özellikler yüzünden gerçekleşen susma türüdür. İki çeşidi vardır. a. Kısa süreli susma: Dilin gramatik yapısı yüzündendir. Yazı dilindeki kelimeleri birbirinden ayıran boşluklar olarak düşünülebilir. Burada da konuşma dilinde kelimeleri dilin yapısı nedeniyle belli biçimde ifade etmek zorunluluğundan ortaya çıkar. b. Uzun süreli susma: Zihinsel süreçlerle ilgilidir. Bu susma da anlatılan konuların derinliği ve yaşantının karmaşıklığı ile ilgili olarak süre değişir. iki. Etkileşimsel susma: Bu susma kaynak ve hedef arasındaki etkileşimden doğar ve üç grupta incelenir. a  Karar verme ile ilgili susma: Konuşmaya kimin başlayacağına karar verememek gibi durumlarda ortaya çıkar. Statü farkı, tarafların birbirini tanımaması, ne söyleyeceğine karar verememek gibi durumlar da burada sayılır. b  Akıl yürütme ile ilgili susma: Hedefin, kaynağın amacını kavramaya ve söylediklerini kavrayıp anlamaya yönelik susma. c  Denetim kurma amacıyla susma: Otoriteyi sağlamak amacıyla susmaktır. Örneğin bir öğretmenin sınıfta gürültü varken susarak gözlerini öğrencilerden ayırmadan susması gibi. Bir süre sonra sessizlik olur ve öğretmen sözüne başlar. üç. Sosyokültürel Susma: Toplumsal ve kültürel nedenlere dayalı olan susma türüdür. Örneğin kültürümüzün bazı yörelerinde hala kadınların ve gençlerin daha az konuşmaları ya da susmaları bir gelenektir. Su küçüğün söz büyüğün atasözü bu duruma bir örnek teşkil etmektedir.",
+          "start": 3735.697,
+          "end": 4097.604,
+          "duration": 361.906,
+          "tts_parts": 1,
+          "chars": 5611
+        },
+        {
+          "id": "c035",
+          "title": "Ses Kodlarının İletişimsel İşlevleri",
+          "text": "Ses kodlarının en temelde üç iletişimsel işlevinden bahsedilir: duyguları aktarma işlevi, izlenim yönetimi işlevi, düzenleyici işlevi.\n\nDuyguları Aktarma işlevi: Ses kodları duygusal iletişimin önemli bir ortamıdır. Mehrebian’a göre aktarılan duygusal bilgilerin yüzde otuz sekizi ses kodlarına, yüzde elli beş yüz ifadesine yüzde yedisi kelimelere atfedilir. Ses kodlarının insan iletişimde önemli olması, onu herkesi iyi kullandığı anlamına gelmemektedir.\n\nİzlemin Yönetimi İşlevi: İzlenim yönetimi üzerinde ses kodlarının fiziksel görünümden bile daha fazla etkisi vardır. İletişimin çekiciliğinin düzeyi konusunda da belirleyicilerden biridir. Ayrıca ses kodları kişinin kişilik özellikleri hakkında da önemli bir etkendir.\n\nSes kodları iki türlü hizmet ederler: Sesin perdesi, tonu vesaire özellikleri ile kişilik özelliklerini yansıtırlar, ikincisi üç temel imaj boyutunda işlev görürler: inanılırlık, bireyler arası çekicilik ve baskınlık.\n\nDüzenleyici işlevi: Bireyler arası iletişim ortamını düzenlemekte ses kodları perdenin, ritmin ve ses tonunun değişmesi ile işlev görürler.",
+          "start": 4098.504,
+          "end": 4173.597,
+          "duration": 75.093,
+          "tts_parts": 1,
+          "chars": 1241
+        },
+        {
+          "id": "c036",
+          "title": "Ses Kodları ve Kişilik Özellikleri",
+          "text": "Street ve Bready’nin bin dokuz yüz seksen ikide yaptıkları araştırmadan beri biliyoruz ki konuşma hızı ve algılanan konuşmacı yeterliği arasında güçlü bir ilişki vardır. Orta hızlı konuşma hızında sahip olanlar hakkında daha yüksek yeterlik yargısına varılmıştır. Ayrıca daha hızlı konuşanların sosyal çekicilik düzeyinde de artış gözlenmiştir.\n\nAddinton, çalışmasında konuşma hızı ve perdesi ile stereotipik karakter atıfları üzerine bulgular ortaya koymuştur. Burada dört deneyimli konuşmacı katılmış; bunlar yedi konuşma biçimini üç farklı konuşma hızında sunmuşlardır. Katılımcılar dinlemişler ve her biri hakkında yargılarda bulunmuşlardır. Buğulu ses ile konuşan erkekler için artistik kişilikler ve gençliğin ifadeleri kullanılmış; kadınlar içinse güzelliğin ve feminenliğin ama aynı zamanda da sığlığın ifadeleri kullanılmıştır. İnce sesli kadınlar olgun olmayan olarak değerlendirilmiş; erkekler içinse sonuç o oranda anlamlı çıkmamıştır. Düz, duygusuz bir ses kullanan konuşmacılar her iki cinsiyet için de maskulen özelliklere sahip olarak değerlendirilmişlerdir. Genizden konuşanlar her iki cinsiyette de arzu edilmeyen özelliklerin sembolü olarak değerlendirilmişlerdir. Boğazdan(gırtlaktan) konuşmak erkekler için daha yaşlı, daha olgun, sofistike olarak değerlendirilirken kadınlar için dikkatsiz, çirkin ve tembel olarak değerlendirilmiştir.\n\nNe söylediğimiz belki unutulabilir ama nasıl söylediğimizin büyük önemi vardır. İnsanlar siz konuşurken gerçekten sizi dinliyorlar mı? Onların dikkatlerini bölmeden yönlendirebiliyor musunuz? Özellikle duyguların açıklamasında önemi büyüktür ses kodlarının.\n\nSes özellikleri sosyal çekiciliği arttırabilme özelliğine de sahiptir. Fiziksel görünüşüyle fark edilmeyen birinin sesi bizde daha karizmatik bir izlenim oluşturmaya yetebilir.\n\nİçeriğini anlamadığımız konuşmalarda özellikle ses kodlarının duygusal bilgiler taşıdığını görürüz. Irak savaşında Amerikalı asker esirlerin konuşmalarını düşünün.\n\nKuşların dilini anlar mısınız? Neden seversiniz o zaman?",
+          "start": 4174.497,
+          "end": 4304.064,
+          "duration": 129.567,
+          "tts_parts": 1,
+          "chars": 2192
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Neler öğrendik?",
+      "start": 4305.264,
+      "end": 4509.832,
+      "chunks": [
+        {
+          "id": "c037",
+          "title": "Neler öğrendik?",
+          "text": "1. Soru\n\nAşağıdakilerden hangisi sözsüz iletişim tanımındaki önemli ifadelerden biri değildir?\n\nA. Verili bir durum ya da bağlamda ortaya çıkması\nB. Dinamik oluşu\nC. Geri döndürülmez oluşu\nD. Sadece sessiz sözsüz davranışlardan oluşması\nE. Bir süreç oluşu\n\n1. Sorunun Yanıtı: D\n\n2. Soru\n\nSözsüz iletişimin belirli bir grameri, dilbilgisi yoktur cümlesi sözel ve sözsüz iletişimin karşılaştırma boyutlarından hangisine denk gelir?\n\nA. Sessiz olması\nB. Linguistik olmaması\nC. Sürekli olması\nD. Doğuştan gelmesi\nE. Beynin sağ lobunda işlenmesi\n\n2. Sorunun Yanıtı: B\n\n3. Soru\n\nAşağıdakilerden hangisi sözsüz iletişim kodlarının ortak özelliklerinden biri değildir?\n\nA. Duygu ve coşkuları yetkin biçimde dile getirme\nB. Kişiler arasındaki ilişkileri belirleme ve düzenleme\nC. Sonradan öğrenilme\nD. Sözel iletişimin içeriği hakkında bilgi verme\nE. Güvenilir iletiler sağlama\n\n3. Sorunun Yanıtı: C\n\n4. Soru\n\n“Sözel iletişim kodları üzerindeki hakimiyetimiz, kontrolümüz daha azdır.” İfadeyle sözsüz iletişimin hangi özelliğine işaret edilir?\n\nA. Kültüre göre biçimlenme\nB. Güvenilir iletiler sağlama\nC. Sözel iletişimin içeriği hakkında bilgi verme\nD. Duygu ve coşkuları yetkin biçimde dile getirme\nE. İletişim yokluğunu olanaksız kılma\n\n4. Sorunun Yanıtı: B\n\n5. Soru\n\nKalabalık ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?\n\nA. Subjektiftir.\nB. Kişilerin algısına bağlıdır.\nC. Kalabalık algısı çevresel faktörlerden etkilenir.\nD. Objektiftir.\nE. Kalabalığın algılanmasında kişisel faktörler önemlidir.\n\n5. Sorunun Yanıtı: D\n\n6. Soru\n\nAşağıdakilerden hangisi kalabalık algısını etkileyen faktörlerden biri değildir?\n\nA. Çevresel\nB. Kişisel\nC. Sosyal\nD. Psikolinguistik\nE. Psikolojik\n\n6. Sorunun Yanıtı: D\n\n7. Soru\n\nAşağıdakilerden hangisi vücut dili işaretlerinin sınıflandırma boyutlarından biridir?\n\nA. Sosyalliğine göre\nB. Sosyo kültürel ortama göre\nC. İşlevine göre\nE. Vücudun şekline göre e. Etkililiğine göre\n\n7. Sorunun Yanıtı: C\n\n8. Soru\n\nAşağıdakilerden hangisi vücut dili işaretlerinin işleve göre sınıflarından biri değildir?\n\nA. Amblemler\nB. Duygu göstergeleri\nC. İkonikler\nD. Düzenleyiciler\nE. Uyumlandırıcılar\n\n8. Sorunun Yanıtı: C\n\n9. Soru\n\nÇekingen, tembel üşengeç kişilik özellikleri hangi vücut tipi ile ilişkilendirilir?\n\nA. Endomorphic\nB. Egzomorphic\nC. Ectomorphic\nD. Mesomorphic\nE. Tetramorphic\n\n9. Sorunun Yanıtı: A\n\n10. Soru\n\nSesin gücü yani decibel miktarı sesin semantiğinin hangi özelliğini gösterir?\n\nA. Sesin düzenliliği\nB. Sesin boğumlanması\nC. Sesin yüksekliği\nD. Sesin süresi\nE. Sesin ritm hızı\n\n10. Sorunun Yanıtı: C",
+          "start": 4305.264,
+          "end": 4509.832,
+          "duration": 204.568,
+          "tts_parts": 1,
+          "chars": 3473
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Bölüm 4: Bireylerarası İletişim ve Grup İletişimi</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0d1117;--card:#161b27;--card2:#1e2535;--b:rgba(255,255,255,.07);--b2:rgba(255,255,255,.13);--t:#dde3f5;--t2:#8892b0;--t3:#4a5275;--ac:#4f8ef7;--ac2:#3a6fd8;--gr:#2ecc85}
+[data-theme="light"]{--bg:#e2e8f0;--card:#fff;--card2:#f1f5f9;--b:rgba(0,0,0,.08);--b2:rgba(0,0,0,.14);--t:#0f172a;--t2:#475569;--t3:#64748b}
+html,body{height:100%;height:100dvh;overflow:hidden}
+body{font-family:"Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--t);display:flex}
+.pl-theme-btn{position:absolute;top:20px;right:20px;width:40px;height:40px;border-radius:50%;background:var(--card2);border:1px solid var(--b);color:var(--t);font-size:1.1rem;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:.2s;z-index:50}
+.pl-theme-btn:hover{background:var(--b);transform:scale(1.05)}
+@media(max-width:768px){.pl-theme-btn{top:12px;right:12px;width:34px;height:34px;font-size:.95rem;background:var(--card)}}
+.sidebar{width:360px;background:var(--card);border-right:1px solid var(--b);display:flex;flex-direction:column;z-index:10}
+.main-view{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--bg);position:relative;min-width:0}
+.hdr{padding:24px 24px 12px;flex-shrink:0}
+.hdr-title{font-size:1.35rem;font-weight:800;letter-spacing:-.4px;line-height:1.25}
+.hdr-sub{font-size:.72rem;color:var(--t3);margin-top:6px;font-weight:600}
+.ai-badge{display:inline-flex;align-items:center;gap:5px;margin-top:9px;padding:3px 10px;border-radius:100px;font-size:.68rem;font-weight:700;letter-spacing:.2px;background:rgba(155,108,247,.12);color:#8b5cf6;border:1px solid rgba(155,108,247,.3)}
+[data-theme="light"] .ai-badge{color:#6d28d9}
+.resume-btn{margin-top:12px;background:transparent;border:1px dashed var(--b2);color:var(--ac);border-radius:100px;padding:5px 14px;font-size:.74rem;font-weight:600;cursor:pointer;font-family:inherit}
+.resume-btn:hover{background:rgba(79,142,247,.08)}
+.resume-btn[hidden]{display:none}
+.toc{flex:1;overflow-y:auto;padding:0 0 16px}
+.toc::-webkit-scrollbar{width:4px}.toc::-webkit-scrollbar-thumb{background:var(--b2);border-radius:2px}
+.toc-ch{font-size:.66rem;text-transform:uppercase;letter-spacing:1.2px;color:var(--t3);font-weight:800;padding:16px 24px 6px;border-top:1px solid var(--b);margin-top:6px}
+.toc-ch:first-child{border-top:none;margin-top:0}
+.toc-item{display:flex;align-items:center;gap:13px;padding:11px 24px;cursor:pointer;transition:background .15s;border-left:3px solid transparent}
+.toc-item:hover{background:rgba(79,142,247,.06)}
+.toc-item.active{background:rgba(79,142,247,.1);border-left-color:var(--ac)}
+.toc-num{width:34px;height:34px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:700;background:var(--card2);color:var(--t3);border:1px solid var(--b2);transition:.15s}
+.toc-item.active .toc-num{background:var(--ac);color:#fff;border-color:var(--ac);box-shadow:0 0 0 4px rgba(79,142,247,.2)}
+.toc-item.active .toc-num-inner{display:none}
+.toc-item.active .toc-num::before{content:"🔊";font-size:.78rem}
+.toc-label{font-size:.83rem;font-weight:500;color:var(--t2);line-height:1.4;flex:1;transition:.15s}
+.toc-item.active .toc-label{color:var(--ac);font-weight:700}
+.toc-item.done .toc-num{background:rgba(46,204,133,.15);color:#34d399;border-color:rgba(46,204,133,.3)}
+.toc-time{font-size:.66rem;color:var(--t3);font-family:monospace;flex-shrink:0}
+.player-card{width:100%;max-width:500px;background:var(--card);padding:40px;border-radius:24px;box-shadow:0 20px 60px rgba(0,0,0,.5);border:1px solid var(--b);text-align:center}
+.cover-art{width:110px;height:110px;border-radius:20px;background:linear-gradient(135deg,rgba(79,142,247,.12),rgba(155,108,247,.12));border:1px solid var(--b);margin:0 auto 20px;display:flex;align-items:center;justify-content:center;font-size:2.8rem;color:var(--ac)}
+.now-ch{font-size:.68rem;text-transform:uppercase;letter-spacing:1.2px;color:var(--t3);font-weight:800;margin-bottom:6px}
+.now-title{font-size:1.08rem;font-weight:700;margin-bottom:18px;line-height:1.4;color:var(--t)}
+.prog-track{height:7px;background:rgba(128,128,128,.22);border-radius:4px;cursor:pointer;position:relative;overflow:hidden}
+.prog-seg{position:absolute;top:0;bottom:0;background:rgba(79,142,247,.28);border-radius:4px;pointer-events:none}
+.prog-fill{position:absolute;top:0;bottom:0;left:0;background:var(--ac);border-radius:4px;width:0%;pointer-events:none}
+.times{display:flex;justify-content:space-between;font-size:.7rem;color:var(--t3);margin-top:8px;font-weight:600}
+.ctrls{display:flex;align-items:center;justify-content:center;gap:22px;margin-top:18px}
+.ctrl-btn{width:44px;height:44px;border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;background:transparent;color:var(--t2);transition:.15s}
+.ctrl-btn:hover{color:var(--t);background:rgba(128,128,128,.12)}
+.ctrl-btn svg{width:24px;height:24px;fill:currentColor}
+.skip-btn{position:relative}
+.skip-label{position:absolute;bottom:-16px;left:50%;transform:translateX(-50%);font-size:.6rem;color:var(--t3);white-space:nowrap;font-weight:600}
+.play-btn{width:64px;height:64px;border-radius:50%;background:var(--ac);color:#fff;font-size:24px;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(79,142,247,.4);transition:.15s}
+.play-btn:hover{background:var(--ac2)}.play-btn:active{transform:scale(.95)}
+.spd-btn{margin-top:18px;background:var(--card2);border:1px solid var(--b2);color:var(--t2);border-radius:100px;padding:5px 14px;font-size:.72rem;font-weight:700;cursor:pointer;font-family:inherit}
+.spd-btn:hover{color:var(--t)}
+.aud-err{margin-top:16px;padding:12px 14px;border-radius:12px;background:rgba(224,85,85,.1);border:1px solid rgba(224,85,85,.35);color:#f87171;font-size:.8rem;line-height:1.55;text-align:left}
+.aud-err[hidden]{display:none}
+[data-theme="light"] .aud-err{color:#b91c1c}
+.aud-err b{color:var(--t)}
+@media(max-width:768px){body{flex-direction:column}.sidebar{width:100%;flex:1;border-right:none;border-bottom:1px solid var(--b);min-height:0}
+.main-view{flex:none;align-items:stretch;justify-content:flex-end;padding:0;background:transparent;width:100%;z-index:20}
+.player-card{max-width:100%;border-radius:0;padding:14px 18px;padding-bottom:calc(14px + env(safe-area-inset-bottom));border:none;border-top:1px solid var(--b);box-shadow:0 -10px 30px rgba(0,0,0,.5);background:var(--card2);margin:0}
+.cover-art{display:none}.now-ch{display:none}
+.now-title{font-size:.95rem;margin-bottom:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ctrls{gap:18px;margin-top:10px}.play-btn{width:54px;height:54px}.spd-btn{margin-top:10px}}
+</style>
+</head>
+<body>
+<button class="pl-theme-btn" id="pl-theme-btn" onclick="togglePlayerTheme()" title="Tema Değiştir">🌙</button>
+<aside class="sidebar">
+  <div class="hdr">
+    <div class="hdr-title">Bölüm 4: Bireylerarası İletişim ve Grup İletişimi</div>
+    <div class="hdr-sub" id="hdr-sub"></div>
+    <div class="ai-badge" title="Bu içeriğin üretiminde üretken yapay zekâ kullanılmıştır.">Yüksek ÜYZ katkısı (ai4)</div>
+  </div>
+  <div class="toc" id="toc"></div>
+</aside>
+<main class="main-view">
+  <div class="player-card">
+    <div class="cover-art">🎙️</div>
+    <div class="now-ch" id="now-ch"></div>
+    <div class="now-title" id="now-title">Başlamak için bir bölüm seçin</div>
+    <div class="progress">
+      <div class="prog-track" id="prog-track" onclick="seek(event)">
+        <div class="prog-seg" id="prog-seg"></div>
+        <div class="prog-fill" id="prog-fill"></div>
+      </div>
+      <div class="times"><span id="t-cur">00:00</span><span id="t-dur">00:00</span></div>
+    </div>
+    <div class="ctrls">
+      <button class="ctrl-btn" onclick="prevTrack()" title="Önceki parça"><svg viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6 8.5 6V6z"/></svg></button>
+      <button class="ctrl-btn skip-btn" onclick="skipTime(-10)" title="-10s"><svg viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg><span class="skip-label">-10s</span></button>
+      <button class="play-btn" id="play-btn" onclick="togglePlay()">▶</button>
+      <button class="ctrl-btn skip-btn" onclick="skipTime(10)" title="+10s"><svg viewBox="0 0 24 24"><path d="M12 5V1l5 5-5 5V7c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6h2c0 4.42-3.58 8-8 8s-8-3.58-8-8 3.58-8 8-8z"/></svg><span class="skip-label">+10s</span></button>
+      <button class="ctrl-btn" onclick="nextTrack()" title="Sonraki parça"><svg viewBox="0 0 24 24"><path d="M6 18l8.5-6L6 6v12zM16 6h2v12h-2z"/></svg></button>
+    </div>
+    <button class="spd-btn" id="spd-btn" onclick="cycleSpeed()">1.0×</button>
+    <div><button class="resume-btn" id="resume-btn" hidden></button></div>
+    <div class="aud-err" id="aud-err" role="alert" hidden></div>
+  </div>
+</main>
+<audio id="ap" preload="metadata"></audio>
+<script>
+var D = {"title":"Bölüm 4: Bireylerarası İletişim ve Grup İletişimi","audio":"audio/ders.mp3","total":4605.014,"chapters":[{"id":1,"title":"GİRİŞ"},{"id":2,"title":"BİREYLERARASI İLETİŞİM NEDİR?"},{"id":3,"title":"BİREYLERARASI İLETİŞİM UNSURLARI, MODELİ VE İLKELERİ"},{"id":4,"title":"BİREYLERARASI İLETİŞİMDE MESAJLARIN YAPISI"},{"id":5,"title":"BİREYLERARASI İLETİŞİMDE DİNLEMENİN ÖNEMİ"},{"id":6,"title":"GRUP İLETİŞİMİ"},{"id":7,"title":"Neler öğrendik?"}],"items":[{"ci":0,"chapterTitle":"GİRİŞ","id":"c001","title":"GİRİŞ","start":0.4,"end":64.255},{"ci":1,"chapterTitle":"BİREYLERARASI İLETİŞİM NEDİR?","id":"c002","title":"BİREYLERARASI İLETİŞİM NEDİR?","start":65.455,"end":497.625},{"ci":2,"chapterTitle":"BİREYLERARASI İLETİŞİM UNSURLARI, MODELİ VE İLKELERİ","id":"c003","title":"BİREYLERARASI İLETİŞİM UNSURLARI, MODELİ VE İLKELERİ","start":498.825,"end":514.011},{"ci":2,"chapterTitle":"BİREYLERARASI İLETİŞİM UNSURLARI, MODELİ VE İLKELERİ","id":"c004","title":"Bireylerarası İletişimin Unsurları","start":514.911,"end":547.697},{"ci":2,"chapterTitle":"BİREYLERARASI İLETİŞİM UNSURLARI, MODELİ VE İLKELERİ","id":"c005","title":"Kaynak – Alıcı","start":548.597,"end":592.158},{"ci":2,"chapterTitle":"BİREYLERARASI İLETİŞİM UNSURLARI, MODELİ VE İLKELERİ","id":"c006","title":"Mesaj","start":593.058,"end":632.671},{"ci":2,"chapterTitle":"BİREYLERARASI İLETİŞİM UNSURLARI, MODELİ VE İLKELERİ","id":"c007","title":"Kanal","start":633.571,"end":680.754},{"ci":2,"chapterTitle":"BİREYLERARASI İLETİŞİM UNSURLARI, MODELİ VE İLKELERİ","id":"c008","title":"Kodlama - Kod Açma","start":681.654,"end":739.611},{"ci":2,"chapterTitle":"BİREYLERARASI İLETİŞİM UNSURLARI, MODELİ VE İLKELERİ","id":"c009","title":"Geri Bildirim","start":740.511,"end":792.291},{"ci":2,"chapterTitle":"BİREYLERARASI İLETİŞİM UNSURLARI, MODELİ VE İLKELERİ","id":"c010","title":"İleri Bildirim","start":793.191,"end":831.551},{"ci":2,"chapterTitle":"BİREYLERARASI İLETİŞİM UNSURLARI, MODELİ VE İLKELERİ","id":"c011","title":"Gürültü","start":832.451,"end":883.72},{"ci":2,"chapterTitle":"BİREYLERARASI İLETİŞİM UNSURLARI, MODELİ VE İLKELERİ","id":"c012","title":"Bireylerarası İletişim Modeli","start":884.62,"end":903.847},{"ci":2,"chapterTitle":"BİREYLERARASI İLETİŞİM UNSURLARI, MODELİ VE İLKELERİ","id":"c013","title":"İletişimciler","start":904.747,"end":920.211},{"ci":2,"chapterTitle":"BİREYLERARASI İLETİŞİM UNSURLARI, MODELİ VE İLKELERİ","id":"c014","title":"Kimlik","start":921.111,"end":945.12},{"ci":2,"chapterTitle":"BİREYLERARASI İLETİŞİM UNSURLARI, MODELİ VE İLKELERİ","id":"c015","title":"Motivasyon","start":946.02,"end":1146.92},{"ci":2,"chapterTitle":"BİREYLERARASI İLETİŞİM UNSURLARI, MODELİ VE İLKELERİ","id":"c016","title":"Algı","start":1147.82,"end":1195.931},{"ci":2,"chapterTitle":"BİREYLERARASI İLETİŞİM UNSURLARI, MODELİ VE İLKELERİ","id":"c017","title":"İletişim Kaynakları","start":1196.831,"end":1264.959},{"ci":2,"chapterTitle":"BİREYLERARASI İLETİŞİM UNSURLARI, MODELİ VE İLKELERİ","id":"c018","title":"İçerik","start":1265.859,"end":1280.952},{"ci":2,"chapterTitle":"BİREYLERARASI İLETİŞİM UNSURLARI, MODELİ VE İLKELERİ","id":"c019","title":"Bağlam","start":1281.852,"end":1365.908},{"ci":2,"chapterTitle":"BİREYLERARASI İLETİŞİM UNSURLARI, MODELİ VE İLKELERİ","id":"c020","title":"Bireylerarası İletişimin İlkeleri","start":1366.808,"end":1379.718},{"ci":2,"chapterTitle":"BİREYLERARASI İLETİŞİM UNSURLARI, MODELİ VE İLKELERİ","id":"c021","title":"Bireylerarası İletişim Bir Süreçtir","start":1380.618,"end":1417.956},{"ci":2,"chapterTitle":"BİREYLERARASI İLETİŞİM UNSURLARI, MODELİ VE İLKELERİ","id":"c022","title":"Unsurlar Birbirine Bağlıdır","start":1418.856,"end":1451.689},{"ci":2,"chapterTitle":"BİREYLERARASI İLETİŞİM UNSURLARI, MODELİ VE İLKELERİ","id":"c023","title":"İletişim Süreci Kurallarla Yönetilir","start":1452.589,"end":1486.769},{"ci":2,"chapterTitle":"BİREYLERARASI İLETİŞİM UNSURLARI, MODELİ VE İLKELERİ","id":"c024","title":"İletişim Kültür Tarafından Belirlenmiştir","start":1487.669,"end":1536.431},{"ci":2,"chapterTitle":"BİREYLERARASI İLETİŞİM UNSURLARI, MODELİ VE İLKELERİ","id":"c025","title":"İletişimin Yorumlanması Niyetinden Daha Önemlidir","start":1537.331,"end":1585.767},{"ci":2,"chapterTitle":"BİREYLERARASI İLETİŞİM UNSURLARI, MODELİ VE İLKELERİ","id":"c026","title":"Bireylerarası İletişim Amaçsaldır","start":1586.667,"end":1744.099},{"ci":3,"chapterTitle":"BİREYLERARASI İLETİŞİMDE MESAJLARIN YAPISI","id":"c027","title":"BİREYLERARASI İLETİŞİMDE MESAJLARIN YAPISI","start":1745.299,"end":1782.636},{"ci":3,"chapterTitle":"BİREYLERARASI İLETİŞİMDE MESAJLARIN YAPISI","id":"c028","title":"Sözel Mesajlar","start":1783.536,"end":2043.971},{"ci":3,"chapterTitle":"BİREYLERARASI İLETİŞİMDE MESAJLARIN YAPISI","id":"c029","title":"Sözel İletişim ile İlgili Beceriler","start":2044.871,"end":2056.667},{"ci":3,"chapterTitle":"BİREYLERARASI İLETİŞİMDE MESAJLARIN YAPISI","id":"c030","title":"Kasıtlı Düzensizlikten Kaçınma","start":2057.567,"end":2093.79},{"ci":3,"chapterTitle":"BİREYLERARASI İLETİŞİMDE MESAJLARIN YAPISI","id":"c031","title":"Tanımlayıcı Olmak","start":2094.69,"end":2170.201},{"ci":3,"chapterTitle":"BİREYLERARASI İLETİŞİMDE MESAJLARIN YAPISI","id":"c032","title":"Somut Olmak","start":2171.101,"end":2196.318},{"ci":3,"chapterTitle":"BİREYLERARASI İLETİŞİMDE MESAJLARIN YAPISI","id":"c033","title":"Duyarlılık","start":2197.218,"end":2228.101},{"ci":3,"chapterTitle":"BİREYLERARASI İLETİŞİMDE MESAJLARIN YAPISI","id":"c034","title":"Açıklık","start":2229.001,"end":2266.292},{"ci":3,"chapterTitle":"BİREYLERARASI İLETİŞİMDE MESAJLARIN YAPISI","id":"c035","title":"Esneklik","start":2267.192,"end":2280.567},{"ci":3,"chapterTitle":"BİREYLERARASI İLETİŞİMDE MESAJLARIN YAPISI","id":"c036","title":"Sözel Olmayan Mesajlar","start":2281.467,"end":2367.52},{"ci":3,"chapterTitle":"BİREYLERARASI İLETİŞİMDE MESAJLARIN YAPISI","id":"c037","title":"Sözel Olmayan Mesajların İşlevleri","start":2368.42,"end":2380.401},{"ci":3,"chapterTitle":"BİREYLERARASI İLETİŞİMDE MESAJLARIN YAPISI","id":"c038","title":"Tamamlama","start":2381.301,"end":2411.952},{"ci":3,"chapterTitle":"BİREYLERARASI İLETİŞİMDE MESAJLARIN YAPISI","id":"c039","title":"Yalanlama","start":2412.852,"end":2448.936},{"ci":3,"chapterTitle":"BİREYLERARASI İLETİŞİMDE MESAJLARIN YAPISI","id":"c040","title":"Tekrar Etme","start":2449.836,"end":2467.39},{"ci":3,"chapterTitle":"BİREYLERARASI İLETİŞİMDE MESAJLARIN YAPISI","id":"c041","title":"Düzenleme","start":2468.29,"end":2493.739},{"ci":3,"chapterTitle":"BİREYLERARASI İLETİŞİMDE MESAJLARIN YAPISI","id":"c042","title":"Yerine Geçme","start":2494.639,"end":2511.311},{"ci":3,"chapterTitle":"BİREYLERARASI İLETİŞİMDE MESAJLARIN YAPISI","id":"c043","title":"Vurgulama","start":2512.211,"end":2537.288},{"ci":3,"chapterTitle":"BİREYLERARASI İLETİŞİMDE MESAJLARIN YAPISI","id":"c044","title":"Bireylerarası İletişim Sürecindeki Etkin Sözel Olmayan Mesaj Kategorileri","start":2538.188,"end":2554.21},{"ci":3,"chapterTitle":"BİREYLERARASI İLETİŞİMDE MESAJLARIN YAPISI","id":"c045","title":"Yüz İfadeleri","start":2555.11,"end":2796.18},{"ci":3,"chapterTitle":"BİREYLERARASI İLETİŞİMDE MESAJLARIN YAPISI","id":"c046","title":"Jestler ve Vücut Hareketleri","start":2797.08,"end":2929.666},{"ci":3,"chapterTitle":"BİREYLERARASI İLETİŞİMDE MESAJLARIN YAPISI","id":"c047","title":"Duruş","start":2930.566,"end":2989.777},{"ci":3,"chapterTitle":"BİREYLERARASI İLETİŞİMDE MESAJLARIN YAPISI","id":"c048","title":"Dokunma","start":2990.677,"end":3076.126},{"ci":3,"chapterTitle":"BİREYLERARASI İLETİŞİMDE MESAJLARIN YAPISI","id":"c049","title":"Alan Kullanımı","start":3077.026,"end":3205.572},{"ci":4,"chapterTitle":"BİREYLERARASI İLETİŞİMDE DİNLEMENİN ÖNEMİ","id":"c050","title":"BİREYLERARASI İLETİŞİMDE DİNLEMENİN ÖNEMİ","start":3206.772,"end":3369.033},{"ci":4,"chapterTitle":"BİREYLERARASI İLETİŞİMDE DİNLEMENİN ÖNEMİ","id":"c051","title":"Dinleme Süreci","start":3369.933,"end":3502.147},{"ci":4,"chapterTitle":"BİREYLERARASI İLETİŞİMDE DİNLEMENİN ÖNEMİ","id":"c052","title":"Dinleme Engelleri","start":3503.047,"end":3578.187},{"ci":4,"chapterTitle":"BİREYLERARASI İLETİŞİMDE DİNLEMENİN ÖNEMİ","id":"c053","title":"Etkin Dinleme","start":3579.087,"end":3672.06},{"ci":4,"chapterTitle":"BİREYLERARASI İLETİŞİMDE DİNLEMENİN ÖNEMİ","id":"c054","title":"Bireylerarası İletişimde Çatışma","start":3672.96,"end":3731.288},{"ci":4,"chapterTitle":"BİREYLERARASI İLETİŞİMDE DİNLEMENİN ÖNEMİ","id":"c055","title":"Çatışma Yönetimi Biçimleri","start":3732.188,"end":3894.449},{"ci":5,"chapterTitle":"GRUP İLETİŞİMİ","id":"c056","title":"GRUP İLETİŞİMİ","start":3895.649,"end":4000.046},{"ci":5,"chapterTitle":"GRUP İLETİŞİMİ","id":"c057","title":"Grup Türleri","start":4000.946,"end":4149.136},{"ci":5,"chapterTitle":"GRUP İLETİŞİMİ","id":"c058","title":"Grup İletişiminin Dinamikleri","start":4150.036,"end":4287.452},{"ci":5,"chapterTitle":"GRUP İLETİŞİMİ","id":"c059","title":"Gruplarda İletişim","start":4288.352,"end":4410.303},{"ci":6,"chapterTitle":"Neler öğrendik?","id":"c060","title":"Neler öğrendik?","start":4411.503,"end":4604.414}],"pkg":"2026-09-21T10:21:21.475Z"};
+function initPlayerTheme(){var s=localStorage.getItem("sd-theme"),p=window.matchMedia("(prefers-color-scheme: light)").matches;if(s==="light"||(!s&&p)){document.documentElement.setAttribute("data-theme","light");document.getElementById("pl-theme-btn").textContent="☀️";}}
+function togglePlayerTheme(){var e=document.documentElement;if(e.getAttribute("data-theme")==="light"){e.removeAttribute("data-theme");localStorage.setItem("sd-theme","dark");document.getElementById("pl-theme-btn").textContent="🌙";}else{e.setAttribute("data-theme","light");localStorage.setItem("sd-theme","light");document.getElementById("pl-theme-btn").textContent="☀️";}}
+initPlayerTheme();
+var ap=document.getElementById("ap");
+function showAudErr(){var e=document.getElementById("aud-err");if(!e||!e.hidden)return;e.hidden=false;
+  e.innerHTML="<b>Ses dosyası açılamadı</b> ("+D.audio+")<br>Paketi ZIP içinden doğrudan açtıysanız ses dosyası yanında gelmez. ZIP dosyasına sağ tıklayıp <b>Tümünü ayıkla</b> deyin ve çıkan klasördeki <b>index.html</b> dosyasını açın. LMS'e yüklerken ZIP'i açmadan olduğu gibi yükleyin.";}
+ap.addEventListener("error",showAudErr);
+var ITEMS=D.items, cur=-1, playing=false, spd=1, maxTime=0, doneSet={}, seeking=false;
+var SPEEDS=[1,1.25,1.5,1.75,2,0.85];
+var KEY="sdp-"+(D.title||"ders").replace(/\s+/g,"_")+"-"+(D.pkg||"");
+function fmt(s){s=Math.floor(s||0);var h=Math.floor(s/3600),m=Math.floor((s%3600)/60),x=s%60;var mm=String(m).padStart(2,"0"),ss=String(x).padStart(2,"0");return h?(h+":"+mm+":"+ss):(mm+":"+ss);}
+function buildTOC(){var toc=document.getElementById("toc");var lastCh=null;
+  ITEMS.forEach(function(it,i){
+    if(it.chapterTitle!==lastCh){var h=document.createElement("div");h.className="toc-ch";h.textContent=it.chapterTitle||"Bölüm";toc.appendChild(h);lastCh=it.chapterTitle;}
+    var row=document.createElement("div");row.className="toc-item";row.id="ti"+i;
+    row.onclick=function(){goTo(i,true);};
+    row.innerHTML='<div class="toc-num"><span class="toc-num-inner">'+(i+1)+'</span></div><div class="toc-label"></div><div class="toc-time">'+fmt(it.start)+'</div>';
+    row.querySelector(".toc-label").textContent=it.title||("Parça "+(i+1));
+    toc.appendChild(row);
+  });
+  document.getElementById("hdr-sub").textContent=ITEMS.length+" parça · "+fmt(D.total)+" toplam süre";
+}
+function indexAt(t){for(var i=ITEMS.length-1;i>=0;i--){if(t>=ITEMS[i].start-0.05)return i;}return 0;}
+function setActive(i){
+  if(i===cur)return;cur=i;var it=ITEMS[i];if(!it)return;
+  var nodes=document.querySelectorAll(".toc-item");
+  for(var k=0;k<nodes.length;k++)nodes[k].classList.toggle("active",k===i);
+  var el=document.getElementById("ti"+i);if(el)el.scrollIntoView({behavior:"smooth",block:"nearest"});
+  document.getElementById("now-ch").textContent=it.chapterTitle||"";
+  document.getElementById("now-title").textContent=it.title||("Parça "+(i+1));
+  var seg=document.getElementById("prog-seg");var tot=D.total||ap.duration||1;
+  seg.style.left=(it.start/tot*100)+"%";seg.style.width=((it.end-it.start)/tot*100)+"%";
+}
+function goTo(i,play){if(i<0||i>=ITEMS.length)return;setActive(i);seekTo(ITEMS[i].start);if(play)doPlay();}
+function seekTo(t){if(!ap.duration||isNaN(ap.duration)){seeking=t;return;}try{ap.currentTime=t;}catch(e){seeking=t;}}
+function doPlay(){ap.playbackRate=spd;ap.play().then(function(){playing=true;document.getElementById("play-btn").textContent="⏸";}).catch(function(){if(ap.error)showAudErr();});}
+function togglePlay(){if(playing){ap.pause();playing=false;document.getElementById("play-btn").textContent="▶";}else doPlay();}
+function nextTrack(){goTo(cur+1,true);}
+function prevTrack(){var it=ITEMS[cur];if(it&&ap.currentTime-it.start>3){seekTo(it.start);return;}goTo(cur-1,playing);}
+function skipTime(s){seekTo(Math.max(0,Math.min(ap.duration||D.total,ap.currentTime+s)));}
+function seek(e){var d=ap.duration||D.total;if(!d)return;var r=e.currentTarget.getBoundingClientRect();seekTo((e.clientX-r.left)/r.width*d);}
+function cycleSpeed(){var i=SPEEDS.indexOf(spd);spd=SPEEDS[(i+1)%SPEEDS.length];ap.playbackRate=spd;document.getElementById("spd-btn").textContent=spd.toFixed(2).replace(/0$/,"")+"×";}
+ap.addEventListener("loadedmetadata",function(){if(seeking!==false){var t=seeking;seeking=false;ap.currentTime=t;}document.getElementById("t-dur").textContent=fmt(ap.duration||D.total);});
+ap.addEventListener("timeupdate",function(){
+  var d=ap.duration||D.total;if(!d)return;
+  document.getElementById("prog-fill").style.width=(ap.currentTime/d*100)+"%";
+  document.getElementById("t-cur").textContent=fmt(ap.currentTime);
+  document.getElementById("t-dur").textContent=fmt(d);
+  var i=indexAt(ap.currentTime);
+  if(i!==cur){if(cur>=0&&i>cur){doneSet[cur]=1;var pe=document.getElementById("ti"+cur);if(pe)pe.classList.add("done");}setActive(i);}
+  if(ap.currentTime>maxTime){maxTime=ap.currentTime;saveProgress(d);}
+});
+ap.addEventListener("ended",function(){playing=false;document.getElementById("play-btn").textContent="▶";var pe=document.getElementById("ti"+cur);if(pe)pe.classList.add("done");completeSCORM();});
+var lastSave=0;
+function saveProgress(d){var now=Date.now();if(now-lastSave<5000)return;lastSave=now;
+  try{localStorage.setItem(KEY,JSON.stringify({t:ap.currentTime,m:maxTime}));}catch(e){}
+  if(scormAPI){try{scormAPI.SetValue("cmi.location",String(Math.floor(ap.currentTime)));scormAPI.SetValue("cmi.progress_measure",String(Math.min(1,maxTime/(d||1)).toFixed(3)));scormAPI.Commit("");}catch(e){}}
+  if(d&&maxTime>=d*0.95)completeSCORM();
+}
+var scormAPI=null;
+function findAPI(win){var a=0;while((win.API_1484_11==null)&&(win.parent!=null)&&(win.parent!=win)){a++;if(a>7)return null;win=win.parent;}return win.API_1484_11;}
+function initSCORM(){scormAPI=findAPI(window);if(scormAPI){try{scormAPI.Initialize("");var st=scormAPI.GetValue("cmi.completion_status");if(st==="not attempted"||st==="unknown"||st===""){scormAPI.SetValue("cmi.completion_status","incomplete");scormAPI.Commit("");}var loc=parseFloat(scormAPI.GetValue("cmi.location"));if(loc>5)offerResume(loc);}catch(e){}}}
+function completeSCORM(){if(scormAPI){try{if(scormAPI.GetValue("cmi.completion_status")!=="completed"){scormAPI.SetValue("cmi.completion_status","completed");scormAPI.SetValue("cmi.success_status","passed");scormAPI.SetValue("cmi.progress_measure","1");scormAPI.Commit("");}}catch(e){}}}
+function restore(t){seekTo(t);setActive(indexAt(t));}
+function offerResume(t){var b=document.getElementById("resume-btn");if(!b||!(t>5))return;b.textContent="↻ Kaldığınız yerden devam ("+fmt(t)+")";b.hidden=false;b.onclick=function(){restore(t);doPlay();b.hidden=true;};}
+window.addEventListener("load",initSCORM);
+window.addEventListener("beforeunload",function(){if(scormAPI){try{scormAPI.Terminate("");}catch(e){}}});
+buildTOC();
+ap.src=D.audio;
+(function(){var t=0;try{var s=JSON.parse(localStorage.getItem(KEY)||"null");if(s&&s.t){t=s.t;maxTime=s.m||0;}}catch(e){}
+  document.getElementById("t-dur").textContent=fmt(D.total);
+  setActive(0);if(t>5)offerResume(t);})();
+</script>
+</body>
+</html>
