@@ -1,0 +1,293 @@
+{
+  "course_title": "Bölüm 8: Uluslararası ve Kültürler Arası İletişim",
+  "schema_version": 2,
+  "audio_mode": "single",
+  "audio_file": "audio/ders.mp3",
+  "audio_codec": "MP3 128 kbps",
+  "sample_rate": 44100,
+  "audio_level": {
+    "inPeakDb": -0.2533916451720774,
+    "inRmsDb": -18.750902318035514,
+    "gainDb": -0.458,
+    "clipped": 0,
+    "perPart": true,
+    "gainMinDb": -0.747,
+    "gainMaxDb": -0.113,
+    "targetRmsDb": -10
+  },
+  "total_duration": 2851.153,
+  "tts_engine": "ElevenLabs · eleven_multilingual_v2",
+  "ai_disclosure": {
+    "level": "ai4",
+    "label": "Yüksek ÜYZ katkısı",
+    "text": "Yüksek ÜYZ katkısı (ai4)"
+  },
+  "tts": {
+    "engine": "elevenlabs",
+    "generated_at": "2026-09-21T11:42:57.274Z",
+    "max_chars_per_request": 10000,
+    "model": "eleven_multilingual_v2",
+    "voice": {
+      "id": "7VqWGAWwo2HMrylfKrcm",
+      "name": "Fatih Yıldırım - Deep, Clear and Rich",
+      "gender": "male",
+      "category": "professional"
+    },
+    "voice_settings": {
+      "speed": 0.98,
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0,
+      "use_speaker_boost": true,
+      "request_stitching": true
+    },
+    "pauses": {
+      "after_title_s": 0.8,
+      "between_paragraphs_s": 0.8,
+      "between_chunks_ms": 900,
+      "between_chapters_ms": 1200,
+      "between_parts_ms": 250,
+      "lead_in_ms": 400,
+      "tail_ms": 600
+    },
+    "text_rules": {
+      "numbers_to_words": true,
+      "fix_all_caps": true,
+      "abbreviations": true,
+      "spell_unknown_acronyms": true,
+      "builtin_list_edited": true,
+      "builtin_rule_count": 223,
+      "user_lexicon_rule_count": 5,
+      "user_lexicon": "@ = et\nMP3 = empi üç\nX3C = iks üç ce\nC. = C\nD. = D"
+    },
+    "audio": {
+      "codec": "MP3 128 kbps",
+      "sample_rate": 44100,
+      "gain_mode": "auto",
+      "gain_per_part": true,
+      "target_rms_dbfs": -10,
+      "gain_applied_db": -0.458,
+      "gain_min_db": -0.747,
+      "gain_max_db": -0.113,
+      "input_peak_dbfs": -0.253,
+      "input_rms_dbfs": -18.751,
+      "limiter_hits": 0,
+      "ramp_in_ms": 20,
+      "ramp_out_ms": 50
+    },
+    "manual_edited_chunks": null
+  },
+  "generated_at": "2026-09-21T11:42:57.274Z",
+  "chapters": [
+    {
+      "id": 1,
+      "title": "GİRİŞ",
+      "start": 0.4,
+      "end": 436.749,
+      "chunks": [
+        {
+          "id": "c001",
+          "title": "GİRİŞ",
+          "text": "Her birey farklı belirli bir kültürel iklimin içinde yetişmektedir. Bireyin tutum ve davranış kalıplarının, alışkanlıklarının, değerlerinin oluşmasında aile, sosyal çevre ve toplumun etkisi yadsınamamaktadır. Bu sebeple birey, içinde yetiştiği kültürel iklimden bağımsız düşünülememektedir.\n\nFarklı kültürlerde yetişen bireylerin bir araya gelerek iletişim sürecinin bir parçası olmaları, şüphesiz uluslararası iletişim sürecinde kaynak ve alıcı makro düzeyde uluslarla temsil edilirken farklı uluslara mensup bireyler arasındaki iletişim süreci genellikle kültürler arası iletişim süreci olarak adlandırılmaktadır. Kültürler arası anlam aktarımlarına ve bilgi paylaşımına olanak sağlayan kültürler arası iletişim, küresel köyün tektipleşmesinden ziyade kültürel farklılıkların korunarak zengin bir anlam yelpazesinin oluşturulmasını savunmaktadır. Bu noktada yerel kültürel değerlerin korunması oldukça önemlidir.\n\nBu ünitede kültürler arası iletişimin yararları, uluslararası ve kültürler arası iletişim sürecinde dikkat edilmesi gereken noktalar, kültürel boyutlar ve kültürler arası farklılıklar ele alınacaktır. Kültürler arası farklılıklara saygı göstermek, kültürel hassasiyetlere karşı duyarlı olmak ve sağlıklı bir iletişim ortamının oluşturulmasının nirengi noktalarıdır.\n\nDünya üzerinde yaşayan toplulukların hem fiziksel hem de kültürel açıdan belirli bir coğrafyaya mahkum olmaları ve entelektüel dünyalarını çizilen bu sınırlar içinde tutmaları tarih kitaplarının sayfalarında kalmıştır. Uluslararası dolaşımın arttığı ve yeni iletişim teknolojilerinin hızla geliştiği günümüzde ulusların nispeten homojen yapıları, çok kültürlü toplulukların etkileşim alanlarına dönüşmüştür.\n\nUluslararası ve kültürler arası iletişim, farklı kültürel değerlerle yoğrulmuş bakış açılarını bünyesinde toplayan bilgi paylaşım sürecidir. İrfan Erdoğan’a göre uluslararası iletişim öncelikle makro seviyedeki ilişkileri anlatmaktadır. Bu noktada birim uluslardır. Dolayısıyla ulus birimleriyle ilgili siyasal, kültürel, ekonomik, eğitim, turizm, çevre, işçi göçü, ücret politikaları, gümrük konuları, yatırım konuları, yatırım, üretim, dağıtım ve uluslararası diplomatik ilişkiler uluslararası iletişim kapsamına girmektedir. Kitle iletişimi bağlamında ise uluslararası iletişim: Kitle iletişim teknolojilerinin örgütlenme, üretim ve dağıtım biçimleri, İletişim ürünlerinin, profesyonel ideolojilerin, yasal yapıların ve iş kültürünün transferi, benimsetilmesi ve benimsenmesi ile ilgili ilişkileri kapsamaktadır.\n\nResim 8.1 \n\nGörselde farklı dillerde selamlaşma ifadeleri aynı görsel düzen içinde bir araya getirilmiştir. Farklı dil ve kültürlerin iletişimde karşılaşmasını simgeleyen bu düzenleme, kültürler arası etkileşim fikrini desteklemektedir.\n\nUlusların karşılıklı ideoloji, kültür, iş gücü, ürün ve hizmet alışverişi, uluslararası iletişim sürecini başlatmıştır. Sorrells’e göre (iki bin on üç:dokuz) günümüzde kültür; toplumla, ulusal, uluslararası ve ulus aşırı ekonomiyle ve politikayla bağlantılı olduğu için her zamankinden daha çok önem kazanmıştır. Sorrells bir bakıma küreselleşmenin kültüre etkisinden bahsetmektedir. Şimdi küreselleşme ve kültür arasındaki ilişkiyi daha yakından inceleyelim.\n\nHem bireysel hem de toplumsal yaşamın her alanında etkisini gösteren küreselleşme kavramının Türk Dil Kurumundaki karşılığı “dünya milletlerini ekonomi, siyaset ve iletişim bakımlarından birbirine yaklaşmaya ve bir bütün olmaya götürmek”tir (te de ke, iki bin beş:bin iki yüz seksen altı). Küreselleşmenin sadece ekonomik boyutundan bahsetmek mümkün değildir; ekonomiden teknolojiye, iletişimden kültürel etkileşime kadar hayatın her alanında bu kavram karşımıza çıkmaktadır. Şüphesiz küreselleşmenin etki alanlarından biri de kültürdür. Küreselleşmenin kültür üzerindeki etkisi, iki farklı görüşün karşı karşıya gelmesine sahne olmaktadır. Bu durum, Marieke de Mooij (iki bin on:yedi) tarafından “Bir yandan küreselleşmenin yerel kültürleri yerle bir etmesi beklenmekte, diğer yandan ise küreselleşme, dünyanın farklı yerlerindeki yerel kültürel kimliklerin kurtuluş nedeni olarak görülmektedir” şeklinde özetlenmiştir. İlk görüş, küreselleşmenin homojen dünya kültürü ideali bağlamında farklı kültürel özellikleri yok edeceğini ve tektipleşmenin kaçınılmaz olduğunu savunurken ikinci görüş küreselleşmenin kültürler arası etkileşimi arttırarak heterojen bir yapı oluşturduğunu savunmaktadır. Her toplumun, her kültürün kendine has kültürel mirası vardır; geleneklerinden toplumsal norm ve değerlerine kadar geçmişten bugüne taşınan bu miras, zaman ilerledikçe birikimli olarak gelişmektedir. Küreselleşme, yeni iletişim teknolojilerinin de yardımıyla dünyanın her yerinden farklı toplumlara nüfuz etse de tektipleşme bu zengin kültürel mirası tamamen yok edemez. Bu noktadan hareketle, özellikle uluslararası pazarlama küreselleşmenin homojenliğinden vazgeçmiş ve yerel olana saygıyla “küresel düşün, yerel hareket et” (think global, act local) anlayışını benimsemiştir. Küyerelleşme (glocalization), uluslararası markaların yerel pazarlara girerken ürün ya da pazarlama stratejilerini söz konusu pazarların yerel kültürel değerlerine uyarlamasıyla gelişmiştir. Bu vesileyle yerel kültürel unsurların değeri tekrar gündeme gelmiştir. Kültürler arası iletişim açısından bakıldığında, tek tip yerel kültürlerin farklı kültürel etkileşimler sonucu daha da zenginleşeceğini söylemek mümkündür. Yeni iletişim teknolojileri dünyayı küçültmüş olabilir ancak aynı zamanda gelenekseli güçlendirdiği de unutulmamalıdır. Farklı kültürlerin etkileşim halinde olması ve varlıklarını zenginleşerek sürdürmeleri kültürler arası iletişimin başarısıdır.",
+          "start": 0.4,
+          "end": 436.749,
+          "duration": 436.349,
+          "tts_parts": 1,
+          "chars": 5872
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "KÜLTÜRLER ARASI İLETİŞİM",
+      "start": 437.949,
+      "end": 912.908,
+      "chunks": [
+        {
+          "id": "c002",
+          "title": "KÜLTÜRLER ARASI İLETİŞİM",
+          "text": "Kültürler arası iletişim; farklı kültürlere mensup insanlar arasında etkileşim ve anlam aktarımları, yabancının algılanması, açıklanması ve kültürel farklılıkların gözetilmesi gibi konuları inceleyen disiplinler arası bir bilim dalıdır (Kartarı, iki bin on dört:elli). Değişik kültürel iklimlerde yetişen bireylerin arasında gelişen iletişim süreci, hem farklılıkların algılanması hem de yeni kültürel verilerin elde edilmesi açısından önemli bir süreçtir. Bu bağlamda kültürler arası iletişimin bireyi zihnen zenginleştiren bir bilim dalı olduğunu söylemek mümkündür.\n\nUlusal sınırları aşan, kültürel geleneklerdir çünkü kültür öğrenme yoluyla yayılmaktadır. Kültürel özellikler bir topluluktan diğerine ödünç alma ya da yayılma yoluyla genişlemektedir. Uluslar ya da topluluklar arasında gelişen bu alışveriş, kültürler arası iletişim sürecini başlatmaktadır.\n\nKültürler arası iletişimin temel çıkış noktası, kültürler arasında var olan farklılıkları belirli yöntemlerle ortaya koymak ve insan davranışının kültüre göre gösterdiği değişiklikleri inceleyerek bu alanda çalışanların ortak bir noktada anlaşmazlık yaşamadan buluşmalarını sağlamaktır. Bu kapsamda kültürler arası iletişimin var olabilmesi için gerekli olan başlıca özellikler şunlardır (Çelik, iki bin beş:otuz altı): Kültürler farklı, birbirinden ayırt edilebilir olmalıdır. ; Kültür ve iletişim arasında bir ilişki olmalıdır. ; İletişime katılanlar aynı zamanda bir kültürde yer alan, o kültüre katılanlardır. ; Kültürel olan, iletişime yansır (kültür katılımcıları olmadan iletişim kurulamaz). ; Kültürde yer almak, belirli bir tarzda iletişim kurmak anlamına gelir. ; Ortak kültüre sahip olmak iletişimi kolaylaştırırken farklı kültürlere sahip olmak iletişimi zorlaştırmaktadır. Uluslararası iletişimde birimin ulus olduğundan bahsetmiştik. Kültürler arası iletişimde de birim, farklı kültürlere mensup birey ya da topluluklardır. İki veya daha çok sayıda farklı kültürün bir araya gelerek başlattığı iletişim sürecinde iletiler kültürel şekillenmeye bağlı olarak yapılanmaktadır. Bu durumda kültürel olanın iletişime yansıması kaçınılmazdır. Bunun yanı sıra, ortak kültürel değerler hem referans çerçevesini genişletecek hem de iletişimi ve empatiyi kolaylaştırarak birleştirici bir işlev üstlenecektir. Söz konusu işlevlerine ek olarak kültürler arası iletişimin üç temel çalışma konusu bulunmaktadır: bir. Yerel kültürlerin tanınması iki. Yerel kültürlerin birbirleriyle kurdukları iletişim biçimlerinin ortaya konması üç. Ortaya çıkabilecek anlaşmazlıkları giderecek çözüm yollarının saptanması Yukarıda da görüldüğü üzere değişik yerel kültürleri tanımak; başlıca özelliklerini, ritüellerini, kültürel hassasiyetlerini, davranış biçimlerini öğrenmek; birbirleriyle kurdukları iletişim biçimlerini kavramak; çıkabilecek anlaşmazlık ve çatışmaları saptamak ve çözüm yolları üretebilmek kültürler arası iletişimin temel çalışma konuları arasında yer almaktadır.",
+          "start": 437.949,
+          "end": 665.319,
+          "duration": 227.37,
+          "tts_parts": 1,
+          "chars": 3024
+        },
+        {
+          "id": "c003",
+          "title": "Kültürler Arası İletişimin Yararları",
+          "text": "Saygı, hoşgörü, anlayış, empati, gibi unsurlarla temellenen kültürler arası iletişimin başlıca yararları şunlardır: a. Daha sağlıklı topluluklar: Kültürel farklılıklara saygı duyan toplumlarda bireyler birbirlerini anlamaya, onaylamaya ve takdir etmeye gayret etmektedirler. Farklılıkları kabullenip anlayışla karşılayan topluluklar ortaklaşa amaç için çalışırken ırk, cinsiyet, etnik köken, yaşam tarzı gibi bireysel unsurları önemsememektedirler. b. Ticaretin artması: Farklı kültürlerden insanlarla etkileşim halinde olmak, ticari açıdan da fayda sağlamaktadır. c. Çatışmanın azalması: Çatışma, ortak referans çerçeveleri kullanılarak azaltılıp yönetilebilen bir eylemdir. Çatışma genellikle durumu bir başkasının bakış açısından görememekten kaynaklanmaktadır. Söz konusu kişi başka bir kültürden geliyorsa mevcut duruma ön yargılar, genellemeler ve tek tipleştirme de eklemektedir. Bu durum savunmacı davranış biçiminin geliştirilmesine yol açarak çatışmanın körüklenmesine sebep olmaktadır. d. Hoşgörü yoluyla kişisel gelişim: Farklı kültürlere mensup bireyler iletişim kurarken aynı zamanda birbirlerinin değerlerini, tarihlerini ve alışkanlıklarını da öğrenmektedirler. Aralarındaki ilişki geliştikçe bireyler empati geliştirerek birbirlerini daha iyi anlamaktadırlar. Bilindiği üzere, her kültür farklı olsa da birçok ortak nokta bulunmaktadır. Her kültürde insanların temel ihtiyaç ve istekleri aynıdır; sadece söz konusu ihtiyaç ve isteklere ulaşma şekilleri farklıdır. Bu noktada kendi yolunun tek yol olmadığını öğrenen birey, başka kültürlerle iletişim kurarken farklı olana karşı hoşgörüyle yaklaşmayı öğrenmektedir. Karşılıklı bilgi alışverişiyle renklenen, etkileşimle zenginleşen kültürler arası iletişim sürecinde temel olarak dikkat edilmesi gereken noktaları şu şekilde sıralayabiliriz: Farklı sosyal değerlerin olduğunu aklımızda tutalım. ; Farklı statü algılamaları, yorumlamaları ve anlamlarının olduğunu ve bunları sergilemede de farklılıklar olabileceğini hatırlayalım. ; Farklı karar alma yöntemleri ve yaklaşımlarının olabileceğini unutmayalım. ; Farklı zaman algılarının olabileceğini unutmayalım. Bazı kültürler zamanı önemli bir değer, hatta maddi bir değermiş gibi algılarken bir başka kültür daha rahat değerlendirilebilecek bir yaklaşımda olabilir. ; Farklı bireysel mesafe ve mekân algılarını hatırlayalım. Bazı kültürlerde yakın bireysel ilişkiler ve iletişim tercih nedeniyken bazı kültürlerde bireylerarası mesafe tercih ediliyor olabilir. ; Farklı kültürel dokulardan kaynaklanan sözel ve sözsüz iletişimi kullanma biçimlerinde farklılıklar olabileceğini unutmayalım. ; Farklı beden dillerinin olduğunu unutmayalım. Bir kültürde yer alan beden dilinin farklı bir kültürde çok daha farklı anlamlar taşıyabileceğini unutmayalım. ; Farklı davranış kurallarının olabileceğini hatırlayalım. Bir kültürde doğru olarak bildiğimiz bir davranışın farklı bir kültür içerisinde olumlu karşılanmayacak şekilde algılanabileceğini unutmayalım. ; Farklı hukuki ve etik davranışların da var olduğunu, kültürler arası etkileşim ve iletişim süreçleri içerisinde farklılaşabileceklerini hatırlayalım. ; Farklı dil engellerinin olabileceğini hatırlayalım. Ayrı dilleri konuşanlarda olduğu gibi aynı dili konuşanların arasında da çeşitli nedenler ile paylaşım ve anlaşma süreçlerinde engeller olabileceğini unutmayalım.",
+          "start": 666.219,
+          "end": 912.908,
+          "duration": 246.689,
+          "tts_parts": 1,
+          "chars": 3393
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "KÜLTÜREL BOYUTLAR",
+      "start": 914.108,
+      "end": 2255.898,
+      "chunks": [
+        {
+          "id": "c004",
+          "title": "KÜLTÜREL BOYUTLAR",
+          "text": "Bireyi saran kültürel kumaş, toplumların kültürel mirasından elde edilmektedir. Her birey belirli bir toplumsal-kültürel birikimin içine doğmakta; sahip olduğu kültürel özellikler iş hayatı, kişiler arası iletişim süreci, tüketim alışkanlıkları, davranış biçimi gibi hayatının her alanına etki etmektedir. her toplumun kendine has bir kültürel birikimi olduğunu göz önünde bulundurursak iletişimin kültürel boyutlarının ne kadar önemli olduğunu anlayabiliriz. Bu konuda çalışmalar yapan bilim insanlarının başında Geert Hofstede gelmektedir. Şimdi Geert Hofstede’in şekillendirdiği, ardıllarının da katkılarıyla zenginleştirdiği kültürel boyutları yakından inceleyelim.",
+          "start": 914.108,
+          "end": 963.52,
+          "duration": 49.412,
+          "tts_parts": 1,
+          "chars": 712
+        },
+        {
+          "id": "c005",
+          "title": "Hofstede Yaklaşımı",
+          "text": "Geert Hofstede’nin bin dokuz yüz altmış yedi ile bin dokuz yüz yetmiş üç yılları arasında uluslararası bir kuruluş olan i be me’in yetmiş iki ülkedeki çalışanları üzerinde yaptığı araştırma, birçok farklı disiplince gerçekleştirilen kültürler arası çalışmalarının temeli olmuştur. Kültürel boyutları güç mesafesi, bireycilik – ortaklaşalık, erillik – dişillik, belirsizlikten kaçınma olmak üzere dört farklı boyutta ele alan Hofstede modelini Michael Bond ve arkadaşları geliştirerek buna uzun – kısa dönemli uyum boyutunu eklemiş, söz konusu model uzun süre “beş de” (five dimensions – beş boyut) olarak anılmıştır. iki bin dokuz yılında Minkov, araştırma yapılan ülke sayısını doksan üçe çıkarmış ve Hofstede’nin modeline altıncı boyutu eklemiştir. Şimdi sözünü ettiğimiz boyutları daha ayrıntılı bir şekilde inceleyelim.\n\nGüç Mesafesi: Eşitsizlik toleransı olarak da bilinen güç mesafesini toplum ve kurumlar açısından ayrı ayrı ele aldığımızda; bu boyut toplum için eşitsizlik, prestij, varlık ya da güçte ortaya çıkmakta, kurumlar içinse daha az güçlü üyelerin güç dağıtımındaki eşitsizliği kabul etmesiyle kendini göstermektedir (Hofstede, iki bin:yetmiş dokuz). Güç mesafesinin yüksek olduğu toplumlarda ilişkilerin yasalardan güçlü olduğuna inanılmaktadır. Bireyler arasındaki eşitsizlik kabullenilmiştir. Öte yandan güç mesafesinin düşük olduğu toplumlar daha demokratiktir; bireyler arasındaki eşitsizlik mümkün olduğunca azdır. Bireylerin eşit haklara sahip olması önemlidir.\n\nGüç mesafesi yüksek olan kurumlarda ise güç, otorite ve hiyerarşi kavramları ön plana çıkmaktadır. Bireyler arasındaki farklı güç dengeleri kurumun hiyerarşik yapısına da yansımakta, güçsüzler güçlülere bağımlı durumda olmakta ve otoriter eğilimler toplumun tüm katmanlarına yayılmaktadır. Bir kurumda güç mesafesi düşükse üst kademe ve alt kademe arasında büyük farklılıklardan söz edilememektedir. Kurumda sistemin sorgulanabildiği daha demokratik bir yapı mevcuttur.\n\nTablo 8.1 Güç Mesafesi Düşük ve Yüksek Kültür Özellikleri\n\nTablo, güç mesafesi düşük ve yüksek kültürlerin temel özelliklerini karşılaştırmaktadır. Eşitlik, hiyerarşi, otorite ve statüye ilişkin farklı yaklaşımlar iki kültür tipi arasındaki ayrımları görünür kılmaktadır.\n\nTablo sekiz nokta birde görüldüğü üzere güç mesafesi skorunun yüksek olduğu toplumlarda statü ve güç önemlidir. Gücün önemli olması, hiyerarşik düzene sadık kalınması sonucunu da doğurmaktadır. Öte yandan güç mesafesi skoru düşük toplumlara daha eşitlikçi bir yapı hâkimdir. Gelir farklılıkları azdır, bireyler mümkün olduğunca eşit haklardan yararlanmaktadırlar.\n\nBireycilik – Ortaklaşalık: Bireycilik – ortaklaşalık boyutu, bir toplumda bireysel yaşam ile kolektif yaşam arasında hüküm süren ilişkiyi tanımlamaktadır. Bireycilik – ortaklaşalık boyutunun dört tanımlayıcı özelliği bulunmaktadır: bir. Bireyin kendisini algılayış biçimi (“Ben eşsizim.” bölü “Ben bir ailenin üyesiyim.”) iki. Bireyin diğerleri ile ilişkileri (“Bu davranıştan ne kazanırım?” bölü “Bu davranış diğerlerini nasıl etkiler?”) üç. Bireyin ulaşmak istediği hedefler (“Kazanmak istiyorum.” bölü “Grubumun kazanmasına yardımcı olan bir takım oyuncusuyum.”) dört. Bireyin davranışını şekillendiren dürtüler (“Bunu yapmak benim hakkım.” bölü “Benim grubuma karşı bir yükümlülüğüm var.”) Bireyciliği benimseyen toplumlarda “ben” önemlidir; birey olarak kimlik kazanılır. Bireylerin arasında sıkı bağlar yoktur. Bireyin kendi fikrini söylemesi önemsenir ve teşvik edilir. Herkesin özel yaşamı olmalıdır. Ortaklaşalık skoru yüksek olan toplumlarda önemli olan “biz” olgusudur; bireyin kimliği, içinde bulunduğu grupla özdeşleşmiştir. Bireyler güçlü bağlarla birbirine bağlıdır. Görüş farklılıkları teşvik edilmediği gibi farklı görüşe sahip olanlardan uzak durma eğilimi mevcuttur. Bireyin özel yaşamı, grup yaşamı ile iç içedir.\n\nTablo 8.2 Bireyci ve Ortaklaşa Kültür Özellikleri\n\nTablo, bireyci ve ortaklaşa kültürlerin öne çıkan özelliklerini karşılaştırmalı biçimde sunmaktadır. Bireyin kendisini ve grubunu konumlandırma biçimi ile karar ve davranış eğilimleri iki yaklaşım arasındaki temel farkları göstermektedir.\n\nTablo sekiz nokta ikide bireyciliği ve ortaklaşalığı benimseyen toplumları birbirinden ayıran özelliklerden başlıcalarını görmekteyiz. Bireyci toplumlarda yetişen bireyler “ben” bilinci ile yetişmekte, kimliklerini bireyin üzerine inşa etmektedirler. Kendilerine ve çekirdek ailelerine bakmakla yükümlüdürler. Eğitim ve diploma kişisel saygılarının artmasını sağlamaktadır. İş hayatında yönetim birey yönetimidir. Ortaklaşalığı benimsemiş toplumlarda ise çocuklar “biz” bilinciyle yetişmekte, kendi kimliklerini grubun bir parçası olmak üzere inşa etmektedirler. Geniş ailelerine bakmakla yükümlüdürler. Diplomaları, üst statüdeki gruplara giriş kolaylığı sağlamaktadır. İş hayatında yönetim grup yönetimidir.\n\nKültürler arası iletişim penceresinden bireyciliği ve ortaklaşalığı benimsemiş bireylerin bir araya geldiklerini düşünelim. İki farklı anlayışa sahip bireyler arasında gelişen iletişim sürecinde iki tarafın da dikkat etmesi gereken hususlar bulunmaktadır. Bu durumda bireyci yaklaşımları tercih edenlerin ortaklaşa yaklaşımları tercih edenler ile etkileşimlerinde dikkat edecekleri konuları bir öneri dizisi içerisinde inceleyebiliriz (Orhon, iki bin on iki:yüz altmış): Ortaklaşa yaklaşımı tercih edenlerin gruba aidiyeti öncelik saydığını ve davranışları buna göre sınadığını hatırlamalıyız. ; Gruplar içerisindeki statü eşitliğini zorlamayın. Ortaklaşa yaklaşımları kabul edenlerin önceliği bu olabilir.\n\nAşırı rekabetten kaçının. Çeşitliliğe ve iş birliğine biraz daha çok önem vermeye çalışın. ; Aşırı tartışmadan kaçının. Tartışmayı daha dolaylı bir paylaşıma dağıtmaya çalışın. ; Uzun süreli dostluklar kurmaya çalışın. ; Başlangıç paylaşımlarında daha nazik ve ciddi olmaya çalışın.",
+          "start": 964.42,
+          "end": 1418.835,
+          "duration": 454.415,
+          "tts_parts": 1,
+          "chars": 6141
+        },
+        {
+          "id": "c006",
+          "title": "Erillik - Dişillik",
+          "text": "Hofstede’nin erillik – dişillik boyutu, toplumsal cinsiyete atfedilen rollerle ilişkilendirilmiştir. Söz konusu roller, rekabetçi ve iddialı bir uçtan müşfik ve alçak gönüllü bir uca uzanmaktadır. Rekabetçi kutup eril, müşfik kutup ise dişil olarak tanımlanmıştır. Hedefler açısından bakıldığında ise dişil kutbun yardım etme, güçsüzleri koruma, dayanışma, çevreye saygı, sıcak ilişkilerin sürdürülmesi gibi sosyal hedeflere; eril kutbun ise başarı, performans, rekabet, para ve kariyer gibi ego hedeflerine bağlı oldukları görülmektedir. Erillik skoru yüksek olan toplumlarda rekabet, başarı ve hırs önemsenmektedir. Erkeklere kararlı ve kuvvetli olma rolü, kadınlara ise duyarlı, ilgili ve şefkatli olma rolü atfedilmektedir. Dişillik skoru yüksek olan toplumlarda kadın ya da erkek fark etmeksizin bireylerin birbirine ilgi, yakınlık, anlayış ve duyarlılık göstermesi beklenmektedir. Sorunlar uzlaşma yoluyla çözülmelidir.\n\nTablo 8.3 Dişil ve Eril Kültür Özellikleri\n\nTablo, dişil ve eril kültürlerde öne çıkan değer ve davranış özelliklerini karşılaştırmaktadır. Uzlaşma, bakım ve yaşam kalitesi ile rekabet, başarı ve performans vurguları arasındaki farklılıklar birlikte gösterilmektedir.\n\nDişil ve eril kültür özellikleri Tablo sekiz nokta üçte listelenmiştir. Görüldüğü üzere dişil kültürlere daha toleranslı, daha müşfik özellikler atfedilirken eril kültürlerde aile içi rol dağılımları keskin çizgilerle belirlenmiş, hırs ve rekabet odaklı olma özelliği vurgulanmıştır. Dişil kültürlerde insan ve insan ilişkilerine önem atfedildiği için başkalarını umursamak, korumak egemen değer kabul edilmektedir. Bu sebeple de zayıf olana sempati duyulmaktadır. Çatışma ve anlaşmazlıklar uzlaşma yoluyla çözülebilmektedir. Öte yandan eril kültürde para ve nesne tarafından temsil edilen maddi güce önem atfedildiği için maddiyat egemen değer kabul edilmektedir. Bu sebeple güçlü olana sempati duyulmaktadır. Çatışma ve anlaşmazlıklar tartışma yoluyla çözülmektedir.",
+          "start": 1419.735,
+          "end": 1578.141,
+          "duration": 158.407,
+          "tts_parts": 1,
+          "chars": 2088
+        },
+        {
+          "id": "c007",
+          "title": "Belirsizlikten Kaçınma",
+          "text": "Belirsizlikten kaçınma boyutu, farklı kültürlerin gelecek hakkındaki belirsizlikten ya da belirsiz durumlardan endişe ve rahatlık duyma oranını ortaya koymaktadır. Belirsizlikten kaçınma skoru yüksek olan toplumlarda farklı olan ürkütücü kabul edilmektedir. Belirsizlik bir tehdit olarak algılandığı için kurallar olmadan yaşanmaz. Belirsizlikten kaçınmanın düşük olduğu toplumlarda ise bireyler farklı seçeneklere karşı daha toleranslıdırlar. Bu toplumlar yaratıcılığın teşvik edildiği, mümkün olduğunca az kuralın konduğu soğukkanlı topluluklardır. Bireyler bilinmeyen riskler karşısında esnektir; belirsizlik yaşamın bir parçasıdır.\n\nTablo 8.4 Güçlü ve Zayıf Belirsizlikten Kaçınma Özellikleri\n\nTablo, belirsizlikten kaçınmanın güçlü ve zayıf olduğu kültürlerin temel özelliklerini karşılaştırmaktadır. Kurallar, risk algısı ve belirsiz durumlara yaklaşım bakımından iki kültür tipi arasındaki farklar özetlenmektedir.\n\nBelirsizlikten kaçınma skoru yüksek olan ülkelerde belirsizlik, karşı konulması gereken bir tehdit unsuru addedilmekte, bu sebeple bilinmeyen risklere karşı korku duyulmaktadır. Çatışma esnasında hissedilen duygular aynı anda dışa vurulmaktadır. Farklı olan tehlikeli kabul edilmektedir. Güven, saygı, ait olma ve dakiklik önemlidir. Buna karşılık belirsizlikten kaçınma skoru düşük toplumlarda dakiklik öğrenilmelidir. Bu toplumlarda bilinmeyen risklere karşı rahat davranılmaktadır. Farklı olan merak uyandırmakta, olağan dışı fikirler desteklenmektedir. Belirsizlik adeta hayatın bir parçası haline gelmiştir.",
+          "start": 1579.041,
+          "end": 1696.906,
+          "duration": 117.864,
+          "tts_parts": 1,
+          "chars": 1665
+        },
+        {
+          "id": "c008",
+          "title": "Uzun – Kısa Dönemli Uyum",
+          "text": "Michael Bond ve arkadaşları tarafından bin dokuz yüz seksenli yıllarda yapılan “Chinese Value Survey” adlı araştırmanın sonuçları, bin dokuz yüz doksan bir yılında Hofstede’nin modeline beşinci boyutun eklenmesini sağlamıştır. Geleneklere saygı, azla yetinme gibi Konfüçyüsçü düşüncenin uzun ve kısa dönemli boyutlarını inceleyen Bond ve arkadaşlarına göre Batılı toplumlarda kısa dönemli değerlendirmeler yapılırken Asyalılar uzun dönemli değerlendirmeler yapmaktadır. Uzun dönemli uyum boyutunda birikim, istikrar ve değişen koşullara uyum teşvik edilirken kısa dönemli uyum boyutunda geleneklere saygı, ulusal gurur, toplumsal yükümlülüklerin yerine getirilmesi, onurun korunması söz konusudur. Uzun dönemli uyumu benimseyen toplumlarda faydacı erdemler, kısa dönemli uyumu benimseyen toplumlarda ise geçmiş ve şimdiki zamanı destekleyen erdemler ön plandadır.\n\nHoşgörü – Baskı: Hoşgörü – baskı boyutu, Minkov’un doksan üç ülkede yaptığı araştırmalara dayanarak geliştirilen ve iki bin dokuz yılında modele eklenen altıncı ve son boyuttur. Hoşgörü boyutu bireyin hayattan zevk alabilmesi ve eğlenebilmesiyle ilişkili olarak temel ve doğal dürtülerin tatminine odaklıdır. Öte yandan baskı boyutu ihtiyaçların tatminini baskılamakta ve katı toplumsal normlar amacıyla düzenlemektedir. Bu boyutun hoşgörü kutbunda Latin Amerika ülkeleri bulunurken baskı kutbunda Müslüman ülkeler ve Doğu Avrupa yer almaktadır.",
+          "start": 1697.806,
+          "end": 1807.59,
+          "duration": 109.784,
+          "tts_parts": 1,
+          "chars": 1483
+        },
+        {
+          "id": "c009",
+          "title": "Trompenaars Yaklaşımı",
+          "text": "Fons Trompenaars, Charles Hampden-Turner ile birlikte yirmi sekiz ülkede uzun soluklu araştırmalar yapmış ve kültürel boyutları Şekil sekiz nokta birte görüldüğü gibi gruplamıştır.\n\nŞekil 8.1 Trompenaars’a Göre Kültürel BoyutlarTROMPENAARS’A GÖRE KÜLTÜREL BOYUTLAR\n\nŞema, Trompenaars’ın kültürel boyutlarını bir arada göstermektedir. Kültürleri karşılaştırmak için kullanılan boyutlar, birbirleriyle ilişkili bir sınıflandırma yapısı içinde sunulmaktadır.\n\nTrompenaars ve Turner’ın çalışmasına göre kültürel boyutlar diğer bireylerle olan ilişkiler boyutu, zamanla ilişkili boyut ve çevreyle ilişkili boyut olmak üzere üç ana grupta incelenmektedir.",
+          "start": 1808.49,
+          "end": 1861.57,
+          "duration": 53.081,
+          "tts_parts": 1,
+          "chars": 777
+        },
+        {
+          "id": "c010",
+          "title": "Diğer Bireylerle Olan İlişkiler",
+          "text": "Diğer bireylerle olan ilişkiler; evrensellik-tikelcilik, bireycilik-ortaklaşalık, nötr-duygusal olma, özelyaygın olma ve başarı-övgü odaklılık olmak üzere beş alt grupta incelenmektedir. Evrensellik-tikelcilik boyutunun evrenselliği benimseyen kutbunda iyi ve doğru her yerde ortaya çıkabilmekte, tanımlanabilmekte ve uygulanabilmektedir. Tikelciliği benimseyen kültürlerde ise özgün durumlar ve ilişkiler iyi ve doğrunun belirlenmesinde kesin kurallardan daha önemlidir. Uluslararası iletişim açısından bakarsak iki farklı uçta yer alan bireylerin iletişim sürecinde birbirlerinin güvenilirliğinden şüphe duyma ihtimalinin azımsanamayacağını söyleyebiliriz. Amerika Birleşik Devletleri bu boyutun evrensellik kutbunda, Venezuela ise tikelcilik kutbunda yer almaktadır.\n\nBireycilik-ortaklaşalık boyutu, Hofstede’nin Kültürel Boyutlar Modeli’nde de karşımıza çıkmıştır. Kişinin kendisini birey mi, yoksa bir grubun üyesi olarak mı gördüğünü inceleyen bu boyutun bireyci kutbunda Amerika Birleşik Devletleri, ortaklaşa kutbunda da Singapur bulunmaktadır. Hem Hofstede’nin hem de Trompenaars’ın araştırmalarında en yüksek bireycilik skoru Amerika Birleşik Devletleri’ne aittir. Daha önce de belirtildiği üzere bireyciliğin yaygın olduğu toplumlara benmerkezci bir anlayış hâkimdir. Bireyler arasında güçlü bağlar yoktur. Aksine, ortaklaşa kültürlerde bireylerarası iletişim ve “biz” duygusu önemlidir. Birey kendisini bir grubun parçası olarak gördüğü için ekip başarısı ya da takım çalışması, bireysel başarıdan daha üstündür.\n\nNötr-duygusal olma boyutunun değerlendirme kriteri, farklı kültürlerde yaşayan bireylerin duygularını ifade ediş biçimleridir. Bazı toplumlarda duygularını açıkça ifade etmek uygunsuz bulunur ve hoş karşılanmazken bazı toplumlarda ise duyguların dışa vurumu doğal kabul edilmektedir. Nötr boyutta duygular olayların, insanlar da konuların önüne geçmemelidir. Bireyin kontrolden çıkmış gibi görünmemesi için duygularını her zaman kontrol altında tutması gereklidir. Duygusal olma boyutunda ise bireyler duygularını ifade edip diğer bireylerle paylaşma konusunda özgürdürler. Bu bağlamda Japonya nötr kutbu, Meksika ise duygusal kutbu temsil etmektedir.\n\nDiğer bireylerle olan ilişkilerin alt boyutlarından biri de özel-yaygın olma boyutudur. Özel olma boyutuna yakın ülkelerde bireyin kamusal alanı geniş, özel alanı (kişisel mesafesi) ise oldukça dardır. Bireylerin özel hayatı korunmaktadır. Öte yandan yaygın olma boyutunu benimseyen kültürlerde tersine özel alan geniş, kamusal alan dardır. Bu noktada, bir sonraki ana başlıkta ayrıntılarıyla işleyeceğimiz alan algısına kısaca göz atalım. Özel alan; ancak çok yakınlarımızın ya da aile fertlerinin girebildiği; dokunmak, fısıldamak, sarılmak ya da öpüşmek için kullandığımız alandır. Kamusal alan ise yolda yürürken, alışveriş yaparken ya da parkta otururken yabancılarla aramıza koyduğumuz mesafeyi belirten alandır. Bu noktadan hareketle özel olma kutbundaki kültürlerde yabancılara karşı belirlenen mesafe fazla iken yaygın olma kutbundaki kültürlerde yabancılara karşı belirlenen mesafe daha dardır. Örneğin, Avusturya’da toplu taşıma ile seyahat ederken bireylerin araç içinde korumaya çalıştıkları mesafe ile Venezuela ya da Türkiye’deki bireylerin korumaya çalıştıkları mesafe aynı değildir.\n\nBaşarı-övgü odaklılık boyutunun başarı ucunda bireyler sorumlu oldukları görevleri iyi yerine getirmeleriyle değerlendirilmektedirler. Bu boyutta rasyonel ve performansa dayalı değerlendirmeler yapılmaktadır. Övgü odaklı kültürlerde donanımlı, yetenekli olma, teknolojik ya da ulusal önemi olan konularda yeterli olma gibi bireylerde hayranlık uyandıracak özellikler göz önünde bulundurulmaktadır. Değerlendirme kriterleri daha duygusal olduğu için statüler, başarı odaklı kültürlerdeki gibi yeteneğe ya da başarıya göre belirlenememektedir. Bu boyutun başarı odaklılık kutbunda Avusturya, övgü odaklılık kutbunda ise Venezuela bulunmaktadır.",
+          "start": 1862.47,
+          "end": 2155.645,
+          "duration": 293.175,
+          "tts_parts": 1,
+          "chars": 4071
+        },
+        {
+          "id": "c011",
+          "title": "Zamanla İlişkili Boyut",
+          "text": "İkinci ana kategori olan zamanla ilişkili boyut; eş zaman – ardışık zaman boyutu ve geçmiş-şimdiki zaman- gelecek odaklılık olmak üzere iki alt grupta incelenmektedir. Eş zaman-ardışık zaman boyutunda eş zamanlı kültürler zamanı dairesel döngüler halinde ilerleyen esnek bir kavram olarak algılarken ardışık zamanlı kültürlerde zaman doğrusal bir çizgi halinde ilerlemektedir. Eş zamanlı kültürlerde aynı anda birden fazla iş yapılırken ardışık zamanlı kültürlerde belirli bir zaman diliminde tek bir iş yapılmakta, iş dağılımı sıraya konmaktadır. Geçmiş-şimdiki zaman-gelecek odaklılık bize Hofstede’nin uzun – kısa dönemli uyum boyutunu anımsatmaktadır. Geçmiş odaklı kültürler gelenek ve tarih bağlamında ele alınan her şeye saygı göstermektedir. Bu toplumlarda atalara ve yaşlılara saygıyla yaklaşılmaktadır. Şimdiki zaman odaklı kültürler günlük yaşantı ve deneyimlerden etkilenmektedir. Gelecek odaklı kültürlerde de planlama önem taşımaktadır.",
+          "start": 2156.545,
+          "end": 2232.196,
+          "duration": 75.651,
+          "tts_parts": 1,
+          "chars": 998
+        },
+        {
+          "id": "c012",
+          "title": "Çevreyle İlişkili Boyut",
+          "text": "Trompenaars ve Turner’ın geliştirdiği son boyut, çevreyle ilişkili boyuttur. İç yönelimlilik-dış yönelimlilik bölümlemesinin iç yönelimlilik kısmına yakın kültürler doğayı kontrol etme çabasındayken dış yönelimli kültürler doğayla uyum içinde yaşamak için çaba göstermektedir.",
+          "start": 2233.096,
+          "end": 2255.898,
+          "duration": 22.802,
+          "tts_parts": 1,
+          "chars": 325
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "KÜLTÜRLER ARASI FARKLILIKLAR",
+      "start": 2257.098,
+      "end": 2622.912,
+      "chunks": [
+        {
+          "id": "c013",
+          "title": "KÜLTÜRLER ARASI FARKLILIKLAR",
+          "text": "Edward T. Hall’ın araştırma yöntemi, Geert Hofstede’den farklı olarak, niceliksel analizler ve anket sonuçlarına değil; antropolojik gözlemlere dayanmaktadır. Edward T. Hall kültürün “durağan, gözlemlenebilir, bu nedenle de öngörülebilir davranış kalıplarından meydana geldiğini” belirtmiş (Kraidy, iki bin üç):iki yüz seksen yedi), bu sebeple antropolojik gözlemler yaparak farklı kültürleri incelemiştir. Hall bu gözlemlerin sonucunda Japonya ve Çin gibi Doğu toplumların kültürel açıdan yüksek bağlamlı, Amerika Birleşik Devletleri ve Almanya gibi Batı kültürlerinde yer alan nüfusun da düşük bağlamlı kültüre sahip olduğu bulgusunu ortaya koymuştur.\n\nEdward T. Hall, kültürler arası farklılıkları incelerken kültürel yapıyı oluşturan üç ana unsuru temel almıştır. Kültürler arası farklılıklar iletişim, zaman ve mesafe açısından incelenmiştir.",
+          "start": 2257.098,
+          "end": 2323.368,
+          "duration": 66.27,
+          "tts_parts": 1,
+          "chars": 924
+        },
+        {
+          "id": "c014",
+          "title": "İletişim",
+          "text": "İletişim sürecinin temel öğelerinden biri olan ileti açısından incelendiğinde, kültürler yüksek bağlamlı ve düşük bağlamlı olmak üzere ikiye ayrılmaktadır. Yüksek bağlamlı kültürlerde iletişim imalı yolları ve karmaşık, örtük iletileri kullanarak gerçekleşmektedir. Bazen neyin söylenmemiş olduğu, neyin söylenmiş olduğundan daha fazla anlam taşımaktadır. Zaman ticari bir araç olarak görülmektedir. Yüksek bağlamlı kültürler gruplara odaklıdır; özellikle aile ve arkadaş grupları arasında geniş bir bilgi ağı bulunmaktadır. Bunun yanı sıra bu kültürlerde yakın kişisel ilişkiler önemlidir. Yüksek bağlamlı kültürlere örnek olarak Kore gibi yeni sanayileşen birçok Asya ülkesi, Çin, Japonya, Arap ülkeleri, Akdenizli toplumlar ve Latin Amerika verilebilmektedir.\n\nDüşük bağlamlı kültürlerde iletişim doğrudan, şeffaf iletiler yoluyla gerçekleşmektedir. Bu kültürlerde yaşayan bireyler düşüncelerini özgürce açıklayabilmektedirler. Zaman planlı ve karmaşık bir unsurdur. Eleştiriler doğrudan ve resmî bir şekilde yöneltilmektedir. Düşük bağlamlı kültürler bireye odaklıdır; bireyin gelişimi önemlidir. Kişisel ilişkiler, hem iş yaşamının hem de günlük yaşamın birçok boyutu birbirinden ayrılmaktadır. Amerika ve Almanya gibi etnik çeşitliliğin ve birbirine karışmamış büyük göçmen nüfusların olduğu kültürler ile İsveç, İskandinavya gibi Kuzey Avrupa kültürleri düşük bağlamlı kültürlere örnek olarak verilebilmektedir.",
+          "start": 2324.268,
+          "end": 2431.173,
+          "duration": 106.905,
+          "tts_parts": 1,
+          "chars": 1475
+        },
+        {
+          "id": "c015",
+          "title": "Zaman",
+          "text": "Zaman kullanımı farklı kültürel yapılara sahip toplumlarda değişiklik göstermektedir. Trompenaars’ın eş zaman – ardışık zaman boyutunda işlendiği gibi Hall da kültürler arası zaman kullanımını tek zamanlı (monokronik) ve çok zamanlı (polikronik) kültürler olmak üzere iki grupta incelemiştir. Tek zamanlı kültürlerde zaman kavramı neredeyse somutlaştırılmış ve bölümlendirilmiştir. Belirli bir süre zarfında tek iş yapılmaktadır. Zaman doğrusal bir şekilde algılanmakta ve bölümlendirilerek planlanmaktadır. Bu sebeple tek zamanlı kültürlerde yaşayan bireyler dakik olma konusunda hassastır. Amerika Birleşik Devletleri, İsviçre, Almanya, İskandinav ülkeleri tek zamanlı kültürlere örnektir.\n\nÇok zamanlı kültürlerde zamanın doğrusal bir biçimde somutlaştırılmasından bahsedilememektedir. Bu kültürlerde tek zaman dilimi içerisinde birden fazla eylem gerçekleştirilebildiği için aynı anda birden çok işle uğraşılabilmektedir. Esnek bir zaman anlayışı hâkimdir; bu sebeple dakiklik konusunda titizlik beklenmemelidir. Çok zamanlı kültürlere örnek olarak Akdeniz ülkelerini gösterebiliriz.",
+          "start": 2432.073,
+          "end": 2513.11,
+          "duration": 81.038,
+          "tts_parts": 1,
+          "chars": 1141
+        },
+        {
+          "id": "c016",
+          "title": "Mesafe",
+          "text": "Bilindiği üzere her canlının kendisini dış çevreden ayıracak bir sınırı vardır. Bu sınır insanoğlunun derisidir ancak birey bunun dışında görünmez birtakım sınırlarla da çevrilidir. Daha önce belirtildiği üzere Trompenaars’ın da özel-yaygın olma boyutu kapsamında ele aldığı mesafeye ilişkin sınırlar kişisel mesafeyle başlayıp egemenlik alanıyla sona ermekte ve her kültürde farklılık göstermektedir. Hall’a göre (bin dokuz yüz doksan:on bir) kişisel mesafe “bireyin diğer bireylerle olan ilişkisi, duygusal durumu, kültürel altyapısı ve gerçekleştirilen eyleme göre daralıp genişleyen, görünmez bir baloncuktan oluşan alan”dır. Söz konusu baloncuğun boyutu ülkeden ülkeye, kültürden kültüre değişmektedir. Bireyin kişisel mesafe alanı Kuzey Avrupa ülkelerinde genişken, Güney Fransa, İtalya, İspanya gibi Akdeniz ülkelerine doğru gidildikçe küçülmektedir.\n\nBir araya gelen farklı kültürler söz konusu olduğunda iletişim sürecinin sekteye uğramaması, herhangi bir çatışma ya da anlaşmazlığa yer verilmemesi ve yanlış anlaşılmaların önüne geçilmesi için öncelikle yanlış ve aşırı yorumlamadan, ani duygusal tepki ve eylemlerden kaçınılmalıdır. Bireylerin birbirlerine empatiyle yaklaşmaları, saygı ve sabır göstermeleri, esnek davranmaları, kültürel hassasiyetlere duyarlı olmaları ve iletişim becerilerini geliştirmeleri şarttır. Başarılı kültürler arası iletişim denkleminin anahtarı, şüphesiz karşılıklı anlayış ve hoşgörüdür.",
+          "start": 2514.01,
+          "end": 2622.912,
+          "duration": 108.902,
+          "tts_parts": 1,
+          "chars": 1484
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Neler öğrendik?",
+      "start": 2624.112,
+      "end": 2850.553,
+      "chunks": [
+        {
+          "id": "c017",
+          "title": "Neler öğrendik?",
+          "text": "1. Soru\n\nBir. Farklı kültürlere mensup insanlar arasında etkileşim ve anlam aktarımları İki. Yabancının algılanması Üç. Kültürel farklılıkların gözetilmesi Yukarıdakilerden hangileri kültürler arası iletişimin inceleme alanına girer?\n\nA. Yalnız Bir\nB. Bir ve İki\nC. Bir ve Üç\nD. İki ve Üç\nE. Bir, İki ve Üç\n\n1. Sorunun Yanıtı: E\n\n2. Soru\n\nAşağıdakilerden hangisi kültürler arası iletişimin yararlarından biri değildir?\n\nA. Bireysel unsurların önemsenmesi\nB. Hoşgörü ve empati yoluyla kişisel gelişim sağlaması\nC. Daha sağlıklı topluluklar yaratması\nD. Ticaretin artması\nE. Çatışmanın azalması\n\n2. Sorunun Yanıtı: A\n\n3. Soru\n\nOrtaklaşalığı benimsemiş bir toplumda yetişen birey, aşağıdakilerden hangisini söylemiş olabilir?\n\nA. “Ben eşsizim.”\nB. “Bu davranış diğer arkadaşlarımı nasıl etkiler?”\nC. “Bu davranıştan ne kazanırım?”\nD. “Kazanmak istiyorum.”\nE. “Bunu yapmak benim hakkım.”\n\n3. Sorunun Yanıtı: B\n\n4. Soru\n\nAşağıdakilerden hangisi Geert Hofstede’nin geliştirdiği kültürel boyutlardan biri değildir?\n\nA. Erillik - dişillik\nB. Belirsizlikten kaçınma\nC. Hoşgörü - baskı\nD. Güç mesafesi\nE. Bireycilik - ortaklaşalık\n\n4. Sorunun Yanıtı: C\n\n5. Soru\n\nAşağıdakilerden hangisi, kültürler arası iletişim ve kültürel farklılıklar alanında çalışmalar yapmamıştır?\n\nA. William Arens\nB. Charles Hampden-Turner\nC. Geert Hofstede\nD. Fons Trompenaars\nE. Edward T. Hall\n\n5. Sorunun Yanıtı: A\n\n6. Soru\n\nTrompenaars’a göre; doğayla uyum içinde yaşama çabasında olan kültür tipi aşağıdakilerden hangisidir?\n\nA. Yaygın kültürler\nB. Şimdiki zaman odaklı kültürler\nC. Dış yönelimli kültürler\nD. Nötr kültürler\nE. İç yönelimli kültürler\n\n6. Sorunun Yanıtı: C\n\n7. Soru\n\nFons Trompenaars yaklaşımına ait hangi boyut, Edward T. Hall’un monokronik – polikronik kültür özelliklerini taşımaktadır?\n\nA. Başarı – övgü odaklılık\nB. İç yönelimlilik – dış yönelimlilik\nC. Özel – yaygın olma\nD. Evrensellik - tikelcilik\nE. Eş zaman – ardışık zaman\n\n7. Sorunun Yanıtı: E\n\n8. Soru\n\nAşağıdakilerden hangisi düşük bağlamlı kültürlerin özelliklerinden biridir?\n\nA. Karmaşık, örtük iletiler kullanmaları\nB. Gruplara odaklanmaları\nC. Zamanı, ticari bir araç olarak görmeleri\nD. Bireylerin düşüncelerini özgürce açıklamasını desteklemeleri\nE. İletiler yapılandırılırken imalara yer vermeleri\n\n8. Sorunun Yanıtı: D\n\n9. Soru\n\nAşağıdakilerden hangisi polikronik (çok zamanlı) kültürlere bir örnektir?\n\nA. Amerika Birleşik Devletleri\nB. Akdeniz ülkeleri\nC. İskandinav ülkeleri\nD. İsviçre\nE. Almanya\n\n9. Sorunun Yanıtı: B\n\n10. Soru\n\nAşağıdakilerden hangisi kültürler arası iletişim sürecinin başarılı olabilmesi için gerekli unsurlardan biridir?\n\nA. Aşırı yorumlamalarda bulunmak\nB. Ani duygusal tepkiler vermek\nC. Empati kurmaktan kaçınmak\nD. Saygı ve sabır göstermek\nE. Kültürel hassasiyetleri göz ardı etmek\n\n10. Sorunun Yanıtı: D",
+          "start": 2624.112,
+          "end": 2850.553,
+          "duration": 226.441,
+          "tts_parts": 1,
+          "chars": 3647
+        }
+      ]
+    }
+  ]
+}
