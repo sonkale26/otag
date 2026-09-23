@@ -1,0 +1,1611 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="generator" content="haluku 0.4.0" />
+    <title>ETKİLİ İLETİŞİM TEKNİKLERİ - Ünite 1 Konu Anlatımı 1</title>
+    <style>
+:root {
+  --bg: #f5f6f8;
+  --surface: #ffffff;
+  --text: #1c2330;
+  --muted: #5d6675;
+  --line: #dfe3ea;
+  --accent: #2458d6;
+  --accent-text: #ffffff;
+  --question: #2458d6;
+  --popup: #b86e00;
+  --bookmark: #1f8a4c;
+  --suggestion: #7a4dd8;
+  --danger: #c0352b;
+  --ok-bg: #e6f5ec;
+  --ok-text: #185c35;
+  --warn-bg: #fff4e0;
+  --warn-text: #7a4a00;
+  --error-bg: #fdeceb;
+  --error-text: #8f231b;
+  --radius: 10px;
+  --shadow: 0 1px 2px rgba(20, 30, 50, 0.06), 0 4px 16px rgba(20, 30, 50, 0.05);
+  font-family: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.5;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); }
+h1, h2, h3 { line-height: 1.25; margin: 0 0 0.5rem; }
+h1 { font-size: 1.35rem; }
+h2 { font-size: 1.05rem; }
+h3 { font-size: 1rem; }
+p { margin: 0 0 0.6rem; }
+a { color: var(--accent); }
+code { background: #eef1f6; padding: 0.1rem 0.35rem; border-radius: 4px; font-size: 0.9em; }
+.muted { color: var(--muted); }
+.small { font-size: 0.85rem; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.boot { padding: 2rem; color: var(--muted); }
+
+.page { max-width: 1280px; margin: 0 auto; padding: 1rem 1.25rem 3rem; }
+.topbar { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+.topbar h1 { margin: 0; }
+.topbar .button, .topbar .badge { margin-left: auto; }
+.topbar .badge + .button { margin-left: 0; }
+.back { text-decoration: none; font-weight: 600; }
+footer { margin-top: 2rem; font-size: 0.85rem; word-break: break-all; }
+
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1rem 1.1rem; box-shadow: var(--shadow); margin-bottom: 1rem; }
+
+button, .button {
+  font: inherit; font-size: 0.92rem; border: 1px solid var(--line); background: var(--surface); color: var(--text);
+  border-radius: 8px; padding: 0.42rem 0.85rem; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 0.35rem;
+}
+button:hover, .button:hover { border-color: #b9c1ce; }
+button:disabled { opacity: 0.55; cursor: not-allowed; }
+button.primary, .button.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-text); }
+button.link { background: none; border: none; color: var(--accent); padding: 0.2rem 0.35rem; }
+button.danger, .danger { color: var(--danger); }
+button.small { padding: 0.25rem 0.6rem; font-size: 0.85rem; }
+:focus-visible { outline: 3px solid #8fb0ff; outline-offset: 2px; }
+
+input, select, textarea {
+  font: inherit; font-size: 0.95rem; color: var(--text); background: #fff; border: 1px solid #c9d0db; border-radius: 8px; padding: 0.45rem 0.6rem; width: 100%;
+}
+textarea { resize: vertical; }
+.field { margin-bottom: 0.8rem; }
+.field > label, .field > legend { display: block; font-weight: 600; font-size: 0.88rem; margin-bottom: 0.25rem; }
+.field.inline { display: flex; align-items: center; gap: 0.6rem; }
+.field.inline > label { margin: 0; }
+.field.inline input { width: 6rem; }
+.check { display: flex; align-items: flex-start; gap: 0.5rem; font-size: 0.92rem; margin: 0.4rem 0 0.8rem; }
+.check input { width: auto; margin-top: 0.3rem; }
+fieldset { border: none; margin: 0; padding: 0; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; margin-top: 0.5rem; }
+
+.alert { display: flex; justify-content: space-between; gap: 1rem; border-radius: 8px; padding: 0.65rem 0.85rem; margin: 0 0 1rem; font-size: 0.92rem; }
+.alert ul { margin: 0.35rem 0 0; padding-left: 1.1rem; }
+.alert.error { background: var(--error-bg); color: var(--error-text); }
+.alert.warn { background: var(--warn-bg); color: var(--warn-text); }
+.alert.ok { background: var(--ok-bg); color: var(--ok-text); }
+.alert.info { background: #eaf0fd; color: #1f3f8f; }
+
+.badge { display: inline-block; font-size: 0.75rem; font-weight: 600; padding: 0.12rem 0.5rem; border-radius: 999px; background: #eef1f6; color: var(--muted); white-space: nowrap; }
+.badge.ok { background: var(--ok-bg); color: var(--ok-text); }
+.badge.warn { background: var(--warn-bg); color: var(--warn-text); }
+.badge.suggestion { background: #f1ebfd; color: var(--suggestion); }
+.badge.type-question { background: #e8eefc; color: var(--question); }
+.badge.type-popup { background: #fdf1de; color: var(--popup); }
+.badge.type-bookmark { background: #e3f4ea; color: var(--bookmark); }
+
+/* Proje listesi */
+.new-project { display: grid; grid-template-columns: 2fr 1.2fr auto; gap: 0.75rem; align-items: end; }
+.new-project .field { margin: 0; }
+.project-grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 1rem; }
+.project-card { padding: 0; overflow: hidden; margin: 0; }
+.project-card img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block; background: #d9dee6; }
+.project-body { padding: 0.8rem 1rem 1rem; }
+
+/* Video */
+.video-frame { position: relative; width: 100%; aspect-ratio: 16 / 9; min-height: 200px; background: #111; border-radius: var(--radius); overflow: hidden; }
+.video-placeholder { position: absolute; inset: 0; margin: 0; display: grid; place-items: center; color: #aab3c2; z-index: 0; }
+.video-host { position: absolute; inset: 0; z-index: 1; }
+.video-host iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+/* Editör */
+.title-input { flex: 1 1 280px; font-size: 1.15rem; font-weight: 600; border-color: transparent; background: transparent; }
+.title-input:hover, .title-input:focus { border-color: #c9d0db; background: #fff; }
+.editor-grid { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(320px, 1fr); gap: 1.25rem; align-items: start; margin-bottom: 1rem; }
+.editor-side .card { margin: 0; }
+.timeline { position: relative; height: 26px; margin: 0.75rem 0 0.5rem; background: #e3e7ee; border-radius: 6px; cursor: pointer; }
+.timeline-fill { position: absolute; left: 0; top: 0; bottom: 0; background: #c5d3f3; border-radius: 6px; pointer-events: none; }
+.timeline-marker { position: absolute; top: 3px; width: 14px; height: 20px; margin-left: -7px; padding: 0; border-radius: 4px; border: 2px solid #fff; background: var(--question); }
+.timeline-marker.type-popup { background: var(--popup); }
+.timeline-marker.type-bookmark { background: var(--bookmark); width: 6px; margin-left: -3px; border-width: 1px; }
+.timeline-marker.suggestion { background: transparent; border: 2px dashed var(--suggestion); pointer-events: none; }
+.add-row { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; }
+.add-row .now { font-variant-numeric: tabular-nums; font-weight: 600; margin-right: auto; }
+.add { font-weight: 600; }
+.add-question { border-color: var(--question); color: var(--question); }
+.add-popup { border-color: var(--popup); color: var(--popup); }
+.add-bookmark { border-color: var(--bookmark); color: var(--bookmark); }
+.help ol { padding-left: 1.2rem; margin: 0 0 0.8rem; }
+.help li { margin-bottom: 0.35rem; }
+
+.item-form { border-top: 4px solid var(--question); }
+.item-form.type-popup { border-top-color: var(--popup); }
+.item-form.type-bookmark { border-top-color: var(--bookmark); }
+.time-field { display: flex; gap: 0.4rem; }
+.time-field input { max-width: 9rem; }
+.options-editor .option-row { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.4rem; }
+.options-editor .option-row input[type="radio"], .options-editor .option-row input[type="checkbox"] { width: auto; flex: none; transform: scale(1.2); }
+.options-editor legend { font-weight: 600; font-size: 0.88rem; margin-bottom: 0.35rem; }
+.form-errors { background: var(--error-bg); color: var(--error-text); border-radius: 8px; padding: 0.6rem 0.6rem 0.6rem 1.6rem; margin: 0 0 0.6rem; font-size: 0.9rem; }
+
+.section-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 0.5rem; }
+.section-head .actions { margin: 0; }
+.item-list { list-style: none; margin: 0; padding: 0; }
+.item-row { display: grid; grid-template-columns: auto auto minmax(0, 1fr) auto; gap: 0.6rem; align-items: center; padding: 0.5rem 0; border-top: 1px solid var(--line); }
+.item-row:first-child { border-top: none; }
+.item-row .time { font-variant-numeric: tabular-nums; font-weight: 600; padding: 0.2rem 0.5rem; }
+.item-row .summary { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.row-actions { display: flex; gap: 0.35rem; align-items: center; flex-wrap: wrap; justify-content: flex-end; }
+.suggestions { border-color: #d5c6f5; background: #fbf9ff; }
+.editor-bottom { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: start; }
+.editor-bottom textarea { margin-bottom: 0.5rem; }
+
+/* Modal */
+.modal-backdrop { position: fixed; inset: 0; background: rgba(15, 20, 30, 0.45); display: grid; place-items: center; padding: 1rem; z-index: 50; }
+.modal { background: var(--surface); border-radius: 12px; width: min(760px, 100%); max-height: 90vh; overflow: auto; padding: 1rem 1.2rem 1.2rem; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25); }
+.modal > header { display: flex; justify-content: space-between; align-items: center; }
+.prompt-text { font-family: Consolas, "Cascadia Mono", Menlo, monospace; font-size: 0.85rem; }
+
+/* İzleyici ekranı (sahne) */
+.stage { display: grid; grid-template-columns: minmax(0, 1.8fr) minmax(300px, 1fr); gap: 1.25rem; align-items: start; background: var(--bg); }
+.stage.is-fullscreen { position: fixed; inset: 0; z-index: 40; padding: 1rem; overflow: auto; align-content: center; }
+.stage-main { min-width: 0; }
+.controls { display: flex; align-items: center; gap: 0.6rem; margin-top: 0.6rem; }
+.control-button { min-width: 2.6rem; justify-content: center; font-size: 1rem; }
+.time-display { font-variant-numeric: tabular-nums; font-size: 0.9rem; white-space: nowrap; }
+.progress { position: relative; flex: 1; height: 12px; background: #d7dce5; border-radius: 6px; cursor: pointer; }
+.progress-fill { position: absolute; left: 0; top: 0; bottom: 0; background: var(--accent); border-radius: 6px; pointer-events: none; }
+.progress-marker { position: absolute; top: 50%; width: 12px; height: 12px; margin: -6px 0 0 -6px; transform: rotate(45deg); background: var(--question); border: 2px solid #fff; pointer-events: none; }
+.progress-marker.is-done { background: #9fb4e8; }
+.progress-marker.type-popup { background: var(--popup); border-radius: 50%; transform: none; width: 10px; height: 10px; margin: -5px 0 0 -5px; }
+.progress-marker.type-bookmark { background: var(--bookmark); width: 4px; height: 18px; margin: -9px 0 0 -2px; transform: none; border: none; border-radius: 2px; }
+.rate select { width: auto; padding: 0.3rem 0.4rem; }
+.panel { min-width: 0; }
+.panel-hint { padding: 1rem; border: 2px dashed var(--line); border-radius: var(--radius); text-align: center; }
+.question-card { border-top: 4px solid var(--question); }
+.question-card h2:focus { outline: none; }
+.question-card .prompt { font-size: 1.05rem; font-weight: 600; }
+.option { display: flex; align-items: flex-start; gap: 0.6rem; padding: 0.55rem 0.7rem; border: 1px solid var(--line); border-radius: 8px; margin-bottom: 0.45rem; cursor: pointer; }
+.option input { width: auto; margin-top: 0.25rem; transform: scale(1.15); }
+.option.is-chosen { border-color: var(--accent); background: #f2f6ff; }
+.option.is-correct { border-color: var(--bookmark); background: var(--ok-bg); }
+.option.is-wrong { border-color: var(--danger); background: var(--error-bg); }
+.feedback { border-radius: 8px; padding: 0.7rem 0.8rem; margin-top: 0.5rem; }
+.feedback.ok { background: var(--ok-bg); color: var(--ok-text); }
+.feedback.bad { background: var(--error-bg); color: var(--error-text); }
+.feedback .actions button:not(.primary) { background: #fff; }
+.popup-card { border-top: 4px solid var(--popup); }
+.bookmarks ol { list-style: none; margin: 0; padding: 0; }
+.bookmarks .bookmark { width: 100%; justify-content: flex-start; border: none; border-radius: 6px; padding: 0.4rem 0.5rem; text-align: left; }
+.bookmarks .bookmark.is-active { background: #e3f4ea; font-weight: 600; }
+.bookmark-time { font-variant-numeric: tabular-nums; color: var(--bookmark); font-weight: 600; min-width: 3.2rem; }
+.end-card { border-top: 4px solid var(--bookmark); }
+
+@media (max-width: 900px) {
+  .editor-grid, .stage, .editor-bottom { grid-template-columns: 1fr; }
+  .new-project { grid-template-columns: 1fr; }
+  .item-row { grid-template-columns: auto minmax(0, 1fr); }
+  .item-row .badge { justify-self: start; }
+  .item-row .row-actions { grid-column: 1 / -1; justify-content: flex-start; }
+}
+
+/* 0.2.0 · Videonun üzerindeki katmanlar */
+[hidden] { display: none !important; }
+.topbar .button + .button { margin-left: 0; }
+.stage-main { container-type: inline-size; }
+
+/* YouTube'un başlık ve alt çubukları iframe kenarındadır: iframe taşırılıp kırpılınca görünmez.
+   overflow: clip, taşan iframe yüzünden çerçevenin kaydırılabilir hale gelmesini önler. */
+.video-frame { --crop: 80px; overflow: clip; }
+.video-frame.is-cropped .video-host { top: calc(-1 * var(--crop)); bottom: calc(-1 * var(--crop)); }
+.video-shield { position: absolute; inset: 0; z-index: 2; cursor: pointer; }
+.video-paused { position: absolute; inset: 0; z-index: 3; display: none; place-items: center; background: rgba(8, 12, 20, 0.28); pointer-events: none; }
+.video-frame.is-paused .video-paused { display: grid; }
+.big-play { pointer-events: auto; width: 4.6rem; height: 4.6rem; justify-content: center; padding: 0 0 0 0.3rem; border: none; border-radius: 50%; background: rgba(255, 255, 255, 0.95); color: var(--text); font-size: 1.8rem; box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35); }
+.big-play:hover { transform: scale(1.05); }
+.video-frame.needs-tap .video-shield, .video-frame.needs-tap .video-paused, .video-frame.needs-tap .video-poster { display: none; }
+/* İlk oynatmaya kadar videonun kapak görseli; YouTube'un açılış ekranını örter. */
+.video-poster { position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; object-fit: cover; pointer-events: none; }
+.video-frame.has-played .video-poster { display: none; }
+/* Kırpma kullanılamadığında YouTube'un üst ve alt çubuklarını örten şeritler. */
+.video-strips { position: absolute; inset: 0; z-index: 2; opacity: 0; pointer-events: none; transition: opacity 0.35s ease;
+  background: linear-gradient(to bottom, rgba(6, 9, 15, 0.97) 0, rgba(6, 9, 15, 0.97) 21%, rgba(6, 9, 15, 0) 33%, rgba(6, 9, 15, 0) 67%, rgba(6, 9, 15, 0.97) 79%, rgba(6, 9, 15, 0.97) 100%); }
+.video-frame.show-strips .video-strips { opacity: 1; }
+.unmute-button { display: none; position: absolute; left: 0.8rem; bottom: 0.8rem; z-index: 6; padding: 0.4rem 0.85rem; border: none; border-radius: 999px; background: rgba(15, 20, 30, 0.85); color: #fff; font-weight: 600; }
+.video-frame.is-muted-start.is-playing .unmute-button { display: inline-flex; }
+.video-frame.has-overlay .unmute-button { display: none; }
+.tap-hint { display: none; position: absolute; left: 50%; bottom: 0.8rem; z-index: 6; transform: translateX(-50%); margin: 0; padding: 0.4rem 0.85rem; border-radius: 999px; background: rgba(15, 20, 30, 0.85); color: #fff; font-size: 0.88rem; white-space: nowrap; pointer-events: none; }
+.video-frame.needs-tap:not(.is-playing) .tap-hint { display: block; }
+
+.hotspots { position: absolute; top: 0.8rem; left: 0.8rem; z-index: 4; display: flex; flex-direction: column; align-items: flex-start; gap: 0.5rem; max-width: calc(100% - 1.6rem); pointer-events: none; }
+.hotspot { pointer-events: auto; position: relative; overflow: hidden; max-width: 100%; padding: 0.35rem 1rem 0.35rem 0.35rem; border: none; border-radius: 999px; background: rgba(255, 255, 255, 0.96); color: var(--text); font-weight: 600; box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3); animation: hotspot-in 0.25s ease-out; }
+.hotspot:hover { background: #fff; }
+.hotspot-label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.hotspot-icon { flex: none; display: inline-grid; place-items: center; width: 1.9rem; height: 1.9rem; border-radius: 50%; background: var(--question); color: #fff; font-weight: 700; }
+.type-popup .hotspot-icon { background: var(--popup); }
+.hotspot .hotspot-icon { animation: hotspot-pulse 1.6s ease-in-out infinite; }
+.hotspot-timer { position: absolute; left: 0; bottom: 0; width: 100%; height: 3px; background: var(--question); opacity: 0.5; animation: hotspot-timer linear forwards; }
+.hotspot.type-popup .hotspot-timer { background: var(--popup); }
+.video-frame:not(.is-playing) .hotspot-timer { animation-play-state: paused; }
+@keyframes hotspot-in { from { opacity: 0; transform: translateX(-10px); } }
+@keyframes hotspot-timer { to { width: 0; } }
+@keyframes hotspot-pulse { 50% { box-shadow: 0 0 0 6px rgba(36, 88, 214, 0.2); } }
+
+.video-overlay { position: absolute; inset: 0; z-index: 5; display: grid; place-items: center; padding: 1rem; background: rgba(10, 14, 22, 0.84); overflow: auto; }
+.video-overlay.is-gate { background: rgba(10, 14, 22, 0.55); }
+/* Kart videodan uzunsa çerçeve karta göre uzar; en az 16:9 kalır. */
+.video-frame.has-card { aspect-ratio: auto; min-height: max(200px, 56.25cqw); }
+.video-frame.has-card .video-overlay { position: relative; inset: auto; min-height: max(200px, 56.25cqw); }
+.overlay-card { width: min(640px, 100%); margin: 0; }
+.overlay-gate { display: grid; justify-items: center; gap: 0.8rem; text-align: center; }
+.gate-button { padding: 0.5rem 1.3rem 0.5rem 0.5rem; border: none; border-radius: 999px; background: #fff; color: var(--text); font-size: 1.05rem; font-weight: 700; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45); animation: gate-pulse 1.8s ease-in-out infinite; }
+.gate-button .hotspot-icon { width: 2.3rem; height: 2.3rem; font-size: 1.1rem; }
+.gate-hint { margin: 0; color: #eef1f6; font-size: 0.92rem; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6); }
+@keyframes gate-pulse { 50% { box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.16), 0 8px 30px rgba(0, 0, 0, 0.45); } }
+.card-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 0.5rem; }
+.popup-body { white-space: pre-line; }
+
+.cc-button { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.03em; }
+.cc-button[aria-pressed="true"] { background: var(--text); border-color: var(--text); color: #fff; }
+.progress-markers { position: absolute; inset: 0; pointer-events: none; }
+
+/* 0.3.0 · İlerleme çubuğu: geniş dokunma alanı, sürüklenebilir tutamak */
+.progress { touch-action: none; }
+.progress::before { content: ""; position: absolute; left: 0; right: 0; top: -10px; bottom: -10px; }
+.progress-fill::after { content: ""; position: absolute; right: -7px; top: 50%; width: 14px; height: 14px; margin-top: -7px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 2px #fff, 0 1px 4px rgba(0, 0, 0, 0.3); }
+
+/* 0.3.0 · Video üzerindeki menü düğmesi ve uyarı balonu */
+.menu-button { display: none; position: absolute; top: 0.6rem; right: 0.6rem; z-index: 6; align-items: center; gap: 0.4rem; padding: 0.35rem 0.8rem; border: none; border-radius: 999px; background: rgba(15, 20, 30, 0.72); color: #fff; font-size: 0.85rem; font-weight: 600; }
+.menu-button:hover { background: rgba(15, 20, 30, 0.88); }
+.video-frame.has-overlay .menu-button { display: none; }
+.video-toast { position: absolute; left: 50%; bottom: 0.8rem; z-index: 7; transform: translateX(-50%); max-width: calc(100% - 1.6rem); padding: 0.45rem 0.85rem; border-radius: 8px; background: rgba(15, 20, 30, 0.9); color: #fff; font-size: 0.88rem; text-align: center; }
+
+/* 0.4.0 · Video odaklı yerleşim: video ekran yüksekliğine sığacak kadar geniş; bölümler, sorular ve
+   bilgi kartları videonun içinde açılan "İçerik" menüsünde (açılır kapanır bölümler). */
+.stage { display: block; position: relative; grid-template-columns: minmax(0, 1fr); }
+.stage-main { position: relative; width: min(100%, calc((100vh - 10rem) * 16 / 9)); width: min(100%, calc((100svh - 10rem) * 16 / 9)); margin: 0 auto; }
+.menu-button { display: inline-flex; }
+.contents { display: none; position: absolute; top: 3.3rem; right: 0.6rem; z-index: 30; width: min(380px, calc(100% - 1.2rem)); }
+.stage.menu-open .contents { display: block; }
+.contents-inner { display: flex; flex-direction: column; overflow: hidden; max-height: min(60vh, 420px); max-height: max(calc(56.25cqw - 3.9rem), min(60vh, 420px)); background: rgba(255, 255, 255, 0.97); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35); }
+.contents-head { display: flex; justify-content: space-between; align-items: center; padding: 0.5rem 0.6rem 0.5rem 1rem; border-bottom: 1px solid var(--line); }
+.contents-empty { margin: 0; padding: 1rem; }
+.acc { display: flex; flex-direction: column; min-height: 0; border-top: 1px solid var(--line); }
+.contents-head + .acc { border-top: none; }
+.acc.is-open { flex: 1 1 auto; }
+.acc-head { flex: none; width: 100%; justify-content: flex-start; gap: 0.55rem; padding: 0.75rem 1rem; border: none; border-radius: 0; background: transparent; font-size: 1rem; font-weight: 700; }
+.acc-head:hover { background: #f7f9fc; }
+.acc-chevron { display: inline-block; color: var(--muted); transition: transform 0.15s ease; }
+.acc.is-open .acc-chevron { transform: rotate(90deg); }
+.acc-count { margin-left: auto; padding: 0.05rem 0.55rem; border-radius: 999px; background: #eef1f6; color: var(--muted); font-size: 0.8rem; font-weight: 600; }
+.acc-body { display: none; min-height: 0; overflow: auto; padding: 0 0.5rem 0.6rem; }
+.acc.is-open .acc-body { display: block; flex: 1 1 auto; }
+.contents-list { list-style: none; margin: 0; padding: 0; }
+.contents-item { display: flex; width: 100%; align-items: flex-start; justify-content: flex-start; gap: 0.6rem; padding: 0.45rem 0.55rem; border: none; border-radius: 6px; background: transparent; font-size: 0.9rem; text-align: left; }
+.contents-item:hover { background: #f2f6ff; }
+.contents-item.is-active { background: #e3f4ea; font-weight: 600; }
+.contents-time { flex: none; min-width: 2.9rem; color: var(--bookmark); font-variant-numeric: tabular-nums; font-weight: 600; }
+.contents-text { overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.question-status { flex: none; width: 1rem; text-align: center; font-weight: 700; color: var(--muted); }
+.question-link.is-correct .question-status { color: var(--bookmark); }
+.question-link.is-wrong .question-status { color: var(--danger); }
+.file-notice { max-width: 760px; }
+.file-notice ul { padding-left: 1.2rem; }
+.file-notice li { margin-bottom: 0.4rem; }
+
+/* Tam ekran: siyah zemin, video ekrana sığar, kontroller altta. */
+.stage.is-fullscreen { display: grid; align-content: center; padding: 0.6rem; background: #000; }
+.stage.is-fullscreen .stage-main { width: min(100%, calc((100vh - 4.6rem) * 16 / 9)); width: min(100%, calc((100dvh - 4.6rem) * 16 / 9)); }
+.stage.is-fullscreen .time-display { color: #fff; }
+
+/* Yatay tutulan telefon: başlık gizlenir, video ekran yüksekliğine sığar. */
+@media (orientation: landscape) and (max-height: 520px) {
+  .page { padding: 0.35rem 0.75rem 0.5rem; }
+  .topbar { display: none; }
+  .stage-main { width: min(100%, calc((100vh - 4.2rem) * 16 / 9)); width: min(100%, calc((100svh - 4.2rem) * 16 / 9)); }
+  .controls { margin-top: 0.35rem; }
+}
+
+/* Telefon: ilerleme çubuğu kendi satırında, tam genişlikte. */
+@media (max-width: 640px) {
+  .page { padding: 0.75rem 0.75rem 2rem; }
+  .controls { flex-wrap: wrap; gap: 0.45rem 0.5rem; }
+  .controls .progress { order: -1; flex: 1 1 100%; margin: 0.45rem 0 0.35rem; }
+  .controls .cc-button { margin-left: auto; }
+  .time-display { font-size: 0.85rem; }
+  .progress-marker { width: 10px; height: 10px; margin: -5px 0 0 -5px; }
+  .progress-marker.type-popup { width: 8px; height: 8px; margin: -4px 0 0 -4px; }
+  .progress-marker.type-bookmark { width: 3px; height: 16px; margin: -8px 0 0 -1.5px; }
+  .hotspot { padding: 0.25rem 0.8rem 0.25rem 0.25rem; font-size: 0.85rem; }
+  .hotspot-icon { width: 1.6rem; height: 1.6rem; }
+  .big-play { width: 3.6rem; height: 3.6rem; font-size: 1.4rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hotspot, .hotspot .hotspot-icon, .gate-button { animation: none; }
+  .hotspot-timer { display: none; }
+  .acc-chevron { transition: none; }
+}
+
+    </style>
+  </head>
+  <body>
+    <div id="app"><p class="boot">Yükleniyor…</p></div>
+    <noscript>Bu içerik için JavaScript gerekli.</noscript>
+    <script>window.HALUKU_PROJE = {"id":"etkili-iletisim-teknikleri-unite-1-konu-anlatimi-1","title":"ETKİLİ İLETİŞİM TEKNİKLERİ - Ünite 1 Konu Anlatımı 1","video":{"videoId":"nA7HXI36Yk4","duration":null},"settings":{"preventSkippingRequired":false},"items":[{"id":"y_pqy1w9","type":"bookmark","at":52,"title":"İletişim Nedir?"},{"id":"y_i91awv","type":"bookmark","at":164,"title":"İletişimin Temel Özellikleri"},{"id":"p_9w26tv","type":"popup","at":165,"duration":10,"pause":false,"title":"İletişimin Temel Özellikleri","body":"İletişim iki tarafın da aktif olduğu bir alışveriştir. İletiler sözlü ve sözsüz olabilir; iletileri nasıl aldığımız ise algılarımız tarafından belirlenir.","link":null},{"id":"y_afdlzt","type":"bookmark","at":197,"title":"İletişim Bir Bütündür"},{"id":"s_t7seuu","type":"question","at":208,"kind":"single","prompt":"Videoda iletişimi yapılandırmada kelimeler, ses ve beden dili için hangi oranlar verilmektedir?","options":[{"id":"a","text":"Kelimeler %10, ses %30, beden dili %60","correct":true},{"id":"b","text":"Kelimeler %30, ses %10, beden dili %60","correct":false},{"id":"c","text":"Kelimeler %60, ses %30, beden dili %10","correct":false},{"id":"d","text":"Kelimeler %30, ses %60, beden dili %10","correct":false}],"feedbackCorrect":"Doğru!","feedbackWrong":"Doğru dağılım kelimeler %10, ses %30 ve beden dili %60'tır.","required":true,"retryFrom":197},{"id":"y_xbnyf3","type":"bookmark","at":217,"title":"Beden Dili"},{"id":"p_03h1lh","type":"popup","at":220,"duration":9,"pause":false,"title":"Beden Dilini Okumak","body":"Doğru ve başarılı anlamada ses tonu ve konuşmanın akıcılığı, beden duruşu, mimikler ile mesafe ve bedensel temas önem taşır.","link":null},{"id":"y_wkn6zp","type":"bookmark","at":240,"title":"Ses Tonu ve Konuşmanın Akıcılığı"},{"id":"y_2r6pgc","type":"bookmark","at":261,"title":"Beden Duruşu"},{"id":"y_e6smdu","type":"bookmark","at":275,"title":"Mimikler"},{"id":"p_8cjpr6","type":"popup","at":279,"duration":8,"pause":false,"title":"Mimikler","body":"Kişi duygu ve düşüncelerini beden diliyle, en çok da mimikleriyle dışa vurur. Yüz ifadesi verilen mesajla uyumlu olabilir veya alınan mesaja göre şekillenebilir.","link":null},{"id":"y_o0rfjp","type":"bookmark","at":294,"title":"Mesafe ve Bedensel Temas"},{"id":"y_y4fzjd","type":"bookmark","at":319,"title":"İletişimde Algının Rolü"},{"id":"p_u0dr8k","type":"popup","at":320,"duration":9,"pause":false,"title":"Algı","body":"Algı, duyu organlarından beynimize ulaşan verilerin örgütlenmesi, yorumlanması ve anlamlandırılmasıdır. Algı toplumdan topluma, kişiden kişiye ve zaman içinde değişebilir.","link":null},{"id":"s_brx6p5","type":"question","at":341,"kind":"single","prompt":"Anlamak için başarılı biçimde bir arada tutulması gereken üç unsur hangileridir?","options":[{"id":"a","text":"Niyet, bilgi ve gayret","correct":true},{"id":"b","text":"Niyet, dikkat ve onay","correct":false},{"id":"c","text":"Bilgi, ikna ve tekrar","correct":false},{"id":"d","text":"Gayret, onay ve ikna","correct":false}],"feedbackCorrect":"Doğru!","feedbackWrong":"Doğru cevap niyet, bilgi ve gayrettir. Etkili bir anlama için bu üç unsurun birlikte bulunması gerekir.","required":true,"retryFrom":335},{"id":"y_2031d0","type":"bookmark","at":346,"title":"Etkin Dinleme"},{"id":"p_x2sdad","type":"popup","at":357,"duration":8,"pause":false,"title":"Dinlemek","body":"Dinlemek, karşımızdakine hak vermek değil, ona önem vermektir. Etkin dinleme de karşımızdakini onaylamak ya da söylediklerine ikna olmak anlamına gelmez.","link":null},{"id":"s_91gpig","type":"question","at":401,"kind":"multiple","prompt":"Etkin dinleme için iletişimin kalitesini artıran bir mekânın özellikleri hangileridir?","options":[{"id":"a","text":"Gürültünün bozucu etkisinin az olması","correct":true},{"id":"b","text":"Mekânın yeterince aydınlık olması","correct":true},{"id":"c","text":"Dışarıdan müdahalenin engellenmesi","correct":true},{"id":"d","text":"Mekânın mümkün olduğunca kalabalık olması","correct":false}],"feedbackCorrect":"Doğru!","feedbackWrong":"Uygun mekânda gürültünün bozucu etkisi az, aydınlatma yeterli ve dışarıdan müdahale sınırlı olmalıdır.","required":true,"retryFrom":388},{"id":"y_w4o5ve","type":"bookmark","at":420,"title":"Empati"},{"id":"p_gi4q9n","type":"popup","at":439,"duration":10,"pause":false,"title":"Empatinin Üç Aşaması","body":"Olayları karşımızdaki gibi algılamaya çalışmak, onun duygu ve düşüncelerini doğru anlamak ve anladığımızı söz, ses tonu ve beden diliyle ifade etmek empatinin üç aşamasıdır.","link":null},{"id":"p_gv0q3t","type":"popup","at":461,"duration":9,"pause":false,"title":"Empati Gösteren Kişi","body":"Empati gösteren kişinin beden dili, ses tonu, sözleri ve duyguları uyumludur. Dikkatini karşısındakinin ne söylediğine ve aslında ne söylemek istediğine yöneltir.","link":null},{"id":"p_wdvfwh","type":"popup","at":487,"duration":9,"pause":false,"title":"Sempati","body":"Sempati, karşımızdaki kişinin duygu ve düşüncelerini paylaşmayı içerir. Empatide ise aynı düşüncede olmak gerekmeksizin karşıdakinin duygu ve düşüncelerini anlamak esastır.","link":null},{"id":"s_gtbk97","type":"question","at":507,"kind":"single","prompt":"Videoya göre empati ile sempati arasındaki temel fark nedir?","options":[{"id":"a","text":"Empatide anlamak, sempatide duygu ve düşünceleri paylaşmak esastır","correct":true},{"id":"b","text":"Empatide hak vermek, sempatide yalnızca dinlemek esastır","correct":false},{"id":"c","text":"Empatide aynı duyguyu yaşamak, sempatide tarafsız kalmak esastır","correct":false},{"id":"d","text":"Empatide ikna etmek, sempatide karşıdakini gözlemlemek esastır","correct":false}],"feedbackCorrect":"Doğru!","feedbackWrong":"Empatide karşımızdakinin duygu ve düşüncelerini anlamak esastır; sempatide ise onun duygu ve düşüncelerini paylaşma ve ona hak verme öne çıkar.","required":true,"retryFrom":487},{"id":"y_08cvg0","type":"bookmark","at":514,"title":"Özet"}],"surum":"0.4.0"};</script>
+    <script>
+/* haluku oynatıcısı 0.4.0
+ * Derleme gerektirmeyen tek dosya. Yerel önizlemede (/oynat/<id>) projeyi haluku sunucusundan
+ * okur; SCORM/web paketinde window.HALUKU_PROJE verisini kullanır ve bir LMS bulursa
+ * SCORM 1.2 ile ilerleme, puan ve tamamlanma bilgisini gönderir. */
+(() => {
+  "use strict";
+
+  const QUESTION_BUTTON_SECONDS = 10;
+  const END_GUARD_SECONDS = 0.35;
+  const CROP_GRACE_MS = 4000;
+  const SETTLE_MS = 3500;
+  const MIN_CROP_WIDTH = 480;
+  const COMPLETION_RATIO = 0.9;
+  const SAVE_EVERY_MS = 10000;
+  const RATES = [0.75, 1, 1.25, 1.5, 1.75, 2];
+  const TYPE_ORDER = { bookmark: 0, popup: 1, question: 2 };
+  const TYPE_LABEL = { bookmark: "Yer imi", question: "Soru", popup: "Pop-up" };
+  const YT_STATE = { UNSTARTED: -1, ENDED: 0, PLAYING: 1, PAUSED: 2, BUFFERING: 3, CUED: 5 };
+  const PACKAGED = Boolean(window.HALUKU_PROJE);
+  // Dokunmatik cihazlara YouTube mobil oynatıcıyı verir; onun yerleşimi kırpmaya uygun değil.
+  const TOUCH_UI = /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent) ||
+    (navigator.maxTouchPoints > 1 && /Macintosh/i.test(navigator.userAgent));
+  const YT_ERRORS = {
+    2: "Video kimliği geçersiz.",
+    5: "Video bu tarayıcıda oynatılamıyor.",
+    100: "Video bulunamadı: silinmiş ya da özel olabilir.",
+    101: "Video sahibi, videonun başka sitelerde oynatılmasına izin vermiyor.",
+    150: "Video sahibi, videonun başka sitelerde oynatılmasına izin vermiyor.",
+    152: "YouTube bu videoyu bu sayfada oynatmadı (hata 152).",
+    153: PACKAGED
+      ? "YouTube oynatıcı yapılandırma hatası (153): sayfa adres bilgisini göndermiyor. Sayfayı bir LMS'ten ya da web sunucusundan açın; dosyaya çift tıklayarak açılan sayfada YouTube çalışmaz."
+      : "YouTube oynatıcı yapılandırma hatası (153): sayfa adres bilgisini göndermiyor. Sayfayı http://localhost adresinden açtığınızdan emin olun."
+  };
+
+  // ---------- küçük yardımcılar ----------
+
+  function h(tag, attrs, ...children) {
+    const node = document.createElement(tag);
+    for (const [key, value] of Object.entries(attrs || {})) {
+      if (value == null || value === false) continue;
+      if (key === "class") node.className = value;
+      else if (key === "style") Object.assign(node.style, value);
+      else if (key.startsWith("on") && typeof value === "function") node.addEventListener(key.slice(2).toLowerCase(), value);
+      else node.setAttribute(key, value === true ? "" : String(value));
+    }
+    for (const child of children.flat()) {
+      if (child == null || child === false) continue;
+      node.append(child instanceof Node ? child : document.createTextNode(String(child)));
+    }
+    return node;
+  }
+
+  function clock(value, precise = false) {
+    let seconds = Number.isFinite(value) && value > 0 ? value : 0;
+    const tenths = precise ? Math.round(seconds * 10) % 10 : 0;
+    seconds = precise ? Math.floor(Math.round(seconds * 10) / 10) : Math.floor(seconds);
+    const hours = Math.floor(seconds / 3600);
+    const minutes = Math.floor((seconds % 3600) / 60);
+    const rest = String(seconds % 60).padStart(2, "0") + (tenths ? `.${tenths}` : "");
+    return hours > 0 ? `${hours}:${String(minutes).padStart(2, "0")}:${rest}` : `${minutes}:${rest}`;
+  }
+
+  const prefs = {
+    get(key) {
+      try { return window.localStorage.getItem(key); } catch { return null; }
+    },
+    set(key, value) {
+      try { window.localStorage.setItem(key, value); } catch { /* gizli pencere vb. */ }
+    }
+  };
+
+  function isSafeLink(link) {
+    return typeof link === "string" && /^https?:\/\//i.test(link);
+  }
+
+  function packBits(bits) {
+    const bytes = new Uint8Array(Math.ceil(bits.length / 8));
+    bits.forEach((bit, index) => { if (bit) bytes[index >> 3] |= 1 << (index & 7); });
+    let text = "";
+    bytes.forEach((byte) => { text += String.fromCharCode(byte); });
+    return btoa(text);
+  }
+
+  function unpackBits(text, size) {
+    const bits = new Uint8Array(size);
+    try {
+      const raw = atob(text);
+      for (let i = 0; i < size; i++) if (raw.charCodeAt(i >> 3) & (1 << (i & 7))) bits[i] = 1;
+    } catch { /* bozuk veri: sıfırdan başla */ }
+    return bits;
+  }
+
+  // ---------- SCORM 1.2 ----------
+
+  const scorm = (() => {
+    let api = null;
+    let finished = false;
+    const startedAt = Date.now();
+
+    function findApi(win) {
+      for (let depth = 0; win && depth < 10; depth++) {
+        try { if (win.API) return win.API; } catch { return null; }
+        if (win.parent === win) break;
+        win = win.parent;
+      }
+      return null;
+    }
+
+    function timespan(totalSeconds) {
+      const hours = Math.floor(totalSeconds / 3600);
+      const minutes = Math.floor((totalSeconds % 3600) / 60);
+      const seconds = totalSeconds % 60;
+      return `${String(hours).padStart(4, "0")}:${String(minutes).padStart(2, "0")}:${seconds.toFixed(2).padStart(5, "0")}`;
+    }
+
+    return {
+      init() {
+        try { api = findApi(window) || (window.opener ? findApi(window.opener) : null); } catch { api = null; }
+        if (!api) return false;
+        try {
+          if (String(api.LMSInitialize("")) !== "true") { api = null; return false; }
+        } catch { api = null; return false; }
+        const status = this.get("cmi.core.lesson_status");
+        if (!status || status === "not attempted") this.set("cmi.core.lesson_status", "incomplete");
+        return true;
+      },
+      get(key) {
+        if (!api || finished) return "";
+        try { return String(api.LMSGetValue(key) ?? ""); } catch { return ""; }
+      },
+      set(key, value) {
+        if (!api || finished) return false;
+        try { return String(api.LMSSetValue(key, String(value))) === "true"; } catch { return false; }
+      },
+      commit() {
+        if (!api || finished) return;
+        try { api.LMSCommit(""); } catch { /* LMS yanıt vermedi */ }
+      },
+      finish(completed) {
+        if (!api || finished) return;
+        this.set("cmi.core.session_time", timespan((Date.now() - startedAt) / 1000));
+        this.set("cmi.core.exit", completed ? "" : "suspend");
+        this.commit();
+        finished = true;
+        try { api.LMSFinish(""); } catch { /* LMS yanıt vermedi */ }
+      }
+    };
+  })();
+
+  // ---------- öğe zamanlaması ----------
+
+  class Engine {
+    constructor(items, settings) {
+      this.items = [...(items || [])].sort((a, b) => a.at - b.at || TYPE_ORDER[a.type] - TYPE_ORDER[b.type]);
+      this.settings = settings || {};
+      this.answered = new Set(); // "Devam et" ile kapatılan sorular
+      this.fired = new Set();    // zamanı gelmiş öğeler
+      this.opened = new Set();   // düğmesine tıklanmış (ya da geçilmiş) öğeler
+      this.last = -0.001;
+    }
+
+    get questions() { return this.items.filter((item) => item.type === "question"); }
+    get popups() { return this.items.filter((item) => item.type === "popup"); }
+    get bookmarks() { return this.items.filter((item) => item.type === "bookmark"); }
+
+    // Zorunlu sorular ve "videoyu durdur" işaretli kartlar videoyu durdurur.
+    blocks(item) {
+      return item.type === "question" ? item.required !== false : Boolean(item.pause);
+    }
+
+    buttonUntil(item) {
+      return item.at + (item.type === "popup" ? Math.max(1, Number(item.duration) || 8) : QUESTION_BUTTON_SECONDS);
+    }
+
+    rearmFrom(t) {
+      for (const id of [...this.fired]) {
+        const item = this.items.find((candidate) => candidate.id === id);
+        if (item && item.at >= t) { this.fired.delete(id); this.opened.delete(id); }
+      }
+    }
+
+    // Geri sarmada hedefteki ve sonrasındaki öğeler yeniden tetiklenebilsin.
+    prepareSeek(t) {
+      if (t >= this.last) return;
+      this.rearmFrom(t - 0.05);
+      this.last = t - 0.1;
+    }
+
+    // Oynatma t anına geldiğinde videoyu durdurması gereken öğeyi döndürür.
+    update(t) {
+      const previous = this.last;
+      this.last = t;
+      const delta = t - previous;
+      if (delta < -0.3) {
+        this.rearmFrom(t + 0.001);
+        return null;
+      }
+      if (delta <= 0) return null;
+      const crossed = (item) => item.at > previous && item.at <= t + 0.05;
+      if (delta > 3) {
+        if (this.settings.preventSkippingRequired) {
+          const skipped = this.questions.find((q) => this.blocks(q) && !this.answered.has(q.id) && crossed(q));
+          if (skipped) {
+            this.fired.add(skipped.id);
+            this.last = skipped.at;
+            return { item: skipped, seekTo: skipped.at };
+          }
+        }
+        for (const item of this.items) {
+          if (item.type !== "bookmark" && !this.blocks(item) && item.at <= t + 0.05 && t < this.buttonUntil(item)) this.fired.add(item.id);
+        }
+        return null;
+      }
+      for (const item of this.items) {
+        if (item.type === "bookmark" || !crossed(item) || this.fired.has(item.id)) continue;
+        if (item.type === "question" && this.answered.has(item.id)) continue;
+        this.fired.add(item.id);
+        if (this.blocks(item)) {
+          const late = t - item.at > 0.3;
+          if (late) this.last = item.at;
+          return { item, seekTo: late ? item.at : null };
+        }
+      }
+      return null;
+    }
+
+    buttons(t) {
+      return this.items.filter((item) =>
+        item.type !== "bookmark" &&
+        !this.blocks(item) &&
+        this.fired.has(item.id) &&
+        !this.opened.has(item.id) &&
+        !(item.type === "question" && this.answered.has(item.id)) &&
+        item.at <= t + 0.05 &&
+        t < this.buttonUntil(item)
+      );
+    }
+
+    seekLimit() {
+      if (!this.settings.preventSkippingRequired) return Infinity;
+      const pending = this.questions.find((q) => this.blocks(q) && !this.answered.has(q.id));
+      return pending ? pending.at : Infinity;
+    }
+
+    activeBookmark(t) {
+      let active = null;
+      for (const bookmark of this.bookmarks) if (bookmark.at <= t + 0.05) active = bookmark;
+      return active;
+    }
+  }
+
+  // ---------- YouTube ----------
+
+  let youTubeApi = null;
+  function loadYouTubeApi() {
+    if (window.YT && window.YT.Player) return Promise.resolve(window.YT);
+    if (youTubeApi) return youTubeApi;
+    youTubeApi = new Promise((resolve, reject) => {
+      const previous = window.onYouTubeIframeAPIReady;
+      window.onYouTubeIframeAPIReady = () => {
+        if (typeof previous === "function") previous();
+        resolve(window.YT);
+      };
+      const script = document.createElement("script");
+      script.src = "https://www.youtube.com/iframe_api";
+      script.async = true;
+      script.onerror = () => {
+        youTubeApi = null;
+        reject(new Error("YouTube oynatıcısı yüklenemedi. İnternet bağlantınızı ve YouTube erişimini kontrol edin."));
+      };
+      document.head.appendChild(script);
+    });
+    return youTubeApi;
+  }
+
+  async function createYouTubePlayer(host, videoId, handlers) {
+    const YT = await loadYouTubeApi();
+    host.replaceChildren();
+    const iframe = document.createElement("iframe");
+    const params = new URLSearchParams({
+      enablejsapi: "1", origin: window.location.origin, playsinline: "1", rel: "0", iv_load_policy: "3",
+      hl: "tr", cc_lang_pref: "tr", controls: "0", fs: "0", disablekb: "1"
+    });
+    iframe.src = `https://www.youtube.com/embed/${encodeURIComponent(videoId)}?${params}`;
+    iframe.title = "YouTube video oynatıcısı";
+    // "fullscreen" izni verilmez: Android Chrome telefon yan çevrilince videoyu kendiliğinden tam
+    // ekrana alıyor ve sorular, kartlar dışarıda kalıyordu. Tam ekranı oynatıcının kendi düğmesi yapar.
+    iframe.allow = "autoplay; encrypted-media; picture-in-picture";
+    iframe.referrerPolicy = "strict-origin-when-cross-origin";
+    iframe.tabIndex = -1;
+    host.appendChild(iframe);
+
+    return new Promise((resolve) => {
+      let yt = null;
+      const tracks = () => {
+        try { return yt.getOption("captions", "tracklist") || []; } catch { return []; }
+      };
+      const chooseTrack = () => {
+        try {
+          const list = tracks();
+          const pick = list.find((track) => track.languageCode === "tr") || list[0];
+          if (pick) yt.setOption("captions", "track", { languageCode: pick.languageCode });
+        } catch { /* altyazı modülü henüz hazır değil */ }
+      };
+      const api = {
+        play: () => yt.playVideo?.(),
+        pause: () => yt.pauseVideo?.(),
+        seek: (seconds) => yt.seekTo?.(Math.max(0, seconds), true),
+        time: () => Number(yt.getCurrentTime?.()) || 0,
+        duration: () => Number(yt.getDuration?.()) || 0,
+        state: () => Number(yt.getPlayerState?.() ?? YT_STATE.UNSTARTED),
+        setRate: (rate) => yt.setPlaybackRate?.(rate),
+        mute: () => yt.mute?.(),
+        unMute: () => {
+          yt.unMute?.();
+          yt.setVolume?.(100);
+        },
+        hasCaptionModule: () => {
+          try { return (yt.getOptions?.() || []).includes("captions"); } catch { return false; }
+        },
+        captionTracks: tracks,
+        chooseCaptionTrack: chooseTrack,
+        captionsOn: () => {
+          try { yt.loadModule("captions"); } catch { /* yok say */ }
+          chooseTrack();
+          setTimeout(chooseTrack, 800);
+        },
+        captionsOff: () => {
+          try { yt.unloadModule("captions"); } catch { /* yok say */ }
+        }
+      };
+      yt = new YT.Player(iframe, {
+        events: {
+          onReady: () => resolve(api),
+          onStateChange: (event) => handlers.onState(event.data),
+          onError: (event) => handlers.onError(YT_ERRORS[event.data] ?? `YouTube oynatıcı hatası (${event.data})`),
+          onApiChange: () => handlers.onApiChange()
+        }
+      });
+    });
+  }
+
+  // ---------- izleyici ekranı ----------
+
+  function mountStage(project, lms) {
+    const engine = new Engine(project.items, project.settings);
+    const results = {}; // soru kimliği -> { correct, firstTry }
+    let player = null;
+    let ready = false;
+    let playing = false;
+    let everPlayed = false;
+    let ended = false;
+    let playStartedAt = 0;
+    let duration = Number(project.video.duration) || 0;
+    let current = 0;
+    let overlay = null; // { kind: "gate" | "card" | "end" | "resume", item? }
+    let ccOn = prefs.get("haluku-altyazi") === "1";
+    let captionsApplied = false;
+    let buttonsKey = "";
+    let markersFor = 0;
+    let tapTimer = 0;
+    let toastTimer = 0;
+    let coverage = null;
+    let lastTracked = null;
+    let completed = false;
+    let lastSave = 0;
+    let interactionIndex = 0;
+    let pendingSeek = null; // YouTube yeni konumu bildirene kadar eski zamanı yok say
+    let seekOnStart = null; // ilk oynatma başlamadan istenen konum (YouTube o sırada yok sayabiliyor)
+    let scrub = null;       // ilerleme çubuğunda sürükleme
+    let menuOpen = false;
+    let swallowClick = false;
+    let openSection = null;
+    let activeBookmarkId = null;
+    let cropAllowed = !TOUCH_UI;
+
+    // --- video çerçevesi
+    const host = h("div", { class: "video-host" });
+    const poster = h("img", {
+      class: "video-poster", alt: "", "aria-hidden": "true",
+      src: `https://i.ytimg.com/vi/${encodeURIComponent(project.video.videoId)}/hqdefault.jpg`
+    });
+    poster.addEventListener("error", () => poster.remove());
+    const strips = h("div", { class: "video-strips", "aria-hidden": "true" });
+    const shield = h("div", { class: "video-shield", "aria-hidden": "true" });
+    const bigPlay = h("button", { type: "button", class: "big-play", "aria-label": "Oynat" }, "▶");
+    const pausedLayer = h("div", { class: "video-paused" }, bigPlay);
+    const hotspots = h("div", { class: "hotspots" });
+    const panelId = `icerik-${Math.random().toString(36).slice(2, 8)}`;
+    const menuButton = h("button", {
+      type: "button", class: "menu-button", "aria-expanded": "false", "aria-controls": panelId, "aria-label": "İçerik menüsü"
+    }, h("span", { "aria-hidden": "true" }, "☰"), h("span", null, "İçerik"));
+    const toast = h("div", { class: "video-toast", role: "status", hidden: true });
+    const unmuteButton = h("button", { type: "button", class: "unmute-button" }, "🔇 Sesi aç");
+    const overlayLayer = h("div", { class: "video-overlay", hidden: true });
+    const tapHint = h("p", { class: "tap-hint" }, "▶ Başlatmak için videoya dokunun");
+    const frame = h("div", { class: `video-frame${cropAllowed ? " is-cropped" : ""}` },
+      h("p", { class: "video-placeholder" }, "Video yükleniyor…"),
+      host, poster, strips, shield, pausedLayer, hotspots, menuButton, unmuteButton, tapHint, toast, overlayLayer);
+    const errorBox = h("div", { class: "alert error", role: "alert", hidden: true });
+
+    // --- kontroller
+    const playButton = h("button", { type: "button", class: "control-button", disabled: true, "aria-label": "Oynat" }, "▶");
+    const timeText = h("span", { class: "time-display" }, "0:00 / 0:00");
+    const fill = h("div", { class: "progress-fill" });
+    const markers = h("div", { class: "progress-markers" });
+    const progress = h("div", { class: "progress", role: "slider", tabindex: "0", "aria-label": "Videoda konum", "aria-valuemin": "0" }, fill, markers);
+    const ccButton = h("button", {
+      type: "button", class: "control-button cc-button", disabled: true, "aria-pressed": String(ccOn),
+      "aria-label": "Altyazı", title: "Altyazıyı aç / kapat (C)"
+    }, "CC");
+    const rateSelect = h("select", { "aria-label": "Oynatma hızı" }, RATES.map((rate) => h("option", { value: String(rate), selected: rate === 1 }, `${rate}x`)));
+    const fullscreenButton = h("button", { type: "button", class: "control-button", "aria-label": "Tam ekran" }, "⤢");
+    const controls = h("div", { class: "controls", "aria-label": "Video kontrolleri" },
+      playButton, timeText, progress, ccButton, h("label", { class: "rate" }, rateSelect), fullscreenButton);
+
+    // --- içerik paneli: masaüstünde videonun yanında, dar ekranda video üzerinde açılır menü
+    const sections = [];
+    const bookmarksSection = engine.bookmarks.length ? makeSection("bolumler", "Bölümler") : null;
+    const questionsSection = engine.questions.length ? makeSection("sorular", "Sorular") : null;
+    const popupsSection = engine.popups.length ? makeSection("kartlar", "Bilgi kartları") : null;
+    const bookmarkRows = engine.bookmarks.map((bookmark) => {
+      const button = h("button", { type: "button", class: "contents-item", onClick: () => fromList(() => seekTo(bookmark.at)) },
+        h("span", { class: "contents-time" }, clock(bookmark.at, true)), h("span", { class: "contents-text" }, bookmark.title));
+      bookmarksSection.list.append(h("li", null, button));
+      return { bookmark, button };
+    });
+    if (bookmarksSection) bookmarksSection.count.textContent = String(bookmarkRows.length);
+    for (const popup of engine.popups) {
+      popupsSection.list.append(h("li", null, h("button", {
+        type: "button", class: "contents-item", onClick: () => fromList(() => openCard(popup, false))
+      }, h("span", { class: "contents-time" }, clock(popup.at, true)), h("span", { class: "contents-text" }, popup.title || popup.body))));
+    }
+    if (popupsSection) popupsSection.count.textContent = String(engine.popups.length);
+    menuButton.hidden = sections.length === 0;
+
+    const panel = h("aside", { class: "panel contents", id: panelId, "aria-label": "İçerik" },
+      h("div", { class: "contents-inner" },
+        h("div", { class: "contents-head" },
+          h("strong", null, "İçerik"),
+          h("button", { type: "button", class: "link", "aria-label": "Menüyü kapat", onClick: () => { setMenu(false); menuButton.focus(); } }, "✕")),
+        sections.map((section) => section.element),
+        sections.length ? null : h("p", { class: "muted contents-empty" }, "Sorular ve bilgi kartları, video oynarken videonun üzerinde düğme olarak görünecek.")));
+    const stage = h("div", { class: "stage" }, h("div", { class: "stage-main" }, frame, errorBox, controls, panel));
+    if (sections.length) toggleSection(sections[0].key);
+
+    // --- olaylar
+    // overflow: clip desteklemeyen tarayıcılarda taşan iframe çerçeveyi kaydırmasın.
+    frame.addEventListener("scroll", () => { frame.scrollTop = 0; frame.scrollLeft = 0; });
+    playButton.addEventListener("click", togglePlay);
+    bigPlay.addEventListener("click", togglePlay);
+    shield.addEventListener("click", togglePlay);
+    ccButton.addEventListener("click", () => setCaptions(!ccOn));
+    rateSelect.addEventListener("change", () => player?.setRate(Number(rateSelect.value)));
+    fullscreenButton.addEventListener("click", toggleFullscreen);
+    menuButton.addEventListener("click", () => setMenu(!menuOpen));
+    unmuteButton.addEventListener("click", () => {
+      player?.unMute();
+      frame.classList.remove("is-muted-start");
+    });
+
+    progress.addEventListener("pointerdown", (event) => {
+      if (!ready || (overlay && overlay.kind !== "end") || event.button > 0) return;
+      const box = progress.getBoundingClientRect();
+      if (!box.width) return;
+      try { progress.setPointerCapture(event.pointerId); } catch { /* sentetik olay */ }
+      scrub = { box };
+      previewAt(event.clientX);
+      event.preventDefault();
+    });
+    progress.addEventListener("pointermove", (event) => { if (scrub) previewAt(event.clientX); });
+    progress.addEventListener("pointerup", (event) => {
+      if (!scrub) return;
+      const target = fractionAt(event.clientX) * duration;
+      scrub = null;
+      seekTo(target);
+    });
+    progress.addEventListener("pointercancel", () => { scrub = null; renderTime(); });
+    progress.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowRight") seekTo(current + 5);
+      else if (event.key === "ArrowLeft") seekTo(current - 5);
+      else if (event.key === "Home") seekTo(0);
+      else return;
+      event.preventDefault();
+      event.stopPropagation();
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && menuOpen) {
+        setMenu(false);
+        menuButton.focus();
+        event.preventDefault();
+        return;
+      }
+      if (event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey) return;
+      const tag = event.target?.tagName;
+      if (tag === "INPUT" || tag === "SELECT" || tag === "TEXTAREA") return;
+      const key = event.key.toLowerCase();
+      if (key === "k" || (key === " " && tag !== "BUTTON" && tag !== "A")) togglePlay();
+      else if (key === "c" && !ccButton.disabled) setCaptions(!ccOn);
+      else if (key === "f") toggleFullscreen();
+      else if (key === "arrowright" && !overlay) seekTo(current + 5);
+      else if (key === "arrowleft" && !overlay) seekTo(current - 5);
+      else return;
+      event.preventDefault();
+    });
+    // Menü açıkken dışarı dokunmak yalnızca menüyü kapatsın, videoyu oynatıp durdurmasın.
+    document.addEventListener("pointerdown", (event) => {
+      if (!menuOpen || panel.contains(event.target) || menuButton.contains(event.target)) return;
+      setMenu(false);
+      swallowClick = true;
+      setTimeout(() => { swallowClick = false; }, 400);
+    }, true);
+    document.addEventListener("click", (event) => {
+      if (!swallowClick) return;
+      swallowClick = false;
+      event.stopPropagation();
+      event.preventDefault();
+    }, true);
+    document.addEventListener("fullscreenchange", () => setFullscreen(document.fullscreenElement === stage));
+
+    // --- oynatıcı
+    const loadTimer = setTimeout(() => {
+      if (!ready) showError("Video yüklenemedi. İnternet bağlantınızı ve YouTube erişimini kontrol edin.");
+    }, 20000);
+    createYouTubePlayer(host, project.video.videoId, { onState, onError: showError, onApiChange })
+      .then((created) => {
+        clearTimeout(loadTimer);
+        player = created;
+        ready = true;
+        if (player.duration()) duration = player.duration();
+        ccButton.disabled = false;
+        refreshPlayState();
+        renderTime();
+        renderQuestions();
+        if (lms) {
+          const resumeAt = restoreFromLms();
+          renderQuestions();
+          renderMarkers();
+          if (resumeAt > 5 && (!duration || resumeAt < duration - 5)) showResume(resumeAt);
+        }
+        setInterval(tick, 150);
+      })
+      .catch((error) => {
+        clearTimeout(loadTimer);
+        showError(error.message);
+      });
+
+    if (lms) {
+      interactionIndex = Math.max(0, Number(lms.get("cmi.interactions._count")) || 0);
+      const leave = () => { saveProgress(); lms.finish(completed); };
+      window.addEventListener("pagehide", leave);
+      window.addEventListener("beforeunload", leave);
+      document.addEventListener("visibilitychange", () => { if (document.visibilityState === "hidden") saveProgress(); });
+    }
+
+    renderQuestions();
+    return stage;
+
+    // ---------- içerik paneli ----------
+
+    function makeSection(key, title) {
+      const count = h("span", { class: "acc-count" });
+      const head = h("button", { type: "button", class: "acc-head", "aria-expanded": "false" },
+        h("span", { class: "acc-chevron", "aria-hidden": "true" }, "▸"), h("span", null, title), count);
+      const list = h("ol", { class: "contents-list" });
+      const body = h("div", { class: "acc-body" }, list);
+      const element = h("section", { class: "acc" }, head, body);
+      head.addEventListener("click", () => toggleSection(key));
+      const section = { key, element, head, body, list, count };
+      sections.push(section);
+      return section;
+    }
+
+    // Aynı anda tek bölüm açık kalır; açık bölüm panelin kalan yüksekliğini kullanır.
+    function toggleSection(key) {
+      openSection = openSection === key ? null : key;
+      for (const section of sections) {
+        const open = section.key === openSection;
+        section.element.classList.toggle("is-open", open);
+        section.head.setAttribute("aria-expanded", String(open));
+      }
+      requestAnimationFrame(scrollActiveIntoView);
+    }
+
+    function setMenu(open) {
+      menuOpen = open && sections.length > 0;
+      stage.classList.toggle("menu-open", menuOpen);
+      menuButton.setAttribute("aria-expanded", String(menuOpen));
+      if (menuOpen) {
+        const target = sections.find((section) => section.key === openSection)?.head ?? sections[0].head;
+        requestAnimationFrame(() => {
+          target.focus({ preventScroll: true });
+          scrollActiveIntoView();
+        });
+      }
+    }
+
+    function fromList(action) {
+      if (!ready) return;
+      if (overlay && overlay.kind !== "end") {
+        toastMessage("Önce açık olan kartı kapatın.");
+        return;
+      }
+      if (overlay) { ended = false; setOverlay(null); }
+      setMenu(false);
+      action();
+    }
+
+    function scrollActiveIntoView() {
+      if (!bookmarksSection || openSection !== "bolumler") return;
+      const row = bookmarkRows.find((candidate) => candidate.bookmark.id === activeBookmarkId);
+      if (!row) return;
+      const body = bookmarksSection.body.getBoundingClientRect();
+      const item = row.button.getBoundingClientRect();
+      if (!body.height) return;
+      if (item.top < body.top) bookmarksSection.body.scrollTop -= body.top - item.top + 8;
+      else if (item.bottom > body.bottom) bookmarksSection.body.scrollTop += item.bottom - body.bottom + 8;
+    }
+
+    // ---------- durum ----------
+
+    function onState(state) {
+      const wasPlaying = playing;
+      playing = state === YT_STATE.PLAYING;
+      if (playing) {
+        if (!wasPlaying) playStartedAt = Date.now();
+        if (seekOnStart !== null) {
+          if (Math.abs(player.time() - seekOnStart) > 1.5) seekPlayer(seekOnStart);
+          seekOnStart = null;
+        }
+        everPlayed = true;
+        ended = false;
+        clearTimeout(tapTimer);
+        frame.classList.remove("needs-tap");
+        frame.classList.add("has-played");
+      }
+      if (state === YT_STATE.ENDED) showEnd();
+      if (wasPlaying && state === YT_STATE.PAUSED) saveProgress();
+      refreshPlayState();
+    }
+
+    function onApiChange() {
+      if (!player || !player.hasCaptionModule()) return;
+      if (!ccOn) player.captionsOff();
+      else if (!captionsApplied) {
+        captionsApplied = true;
+        player.chooseCaptionTrack();
+      }
+    }
+
+    function tick() {
+      if (!player) return;
+      const d = player.duration();
+      if (d) duration = d;
+      updateCrop();
+      const t = player.time();
+      if (pendingSeek) {
+        if (Math.abs(t - pendingSeek.t) < 1.5 || Date.now() - pendingSeek.at > 2000) pendingSeek = null;
+        else { renderTime(); return; }
+      }
+      current = t;
+      renderTime();
+      if (overlay) {
+        if (overlay.kind !== "resume" && player.state() === YT_STATE.PLAYING) player.pause();
+        renderButtons();
+        return;
+      }
+      if (playing && duration && t >= duration - END_GUARD_SECONDS) {
+        player.pause();
+        showEnd();
+        return;
+      }
+      if (playing) trackCoverage(t);
+      const hit = engine.update(t);
+      if (hit) {
+        player.pause();
+        if (hit.seekTo != null) seekPlayer(hit.seekTo);
+        openGate(hit.item);
+      }
+      renderButtons();
+      renderActiveBookmark();
+      if (lms && playing && Date.now() - lastSave > SAVE_EVERY_MS) saveProgress();
+    }
+
+    function togglePlay() {
+      if (!player || !ready) return;
+      if (frame.classList.contains("is-muted-start")) {
+        player.unMute();
+        frame.classList.remove("is-muted-start");
+      }
+      if (overlay) {
+        if (overlay.kind === "gate") {
+          const item = overlay.item;
+          if (item.type === "question") { openCard(item, true); return; }
+          engine.opened.add(item.id);
+          setOverlay(null);
+          player.play();
+        }
+        return;
+      }
+      if (playing) { player.pause(); return; }
+      if (ended || (duration && current >= duration - END_GUARD_SECONDS - 0.1)) {
+        ended = false;
+        engine.prepareSeek(0);
+        seekPlayer(0);
+      }
+      player.play();
+      armTapFallback();
+    }
+
+    function seekPlayer(t) {
+      player.seek(t);
+      current = t;
+      pendingSeek = { t, at: Date.now() };
+      if (!everPlayed) seekOnStart = t;
+      renderTime();
+    }
+
+    // Tarayıcı sesli oynatmayı engellerse (iOS vb.) video sessiz başlar ve "Sesi aç" düğmesi çıkar;
+    // o da olmazsa YouTube'un kendi oynat düğmesi açığa çıkarılır.
+    function armTapFallback() {
+      if (everPlayed) return;
+      clearTimeout(tapTimer);
+      tapTimer = setTimeout(() => {
+        if (everPlayed || overlay) return;
+        player.mute();
+        player.play();
+        frame.classList.add("is-muted-start");
+        tapTimer = setTimeout(() => {
+          if (!everPlayed && !overlay) frame.classList.add("needs-tap");
+        }, 2500);
+      }, 2000);
+    }
+
+    function seekTo(target) {
+      if (!player || !ready || !Number.isFinite(target)) return;
+      if (overlay && overlay.kind !== "end") return;
+      if (overlay) { ended = false; setOverlay(null); }
+      const limit = engine.seekLimit();
+      let t = Math.max(0, Math.min(target, duration || target));
+      if (t > limit) {
+        t = limit;
+        toastMessage("Bu noktadaki soruyu cevaplamadan ileri geçilemez.");
+      }
+      engine.prepareSeek(t);
+      seekPlayer(t);
+    }
+
+    function fractionAt(clientX) {
+      const box = scrub?.box ?? progress.getBoundingClientRect();
+      return box.width ? Math.min(1, Math.max(0, (clientX - box.left) / box.width)) : 0;
+    }
+
+    function previewAt(clientX) {
+      const fraction = fractionAt(clientX);
+      fill.style.width = `${fraction * 100}%`;
+      timeText.textContent = `${clock(fraction * duration)} / ${clock(duration)}`;
+    }
+
+    function setCaptions(on) {
+      ccOn = on;
+      prefs.set("haluku-altyazi", on ? "1" : "0");
+      ccButton.setAttribute("aria-pressed", String(on));
+      if (player) {
+        if (on) {
+          captionsApplied = true;
+          player.captionsOn();
+          setTimeout(() => {
+            if (ccOn && player.captionTracks().length === 0) {
+              toastMessage("Bu videoda altyazı bulunmuyor.");
+              setCaptions(false);
+            }
+          }, 3000);
+        } else {
+          captionsApplied = false;
+          player.captionsOff();
+        }
+      }
+      updateCrop();
+    }
+
+    function toggleFullscreen() {
+      if (document.fullscreenElement) {
+        document.exitFullscreen?.();
+        return;
+      }
+      const fallback = () => setFullscreen(!stage.classList.contains("is-fullscreen"));
+      if (!stage.requestFullscreen) {
+        fallback();
+        return;
+      }
+      stage.requestFullscreen({ navigationUI: "hide" })
+        .then(() => {
+          // Telefonda tam ekran yatay açılsın (destekleyen tarayıcılarda).
+          if (!TOUCH_UI) return;
+          try { screen.orientation?.lock?.("landscape")?.catch(() => undefined); } catch { /* desteklenmiyor */ }
+        })
+        .catch(fallback);
+    }
+
+    function setFullscreen(on) {
+      if (!on && TOUCH_UI) {
+        try { screen.orientation?.unlock?.(); } catch { /* desteklenmiyor */ }
+      }
+      stage.classList.toggle("is-fullscreen", on);
+      fullscreenButton.textContent = on ? "⤡" : "⤢";
+      fullscreenButton.setAttribute("aria-label", on ? "Tam ekrandan çık" : "Tam ekran");
+    }
+
+    // ---------- görünüm ----------
+
+    function refreshPlayState() {
+      playButton.textContent = playing ? "❚❚" : "▶";
+      playButton.setAttribute("aria-label", playing ? "Duraklat" : "Oynat");
+      playButton.disabled = !ready;
+      frame.classList.toggle("is-playing", playing);
+      frame.classList.toggle("is-paused", ready && !playing && !overlay);
+      updateCrop();
+    }
+
+    // YouTube'un başlık ve alt çubuğu iframe'in kenarlarında durur; masaüstünde iframe'i
+    // çerçeveden taşırıp kırpınca görünmezler. Altyazı da alt kenarda olduğu için altyazı açıkken
+    // ve video oynarken kırpma kaldırılır. Dar masaüstü çerçevesinde çubuklar koyu şeritlerle örtülür.
+    // Dokunmatik cihazlarda şerit kullanılmaz: görüntüyü karartıyordu; mobil oynatıcı zaten sade.
+    function updateCrop() {
+      if (!TOUCH_UI && frame.isConnected) cropAllowed = frame.clientWidth >= MIN_CROP_WIDTH;
+      const sincePlay = Date.now() - playStartedAt;
+      const crop = cropAllowed && (!ccOn || !playing || sincePlay < CROP_GRACE_MS);
+      const cover = !TOUCH_UI && !cropAllowed && (playing ? sincePlay < SETTLE_MS : everPlayed);
+      if (frame.classList.contains("is-cropped") !== crop) frame.classList.toggle("is-cropped", crop);
+      if (frame.classList.contains("show-strips") !== cover) frame.classList.toggle("show-strips", cover);
+    }
+
+    function renderTime() {
+      if (!scrub) {
+        timeText.textContent = `${clock(current)} / ${clock(duration)}`;
+        fill.style.width = duration ? `${Math.min(100, (current / duration) * 100)}%` : "0%";
+      }
+      progress.setAttribute("aria-valuemax", String(Math.round(duration)));
+      progress.setAttribute("aria-valuenow", String(Math.round(current)));
+      progress.setAttribute("aria-valuetext", clock(current));
+      if (duration && duration !== markersFor) {
+        markersFor = duration;
+        renderMarkers();
+      }
+    }
+
+    function renderMarkers() {
+      if (!duration) return;
+      markers.replaceChildren(...engine.items.map((item) => h("span", {
+        class: `progress-marker type-${item.type}${item.type === "question" && results[item.id] ? " is-done" : ""}`,
+        style: { left: `${Math.min(100, (item.at / duration) * 100)}%` },
+        title: `${clock(item.at, true)} · ${TYPE_LABEL[item.type]}`
+      })));
+    }
+
+    function renderActiveBookmark() {
+      const active = engine.activeBookmark(current);
+      const id = active ? active.id : null;
+      if (id === activeBookmarkId) return;
+      activeBookmarkId = id;
+      for (const row of bookmarkRows) row.button.classList.toggle("is-active", row.bookmark === active);
+      scrollActiveIntoView();
+    }
+
+    function renderQuestions() {
+      if (!questionsSection) return;
+      const questions = engine.questions;
+      questionsSection.count.textContent = `${questions.filter((q) => results[q.id]).length}/${questions.length}`;
+      questionsSection.list.replaceChildren(...questions.map((question) => {
+        const result = results[question.id];
+        const status = !result ? "cevaplanmadı" : result.firstTry ? "ilk denemede doğru" : result.correct ? "tekrar denemede doğru" : "yanlış";
+        const state = !result ? "" : result.correct ? " is-correct" : " is-wrong";
+        return h("li", null, h("button", {
+          type: "button", class: `contents-item question-link${state}`, title: question.prompt,
+          onClick: () => fromList(() => openCard(question, false))
+        },
+        h("span", { class: "contents-time" }, clock(question.at, true)),
+        h("span", { class: "question-status", "aria-hidden": "true" }, !result ? "•" : result.correct ? "✓" : "✗"),
+        h("span", { class: "contents-text" }, question.prompt),
+        h("span", { class: "sr-only" }, ` (${status})`)));
+      }));
+    }
+
+    function renderButtons() {
+      const list = overlay || !ready ? [] : engine.buttons(current);
+      const key = list.map((item) => item.id).join("|");
+      if (key === buttonsKey) return;
+      buttonsKey = key;
+      hotspots.replaceChildren(...list.map((item) => {
+        const isQuestion = item.type === "question";
+        const remaining = Math.max(0.5, engine.buttonUntil(item) - current);
+        return h("button", {
+          type: "button", class: `hotspot type-${item.type}`,
+          "aria-label": isQuestion ? "Soruyu aç" : `Bilgi kartını aç: ${item.title || ""}`,
+          onClick: () => openCard(item, false)
+        },
+        h("span", { class: "hotspot-icon", "aria-hidden": "true" }, isQuestion ? "?" : "i"),
+        h("span", { class: "hotspot-label" }, isQuestion ? "Soru" : item.title || "Bilgi"),
+        h("span", { class: "hotspot-timer", style: { animationDuration: `${remaining}s` } }));
+      }));
+    }
+
+    function setOverlay(state, content, focusTarget) {
+      overlay = state;
+      frame.classList.toggle("has-overlay", Boolean(state));
+      frame.classList.toggle("has-card", Boolean(state) && state.kind !== "gate");
+      if (state) {
+        setMenu(false);
+        overlayLayer.className = `video-overlay is-${state.kind}`;
+        overlayLayer.replaceChildren(content);
+        overlayLayer.hidden = false;
+      } else {
+        overlayLayer.replaceChildren();
+        overlayLayer.hidden = true;
+      }
+      buttonsKey = "-";
+      renderButtons();
+      refreshPlayState();
+      if (focusTarget) requestAnimationFrame(() => focusTarget.focus({ preventScroll: true }));
+    }
+
+    function toastMessage(message) {
+      toast.textContent = message;
+      toast.hidden = false;
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => { toast.hidden = true; }, 4500);
+    }
+
+    function showError(message) {
+      errorBox.textContent = message;
+      errorBox.hidden = false;
+    }
+
+    // ---------- katmanlar ----------
+
+    function openGate(item) {
+      const isQuestion = item.type === "question";
+      const button = h("button", { type: "button", class: `gate-button type-${item.type}`, onClick: () => openCard(item, true) },
+        h("span", { class: "hotspot-icon", "aria-hidden": "true" }, isQuestion ? "?" : "i"),
+        h("span", null, isQuestion ? "Soruyu cevapla" : item.title || "Bilgi kartını aç"));
+      const hint = isQuestion
+        ? "Devam etmek için bu soruyu cevaplayın."
+        : "Kartı açmak için tıklayın ya da ▶ ile devam edin.";
+      setOverlay({ kind: "gate", item }, h("div", { class: "overlay-gate" }, button, h("p", { class: "gate-hint" }, hint)), button);
+    }
+
+    function openCard(item, resumeAfter) {
+      const resume = resumeAfter || playing;
+      player?.pause();
+      engine.opened.add(item.id);
+      const close = (answered) => {
+        if (answered) engine.answered.add(item.id);
+        setOverlay(null);
+        renderQuestions();
+        renderMarkers();
+        saveProgress();
+        if (resume) player?.play();
+      };
+      const card = item.type === "question"
+        ? questionCard(item, () => close(true), () => close(false), () => rewatch(item))
+        : popupCard(item, () => close(false));
+      setOverlay({ kind: "card", item }, card.element, card.focus);
+    }
+
+    function rewatch(question) {
+      setOverlay(null);
+      engine.prepareSeek(question.retryFrom);
+      seekPlayer(question.retryFrom);
+      player.play();
+    }
+
+    function questionCard(question, onContinue, onClose, onRewatch) {
+      const multiple = question.kind === "multiple";
+      const required = question.required !== false;
+      let chosen = [];
+      const heading = h("h2", { tabindex: "-1" }, "Soru");
+      const answerButton = h("button", { type: "button", class: "primary", disabled: true }, "Cevapla");
+      const options = question.options.map((option) => {
+        const input = h("input", { type: multiple ? "checkbox" : "radio", name: `soru-${question.id}` });
+        const label = h("label", { class: "option" }, input, h("span", null, option.text));
+        input.addEventListener("change", () => {
+          chosen = multiple
+            ? input.checked ? [...chosen, option.id] : chosen.filter((id) => id !== option.id)
+            : [option.id];
+          for (const row of options) row.label.classList.toggle("is-chosen", chosen.includes(row.option.id));
+          answerButton.disabled = chosen.length === 0;
+        });
+        return { option, input, label };
+      });
+      const fieldset = h("fieldset", null, h("legend", { class: "sr-only" }, "Seçenekler"), options.map((row) => row.label));
+      const hint = multiple ? h("p", { class: "muted" }, "Birden fazla doğru cevap olabilir.") : null;
+      const answerRow = h("div", { class: "actions" }, answerButton);
+      const feedback = h("div", { role: "status", hidden: true });
+
+      answerButton.addEventListener("click", () => {
+        const expected = question.options.filter((option) => option.correct).map((option) => option.id).sort();
+        const picked = [...chosen].sort();
+        const correct = picked.length === expected.length && picked.every((id, index) => id === expected[index]);
+        recordAnswer(question, picked, correct);
+        fieldset.disabled = true;
+        for (const row of options) {
+          row.label.classList.toggle("is-correct", correct && Boolean(row.option.correct));
+          row.label.classList.toggle("is-wrong", !correct && chosen.includes(row.option.id));
+        }
+        showFeedback(correct);
+      });
+
+      function showFeedback(correct) {
+        answerRow.hidden = true;
+        if (hint) hint.hidden = true;
+        const text = correct ? question.feedbackCorrect : question.feedbackWrong;
+        const actions = h("div", { class: "actions" });
+        if (!correct) {
+          actions.append(h("button", { type: "button", onClick: resetAnswer }, "Tekrar dene"));
+          if (question.retryFrom != null) {
+            actions.append(h("button", { type: "button", onClick: onRewatch }, `İlgili kısmı tekrar izle (${clock(question.retryFrom, true)})`));
+          }
+        }
+        const next = h("button", { type: "button", class: "primary", onClick: onContinue }, "Devam et");
+        actions.append(next);
+        feedback.className = `feedback ${correct ? "ok" : "bad"}`;
+        feedback.replaceChildren(h("strong", null, correct ? "Doğru!" : "Yanlış."), text ? h("p", null, text) : null, actions);
+        feedback.hidden = false;
+        next.focus({ preventScroll: true });
+      }
+
+      function resetAnswer() {
+        chosen = [];
+        fieldset.disabled = false;
+        for (const row of options) {
+          row.input.checked = false;
+          row.label.classList.remove("is-chosen", "is-correct", "is-wrong");
+        }
+        answerButton.disabled = true;
+        answerRow.hidden = false;
+        if (hint) hint.hidden = false;
+        feedback.hidden = true;
+        feedback.replaceChildren();
+      }
+
+      const head = h("div", { class: "card-head" }, heading,
+        required ? null : h("button", { type: "button", class: "link", "aria-label": "Soruyu kapat", onClick: onClose }, "✕"));
+      const element = h("section", { class: "card overlay-card question-card", role: "dialog", "aria-label": "Soru" },
+        head, h("p", { class: "prompt" }, question.prompt), fieldset, hint, answerRow, feedback);
+      return { element, focus: heading };
+    }
+
+    function popupCard(popup, onContinue) {
+      const heading = h("h2", { tabindex: "-1" }, popup.title || "Bilgi");
+      const element = h("section", { class: "card overlay-card popup-card", role: "dialog", "aria-label": popup.title || "Bilgi kartı" },
+        heading,
+        h("p", { class: "popup-body" }, popup.body),
+        isSafeLink(popup.link)
+          ? h("p", null, h("a", { href: popup.link, target: "_blank", rel: "noopener noreferrer" }, "Bağlantıyı aç ↗"))
+          : null,
+        h("div", { class: "actions" }, h("button", { type: "button", class: "primary", onClick: onContinue }, "Devam et")));
+      return { element, focus: heading };
+    }
+
+    function showEnd() {
+      if (overlay && overlay.kind === "end") return;
+      ended = true;
+      saveProgress();
+      const questions = engine.questions;
+      const answered = questions.filter((q) => results[q.id]).length;
+      const firstTry = questions.filter((q) => results[q.id]?.firstTry).length;
+      const again = h("button", { type: "button", class: "primary" }, "Baştan izle");
+      again.addEventListener("click", () => {
+        ended = false;
+        setOverlay(null);
+        engine.prepareSeek(0);
+        seekPlayer(0);
+        player.play();
+      });
+      const summary = questions.length
+        ? `${questions.length} sorudan ${answered} tanesini cevapladınız; ${firstTry} tanesini ilk denemede doğru bildiniz.`
+        : "İzlediğiniz için teşekkürler.";
+      const lmsNote = !lms ? null : completed
+        ? "İlerlemeniz kaydedildi; etkinlik tamamlandı."
+        : `İlerlemeniz kaydedildi. Etkinliğin tamamlanmış sayılması için videonun en az %${Math.round(COMPLETION_RATIO * 100)}'ını izleyin.`;
+      setOverlay({ kind: "end" }, h("section", { class: "card overlay-card end-card" },
+        h("h2", { tabindex: "-1" }, "Video bitti"),
+        h("p", null, summary),
+        lmsNote ? h("p", { class: "muted" }, lmsNote) : null,
+        h("div", { class: "actions" }, again)), again);
+    }
+
+    function showResume(at) {
+      const resume = h("button", { type: "button", class: "primary" }, `${clock(at)} noktasından devam et`);
+      const restart = h("button", { type: "button" }, "Baştan başla");
+      resume.addEventListener("click", () => {
+        setOverlay(null);
+        engine.last = at;
+        lastTracked = null;
+        seekPlayer(at);
+        player.play();
+        armTapFallback();
+      });
+      restart.addEventListener("click", () => {
+        setOverlay(null);
+        seekPlayer(0);
+        player.play();
+        armTapFallback();
+      });
+      setOverlay({ kind: "resume" }, h("section", { class: "card overlay-card resume-card" },
+        h("h2", { tabindex: "-1" }, "Kaldığınız yerden devam edin"),
+        h("p", null, `Bu videoyu daha önce ${clock(at)} noktasına kadar izlemiştiniz.`),
+        h("div", { class: "actions" }, resume, restart)), resume);
+    }
+
+    // ---------- cevaplar ve LMS ----------
+
+    function recordAnswer(question, picked, correct) {
+      const first = !results[question.id];
+      results[question.id] = first ? { correct, firstTry: correct } : { ...results[question.id], correct };
+      if (lms && first) {
+        const prefix = `cmi.interactions.${interactionIndex++}.`;
+        lms.set(`${prefix}id`, `soru_${question.id}`.replace(/[^A-Za-z0-9_.-]/g, "_").slice(0, 255));
+        lms.set(`${prefix}type`, "choice");
+        lms.set(`${prefix}time`, new Date().toTimeString().slice(0, 8));
+        lms.set(`${prefix}correct_responses.0.pattern`, question.options.filter((option) => option.correct).map((option) => option.id).join(","));
+        lms.set(`${prefix}student_response`, picked.join(","));
+        lms.set(`${prefix}result`, correct ? "correct" : "wrong");
+        lms.set(`${prefix}weighting`, "1");
+      }
+      if (lms) {
+        const questions = engine.questions;
+        const firstTry = questions.filter((q) => results[q.id]?.firstTry).length;
+        lms.set("cmi.core.score.min", "0");
+        lms.set("cmi.core.score.max", "100");
+        lms.set("cmi.core.score.raw", String(Math.round((firstTry / questions.length) * 100)));
+      }
+      renderQuestions();
+      renderMarkers();
+      saveProgress();
+    }
+
+    function trackCoverage(t) {
+      if (!lms || !duration) return;
+      const size = Math.max(1, Math.ceil(duration));
+      if (!coverage || coverage.length !== size) {
+        const next = new Uint8Array(size);
+        if (coverage) next.set(coverage.subarray(0, Math.min(size, coverage.length)));
+        coverage = next;
+      }
+      const previous = lastTracked;
+      lastTracked = t;
+      const to = Math.min(size - 1, Math.floor(t));
+      if (previous === null || t < previous || t - previous > 2) {
+        coverage[to] = 1;
+        return;
+      }
+      for (let second = Math.floor(previous); second <= to; second++) coverage[second] = 1;
+    }
+
+    function coverageRatio() {
+      if (!coverage || !coverage.length) return 0;
+      let watched = 0;
+      for (const bit of coverage) watched += bit;
+      return watched / coverage.length;
+    }
+
+    function saveProgress() {
+      if (!lms) return;
+      lastSave = Date.now();
+      lms.set("cmi.core.lesson_location", String(Math.floor(current)));
+      const answers = {};
+      for (const [id, result] of Object.entries(results)) answers[id] = [result.firstTry ? 1 : 0, result.correct ? 1 : 0];
+      const full = JSON.stringify({ v: 1, a: answers, d: [...engine.answered], c: coverage ? packBits(coverage) : "", n: coverage ? coverage.length : 0 });
+      lms.set("cmi.suspend_data", full.length <= 4096 ? full : JSON.stringify({ v: 1, a: answers, d: [...engine.answered] }));
+      if (!completed && coverageRatio() >= COMPLETION_RATIO) {
+        completed = true;
+        lms.set("cmi.core.lesson_status", "completed");
+      }
+      lms.commit();
+    }
+
+    function restoreFromLms() {
+      const status = lms.get("cmi.core.lesson_status");
+      completed = status === "completed" || status === "passed";
+      let saved = null;
+      try { saved = JSON.parse(lms.get("cmi.suspend_data") || "null"); } catch { saved = null; }
+      if (saved && saved.v === 1) {
+        for (const [id, pair] of Object.entries(saved.a || {})) results[id] = { firstTry: Boolean(pair[0]), correct: Boolean(pair[1]) };
+        for (const id of saved.d || []) engine.answered.add(id);
+        if (saved.c && saved.n) coverage = unpackBits(saved.c, saved.n);
+      }
+      return Number(lms.get("cmi.core.lesson_location")) || 0;
+    }
+  }
+
+  // ---------- sayfalar ----------
+
+  async function startPreview(root) {
+    const id = decodeURIComponent(window.location.pathname.split("/")[2] ?? "");
+    const title = h("h1", null, "Önizleme");
+    const slot = h("p", { class: "muted" }, "Yükleniyor…");
+    const download = (kind, label, hint) => h("a", {
+      class: "button", href: `/api/projeler/${encodeURIComponent(id)}/${kind}`, download: "", title: hint
+    }, label);
+    root.replaceChildren(h("div", { class: "page player-page" },
+      h("header", { class: "topbar" },
+        h("a", { href: `/duzenle/${encodeURIComponent(id)}`, class: "back" }, "← Editöre dön"),
+        title,
+        h("span", { class: "muted" }, "İzleyici önizlemesi"),
+        download("scorm", "SCORM paketi ↓", "Moodle gibi bir LMS'e yüklenebilen SCORM 1.2 paketi"),
+        download("web", "Web sayfası ↓", "Web sitesinde yayınlanabilen tek dosyalık HTML sayfası")),
+      slot));
+    let project;
+    try {
+      const response = await fetch(`/api/projeler/${encodeURIComponent(id)}`, { headers: { "X-Haluku": "1" } });
+      const body = await response.json().catch(() => ({}));
+      if (!response.ok) throw new Error(body.hata ?? `Hata (${response.status})`);
+      project = body.project;
+    } catch (error) {
+      const message = error instanceof TypeError
+        ? "haluku sunucusuna ulaşılamadı. Claude Desktop açık mı (ya da baslat.bat çalışıyor mu)?"
+        : error.message;
+      slot.replaceWith(h("div", { class: "alert error", role: "alert" }, message));
+      return;
+    }
+    title.textContent = project.title;
+    document.title = `${project.title} · haluku`;
+    slot.replaceWith(mountStage(project, null));
+  }
+
+  // Dosyaya çift tıklanarak açılan sayfada (file://) YouTube oynatmaz; bunu anlaşılır biçimde söyle.
+  function fileNotice(project) {
+    const watch = `https://www.youtube.com/watch?v=${encodeURIComponent(project.video.videoId)}`;
+    return h("section", { class: "card file-notice" },
+      h("h2", null, "Bu sayfa bir web adresinden açılmalı"),
+      h("p", null, "YouTube, bilgisayardaki bir dosyaya çift tıklanarak açılan sayfalarda video oynatmıyor (YouTube'un “hata 153” uyarısı bundan kaynaklanır). Aynı dosya bir web adresinden açıldığında çalışır:"),
+      h("ul", null,
+        h("li", null, "LMS'te (Moodle vb.): SCORM paketini SCORM etkinliği olarak yükleyin."),
+        h("li", null, "Web'de: web sayfası dosyasını kurumunuzun web sunucusuna ya da GitHub Pages, Netlify gibi bir barındırma hizmetine yükleyip bağlantısını paylaşın; başka bir sayfaya iframe ile de gömebilirsiniz."),
+        h("li", null, "Kendi bilgisayarınızda denemek için haluku editöründeki “Önizle” düğmesini kullanın.")),
+      h("p", null, h("a", { href: watch, target: "_blank", rel: "noopener noreferrer" }, "Videoyu YouTube'da aç ↗")));
+  }
+
+  function startPackage(root, project) {
+    document.title = project.title || "haluku";
+    const header = h("header", { class: "topbar" }, h("h1", null, project.title || ""));
+    if (window.location.protocol === "file:") {
+      root.replaceChildren(h("div", { class: "page player-page is-package" }, header, fileNotice(project)));
+      return;
+    }
+    const lms = scorm.init() ? scorm : null;
+    root.replaceChildren(h("div", { class: "page player-page is-package" }, header, mountStage(project, lms)));
+  }
+
+  const root = document.getElementById("app");
+  if (PACKAGED) startPackage(root, window.HALUKU_PROJE);
+  else startPreview(root);
+})();
+
+    </script>
+  </body>
+</html>

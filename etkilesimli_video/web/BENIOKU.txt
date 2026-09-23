@@ -1,0 +1,37 @@
+haluku 0.4.0 · bağımsız sürüm
+=================================
+
+YouTube videolarına soru, pop-up bilgi kartı ve yer imi ekleyen editörün sunucu, kurulum ya da
+Claude gerektirmeyen sürümüdür. Bu klasördeki dosyaları olduğu gibi bir web sunucusuna yükleyin.
+
+
+YAYINLAMA
+- GitHub Pages: deponuzda bir klasör açın (örneğin "haluku") ve bu klasördeki tüm dosyaları oraya
+  yükleyin. Editör şu adreste açılır: https://KULLANICI.github.io/DEPO/haluku/
+- Kurum sunucusu: dosyaları web'e açık bir klasöre kopyalamanız yeterli. PHP, veritabanı ya da
+  başka bir kurulum gerekmez.
+- index.html'e çift tıklayarak da açılabilir, ancak YouTube bu durumda videoyu oynatmaz (hata 153).
+  Öğeleri zamanını elle yazarak ekleyebilir, çıktı alabilirsiniz. Videolu çalışmak için web adresinden açın.
+
+
+VERİLER
+- Projeler, editörü açan kişinin tarayıcısında saklanır; sunucuya hiçbir şey yazılmaz. Aynı adresi
+  açan başkaları sizin projelerinizi göremez, siz de onlarınkini göremezsiniz.
+- Tarayıcının site verilerini silmek projeleri de siler; gizli pencerede açılan projeler pencere
+  kapanınca kaybolur. Ana sayfadaki "Tüm projeleri yedekle" ile ara ara yedek alın.
+- Başka bir bilgisayara ya da tarayıcıya geçmek için yedeği orada "Yedekten ya da proje dosyasından
+  yükle" ile açın. Tek bir projeyi paylaşmak için proje kartındaki "JSON" dosyasını gönderin.
+
+
+YAPAY ZEKÂ İLE ÖNERİ
+1. Projeyi açın; video metnini (transkript ya da SRT/VTT altyazı) "Video metni" kutusuna yapıştırıp
+   kaydedin. Zaman damgalı metin, soruların doğru saniyeye yerleşmesini sağlar.
+2. "İstemi al" > "Kopyala" ile istemi ChatGPT, Gemini, Copilot ya da Claude'a yapıştırın.
+3. Gelen cevabı "Cevabı içe aktar" penceresine yapıştırın ya da JSON dosyası olarak seçin.
+4. Öneriler onayınıza düşer; tek tek onaylayın, düzenleyin ya da silin.
+
+
+ÇIKTI
+- "Web": tek dosyalık HTML sayfası. Bir web sunucusuna yükleyin ya da başka bir sayfaya iframe ile gömün.
+- "SCORM": Moodle gibi LMS'lere yüklenen SCORM 1.2 paketi. ZIP dosyasını açmadan yükleyin.
+Her iki çıktı da bu editörden bağımsızdır; editörü kapatsanız da çalışmaya devam eder.
