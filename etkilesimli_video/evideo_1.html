@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
-    <meta name="generator" content="haluku 0.3.0" />
+    <meta name="generator" content="haluku 0.4.0" />
     <title>ETKİLİ İLETİŞİM TEKNİKLERİ - Ünite 1 Konu Anlatımı 1</title>
     <style>
 :root {
@@ -275,11 +275,15 @@ fieldset { border: none; margin: 0; padding: 0; }
 .video-frame.has-overlay .menu-button { display: none; }
 .video-toast { position: absolute; left: 50%; bottom: 0.8rem; z-index: 7; transform: translateX(-50%); max-width: calc(100% - 1.6rem); padding: 0.45rem 0.85rem; border-radius: 8px; background: rgba(15, 20, 30, 0.9); color: #fff; font-size: 0.88rem; text-align: center; }
 
-/* 0.3.0 · İçerik paneli: videonun yanında, video boyunda; bölümler açılır kapanır */
-.stage { position: relative; grid-template-columns: minmax(0, 2.3fr) minmax(270px, 1fr); align-items: stretch; }
-.contents { position: relative; min-width: 0; min-height: 260px; }
-.contents-inner { position: absolute; inset: 0; display: flex; flex-direction: column; overflow: hidden; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
-.contents-head { display: none; }
+/* 0.4.0 · Video odaklı yerleşim: video ekran yüksekliğine sığacak kadar geniş; bölümler, sorular ve
+   bilgi kartları videonun içinde açılan "İçerik" menüsünde (açılır kapanır bölümler). */
+.stage { display: block; position: relative; grid-template-columns: minmax(0, 1fr); }
+.stage-main { position: relative; width: min(100%, calc((100vh - 10rem) * 16 / 9)); width: min(100%, calc((100svh - 10rem) * 16 / 9)); margin: 0 auto; }
+.menu-button { display: inline-flex; }
+.contents { display: none; position: absolute; top: 3.3rem; right: 0.6rem; z-index: 30; width: min(380px, calc(100% - 1.2rem)); }
+.stage.menu-open .contents { display: block; }
+.contents-inner { display: flex; flex-direction: column; overflow: hidden; max-height: min(60vh, 420px); max-height: max(calc(56.25cqw - 3.9rem), min(60vh, 420px)); background: rgba(255, 255, 255, 0.97); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35); }
+.contents-head { display: flex; justify-content: space-between; align-items: center; padding: 0.5rem 0.6rem 0.5rem 1rem; border-bottom: 1px solid var(--line); }
 .contents-empty { margin: 0; padding: 1rem; }
 .acc { display: flex; flex-direction: column; min-height: 0; border-top: 1px solid var(--line); }
 .contents-head + .acc { border-top: none; }
@@ -304,14 +308,17 @@ fieldset { border: none; margin: 0; padding: 0; }
 .file-notice ul { padding-left: 1.2rem; }
 .file-notice li { margin-bottom: 0.4rem; }
 
-/* Dar ekran: içerik paneli videonun üzerinde açılan menüye dönüşür. */
-@media (max-width: 900px) {
-  .stage { grid-template-columns: 1fr; }
-  .menu-button { display: inline-flex; }
-  .contents { display: none; position: absolute; top: 3.3rem; right: 0.6rem; z-index: 30; width: min(360px, calc(100% - 1.2rem)); min-height: 0; }
-  .stage.menu-open .contents { display: block; }
-  .contents-inner { position: relative; inset: auto; max-height: min(70vh, 520px); box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3); }
-  .contents-head { display: flex; justify-content: space-between; align-items: center; padding: 0.5rem 0.6rem 0.5rem 1rem; border-bottom: 1px solid var(--line); }
+/* Tam ekran: siyah zemin, video ekrana sığar, kontroller altta. */
+.stage.is-fullscreen { display: grid; align-content: center; padding: 0.6rem; background: #000; }
+.stage.is-fullscreen .stage-main { width: min(100%, calc((100vh - 4.6rem) * 16 / 9)); width: min(100%, calc((100dvh - 4.6rem) * 16 / 9)); }
+.stage.is-fullscreen .time-display { color: #fff; }
+
+/* Yatay tutulan telefon: başlık gizlenir, video ekran yüksekliğine sığar. */
+@media (orientation: landscape) and (max-height: 520px) {
+  .page { padding: 0.35rem 0.75rem 0.5rem; }
+  .topbar { display: none; }
+  .stage-main { width: min(100%, calc((100vh - 4.2rem) * 16 / 9)); width: min(100%, calc((100svh - 4.2rem) * 16 / 9)); }
+  .controls { margin-top: 0.35rem; }
 }
 
 /* Telefon: ilerleme çubuğu kendi satırında, tam genişlikte. */
@@ -340,9 +347,9 @@ fieldset { border: none; margin: 0; padding: 0; }
   <body>
     <div id="app"><p class="boot">Yükleniyor…</p></div>
     <noscript>Bu içerik için JavaScript gerekli.</noscript>
-    <script>window.HALUKU_PROJE = {"id":"etkili-iletisim-teknikleri-unite-1-konu-anlatimi-1","title":"ETKİLİ İLETİŞİM TEKNİKLERİ - Ünite 1 Konu Anlatımı 1","video":{"videoId":"nA7HXI36Yk4","duration":582},"settings":{"preventSkippingRequired":true},"items":[{"id":"y_lhswgm","type":"bookmark","at":52,"title":"İletişim Nedir?"},{"id":"s_rgity5","type":"question","at":79,"kind":"truefalse","prompt":"İletişim yalnızca bireylere özgü bir olgudur; kurumlar için geçerli değildir.","options":[{"id":"a","text":"Doğru","correct":false},{"id":"b","text":"Yanlış","correct":true}],"feedbackCorrect":"Doğru! İletişim hem bireylere hem kurumlara özgüdür.","feedbackWrong":"Yanlış cevap. İletişim hem gerçek kişiler olan insanlara hem de tüzel kişiler olan kurumlara özgü bir olgudur.","required":false,"retryFrom":52},{"id":"p_wm4xiu","type":"popup","at":101,"duration":8,"pause":false,"title":"İleti","body":"Kaynaktan alıcıya aktarılan mesajdır. Mağara duvarlarındaki yazılar da binlerce yıl önceki topluluklar hakkında ileti taşır.","link":null},{"id":"y_807bt4","type":"bookmark","at":164,"title":"İletişimin Temel Özellikleri"},{"id":"y_jf776f","type":"bookmark","at":195,"title":"İletişim Bir Bütündür"},{"id":"p_swtqbu","type":"popup","at":201,"duration":8,"pause":false,"title":"Ne ve Nasıl","body":"Kelimeler ne söylediğimizi, ses tonu ve beden dili ise nasıl söylediğimizi belirler.","link":null},{"id":"s_pcxd5r","type":"question","at":216,"kind":"single","prompt":"Kelimeler aynı kaldığında, iletişimi yapılandırmada beden dilinin payı yüzde kaçtır?","options":[{"id":"a","text":"%60","correct":true},{"id":"b","text":"%30","correct":false},{"id":"c","text":"%10","correct":false},{"id":"d","text":"%50","correct":false}],"feedbackCorrect":"Doğru! Beden dili %60 oranında rol oynar.","feedbackWrong":"Doğru cevap %60. Kelimeler %10, ses %30, beden dili %60 oranında rol oynar.","required":false,"retryFrom":195},{"id":"y_i0qqxl","type":"bookmark","at":217,"title":"Beden Dili"},{"id":"y_8y8fbx","type":"bookmark","at":240,"title":"Ses Tonu ve Konuşmanın Akıcılığı"},{"id":"y_0baj6t","type":"bookmark","at":261,"title":"Beden Duruşu"},{"id":"y_74c5ig","type":"bookmark","at":275,"title":"Mimikler"},{"id":"p_aeodaf","type":"popup","at":277,"duration":8,"pause":false,"title":"Mimik","body":"Yüz ifadeleriyle yapılan anlatımdır. Kişi duygu ve düşüncelerini beden dili içinde en çok mimikleriyle dışa vurur.","link":null},{"id":"y_5dwjcf","type":"bookmark","at":294,"title":"Mesafe ve Bedensel Temas"},{"id":"s_ogpxug","type":"question","at":313,"kind":"multiple","prompt":"Beden dili ile ilgili aşağıdaki ifadelerden hangileri doğrudur?","options":[{"id":"a","text":"Kişi duygu ve düşüncelerini en çok mimikleriyle dışa vurur.","correct":true},{"id":"b","text":"Çok yakın durmak ilişkiye yakınlık ve sıcaklık katar.","correct":true},{"id":"c","text":"Yakınlık istemeyen kişi bu durumdan rahatsız olup savunucu olur.","correct":true},{"id":"d","text":"Alıcı, gönderenin beden duruşunu yorumlamaya çalışmaz.","correct":false}],"feedbackCorrect":"Doğru! Beden dilinin öğelerini iyi kavradınız.","feedbackWrong":"Mimikler, mesafe ve temas ile ilgili ilk üç ifade doğrudur. Alıcı ise beden duruşumuzu ve verdiği iletiyi okumaya çalışır.","required":false,"retryFrom":261},{"id":"y_u2pzij","type":"bookmark","at":315,"title":"İletişimde Algının Rolü"},{"id":"p_0k3djd","type":"popup","at":320,"duration":8,"pause":false,"title":"Algı","body":"Algı toplumdan topluma, kişiden kişiye ve aynı kişide zaman içinde değişebilir.","link":null},{"id":"s_w4o9ot","type":"question","at":345,"kind":"single","prompt":"Videoya göre anlamak hangi üç unsurun bir arada tutulmasına bağlıdır?","options":[{"id":"a","text":"Niyet, bilgi ve gayret","correct":true},{"id":"b","text":"Algı, dikkat ve bellek","correct":false},{"id":"c","text":"Ses, söz ve beden dili","correct":false},{"id":"d","text":"Niyet, empati ve sabır","correct":false}],"feedbackCorrect":"Doğru! Niyet, bilgi ve gayret.","feedbackWrong":"Doğru cevap: niyet, bilgi ve gayret. Anlamak bu üç unsurun başarıyla bir arada tutulmasına bağlıdır.","required":false,"retryFrom":330},{"id":"y_jwuns1","type":"bookmark","at":346,"title":"Etkin Dinleme"},{"id":"p_x90n8i","type":"popup","at":357,"duration":8,"pause":false,"title":"Etkin Dinleme","body":"Karşımızdakini onaylamak ya da ona ikna olmak değildir; ona önem verip onu anlamaya çalışmaktır.","link":null},{"id":"s_lghj4y","type":"question","at":415,"kind":"single","prompt":"Etkin dinleme için hangi mekân iletişimin kalitesini artırır?","options":[{"id":"a","text":"Gürültünün az olduğu, aydınlık ve dış müdahaleye kapalı mekân","correct":true},{"id":"b","text":"Kalabalık, hareketli ve herkesin rahatça girip çıktığı mekân","correct":false},{"id":"c","text":"Loş, sessiz ama sık sık kesintiye uğrayan bir mekân","correct":false},{"id":"d","text":"Aydınlık ama arka planda sürekli müzik çalan bir mekân","correct":false}],"feedbackCorrect":"Doğru! Uygun mekân etkin dinlemeyi destekler.","feedbackWrong":"Doğru cevap: gürültünün azaldığı, yeterince aydınlık ve dışarıdan müdahalenin engellendiği mekânlar iletişimin kalitesini artırır.","required":false,"retryFrom":388},{"id":"y_9ae96v","type":"bookmark","at":420,"title":"Empati"},{"id":"p_9ql7g5","type":"popup","at":422,"duration":8,"pause":false,"title":"Empati","body":"Karşımızdakinin duygu ve düşüncelerini, ona hak vermesek bile anlamaya çalışmaktır.","link":null},{"id":"p_0s512b","type":"popup","at":487,"duration":8,"pause":false,"title":"Sempati","body":"Karşımızdakinin acısını da sevgisini de paylaşarak ona hak vermek ve duygu ortaklığı kurmaktır.","link":null},{"id":"s_xz3n12","type":"question","at":513,"kind":"single","prompt":"Videoya göre empati ile sempati arasındaki temel fark nedir?","options":[{"id":"a","text":"Empatide hak vermesek de anlamaya çalışırız; sempatide hak veririz.","correct":true},{"id":"b","text":"Empatide hak veririz; sempatide yalnızca anlamaya çalışırız.","correct":false},{"id":"c","text":"Empati bir iletişim etkinliğidir; sempati ise değildir.","correct":false},{"id":"d","text":"Empatide duygu paylaşılır; sempatide yalnızca düşünceler anlaşılır.","correct":false}],"feedbackCorrect":"Doğru! Empati anlamak, sempati hak vermektir.","feedbackWrong":"Doğru cevap: empatide hak vermesek de anlamaya çalışırız; sempatide ise hak vererek duygu ortaklığı kurarız. İkisi de iletişim etkinliğidir.","required":false,"retryFrom":470},{"id":"y_ilse44","type":"bookmark","at":514,"title":"Özet"},{"id":"y_mrxtzs","type":"bookmark","at":558,"title":"Kapanış"}],"surum":"0.3.0"};</script>
+    <script>window.HALUKU_PROJE = {"id":"etkili-iletisim-teknikleri-unite-1-konu-anlatimi-1","title":"ETKİLİ İLETİŞİM TEKNİKLERİ - Ünite 1 Konu Anlatımı 1","video":{"videoId":"nA7HXI36Yk4","duration":582},"settings":{"preventSkippingRequired":true},"items":[{"id":"y_lhswgm","type":"bookmark","at":52,"title":"İletişim Nedir?"},{"id":"s_rgity5","type":"question","at":79,"kind":"truefalse","prompt":"İletişim yalnızca bireylere özgü bir olgudur; kurumlar için geçerli değildir.","options":[{"id":"a","text":"Doğru","correct":false},{"id":"b","text":"Yanlış","correct":true}],"feedbackCorrect":"Doğru! İletişim hem bireylere hem kurumlara özgüdür.","feedbackWrong":"Yanlış cevap. İletişim hem gerçek kişiler olan insanlara hem de tüzel kişiler olan kurumlara özgü bir olgudur.","required":false,"retryFrom":52},{"id":"p_wm4xiu","type":"popup","at":101,"duration":8,"pause":false,"title":"İleti","body":"Kaynaktan alıcıya aktarılan mesajdır. Mağara duvarlarındaki yazılar da binlerce yıl önceki topluluklar hakkında ileti taşır.","link":null},{"id":"y_807bt4","type":"bookmark","at":164,"title":"İletişimin Temel Özellikleri"},{"id":"y_jf776f","type":"bookmark","at":195,"title":"İletişim Bir Bütündür"},{"id":"p_swtqbu","type":"popup","at":201,"duration":8,"pause":false,"title":"Ne ve Nasıl","body":"Kelimeler ne söylediğimizi, ses tonu ve beden dili ise nasıl söylediğimizi belirler.","link":null},{"id":"s_pcxd5r","type":"question","at":216,"kind":"single","prompt":"Kelimeler aynı kaldığında, iletişimi yapılandırmada beden dilinin payı yüzde kaçtır?","options":[{"id":"a","text":"%60","correct":true},{"id":"b","text":"%30","correct":false},{"id":"c","text":"%10","correct":false},{"id":"d","text":"%50","correct":false}],"feedbackCorrect":"Doğru! Beden dili %60 oranında rol oynar.","feedbackWrong":"Doğru cevap %60. Kelimeler %10, ses %30, beden dili %60 oranında rol oynar.","required":false,"retryFrom":195},{"id":"y_i0qqxl","type":"bookmark","at":217,"title":"Beden Dili"},{"id":"y_8y8fbx","type":"bookmark","at":240,"title":"Ses Tonu ve Konuşmanın Akıcılığı"},{"id":"y_0baj6t","type":"bookmark","at":261,"title":"Beden Duruşu"},{"id":"y_74c5ig","type":"bookmark","at":275,"title":"Mimikler"},{"id":"p_aeodaf","type":"popup","at":277,"duration":8,"pause":false,"title":"Mimik","body":"Yüz ifadeleriyle yapılan anlatımdır. Kişi duygu ve düşüncelerini beden dili içinde en çok mimikleriyle dışa vurur.","link":null},{"id":"y_5dwjcf","type":"bookmark","at":294,"title":"Mesafe ve Bedensel Temas"},{"id":"y_u2pzij","type":"bookmark","at":315,"title":"İletişimde Algının Rolü"},{"id":"p_0k3djd","type":"popup","at":320,"duration":8,"pause":false,"title":"Algı","body":"Algı toplumdan topluma, kişiden kişiye ve aynı kişide zaman içinde değişebilir.","link":null},{"id":"s_w4o9ot","type":"question","at":345,"kind":"single","prompt":"Videoya göre anlamak hangi üç unsurun bir arada tutulmasına bağlıdır?","options":[{"id":"a","text":"Niyet, bilgi ve gayret","correct":true},{"id":"b","text":"Algı, dikkat ve bellek","correct":false},{"id":"c","text":"Ses, söz ve beden dili","correct":false},{"id":"d","text":"Niyet, empati ve sabır","correct":false}],"feedbackCorrect":"Doğru! Niyet, bilgi ve gayret.","feedbackWrong":"Doğru cevap: niyet, bilgi ve gayret. Anlamak bu üç unsurun başarıyla bir arada tutulmasına bağlıdır.","required":false,"retryFrom":330},{"id":"y_jwuns1","type":"bookmark","at":346,"title":"Etkin Dinleme"},{"id":"s_lghj4y","type":"question","at":415,"kind":"single","prompt":"Etkin dinleme için hangi mekân iletişimin kalitesini artırır?","options":[{"id":"a","text":"Gürültünün az olduğu, aydınlık ve dış müdahaleye kapalı mekân","correct":true},{"id":"b","text":"Kalabalık, hareketli ve herkesin rahatça girip çıktığı mekân","correct":false},{"id":"c","text":"Loş, sessiz ama sık sık kesintiye uğrayan bir mekân","correct":false},{"id":"d","text":"Aydınlık ama arka planda sürekli müzik çalan bir mekân","correct":false}],"feedbackCorrect":"Doğru! Uygun mekân etkin dinlemeyi destekler.","feedbackWrong":"Doğru cevap: gürültünün azaldığı, yeterince aydınlık ve dışarıdan müdahalenin engellendiği mekânlar iletişimin kalitesini artırır.","required":false,"retryFrom":388},{"id":"y_9ae96v","type":"bookmark","at":420,"title":"Empati"},{"id":"p_0s512b","type":"popup","at":487,"duration":8,"pause":false,"title":"Sempati","body":"Karşımızdakinin acısını da sevgisini de paylaşarak ona hak vermek ve duygu ortaklığı kurmaktır.","link":null},{"id":"s_xz3n12","type":"question","at":513,"kind":"single","prompt":"Videoya göre empati ile sempati arasındaki temel fark nedir?","options":[{"id":"a","text":"Empatide hak vermesek de anlamaya çalışırız; sempatide hak veririz.","correct":true},{"id":"b","text":"Empatide hak veririz; sempatide yalnızca anlamaya çalışırız.","correct":false},{"id":"c","text":"Empati bir iletişim etkinliğidir; sempati ise değildir.","correct":false},{"id":"d","text":"Empatide duygu paylaşılır; sempatide yalnızca düşünceler anlaşılır.","correct":false}],"feedbackCorrect":"Doğru! Empati anlamak, sempati hak vermektir.","feedbackWrong":"Doğru cevap: empatide hak vermesek de anlamaya çalışırız; sempatide ise hak vererek duygu ortaklığı kurarız. İkisi de iletişim etkinliğidir.","required":false,"retryFrom":470},{"id":"y_ilse44","type":"bookmark","at":514,"title":"Özet"},{"id":"y_mrxtzs","type":"bookmark","at":558,"title":"Kapanış"}],"surum":"0.4.0"};</script>
     <script>
-/* haluku oynatıcısı 0.3.0
+/* haluku oynatıcısı 0.4.0
  * Derleme gerektirmeyen tek dosya. Yerel önizlemede (/oynat/<id>) projeyi haluku sunucusundan
  * okur; SCORM/web paketinde window.HALUKU_PROJE verisini kullanır ve bir LMS bulursa
  * SCORM 1.2 ile ilerleme, puan ve tamamlanma bilgisini gönderir. */
@@ -627,7 +634,9 @@ fieldset { border: none; margin: 0; padding: 0; }
     });
     iframe.src = `https://www.youtube.com/embed/${encodeURIComponent(videoId)}?${params}`;
     iframe.title = "YouTube video oynatıcısı";
-    iframe.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+    // "fullscreen" izni verilmez: Android Chrome telefon yan çevrilince videoyu kendiliğinden tam
+    // ekrana alıyor ve sorular, kartlar dışarıda kalıyordu. Tam ekranı oynatıcının kendi düğmesi yapar.
+    iframe.allow = "autoplay; encrypted-media; picture-in-picture";
     iframe.referrerPolicy = "strict-origin-when-cross-origin";
     iframe.tabIndex = -1;
     host.appendChild(iframe);
@@ -783,7 +792,7 @@ fieldset { border: none; margin: 0; padding: 0; }
           h("button", { type: "button", class: "link", "aria-label": "Menüyü kapat", onClick: () => { setMenu(false); menuButton.focus(); } }, "✕")),
         sections.map((section) => section.element),
         sections.length ? null : h("p", { class: "muted contents-empty" }, "Sorular ve bilgi kartları, video oynarken videonun üzerinde düğme olarak görünecek.")));
-    const stage = h("div", { class: "stage" }, h("div", { class: "stage-main" }, frame, errorBox, controls), panel);
+    const stage = h("div", { class: "stage" }, h("div", { class: "stage-main" }, frame, errorBox, controls, panel));
     if (sections.length) toggleSection(sections[0].key);
 
     // --- olaylar
@@ -1128,11 +1137,23 @@ fieldset { border: none; margin: 0; padding: 0; }
         return;
       }
       const fallback = () => setFullscreen(!stage.classList.contains("is-fullscreen"));
-      if (stage.requestFullscreen) stage.requestFullscreen().catch(fallback);
-      else fallback();
+      if (!stage.requestFullscreen) {
+        fallback();
+        return;
+      }
+      stage.requestFullscreen({ navigationUI: "hide" })
+        .then(() => {
+          // Telefonda tam ekran yatay açılsın (destekleyen tarayıcılarda).
+          if (!TOUCH_UI) return;
+          try { screen.orientation?.lock?.("landscape")?.catch(() => undefined); } catch { /* desteklenmiyor */ }
+        })
+        .catch(fallback);
     }
 
     function setFullscreen(on) {
+      if (!on && TOUCH_UI) {
+        try { screen.orientation?.unlock?.(); } catch { /* desteklenmiyor */ }
+      }
       stage.classList.toggle("is-fullscreen", on);
       fullscreenButton.textContent = on ? "⤡" : "⤢";
       fullscreenButton.setAttribute("aria-label", on ? "Tam ekrandan çık" : "Tam ekran");
@@ -1151,13 +1172,13 @@ fieldset { border: none; margin: 0; padding: 0; }
 
     // YouTube'un başlık ve alt çubuğu iframe'in kenarlarında durur; masaüstünde iframe'i
     // çerçeveden taşırıp kırpınca görünmezler. Altyazı da alt kenarda olduğu için altyazı açıkken
-    // ve video oynarken kırpma kaldırılır. Kırpmanın uygun olmadığı yerde (dokunmatik cihaz, dar
-    // çerçeve) çubuklar, oynatma başlarken ve duraklatınca koyu şeritlerle örtülür.
+    // ve video oynarken kırpma kaldırılır. Dar masaüstü çerçevesinde çubuklar koyu şeritlerle örtülür.
+    // Dokunmatik cihazlarda şerit kullanılmaz: görüntüyü karartıyordu; mobil oynatıcı zaten sade.
     function updateCrop() {
       if (!TOUCH_UI && frame.isConnected) cropAllowed = frame.clientWidth >= MIN_CROP_WIDTH;
       const sincePlay = Date.now() - playStartedAt;
       const crop = cropAllowed && (!ccOn || !playing || sincePlay < CROP_GRACE_MS);
-      const cover = !cropAllowed && (playing ? sincePlay < SETTLE_MS : everPlayed && !TOUCH_UI);
+      const cover = !TOUCH_UI && !cropAllowed && (playing ? sincePlay < SETTLE_MS : everPlayed);
       if (frame.classList.contains("is-cropped") !== crop) frame.classList.toggle("is-cropped", crop);
       if (frame.classList.contains("show-strips") !== cover) frame.classList.toggle("show-strips", cover);
     }
@@ -1588,3 +1609,4 @@ fieldset { border: none; margin: 0; padding: 0; }
     </script>
   </body>
 </html>
+
