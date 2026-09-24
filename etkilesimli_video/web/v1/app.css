@@ -255,13 +255,6 @@ fieldset { border: none; margin: 0; padding: 0; }
 .cc-button[aria-pressed="true"] { background: var(--text); border-color: var(--text); color: #fff; }
 .progress-markers { position: absolute; inset: 0; pointer-events: none; }
 
-/* 0.5.0 · Ses: hoparlör düğmesi ve (dokunmatik olmayan geniş ekranlarda) ses kaydırıcısı */
-.volume { display: flex; align-items: center; gap: 0.4rem; flex: none; }
-.volume-button { padding-left: 0.5rem; padding-right: 0.5rem; }
-.volume-button svg { display: block; }
-.volume-slider { width: 84px; margin: 0; accent-color: var(--accent); cursor: pointer; }
-.volume-slider:disabled { opacity: 0.55; cursor: not-allowed; }
-
 /* 0.3.0 · İlerleme çubuğu: geniş dokunma alanı, sürüklenebilir tutamak */
 .progress { touch-action: none; }
 .progress::before { content: ""; position: absolute; left: 0; right: 0; top: -10px; bottom: -10px; }
@@ -325,7 +318,6 @@ fieldset { border: none; margin: 0; padding: 0; }
   .controls { flex-wrap: wrap; gap: 0.45rem 0.5rem; }
   .controls .progress { order: -1; flex: 1 1 100%; margin: 0.45rem 0 0.35rem; }
   .controls .cc-button { margin-left: auto; }
-  .volume-slider { display: none; }
   .time-display { font-size: 0.85rem; }
   .progress-marker { width: 10px; height: 10px; margin: -5px 0 0 -5px; }
   .progress-marker.type-popup { width: 8px; height: 8px; margin: -4px 0 0 -4px; }

@@ -1,4 +1,4 @@
-/* haluku oynatıcısı 0.5.0
+/* haluku oynatıcısı 0.4.0
  * Derleme gerektirmeyen tek dosya. Yerel önizlemede (/oynat/<id>) projeyi haluku sunucusundan
  * okur; SCORM/web paketinde window.HALUKU_PROJE verisini kullanır ve bir LMS bulursa
  * SCORM 1.2 ile ilerleme, puan ve tamamlanma bilgisini gönderir. */
@@ -7,6 +7,7 @@
 
   const QUESTION_BUTTON_SECONDS = 10;
   const END_GUARD_SECONDS = 0.35;
+  const CROP_GRACE_MS = 4000;
   const SETTLE_MS = 3500;
   const MIN_CROP_WIDTH = 480;
   const COMPLETION_RATIO = 0.9;
@@ -47,30 +48,6 @@
       node.append(child instanceof Node ? child : document.createTextNode(String(child)));
     }
     return node;
-  }
-
-  const SVG_NS = "http://www.w3.org/2000/svg";
-
-  // Hoparlör simgesi: "muted" (çarpı), "low" (tek dalga) ya da "high" (iki dalga).
-  function speakerIcon(level) {
-    const svg = document.createElementNS(SVG_NS, "svg");
-    for (const [key, value] of Object.entries({ viewBox: "0 0 24 24", width: "20", height: "20", "aria-hidden": "true", focusable: "false" })) {
-      svg.setAttribute(key, value);
-    }
-    const line = { fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round" };
-    const shapes = [["M4 9.5h3.5L12 5.5v13l-4.5-4H4z", { fill: "currentColor" }]];
-    if (level === "muted") shapes.push(["M16 9.5l5 5m0-5l-5 5", line]);
-    else {
-      shapes.push(["M15.5 9a4 4 0 0 1 0 6", line]);
-      if (level === "high") shapes.push(["M18.5 6.5a7.5 7.5 0 0 1 0 11", line]);
-    }
-    for (const [d, attrs] of shapes) {
-      const path = document.createElementNS(SVG_NS, "path");
-      path.setAttribute("d", d);
-      for (const [key, value] of Object.entries(attrs)) path.setAttribute(key, value);
-      svg.append(path);
-    }
-    return svg;
   }
 
   function clock(value, precise = false) {
@@ -334,8 +311,10 @@
         state: () => Number(yt.getPlayerState?.() ?? YT_STATE.UNSTARTED),
         setRate: (rate) => yt.setPlaybackRate?.(rate),
         mute: () => yt.mute?.(),
-        unMute: () => yt.unMute?.(),
-        setVolume: (level) => yt.setVolume?.(level),
+        unMute: () => {
+          yt.unMute?.();
+          yt.setVolume?.(100);
+        },
         hasCaptionModule: () => {
           try { return (yt.getOptions?.() || []).includes("captions"); } catch { return false; }
         },
@@ -394,8 +373,6 @@
     let openSection = null;
     let activeBookmarkId = null;
     let cropAllowed = !TOUCH_UI;
-    let volume = Math.min(100, Math.max(1, Number(prefs.get("haluku-ses")) || 100));
-    let muted = false;
 
     // --- video çerçevesi
     const host = h("div", { class: "video-host" });
@@ -424,13 +401,6 @@
 
     // --- kontroller
     const playButton = h("button", { type: "button", class: "control-button", disabled: true, "aria-label": "Oynat" }, "▶");
-    const volumeButton = h("button", {
-      type: "button", class: "control-button volume-button", disabled: true, "aria-label": "Sesi kapat", title: "Sesi kapat / aç (M)"
-    }, speakerIcon("high"));
-    // Dokunmatik cihazlarda ses, cihazın tuşlarıyla ayarlanır (iOS sayfanın sesi değiştirmesine izin vermez).
-    const volumeSlider = TOUCH_UI ? null : h("input", {
-      type: "range", class: "volume-slider", min: "0", max: "100", step: "1", value: String(volume), disabled: true, "aria-label": "Ses düzeyi"
-    });
     const timeText = h("span", { class: "time-display" }, "0:00 / 0:00");
     const fill = h("div", { class: "progress-fill" });
     const markers = h("div", { class: "progress-markers" });
@@ -442,8 +412,7 @@
     const rateSelect = h("select", { "aria-label": "Oynatma hızı" }, RATES.map((rate) => h("option", { value: String(rate), selected: rate === 1 }, `${rate}x`)));
     const fullscreenButton = h("button", { type: "button", class: "control-button", "aria-label": "Tam ekran" }, "⤢");
     const controls = h("div", { class: "controls", "aria-label": "Video kontrolleri" },
-      playButton, h("div", { class: "volume" }, volumeButton, volumeSlider), timeText, progress, ccButton,
-      h("label", { class: "rate" }, rateSelect), fullscreenButton);
+      playButton, timeText, progress, ccButton, h("label", { class: "rate" }, rateSelect), fullscreenButton);
 
     // --- içerik paneli: masaüstünde videonun yanında, dar ekranda video üzerinde açılır menü
     const sections = [];
@@ -485,9 +454,10 @@
     rateSelect.addEventListener("change", () => player?.setRate(Number(rateSelect.value)));
     fullscreenButton.addEventListener("click", toggleFullscreen);
     menuButton.addEventListener("click", () => setMenu(!menuOpen));
-    unmuteButton.addEventListener("click", () => setMuted(false));
-    volumeButton.addEventListener("click", toggleMute);
-    volumeSlider?.addEventListener("input", () => setVolume(Number(volumeSlider.value)));
+    unmuteButton.addEventListener("click", () => {
+      player?.unMute();
+      frame.classList.remove("is-muted-start");
+    });
 
     progress.addEventListener("pointerdown", (event) => {
       if (!ready || (overlay && overlay.kind !== "end") || event.button > 0) return;
@@ -528,7 +498,6 @@
       const key = event.key.toLowerCase();
       if (key === "k" || (key === " " && tag !== "BUTTON" && tag !== "A")) togglePlay();
       else if (key === "c" && !ccButton.disabled) setCaptions(!ccOn);
-      else if (key === "m" && ready) toggleMute();
       else if (key === "f") toggleFullscreen();
       else if (key === "arrowright" && !overlay) seekTo(current + 5);
       else if (key === "arrowleft" && !overlay) seekTo(current - 5);
@@ -561,9 +530,6 @@
         ready = true;
         if (player.duration()) duration = player.duration();
         ccButton.disabled = false;
-        volumeButton.disabled = false;
-        if (volumeSlider) volumeSlider.disabled = false;
-        applyVolume();
         refreshPlayState();
         renderTime();
         renderQuestions();
@@ -719,7 +685,10 @@
 
     function togglePlay() {
       if (!player || !ready) return;
-      if (frame.classList.contains("is-muted-start")) setMuted(false);
+      if (frame.classList.contains("is-muted-start")) {
+        player.unMute();
+        frame.classList.remove("is-muted-start");
+      }
       if (overlay) {
         if (overlay.kind === "gate") {
           const item = overlay.item;
@@ -755,7 +724,7 @@
       clearTimeout(tapTimer);
       tapTimer = setTimeout(() => {
         if (everPlayed || overlay) return;
-        setMuted(true);
+        player.mute();
         player.play();
         frame.classList.add("is-muted-start");
         tapTimer = setTimeout(() => {
@@ -811,52 +780,6 @@
       updateCrop();
     }
 
-    // ---------- ses ----------
-
-    function applyVolume() {
-      if (!player) return;
-      if (muted) player.mute();
-      else {
-        player.unMute();
-        player.setVolume(volume);
-      }
-      renderVolume();
-    }
-
-    function renderVolume() {
-      const silent = muted || volume === 0;
-      volumeButton.replaceChildren(speakerIcon(silent ? "muted" : volume < 50 ? "low" : "high"));
-      volumeButton.setAttribute("aria-label", silent ? "Sesi aç" : "Sesi kapat");
-      volumeButton.title = silent ? "Sesi aç (M)" : "Sesi kapat (M)";
-      if (!volumeSlider) return;
-      const shown = silent ? 0 : volume;
-      volumeSlider.value = String(shown);
-      volumeSlider.setAttribute("aria-valuetext", silent ? "Sessiz" : `Yüzde ${volume}`);
-    }
-
-    function setMuted(on) {
-      muted = on;
-      // Kaydırıcı sıfıra çekildiyse ses açılırken duyulur bir düzeye dönülür.
-      if (!on && volume < 5) volume = 50;
-      if (!on) frame.classList.remove("is-muted-start");
-      applyVolume();
-    }
-
-    function toggleMute() {
-      setMuted(!(muted || volume === 0));
-    }
-
-    function setVolume(level) {
-      const next = Math.round(Math.min(100, Math.max(0, level)));
-      if (next === 0) {
-        setMuted(true);
-        return;
-      }
-      volume = next;
-      prefs.set("haluku-ses", String(next));
-      setMuted(false);
-    }
-
     function toggleFullscreen() {
       if (document.fullscreenElement) {
         document.exitFullscreen?.();
@@ -896,17 +819,15 @@
       updateCrop();
     }
 
-    // YouTube, oynatma her başladığında 2-3 saniye kendi başlığını, "Diğer videolar" düğmesini ve
-    // logosunu iframe'in kenarlarında gösterir; duraklatınca göstermez. Masaüstünde iframe çerçeveden
-    // taşırılıp kırpılarak bunlar gizlenir; dar çerçevede kırpma yerine oynatmanın ilk saniyelerinde
-    // koyu şeritler kullanılır. Altyazı da iframe'in alt kenarında durduğu için altyazı açıkken ikisi de
-    // kullanılmaz: altyazı hep aynı yerde okunur, YouTube'un simgeleri oynatma başlarken kısa süre görünür.
-    // Dokunmatik cihazlarda ikisi de kullanılmaz: mobil oynatıcının yerleşimi kırpmaya uygun değil.
+    // YouTube'un başlık ve alt çubuğu iframe'in kenarlarında durur; masaüstünde iframe'i
+    // çerçeveden taşırıp kırpınca görünmezler. Altyazı da alt kenarda olduğu için altyazı açıkken
+    // ve video oynarken kırpma kaldırılır. Dar masaüstü çerçevesinde çubuklar koyu şeritlerle örtülür.
+    // Dokunmatik cihazlarda şerit kullanılmaz: görüntüyü karartıyordu; mobil oynatıcı zaten sade.
     function updateCrop() {
       if (!TOUCH_UI && frame.isConnected) cropAllowed = frame.clientWidth >= MIN_CROP_WIDTH;
-      const starting = playing && Date.now() - playStartedAt < SETTLE_MS;
-      const crop = cropAllowed && !ccOn;
-      const cover = !TOUCH_UI && !cropAllowed && !ccOn && starting;
+      const sincePlay = Date.now() - playStartedAt;
+      const crop = cropAllowed && (!ccOn || !playing || sincePlay < CROP_GRACE_MS);
+      const cover = !TOUCH_UI && !cropAllowed && (playing ? sincePlay < SETTLE_MS : everPlayed);
       if (frame.classList.contains("is-cropped") !== crop) frame.classList.toggle("is-cropped", crop);
       if (frame.classList.contains("show-strips") !== cover) frame.classList.toggle("show-strips", cover);
     }

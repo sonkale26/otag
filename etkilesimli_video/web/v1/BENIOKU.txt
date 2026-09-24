@@ -1,4 +1,4 @@
-haluku 0.5.0 · bağımsız sürüm
+haluku 0.4.0 · bağımsız sürüm
 =================================
 
 YouTube videolarına soru, pop-up bilgi kartı ve yer imi ekleyen editörün sunucu, kurulum ya da
@@ -10,8 +10,8 @@ YAYINLAMA
   yükleyin. Editör şu adreste açılır: https://KULLANICI.github.io/DEPO/haluku/
 - Kurum sunucusu: dosyaları web'e açık bir klasöre kopyalamanız yeterli. PHP, veritabanı ya da
   başka bir kurulum gerekmez.
-- index.html'e çift tıklayarak açmayın: YouTube bu durumda videoyu oynatmaz (hata 153). Editörü her
-  zaman bir web adresinden kullanın.
+- index.html'e çift tıklayarak da açılabilir, ancak YouTube bu durumda videoyu oynatmaz (hata 153).
+  Öğeleri zamanını elle yazarak ekleyebilir, çıktı alabilirsiniz. Videolu çalışmak için web adresinden açın.
 
 
 VERİLER
