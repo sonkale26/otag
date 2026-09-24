@@ -1,9 +1,0 @@
-SesliDers SCORM paketi
-
-LMS'E YUKLEME
-  ZIP dosyasini acmadan oldugu gibi yukleyin.
-
-BILGISAYARDA ONIZLEME
-  ZIP'e cift tiklayip icinden index.html'i ACMAYIN: Windows yalnizca o dosyayi gecici bir klasore cikarir,
-  ses dosyasi (audio/ders.mp3) yaninda gelmez ve oynatici ses calamaz.
-  Dogrusu: ZIP'e sag tiklayin > "Tumunu ayikla" > cikan klasordeki index.html dosyasini acin.
