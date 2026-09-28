@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
-    <meta name="generator" content="haluku 0.6.0" />
-    <title>Bölüm 1: Çocukluk Sosyolojisine Giriş</title>
+    <meta name="generator" content="haluku 0.6.3" />
+    <title>ETKİLİ İLETİŞİM TEKNİKLERİ - Ünite 1 Konu Anlatımı 1</title>
     <style>
 :root {
   --bg: #f5f6f8;
@@ -212,6 +212,9 @@ fieldset { border: none; margin: 0; padding: 0; }
 /* YouTube'un başlık ve alt çubukları iframe kenarındadır: iframe taşırılıp kırpılınca görünmez.
    overflow: clip, taşan iframe yüzünden çerçevenin kaydırılabilir hale gelmesini önler. */
 .video-frame { --crop: 80px; overflow: clip; }
+/* YouTube, 16:9'dan uzun oynatıcıda videoyu ortalar; başlık ve alt çubuk üstteki ve alttaki boşlukta kalır.
+   Kırpma bu yüzden simetrik. (Claude'un test tarayıcısı YouTube'dan farklı bir yerleşim alıp videoyu biraz
+   aşağıda gösteriyor; gerçek Chrome'da masaüstü ve Android'de video ortada, 2026-09'da kullanıcıyla doğrulandı.) */
 .video-frame.is-cropped .video-host { top: calc(-1 * var(--crop)); bottom: calc(-1 * var(--crop)); }
 .video-shield { position: absolute; inset: 0; z-index: 2; cursor: pointer; }
 .video-paused { position: absolute; inset: 0; z-index: 3; display: none; place-items: center; background: rgba(8, 12, 20, 0.28); pointer-events: none; }
@@ -222,10 +225,6 @@ fieldset { border: none; margin: 0; padding: 0; }
 /* İlk oynatmaya kadar videonun kapak görseli; YouTube'un açılış ekranını örter. */
 .video-poster { position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; object-fit: cover; pointer-events: none; }
 .video-frame.has-played .video-poster { display: none; }
-/* Kırpma kullanılamadığında YouTube'un üst ve alt çubuklarını örten şeritler. */
-.video-strips { position: absolute; inset: 0; z-index: 2; opacity: 0; pointer-events: none; transition: opacity 0.35s ease;
-  background: linear-gradient(to bottom, rgba(6, 9, 15, 0.97) 0, rgba(6, 9, 15, 0.97) 21%, rgba(6, 9, 15, 0) 33%, rgba(6, 9, 15, 0) 67%, rgba(6, 9, 15, 0.97) 79%, rgba(6, 9, 15, 0.97) 100%); }
-.video-frame.show-strips .video-strips { opacity: 1; }
 .unmute-button { display: none; position: absolute; left: 0.8rem; bottom: 0.8rem; z-index: 6; padding: 0.4rem 0.85rem; border: none; border-radius: 999px; background: rgba(15, 20, 30, 0.85); color: #fff; font-weight: 600; }
 .video-frame.is-muted-start.is-playing .unmute-button { display: inline-flex; }
 .video-frame.has-overlay .unmute-button { display: none; }
@@ -271,22 +270,35 @@ fieldset { border: none; margin: 0; padding: 0; }
 .volume-slider { width: 84px; margin: 0; accent-color: var(--accent); cursor: pointer; }
 .volume-slider:disabled { opacity: 0.55; cursor: not-allowed; }
 
-/* 0.6.0 · Geri / ileri sarma: dikey telefonda videonun altında büyük düğmeler; yatay telefonda ve tam
-   ekranda videonun iki yanındaki boşlukta geniş düğmeler. */
+/* 0.6.3 · Geri / ileri sarma (⟲10 / 10⟳): fareyle kullanımda kontrol çubuğunda; yatay telefonda videonun
+   iki yanındaki boşlukta (boşluğun tamamı dokunma alanı, ortasında yuvarlak düğme); dikey telefonda
+   videonun altındaki satırda. */
 .video-area { position: relative; }
-.side-seek { display: none; position: absolute; top: 0; bottom: 0; z-index: 2; width: var(--yan, 72px); flex-direction: column; align-items: center; justify-content: center; gap: 0.35rem; padding: 0; border-radius: var(--radius); font-size: 0.85rem; font-weight: 700; }
+.side-seek { display: none; position: absolute; top: 0; bottom: 0; z-index: 2; width: var(--yan, 72px); align-items: center; justify-content: center; padding: 0; border: none; border-radius: var(--radius); background: transparent; color: var(--text); }
 .side-seek.is-back { right: calc(100% + 0.75rem); }
 .side-seek.is-forward { left: calc(100% + 0.75rem); }
 .stage.has-side-seek .side-seek { display: flex; }
-.stage.is-fullscreen .side-seek { background: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.16); color: #fff; }
-.stage.is-fullscreen .side-seek:hover { background: rgba(255, 255, 255, 0.16); }
-.transport { display: none; justify-content: center; align-items: center; gap: 1rem; margin-top: 0.9rem; }
+.side-seek-circle { display: flex; align-items: center; justify-content: center; width: 3.4rem; height: 3.4rem; border: 1px solid var(--line); border-radius: 50%; background: var(--surface); box-shadow: var(--shadow); transition: transform 0.12s ease, background-color 0.15s ease, border-color 0.15s ease; }
+.side-seek:hover .side-seek-circle { border-color: #b9c1ce; }
+.side-seek:active .side-seek-circle { transform: scale(0.92); }
+.side-seek:focus-visible { outline: none; }
+.side-seek:focus-visible .side-seek-circle { outline: 2px solid var(--accent); outline-offset: 2px; }
+.stage.is-fullscreen .side-seek { color: #fff; }
+.stage.is-fullscreen .side-seek-circle { border-color: rgba(255, 255, 255, 0.2); background: rgba(255, 255, 255, 0.1); box-shadow: none; }
+.stage.is-fullscreen .side-seek:hover .side-seek-circle { background: rgba(255, 255, 255, 0.2); }
+/* Yan düğmeler varken kontrol satırı onların dış kenarlarına kadar uzar; zaman çizelgesi genişler. */
+.stage.has-side-seek .controls { margin-left: calc(-1 * (var(--yan, 72px) + 0.75rem)); margin-right: calc(-1 * (var(--yan, 72px) + 0.75rem)); }
+.seek-button { padding-left: 0.45rem; padding-right: 0.45rem; }
+.seek-button svg { display: block; }
+.stage.has-seek-row .controls .seek-button { display: none; }
+.transport { display: none; justify-content: center; align-items: center; gap: 1.1rem; margin-top: 0.7rem; }
 .stage.has-seek-row .transport { display: flex; }
 .stage.has-seek-row .controls .play-toggle { display: none; }
-.transport-seek { height: 3.1rem; min-width: 5.6rem; justify-content: center; border-radius: 999px; font-weight: 700; }
-.transport-play { width: 4rem; height: 4rem; justify-content: center; border-radius: 50%; border-color: var(--accent); background: var(--accent); color: var(--accent-text); font-size: 1.35rem; }
-.side-seek:active, .transport-seek:active, .transport-play:active { transform: scale(0.96); }
-.seek-flash { position: absolute; top: 50%; z-index: 6; display: flex; align-items: center; gap: 0.3rem; padding: 0.4rem 0.8rem; border-radius: 999px; background: rgba(15, 20, 30, 0.72); color: #fff; font-size: 0.9rem; font-weight: 700; pointer-events: none; opacity: 0; transform: translateY(-50%); }
+.transport-seek { width: 2.6rem; height: 2.6rem; padding: 0; justify-content: center; border-radius: 50%; }
+.transport-seek svg { display: block; }
+.transport-play { width: 2.9rem; height: 2.9rem; padding: 0; justify-content: center; border-radius: 50%; border-color: var(--accent); background: var(--accent); color: var(--accent-text); font-size: 1rem; box-shadow: 0 2px 8px rgba(36, 88, 214, 0.3); }
+.transport-seek:active, .transport-play:active, .seek-button:active { transform: scale(0.94); }
+.seek-flash { position: absolute; top: 50%; z-index: 6; display: flex; align-items: center; gap: 0.4rem; padding: 0.4rem 0.85rem 0.4rem 0.55rem; border-radius: 999px; background: rgba(15, 20, 30, 0.66); color: #fff; font-size: 0.9rem; font-weight: 700; pointer-events: none; opacity: 0; transform: translateY(-50%); }
 .seek-flash.is-back { left: 8%; }
 .seek-flash.is-forward { right: 8%; }
 .seek-flash.is-visible { animation: seek-flash 0.8s ease-out; }
@@ -376,9 +388,9 @@ fieldset { border: none; margin: 0; padding: 0; }
   <body>
     <div id="app"><p class="boot">Yükleniyor…</p></div>
     <noscript>Bu içerik için JavaScript gerekli.</noscript>
-    <script>window.HALUKU_PROJE = {"id":"bolum-1-cocukluk-sosyolojisine-giris","title":"Bölüm 1: Çocukluk Sosyolojisine Giriş","video":{"videoId":"nA7HXI36Yk4","duration":null},"settings":{"preventSkippingRequired":false},"items":[{"id":"p_7ce7hm","type":"popup","at":56,"duration":9,"pause":false,"title":"Çocukluğun Toplumsallığı","body":"Çocukluk basit bir gelişim dönemi değil; kendine özgü değerleri, özellikleri ve davranış kalıpları bulunan toplumsal bir olgu olarak ele alınır.","link":null},{"id":"y_rwo9e3","type":"bookmark","at":75,"title":"Çocukluk Sosyolojisinin Bakış Açısı"},{"id":"p_jazd45","type":"popup","at":87,"duration":8,"pause":false,"title":"Çocukluğun Sosyal İnşası","body":"Çocukluk sosyolojisi, çocukluğun sosyal olarak nasıl inşa edildiğine ve çocuk anlayışının farklı sosyokültürel bağlamlarda nasıl değiştiğine odaklanır.","link":null},{"id":"s_o0njmg","type":"question","at":107,"kind":"single","prompt":"Çocukluk sosyolojisindeki yeni yaklaşımda çocuklara bakış nasıl değişmiştir?","options":[{"id":"a","text":"Olgunlaşmamış varlıklardan kendi sosyal ajansına sahip yetkin aktörlere doğru","correct":true},{"id":"b","text":"Toplumsal aktörlerden yalnızca yetişkinleri taklit eden bireylere doğru","correct":false},{"id":"c","text":"Sosyal dünyayı etkileyen bireylerden yalnızca çevreden etkilenen bireylere doğru","correct":false},{"id":"d","text":"Belirli bir sosyal gruptan toplumsal ilişkilerin dışında kalan bireylere doğru","correct":false}],"feedbackCorrect":"Doğru!","feedbackWrong":"Odak, çocukları yalnızca yetişkinliğe hazırlanan olgunlaşmamış varlıklar olarak görmekten, sosyal dünyalarını da etkileyen yetkin aktörler olarak görmeye kaymıştır.","required":true,"retryFrom":88},{"id":"y_ym1s2q","type":"bookmark","at":119,"title":"Merkezî Kavramlar ve Kuramsal Yaklaşımlar"},{"id":"y_zy8nu7","type":"bookmark","at":144,"title":"Çocukları Sosyal Grup Olarak Görmek"},{"id":"p_kzg0j9","type":"popup","at":164,"duration":9,"pause":false,"title":"Sosyal Grup Olarak Çocuklar","body":"Çocukları sosyal bir grup olarak ele almak, onların toplum yapıları içindeki konumlarına ve çocuklar, ebeveynler ve yetişkin toplum arasındaki ilişkilere dikkat çeker.","link":null},{"id":"y_n0k1e7","type":"bookmark","at":174,"title":"Çocukların Sosyal Aktörlüğü"},{"id":"p_es042x","type":"popup","at":183,"duration":8,"pause":false,"title":"Sosyal Aktör","body":"Çocukları sosyal aracılar ve sosyal dünyalarının ortak kurucuları olarak anlamak, onların deneyimlerini ve günlük yaşamlarındaki davranışlarını incelemeyi gerektirir.","link":null},{"id":"y_5zurip","type":"bookmark","at":208,"title":"Çocuklukta Çeşitlilik"},{"id":"p_xx1om2","type":"popup","at":230,"duration":9,"pause":false,"title":"Tek Bir Çocukluk Yoktur","body":"Çocuklar yaş, cinsiyet, etnik köken, sosyoekonomik koşullar ve kapasiteleri bakımından farklılaşır; ayrıca farklı ulusal ve kültürel bağlamlarda yaşarlar.","link":null},{"id":"s_ohc59z","type":"question","at":249,"kind":"single","prompt":"Videoya göre çocukları ve yaşamlarını homojenleştiren bir çocuk anlayışı neden sorunlu görülmektedir?","options":[{"id":"a","text":"Çocukların farklı özelliklere ve farklı toplumsal-kültürel bağlamlara sahip olması nedeniyle","correct":true},{"id":"b","text":"Çocukların tüm toplumlarda aynı yaşam koşullarına sahip olması nedeniyle","correct":false},{"id":"c","text":"Çocukların yalnızca yaş farklılıkları üzerinden değerlendirilebilmesi nedeniyle","correct":false},{"id":"d","text":"Çocukluk deneyiminin toplumsal koşullardan bağımsız olması nedeniyle","correct":false}],"feedbackCorrect":"Doğru!","feedbackWrong":"Çocuklar yaş, cinsiyet, etnik köken, sosyoekonomik koşullar, kapasite ve yaşadıkları bağlamlar bakımından farklılık gösterir.","required":true,"retryFrom":208},{"id":"y_jepmop","type":"bookmark","at":252,"title":"Sosyolojide Çocukluğun Yeri"},{"id":"p_v6jfpp","type":"popup","at":291,"duration":8,"pause":false,"title":"Sosyal Bir Gerçeklik Olarak Çocukluk","body":"Çocukluk sosyolojiye göre sosyal bir gerçeklik ve sosyal bir kategoridir; toplumsal yapı ve süreçlerle ilişkileri içinde araştırılmaya değerdir.","link":null},{"id":"y_8yvdxj","type":"bookmark","at":340,"title":"Çocukluğun Ayırt Edici Özellikleri"},{"id":"s_1xh6u4","type":"question","at":369,"kind":"multiple","prompt":"Videoya göre çocukluğun diğer yaşam dönemlerinden farklılık göstermesinin nedenleri hangileridir?","options":[{"id":"a","text":"Bir yaşam dönemi olarak varlığının uzun ve zor süreçler sonunda kabul edilmesi","correct":true},{"id":"b","text":"Tüm dünyada hem ortak hem de farklı yönleri olan bir deneyim olması","correct":true},{"id":"c","text":"Bütün toplumlarda aynı kültürel özelliklerle biçimlenmesi","correct":false},{"id":"d","text":"Toplumsal yapı ve değerlerden bağımsız bir dönem olması","correct":false}],"feedbackCorrect":"Doğru!","feedbackWrong":"İki neden; çocukluğun uzun ve zor süreçler sonunda ayrı bir yaşam dönemi olarak kabul edilmesi ve dünyada hem ortak hem farklı yönleri bulunan bir deneyim olmasıdır.","required":true,"retryFrom":340},{"id":"y_wax10z","type":"bookmark","at":396,"title":"Erken Dönem ve Sosyalizasyon"},{"id":"p_8ox3bh","type":"popup","at":459,"duration":9,"pause":false,"title":"Sosyalizasyon Yaklaşımı","body":"Erken dönem çocukluk sosyolojisinde çocuk, toplumda uyumlu bir birey olmak için gerekli bilgi ve becerileri kazanma süreci içinde ele alınmıştır.","link":null},{"id":"y_jg9gz1","type":"bookmark","at":465,"title":"Yeni Çocukluk Sosyolojisi"},{"id":"p_mhyqpv","type":"popup","at":474,"duration":8,"pause":false,"title":"Yeni Çocukluk Yaklaşımı","body":"Yeni çocukluk sosyolojisi çalışmalarında çocuklar, toplumları etkileyebilen ve toplumdan anlam çıkarabilen sosyal aktörler olarak görülür.","link":null},{"id":"s_xtvqyh","type":"question","at":499,"kind":"single","prompt":"Yeni çocukluk sosyolojisi anlayışının öne çıkardığı iki önemli teorik kavram hangileridir?","options":[{"id":"a","text":"Sosyal bir özne olarak çocukluk ve nesilsel bir düzen olarak çocukluk","correct":true},{"id":"b","text":"Doğal bir gelişim olarak çocukluk ve biyolojik bir düzen olarak çocukluk","correct":false},{"id":"c","text":"Pasif bir özne olarak çocukluk ve yetişkin merkezli bir düzen olarak çocukluk","correct":false},{"id":"d","text":"Bireysel bir süreç olarak çocukluk ve değişmez bir yapı olarak çocukluk","correct":false}],"feedbackCorrect":"Doğru!","feedbackWrong":"Yeni anlayışta iki temel kavram, sosyal bir özne olarak çocukluk ve nesilsel bir düzen olarak çocukluktur.","required":true,"retryFrom":465},{"id":"y_gl40jm","type":"bookmark","at":500,"title":"Çocukluk Sosyolojisinin Çalışma Konuları"},{"id":"p_qvq75c","type":"popup","at":511,"duration":9,"pause":false,"title":"Çalışma Konuları","body":"Çocukluk sosyolojisinin çalışma konuları toplumsal zemin ve çocuk-çocukluk ilişkilerinde yoğunlaşır. Çocukluğun toplumsaldaki karşılığı araştırmaların türünü ve kapsamını etkiler.","link":null},{"id":"y_n5ib4m","type":"bookmark","at":543,"title":"Kapanış"}],"surum":"0.6.0"};</script>
+    <script>window.HALUKU_PROJE = {"id":"etkili-iletisim-teknikleri-unite-1-konu-anlatimi-1","title":"ETKİLİ İLETİŞİM TEKNİKLERİ - Ünite 1 Konu Anlatımı 1","video":{"videoId":"nA7HXI36Yk4","duration":582},"settings":{"preventSkippingRequired":true},"items":[{"id":"y_lhswgm","type":"bookmark","at":52,"title":"İletişim Nedir?"},{"id":"s_rgity5","type":"question","at":79,"kind":"truefalse","prompt":"İletişim yalnızca bireylere özgü bir olgudur; kurumlar için geçerli değildir.","options":[{"id":"a","text":"Doğru","correct":false},{"id":"b","text":"Yanlış","correct":true}],"feedbackCorrect":"Doğru! İletişim hem bireylere hem kurumlara özgüdür.","feedbackWrong":"Yanlış cevap. İletişim hem gerçek kişiler olan insanlara hem de tüzel kişiler olan kurumlara özgü bir olgudur.","required":false,"retryFrom":52},{"id":"p_wm4xiu","type":"popup","at":101,"duration":8,"pause":false,"title":"İleti","body":"Kaynaktan alıcıya aktarılan mesajdır. Mağara duvarlarındaki yazılar da binlerce yıl önceki topluluklar hakkında ileti taşır.","link":null},{"id":"y_807bt4","type":"bookmark","at":164,"title":"İletişimin Temel Özellikleri"},{"id":"y_jf776f","type":"bookmark","at":195,"title":"İletişim Bir Bütündür"},{"id":"p_swtqbu","type":"popup","at":201,"duration":8,"pause":false,"title":"Ne ve Nasıl","body":"Kelimeler ne söylediğimizi, ses tonu ve beden dili ise nasıl söylediğimizi belirler.","link":null},{"id":"s_pcxd5r","type":"question","at":216,"kind":"single","prompt":"Kelimeler aynı kaldığında, iletişimi yapılandırmada beden dilinin payı yüzde kaçtır?","options":[{"id":"a","text":"%60","correct":true},{"id":"b","text":"%30","correct":false},{"id":"c","text":"%10","correct":false},{"id":"d","text":"%50","correct":false}],"feedbackCorrect":"Doğru! Beden dili %60 oranında rol oynar.","feedbackWrong":"Doğru cevap %60. Kelimeler %10, ses %30, beden dili %60 oranında rol oynar.","required":false,"retryFrom":195},{"id":"y_i0qqxl","type":"bookmark","at":217,"title":"Beden Dili"},{"id":"y_8y8fbx","type":"bookmark","at":240,"title":"Ses Tonu ve Konuşmanın Akıcılığı"},{"id":"y_0baj6t","type":"bookmark","at":261,"title":"Beden Duruşu"},{"id":"y_74c5ig","type":"bookmark","at":275,"title":"Mimikler"},{"id":"p_aeodaf","type":"popup","at":277,"duration":8,"pause":false,"title":"Mimik","body":"Yüz ifadeleriyle yapılan anlatımdır. Kişi duygu ve düşüncelerini beden dili içinde en çok mimikleriyle dışa vurur.","link":null},{"id":"y_5dwjcf","type":"bookmark","at":294,"title":"Mesafe ve Bedensel Temas"},{"id":"y_u2pzij","type":"bookmark","at":315,"title":"İletişimde Algının Rolü"},{"id":"p_0k3djd","type":"popup","at":320,"duration":8,"pause":false,"title":"Algı","body":"Algı toplumdan topluma, kişiden kişiye ve aynı kişide zaman içinde değişebilir.","link":null},{"id":"s_w4o9ot","type":"question","at":345,"kind":"single","prompt":"Videoya göre anlamak hangi üç unsurun bir arada tutulmasına bağlıdır?","options":[{"id":"a","text":"Niyet, bilgi ve gayret","correct":true},{"id":"b","text":"Algı, dikkat ve bellek","correct":false},{"id":"c","text":"Ses, söz ve beden dili","correct":false},{"id":"d","text":"Niyet, empati ve sabır","correct":false}],"feedbackCorrect":"Doğru! Niyet, bilgi ve gayret.","feedbackWrong":"Doğru cevap: niyet, bilgi ve gayret. Anlamak bu üç unsurun başarıyla bir arada tutulmasına bağlıdır.","required":false,"retryFrom":330},{"id":"y_jwuns1","type":"bookmark","at":346,"title":"Etkin Dinleme"},{"id":"s_lghj4y","type":"question","at":415,"kind":"single","prompt":"Etkin dinleme için hangi mekân iletişimin kalitesini artırır?","options":[{"id":"a","text":"Gürültünün az olduğu, aydınlık ve dış müdahaleye kapalı mekân","correct":true},{"id":"b","text":"Kalabalık, hareketli ve herkesin rahatça girip çıktığı mekân","correct":false},{"id":"c","text":"Loş, sessiz ama sık sık kesintiye uğrayan bir mekân","correct":false},{"id":"d","text":"Aydınlık ama arka planda sürekli müzik çalan bir mekân","correct":false}],"feedbackCorrect":"Doğru! Uygun mekân etkin dinlemeyi destekler.","feedbackWrong":"Doğru cevap: gürültünün azaldığı, yeterince aydınlık ve dışarıdan müdahalenin engellendiği mekânlar iletişimin kalitesini artırır.","required":false,"retryFrom":388},{"id":"y_9ae96v","type":"bookmark","at":420,"title":"Empati"},{"id":"p_0s512b","type":"popup","at":487,"duration":8,"pause":false,"title":"Sempati","body":"Karşımızdakinin acısını da sevgisini de paylaşarak ona hak vermek ve duygu ortaklığı kurmaktır.","link":null},{"id":"s_xz3n12","type":"question","at":513,"kind":"single","prompt":"Videoya göre empati ile sempati arasındaki temel fark nedir?","options":[{"id":"a","text":"Empatide hak vermesek de anlamaya çalışırız; sempatide hak veririz.","correct":true},{"id":"b","text":"Empatide hak veririz; sempatide yalnızca anlamaya çalışırız.","correct":false},{"id":"c","text":"Empati bir iletişim etkinliğidir; sempati ise değildir.","correct":false},{"id":"d","text":"Empatide duygu paylaşılır; sempatide yalnızca düşünceler anlaşılır.","correct":false}],"feedbackCorrect":"Doğru! Empati anlamak, sempati hak vermektir.","feedbackWrong":"Doğru cevap: empatide hak vermesek de anlamaya çalışırız; sempatide ise hak vererek duygu ortaklığı kurarız. İkisi de iletişim etkinliğidir.","required":false,"retryFrom":470},{"id":"y_ilse44","type":"bookmark","at":514,"title":"Özet"},{"id":"y_mrxtzs","type":"bookmark","at":558,"title":"Kapanış"}],"surum":"0.6.3"};</script>
     <script>
-/* haluku oynatıcısı 0.6.0
+/* haluku oynatıcısı 0.6.3
  * Derleme gerektirmeyen tek dosya. Yerel önizlemede (/oynat/<id>) projeyi haluku sunucusundan
  * okur; SCORM/web paketinde window.HALUKU_PROJE verisini kullanır ve bir LMS bulursa
  * SCORM 1.2 ile ilerleme, puan ve tamamlanma bilgisini gönderir. */
@@ -388,8 +400,6 @@ fieldset { border: none; margin: 0; padding: 0; }
   const QUESTION_BUTTON_SECONDS = 10;
   const END_GUARD_SECONDS = 0.35;
   const SEEK_STEP = 10;
-  const SETTLE_MS = 3500;
-  const MIN_CROP_WIDTH = 480;
   const COMPLETION_RATIO = 0.9;
   const SAVE_EVERY_MS = 10000;
   const RATES = [0.75, 1, 1.25, 1.5, 1.75, 2];
@@ -397,7 +407,7 @@ fieldset { border: none; margin: 0; padding: 0; }
   const TYPE_LABEL = { bookmark: "Yer imi", question: "Soru", popup: "Pop-up" };
   const YT_STATE = { UNSTARTED: -1, ENDED: 0, PLAYING: 1, PAUSED: 2, BUFFERING: 3, CUED: 5 };
   const PACKAGED = Boolean(window.HALUKU_PROJE);
-  // Dokunmatik cihazlara YouTube mobil oynatıcıyı verir; onun yerleşimi kırpmaya uygun değil.
+  // Telefon ve tabletler: ses cihaz tuşlarıyla ayarlanır, sarma düğmeleri büyük olur, tam ekran yataya döner.
   const TOUCH_UI = /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent) ||
     (navigator.maxTouchPoints > 1 && /Macintosh/i.test(navigator.userAgent));
   const YT_ERRORS = {
@@ -454,16 +464,25 @@ fieldset { border: none; margin: 0; padding: 0; }
     return svg;
   }
 
-  // Geri / ileri sarma simgesi: iki üçgen ("back" sola, "forward" sağa bakar).
-  function seekIcon(direction, size = 22) {
+  // Geri / ileri sarma simgesi: ortasında saniye yazan dairesel ok. "back" saat yönünün tersine döner,
+  // "forward" için ok yatayda aynalanır (yazı aynalanmaz).
+  function seekIcon(direction, size = 24) {
     const svg = document.createElementNS(SVG_NS, "svg");
     for (const [key, value] of Object.entries({ viewBox: "0 0 24 24", width: String(size), height: String(size), "aria-hidden": "true", focusable: "false" })) {
       svg.setAttribute(key, value);
     }
-    const path = document.createElementNS(SVG_NS, "path");
-    path.setAttribute("d", direction === "back" ? "M11.5 6v12L3 12zM21 6v12l-8.5-6z" : "M12.5 6v12L21 12zM3 6v12l8.5-6z");
-    path.setAttribute("fill", "currentColor");
-    svg.append(path);
+    const make = (tag, attrs, parent) => {
+      const node = document.createElementNS(SVG_NS, tag);
+      for (const [key, value] of Object.entries(attrs)) node.setAttribute(key, value);
+      parent.append(node);
+      return node;
+    };
+    const arrow = make("g", direction === "back" ? {} : { transform: "matrix(-1 0 0 1 24 0)" }, svg);
+    make("path", { d: "M4.95 10.43A7.5 7.5 0 1 0 12 5.5", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round" }, arrow);
+    make("path", { d: "M9.2 5.5 12.8 3.2v4.6z", fill: "currentColor" }, arrow);
+    make("text", {
+      x: "12", y: "13.4", "text-anchor": "middle", "dominant-baseline": "central", "font-size": "7.8", "font-weight": "700", fill: "currentColor"
+    }, svg).textContent = String(SEEK_STEP);
     return svg;
   }
 
@@ -766,7 +785,6 @@ fieldset { border: none; margin: 0; padding: 0; }
     let playing = false;
     let everPlayed = false;
     let ended = false;
-    let playStartedAt = 0;
     let duration = Number(project.video.duration) || 0;
     let current = 0;
     let overlay = null; // { kind: "gate" | "card" | "end" | "resume", item? }
@@ -788,7 +806,6 @@ fieldset { border: none; margin: 0; padding: 0; }
     let swallowClick = false;
     let openSection = null;
     let activeBookmarkId = null;
-    let cropAllowed = !TOUCH_UI;
     let volume = Math.min(100, Math.max(1, Number(prefs.get("haluku-ses")) || 100));
     let muted = false;
 
@@ -799,7 +816,6 @@ fieldset { border: none; margin: 0; padding: 0; }
       src: `https://i.ytimg.com/vi/${encodeURIComponent(project.video.videoId)}/hqdefault.jpg`
     });
     poster.addEventListener("error", () => poster.remove());
-    const strips = h("div", { class: "video-strips", "aria-hidden": "true" });
     const shield = h("div", { class: "video-shield", "aria-hidden": "true" });
     const bigPlay = h("button", { type: "button", class: "big-play", "aria-label": "Oynat" }, "▶");
     const pausedLayer = h("div", { class: "video-paused" }, bigPlay);
@@ -813,14 +829,14 @@ fieldset { border: none; margin: 0; padding: 0; }
     const overlayLayer = h("div", { class: "video-overlay", hidden: true });
     const tapHint = h("p", { class: "tap-hint" }, "▶ Başlatmak için videoya dokunun");
     const seekFlash = h("div", { class: "seek-flash", "aria-hidden": "true" });
-    const frame = h("div", { class: `video-frame${cropAllowed ? " is-cropped" : ""}` },
+    const frame = h("div", { class: `video-frame${ccOn ? "" : " is-cropped"}` },
       h("p", { class: "video-placeholder" }, "Video yükleniyor…"),
-      host, poster, strips, shield, pausedLayer, seekFlash, hotspots, menuButton, unmuteButton, tapHint, toast, overlayLayer);
+      host, poster, shield, pausedLayer, seekFlash, hotspots, menuButton, unmuteButton, tapHint, toast, overlayLayer);
     // Yatay telefonda ve tam ekranda videonun iki yanındaki boşluk, geniş geri / ileri sarma düğmesi olur.
     const sideBack = h("button", { type: "button", class: "side-seek is-back", "aria-label": `${SEEK_STEP} saniye geri sar` },
-      seekIcon("back", 30), h("span", null, `${SEEK_STEP} sn`));
+      h("span", { class: "side-seek-circle" }, seekIcon("back", 30)));
     const sideForward = h("button", { type: "button", class: "side-seek is-forward", "aria-label": `${SEEK_STEP} saniye ileri sar` },
-      seekIcon("forward", 30), h("span", null, `${SEEK_STEP} sn`));
+      h("span", { class: "side-seek-circle" }, seekIcon("forward", 30)));
     const videoArea = h("div", { class: "video-area" }, sideBack, frame, sideForward);
     const errorBox = h("div", { class: "alert error", role: "alert", hidden: true });
 
@@ -843,15 +859,20 @@ fieldset { border: none; margin: 0; padding: 0; }
     }, "CC");
     const rateSelect = h("select", { "aria-label": "Oynatma hızı" }, RATES.map((rate) => h("option", { value: String(rate), selected: rate === 1 }, `${rate}x`)));
     const fullscreenButton = h("button", { type: "button", class: "control-button", "aria-label": "Tam ekran" }, "⤢");
+    // Fareyle kullanımda sarma düğmeleri kontrol çubuğunda, oynat düğmesinin yanında durur.
+    const barBack = TOUCH_UI ? null : h("button", {
+      type: "button", class: "control-button seek-button", disabled: true, "aria-label": `${SEEK_STEP} saniye geri sar`, title: `${SEEK_STEP} saniye geri (J)`
+    }, seekIcon("back"));
+    const barForward = TOUCH_UI ? null : h("button", {
+      type: "button", class: "control-button seek-button", disabled: true, "aria-label": `${SEEK_STEP} saniye ileri sar`, title: `${SEEK_STEP} saniye ileri (L)`
+    }, seekIcon("forward"));
     const controls = h("div", { class: "controls", "aria-label": "Video kontrolleri" },
-      playButton, h("div", { class: "volume" }, volumeButton, volumeSlider), timeText, progress, ccButton,
+      playButton, barBack, barForward, h("div", { class: "volume" }, volumeButton, volumeSlider), timeText, progress, ccButton,
       h("label", { class: "rate" }, rateSelect), fullscreenButton);
-    // Dikey telefonda videonun altında büyük sarma ve oynatma düğmeleri.
-    const rowBack = h("button", { type: "button", class: "transport-seek", "aria-label": `${SEEK_STEP} saniye geri sar` },
-      seekIcon("back"), h("span", null, `${SEEK_STEP} sn`));
+    // Dikey telefonda (ve dar pencerede) videonun altında sarma ve oynatma düğmeleri.
+    const rowBack = h("button", { type: "button", class: "transport-seek", "aria-label": `${SEEK_STEP} saniye geri sar` }, seekIcon("back", 26));
     const rowPlay = h("button", { type: "button", class: "transport-play", disabled: true, "aria-label": "Oynat" }, "▶");
-    const rowForward = h("button", { type: "button", class: "transport-seek", "aria-label": `${SEEK_STEP} saniye ileri sar` },
-      h("span", null, `${SEEK_STEP} sn`), seekIcon("forward"));
+    const rowForward = h("button", { type: "button", class: "transport-seek", "aria-label": `${SEEK_STEP} saniye ileri sar` }, seekIcon("forward", 26));
     const transport = h("div", { class: "transport" }, rowBack, rowPlay, rowForward);
 
     // --- içerik paneli: masaüstünde videonun yanında, dar ekranda video üzerinde açılır menü
@@ -899,8 +920,10 @@ fieldset { border: none; margin: 0; padding: 0; }
     unmuteButton.addEventListener("click", () => setMuted(false));
     volumeButton.addEventListener("click", toggleMute);
     rowPlay.addEventListener("click", togglePlay);
-    for (const [button, delta] of [[sideBack, -SEEK_STEP], [sideForward, SEEK_STEP], [rowBack, -SEEK_STEP], [rowForward, SEEK_STEP]]) {
-      button.addEventListener("click", () => seekBy(delta));
+    for (const [button, delta] of [
+      [sideBack, -SEEK_STEP], [sideForward, SEEK_STEP], [rowBack, -SEEK_STEP], [rowForward, SEEK_STEP], [barBack, -SEEK_STEP], [barForward, SEEK_STEP]
+    ]) {
+      button?.addEventListener("click", () => seekBy(delta));
     }
     volumeSlider?.addEventListener("input", () => setVolume(Number(volumeSlider.value)));
 
@@ -945,6 +968,8 @@ fieldset { border: none; margin: 0; padding: 0; }
       else if (key === "c" && !ccButton.disabled) setCaptions(!ccOn);
       else if (key === "m" && ready) toggleMute();
       else if (key === "f") toggleFullscreen();
+      else if (key === "j" && !overlay) seekBy(-SEEK_STEP);
+      else if (key === "l" && !overlay) seekBy(SEEK_STEP);
       else if (key === "arrowright" && !overlay) seekTo(current + 5);
       else if (key === "arrowleft" && !overlay) seekTo(current - 5);
       else return;
@@ -978,6 +1003,7 @@ fieldset { border: none; margin: 0; padding: 0; }
         ccButton.disabled = false;
         volumeButton.disabled = false;
         if (volumeSlider) volumeSlider.disabled = false;
+        for (const button of [barBack, barForward]) if (button) button.disabled = false;
         applyVolume();
         // Altyazı tercihi "açık" kayıtlıysa modül açıkça yüklenir; yalnızca iz seçmek yetmiyor.
         if (ccOn) {
@@ -1079,10 +1105,7 @@ fieldset { border: none; margin: 0; padding: 0; }
       const wasPlaying = playing;
       playing = state === YT_STATE.PLAYING;
       if (playing) {
-        if (!wasPlaying) {
-          playStartedAt = Date.now();
-          if (!ccOn) keepCaptionsOff();
-        }
+        if (!wasPlaying && !ccOn) keepCaptionsOff();
         if (seekOnStart !== null) {
           if (Math.abs(player.time() - seekOnStart) > 1.5) seekPlayer(seekOnStart);
           seekOnStart = null;
@@ -1216,22 +1239,22 @@ fieldset { border: none; margin: 0; padding: 0; }
     // Sarınca videonun ilgili yanında kısa bir "‹‹ 10 sn" / "10 sn ››" işareti gösterilir.
     function flashSeek(delta) {
       const back = delta < 0;
-      seekFlash.replaceChildren(...[back && seekIcon("back", 18), `${SEEK_STEP} sn`, !back && seekIcon("forward", 18)].filter(Boolean));
+      seekFlash.replaceChildren(seekIcon(back ? "back" : "forward", 26), h("span", null, `${back ? "−" : "+"}${SEEK_STEP} sn`));
       seekFlash.className = `seek-flash ${back ? "is-back" : "is-forward"}`;
       void seekFlash.offsetWidth; // animasyonu baştan başlat
       seekFlash.classList.add("is-visible");
     }
 
-    // Sarma düğmelerinin yeri: yanlarda yeterli boşluk varsa (yatay telefon, tam ekran) videonun iki yanı,
-    // yoksa dokunmatik ve dar ekranlarda videonun altındaki büyük düğme satırı.
+    // Sarma düğmelerinin yeri: fareyle kullanımda kontrol çubuğu; yatay telefonda videonun iki yanındaki
+    // boşluk (yeterince genişse); dikey telefonda ve dar pencerede videonun altındaki düğme satırı.
     function updateSeekLayout() {
       const free = (stage.clientWidth - videoArea.offsetWidth) / 2;
       const landscape = window.matchMedia ? window.matchMedia("(orientation: landscape)").matches : false;
-      const side = (stage.classList.contains("is-fullscreen") || (TOUCH_UI && landscape)) && free >= 60;
+      const side = TOUCH_UI && landscape && free >= 60;
       const row = !side && (TOUCH_UI || stage.clientWidth <= 640);
       stage.classList.toggle("has-side-seek", side);
       stage.classList.toggle("has-seek-row", row);
-      if (side) stage.style.setProperty("--yan", `${Math.round(Math.min(free - 16, 140))}px`);
+      if (side) stage.style.setProperty("--yan", `${Math.round(Math.min(free - 16, 120))}px`);
     }
 
     function fractionAt(clientX) {
@@ -1365,18 +1388,13 @@ fieldset { border: none; margin: 0; padding: 0; }
     }
 
     // YouTube, oynatma her başladığında 2-3 saniye kendi başlığını, "Diğer videolar" düğmesini ve
-    // logosunu iframe'in kenarlarında gösterir; duraklatınca göstermez. Masaüstünde iframe çerçeveden
-    // taşırılıp kırpılarak bunlar gizlenir; dar çerçevede kırpma yerine oynatmanın ilk saniyelerinde
-    // koyu şeritler kullanılır. Altyazı da iframe'in alt kenarında durduğu için altyazı açıkken ikisi de
-    // kullanılmaz: altyazı hep aynı yerde okunur, YouTube'un simgeleri oynatma başlarken kısa süre görünür.
-    // Dokunmatik cihazlarda ikisi de kullanılmaz: mobil oynatıcının yerleşimi kırpmaya uygun değil.
+    // logosunu iframe'in kenarlarında gösterir; duraklatınca göstermez. iframe çerçeveden taşırılıp
+    // kırpılarak bunlar gizlenir (taşırma payı app.css'te; telefonda da geçerli).
+    // Altyazı açıkken kırpılmaz: altyazı iframe'in alt kenarında durur, kırpma onu keser. O durumda
+    // YouTube'un simgeleri oynatma başlarken kısa süre görünür; üstlerine koyu şerit konmaz.
     function updateCrop() {
-      if (!TOUCH_UI && frame.isConnected) cropAllowed = frame.clientWidth >= MIN_CROP_WIDTH;
-      const starting = playing && Date.now() - playStartedAt < SETTLE_MS;
-      const crop = cropAllowed && !ccOn;
-      const cover = !TOUCH_UI && !cropAllowed && !ccOn && starting;
+      const crop = !ccOn;
       if (frame.classList.contains("is-cropped") !== crop) frame.classList.toggle("is-cropped", crop);
-      if (frame.classList.contains("show-strips") !== cover) frame.classList.toggle("show-strips", cover);
     }
 
     function renderTime() {
