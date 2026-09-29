@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>sesli_kitap_yeni_kitaplar V0_4</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mammoth@1.6.0/mammoth.browser.min.js"></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#07090f;--s:#0d1020;--s2:#131828;--s3:#1a2035;
+  --b:rgba(255,255,255,.08);--b2:rgba(255,255,255,.14);
+  --t:#dde3f5;--t2:#8892b0;--t3:#4a5275;
+  --ac:#4f8ef7;--gr:#2ecc85;--am:#f5a623;--re:#e05555;--pu:#9b6cf7;
+}
+
+[data-theme="light"] {
+  --bg:#f8fafc;--s:#ffffff;--s2:#f1f5f9;--s3:#e2e8f0;
+  --b:rgba(0,0,0,.08);--b2:rgba(0,0,0,.14);
+  --t:#0f172a;--t2:#475569;--t3:#64748b;
+}
+
+body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--t);min-height:100vh}
+
+.theme-btn {
+  position:absolute; top:24px; right:24px; width:42px; height:42px;
+  border-radius:50%; background:var(--s2); border:1px solid var(--b);
+  color:var(--t); font-size:1.2rem; display:flex; align-items:center;
+  justify-content:center; cursor:pointer; transition:.2s; z-index:100;
+}
+.theme-btn:hover { background:var(--s3); transform:scale(1.05); }
+@media(max-width:600px){.theme-btn{top:16px;right:16px;width:38px;height:38px;font-size:1.1rem}}
+
+/* NAV STEPS */
+.nav{display:flex;align-items:center;justify-content:center;gap:0;padding:28px 24px 0;max-width:1000px;margin:0 auto}
+.ns{display:flex;align-items:center;gap:8px;flex:1;cursor:pointer}
+.ns:not(:last-child)::after{content:'';flex:1;height:1px;background:var(--b2);margin:0 4px}
+.nb{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;flex-shrink:0;background:var(--s2);color:var(--t3);border:2px solid var(--b);transition:.2s}
+.nl{font-size:.75rem;font-weight:600;color:var(--t3);transition:.2s}
+.ns.act .nb{background:var(--ac);color:#fff;border-color:var(--ac);box-shadow:0 0 12px rgba(79,142,247,.4)}
+.ns.act .nl{color:var(--t)}
+.ns.done .nb{background:var(--gr);border-color:var(--gr);color:#fff}
+.ns.done .nl{color:var(--gr)}
+
+.body{max-width:1000px;margin:0 auto;padding:24px 20px 60px}
+.grid-layout{display:grid;grid-template-columns:1.2fr 1fr;gap:24px;align-items:start}
+@media(max-width:768px){.grid-layout{grid-template-columns:1fr}}
+
+.step{display:none}.step.act{display:block;animation:fi .25s ease}
+@keyframes fi{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.sh{margin-bottom:20px}
+.sh h2{font-size:1.4rem;font-weight:800;letter-spacing:-.5px;margin-bottom:5px}
+.sh p{font-size:.85rem;color:var(--t2);line-height:1.6}
+
+.card{background:var(--s);border:1px solid var(--b);border-radius:12px;padding:18px;margin-bottom:14px}
+.card-title{font-size:.72rem;text-transform:uppercase;letter-spacing:1px;color:var(--t3);font-weight:700;margin-bottom:13px}
+
+.fg{margin-bottom:13px}
+.fg label{display:block;font-size:.75rem;font-weight:600;color:var(--t2);margin-bottom:6px;letter-spacing:.3px}
+.iw{position:relative}
+input,select,textarea{width:100%;background:var(--s2);border:1px solid var(--b2);border-radius:8px;padding:9px 12px;color:var(--t);font-family:inherit;font-size:.85rem;outline:none;transition:.15s}
+input:focus,select:focus,textarea:focus{border-color:var(--ac)}
+select option{background:var(--s)}
+input[type=range]{background:transparent;border:none;padding:0;height:18px;accent-color:var(--ac);cursor:pointer}
+input[type=checkbox]{width:auto;accent-color:var(--ac);cursor:pointer}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:9px 18px;border-radius:8px;font-family:inherit;font-size:.85rem;font-weight:600;border:none;cursor:pointer;transition:.15s}
+.btn:disabled{opacity:.35;cursor:not-allowed}
+.btn-p{background:var(--ac);color:#fff}.btn-p:hover:not(:disabled){background:#3a6fd8}
+.btn-g{background:linear-gradient(135deg,#065f46,#2ecc85);color:#fff}
+.btn-g:hover:not(:disabled){filter:brightness(1.1)}
+.btn-a{background:linear-gradient(135deg,#92400e,#f5a623);color:#fff}
+.btn-pu{background:linear-gradient(135deg,#6b21a8,#a855f7);color:#fff}
+.btn-pu:hover:not(:disabled){filter:brightness(1.1)}
+.btn-gh{background:transparent;border:1px solid var(--b2);color:var(--t)}
+.btn-gh:hover:not(:disabled){background:rgba(255,255,255,.06)}
+.btn-sm{padding:6px 13px;font-size:.78rem}
+.btn-full{width:100%}
+
+.pbar{height:5px;background:var(--s3);border-radius:3px;overflow:hidden;margin:8px 0}
+.pfill{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--ac),var(--pu));transition:width .35s ease;width:0%}
+
+.cl{display:flex;flex-direction:column;gap:5px;max-height:320px;overflow-y:auto;margin-top:10px}
+.cl::-webkit-scrollbar{width:4px}.cl::-webkit-scrollbar-thumb{background:var(--b2);border-radius:2px}
+.ci{display:flex;flex-direction:column;align-items:stretch;background:var(--s2);border:1px solid var(--b);border-radius:8px;padding:8px 12px;transition:.15s}
+.ci-row{display:flex;align-items:center;gap:9px;width:100%}
+.ci-details{display:none;flex-direction:column;gap:8px;margin-top:8px;padding-top:8px;border-top:1px dashed var(--b2)}
+.ci.open .ci-details{display:flex}
+.ci-edit-btn{background:none;border:none;cursor:pointer;font-size:14px;padding:2px;flex-shrink:0;opacity:.7;transition:.2s}
+.ci-edit-btn:hover{opacity:1;transform:scale(1.1)}
+.cinp{width:100%;background:var(--s);border:1px solid var(--b2);border-radius:6px;padding:6px 10px;color:var(--t);font-family:inherit;font-size:.75rem;outline:none;transition:.15s}
+.cinp:focus{border-color:var(--ac)}
+.ci.rdy{border-left:3px solid var(--gr)}
+.ci.err{border-left:3px solid var(--re)}
+.ci.proc{border-left:3px solid var(--am)}
+.ci-id{font-size:.65rem;color:var(--t3);font-family:monospace;min-width:56px}
+.ci-tx{font-size:.78rem;color:var(--t2);flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ci-st{font-size:.68rem;min-width:60px;text-align:right}
+.ci-st.ok{color:var(--gr)}.ci-st.er{color:var(--re)}.ci-st.pr{color:var(--am)}.ci-st.wt{color:var(--t3)}
+.ci-play{background:none;border:none;cursor:pointer;color:var(--am);font-size:14px;padding:2px;flex-shrink:0}
+.ci-play:hover{color:#fff}
+[data-theme="light"] .ci-play:hover{color:var(--t)}
+.ci-play.on{color:var(--ac)}   /* V0_3 — çalan parça */
+.pbadge{font-size:.6rem;font-weight:700;background:rgba(155,108,247,.16);color:#c084fc;border-radius:100px;padding:2px 7px;flex-shrink:0}
+
+.alert{padding:10px 13px;border-radius:8px;font-size:.8rem;line-height:1.55;margin:8px 0;display:none}
+.alert.show{display:block}
+.ae{background:rgba(224,85,85,.1);border:1px solid rgba(224,85,85,.25);color:#fca5a5}
+.ao{background:rgba(46,204,133,.1);border:1px solid rgba(46,204,133,.25);color:#6ee7b7}
+.ai{background:rgba(79,142,247,.1);border:1px solid rgba(79,142,247,.25);color:#93c5fd}
+.aw{background:rgba(245,166,35,.1);border:1px solid rgba(245,166,35,.28);color:#fcd34d}
+
+.ch-tree{margin-top:10px}
+.ch-item{background:var(--s2);border:1px solid var(--b);border-radius:8px;margin-bottom:6px;overflow:hidden}
+.ch-hdr{display:flex;align-items:center;gap:9px;padding:10px 13px;cursor:pointer}
+.ch-hdr:hover{background:rgba(46,204,133,.05)}
+.ch-n{width:22px;height:22px;border-radius:5px;background:rgba(46,204,133,.15);color:#34d399;display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:700;flex-shrink:0}
+.ch-ttl{font-size:.82rem;font-weight:600;flex:1}
+.ch-cnt{font-size:.65rem;background:rgba(46,204,133,.1);color:#6ee7b7;border-radius:100px;padding:2px 8px}
+.ch-arr{color:var(--t3);font-size:.75rem;transition:.15s}
+.ch-item.open .ch-arr{transform:rotate(90deg)}
+.ch-chunks{display:none;padding:0 13px 9px}
+.ch-item.open .ch-chunks{display:block}
+.chunk-li{font-size:.72rem;color:var(--t2);padding:3px 8px;border-left:2px solid rgba(46,204,133,.2);margin-top:4px;line-height:1.5;display:flex;align-items:center;gap:7px}
+.chunk-li .cli-t{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.chunk-li .cli-c{font-size:.62rem;color:var(--t3);font-family:monospace;flex-shrink:0}
+
+.snav{display:flex;justify-content:space-between;align-items:center;margin-top:22px;padding-top:16px;border-top:1px solid var(--b)}
+
+.vg{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:12px}
+.vc{padding:8px 9px;border-radius:8px;border:1px solid var(--b);cursor:pointer;transition:.15s;text-align:center}
+.vc:hover{border-color:var(--b2)}.vc.on{border-color:var(--ac);background:rgba(79,142,247,.08)}
+.vc .vn{font-size:.78rem;font-weight:600}.vc .vs{font-size:.65rem;color:var(--t3);margin-top:2px}
+
+.sg{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-bottom:18px}
+.sc{background:var(--s);border:1px solid var(--b);border-radius:9px;padding:14px 10px;text-align:center}
+.sc .sn{font-size:1.7rem;font-weight:900;letter-spacing:-1.5px;line-height:1}
+.sc:nth-child(1) .sn{color:#60a5fa}.sc:nth-child(2) .sn{color:#34d399}
+.sc:nth-child(3) .sn{color:#fbbf24}.sc:nth-child(4) .sn{color:#c084fc}
+.sc .sl{font-size:.68rem;color:var(--t3);margin-top:3px}
+
+.zt{font-family:monospace;font-size:.74rem;color:var(--t2);line-height:2;margin:10px 0}
+.ztg{color:#6ee7b7}.ztb{color:#93c5fd}.zta{color:#fcd34d}.ztp{color:#c084fc}
+
+.mini{font-size:.72rem;color:var(--t3);line-height:1.5}
+
+/* V2 — üretim süresi & kullanım göstergesi */
+.sh-row{display:flex;align-items:center;gap:8px 12px;flex-wrap:wrap}
+.run-stats{display:inline-flex;align-items:center;gap:6px;flex-wrap:wrap}
+.run-stats[hidden]{display:none}
+.rs-pill{display:inline-flex;align-items:center;gap:5px;font-size:.72rem;font-weight:600;padding:3px 10px;border-radius:100px;background:var(--s2);border:1px solid var(--b2);color:var(--t2);white-space:nowrap;font-variant-numeric:tabular-nums}
+.rs-pill.live{border-color:rgba(245,166,35,.45);color:var(--am)}
+.rs-pill.live::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--am);animation:rsblink 1s infinite}
+.rs-pill.done{border-color:rgba(46,204,133,.4);color:var(--gr)}
+.rs-pill.cost{border-color:rgba(155,108,247,.4);color:#c084fc}
+.rs-pill .rs-sub{font-weight:400;color:var(--t3)}
+@keyframes rsblink{50%{opacity:.25}}
+
+/* V2_5 — okunuş denetimi listesi */
+.ps-sum{font-size:.78rem;color:var(--t2);margin-bottom:8px}
+.ps-list{max-height:260px;overflow:auto;display:flex;flex-direction:column;gap:4px}
+.ps-row{display:flex;align-items:center;gap:9px;flex-wrap:wrap;background:var(--s2);border:1px solid var(--b);border-left:3px solid var(--b2);border-radius:7px;padding:6px 10px}
+.ps-row.warn{border-left-color:var(--am)}
+.ps-row.auto{border-left-color:var(--ac)}
+.ps-row.ok{border-left-color:var(--gr)}
+.ps-tok{font-family:monospace;font-size:.78rem;font-weight:700;color:var(--t);min-width:78px}
+.ps-n{font-size:.66rem;color:var(--t3);font-variant-numeric:tabular-nums}
+.ps-how{font-size:.74rem;color:var(--t2);flex:1;min-width:150px}
+.ps-how b{color:var(--t);font-weight:600}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:600px){.row2{grid-template-columns:1fr}.sg{grid-template-columns:repeat(2,1fr)}.vg{grid-template-columns:repeat(2,1fr)}}
+
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-thumb{background:var(--b2);border-radius:3px}
+
+/* V0_2 — oynatıcı önizlemesi */
+#pv-overlay{position:fixed;inset:0;z-index:1000;background:rgba(4,6,12,.72);display:flex;align-items:center;justify-content:center;padding:18px}
+.pv-box{width:min(1180px,100%);height:min(820px,100%);background:var(--s);border:1px solid var(--b2);border-radius:14px;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 24px 80px rgba(0,0,0,.5)}
+.pv-bar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:10px 14px;border-bottom:1px solid var(--b)}
+.pv-bar strong{font-size:.85rem}
+.pv-note{flex:1;min-width:220px;font-size:.74rem;color:var(--t2);line-height:1.45}
+.pv-dev{display:flex;gap:4px}
+.pv-dev .btn.on{border-color:var(--ac);color:var(--ac)}
+.pv-stage{flex:1;min-height:0;display:flex;justify-content:center;align-items:stretch;background:var(--s2)}
+.pv-stage iframe{border:0;width:100%;height:100%;background:var(--bg)}
+.pv-stage.mobile{align-items:center;padding:12px}
+.pv-stage.mobile iframe{width:390px;max-width:100%;max-height:780px;border-radius:18px;border:1px solid var(--b2)}
+</style>
+</head>
+<body>
+
+<button class="theme-btn" id="theme-btn" onclick="toggleTheme()" title="Tema Değiştir">🌙</button>
+
+<nav class="nav">
+  <div class="ns act" id="n1" onclick="tryGo(1)">
+    <div class="nb" id="nb1">1</div>
+    <span class="nl">İçerik Yükle</span>
+  </div>
+  <div class="ns" id="n2" onclick="tryGo(2)">
+    <div class="nb" id="nb2">2</div>
+    <span class="nl">Yapılandır</span>
+  </div>
+  <div class="ns" id="n3" onclick="tryGo(3)">
+    <div class="nb" id="nb3">3</div>
+    <span class="nl">Seslendir</span>
+  </div>
+  <div class="ns" id="n4" onclick="tryGo(4)">
+    <div class="nb" id="nb4">4</div>
+    <span class="nl">İndir</span>
+  </div>
+</nav>
+
+<div class="body">
+
+<!-- ═══ ADIM 1 ═══ -->
+<div class="step act" id="step1">
+  <div class="sh">
+    <h2>📄 İçerik Ekle</h2>
+    <p>Ders metninizi yapıştırın veya belge olarak yükleyin.</p>
+  </div>
+
+  <div class="grid-layout">
+    <div class="card" style="margin:0">
+      <div class="card-title">Ders Metni</div>
+      <div class="fg">
+        <label>Ders / Kurs Adı</label>
+        <input type="text" id="inp-title" placeholder="örn: Pazarlama İlkeleri" value="">
+      </div>
+      <div class="fg">
+        <label>Metni buraya yapıştırın</label>
+        <textarea id="inp-text" style="height:220px;resize:vertical;font-size:.82rem;line-height:1.65"
+          placeholder="Ders notlarınızı, PDF içeriğinizi veya herhangi bir eğitim metnini buraya yapıştırın...
+
+Markdown başlıkları da çalışır:
+# Ana Başlık
+## Alt Başlık
+Normal metin paragrafı..."></textarea>
+      </div>
+      <div id="txt-info" style="font-size:.75rem;color:var(--t3);margin-top:4px"></div>
+    </div>
+
+    <div class="card" style="margin:0">
+      <div class="card-title">Dosyadan Yükle (PDF · DOCX · TXT)</div>
+      <div id="dropzone" style="
+        border:2px dashed rgba(79,142,247,.3);border-radius:10px;
+        padding:28px 16px;text-align:center;cursor:pointer;transition:.2s;
+        position:relative;background:rgba(79,142,247,.02);"
+        onclick="document.getElementById('file-inp').click()"
+        ondragover="event.preventDefault();this.style.borderColor='#4f8ef7';this.style.background='rgba(79,142,247,.07)'"
+        ondragleave="this.style.borderColor='rgba(79,142,247,.3)';this.style.background='rgba(79,142,247,.02)'"
+        ondrop="handleDrop(event)">
+        <input type="file" id="file-inp" accept=".pdf,.docx,.doc,.txt,.md"
+          style="display:none" onchange="handleFileInput(event)">
+        <div style="font-size:2rem;margin-bottom:8px" id="dz-ico">📄</div>
+        <div style="font-size:.85rem;font-weight:600;margin-bottom:4px" id="dz-ttl">Dosyayı sürükleyin veya tıklayın</div>
+        <div style="font-size:.75rem;color:var(--t2)">PDF, DOCX, TXT, MD</div>
+      </div>
+      <div id="file-info" style="display:none;margin-top:10px;font-size:.78rem;color:var(--gr);padding:8px 12px;background:rgba(46,204,133,.07);border:1px solid rgba(46,204,133,.2);border-radius:8px"></div>
+
+      <div style="margin-top:12px;padding-top:12px;border-top:1px dashed var(--b2)">
+        <label style="display:block;font-size:.75rem;font-weight:600;color:var(--t2);margin-bottom:6px">📂 Kayıtlı Proje Aç</label>
+        <input type="file" id="proj-inp" accept=".zip" style="display:none" onchange="handleProjectInput(event)">
+        <button class="btn btn-sm btn-gh btn-full" onclick="document.getElementById('proj-inp').click()">📂 Proje dosyası seç (…_PROJE.zip)</button>
+        <div class="mini" style="margin-top:6px">Daha önce kaydettiğiniz proje dosyasını açar: metin, yapı, ayarlar ve <strong>üretilmiş ses parçaları</strong> geri gelir. Değişen parçayı yeniden seslendirip paketi tekrar alırsınız — diğer parçalar için kredi harcanmaz.</div>
+        <div id="proj-load-log" class="mini" style="margin-top:6px"></div>
+      </div>
+      <div class="alert ae" id="file-err" style="margin-top:8px"></div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:0">
+    <div class="card-title" style="display:flex;align-items:center;justify-content:space-between;cursor:pointer" onclick="toggleApiPanel()">
+      <span>🔑 API Anahtarları</span>
+      <span id="api-panel-arr" style="color:var(--t3);transition:.15s">›</span>
+    </div>
+    <div id="api-panel-summary" style="font-size:.75rem;color:var(--t3)"></div>
+    <div id="api-panel-body" style="display:none;margin-top:12px">
+      <div class="ai alert show" style="font-size:.76rem;margin-bottom:12px">
+        Anahtarlar yalnızca bu tarayıcıda (localStorage) saklanır, hiçbir sunucuya gönderilmez. Bu dosyayı başkasıyla paylaşmadan önce anahtarlarınızı temizleyin.
+      </div>
+      <div class="fg" style="margin-bottom:0">
+        <label>ElevenLabs API Key <span style="font-weight:400;color:var(--t3)">(seslendirme için gerekli)</span></label>
+        <input type="password" id="inp-eleven-key" placeholder="sk_..." autocomplete="off" oninput="saveApiKeys()">
+        <div style="font-size:.72rem;color:var(--t3);margin-top:4px">Nasıl alınır: <a href="https://elevenlabs.io/app/settings/api-keys" target="_blank" rel="noopener" style="color:var(--ac)">elevenlabs.io/app/settings/api-keys</a> → "Create API key"</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="alert ae" id="a1"></div>
+
+  <div class="snav">
+    <div></div>
+    <button class="btn btn-p" onclick="goStep2()">Yapılandırmaya Geç →</button>
+  </div>
+</div>
+
+<!-- ═══ ADIM 2 ═══ -->
+<div class="step" id="step2">
+  <div class="sh">
+    <h2>🧠 İçeriği Yapılandır</h2>
+    <p>Metin bölümlere ve parçalara ayrılır; her parça TTS karakter tavanına göre <strong>cümle bütünlüğü bozulmadan</strong> alt seslendirme parçalarına bölünür.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-title">1 · Parçalama</div>
+    <div class="ai alert show" style="margin-bottom:12px;font-size:.78rem">
+      Her başlık (# kısım, ## ana başlık, ### alt başlık, #### 3. seviye) ayrı bir parça olarak ayrılır; #### başlıklar içindekilerde <em>italik</em> gösterilir; # başlığın altındaki giriş metni, başlığı ana başlık olan tek parça olur. Metinde başlık yoksa her paragraf ayrı parça olur. Ücretsizdir, API gerektirmez.
+    </div>
+    <button class="btn btn-g btn-full" id="btn-local-struct" onclick="runLocalStructure()">📄 Metni Parçala</button>
+  </div>
+
+  <div class="card">
+    <div class="card-title">2 · TTS Karakter Tavanı (Alt Parçalama)</div>
+    <div class="ai alert show" style="margin-bottom:12px;font-size:.78rem">
+      TTS servisleri tek istekte sınırlı karakter kabul eder (ElevenLabs <code>eleven_multilingual_v2</code> = 10.000). Tavanı aşan her parça, <strong>cümlenin ortasından asla bölünmeden</strong> alt parçalara ayrılır; önce paragraf, olmazsa cümle sınırı kullanılır. Üretilen sesler sonunda tekrar tek dosyada birleştirilir.
+    </div>
+    <div class="row2">
+      <div class="fg" style="margin-bottom:0">
+        <label>Maksimum karakter / istek</label>
+        <input type="number" id="inp-maxchars" min="500" max="40000" step="100" value="9500" oninput="onMaxCharsChange()">
+        <div class="mini" style="margin-top:5px" id="maxchars-hint">ElevenLabs tek istekte 10.000 karakter kabul eder. Güvenli tavan: 9.500.</div>
+      </div>
+      <div class="fg" style="margin-bottom:0">
+        <label>Uygula</label>
+        <button class="btn btn-gh btn-full" onclick="applyCharLimit(true)">🔁 Tavanı Yeniden Uygula</button>
+        <div class="mini" style="margin-top:5px" id="split-summary">—</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">3 · Okunuş Ayarları (yalnızca seslendirmeye uygulanır)</div>
+    <label style="display:flex;align-items:flex-start;gap:9px;cursor:pointer;font-size:.82rem;color:var(--t);margin-bottom:12px">
+      <input type="checkbox" id="chk-num" checked onchange="onTtsNormChange()" style="width:auto;flex-shrink:0;margin-top:3px">
+      <span>🔢 <strong>Sayıları Türkçe yazıya çevir</strong><br>
+        <span class="mini">1987'de → bin dokuz yüz seksen yedide · 19. yüzyıl → on dokuzuncu yüzyıl · %25 → yüzde yirmi beş · 3,5 → üç virgül beş · 1.500.000 → bir milyon beş yüz bin · 12.05.2020 → on iki mayıs iki bin yirmi</span></span>
+    </label>
+    <label style="display:flex;align-items:flex-start;gap:9px;cursor:pointer;font-size:.82rem;color:var(--t);margin-bottom:12px">
+      <input type="checkbox" id="chk-caps" checked onchange="onTtsNormChange()" style="width:auto;flex-shrink:0;margin-top:3px">
+      <span>🔠 <strong>TAMAMI BÜYÜK yazılmış başlıkları normal yazıma çevir</strong><br>
+        <span class="mini">YAZILIM MÜHENDİSLİĞİ → Yazılım mühendisliği. TTS motorları büyük harfte Türkçe I/İ ayrımını İngilizce okuyabiliyor ("YAZILIMI" → "yazilim"). Kısaltmalar (TBMM, ABD, NATO, PDF…) büyük kalır.</span></span>
+    </label>
+    <label style="display:flex;align-items:flex-start;gap:9px;cursor:pointer;font-size:.82rem;color:var(--t);margin-bottom:12px">
+      <input type="checkbox" id="chk-abbr" checked onchange="onTtsNormChange()" style="width:auto;flex-shrink:0;margin-top:3px">
+      <span>🔤 <strong>Kısaltmaları ve terimleri okunuşuyla seslendir</strong><br>
+        <span class="mini">vb. → ve benzeri · ABD → a be de · AMD → a me de · SRAM → es ram · MB → megabayt · 5 km → beş kilometre.
+        <a href="#" onclick="toggleDefaults(event)" style="color:var(--ac)">Yerleşik listeyi aç / düzenle</a></span></span>
+    </label>
+    <label style="display:flex;align-items:flex-start;gap:9px;cursor:pointer;font-size:.82rem;color:var(--t);margin-bottom:12px">
+      <input type="checkbox" id="chk-spell" checked onchange="onTtsNormChange()" style="width:auto;flex-shrink:0;margin-top:3px">
+      <span>🔡 <strong>Listede olmayan kısaltmaları Türkçe harflerle hecele</strong><br>
+        <span class="mini">Bilinmeyen her BÜYÜK kısaltma Türk alfabesindeki harf adlarıyla okunur (XYZ → iks ye ze). Böylece motor İngilizce harf adlarına kaymaz. Kelime gibi okunanlar (NATO, NASA, TÜBİTAK…) hariç tutulur.</span></span>
+    </label>
+    <div id="defaults-box" style="display:none;margin-bottom:12px">
+      <div class="mini" style="margin-bottom:6px">Yerleşik okunuşlar — aynı anahtarı kendi sözlüğünüze yazarsanız sizinki geçerli olur.</div>
+      <textarea id="inp-defaults" style="height:210px;font-family:monospace;font-size:.75rem;line-height:1.6" spellcheck="false" oninput="onDefaultsChange()"></textarea>
+      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:6px">
+        <button class="btn btn-sm btn-gh" onclick="resetDefaults()">↺ Fabrika ayarlarına dön</button>
+        <button class="btn btn-sm btn-gh" onclick="mergeDefaults()">⊕ Yeni fabrika satırlarını ekle</button>
+        <span class="mini" id="defaults-info" style="flex:1;min-width:200px"></span>
+      </div>
+    </div>
+
+    <div class="row2">
+      <div class="fg" style="margin-bottom:0">
+        <label>📖 Okunuş sözlüğü <span style="font-weight:400;color:var(--t3)">(her satır: yazılış = okunuş)</span></label>
+        <textarea id="inp-lexicon" style="height:118px;font-family:monospace;font-size:.78rem;line-height:1.5" spellcheck="false" oninput="onTtsNormChange()"
+          placeholder="TBMM = Türkiye Büyük Millet Meclisi&#10;AB = Avrupa Birliği&#10;vb. = ve benzeri&#10;# ile başlayan satır yok sayılır"></textarea>
+        <div class="mini" style="margin-top:5px">Tam kelime eşleşir. Küçük harfle yazılan anahtar büyük/küçük harf ayırmaz. Hâlâ yanlış okunan bir kelimeyi burada farklı yazarak düzeltebilirsiniz.</div>
+      </div>
+      <div class="fg" style="margin-bottom:0">
+        <label>🧪 Dene</label>
+        <input type="text" id="inp-norm-test" value="ABD merkezli AMD, 1987'de SRAM vb. ürünleri 25 MB kapasiteyle üretti." oninput="updateNormPreview()">
+        <div class="mini" style="margin-top:8px">Seslendirilecek hâli:</div>
+        <div id="norm-out" style="margin-top:4px;padding:9px 11px;border-radius:8px;background:var(--s2);border:1px dashed var(--b2);font-size:.82rem;line-height:1.55;color:var(--t)">—</div>
+      </div>
+    </div>
+
+    <div style="margin-top:14px;padding-top:12px;border-top:1px dashed var(--b2)">
+      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+        <button class="btn btn-sm btn-gh" onclick="runPronScan()">🔍 Okunuş denetimi — metni tara</button>
+        <span class="mini" style="flex:1;min-width:220px">Metindeki kısaltmaları, sembolleri ve bağlantıları tarar; her biri için nasıl okunacağını gösterir. Yanlış olanı tek tıkla sözlüğe ekleyip düzeltirsiniz.</span>
+      </div>
+      <div id="pron-scan" style="margin-top:10px"></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">4 · Duraklamalar</div>
+    <div class="ai alert show" style="margin-bottom:12px;font-size:.78rem">
+      Konudan konuya geçişin yavaşlaması için metne duraklama eklenir. ElevenLabs'te bu, <code>&lt;break time="0.7s" /&gt;</code> etiketiyle yapılır (üst sınır 3 sn). <strong>Parça ve bölüm arası</strong> sessizlikler 3. adımdaki birleştirme bölümünden ayarlanır.
+    </div>
+    <div class="row2">
+      <div class="fg" style="margin-bottom:0">
+        <label>Başlıktan sonra (sn)</label>
+        <input type="number" id="inp-pause-title" min="0" max="3" step="0.1" value="1.0" oninput="onPauseChange()">
+        <div class="mini" style="margin-top:5px">0 yazarsanız eklenmez.</div>
+      </div>
+      <div class="fg" style="margin-bottom:0">
+        <label>Paragraflar arasında (sn)</label>
+        <input type="number" id="inp-pause-para" min="0" max="3" step="0.1" value="0.7" oninput="onPauseChange()">
+        <div class="mini" style="margin-top:5px">Çok sayıda etiket ElevenLabs'te kararlılığı bozabilir; 0,5–1,0 sn arası önerilir.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="alert ae" id="a2e"></div>
+  <div class="alert ao" id="a2o"></div>
+  <div class="alert aw" id="a2w"></div>
+
+  <div class="snav" id="edit-nav" style="display:none; justify-content:flex-end; gap:8px; margin-top:0; padding-top:0; border-top:none; margin-bottom:10px;">
+    <button class="btn btn-sm btn-gh" onclick="openPlayerPreview()" title="Öğrencinin göreceği oynatıcıyı paketi indirmeden gösterir">👁 Oynatıcıyı Önizle</button>
+    <button class="btn btn-sm btn-gh" onclick="toggleJsonEditor()">✏️ JSON'u Düzenle</button>
+  </div>
+
+  <div id="json-editor-box" style="display:none; margin-bottom:15px;" class="card">
+    <div class="card-title">JSON Editörü (Manuel Düzeltme)</div>
+    <div class="fg">
+      <textarea id="inp-json" style="height:350px;font-family:monospace;font-size:.78rem;line-height:1.4" spellcheck="false"></textarea>
+    </div>
+    <div style="display:flex;gap:8px;justify-content:flex-end">
+      <button class="btn btn-sm btn-gh" onclick="toggleJsonEditor()">İptal</button>
+      <button class="btn btn-sm btn-p" onclick="saveJson()">💾 Kaydet ve Güncelle</button>
+    </div>
+    <div class="alert ae" id="json-err" style="margin-top:10px"></div>
+  </div>
+
+  <div class="ch-tree" id="ch-tree"></div>
+
+  <div class="snav">
+    <button class="btn btn-gh" onclick="go(1)">← Geri</button>
+    <button class="btn btn-p" id="btn-to3" disabled onclick="go(3)">Seslendirmeye Geç →</button>
+  </div>
+</div>
+
+<!-- ═══ ADIM 3 ═══ -->
+<div class="step" id="step3">
+  <div class="sh">
+    <h2>🎙️ Seslendirme</h2>
+    <div class="sh-row">
+      <p>Her alt parça sırayla üretilir, ardından hepsi <strong>tek bir ses dosyasında</strong> birleştirilir.</p>
+      <div class="run-stats" id="run-stats" hidden></div>
+    </div>
+  </div>
+
+  <div class="grid-layout">
+    <div class="card" style="margin:0">
+      <div class="card-title">TTS Ayarları</div>
+
+
+      <div class="fg">
+        <label>Ses Karakteri</label>
+        <div class="fg" id="eleven-filter-row" style="display:none;margin-bottom:8px">
+          <label style="display:flex;align-items:center;gap:8px;cursor:pointer;font-weight:400;color:var(--t2);font-size:.8rem;margin-bottom:0">
+            <input type="checkbox" id="chk-eleven-tr" checked onchange="fetchElevenVoices()" style="width:auto;flex-shrink:0">
+            🇹🇷 Sadece Türkçe uyumlu sesleri göster
+          </label>
+        </div>
+        <div class="vg" id="voice-grid"></div>
+        <button class="btn btn-sm btn-gh btn-full" id="btn-fetch-voices" style="display:none" onclick="fetchElevenVoices()">🔄 ElevenLabs Seslerini Getir</button>
+      </div>
+
+      <div class="fg" id="eleven-voice-settings" style="display:none">
+        <label>ElevenLabs Ses Ayarları</label>
+        <div style="display:flex;flex-direction:column;gap:10px;background:var(--s2);border:1px solid var(--b2);border-radius:8px;padding:12px">
+          <div>
+            <div style="display:flex;justify-content:space-between;font-size:.72rem;color:var(--t2);margin-bottom:4px">
+              <span>⚡ Hız (Speed)</span><span id="ev-speed-val">1.00</span>
+            </div>
+            <input type="range" id="ev-speed" min="0.7" max="1.2" step="0.01" value="1.0" oninput="updateElevenSettings()">
+          </div>
+          <div>
+            <div style="display:flex;justify-content:space-between;font-size:.72rem;color:var(--t2);margin-bottom:4px">
+              <span>🎯 Kararlılık (Stability)</span><span id="ev-stability-val">0.50</span>
+            </div>
+            <input type="range" id="ev-stability" min="0" max="1" step="0.01" value="0.5" oninput="updateElevenSettings()">
+          </div>
+          <div>
+            <div style="display:flex;justify-content:space-between;font-size:.72rem;color:var(--t2);margin-bottom:4px">
+              <span>🪞 Benzerlik (Similarity)</span><span id="ev-similarity-val">0.75</span>
+            </div>
+            <input type="range" id="ev-similarity" min="0" max="1" step="0.01" value="0.75" oninput="updateElevenSettings()">
+          </div>
+          <div>
+            <div style="display:flex;justify-content:space-between;font-size:.72rem;color:var(--t2);margin-bottom:4px">
+              <span>🎭 Stil Abartısı (Style)</span><span id="ev-style-val">0.00</span>
+            </div>
+            <input type="range" id="ev-style" min="0" max="1" step="0.01" value="0" oninput="updateElevenSettings()">
+          </div>
+          <label style="display:flex;align-items:center;gap:8px;font-size:.75rem;color:var(--t2);cursor:pointer;font-weight:400">
+            <input type="checkbox" id="ev-speaker-boost" checked onchange="updateElevenSettings()" style="width:auto;flex-shrink:0">
+            🔊 Hoparlör Güçlendirme (Speaker Boost)
+          </label>
+          <label style="display:flex;align-items:center;gap:8px;font-size:.75rem;color:var(--t2);cursor:pointer;font-weight:400">
+            <input type="checkbox" id="ev-stitch" checked onchange="updateElevenSettings()" style="width:auto;flex-shrink:0">
+            🧵 Dikişsiz geçiş (request stitching + bağlam metni)
+          </label>
+        </div>
+      </div>
+
+      <div class="ai alert show" id="tts-info" style="margin-bottom:12px">
+        <span id="tts-info-txt"></span>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+        <div class="pbar" style="flex:1;margin:0"><div class="pfill" id="tts-bar"></div></div>
+        <span style="font-size:.75rem;color:var(--t2);min-width:64px;text-align:right" id="tts-cnt">0 / 0</span>
+      </div>
+      <div style="font-size:.75rem;color:var(--t2);margin-bottom:12px;min-height:16px" id="tts-msg"></div>
+
+      <div style="display:flex;gap:8px">
+        <button class="btn btn-p btn-full" id="btn-tts-all" onclick="runTTSAll()">🎙️ Tüm Parçaları Seslendir</button>
+        <button class="btn btn-pu btn-sm" id="btn-tts-retry" style="display:none" onclick="runTTSAll(true)">🔄 Hataları Dene</button>
+        <button class="btn btn-gh btn-sm" id="btn-save-proj" onclick="saveProject()" title="Ses parçalarıyla birlikte proje dosyası indir">💾 Projeyi Kaydet</button>
+      </div>
+      <div style="margin-top:8px">
+        <button class="btn btn-gh btn-sm btn-full" id="btn-clear-manual" onclick="clearAllManual()" title="Tüm parçalardaki 'elle' kilidini kaldırır, seslendirme metnini ayarlardan yeniden üretir">↺ Tüm "elle" işaretlerini kaldır</button>
+      </div>
+    </div>
+
+    <div>
+      <div class="alert ae" id="a3e"></div>
+      <div class="alert ao" id="a3o"></div>
+      <div class="cl" id="chunk-list" style="margin-top:0;max-height:520px"></div>
+    </div>
+  </div>
+
+  <!-- BİRLEŞTİRME -->
+  <div class="card" style="margin-top:16px">
+    <div class="card-title">🔗 Tek Dosyada Birleştirme</div>
+    <div class="ai alert show" style="font-size:.78rem;margin-bottom:12px">
+      Tüm sesler sırayla çözülüp <strong>tek bir ses dosyasına</strong> yazılır. Her parçanın başlangıç saniyesi <code>index.json</code>'a kaydedilir; oynatıcıda içindekiler listesine tıklayınca o saniyeye atlanır.
+    </div>
+    <div class="row2">
+      <div class="fg">
+        <label>Başlangıç boşluğu (ms)</label>
+        <input type="number" id="inp-pad-start" min="0" max="5000" step="50" value="400">
+        <div class="mini" style="margin-top:5px">Dersin en başındaki sessizlik. Ani başlamayı yumuşatır.</div>
+      </div>
+      <div class="fg">
+        <label>Bitiş payı (ms)</label>
+        <input type="number" id="inp-pad-end" min="0" max="5000" step="50" value="600">
+        <div class="mini" style="margin-top:5px">Son cümleden sonra bırakılan sessizlik.</div>
+      </div>
+    </div>
+    <div class="row2">
+      <div class="fg">
+        <label>Parça arası sessizlik (ms)</label>
+        <input type="number" id="inp-gap-chunk" min="0" max="5000" step="50" value="900">
+      </div>
+      <div class="fg">
+        <label>Bölüm arası sessizlik (ms)</label>
+        <input type="number" id="inp-gap-chapter" min="0" max="8000" step="50" value="1600">
+      </div>
+    </div>
+    <div class="row2">
+      <div class="fg">
+        <label>🔊 Ses seviyesi</label>
+        <select id="inp-gain-mode" onchange="onGainModeChange()">
+          <option value="auto" selected>Otomatik seviyele — her parça eşitlenir (önerilen)</option>
+          <option value="fixed">Sabit yükseltme</option>
+          <option value="off">Dokunma</option>
+        </select>
+        <div class="mini" style="margin-top:5px">Otomatik: her parçanın ortalama seviyesi ayrı ölçülüp aynı hedefe çekilir, böylece başlıklar arası ses farkı kalmaz. Tepe -1 dBFS'i aşmaz, sınırlayıcı devrededir.</div>
+      </div>
+      <div class="fg">
+        <label id="lbl-gain">Hedef ortalama seviye (dBFS)</label>
+        <input type="number" id="inp-gain" min="-30" max="18" step="0.5" value="-10">
+        <div class="mini" style="margin-top:5px" id="gain-hint">Varsayılan -10 dBFS: gür bir çıkış. Tepe -1 dBFS'i aşmadığı için bazı parçalar bu hedefe tam ulaşmayabilir.</div>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+      <div class="pbar" style="flex:1;margin:0"><div class="pfill" id="mrg-bar"></div></div>
+      <span style="font-size:.75rem;color:var(--t2);min-width:64px;text-align:right" id="mrg-cnt">0 / 0</span>
+    </div>
+    <div style="font-size:.75rem;color:var(--t2);margin-bottom:12px;min-height:16px" id="mrg-msg"></div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <button class="btn btn-g" id="btn-merge" style="flex:1;min-width:200px" onclick="mergeAllAudio()">🔗 Sesleri Birleştir</button>
+      <button class="btn btn-gh" style="flex:1;min-width:200px" onclick="openPlayerPreview()" title="Öğrencinin göreceği oynatıcıyı paketi indirmeden gösterir">👁 Oynatıcıyı Önizle</button>
+    </div>
+    <div class="alert ae" id="a3me"></div>
+    <div class="alert ao" id="a3mo"></div>
+    <audio id="merged-audio" controls style="width:100%;margin-top:12px;display:none"></audio>
+  </div>
+
+  <div class="snav">
+    <button class="btn btn-gh" onclick="go(2)">← Geri</button>
+    <button class="btn btn-p" onclick="go(4)">Paketi Oluştur →</button>
+  </div>
+</div>
+
+<!-- ═══ ADIM 4 ═══ -->
+<div class="step" id="step4">
+  <div class="sh">
+    <h2>📦 Paketi İndir</h2>
+    <p>SCORM 2004 v2 Paketi: <code style="color:#fbbf24">imsmanifest.xml</code> + <code style="color:#93c5fd">index.json</code> + <code style="color:#fcd34d">index.html</code> + <code style="color:#c084fc">audio/</code></p>
+  </div>
+
+  <div class="sg">
+    <div class="sc"><div class="sn" id="s4-ch">0</div><div class="sl">Bölüm</div></div>
+    <div class="sc"><div class="sn" id="s4-cu">0</div><div class="sl">Parça</div></div>
+    <div class="sc"><div class="sn" id="s4-wd">0</div><div class="sl">Kelime</div></div>
+    <div class="sc"><div class="sn" id="s4-du">—</div><div class="sl">Toplam Süre</div></div>
+  </div>
+
+  <div class="alert aw" id="a4w"></div>
+
+  <div class="card">
+    <div class="card-title">Paket İçeriği</div>
+    <div class="zt">
+      <span class="ztg">sesli-ders-scorm/</span><br>
+      ├── <span style="color:#fbbf24">imsmanifest.xml</span> — SCORM 2004 manifest<br>
+      ├── <span class="ztb">index.json</span> — yapı, metadata ve zaman çizelgesi<br>
+      ├── <span class="zta">index.html</span> — tek dosya sesli oynatıcı<br>
+      └── <span class="ztp">audio/</span> — <span id="s4-audio-info">birleşik ses dosyası</span>
+    </div>
+    <button class="btn btn-gh btn-full" style="margin-bottom:8px" onclick="openPlayerPreview()">👁 Oynatıcıyı Önizle</button>
+    <button class="btn btn-pu btn-full" style="font-size:.95rem;padding:13px" onclick="downloadZip()">
+      ⬇️ SCORM Paketini İndir
+    </button>
+    <label style="display:flex;align-items:flex-start;gap:8px;cursor:pointer;font-size:.8rem;color:var(--t2);margin-top:10px">
+      <input type="checkbox" id="chk-save-proj" checked style="width:auto;flex-shrink:0;margin-top:3px">
+      <span>SCORM paketiyle birlikte <strong>proje dosyasını da indir</strong> (<code>…_PROJE.zip</code>) — ses parçaları ve tüm ayarlar içinde. Sonradan tek bir parçayı düzeltmek için bu dosyayı açmanız yeter.</span>
+    </label>
+    <button class="btn btn-gh btn-full" style="margin-top:8px" onclick="saveProject()">💾 Yalnızca Proje Dosyasını İndir</button>
+  </div>
+
+  <div class="alert ae" id="a4e"></div>
+  <div class="alert ao" id="a4o"></div>
+
+  <div class="snav">
+    <button class="btn btn-gh" onclick="go(3)">← Geri</button>
+    <button class="btn btn-gh" onclick="newProject()">🔄 Yeni Proje</button>
+  </div>
+</div>
+
+</div><!-- .body -->
+
+<script>
+// ═══════════════════════════════
+// TEMA
+// ═══════════════════════════════
+function initTheme() {
+  const saved = localStorage.getItem('sd-theme');
+  const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+  if (saved === 'light' || (!saved && prefersLight)) {
+    document.documentElement.setAttribute('data-theme', 'light');
+    document.getElementById('theme-btn').textContent = '☀️';
+  }
+}
+function toggleTheme() {
+  const el = document.documentElement;
+  if (el.getAttribute('data-theme') === 'light') {
+    el.removeAttribute('data-theme');
+    localStorage.setItem('sd-theme', 'dark');
+    document.getElementById('theme-btn').textContent = '🌙';
+  } else {
+    el.setAttribute('data-theme', 'light');
+    localStorage.setItem('sd-theme', 'light');
+    document.getElementById('theme-btn').textContent = '☀️';
+  }
+}
+initTheme();
+
+// ═══════════════════════════════
+// STATE
+// ═══════════════════════════════
+// chunks[i] = { id, chapterTitle, title, text, parts:[{i,text,blob,reqId,ts}] }
+const S = {
+  elevenVoiceId: null,
+  elevenVoices: [],
+  elevenModel: 'eleven_multilingual_v2',
+  elevenSettings: { speed: 1.0, stability: 0.5, similarity_boost: 0.75, style: 0, use_speaker_boost: true, stitch: true },
+  elevenKey: '',
+  chunks: [],
+  idxJson: null,
+  curStep: 1,
+  maxCharsTouched: false,     // kullanıcı tavanı elle değiştirdiyse motora göre ezme
+  ttsNorm: { numbers: true, caps: true, abbr: true, spell: true, lexicon: '', defaults: '' },   // V2_2/3/5/6
+  pause: { title: 1.0, para: 0.7 },                      // V2_4: metin içi duraklamalar (saniye, ElevenLabs)
+  dirty: false,                                          // V4_0: kaydedilmemiş ses var mı
+  merged: null,               // { blob, ext, duration, sampleRate, codec }
+  timeline: null,             // [{id,start,end,duration}]
+};
+
+const ELEVEN_LIMIT = 9500;   // eleven_multilingual_v2 tek istekte 10.000 karakter; güvenli tavan
+
+// ═══════════════════════════════
+// API KEY
+// ═══════════════════════════════
+function loadApiKeys() {
+  S.elevenKey = localStorage.getItem('sd-eleven-key') || '';
+  try { localStorage.removeItem('sd-gemini-key'); } catch (e) {}   // V5_0: eski sürümlerden kalan anahtarı temizle
+  const eEl = document.getElementById('inp-eleven-key');
+  if (eEl) eEl.value = S.elevenKey;
+  updateApiPanelSummary();
+}
+function saveApiKeys() {
+  S.elevenKey = document.getElementById('inp-eleven-key').value.trim();
+  localStorage.setItem('sd-eleven-key', S.elevenKey);
+  updateApiPanelSummary();
+}
+function updateApiPanelSummary() {
+  const el = document.getElementById('api-panel-summary');
+  if (!el) return;
+  el.textContent = S.elevenKey ? '✓ ElevenLabs bağlı' : '✗ ElevenLabs anahtarı yok';
+}
+function toggleApiPanel() {
+  const body = document.getElementById('api-panel-body');
+  const arr = document.getElementById('api-panel-arr');
+  const open = body.style.display !== 'none';
+  body.style.display = open ? 'none' : 'block';
+  arr.style.transform = open ? 'rotate(0deg)' : 'rotate(90deg)';
+}
+
+// ═══════════════════════════════
+// ELEVENLABS AYARLARI
+// ═══════════════════════════════
+function loadElevenSettings() {
+  try {
+    const saved = JSON.parse(localStorage.getItem('sd-eleven-settings') || 'null');
+    if (saved) Object.assign(S.elevenSettings, saved);
+  } catch (_) {}
+  document.getElementById('ev-speed').value = S.elevenSettings.speed;
+  document.getElementById('ev-stability').value = S.elevenSettings.stability;
+  document.getElementById('ev-similarity').value = S.elevenSettings.similarity_boost;
+  document.getElementById('ev-style').value = S.elevenSettings.style;
+  document.getElementById('ev-speaker-boost').checked = S.elevenSettings.use_speaker_boost;
+  document.getElementById('ev-stitch').checked = S.elevenSettings.stitch !== false;
+  refreshElevenSettingsLabels();
+}
+function refreshElevenSettingsLabels() {
+  document.getElementById('ev-speed-val').textContent = Number(S.elevenSettings.speed).toFixed(2);
+  document.getElementById('ev-stability-val').textContent = Number(S.elevenSettings.stability).toFixed(2);
+  document.getElementById('ev-similarity-val').textContent = Number(S.elevenSettings.similarity_boost).toFixed(2);
+  document.getElementById('ev-style-val').textContent = Number(S.elevenSettings.style).toFixed(2);
+}
+function updateElevenSettings() {
+  S.elevenSettings.speed = parseFloat(document.getElementById('ev-speed').value);
+  S.elevenSettings.stability = parseFloat(document.getElementById('ev-stability').value);
+  S.elevenSettings.similarity_boost = parseFloat(document.getElementById('ev-similarity').value);
+  S.elevenSettings.style = parseFloat(document.getElementById('ev-style').value);
+  S.elevenSettings.use_speaker_boost = document.getElementById('ev-speaker-boost').checked;
+  S.elevenSettings.stitch = document.getElementById('ev-stitch').checked;
+  refreshElevenSettingsLabels();
+  localStorage.setItem('sd-eleven-settings', JSON.stringify(S.elevenSettings));
+}
+
+// ═══════════════════════════════
+// INIT
+// ═══════════════════════════════
+(function(){
+  document.getElementById('inp-text').addEventListener('input', updateWordCount);
+  document.getElementById('merged-audio').addEventListener('play', () => stopPreview());   // V0_3
+
+  document.getElementById('voice-grid').addEventListener('click', e => {
+    const vc = e.target.closest('.vc');
+    if (!vc) return;
+    document.querySelectorAll('#voice-grid .vc').forEach(c => c.classList.remove('on'));
+    vc.classList.add('on');
+    S.elevenVoiceId = vc.dataset.v;
+    invalidateMerge('Ses karakteri değişti');
+  });
+
+  loadApiKeys();
+  loadElevenSettings();
+  initVoicePanel(true);
+})();
+
+function updateWordCount() {
+  const txt = document.getElementById('inp-text').value.trim();
+  const w = txt ? txt.split(/\s+/).filter(Boolean).length : 0;
+  document.getElementById('txt-info').textContent = w > 0
+    ? w.toLocaleString('tr') + ' kelime · ' + txt.length.toLocaleString('tr') + ' karakter · ~' + Math.ceil(w/180) + ' dk okuma' : '';
+}
+
+// ═══════════════════════════════
+// NAVIGATION
+// ═══════════════════════════════
+function go(n) {
+  if (n !== 3 && typeof stopPreview === 'function') stopPreview();   // V0_3
+  S.curStep = n;
+  document.querySelectorAll('.step').forEach(s => s.classList.remove('act'));
+  document.getElementById('step' + n).classList.add('act');
+  for (let i = 1; i <= 4; i++) {
+    const el = document.getElementById('n' + i);
+    el.classList.remove('act', 'done');
+    if (i < n) el.classList.add('done');
+    if (i === n) el.classList.add('act');
+  }
+  if (n === 3) renderChunkList();
+  if (n === 4) buildSummary();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+function tryGo(n) { if (n <= S.curStep) go(n); }
+
+function goStep2() {
+  const txt = document.getElementById('inp-text').value.trim();
+  if (!txt || txt.length < 20) { showAlert('a1', 'e', '❌ Lütfen en az birkaç cümle metin girin.'); return; }
+  hideAlert('a1');
+  go(2);
+}
+
+// ═══════════════════════════════
+// TTS METİN TEMİZLEME (paragraf yapısını korur)
+// ═══════════════════════════════
+// Satır başındaki BAŞLIK numarasını atar ("3.1 Etik Kavramı", "2. Giriş"), ama
+// "12. Madde, 3. Fık. ..." gibi cümle başlarındaki sayıları ve tarihleri korur.
+function stripHeadingNumber(line) {
+  if (/^[ \t]*\d{1,2}[./]\d{1,2}[./]\d{2,4}/.test(line)) return line;        // tarih
+  let m = line.match(/^[ \t]*\d+(?:\.\d+)+\.?[ \t]+(?=\S)/);                 // 3.1 / 2.4.1.
+  if (m) return line.slice(m[0].length);
+  m = line.match(/^[ \t]*\d+\.[ \t]+(?=[^a-zçğıöşü\s])/);                    // 2. Giriş
+  if (m) {
+    const rest = line.slice(m[0].length).trim();
+    if (rest && rest.length <= 80 && rest.split(/\s+/).length <= 10 && !/[.!?;:,]$/.test(rest)) return rest;
+  }
+  return line;
+}
+
+function sanitizeForTTS(text) {
+  if (!text) return '';
+  let t = String(text)
+    .replace(/\r\n/g, '\n')
+    .replace(/\[(.*?)\]\(.*?\)/g, '$1')
+    .replace(/[#*\x60_"]/g, '')
+    .split('\n').map(stripHeadingNumber).join('\n')
+    .replace(/^[ \t]*[-–—:.]\s*/gm, '')
+    .replace(/[ \t]+/g, ' ')
+    .split('\n').map(l => l.trim()).join('\n')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
+  if (t && !/[.!?…:]$/.test(t)) t += '.';
+  return t;
+}
+
+// ═══════════════════════════════
+// V2_2 — TÜRKÇE SAYI OKUMA & OKUNUŞ SÖZLÜĞÜ
+// ═══════════════════════════════
+// Yalnızca seslendirilen metne uygulanır; index.json ve oynatıcıdaki metin orijinal kalır.
+const TR_ONES = ['', 'bir', 'iki', 'üç', 'dört', 'beş', 'altı', 'yedi', 'sekiz', 'dokuz'];
+const TR_TENS = ['', 'on', 'yirmi', 'otuz', 'kırk', 'elli', 'altmış', 'yetmiş', 'seksen', 'doksan'];
+const TR_SCALES = ['', 'bin', 'milyon', 'milyar', 'trilyon', 'katrilyon'];
+const TR_MONTHS = ['', 'ocak', 'şubat', 'mart', 'nisan', 'mayıs', 'haziran', 'temmuz', 'ağustos', 'eylül', 'ekim', 'kasım', 'aralık'];
+const TR_ORD = {
+  'sıfır': 'sıfırıncı', 'bir': 'birinci', 'iki': 'ikinci', 'üç': 'üçüncü', 'dört': 'dördüncü', 'beş': 'beşinci',
+  'altı': 'altıncı', 'yedi': 'yedinci', 'sekiz': 'sekizinci', 'dokuz': 'dokuzuncu', 'on': 'onuncu', 'yirmi': 'yirminci',
+  'otuz': 'otuzuncu', 'kırk': 'kırkıncı', 'elli': 'ellinci', 'altmış': 'altmışıncı', 'yetmiş': 'yetmişinci',
+  'seksen': 'sekseninci', 'doksan': 'doksanıncı', 'yüz': 'yüzüncü', 'bin': 'bininci', 'milyon': 'milyonuncu',
+  'milyar': 'milyarıncı', 'trilyon': 'trilyonuncu', 'katrilyon': 'katrilyonuncu',
+};
+
+// Büyük harfle başlasa da önündeki "N." sıra sayısı okunacak kelimeler
+const TR_ORD_NEXT = [
+  'Dünya', 'Meşrutiyet', 'Cumhuriyet', 'Ordu', 'Kolordu', 'Tümen', 'Lig', 'Dönem', 'Bölüm', 'Ünite', 'Kısım', 'Madde',
+  'Fıkra', 'Bent', 'Sınıf', 'Kademe', 'Derece', 'Basamak', 'Aşama', 'Evre', 'Tur', 'Yarı', 'Beş', 'Kalkınma', 'Haçlı',
+  'Murat', 'Murad', 'Mehmet', 'Mehmed', 'Selim', 'Bayezid', 'Beyazıt', 'Mahmut', 'Mahmud', 'Ahmet', 'Ahmed', 'Mustafa',
+  'Osman', 'Süleyman', 'Abdülhamit', 'Abdülhamid', 'Abdülmecit', 'Abdülmecid', 'Abdülaziz', 'İbrahim', 'Orhan', 'Kılıç', 'Alparslan',
+  'Balkan', 'İnönü', 'Viyana', 'Kosova', 'Kurultay', 'Kongre', 'Plan', 'Türk',
+  'Madde', 'Mad', 'Fıkra', 'Cilt', 'Sayı', 'Sayfa', 'Baskı', 'Kitap', 'Yüzyıl', 'Yy', 'Kanun', 'Sıra',
+].join('|');
+
+function trDigits(s) { return String(s).split('').map(d => d === '0' ? 'sıfır' : TR_ONES[+d]).join(' '); }
+function trHundreds(g) {
+  const h = Math.floor(g / 100), t = Math.floor((g % 100) / 10), o = g % 10, w = [];
+  if (h) w.push(h === 1 ? 'yüz' : TR_ONES[h] + ' yüz');
+  if (t) w.push(TR_TENS[t]);
+  if (o) w.push(TR_ONES[o]);
+  return w.join(' ');
+}
+// "1987" → "bin dokuz yüz seksen yedi"
+function trNumber(str) {
+  const s = String(str);
+  if (!/^\d+$/.test(s)) return s;
+  if (/^0+$/.test(s)) return 'sıfır';
+  if (s[0] === '0' || s.length > 18) return trDigits(s);      // 0532, 007 → rakam rakam
+  const groups = [];
+  for (let i = s.length; i > 0; i -= 3) groups.unshift(parseInt(s.slice(Math.max(0, i - 3), i), 10));
+  const out = [];
+  groups.forEach((g, idx) => {
+    const scale = groups.length - 1 - idx;
+    if (!g) return;
+    if (scale === 1 && g === 1) { out.push('bin'); return; }  // "bir bin" değil "bin"
+    out.push(trHundreds(g) + (scale ? ' ' + TR_SCALES[scale] : ''));
+  });
+  return out.join(' ');
+}
+// "19" → "on dokuzuncu"
+function trOrdinal(str) {
+  const w = trNumber(str).split(' ');
+  const last = w.pop();
+  w.push(TR_ORD[last] || last);
+  return w.join(' ');
+}
+// Kesir kısmı: "05" → "sıfır beş"
+function trFraction(str) {
+  const lead = (String(str).match(/^0+/) || [''])[0];
+  const rest = String(str).slice(lead.length);
+  return lead.split('').map(() => 'sıfır').concat(rest ? [trNumber(rest)] : []).join(' ');
+}
+// Kesme işaretli eki yazıya bitiştir: "1987'de" → "bin dokuz yüz seksen yedide", "4'ü" → "dördü"
+function trAttach(words, suffix) {
+  if (!suffix) return words;
+  if (/^[aeıioöuüâîû]/i.test(suffix)) words = words.replace(/dört$/, 'dörd');
+  return words + suffix;
+}
+
+function normalizeNumbersTR(text) {
+  if (!text) return text;
+  const B = '(?<![\\p{L}\\p{N}])';             // önünde harf/rakam yok
+  const SUF = "(?:['’‘](\\p{L}+))?";           // isteğe bağlı kesme işaretli ek
+  let t = String(text);
+
+  // %25 → yüzde 25
+  t = t.replace(/%\s?(?=\d)/g, 'yüzde ');
+  // 12.05.2020 / 12/05/2020 → on iki mayıs iki bin yirmi
+  t = t.replace(new RegExp(B + '(\\d{1,2})[./](\\d{1,2})[./](\\d{4})(?!\\d)' + SUF, 'gu'), (m, d, mo, y, suf) => {
+    const mi = parseInt(mo, 10), di = parseInt(d, 10);
+    if (mi < 1 || mi > 12 || di < 1 || di > 31) return m;
+    return trAttach(trNumber(String(di)) + ' ' + TR_MONTHS[mi] + ' ' + trNumber(y), suf);
+  });
+  // 14:30 → on dört otuz
+  t = t.replace(new RegExp(B + '([01]?\\d|2[0-3]):([0-5]\\d)(?!\\d)' + SUF, 'gu'), (m, h, mm, suf) =>
+    trAttach(trNumber(String(parseInt(h, 10))) + (mm === '00' ? '' : ' ' + trNumber(String(parseInt(mm, 10)))), suf));
+  // Aralık: 1990-2000 → 1990 ile 2000
+  t = t.replace(/(\d)\s?[–-]\s?(?=\d)/g, '$1 ile ');
+  // Binlik ayırıcı: 1.500.000 → 1500000
+  t = t.replace(/(?<![\d.,])\d{1,3}(?:\.\d{3})+(?![\d]|[.,]\d)/g, m => m.replace(/\./g, ''));
+  // Ondalık: 3,5 → üç virgül beş
+  t = t.replace(new RegExp(B + '(\\d+),(\\d+)(?!\\d)' + SUF, 'gu'), (m, a, b, suf) => trAttach(trNumber(a) + ' virgül ' + trFraction(b), suf));
+  // Noktalı numara: 3.1 → üç nokta bir
+  t = t.replace(new RegExp(B + '(\\d+)\\.(\\d+)(?!\\d)' + SUF, 'gu'), (m, a, b, suf) => trAttach(trNumber(a) + ' nokta ' + trFraction(b), suf));
+  // Sıra sayısı: "19. yüzyıl" → "on dokuzuncu yüzyıl" (noktadan sonra küçük harfle devam ediyorsa)
+  t = t.replace(new RegExp(B + '(\\d+)\\.(?=[ \\t]+[a-zçğıöşü\\uE000])', 'gu'), (m, a) => trOrdinal(a));
+  // Büyük harfle devam eden bilinen kalıplar: "2. Dünya Savaşı", "3. Selim", "1. Madde"
+  // (Diğerleri cümle sonu sayılır: "Toplam 25. Bu..." → "yirmi beş.") Listede olmayanlar sözlükle düzeltilebilir.
+  t = t.replace(new RegExp(B + '(\\d+)\\.(?=[ \\t]+(?:' + TR_ORD_NEXT + ')(?![\\p{L}]))', 'gu'), (m, a) => trOrdinal(a));
+  // Yalın sayılar (+ ek): 1987'de → bin dokuz yüz seksen yedide
+  t = t.replace(new RegExp(B + '(\\d+)' + SUF, 'gu'), (m, a, suf) => trAttach(trNumber(a), suf));
+  return t;
+}
+
+// ═══════════════════════════════
+// V2_3 — TAMAMI BÜYÜK HARF DÜZELTMESİ
+// ═══════════════════════════════
+// TTS motorları büyük harfli metinde Türkçe I/İ ayrımını İngilizce kurallarına göre çözebiliyor:
+// "YAZILIMI" → "yazilimi". Büyük harfli başlıkları normal yazıma çevirince sorun kalmıyor.
+// Kısaltmalar (TBMM, ABD, NATO, PDF...) büyük harf bırakılır — harf harf okunmaları doğrudur.
+const TR_ACRONYMS = ('AB ABD AET AGİT AİHM AKP ANAP AÖF AŞ ATM AVM BDDK BM CHP CD DHMİ DNA DVD EFT EUR FBI GSM GPS ' +
+  'HDP HIV HTML IBAN ILO IMF IQ İBB İETT İSKİ KDV KİT KOBİ KKTC LTD MEB MHP MİT MR NASA NATO OECD ODTÜ ' +
+  'PDF PTT SGK SMS STK TBMM TCDD TEDAŞ TL TRT TSE TTK TÜBİTAK TÜİK TÜSİAD TV USB USD ÜFE YÖK YTL ZMO').split(' ');
+
+function trLower(s) { return String(s).replace(/İ/g, 'i').replace(/I/g, 'ı').toLocaleLowerCase('tr'); }
+function trUpperFirst(s) {
+  if (!s) return s;
+  const c = s.charAt(0);
+  const up = c === 'i' ? 'İ' : (c === 'ı' ? 'I' : c.toLocaleUpperCase('tr'));
+  return up + s.slice(1);
+}
+function capsCore(tok) { return tok.replace(/[^\p{L}]/gu, ''); }
+function isAllCapsToken(tok) {
+  const core = capsCore(tok.split(/['’‘]/)[0]);
+  return core.length >= 2 && /^[A-ZÇĞİÖŞÜÂÎÛ]+$/.test(core);
+}
+function capsVowels(core) { return (core.match(/[AEIİOÖUÜÂÎÛ]/g) || []).length; }
+// Sesli harfi olmadığı için kısaltma sanılabilecek ama aslında normal yazılması gereken sözcükler
+const TR_SMALL_WORDS = ['ve', 'ile', 'veya', 'ya', 'da', 'de', 'ki', 'ama', 'fakat', 'için', 'gibi', 'ise', 'ancak', 'yahut', 'ya da'];
+const TR_CAPS_WORDS = ['DR', 'MD', 'MÜH', 'YRD', 'DOÇ', 'ÖĞR', 'GÖR', 'AV', 'SN', 'BKZ', 'VB', 'VS', 'ÇOK', 'ŞU', 'BU'];
+function keepAsAcronym(core) {
+  if (TR_CAPS_WORDS.indexOf(core) !== -1) return false;
+  if (protectedCapsSet()[core] === 1) return true;      // sözlükte okunuşu tanımlı kısaltmalar
+  return TR_ACRONYMS.indexOf(core) !== -1 || capsVowels(core) === 0;
+}
+// "YAZILIM MÜHENDİSLİĞİ" → "Yazılım mühendisliği", "ABD'NİN" → "ABD'nin"
+function fixAllCaps(text) {
+  return String(text).split('\n').map(line => {
+    // Kesme işaretinden sonraki büyük harfli ekleri her durumda küçült: ABD'NİN → ABD'nin, 1987'DE → 1987'de
+    line = line.replace(/(?<=[\p{Lu}\p{N}])(['’‘])([A-ZÇĞİÖŞÜÂÎÛ]{1,8})(?![\p{L}])/gu, (m, ap, suf) => ap + trLower(suf));
+    const tok = line.split(/(\s+)/);
+    const caps = [];
+    tok.forEach((t, i) => { if (/\S/.test(t) && isAllCapsToken(t)) caps.push(i); });
+    if (!caps.length) return line;
+
+    // Ardışık büyük harfli kelimeleri grupla (aralarında yalnızca boşluk olanlar)
+    const groups = [];
+    let g = [caps[0]];
+    for (let k = 1; k < caps.length; k++) {
+      if (caps[k] === g[g.length - 1] + 2) g.push(caps[k]);
+      else { groups.push(g); g = [caps[k]]; }
+    }
+    groups.push(g);
+
+    groups.forEach(grp => {
+      const cores = grp.map(i => capsCore(tok[i].split(/['’‘]/)[0]));
+      const convertible = grp.filter((_, n) => !keepAsAcronym(cores[n]));
+      if (!convertible.length) return;
+      // Tek kelimelik grupta yalnızca uzun ve iki sesli harfli kelimeye dokun (ÇOK, ABD gibi kısaları koru)
+      if (grp.length === 1 && TR_CAPS_WORDS.indexOf(cores[0]) === -1 &&
+          (cores[0].length < 5 || capsVowels(cores[0]) < 2)) return;
+      grp.forEach((i, n) => {
+        if (keepAsAcronym(cores[n])) return;   // TBMM, ABD, PDF… büyük kalır
+        const low = trLower(tok[i]);
+        // Bağlaçlar küçük kalsın: "Yazılım ve İşlevleri"
+        tok[i] = (n > 0 && TR_SMALL_WORDS.indexOf(capsCore(low)) !== -1) ? low : trUpperFirst(low);
+      });
+    });
+    return tok.join('');
+  }).join('\n');
+}
+
+// ═══════════════════════════════
+// V2_5 — KISALTMA, TERİM VE BİRİM OKUNUŞLARI
+// ═══════════════════════════════
+// TTS motorları kısaltmaları İngilizce harf adlarıyla okuyabiliyor (ABD → "ey bi di", AMD → "ey em di").
+// Çözüm: kısaltmaları seslendirmeden önce okunuşuyla değiştirmek. Sıralama: önce sizin sözlüğünüz,
+// sonra yerleşik liste, en sonda listede olmayan kısaltmalar için Türkçe harf adlarıyla heceleme.
+const TR_LETTER_NAMES = {
+  'A': 'a', 'B': 'be', 'C': 'ce', 'Ç': 'çe', 'D': 'de', 'E': 'e', 'F': 'fe', 'G': 'ge', 'Ğ': 'yumuşak ge',
+  'H': 'he', 'I': 'ı', 'İ': 'i', 'J': 'je', 'K': 'ke', 'L': 'le', 'M': 'me', 'N': 'ne', 'O': 'o', 'Ö': 'ö',
+  'P': 'pe', 'Q': 'kü', 'R': 're', 'S': 'se', 'Ş': 'şe', 'T': 'te', 'U': 'u', 'Ü': 'ü', 'V': 've',
+  'W': 'dabıl yu', 'X': 'iks', 'Y': 'ye', 'Z': 'ze',
+};
+// Harf harf değil, kelime gibi okunan kısaltmalar — bunlara dokunulmaz
+const READ_AS_WORD = ('NATO NASA UNESCO UNICEF UEFA FIFA TÜBİTAK TÜİK TÜSİAD TÜRKSAT ASELSAN ROKETSAN TUSAŞ ' +
+  'HAVELSAN BOTAŞ TEMA MEB DASK RAM ROM BIOS SCORM LAN WAN MODEM RADAR LASER SONAR PISA COVID SARS AIDS').split(' ');
+
+// Yerleşik okunuşlar. Kendi sözlüğünüzdeki satır aynı anahtarı taşıyorsa sizinki geçerli olur.
+const SPOKEN_DEFAULTS = [
+  ['vb.', 've benzeri'], ['vb', 've benzeri'], ['vs.', 've saire'],
+  ['vs', 've saire'], ['vd.', 've diğerleri'], ['örn.', 'örnek'],
+  ['ör.', 'örnek'], ['bkz.', 'bakınız'], ['bkz', 'bakınız'],
+  ['bk.', 'bakınız'], ['krş.', 'karşılaştırınız'], ['yy.', 'yüzyıl'],
+  ['yy', 'yüzyıl'], ['İng.', 'İngilizce'], ['huk.', 'hukuk'],
+  ['öl.', 'ölüm tarihi'], ['M.Ö.', 'milattan önce'], ['MÖ', 'milattan önce'],
+  ['M.S.', 'milattan sonra'], ['MS', 'milattan sonra'], ['d.', 'doğum'],
+  ['doğ.', 'doğum'], ['Ar-Ge', 'Ar-Ge'], ['a.g.e.', 'adı geçen eser'],
+  ['age.', 'adı geçen eser'], ['agm.', 'adı geçen makale'], ['a.g.m.', 'adı geçen makale'],
+  ['agy.', 'adı geçen yayın'], ['çev.', 'çeviren'], ['ed.', 'editör'],
+  ['haz.', 'hazırlayan'], ['drl.', 'derleyen'], ['dzl.', 'düzenleyen'],
+  ['syf.', 'sayfa'], ['sf.', 'sayfa'], ['s.', 'sayfa'],
+  ['ss.', 'sayfa sayısı'], ['S.', 'sayı'], ['C.', 'cilt'],
+  ['bs.', 'baskı'], ['Yay.', 'yayınları'], ['Gön.', 'gönderen'],
+  ['Mad.', 'madde'], ['md.', 'madde'], ['fık.', 'fıkra'],
+  ['Prof.', 'profesör'], ['Doç.', 'doçent'], ['Dr.', 'doktor'],
+  ['Dr. Öğr. Üyesi', 'doktor öğretim üyesi'], ['Öğr. Gör.', 'öğretim görevlisi'], ['Yrd.', 'yardımcı'],
+  ['Öğr.', 'öğretim'], ['Gör.', 'görevlisi'], ['Arş. Gör.', 'araştırma görevlisi'],
+  ['Yrd. Doç.', 'yardımcı doçent'], ['Okt.', 'okutman'], ['Av.', 'avukat'],
+  ['Sn.', 'Sayın'], ['Ecz.', 'eczacı'], ['Opr.', 'operatör'],
+  ['Md.', 'Müdür'], ['Bşk.', 'başkan'], ['Uzm.', 'uzman'],
+  ['Müh.', 'mühendis'], ['Mim.', 'mimar'], ['Hemş.', 'hemşire'],
+  ['Hz.', 'Hazreti'], ['Ens.', 'enstitü'], ['Fak.', 'fakülte'],
+  ['Şb.', 'şube'], ['Ort.', 'ortaklık'], ['ort.', 'ortalama'],
+  ['tic.', 'ticaret'], ['Ltd.', 'limitet'], ['Şti.', 'şirketi'],
+  ['AŞ', 'anonim şirketi'], ['Tel.', 'telefon'], ['tel.', 'telefon'],
+  ['telg.', 'telgraf'], ['Mah.', 'mahalle'], ['Cad.', 'caddesi'],
+  ['Sok.', 'sokak'], ['Bul.', 'bulvarı'], ['Blv.', 'bulvarı'],
+  ['Apt.', 'apartman'], ['No.', 'numara'], ['K.', 'kat'],
+  ['D.', 'daire'], ['PK', 'posta kutusu'], ['A.B.D.', 'ABD'],
+  ['AB', 'A-Be'], ['BM', 'Be-Me'], ['T.C.', 'Türkiye Cumhuriyeti'],
+  ['TC', 'Türkiye Cumhuriyeti'], ['TL', 'Türk lirası'], ['YÖK', 'YÖK'],
+  ['AÖF', 'AÖF'], ['TRT', 'TERETE'], ['PTT', 'PE-TE-TE'],
+  ['SGK', 'Se-Ge-Ka'], ['STK', 'Se-Te-Ka'], ['KOBİ', 'kobi'],
+  ['TV', 'TE-VE'], ['MEB', 'MEB'], ['ÖSYM', 'ÖSEYEME'],
+  ['YKS', 'YE-KA-SE'], ['TDK', 'TE-DE-KA'], ['TTK', 'TE-TE-KA'],
+  ['TÜİK', 'TÜİK'], ['TÜBİTAK', 'TÜBİTAK'], ['TSK', 'Te-Se-Ka'],
+  ['TCK', 'TE-CE-KA'], ['TMK', 'TE-ME-KA'], ['NATO', 'NATO'],
+  ['UNESCO', 'yunesko'], ['UNICEF', 'yunisef'], ['CPU', 'Sİ-Pİ-YU'],
+  ['GPU', 'Cİ-Pİ-YU'], ['SRAM', 'ES-REM'], ['DRAM', 'Dİ-REM'],
+  ['SDRAM', 'ESDİ-REM'], ['DDR', 'Dİ-Dİ-AR'], ['SSD', 'Es-Es-Dİ'],
+  ['HDD', 'Eyç-Di-Di'], ['USB', 'YU ES Bİ'], ['AMD', 'ey-em-di'],
+  ['ARM', 'arm'], ['PDF', 'pe-de-fe'], ['HTML', 'eyç-ti-em-el'],
+  ['CSS', 'si-es-es'], ['XML', 'iksemel'], ['JSON', 'ceysın'],
+  ['HTTP', 'eyç-ti-ti-pi'], ['HTTPS', 'eyç-ti-ti-pi-es'], ['FTP', 'ef-tipi'],
+  ['IP', 'aypi'], ['TCP', 'tisipi'], ['DNS', 'di-en-es'],
+  ['URL', 'yu-ar el'], ['API', 'ey-pi-ay'], ['VPN', 'vipien'],
+  ['GSM', 'ci-es-em'], ['SMS', 'esemes'], ['GPS', 'ci-pi-es'],
+  ['Wi-Fi', 'vay-fay'], ['WiFi', 'vay fay'], ['CD', 'Si-Di'],
+  ['DVD', 'DiViDi'], ['LED', 'led'], ['LCD', 'elsidi'],
+  ['KB', 'kilobayt'], ['MB', 'megabayt'], ['GB', 'gigabayt'],
+  ['TB', 'terabayt'], ['RAM', 'rem'], ['ROM', 'rom'],
+  ['OS', 'O-Es'], ['AI', 'Ey-Ay'], ['www', 'dabılyu dabılyu dabılyu'],
+  ['.com', 'nokta kom'], ['.tr', 'nokta te-re'], ['e-posta', 'e posta'],
+  ['DNA', 'De-Ne-A'], ['RNA', 'Re-Ne-A'], ['ATP', 'A-Te-Pe'],
+  ['pH', 'pe haş'], ['UV', 'ultraviyole'], ['IQ', 'ay küu'],
+  ['H₂O', 'Haş İki O'], ['CO₂', 'Ce O İki'], ['O₂', 'O-iki'],
+  ['iOS', 'Ay-O-Es'], ['GUI', 'gui'], ['OOP', 'o-o-pe'],
+  ['MVC', 'emvisi'], ['REGEX', 'receks'], ['ORACLE', 'orakıl'],
+  ['ORM', 'o-ar-em'], ['JSX', 'ce-eseks'], ['AJAX', 'AJAX'],
+  ['DOM', 'dom'], ['NPM', 'en-pi-em'], ['CORS', 'kors'],
+  ['SEO', 'sio'], ['CDN', 'sidien'], ['NAT', 'nat'],
+  ['DHCP', 'di-eyçsipi'], ['MAC', 'mek'], ['WLAN', 'v-lan'],
+  ['WAN', 'van'], ['LAN', 'lan'], ['K8s', 'kubernetis'],
+  ['GCP', 'cisipi'], ['CLI', 'si-el-ay'], ['NoSQL', 'no-es-ku-el'],
+  ['DBMS', 'dibi-em-es'], ['LLM', 'el-el-em'], ['NLP', 'en-elpi'],
+  ['ML', 'em-el'], ['AGI', 'ey-ci-ay'], ['ALU', 'ey-el-yu'],
+  ['CISC', 'sisk'], ['CISCO', 'sisko'], ['RISC', 'risk'],
+  ['TLB', 'ti-el-bi'], ['DMA', 'di-em-ey'], ['ECC RAM', 'e-ce-ce rem'],
+  ['TPM', 'ti-pi-em'], ['CMOS', 'ci-mos'], ['ASIC', 'asik'],
+  ['FPGA', 'ef-pe-ge-a'], ['NVMe', 'en-vi-em-i'], ['UEFI', 'yu-i-ef-ay'],
+  ['UDP', 'yu-di-pi'], ['ICMP', 'ay-si-em-pi'], ['BGP', 'bi-ci-pi'],
+  ['ARP', 'arp'], ['MTU', 'em-ti-yu'], ['VoIP', 'vo-ay-pi'],
+  ['VLAN', 'vi-lan'], ['IPC', 'aypi-si'], ['POSIX', 'poziks'],
+  ['IOPS', 'ay-ops'], ['RAID', 'reyd'],
+];
+
+// Sayıdan hemen sonra gelen birimler: "5 km" → "beş kilometre"
+const TR_UNITS = [
+  ['km²', 'kilometrekare'], ['m²', 'metrekare'], ['cm²', 'santimetrekare'], ['m³', 'metreküp'],
+  ['km', 'kilometre'], ['cm', 'santimetre'], ['mm', 'milimetre'], ['kg', 'kilogram'], ['mg', 'miligram'],
+  ['ml', 'mililitre'], ['lt', 'litre'], ['sn', 'saniye'], ['dk', 'dakika'], ['°C', 'santigrat derece'],
+  ['°', 'derece'], ['TL', 'Türk lirası'], ['₺', 'Türk lirası'], ['$', 'dolar'], ['€', 'euro'], ['£', 'sterlin'],
+];
+
+function escRe(s) { return String(s).replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+// Kesme işaretli ek okunuşa bitiştirilir: ABD'nin → "a be denin", 1453'te → "... elli üçte"
+// forceCase: listede aynı anahtarın büyük/küçük varyantı da varsa (Md. / md., D. / d.)
+// küçük harfli anahtar da büyük/küçük harf ayırır — yoksa "Md." satırı "md." kuralına takılır.
+function makeRule(k, v, forceCase) {
+  const flags = (!forceCase && k === k.toLocaleLowerCase('tr')) ? 'giu' : 'gu';
+  // Sınır koşulu yalnızca anahtar harf/rakamla başlıyor ya da bitiyorsa gerekir.
+  // Böylece ".com" gibi noktayla başlayan, "vb." gibi noktayla biten anahtarlar da eşleşir.
+  const head = /^[\p{L}\p{N}]/u.test(k) ? '(?<![\\p{L}\\p{N}])' : '';
+  const tail = /[\p{L}\p{N}]$/u.test(k) ? '(?![\\p{L}\\p{N}])' : '';
+  // ".com" gibi noktayla başlayan anahtarın karşılığı önceki kelimeye yapışmasın
+  if (!head && /^[\p{L}\p{N}]/u.test(v)) v = ' ' + v;
+  // "AJAX = AJAX", "YÖK = YÖK" gibi satırlar "kelime gibi oku" demektir: TTS'e büyük harf
+  // gitmesin diye normal yazıma çevrilir, yoksa motor yine harf harf okuyabilir.
+  // (Yalnızca karşılık da birebir BÜYÜK yazılmışsa; "DOM = dom" gibi küçük yazımlara dokunulmaz.)
+  if (v && v === k && k === k.toLocaleUpperCase('tr') && /\p{L}/u.test(k)) {
+    v = trUpperFirst(trLower(k));
+  }
+  return {
+    k: k, v: v,
+    re: new RegExp(head + escRe(k) + tail + "(?:['’‘](\\p{L}+))?", flags),
+    digits: /\d/.test(k),
+  };
+}
+// Uzun anahtar önce denensin: "Dr. Öğr. Üyesi" kuralı "Dr." kuralından önce çalışmalı
+function sortRules(rules) { return rules.slice().sort((a, b) => b.k.length - a.k.length); }
+
+// "k = v" satırlarından kural listesi üretir (büyük/küçük harf çakışmalarını gözeterek)
+function buildRules(pairs) {
+  const variants = {};
+  pairs.forEach(p => {
+    const lk = String(p[0]).toLocaleLowerCase('tr');
+    (variants[lk] = variants[lk] || {})[p[0]] = 1;
+  });
+  return sortRules(pairs.map(p =>
+    makeRule(p[0], p[1], Object.keys(variants[String(p[0]).toLocaleLowerCase('tr')]).length > 1)));
+}
+function linesToPairs(src) {
+  return String(src || '').split('\n').map(l => l.trim()).filter(l => l && l[0] !== '#').map(l => {
+    const m = l.match(/^(.+?)\s*(?:=>|→|=)\s*(.*)$/);
+    return (m && m[1].trim()) ? [m[1].trim(), m[2].trim()] : null;
+  }).filter(Boolean);
+}
+// Karşılık harf adlarından mı oluşuyor ("a be de") yoksa gerçek bir açılım mı ("Amerika Birleşik Devletleri")?
+let _letterSet = null;
+function isSpelledOut(v) {
+  if (!_letterSet) {
+    _letterSet = {};
+    Object.keys(TR_LETTER_NAMES).forEach(k => { _letterSet[TR_LETTER_NAMES[k]] = 1; });
+  }
+  const parts = String(v).trim().split(/\s+/);
+  return parts.length > 1 && parts.every(p => _letterSet[p] === 1);
+}
+// Kesme işaretli eki okunuşa bağla. Açılımlarda ünlüyle biten köke kaynaştırma "n"si eklenir:
+// "Amerika Birleşik Devletleri" + "de" → "...Devletlerinde"
+function attachSmart(v, suf) {
+  if (!suf) return v;
+  if (isSpelledOut(v)) return v + suf;
+  if (/[aeıioöuüâîû]$/i.test(v) && /^[dt]/i.test(suf)) return v + 'n' + suf;
+  return trAttach(v, suf);
+}
+// keep: verilen okunuş metnini "kasaya" koyup yerine görünmez bir yer tutucu bırakır.
+// Böylece sözlükten gelen karşılık (örn. "YE KA SE") sonraki adımlarda tekrar işlenmez.
+function applyLexicon(text, rules, keep) {
+  let t = text;
+  rules.forEach(r => {
+    t = t.replace(r.re, (m, suf) => {
+      const out = suf ? attachSmart(r.v, suf) : r.v;
+      return keep ? keep(out) : out;
+    });
+  });
+  return t;
+}
+
+// Okunuş sözlüğü: her satır "yazılış = okunuş". Küçük harfli anahtar büyük/küçük harf duyarsız eşleşir.
+let _lexCache = { src: null, rules: [] };
+function getLexRules() {
+  const src = (S.ttsNorm && S.ttsNorm.lexicon) || '';
+  if (_lexCache.src === src) return _lexCache.rules;
+  _lexCache = { src: src, rules: buildRules(linesToPairs(src)) };
+  return _lexCache.rules;
+}
+
+// Yerleşik liste metin olarak — kullanıcı düzenleyebilsin diye
+function defaultsToText() { return SPOKEN_DEFAULTS.map(p => p[0] + ' = ' + p[1]).join('\n'); }
+function parseRuleLines(src) { return buildRules(linesToPairs(src)); }
+// Karşılığı kendisiyle aynı olan kısaltmalar (YÖK = YÖK) kelime gibi okunur, harf harf değil
+function wordAcronymSet() {
+  const set = {};
+  READ_AS_WORD.forEach(k => { set[k] = 1; });
+  getAbbrRules().concat(getLexRules()).forEach(r => {
+    if (r.k.toLocaleLowerCase('tr') === r.v.toLocaleLowerCase('tr')) set[r.k] = 1;
+  });
+  return set;
+}
+// Boşsa fabrika listesi, doluysa kullanıcının düzenlediği liste geçerli
+let _abbrCache = { src: null, rules: null };
+function getAbbrRules() {
+  const src = (S.ttsNorm && S.ttsNorm.defaults) || '';
+  if (_abbrCache.src === src && _abbrCache.rules) return _abbrCache.rules;
+  _abbrCache = { src: src, rules: parseRuleLines(src || defaultsToText()) };
+  return _abbrCache.rules;
+}
+function abbrPairs() {
+  const src = (S.ttsNorm && S.ttsNorm.defaults) || '';
+  if (!src) return SPOKEN_DEFAULTS;
+  return getAbbrRules().map(r => [r.k, r.v]);
+}
+// Sözlüklerde geçen büyük harfli anahtarlar (fixAllCaps bunları küçültmesin)
+let _protectedCaps = { src: null, set: {} };
+function protectedCapsSet() {
+  const src = ((S.ttsNorm && S.ttsNorm.lexicon) || '') + '
