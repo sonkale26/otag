@@ -1664,10 +1664,14 @@ function dataJs(){
 function indexHtml(){
   const html = RT['index.html']
     .replace(/__TITLE__/g, esc(state.meta.title||'Çöz-Öğren'))
-    .replace(/__SUBTITLE__/g, esc(state.meta.subtitle||''));
-    // ZIP çıktısında assets/ ve lib/ artık index.html ile AYNI ünite
-    // klasöründe yer alıyor (bkz. makeZip), bu yüzden şablondaki düz
-    // göreli yollar (assets/..., lib/...) hiç değiştirilmeden kullanılır.
+    .replace(/__SUBTITLE__/g, esc(state.meta.subtitle||''))
+    // ZIP çıktısında index.html artık kendi ünite alt klasöründe, assets/ ve
+    // lib/ ise ZIP kökünde (bkz. makeZip) — bu yüzden yollar bir üst dizine
+    // çıkar. data.js ünite klasörünün içinde kaldığı için değişmez.
+    .replace('href="assets/favicon.svg"', 'href="../assets/favicon.svg"')
+    .replace('href="lib/css/eogrenme.css"', 'href="../lib/css/eogrenme.css"')
+    .replace('src="lib/js/crossword.js"', 'src="../lib/js/crossword.js"')
+    .replace('src="lib/js/engine.js"', 'src="../lib/js/engine.js"');
   // Tam paket ZIP içindeki gerçek index.html için son güvence.
   return gizliKunyeEkle(html);
 }
@@ -1682,20 +1686,22 @@ async function makeZip(){
     toast('Gizli künye index.html dosyasına eklenemedi');
     return;
   }
-  // Her ünite kendi klasöründe tam bağımsız (self-contained) bir site olarak
-  // üretilir: assets/ ve lib/ artık index.html ile AYNI ünite klasörünün
-  // içindedir, başka bir ünitenin dosyalarına bağımlı değildir. Böylece her
-  // ünite klasörü tek başına da sunucuya yüklenebilir.
+  // Birden çok ünitenin ZIP'i aynı kurs klasörüne art arda çıkarıldığında
+  // assets/ ve lib/ dosya tekrarı oluşmasın diye ZIP KÖKÜNDE tutulur (içerik
+  // her ünitede birebir aynı olduğundan üzerine yazma güvenlidir); yalnızca
+  // o üniteye özgü dosyalar (index.html, data.js, proje.json) kendi alt
+  // klasöründe yer alır. Tüm ünite ZIP'lerini aynı üst klasöre açtığınızda
+  // paylaşılan yapı otomatik oluşur.
   const uniteKlasoru = slug(state.meta.title);
   zip.file(uniteKlasoru+'/index.html', anaSayfa);
   zip.file(uniteKlasoru+'/data.js', dataJs());
   zip.file(uniteKlasoru+'/proje.json', JSON.stringify(state,null,2));
-  zip.file(uniteKlasoru+'/lib/css/eogrenme.css', RT['lib/css/eogrenme.css']);
-  zip.file(uniteKlasoru+'/lib/js/crossword.js', RT['lib/js/crossword.js']);
-  zip.file(uniteKlasoru+'/lib/js/engine.js', RT['lib/js/engine.js']);
-  zip.file(uniteKlasoru+'/assets/favicon.svg', RT['assets/favicon.svg']);
-  zip.file(uniteKlasoru+'/assets/kapak.svg', RT['assets/kapak.svg']);
-  zip.file(uniteKlasoru+'/assets/fonts/OKUYUN.txt', RT['assets/fonts/OKUYUN.txt']);
+  zip.file('lib/css/eogrenme.css', RT['lib/css/eogrenme.css']);
+  zip.file('lib/js/crossword.js', RT['lib/js/crossword.js']);
+  zip.file('lib/js/engine.js', RT['lib/js/engine.js']);
+  zip.file('assets/favicon.svg', RT['assets/favicon.svg']);
+  zip.file('assets/kapak.svg', RT['assets/kapak.svg']);
+  zip.file('assets/fonts/OKUYUN.txt', RT['assets/fonts/OKUYUN.txt']);
   const blob = await zip.generateAsync({type:'blob'});
   const name = uniteKlasoru+'.zip';
   download(blob, name);
@@ -2162,19 +2168,19 @@ function drawTree(){
   const uniteKlasoru = slug(state.meta.title);
   $('#tree').textContent =
 `${uniteKlasoru}.zip
+├─ lib/                          diğer ünite ZIP'leriyle ortak
+│  ├─ css/eogrenme.css
+│  └─ js/crossword.js, engine.js
+├─ assets/favicon.svg, kapak.svg, fonts/   diğer ünite ZIP'leriyle ortak
 └─ ${uniteKlasoru}/
    ├─ index.html          setin giriş sayfası
    ├─ data.js             tüm içerik
-   ├─ proje.json          sonra düzenlemek için
-   ├─ lib/
-   │  ├─ css/eogrenme.css
-   │  └─ js/crossword.js, engine.js
-   └─ assets/favicon.svg, kapak.svg, fonts/
+   └─ proje.json          sonra düzenlemek için
 
-Her ünite tamamen kendi kendine yeterli (self-contained): assets/ ve lib/
-o ünitenin kendi klasörünün içindedir, başka bir üniteye bağımlı değildir.
-Birden çok ünite yayınlıyorsanız her ${uniteKlasoru}/ klasörünü olduğu gibi
-sunucuya yükleyin — aralarında paylaşılan dosya yoktur.
+Birden çok ünite mi yayınlıyorsunuz? Her ünitenin ZIP'ini AYNI kurs
+klasörüne çıkarın — lib/ ve assets/ içerikleri her ünitede birebir aynı
+olduğundan üzerine yazılır, dosya tekrarı oluşmaz; yalnızca ${uniteKlasoru}/
+alt klasörü o üniteye özel kalır.
 
 Modül kimliği: ${state.meta.id || '—'}
 Öğrenci ilerlemesi bu kimlikle saklanır.`;
