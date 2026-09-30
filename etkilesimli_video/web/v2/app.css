@@ -43,7 +43,7 @@ code { background: #eef1f6; padding: 0.1rem 0.35rem; border-radius: 4px; font-si
 .topbar { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
 .topbar h1 { margin: 0; }
 .topbar .button, .topbar .badge { margin-left: auto; }
-.topbar .badge + .button, .topbar .badge + .badge { margin-left: 0; }
+.topbar .badge + .button { margin-left: 0; }
 .back { text-decoration: none; font-weight: 600; }
 footer { margin-top: 2rem; font-size: 0.85rem; word-break: break-all; }
 
@@ -176,13 +176,6 @@ fieldset { border: none; margin: 0; padding: 0; }
 .option.is-chosen { border-color: var(--accent); background: #f2f6ff; }
 .option.is-correct { border-color: var(--bookmark); background: var(--ok-bg); }
 .option.is-wrong { border-color: var(--danger); background: var(--error-bg); }
-/* Kısa şıklar iki sütunda (player.js ölçer); tek sayıdaysa son şık ortada, Cevapla ortalanır. */
-.option-list { --option-gap: 0.5rem; column-gap: var(--option-gap); }
-.option-list.is-measuring .option { width: max-content; }
-.option-list.is-measuring .option span { white-space: nowrap; }
-.option-list.is-grid { display: grid; grid-template-columns: 1fr 1fr; }
-.option-list.is-grid .option:last-child:nth-child(odd) { grid-column: 1 / -1; justify-self: center; width: calc((100% - var(--option-gap)) / 2); }
-.question-card.has-option-grid > .actions { justify-content: center; }
 .feedback { border-radius: 8px; padding: 0.7rem 0.8rem; margin-top: 0.5rem; }
 .feedback.ok { background: var(--ok-bg); color: var(--ok-text); }
 .feedback.bad { background: var(--error-bg); color: var(--error-text); }
@@ -210,9 +203,6 @@ fieldset { border: none; margin: 0; padding: 0; }
 /* YouTube'un başlık ve alt çubukları iframe kenarındadır: iframe taşırılıp kırpılınca görünmez.
    overflow: clip, taşan iframe yüzünden çerçevenin kaydırılabilir hale gelmesini önler. */
 .video-frame { --crop: 80px; overflow: clip; }
-/* YouTube, 16:9'dan uzun oynatıcıda videoyu ortalar; başlık ve alt çubuk üstteki ve alttaki boşlukta kalır.
-   Kırpma bu yüzden simetrik. (Claude'un test tarayıcısı YouTube'dan farklı bir yerleşim alıp videoyu biraz
-   aşağıda gösteriyor; gerçek Chrome'da masaüstü ve Android'de video ortada, 2026-09'da kullanıcıyla doğrulandı.) */
 .video-frame.is-cropped .video-host { top: calc(-1 * var(--crop)); bottom: calc(-1 * var(--crop)); }
 .video-shield { position: absolute; inset: 0; z-index: 2; cursor: pointer; }
 .video-paused { position: absolute; inset: 0; z-index: 3; display: none; place-items: center; background: rgba(8, 12, 20, 0.28); pointer-events: none; }
@@ -223,6 +213,10 @@ fieldset { border: none; margin: 0; padding: 0; }
 /* İlk oynatmaya kadar videonun kapak görseli; YouTube'un açılış ekranını örter. */
 .video-poster { position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; object-fit: cover; pointer-events: none; }
 .video-frame.has-played .video-poster { display: none; }
+/* Kırpma kullanılamadığında YouTube'un üst ve alt çubuklarını örten şeritler. */
+.video-strips { position: absolute; inset: 0; z-index: 2; opacity: 0; pointer-events: none; transition: opacity 0.35s ease;
+  background: linear-gradient(to bottom, rgba(6, 9, 15, 0.97) 0, rgba(6, 9, 15, 0.97) 21%, rgba(6, 9, 15, 0) 33%, rgba(6, 9, 15, 0) 67%, rgba(6, 9, 15, 0.97) 79%, rgba(6, 9, 15, 0.97) 100%); }
+.video-frame.show-strips .video-strips { opacity: 1; }
 .unmute-button { display: none; position: absolute; left: 0.8rem; bottom: 0.8rem; z-index: 6; padding: 0.4rem 0.85rem; border: none; border-radius: 999px; background: rgba(15, 20, 30, 0.85); color: #fff; font-weight: 600; }
 .video-frame.is-muted-start.is-playing .unmute-button { display: inline-flex; }
 .video-frame.has-overlay .unmute-button { display: none; }
@@ -268,40 +262,6 @@ fieldset { border: none; margin: 0; padding: 0; }
 .volume-slider { width: 84px; margin: 0; accent-color: var(--accent); cursor: pointer; }
 .volume-slider:disabled { opacity: 0.55; cursor: not-allowed; }
 
-/* 0.6.3 · Geri / ileri sarma (⟲10 / 10⟳): fareyle kullanımda kontrol çubuğunda; yatay telefonda videonun
-   iki yanındaki boşlukta (boşluğun tamamı dokunma alanı, ortasında yuvarlak düğme); dikey telefonda
-   videonun altındaki satırda. */
-.video-area { position: relative; }
-.side-seek { display: none; position: absolute; top: 0; bottom: 0; z-index: 2; width: var(--yan, 72px); align-items: center; justify-content: center; padding: 0; border: none; border-radius: var(--radius); background: transparent; color: var(--text); }
-.side-seek.is-back { right: calc(100% + 0.75rem); }
-.side-seek.is-forward { left: calc(100% + 0.75rem); }
-.stage.has-side-seek .side-seek { display: flex; }
-.side-seek-circle { display: flex; align-items: center; justify-content: center; width: 3.4rem; height: 3.4rem; border: 1px solid var(--line); border-radius: 50%; background: var(--surface); box-shadow: var(--shadow); transition: transform 0.12s ease, background-color 0.15s ease, border-color 0.15s ease; }
-.side-seek:hover .side-seek-circle { border-color: #b9c1ce; }
-.side-seek:active .side-seek-circle { transform: scale(0.92); }
-.side-seek:focus-visible { outline: none; }
-.side-seek:focus-visible .side-seek-circle { outline: 2px solid var(--accent); outline-offset: 2px; }
-.stage.is-fullscreen .side-seek { color: #fff; }
-.stage.is-fullscreen .side-seek-circle { border-color: rgba(255, 255, 255, 0.2); background: rgba(255, 255, 255, 0.1); box-shadow: none; }
-.stage.is-fullscreen .side-seek:hover .side-seek-circle { background: rgba(255, 255, 255, 0.2); }
-/* Yan düğmeler varken kontrol satırı onların dış kenarlarına kadar uzar; zaman çizelgesi genişler. */
-.stage.has-side-seek .controls { margin-left: calc(-1 * (var(--yan, 72px) + 0.75rem)); margin-right: calc(-1 * (var(--yan, 72px) + 0.75rem)); }
-.seek-button { padding-left: 0.45rem; padding-right: 0.45rem; }
-.seek-button svg { display: block; }
-.stage.has-seek-row .controls .seek-button { display: none; }
-.transport { display: none; justify-content: center; align-items: center; gap: 1.1rem; margin-top: 0.7rem; }
-.stage.has-seek-row .transport { display: flex; }
-.stage.has-seek-row .controls .play-toggle { display: none; }
-.transport-seek { width: 2.6rem; height: 2.6rem; padding: 0; justify-content: center; border-radius: 50%; }
-.transport-seek svg { display: block; }
-.transport-play { width: 2.9rem; height: 2.9rem; padding: 0; justify-content: center; border-radius: 50%; border-color: var(--accent); background: var(--accent); color: var(--accent-text); font-size: 1rem; box-shadow: 0 2px 8px rgba(36, 88, 214, 0.3); }
-.transport-seek:active, .transport-play:active, .seek-button:active { transform: scale(0.94); }
-.seek-flash { position: absolute; top: 50%; z-index: 6; display: flex; align-items: center; gap: 0.4rem; padding: 0.4rem 0.85rem 0.4rem 0.55rem; border-radius: 999px; background: rgba(15, 20, 30, 0.66); color: #fff; font-size: 0.9rem; font-weight: 700; pointer-events: none; opacity: 0; transform: translateY(-50%); }
-.seek-flash.is-back { left: 8%; }
-.seek-flash.is-forward { right: 8%; }
-.seek-flash.is-visible { animation: seek-flash 0.8s ease-out; }
-@keyframes seek-flash { 0%, 55% { opacity: 1; } 100% { opacity: 0; } }
-
 /* 0.3.0 · İlerleme çubuğu: geniş dokunma alanı, sürüklenebilir tutamak */
 .progress { touch-action: none; }
 .progress::before { content: ""; position: absolute; left: 0; right: 0; top: -10px; bottom: -10px; }
@@ -316,18 +276,14 @@ fieldset { border: none; margin: 0; padding: 0; }
 /* 0.4.0 · Video odaklı yerleşim: video ekran yüksekliğine sığacak kadar geniş; bölümler, sorular ve
    bilgi kartları videonun içinde açılan "İçerik" menüsünde (açılır kapanır bölümler). */
 .stage { display: block; position: relative; grid-template-columns: minmax(0, 1fr); }
-.stage-main { position: relative; width: min(100%, calc((100vh - 10rem) * 16 / 9)); width: min(100%, calc((100svh - 10rem) * 16 / 9)); margin: 0 auto; container-type: inline-size; }
+.stage-main { position: relative; width: min(100%, calc((100vh - 10rem) * 16 / 9)); width: min(100%, calc((100svh - 10rem) * 16 / 9)); margin: 0 auto; }
 .menu-button { display: inline-flex; }
 .contents { display: none; position: absolute; top: 3.3rem; right: 0.6rem; z-index: 30; width: min(380px, calc(100% - 1.2rem)); }
 .stage.menu-open .contents { display: block; }
-/* cqw = videonun genişliği (.stage-main kapsayıcı); 56.25cqw videonun yüksekliği. Menü yatayda videonun içinde
-   kalır; dikey telefonda video kısa olduğundan en az min(60vh, 420px) boyunda, ama hiçbir zaman ekrandan uzun değil. */
-.contents-inner { display: flex; flex-direction: column; overflow: hidden; max-height: min(60vh, 420px); max-height: min(max(calc(56.25cqw - 3.9rem), min(60vh, 420px)), calc(100dvh - 4.5rem)); background: rgba(255, 255, 255, 0.97); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35); }
+.contents-inner { display: flex; flex-direction: column; overflow: hidden; max-height: min(60vh, 420px); max-height: max(calc(56.25cqw - 3.9rem), min(60vh, 420px)); background: rgba(255, 255, 255, 0.97); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35); }
 .contents-head { display: flex; justify-content: space-between; align-items: center; padding: 0.5rem 0.6rem 0.5rem 1rem; border-bottom: 1px solid var(--line); }
 .contents-empty { margin: 0; padding: 1rem; }
-/* Başlıklar ve kapalı bölümler sıkışmaz; yer yetmezse yalnızca açık bölümün listesi kısalır ve kayar. */
-.contents-head { flex: none; }
-.acc { display: flex; flex: none; flex-direction: column; min-height: 0; border-top: 1px solid var(--line); }
+.acc { display: flex; flex-direction: column; min-height: 0; border-top: 1px solid var(--line); }
 .contents-head + .acc { border-top: none; }
 .acc.is-open { flex: 1 1 auto; }
 .acc-head { flex: none; width: 100%; justify-content: flex-start; gap: 0.55rem; padding: 0.75rem 1rem; border: none; border-radius: 0; background: transparent; font-size: 1rem; font-weight: 700; }
@@ -377,18 +333,6 @@ fieldset { border: none; margin: 0; padding: 0; }
   .hotspot { padding: 0.25rem 0.8rem 0.25rem 0.25rem; font-size: 0.85rem; }
   .hotspot-icon { width: 1.6rem; height: 1.6rem; }
   .big-play { width: 3.6rem; height: 3.6rem; font-size: 1.4rem; }
-}
-
-/* 0.6.4 · Telefonda (dikey ve yatay) soru ve bilgi kartları daha sıkı; masaüstü aynı kalır. */
-@media (max-width: 640px), (orientation: landscape) and (max-height: 520px) {
-  .video-overlay { padding: 0.5rem; }
-  .video-overlay .card { padding: 0.65rem 0.8rem; }
-  .video-overlay .option { padding: 0.4rem 0.55rem; margin-bottom: 0.25rem; }
-  .video-overlay .option-list { --option-gap: 0.3rem; }
-  /* İçerik menüsü: başlıklar ve satırlar sıkı; açık bölümün listesine yer kalır. */
-  .contents-head { padding: 0.3rem 0.45rem 0.3rem 0.8rem; }
-  .acc-head { padding: 0.45rem 0.8rem; font-size: 0.95rem; }
-  .contents-item { padding: 0.35rem 0.5rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {

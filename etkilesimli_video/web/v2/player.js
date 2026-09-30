@@ -1,4 +1,4 @@
-/* haluku oynatıcısı 0.6.5
+/* haluku oynatıcısı 0.5.0
  * Derleme gerektirmeyen tek dosya. Yerel önizlemede (/oynat/<id>) projeyi haluku sunucusundan
  * okur; SCORM/web paketinde window.HALUKU_PROJE verisini kullanır ve bir LMS bulursa
  * SCORM 1.2 ile ilerleme, puan ve tamamlanma bilgisini gönderir. */
@@ -7,7 +7,8 @@
 
   const QUESTION_BUTTON_SECONDS = 10;
   const END_GUARD_SECONDS = 0.35;
-  const SEEK_STEP = 10;
+  const SETTLE_MS = 3500;
+  const MIN_CROP_WIDTH = 480;
   const COMPLETION_RATIO = 0.9;
   const SAVE_EVERY_MS = 10000;
   const RATES = [0.75, 1, 1.25, 1.5, 1.75, 2];
@@ -15,7 +16,7 @@
   const TYPE_LABEL = { bookmark: "Yer imi", question: "Soru", popup: "Pop-up" };
   const YT_STATE = { UNSTARTED: -1, ENDED: 0, PLAYING: 1, PAUSED: 2, BUFFERING: 3, CUED: 5 };
   const PACKAGED = Boolean(window.HALUKU_PROJE);
-  // Telefon ve tabletler: ses cihaz tuşlarıyla ayarlanır, sarma düğmeleri büyük olur, tam ekran yataya döner.
+  // Dokunmatik cihazlara YouTube mobil oynatıcıyı verir; onun yerleşimi kırpmaya uygun değil.
   const TOUCH_UI = /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent) ||
     (navigator.maxTouchPoints > 1 && /Macintosh/i.test(navigator.userAgent));
   const YT_ERRORS = {
@@ -69,28 +70,6 @@
       for (const [key, value] of Object.entries(attrs)) path.setAttribute(key, value);
       svg.append(path);
     }
-    return svg;
-  }
-
-  // Geri / ileri sarma simgesi: ortasında saniye yazan dairesel ok. "back" saat yönünün tersine döner,
-  // "forward" için ok yatayda aynalanır (yazı aynalanmaz).
-  function seekIcon(direction, size = 24) {
-    const svg = document.createElementNS(SVG_NS, "svg");
-    for (const [key, value] of Object.entries({ viewBox: "0 0 24 24", width: String(size), height: String(size), "aria-hidden": "true", focusable: "false" })) {
-      svg.setAttribute(key, value);
-    }
-    const make = (tag, attrs, parent) => {
-      const node = document.createElementNS(SVG_NS, tag);
-      for (const [key, value] of Object.entries(attrs)) node.setAttribute(key, value);
-      parent.append(node);
-      return node;
-    };
-    const arrow = make("g", direction === "back" ? {} : { transform: "matrix(-1 0 0 1 24 0)" }, svg);
-    make("path", { d: "M4.95 10.43A7.5 7.5 0 1 0 12 5.5", fill: "none", stroke: "currentColor", "stroke-width": "2", "stroke-linecap": "round" }, arrow);
-    make("path", { d: "M9.2 5.5 12.8 3.2v4.6z", fill: "currentColor" }, arrow);
-    make("text", {
-      x: "12", y: "13.4", "text-anchor": "middle", "dominant-baseline": "central", "font-size": "7.8", "font-weight": "700", fill: "currentColor"
-    }, svg).textContent = String(SEEK_STEP);
     return svg;
   }
 
@@ -368,7 +347,6 @@
           setTimeout(chooseTrack, 800);
         },
         captionsOff: () => {
-          try { yt.setOption("captions", "track", {}); } catch { /* modül yüklü değil */ }
           try { yt.unloadModule("captions"); } catch { /* yok say */ }
         }
       };
@@ -393,6 +371,7 @@
     let playing = false;
     let everPlayed = false;
     let ended = false;
+    let playStartedAt = 0;
     let duration = Number(project.video.duration) || 0;
     let current = 0;
     let overlay = null; // { kind: "gate" | "card" | "end" | "resume", item? }
@@ -414,6 +393,7 @@
     let swallowClick = false;
     let openSection = null;
     let activeBookmarkId = null;
+    let cropAllowed = !TOUCH_UI;
     let volume = Math.min(100, Math.max(1, Number(prefs.get("haluku-ses")) || 100));
     let muted = false;
 
@@ -424,6 +404,7 @@
       src: `https://i.ytimg.com/vi/${encodeURIComponent(project.video.videoId)}/hqdefault.jpg`
     });
     poster.addEventListener("error", () => poster.remove());
+    const strips = h("div", { class: "video-strips", "aria-hidden": "true" });
     const shield = h("div", { class: "video-shield", "aria-hidden": "true" });
     const bigPlay = h("button", { type: "button", class: "big-play", "aria-label": "Oynat" }, "▶");
     const pausedLayer = h("div", { class: "video-paused" }, bigPlay);
@@ -436,20 +417,13 @@
     const unmuteButton = h("button", { type: "button", class: "unmute-button" }, "🔇 Sesi aç");
     const overlayLayer = h("div", { class: "video-overlay", hidden: true });
     const tapHint = h("p", { class: "tap-hint" }, "▶ Başlatmak için videoya dokunun");
-    const seekFlash = h("div", { class: "seek-flash", "aria-hidden": "true" });
-    const frame = h("div", { class: `video-frame${ccOn ? "" : " is-cropped"}` },
+    const frame = h("div", { class: `video-frame${cropAllowed ? " is-cropped" : ""}` },
       h("p", { class: "video-placeholder" }, "Video yükleniyor…"),
-      host, poster, shield, pausedLayer, seekFlash, hotspots, menuButton, unmuteButton, tapHint, toast, overlayLayer);
-    // Yatay telefonda ve tam ekranda videonun iki yanındaki boşluk, geniş geri / ileri sarma düğmesi olur.
-    const sideBack = h("button", { type: "button", class: "side-seek is-back", "aria-label": `${SEEK_STEP} saniye geri sar` },
-      h("span", { class: "side-seek-circle" }, seekIcon("back", 30)));
-    const sideForward = h("button", { type: "button", class: "side-seek is-forward", "aria-label": `${SEEK_STEP} saniye ileri sar` },
-      h("span", { class: "side-seek-circle" }, seekIcon("forward", 30)));
-    const videoArea = h("div", { class: "video-area" }, sideBack, frame, sideForward);
+      host, poster, strips, shield, pausedLayer, hotspots, menuButton, unmuteButton, tapHint, toast, overlayLayer);
     const errorBox = h("div", { class: "alert error", role: "alert", hidden: true });
 
     // --- kontroller
-    const playButton = h("button", { type: "button", class: "control-button play-toggle", disabled: true, "aria-label": "Oynat" }, "▶");
+    const playButton = h("button", { type: "button", class: "control-button", disabled: true, "aria-label": "Oynat" }, "▶");
     const volumeButton = h("button", {
       type: "button", class: "control-button volume-button", disabled: true, "aria-label": "Sesi kapat", title: "Sesi kapat / aç (M)"
     }, speakerIcon("high"));
@@ -467,21 +441,9 @@
     }, "CC");
     const rateSelect = h("select", { "aria-label": "Oynatma hızı" }, RATES.map((rate) => h("option", { value: String(rate), selected: rate === 1 }, `${rate}x`)));
     const fullscreenButton = h("button", { type: "button", class: "control-button", "aria-label": "Tam ekran" }, "⤢");
-    // Fareyle kullanımda sarma düğmeleri kontrol çubuğunda, oynat düğmesinin yanında durur.
-    const barBack = TOUCH_UI ? null : h("button", {
-      type: "button", class: "control-button seek-button", disabled: true, "aria-label": `${SEEK_STEP} saniye geri sar`, title: `${SEEK_STEP} saniye geri (J)`
-    }, seekIcon("back"));
-    const barForward = TOUCH_UI ? null : h("button", {
-      type: "button", class: "control-button seek-button", disabled: true, "aria-label": `${SEEK_STEP} saniye ileri sar`, title: `${SEEK_STEP} saniye ileri (L)`
-    }, seekIcon("forward"));
     const controls = h("div", { class: "controls", "aria-label": "Video kontrolleri" },
-      playButton, barBack, barForward, h("div", { class: "volume" }, volumeButton, volumeSlider), timeText, progress, ccButton,
+      playButton, h("div", { class: "volume" }, volumeButton, volumeSlider), timeText, progress, ccButton,
       h("label", { class: "rate" }, rateSelect), fullscreenButton);
-    // Dikey telefonda (ve dar pencerede) videonun altında sarma ve oynatma düğmeleri.
-    const rowBack = h("button", { type: "button", class: "transport-seek", "aria-label": `${SEEK_STEP} saniye geri sar` }, seekIcon("back", 26));
-    const rowPlay = h("button", { type: "button", class: "transport-play", disabled: true, "aria-label": "Oynat" }, "▶");
-    const rowForward = h("button", { type: "button", class: "transport-seek", "aria-label": `${SEEK_STEP} saniye ileri sar` }, seekIcon("forward", 26));
-    const transport = h("div", { class: "transport" }, rowBack, rowPlay, rowForward);
 
     // --- içerik paneli: masaüstünde videonun yanında, dar ekranda video üzerinde açılır menü
     const sections = [];
@@ -510,12 +472,8 @@
           h("button", { type: "button", class: "link", "aria-label": "Menüyü kapat", onClick: () => { setMenu(false); menuButton.focus(); } }, "✕")),
         sections.map((section) => section.element),
         sections.length ? null : h("p", { class: "muted contents-empty" }, "Sorular ve bilgi kartları, video oynarken videonun üzerinde düğme olarak görünecek.")));
-    const stage = h("div", { class: "stage" }, h("div", { class: "stage-main" }, videoArea, errorBox, controls, transport, panel));
+    const stage = h("div", { class: "stage" }, h("div", { class: "stage-main" }, frame, errorBox, controls, panel));
     if (sections.length) toggleSection(sections[0].key);
-    const onStageResize = () => { updateSeekLayout(); layoutOptions(); };
-    if (typeof ResizeObserver === "function") new ResizeObserver(onStageResize).observe(stage);
-    else window.addEventListener("resize", onStageResize);
-    document.fonts?.ready.then(layoutOptions);
 
     // --- olaylar
     // overflow: clip desteklemeyen tarayıcılarda taşan iframe çerçeveyi kaydırmasın.
@@ -529,12 +487,6 @@
     menuButton.addEventListener("click", () => setMenu(!menuOpen));
     unmuteButton.addEventListener("click", () => setMuted(false));
     volumeButton.addEventListener("click", toggleMute);
-    rowPlay.addEventListener("click", togglePlay);
-    for (const [button, delta] of [
-      [sideBack, -SEEK_STEP], [sideForward, SEEK_STEP], [rowBack, -SEEK_STEP], [rowForward, SEEK_STEP], [barBack, -SEEK_STEP], [barForward, SEEK_STEP]
-    ]) {
-      button?.addEventListener("click", () => seekBy(delta));
-    }
     volumeSlider?.addEventListener("input", () => setVolume(Number(volumeSlider.value)));
 
     progress.addEventListener("pointerdown", (event) => {
@@ -578,8 +530,6 @@
       else if (key === "c" && !ccButton.disabled) setCaptions(!ccOn);
       else if (key === "m" && ready) toggleMute();
       else if (key === "f") toggleFullscreen();
-      else if (key === "j" && !overlay) seekBy(-SEEK_STEP);
-      else if (key === "l" && !overlay) seekBy(SEEK_STEP);
       else if (key === "arrowright" && !overlay) seekTo(current + 5);
       else if (key === "arrowleft" && !overlay) seekTo(current - 5);
       else return;
@@ -613,13 +563,7 @@
         ccButton.disabled = false;
         volumeButton.disabled = false;
         if (volumeSlider) volumeSlider.disabled = false;
-        for (const button of [barBack, barForward]) if (button) button.disabled = false;
         applyVolume();
-        // Altyazı tercihi "açık" kayıtlıysa modül açıkça yüklenir; yalnızca iz seçmek yetmiyor.
-        if (ccOn) {
-          captionsApplied = true;
-          player.captionsOn();
-        }
         refreshPlayState();
         renderTime();
         renderQuestions();
@@ -645,7 +589,6 @@
     }
 
     renderQuestions();
-    setTimeout(updateSeekLayout, 0); // sahne sayfaya eklendikten hemen sonra; ResizeObserver ilk çizimi bekler
     return stage;
 
     // ---------- içerik paneli ----------
@@ -715,7 +658,7 @@
       const wasPlaying = playing;
       playing = state === YT_STATE.PLAYING;
       if (playing) {
-        if (!wasPlaying && !ccOn) keepCaptionsOff();
+        if (!wasPlaying) playStartedAt = Date.now();
         if (seekOnStart !== null) {
           if (Math.abs(player.time() - seekOnStart) > 1.5) seekPlayer(seekOnStart);
           seekOnStart = null;
@@ -835,55 +778,6 @@
       seekPlayer(t);
     }
 
-    function seekBy(delta) {
-      if (!ready) return;
-      if (overlay && overlay.kind !== "end") {
-        toastMessage("Önce açık olan kartı kapatın.");
-        return;
-      }
-      const before = current;
-      seekTo(current + delta);
-      if (Math.abs(current - before) >= 0.5) flashSeek(delta);
-    }
-
-    // Sarınca videonun ilgili yanında kısa bir "‹‹ 10 sn" / "10 sn ››" işareti gösterilir.
-    function flashSeek(delta) {
-      const back = delta < 0;
-      seekFlash.replaceChildren(seekIcon(back ? "back" : "forward", 26), h("span", null, `${back ? "−" : "+"}${SEEK_STEP} sn`));
-      seekFlash.className = `seek-flash ${back ? "is-back" : "is-forward"}`;
-      void seekFlash.offsetWidth; // animasyonu baştan başlat
-      seekFlash.classList.add("is-visible");
-    }
-
-    // Sarma düğmelerinin yeri: fareyle kullanımda kontrol çubuğu; yatay telefonda videonun iki yanındaki
-    // boşluk (yeterince genişse); dikey telefonda ve dar pencerede videonun altındaki düğme satırı.
-    function updateSeekLayout() {
-      const free = (stage.clientWidth - videoArea.offsetWidth) / 2;
-      const landscape = window.matchMedia ? window.matchMedia("(orientation: landscape)").matches : false;
-      const side = TOUCH_UI && landscape && free >= 60;
-      const row = !side && (TOUCH_UI || stage.clientWidth <= 640);
-      stage.classList.toggle("has-side-seek", side);
-      stage.classList.toggle("has-seek-row", row);
-      if (side) stage.style.setProperty("--yan", `${Math.round(Math.min(free - 16, 120))}px`);
-    }
-
-    // Kısa şıklar iki sütuna dizilir: her şık yarım genişliğe tek satırda sığıyorsa. Biri bile sığmazsa hepsi
-    // tek sütunda kalır. Genişlik değiştikçe (döndürme, tam ekran) yeniden ölçülür.
-    function layoutOptions() {
-      const list = overlayLayer.querySelector(".option-list");
-      if (!list || !list.clientWidth) return;
-      const labels = [...list.children];
-      const card = list.closest(".question-card");
-      list.classList.remove("is-grid");
-      list.classList.add("is-measuring");
-      const widest = Math.max(...labels.map((label) => label.getBoundingClientRect().width));
-      list.classList.remove("is-measuring");
-      const gap = parseFloat(getComputedStyle(list).columnGap) || 0;
-      const grid = labels.length >= 2 && widest <= (list.clientWidth - gap) / 2;
-      list.classList.toggle("is-grid", grid);
-      card?.classList.toggle("has-option-grid", grid);
-    }
-
     function fractionAt(clientX) {
       const box = scrub?.box ?? progress.getBoundingClientRect();
       return box.width ? Math.min(1, Math.max(0, (clientX - box.left) / box.width)) : 0;
@@ -893,15 +787,6 @@
       const fraction = fractionAt(clientX);
       fill.style.width = `${fraction * 100}%`;
       timeText.textContent = `${clock(fraction * duration)} / ${clock(duration)}`;
-    }
-
-    // Bazı telefonlarda YouTube, cihazın altyazı ayarı açıksa oynatma başlarken altyazıyı kendiliğinden
-    // açıyor. CC düğmesi kapalıyken altyazı görünmesin diye oynatma her başladığında yeniden kapatılır.
-    // (YouTube'un getOption("captions", "track") bilgisi kapatıldıktan sonra da eski dili döndürdüğü için
-    // altyazının açık olup olmadığı oradan anlaşılamıyor.)
-    function keepCaptionsOff() {
-      player.captionsOff();
-      setTimeout(() => { if (!ccOn) player.captionsOff(); }, 1500);
     }
 
     function setCaptions(on) {
@@ -996,7 +881,6 @@
         try { screen.orientation?.unlock?.(); } catch { /* desteklenmiyor */ }
       }
       stage.classList.toggle("is-fullscreen", on);
-      updateSeekLayout();
       fullscreenButton.textContent = on ? "⤡" : "⤢";
       fullscreenButton.setAttribute("aria-label", on ? "Tam ekrandan çık" : "Tam ekran");
     }
@@ -1004,24 +888,27 @@
     // ---------- görünüm ----------
 
     function refreshPlayState() {
-      for (const button of [playButton, rowPlay]) {
-        button.textContent = playing ? "❚❚" : "▶";
-        button.setAttribute("aria-label", playing ? "Duraklat" : "Oynat");
-        button.disabled = !ready;
-      }
+      playButton.textContent = playing ? "❚❚" : "▶";
+      playButton.setAttribute("aria-label", playing ? "Duraklat" : "Oynat");
+      playButton.disabled = !ready;
       frame.classList.toggle("is-playing", playing);
       frame.classList.toggle("is-paused", ready && !playing && !overlay);
       updateCrop();
     }
 
     // YouTube, oynatma her başladığında 2-3 saniye kendi başlığını, "Diğer videolar" düğmesini ve
-    // logosunu iframe'in kenarlarında gösterir; duraklatınca göstermez. iframe çerçeveden taşırılıp
-    // kırpılarak bunlar gizlenir (taşırma payı app.css'te; telefonda da geçerli).
-    // Altyazı açıkken kırpılmaz: altyazı iframe'in alt kenarında durur, kırpma onu keser. O durumda
-    // YouTube'un simgeleri oynatma başlarken kısa süre görünür; üstlerine koyu şerit konmaz.
+    // logosunu iframe'in kenarlarında gösterir; duraklatınca göstermez. Masaüstünde iframe çerçeveden
+    // taşırılıp kırpılarak bunlar gizlenir; dar çerçevede kırpma yerine oynatmanın ilk saniyelerinde
+    // koyu şeritler kullanılır. Altyazı da iframe'in alt kenarında durduğu için altyazı açıkken ikisi de
+    // kullanılmaz: altyazı hep aynı yerde okunur, YouTube'un simgeleri oynatma başlarken kısa süre görünür.
+    // Dokunmatik cihazlarda ikisi de kullanılmaz: mobil oynatıcının yerleşimi kırpmaya uygun değil.
     function updateCrop() {
-      const crop = !ccOn;
+      if (!TOUCH_UI && frame.isConnected) cropAllowed = frame.clientWidth >= MIN_CROP_WIDTH;
+      const starting = playing && Date.now() - playStartedAt < SETTLE_MS;
+      const crop = cropAllowed && !ccOn;
+      const cover = !TOUCH_UI && !cropAllowed && !ccOn && starting;
       if (frame.classList.contains("is-cropped") !== crop) frame.classList.toggle("is-cropped", crop);
+      if (frame.classList.contains("show-strips") !== cover) frame.classList.toggle("show-strips", cover);
     }
 
     function renderTime() {
@@ -1103,7 +990,6 @@
         overlayLayer.className = `video-overlay is-${state.kind}`;
         overlayLayer.replaceChildren(content);
         overlayLayer.hidden = false;
-        layoutOptions();
       } else {
         overlayLayer.replaceChildren();
         overlayLayer.hidden = true;
@@ -1182,8 +1068,7 @@
         });
         return { option, input, label };
       });
-      const fieldset = h("fieldset", null, h("legend", { class: "sr-only" }, "Seçenekler"),
-        h("div", { class: "option-list" }, options.map((row) => row.label)));
+      const fieldset = h("fieldset", null, h("legend", { class: "sr-only" }, "Seçenekler"), options.map((row) => row.label));
       const hint = multiple ? h("p", { class: "muted" }, "Birden fazla doğru cevap olabilir.") : null;
       const answerRow = h("div", { class: "actions" }, answerButton);
       const feedback = h("div", { role: "status", hidden: true });

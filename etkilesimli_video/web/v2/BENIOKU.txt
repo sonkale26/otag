@@ -1,4 +1,4 @@
-haluku 0.6.5 · bağımsız sürüm
+haluku 0.5.0 · bağımsız sürüm
 =================================
 
 YouTube videolarına soru, pop-up bilgi kartı ve yer imi ekleyen editörün sunucu, kurulum ya da
