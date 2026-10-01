@@ -1,0 +1,366 @@
+{
+  "course_title": "Bölüm 1: İletişim Süreci",
+  "schema_version": 2,
+  "audio_mode": "single",
+  "audio_file": "audio/ders.mp3",
+  "audio_codec": "MP3 128 kbps",
+  "sample_rate": 44100,
+  "audio_level": {
+    "inPeakDb": -1.1627457544993565,
+    "inRmsDb": -19.4928274580787,
+    "gainDb": 0.804,
+    "clipped": 0,
+    "perPart": true,
+    "gainMinDb": 0.163,
+    "gainMaxDb": 2.19,
+    "targetRmsDb": -10
+  },
+  "total_duration": 2582.1,
+  "tts_engine": "ElevenLabs · eleven_v4",
+  "ai_disclosure": {
+    "level": "ai4",
+    "label": "Yüksek ÜYZ katkısı",
+    "text": "Yüksek ÜYZ katkısı (ai4)"
+  },
+  "tts": {
+    "engine": "elevenlabs",
+    "generated_at": "2026-09-30T13:50:20.375Z",
+    "max_chars_per_request": 9500,
+    "model": "eleven_v4",
+    "voice": {
+      "id": "JgYekNWmelei0oWTtYie",
+      "name": "Elvan - Energetic, Soft and Warm",
+      "gender": "female",
+      "category": "professional"
+    },
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.7,
+      "request_stitching": true
+    },
+    "language_code": "tr",
+    "pauses": {
+      "after_title": "[short pause]",
+      "between_paragraphs": "[short pause]",
+      "between_chunks_ms": 900,
+      "between_chapters_ms": 1600,
+      "between_parts_ms": 250,
+      "lead_in_ms": 400,
+      "tail_ms": 600
+    },
+    "text_rules": {
+      "numbers_to_words": true,
+      "fix_all_caps": true,
+      "abbreviations": true,
+      "spell_unknown_acronyms": true,
+      "builtin_list_edited": true,
+      "builtin_rule_count": 223,
+      "user_lexicon_rule_count": 49,
+      "user_lexicon": "MIT = Em-Ay-Ti\nOECD = O-ii-sii-dii\nGPT = Ci-Pi-Ti\nBERT = bört\nLISP = Lisp\nMYCIN = May-sin\nALPAC = El-pek\nXCON = Eks-kon\nDEC = Dek\nR1 = re bir\nIIT = Ay-Ay-Tii\nGDPR = Ci-Di-Pi-Ar\nKVKK = Ka-Ve-Ka-Ka\nSQL = Es-Küy-El\nDIKW = Dik-dabılyu\nIDC = Ay-Di-Si\nMNIST = Em-nist\nUCI = Yu-Es-Ay\nPIPL = Pi-Ay-Pi-El\nLGPD = El-Ci-Pi-Di\nCCPA = Si-Si-Pi-Ey\nIEC = Ay-İ-Si\nISO = İ-so\nGPAI = Ci-Pi-Ey-Ay\nMRI = Em-Ar-Ay\nCO2 = karbon di oksit\nCNN = Si-En-En\nV1 = ve bir\nV2 = ve iki\nV4 = ve dört\nMR = me re\nVAE = Vi-Ey-İ\nIT = Ay-Ti\nVGG = Vi-Ci-Ci\nGAN = Gan\nRLHF = Ar-El-Eyç-Ef\nBT = Be-Te\nRAG = Rag\nXAI = Eks-Ey-Ay\nEBA = e be a\nT3 = te üç\n& = ve\nMEBİ = me-bi\nMAIN = Meyn\nIBM = Ay-Bi-Em\nKAYZED = KAYZED\nGSYİH = gGayrisafi Yurt İçi Hasıla\nWEF = Ve-E-Ef\nHAI = Eç-Ey-Ay"
+    },
+    "audio": {
+      "codec": "MP3 128 kbps",
+      "sample_rate": 44100,
+      "gain_mode": "auto",
+      "gain_per_part": true,
+      "target_rms_dbfs": -10,
+      "gain_applied_db": 0.804,
+      "gain_min_db": 0.163,
+      "gain_max_db": 2.19,
+      "input_peak_dbfs": -1.163,
+      "input_rms_dbfs": -19.493,
+      "limiter_hits": 0,
+      "ramp_in_ms": 20,
+      "ramp_out_ms": 50
+    },
+    "manual_edited_chunks": null
+  },
+  "generated_at": "2026-09-30T13:50:20.375Z",
+  "chapters": [
+    {
+      "id": 1,
+      "title": "İletişim Kavramı",
+      "start": 0.4,
+      "end": 472.34,
+      "chunks": [
+        {
+          "id": "c001",
+          "title": "GİRİŞ",
+          "text": "Kitabın bu modülünde ele alınan “İletişim Sürecinin Temel Ögeleri”, anlam aktarımının gerçekleşmesini sağlayan bileşenlerin birbiriyle olan dinamik ve işlevsel ilişkilerini kuramsal bir çerçevede incelemektedir. Bir mesajı tasarlayıp kodlayan kaynaktan başlayarak, aktarılan bilginin içeriği ve dilini oluşturan iletiye; fiziksel iletimi üstlenen ve beş duyuyla şekillenen kanallardan, hedef konumundaki alıcının kodaçma kapasitesine uzanan bir yapı ortaya konmaktadır. Bu etkileşimli düzlemde sürecin çift yönlü niteliğini pekiştiren en belirleyici unsur, hedefin kaynağa dönük yanıtını içeren yansıma (geribildirim) mekanizmasıdır. Öte yandan, tarafların sahip olduğu iletişim becerileri, tutumları, deneyim alanları ve sosyokültürel arka planları kadar süreci aksatan gürültü unsurları da aktarımın başarısını tayin etmektedir. Dolayısıyla bu modül, ortak anlam üretiminin hangi temel unsurlar ve etkileşimler üzerinden varlık kazandığını kavramsal bir yaklaşımla temellendirmektedir.",
+          "start": 0.4,
+          "end": 66,
+          "duration": 65.6,
+          "level": 2,
+          "tts_parts": 1,
+          "chars": 1010
+        },
+        {
+          "id": "c002",
+          "title": "İLETİŞİM KAVRAMI",
+          "text": "İletişim kavramı Latince’deki Communicatio ve batı dillerindeki Communication kavramının karşılığıdır. İletişim en geniş anlamıyla canlılar arasında belirli ortaklaşa unsurlara dayanan süreci ifade etmektedir. Bu anlayıştan hareketle iletişimin sadece insanları değil tüm canlıları kapsadığı söylenebilir. Bununla birlikte, iletişim kavramının kapsamlı ve sınırlı olmak üzere, iki anlamda kullanıldığı görülmektedir. Sınırlı anlamda iletişim, insanlararası ilişkilere yönelik kullanılmaktadır. Kapsamlı anlamda iletişim ise çok çeşitli alanlarda kullanılmaktadır. Örneğin, iletişim kavramı hayvanlar asındaki ilişkileri (animal iletişim), canlı varlıklar arasındaki ilişkileri (bio iletişim), teknik sistemler arasındaki ilişkileri (teknik iletişim) ya da insanlar ile teknik araçlar arasındaki ilişkileri (insan- makine- iletişim) ifade etmek amacıyla kullanılmaktadır.\n\nResim 1. İletişim; en az iki kişi arasında duygu ve düşünceleri ifade etmede yararlanılan bir süreçtir.\n\nYan yana karelerde iki köpek, bir köpekle yüz yüze duran bir kişi ve bilgisayar başında toplanmış üç kişi görülmektedir. Görseller, canlılar arasındaki farklı etkileşim biçimlerini yan yana sunmaktadır.\n\nİletişim kavramına ilişkin literatür taramalarından da görüleceği üzere, kavramın tek bir tanımlamasının olduğunu söylemek olanaklı değildir. Ancak iletişim, en yalın şekliyle, en az iki kişi arasında duygu, düşünce ve bilginin farklı araç ve yöntemler kullanılarak paylaşılması olarak tanımlanabilir. Bu araçlar, örneğin bazen kişinin bedenidir. Kişi bedeninin duruşu, bakışları, jest ve mimikleriyle hatta giysisi ile karşısındaki kişi/kişilere duygu ya da düşüncelerini bir mesaj olarak gönderebilmektedir ki, bu sözsüz iletişimin de önemli bölümünü oluşturan iletişim biçimidir. Bununla birlikte kullanılan ses ve sözcükler, eş deyişle dil, iletişimde en önemli simge sistemlerinden biridir. Dilin kullanımı, en anlaşılır ve açık mesajları sağlasa da zaman zaman ses tonlamaları, sesin rengi mesajlardaki anlamı en az kelimeler kadar etkileyebilmekte ve değiştirebilmektedir: Gür ve yüksek bir ses tonu ile dile getirilen mesajın içeriği her ne kadar içerik açısından olumlu da olsa, alıcı tarafından farklı ya da olumsuz biçimde algılanabilir.\n\nWatzlawick’e göre iletişimsizlik mümkün değildir: Bir kişinin başkasının nezaretinde ya da başkası ile birlikte her davranışı bir ileti oluşturmakta ve bu nedenle iletişim olarak nitelendirilmesi gerekmektedir. Kişilerarası ortamlarda her davranışın bir iletişimsel nitelik taşıması, yani iletişim olması, iletişimsizliğin mümkün olmadığı çıkarımına vurgu yapmaktadır. Öyle ki, eylemde bulunmak ya da bulunmamak, konuşmak ya da susmak, bunların hepsinin ileti niteliği vardır ve bunlar karşıdaki kişi/kişileri etkilemektedir. Bu çerçeveden bakıldığında, iletişimin yokluğunun olanaksız olduğunu; gündelik yaşamda iletişimin olmadığı tek bir an’ın dahi bulunmadığını söylemek yanlış olmayacaktır. Öyle ki, iletişimin gerçekleşmesi için sadece kişinin kendisi de yeterli olmaktadır. Kişinin kendi içinde gerçekleştirdiği, kendisine sorular sorarak cevaplar aradığı, kendi özeleştirisini ve kendine ya da çevresine ilişkin yaptığı değerlendirmeler de bir tür iletişimdir ve birey içi iletişim olarak tanımlanmaktadır.\n\nNeden iletişim kuruyoruz? sorusunun en açık cevabı ise, etkilemek ve ikna etmek olarak verilebilir. Her iletişim sürecinin temel amacı olan etkileme ve ikna etme çabası alıcının davranışlarında, düşüncelerinde, tutumlarında ya da kanaatlerinde bir değişiklik, bir farklılık yaratma isteğinden kaynaklanmaktadır. Mesajı gönderen alıcıyı etkilemeye çalışırken, alıcı da geriye verdiği mesajla mesajı üreteni etkilemektedir. Dolayısıyla bu nedenle, iletişim süreci dairesel ya da döngüsel ifadeleriyle açıklanmaktadır.\n\nHer davranışın/iletişimin temel güdüsünü amaç oluşturmaktadır. Amaçsız davranış/iletişim düşünülemez. İletişimde bulunan, başkası ile ilişki kurmak isteyen her kişinin önce genel bir amacı vardır. İletişimde bulunan kişi, en azından başka birine bir şeyler bildirmek veya iletmek istediğini, yani iletişimsel eylemin bildirme niteliğini gerçekleştirmek amacını gütmektedir. Eğer bu kişinin böyle bir amacı olmasaydı, karşısındaki ile ilişki kurması da mümkün veya gerekli olmazdı.\n\nGenel anlamıyla iletişim kavramının, birbirlerini etkilemek amacında olan en az iki öğe arasında meydana gelen bir etkileme olgusunu ifade ettiğini belirten Yüksel, kavrama ilişkin şu farklı tanımlamaları da dile getirmektedir:\n\n- İletişim, insanların arasında duygu ve fikirlerin akışıdır.\n\n- Bir kimsenin düşüncelerini ve duygularını diğerlerine açık seçik olarak belirtmesi sürecidir.\n\n- Bireylerarasında anlamları ortak kılma sürecidir.\n\n- Bir kaynağın bir iletiyi bir oluk üzerinden bir alıcıya iletmesi sürecidir.\n\n- Seçilmiş bir haberin, bir haber kaynağından belli bir mesafeye iletilmesi sürecidir.\n\nİletişimin en temel özelliklerinden biri anlam yaratma ve anlamları ortak kılmadır. İletişim sürecinde mesajı alan birey duygusal ve bilişsel yapılarıyla o mesajı algılar ve anlamlandırır. Bu, bireyin almış olduğu mesajı açımlayarak, ona bir anlam yüklemesidir. İşte bu noktada zaman zaman iletişim sorunları ile karşılaşılmaktadır; zira, her mesaja her bireyin aynı anlamı yüklemesi her zaman mümkün olmamaktadır. Kimi zaman mesaj oldukça açık ve anlaşılır ve hatta iletişimde bulunanlar aynı grubun üyeleri de olsa, mesajı algılama ve buna bağlı olarak anlamlandırma biçimleri birbirinden farklı olabilmektedir.\n\nBu farklılıkların varlığı istenen düzey ve etkililikteki iletişimin ne kadar güç olduğunu ortaya koymaktadır. Bu güçlülüğün yenilmesinde şu öğelere dikkat etmek gerekir:\n\n- Çevresel etmenler,\n\n- Bireyler arası ilişkiler,\n\n- Özel iletişim biçimleri,\n\n- Kullanılan ortam, kanal ya da oluklar.\n\nÇevresel etmenler, çok özel biçimde ifade edilirse, belli bir iletişim sürecinin içinde gerçekleştiği şartlar ya da durumlardır. Kaynak ya da alıcının içinde bulunduğu çevresel etmenler iletişim sürecini olumlu ya da olumsuz bir biçim veya yönde etkileyebilir.",
+          "start": 66.9,
+          "end": 472.34,
+          "duration": 405.44,
+          "level": 2,
+          "tts_parts": 1,
+          "chars": 6325
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "İletişim Sürecinin Özellikleri",
+      "start": 473.94,
+      "end": 695.5,
+      "chunks": [
+        {
+          "id": "c003",
+          "title": "GİRİŞ",
+          "text": "Kitabın bu modülünde ele alınan “İletişim Sürecinin Özellikleri”, iletişimi durağan bir aktarım kalıbından çıkararak başı ve sonu olmayan, dinamik bir insan eylemi olarak konumlandırır. Bireyin varoluşsal serüveni boyunca toplumsal ve kültürel çevresiyle geliştirdiği ilişkiler ağı, iletişimin hem dönüştürülen hem de dönüştüren yapısını ortaya koyar. Bu dinamizm; kaynağın anlamı kodlayıp uygun kanalla hedefe yöneltmesi ve alıcının bu kodu açarak geri bildirimde bulunmasıyla şekillenen dairesel bir etkileşim zincirine dayanır. Sürecin çift yönlü ve döngüsel niteliği, tarafların sürekli rol değiştirmesini zorunlu kılarken, sistemi oluşturan bileşenlerin uyumlu işleyişini de gerekli kılar. Dolayısıyla bu modül; anlamın ortaklaşa inşasını, sürecin sürekliliğini ve öğeler arasında meydana gelebilecek aksamaların doğuracağı iletişimsel engelleri temellendirmeyi amaçlamaktadır.",
+          "start": 473.94,
+          "end": 534.5,
+          "duration": 60.56,
+          "level": 2,
+          "tts_parts": 1,
+          "chars": 905
+        },
+        {
+          "id": "c004",
+          "title": "İLETİŞİM SÜRECİNİN ÖZELLİKLERİ",
+          "text": "Kitabın bu modülünde ele alınan “İletişim Sürecinin Özellikleri”, iletişimi durağan bir aktarım kalıbından çıkararak başı ve sonu olmayan, dinamik bir insan eylemi olarak konumlandırır. Bireyin varoluşsal serüveni boyunca toplumsal ve kültürel çevresiyle geliştirdiği ilişkiler ağı, iletişimin hem dönüştürülen hem de dönüştüren yapısını ortaya koyar. Bu dinamizm; kaynağın anlamı kodlayıp uygun kanalla hedefe yöneltmesi ve alıcının bu kodu açarak geri bildirimde bulunmasıyla şekillenen dairesel bir etkileşim zincirine dayanır. Sürecin çift yönlü ve döngüsel niteliği, tarafların sürekli rol değiştirmesini zorunlu kılarken, sistemi oluşturan bileşenlerin uyumlu işleyişini de gerekli kılar. Dolayısıyla bu modül; anlamın ortaklaşa inşasını, sürecin sürekliliğini ve öğeler arasında meydana gelebilecek aksamaların doğuracağı iletişimsel engelleri temellendirmeyi amaçlamaktadır.",
+          "start": 535.4,
+          "end": 597.96,
+          "duration": 62.56,
+          "level": 2,
+          "tts_parts": 1,
+          "chars": 930
+        },
+        {
+          "id": "c005",
+          "title": "İletişim Süreci",
+          "text": "İnsanlığın geçmişinden günümüze ve geleceğe uzanan, bireyin doğumundan ölümüne yaşamının her alanında ve her an etkin olan iletişimin başı ve sonu yoktur. İletişim bireyin biyolojik gelişimine ve kültürel ve toplumsal çevresindeki ilişki ve etkileşimlerine koşut olarak sürekli gelişen, değişen ve buna karşılık bireyi de değiştiren bir olgudur. İletişim; bireyin kültürel çevresi (hem doğal, hem toplumsal çevresi) ile ilişkilerine göre değişip gelişen ve buna karşılık insanı değiştiren bir süreçtir.\n\nEn az iki kişi arasında gerçekleşen iletişim süreci, kaynak kişi tarafından mesajın oluşturulması ile başlamaktadır. Duygu ve düşünceleri ifade etmek için oluşturulan iletinin kodlanması, iletiyi en etkili iletecek oluğun/aracın seçilmesi ve bu yolla hedefe, eş deyişle, alıcıya gönderilmesi; alıcının ise iletiyi aldıktan sonra kod açımını yapması ve iletiyi gönderen kişiye bir karşılık olarak (yansıma) yeni bir ileti oluşturması, kodlaması ve bir araç kullanarak göndermesi ile iletişim süreci döngüsel bir işleyişte devam etmektedir. Bu döngüsellikte, süreç devam ettiği sürece kaynak ve hedef sürekli yer değiştirmekte ve yeni iletiler üretilmektedir.\n\nSürecin işleyişi hakkında genel bilgiden sonra şimdi de, sürecin içinde yer alan temel öğelere değinilecektir.",
+          "start": 598.86,
+          "end": 695.5,
+          "duration": 96.64,
+          "level": 3,
+          "tts_parts": 1,
+          "chars": 1336
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "İletişim Sürecinin Temel Ögeleri",
+      "start": 697.1,
+      "end": 2168.96,
+      "chunks": [
+        {
+          "id": "c006",
+          "title": "GİRİŞ",
+          "text": "Kitabın bu modülünde ele alınan “İletişim Sürecinin Temel Ögeleri”, anlam aktarımının gerçekleşmesini sağlayan bileşenlerin birbiriyle olan dinamik ve işlevsel ilişkilerini kuramsal bir çerçevede incelemektedir. Bir mesajı tasarlayıp kodlayan kaynaktan başlayarak, aktarılan bilginin içeriği ve dilini oluşturan iletiye; fiziksel iletimi üstlenen ve beş duyuyla şekillenen kanallardan, hedef konumundaki alıcının kodaçma kapasitesine uzanan bir yapı ortaya konmaktadır. Bu etkileşimli düzlemde sürecin çift yönlü niteliğini pekiştiren en belirleyici unsur, hedefin kaynağa dönük yanıtını içeren yansıma (geribildirim) mekanizmasıdır. Öte yandan, tarafların sahip olduğu iletişim becerileri, tutumları, deneyim alanları ve sosyokültürel arka planları kadar süreci aksatan gürültü unsurları da aktarımın başarısını tayin etmektedir. Dolayısıyla bu modül, ortak anlam üretiminin hangi temel unsurlar ve etkileşimler üzerinden varlık kazandığını kavramsal bir yaklaşımla temellendirmektedir.",
+          "start": 697.1,
+          "end": 763.02,
+          "duration": 65.92,
+          "level": 2,
+          "tts_parts": 1,
+          "chars": 1010
+        },
+        {
+          "id": "c007",
+          "title": "İLETİŞİM SÜRECİNİN TEMEL ÖĞELERİ",
+          "text": "Kitabın bu modülünde ele alınan “İletişim Sürecinin Temel Ögeleri”, anlam aktarımının gerçekleşmesini sağlayan bileşenlerin birbiriyle olan dinamik ve işlevsel ilişkilerini kuramsal bir çerçevede incelemektedir. Bir mesajı tasarlayıp kodlayan kaynaktan başlayarak, aktarılan bilginin içeriği ve dilini oluşturan iletiye; fiziksel iletimi üstlenen ve beş duyuyla şekillenen kanallardan, hedef konumundaki alıcının kodaçma kapasitesine uzanan bir yapı ortaya konmaktadır. Bu etkileşimli düzlemde sürecin çift yönlü niteliğini pekiştiren en belirleyici unsur, hedefin kaynağa dönük yanıtını içeren yansıma (geribildirim) mekanizmasıdır. Öte yandan, tarafların sahip olduğu iletişim becerileri, tutumları, deneyim alanları ve sosyokültürel arka planları kadar süreci aksatan gürültü unsurları da aktarımın başarısını tayin etmektedir. Dolayısıyla bu modül, ortak anlam üretiminin hangi temel unsurlar ve etkileşimler üzerinden varlık kazandığını kavramsal bir yaklaşımla temellendirmektedir.",
+          "start": 763.92,
+          "end": 830.32,
+          "duration": 66.4,
+          "level": 2,
+          "tts_parts": 1,
+          "chars": 1037
+        },
+        {
+          "id": "c008",
+          "title": "Kaynak",
+          "text": "İletişim sürecini başlatan, ilk iletiyi oluşturan ve gönderen kişidir. Kaynak algılama, seçme, düşünme, yorumlama süreçlerinde ürettiği anlamlı iletileri simgeler aracılığı ile gönderen kişi ya da kişilerdir. İletişim süreci yapısı gereği önce kişi ya da kişilerin duygu, düşünce, kanı, bilgi ve gereksinmelerini iletmek isteyen bir kaynağı gerektirir ve onunla başlar. Kişiler arası iletişim, başka deyişle yüz yüze iletişim, en sık ve önemli biçimde dil ile olmaktadır.\n\nBir konuşmada konuşmacıyı, bir kongrede/sempozyumda tebliğ sunucusunu, eserlerde yazarı, kitle iletişim sürecinde ise, yayının ya da iletinin üretiminde katkıları olan kişi ya da grubu kapsayabilir. Kaynak, başka bir kimseye araç ve kanallar aracılığıyla bir şey iletmek isteyen ve böylece iletişimi başlatan bir kişidir.\n\nÖzetle kaynak, iletiyi gönderen, uyaran, çizen, yazan, beden ve yüz anlatımında bulunan, yayımlayan birey, kurum ya da kuruluştur. Televizyon istasyonu, gazete, ajansın hazırladığı reklam, muhabir, editör, yayınevi, film kaynağa iyi birer örnektir.\n\nKaynak kişinin/kişilerin iletiyi oluştururken öncelikle dikkat etmesi ya da göz önünde bulundurması gereken kimi noktalar vardır. Kaynak, iletiyi göndereceği hedef kişi/kişilere göre tasarlamalıdır. Enflasyon oranlarına dair bir ekonomik bilgi paylaşılırken, bu iletinin ulaşması istenilen kişi/kişilerin bu tür teknik bilgilere sahip olup olmadığının göz önünde tutularak ileti içeriğinin oluşturulması ya da bir köy kahvesinde yapılacak konuşmada, konuşmanın içerisinde sık sık yabancı dilde kelime ve tanımların yer almaması gibi. İletişimin karşılıklı ilerleyen bir süreç olduğu düşünüldüğünde, yabancı dil ve ekonomi bilgisi olmayan hedef kişi/ kişilerin bir geri ileti yollayamayacakları, daha da ötesinde o iletiyi büyük ölçüde anlayamayacakları dikkatlerden kaçırılmamalıdır.\n\nİletişim becerisi, tutumlar, deneyim ve bilgi düzeyi ile çevresel, toplumsal ve kültürel öğeler iletiyi oluşturacak kaynak kişi/kişilerin kuracakları iletişimi de etkilemektedir:\n\nİletişim sürecinde kaynak; iletişimi başlatan, ilk iletiyi oluşturan ve gönderen kişidir. Kaynak; algılama, seçme, düşünme, yorumlama süreçlerinde ürettiği anlamlı iletileri simgeler aracılığı ile gönderen kişi ya da kişilerdir.",
+          "start": 831.22,
+          "end": 992.9,
+          "duration": 161.68,
+          "level": 3,
+          "tts_parts": 1,
+          "chars": 2338
+        },
+        {
+          "id": "c009",
+          "title": "İletişim Becerisi",
+          "text": "İletişim sürecinde, kaynak kişi iletiyi hedefe gönderdiğinde ve bunu sözle (sözel) gerçekleştirdiğinde şu noktalara dikkat etmelidir:\n\n- İyi söyleyiş,\n\n- Sözcük zenginliği,\n\n- İyi tümce kuruluşu,\n\n- Uyumlu söz dizimi,\n\n- Gerekli ve uygun sözcüklerin seçilişi.\n\nİletiler herhangi bir iletişim aracı yoluyla verildiğinde de uygun aracın seçimi, seçilen araca uygun şekilde iletinin kodlanması, yine iletilerin yapısına dikkat edilmesi ile iletişim süreci içindeki kaynakla ilgili noktalar hep iletişim becerisi kapsamında ele alınmaktadır. Beş adet sözel iletişim becerisi söz konusudur. Bunların ikisi kodlama becerisi olarak adlandırılabilecek olan konuşma ve yazmadır. Diğer ikisi ise, kodaçma becerisi olarak nitelendirilen okuma ve dinlemedir. Beşinci beceri ise hem kodlamada hem de kodaçmada etken olan düşünme ve nedenselliktir.",
+          "start": 993.8,
+          "end": 1056.12,
+          "duration": 62.32,
+          "level": 3,
+          "tts_parts": 1,
+          "chars": 949
+        },
+        {
+          "id": "c010",
+          "title": "Tutumlar",
+          "text": "İletişim sürecinde, sürecin başlangıç öğesi olan kaynağın iletişim kurmasında en önemli etkileyicisi aslında kaynağın kendi kişiliğidir. Bir başka deyişle, kaynağın kişiliği onun iletişim biçimine etki eder. Örneğin kişilik olarak çekingen yapı taşıyan bir kişi, daha çok çekingen birtakım önerilerde bulunur. İletişimde bulunan kişilerin toplumsal norm ve değerleri ile çok farklı konulara ilişkin değişik tutumları da bulunabilir. İnsanların kişiliklerinin biçimlenmesini sağlayan bu öğeler, doğal olarak kişilerin iletişimine de yansıyacaktır.",
+          "start": 1057.02,
+          "end": 1093.82,
+          "duration": 36.8,
+          "level": 3,
+          "tts_parts": 1,
+          "chars": 572
+        },
+        {
+          "id": "c011",
+          "title": "Deneyim ve Bilgi",
+          "text": "Herhangi bir kişinin ne olursa olsun denemediği, yaşamadığı bir konu, bir eylem üzerinde hangi düzlemde gerçekleşirse gerçekleşsin doğru ve sağlıklı bir iletişimde bulunması son derece güçtür. Bu nedenle kaynağın kodlayacağı iletinin sağlıklı olabilmesi, başka bir deyişle, asıl amaç olan alıcı tarafından anlaşılabilmesi ve inandırıcı olması için kaynağın bilgi birikiminin ve deneyiminin yoğun olduğu konularda iletişimde bulunması daha yararlı olacaktır. Kaynak bilgi ve deneyim sahibi olduğu konuları daha iyi anlatacak ve alıcının da aynı konularda bilgi sahibi olmasını sağlayacaktır.",
+          "start": 1094.72,
+          "end": 1138.16,
+          "duration": 43.44,
+          "level": 3,
+          "tts_parts": 1,
+          "chars": 624
+        },
+        {
+          "id": "c012",
+          "title": "Çevresel-Toplumsal ve Kültürel Öğeler",
+          "text": "Kişilerin iletişimleri ve iletişimi nasıl gerçekleştirdikleri bir anlamda kendi çevresel, toplumsal ve kültürel durumlarını da yansıtan bir ölçüt olarak görülebilir. Toplumsal yapı içinde bulunan kişilerin, üyesi oldukları toplum içinde belirli bir takım rolleri, konumları, saygınlıkları (prestij) ve belirli işlevleri söz konusudur. Bir başka deyişle, insanlar toplum içinde yukarıda belirtilen ve bir anlamda bireylerin toplumsal yerini de belirleyen belirli sınırlar içinde yaşamaktadırlar. Bu koşullar ve sınırlar kuşkusuz insanların iletişimlerine de yansıyacaktır.",
+          "start": 1139.06,
+          "end": 1181.3,
+          "duration": 42.24,
+          "level": 3,
+          "tts_parts": 1,
+          "chars": 626
+        },
+        {
+          "id": "c013",
+          "title": "İleti (Mesaj)",
+          "text": "Kaynak tarafından iletişim sürecinin içinde yer aldığı toplumsal ortamca bilinen sembol ya da simgelerle kodlanmış, aktarılmak, paylaşılmak istenen bilgi, duygu ve düşüncelerle yüklü ve alıcıya çeşitli iletişim ortam ve kanalı ile ulaşan şey ya da öğedir. Yazı, söz, mimik, iletiye örnek olarak gösterilebilir.\n\nİletişim sürecinin önemli öğelerinden biri olan, kaynaktan alıcıya gönderilen bir uyarı, bir düşünce, bir duygu, kanı ya da bilginin kaynak tarafından kodlanmış hali olarak tanımlanan ileti iki bölümde incelenebilir. Bunlar iletinin dili ve iletinin içeriğidir. İletinin dili, iletinin ulaştırılmasında yararlanılan herhangi bir koddur. Bu bağlamda iletinin dil, herhangi bir ulusal dil olabileceği gibi müzik, sanat ve hareketler (jestler ve mimikler) gibi konuşulan dil dışında da bazı kodlar olabilir. İletinin dili konusunda önem verilmesi gereken en önemli nokta, etkin ve sağlıklı anlamda bir iletişimin gerçekleşebilmesi için, ileti dilinin hem kaynak hem alıcı açısından net ve anlaşılır bir yapı taşıması gereğidir. İletinin içeriğinde ise iki önemli nokta bulunmaktadır: İletişimde işlenecek düşünce, duygu ve bilgilerin seçilmesi ve ikinci olarak da bunların nasıl işleneceği, başka bir deyişle, işlenme yöntemidir. Öncelikle kodlanacak ileti açık biçimde seçilmeli, daha sonra seçilen bu ileti ulaşılması amaçlanan alıcının niteliklerine bağlı olarak en kolay anlaşılabilir hale getirilmelidir.\n\nİletişim yüz yüze, eş deyişle, birebir karşılıklı ve aracısız/ araçsız olarak gerçekleşiyor ise, iletiyi alan kişi/kişilerin yüz ifadelerine ve beden hareketlerine de aynı zamanda o anda tanık olunacağından iletinin anlaşılıp anlaşılmadığına dair ip uçları da elde edilebilir. Örneğin kaynak tarafından sıra dışı olarak nitelenebilecek bir bilgiye ilişkin oluşturulan ileti, alıcının yüzündeki şaşkınlık ifadesi ileti içeriğinin anlaşıldığına dair bir işaret olacaktır. İletişimin özünü insan oluşturduğu için, kimi zaman, örneğin iki kişiden birinin diğerine heyecanını, korkusunu, üzüntüsünü, sevincini, endişelerini anlatırken kullandığı yüz ifadesi, beden dili, ses tonu ve rengi ve kullandığı sözcükler kişisel tercihi olmaktadır. Diğer bir deyişle, iki kişi arasında olan birebir yüz yüze iletişimde iletiyi kodlama ve iletme biçimi bireylerin kendi tercihleri doğrultusunda şekillenmektedir.\n\nGündelik yaşamda yolda yürürken görülen trafik işaretleri, bir hastanede muayene sırası beklerken göze ilişen kurallar listesi de birer tasarlanmış iletidir ve gören alıcıda o an’a, o mekâna ya da o duruma ilişkin bir anlam yaratmaktadır. Bu bağlamda gözün gördüğü, kulağın işittiği her şey genel anlamda bir iletidir ve alıcıda bir anlam yaratması beklenmektedir. Bu nedenle büyük bir alıcı grubu, eş deyişle geniş bir kitle için ileti seçilip oluşturulurken alıcıların tamamı için anlaşılır, açık, net ve tereddüde oluşturmayacak bir tasarlama yapılmalıdır.\n\nBenzer şekilde iletinin gönderileceği kişi ya da grubun özellikleri de önem taşıdığı için ileti tasarlanırken dikkate alınmalıdır; görme engeli olan alıcı/alıcılar için görsel bir ileti hazırlamaktan kaçınılması gerektiği gibi, işitme engeli olan alıcı/alıcılar için de işitsel ileti hazırlamaktan kaçınılmalıdır. Aksi taktirde iletinin ulaşması ya da alıcı tarafından anlaşılması mümkün olmayacaktır.",
+          "start": 1182.2,
+          "end": 1411.56,
+          "duration": 229.36,
+          "level": 3,
+          "tts_parts": 1,
+          "chars": 3373
+        },
+        {
+          "id": "c014",
+          "title": "Kodlama",
+          "text": "Kodlama kaynak tarafından iletiye yüklenen anlamdır ve amaç, iletiye kaynak tarafından yüklenen bu anlamın alıcı tarafından aynı anlam çerçevesinde çözümlenmesi ve bu doğrultuda yansıma verilmesidir.\n\nKaynağın düşüncesi başkalarının da anlayabileceği bir biçimde ifade edilmelidir. Bunu biraz daha genişleterek, eğer bir kişi düşündüklerini dile getiremiyorsa, belli bir düşünceden de söz edilemeyeceğini öne sürülebiliriz. Dil, kodlama için en önemli basamaktır. Bu bağlamda jestler, mimikler, hareketler gibi önemli ve hatta karmaşık kodlama yolları da aslında dile dayanmaktadır. Nesneleri, olguları, olayları nasıl adlandıracağımızı bilmezsek, onlar hakkında iletişimde bulunmamız güç olur.\n\nTasarlanan iletinin kimi zaman ses tonlaması, kimi zaman mimik kimi zaman da jestlerle anlam yaratması beklenebilir. Örneğin öğretmen derse girdiğinde sınıfa sessiz olmaları konusunda bir uyarı yapmak istediğinde elini tahtaya ya da masaya vurduğunda aslında dersin başladığını, artık sessiz olunması gerektiğini sözcüklere dökmeden bir kodlama yapabilir. Eğer bu sözsüz uyarıya karşılık öğrencilerde suskunluk beliriyorsa, kaynak tarafından iletiye yüklenen anlam, eş deyişle, kod doğru açılmış demek olacaktır. Çünkü kaynak tarafından iletiye yüklenen anlam, tam da bu karşılığın ya da tepkinin gelmesini beklemektedir.",
+          "start": 1412.46,
+          "end": 1506.06,
+          "duration": 93.6,
+          "level": 3,
+          "tts_parts": 1,
+          "chars": 1372
+        },
+        {
+          "id": "c015",
+          "title": "Kodaçma",
+          "text": "Kaynak tarafından iletiye yüklenen anlam kodlama olarak tanımlanırken, alıcı/hedef tarafından gönderilen iletiye yüklenen anlam ve yorumlama da kodaçma olarak tanımlanmaktadır. İletişim süreci içerisinde iletiler ancak kodaçma yoluyla, kağıt üzerindeki anlamsız işaretler ya da birtakım ses ve görüntü sinyalleri olmaktan çıkıp anlam kazanır ve iletişimin başarısını ölçen en önemli sorun iletinin alıcı tarafından kodaçımının yapılmasıdır. Bu durumun en önemli ölçütü ise alıcı ile kaynağın deneyim ve yaşantılarının çakışması ya da en azından kesişmesidir.\n\nKaynak ve alıcı birbiri hakkında ne denli bilgiye sahipse, iletideki anlamı oluşturma ve buna karşılık o anlamın doğru ve istendik yönde çözümlenmesi ve yorumlanması da o oranda güçlü olacaktır. Yeni girilen bir arkadaş çevresinde ya da bir grupta ortak davranış ve hareket biçimleri bilinmediği ve tahmin de edilemeyeceği için zamana ihtiyaç, gereksinim vardır; ortak geliştirilen bu dilin anlaşılması ve yorumlanması için yaşanmışlıkların çoğalması gerekmektedir. Örneğin bir futbol takımında o grubun ortak geçmişi olan oyuncuları teknik direktörün mimiklerinden, ses tonlamasından gerçekte ne söylemek istediğini, neyin anlaşılmasını ya da yorumlanmasını istediğini kolayca ve kısa zamanda anlarken, takımın yeni oyuncusu olan kişi için bu kolay olmayacaktır.",
+          "start": 1506.96,
+          "end": 1598.48,
+          "duration": 91.52,
+          "level": 3,
+          "tts_parts": 1,
+          "chars": 1363
+        },
+        {
+          "id": "c016",
+          "title": "Oluk (Kanal)",
+          "text": "İletişim sürecinin başarıyla ilerlemesinin önemli bir koşulu da, kaynak tarafından oluşturulan ve kodlanan iletinin fiziksel olarak göndererilebilmesi ve alıcı/alıcılar tarafından alınabilmesidir. Dolayısıyla iletinin bir kanal/oluk ya da farklı bir deyişle bir araç kullanılarak hedeflenen kişi ya da gruba gönderilmesinde mutlaka bir araca, kanala ihtiyaç vardır.\n\nİletişim sürecinde oluk; kaynak tarafından kodlanan iletinin fiziksel olarak gönderildiği araç ya da kanaldır.\n\nBu kanallar iletinin gönderileceği kişi sayısına, bu kişi ya da grupların kimi özelliklerine göre değişkenlik göstermektedir. Yüzyüze iletişimde ses önemli bir araçtır. Ses tonlaması yine aynı şekilde önemli bir araçtır, zira ruh halini yansıtan önemli bir göstergedir. Aynı zamanda yine beden hareketleri olarak tanımlanan mimik ve jestler de iletiyi göndermede hayli sık kullanılan önemli araçlardır. Örneğin, yoğun bir trafikte araç seyirlerini kontrol eden trafik polisi el kol hareketleriyle trafik akışını düzenlemekte ve sürücüleri yönlendirmektedir. Trafik polisi sürücülere orada uyulması gereken kurallardan oluşan iletileri zihninde tasarladıktan sonra, araç olarak bedeninin hareketlerini kullanarak göndermektedir.\n\nKitlesel yığınlara ileti gönderen gazete, radyo, televizyon ve internet ise uydu, frekans, kablo ses dalgaları, kâğıt ve fotoğraf yoluyla iletileri taşıyan araçlardır.\n\nEtkili bir iletişim sürecinin gerçekleşmesinde kanal seçiminin önemi büyüktür. Alıcıda yaratılmak istenen etki, alıcının özellikleri, alıcının zaman ve mekân kullanımı göz önünde bulundurulmalıdır. Siyasi seçim dönemlerinde partiler ve liderler iletilerini en geniş kitlelere en etkin biçimde ulaştırmak için genellikle sözü edilen kitle iletişim araçlarını tercih etmektedirler. Yine benzer şekilde büyük kentlerde trafik ve yol durumlarına ilişkin bilgiler, ağırlıklı olarak trafikte bulunan hedef kitleyi göz önüne alarak radyo aracılığıyla verilmektedir çünkü trafikte seyredenlerin televizyon izleme gibi bir imkânları bulunmamaktadır.\n\nİletişim oluklarını beş duyu (görme, duyma, dokunma, tatma, koku alma) olarak düşünmek de bir sınıflandırmadır. Bu sınıflama, iletişim sürecinde iletiyi almada kullanılabilecek yollar olarak beş duyuyu görmekten kaynaklanmaktadır. Alıcı, kod açmayı anılan beş duyusunu kullanarak gerçekleştirir. Bir ileti görülebilir, duyulabilir, dokunulabilir bir yapı taşır ve bu sınıflamaya göre iletişim sürecinde anılan oluklardan ne kadar çoğu kullanılırsa iletişim o denli etkili olur.",
+          "start": 1599.38,
+          "end": 1775.46,
+          "duration": 176.08,
+          "level": 3,
+          "tts_parts": 1,
+          "chars": 2601
+        },
+        {
+          "id": "c017",
+          "title": "Alıcı (Hedef)",
+          "text": "İletişim sürecinde kaynağın oluşturduğu iletinin kodlandıktan ve iletiye uygun bir oluk (araç/kanal) seçildikten sonra iletinin ulaşmasının istendiği kişi/kişilerdir. Alıcı bir tek kişi olabildiği gibi bir grup, kalabalık bir kitle de olabilir. Bir mektubun alıcısı, bir kitabın veya gazetenin okuyucusu, radyo dinleyicisi, televizyon seyircisi veya bir anfide ders dinleyicileri olabilir. Görüldüğü gibi hedef kavramında, kaynağı şahsen tanıyanlar veya tanımayanlar arasında bir ayrım yapılmamaktadır. Aynı şekilde hedefin amaçlı olarak yöneldikleri kaynak ile tesadüfi hedef grubuna dahil olan kimseler arasındaki fark da pek gözetilmemektedir.\n\nAlıcı yüzyüze iletişimde kendi iletisini tasarlayarak duygu, düşünce ve tepkisini oluşturabilir ve sürece katılabilir, ancak kitle iletişim araçları tarafından gönderilen iletilerde alıcının fiziki koşullardan, zaman ve mekan engellerinden dolayı sürece o an katılması çoğunlukla mümkün olamamaktadır. Örneğin televizyonda bir haber- tartışma programı izleyen alıcı (hedef) programa sadece elektronik posta ya da telefon bağlantısı ile katılıp iletiyi paylaşabilir. Ancak çoğunlukla canlı yayına ulaşmak zahmetli ve zaman alıcı olmaktadır. Bu nedenle kitle iletişim araçlarından gelen iletilere o an tepki vermek ve sürece aktif katılmak genellikle mümkün değildir. Ancak elbette günümüzde teknolojinin sağlamış olduğu bu kolaylıklar geçmiş yıllara oranla alıcıyı çok daha aktif bir katılımcı olarak sürece dahil etmektedir. Özellikle internet yayıncılığının sunduğu sosyal paylaşım ortamları, alıcının dahil olduğu haberleşme gruplarına aynı anda katılımını mümkün kılmaktadır.\n\nİletişim sürecinde iletiyi oluşturan ve kodlayan kaynak kişi/kişilerden sözedilirken iletişim becerisinden, deneyim ve bilgi düzeyininin önemine de değinilmiş ve bunların sürece olan olumlu katkıları üzerinde durulmuştu. Benzer şekilde, sürecin başarıyla işleyişinde iletilerin gönderildiği alıcı/ alıcılar için de kimi özellikler ön plana çıkmaktadır.\n\nAlıcının iletişim becerileri de, kaynağın iletişim becerileri gibi iletişim sürecinin işlemesi, özellikle de sağlıklı işlemesi ve istendik amaçlara ulaşılabilmesi açısından önemlidir. Eğer alıcının dinleme, okuma, düşünme yeteneği yoksa ya da kısıtlıysa kaynağın gönderdiği iletilerin kodaçımını gerçekleştirmesi, büyük ölçüde kendisine, kaynağı ve iletinin içeriğine olan birtakım tutumları tarafından belirlenir. Ayrıca alıcının sahip olduğu bilgi düzeyi de iletişimin sağlıklı olarak gerçekleşmesinde önemli bir faktördür.\n\nİletişim sürecinin bir ikna ve bir etkileme süreci olduğu hatırlandığında, alıcı/alıcılar üzerinde istendik yönde duygu, düşünce ya da tutum değişikliği yaratılabilmiş ise süreçte başarılı olunduğundan sözedilebilir. Aksi taktirde eğer alıcının/alıcıların duygu, düşünce ya da tutumlarından herhangi birinde bir değişiklik gerçekleşmemişse, bir etkilenme söz konusu olmamışsa doğal olarak sürecin işleyişinde herhangi bir noktada bir hata ya da eksiklik olduğunu düşünülmelidir.\n\nBu bağlamda, etkin iletişimin ölçüsü kaynak tarafından amaçlanan davranışın ve davranış değişikliğinin alıcıda görülmesidir. İletişimin etkilerini üç ana grupta toplamak mümkündür:\n\n- Alıcı kesimin bilgi düzeyindeki değişme\n\n- Alıcının tutumunda görülen değişme\n\n- Alıcının açık davranışında görülen değişme",
+          "start": 1776.36,
+          "end": 2010.28,
+          "duration": 233.92,
+          "level": 3,
+          "tts_parts": 1,
+          "chars": 3442
+        },
+        {
+          "id": "c018",
+          "title": "Yansıma (Geribildirim, Feedback)",
+          "text": "Kaynak tarafından oluşturulan iletinin bir oluk kanalıyla alıcıya ulaşmasıyla, sürecin önemli bölümü tamamlanmış olmaktadır. Sürecin son adımlarından olan ve bu kez alıcının kaynağa verdiği tepki olarak adlandırılan yansıma (geribildirim, feedback) süreci başlayacaktır. Yansıma, alıcının kaynaktan gelen iletiye verdiği karşılıktır. Alıcının iletiye karşılık vermesiyle, böylelikle, bu kez sürecin başında kaynak olan kişi/kişiler alıcı, sürecin başında alıcı/alıcılar olan ise kaynak durumuna geçecek, yeni iletiler hazırlayacak ve dairesel döngü işleyişi içerisinde çift yönlü iletişim akışı devam edecektir. Alıcının, kaynağın iletisine verdiği karşılık bir anlamda kaynağa iletişim sürecinin başarısı ya da başarısızlığı hakkında da ipuçları verecektir. Bu, kaynağın iletisinin alıcı tarafından anlaşılıp anlaşılmadığını ya da doğru anlaşılıp anlaşılmadığını gösterecektir.\n\nİletişim sürecinde iki kişi birbirine yönelik eylemde bulunmaktadırlar. Bu kişilerin eylemleri, denetim süreci yansıma (feedback) üzerinden birbiriyle bağlantılıdır. İletişim sürecinde kaynak, yorumun denetimi sayesinde hedefin algılama ve anlama fonksiyonu hakkında bilgi edinmektedir. Bu bağlamda yansıma (feedback), kaynağın güncelleştirdiği anlamı alıcının algılayıp algılamadığı, algılamışsa tepkisinin ne olduğu hakkında bilgi temin ettiği süreçtir.",
+          "start": 2011.18,
+          "end": 2111.5,
+          "duration": 100.32,
+          "level": 3,
+          "tts_parts": 1,
+          "chars": 1400
+        },
+        {
+          "id": "c019",
+          "title": "Gürültü",
+          "text": "Gürültü, iletişim sürecinin aksamasına neden olan her şeydir. İletişim sürecinde kullanılan oluk radyo, televizyon gibi görsel işitsel kitle iletişim araçları ise, frekanslardaki zayıflama, görüntülerdeki parazitlenme olarak düşünülebilir. Yüzyüze gerçekleşen iletişim sürecinde ise gürültü, dış etkenlerden kaynaklanan herhangi bir ses ya da kaynak ve alıcı arasında herhangi başka bir kişinin ya da aracın iletilere müdahalesi olarak ifade edilebilir. Sınıfta ders anlatan öğretmeni dinleyen öğrenciler için sokaktan gelen siren sesi bir gürültü öğesidir. Her iki durumda da, sürece dışarıdan yapılan müdahalede kaynak ile alıcı arasında gidip gelen ileti zarara uğrayacak, hasar görecek ve anlaşılması güçleşecektir. Kısacası gürültü, iletişim sürecini aksatan ve iletilere zarar veren her şeydir.",
+          "start": 2112.4,
+          "end": 2168.96,
+          "duration": 56.56,
+          "level": 3,
+          "tts_parts": 1,
+          "chars": 825
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "İletişim Becerileri",
+      "start": 2170.56,
+      "end": 2581.5,
+      "chunks": [
+        {
+          "id": "c020",
+          "title": "GİRİŞ",
+          "text": "Kitabın bu modülünde ele alınan “İletişim Becerileri”, öznelerin yalnızca teknik düzeyde simge aktarımı yapmasını aşarak başkalarını anlama, onların duygu ve düşünce dünyalarıyla özdeşleşebilme duyarlılığını kuramsal bir zeminde incelemektedir. İletişimsel yeterliliğin geliştirilmesinde temel dinamiklerden biri olarak empati öne çıkarken; kaynağın tutumları, bilgi ve deneyim birikimi ile sözlü, sözsüz ve görsel-işitsel araçları kullanma kapasitesi sürecin başarısını belirleyen temel değişkenler olarak konumlandırılır. Bu çerçevede “iletişimde etkinlik”, iletilen mesajın amaçlanan hedefe ulaşması ve alıcıda hedeflenen zihinsel ya da davranışsal dönüşümü yaratabilmesiyle ölçülür. Modül; iletinin alıcının gereksinim ve değer dünyasına seslenebilmesini, uygun kanal seçimini, alıcının algı düzeyinin gözetilmesini ve olası dirençlerin yönetilmesini sağlayacak stratejileri tartışmaya açmaktadır.",
+          "start": 2170.56,
+          "end": 2230.8,
+          "duration": 60.24,
+          "level": 2,
+          "tts_parts": 1,
+          "chars": 924
+        },
+        {
+          "id": "c021",
+          "title": "İLETİŞİM BECERİLERİ",
+          "text": "İletişim sürecinde iletişim becerisi, başkalarını anlamada, onların duygu ve düşüncelerini onlarla özdeşleşerek görme duyarlılığı kazanmaktır. İletişim becerilerinin geliştirilmesinde bilinen en önemli yaklaşımlardan birisi empatidir. Bir insanın karşısındakinin ne hissettiğini o anda yaşayabilme ve ona bu hususta hak verebilme yeteneğine sahip olması yaklaşımı, sağlıklı ve etkili bir iletişimde önem taşımaktadır. Çünkü bilindiği gibi bir iletişim etkinliğinde kaynağın sahip olduğu tutum ve davranışlar, bilgi ve deneyimler onun iletişim becerilerini doğrudan etkileyecek olan değişkenlerdir. Bu değişkenler sözlü- sözsüz iletişim/beden dili, yazılı iletişim, radyo, televizyon, bilgisayar gibi görsel- işitsel özelliklere sahip elektronik araçlardır ve etkili iletişim ortam ve yöntemlerinin sağlanmasında dikkate alınmalıdır.",
+          "start": 2231.7,
+          "end": 2296.34,
+          "duration": 64.64,
+          "level": 2,
+          "tts_parts": 1,
+          "chars": 869
+        },
+        {
+          "id": "c022",
+          "title": "İletişimde Etkinlik",
+          "text": "İletişimde etkin olabilmek, diğer bir deyişle, kurulan iletişimde etkili olabilmek için amaç, etkidir. Kuşkusuz iletişim, amaçlı bir etkinliktir, süreçtir. Ancak burada etki, iletilecek mesajın amaçlanana ulaşması temel ölçüttür. Bu bağlamda iletişimi etkin, başarılı kılan temel şu bilgilere bakmak yerinde olacaktır:\n\n- İletilecek mesajın alıcının/hedefin dikkatini çekmesi,\n\n- İletinin kodlanmasında iletiyi gönderen kaynak kadar onu alacak ve açımlayacak alıcı/hedef tarafından da bilinmesi,\n\n- İletinin alıcı/hedefin gereksinimlerine seslenebilmesi,\n\n- Alıcı/hedefte istenilen tutum değişikliğinin elde edilebilmesi için, alıcı/hedefin tutum ve değerlerinin bilinmesi, beklenti ve davranış kalıplarına ters düşülmemesi,\n\n- Alıcı/hedefe ulaşmada en uygun oluğun/kanalın ne olduğunun bilinmesi\n\n- İletilecek mesajın içeriği alıcı/hedef için yeni bir bilgi niteliği taşıyorsa, söz konusu mesajın hedefin alışkın olduğu yaşam deneyimlerine uygun tarzda aktarılması,\n\n- İletişimde iletilmesi zor konuları, hazırlayıcı iletişim süreci ile alıcı/hedefin bilgi ve algılama düzeyinin yükseltilerek aktarılması,\n\n- İletişimde hazırlayıcı iletişim sürecine rağmen kırılamayan dirençlerin de olabileceğinin unutulmaması, özellikle temel nitelikteki değerlere dolaysız saldırılmaması gerekmektedir.",
+          "start": 2297.24,
+          "end": 2394.28,
+          "duration": 97.04,
+          "level": 3,
+          "tts_parts": 1,
+          "chars": 1431
+        },
+        {
+          "id": "c023",
+          "title": "KENDİMİZİ SINAYALIM",
+          "text": "1 İletişim kavramının en yalın tanımı aşağıdakilerden hangisidir?\n\nA. İletişim, dumanla haberleşmektir.  \nB. İletişim, kendini anlatmaktır.  \nC. İletişim, en az iki kişi arasında duygu, düşünce ve bilginin farklı araç ve yöntemler kullanılarak paylaşılmasıdır.  \nD. İletişim, jest ve mimik kullanmamaktır.  \nE. İletişim, susmaktır.\n\nSorunun Yanıtı: C\n\n2 İletişim süreci için aşağıdakilerden hangisi söylenebilir?\n\nA. Etkileyici değildir.  \nB. İletişim süreci daireseldir.  \nC. İletişim süreci çizgiseldir.  \nD. İletişimde süreç yoktur.  \nE. İletişim amaçsız bir davranıştır.\n\nSorunun Yanıtı: B\n\n3 Aşağıdakilerden hangisi iletişim sürecinin öğelerinden değildir?\n\nA. Araç (oluk)  \nB. Hedef (alıcı)  \nC. Televizyon  \nD. Kaynak kişi  \nE. Yansıma\n\nSorunun Yanıtı: C\n\n4 İletişim sürecini başlatan öğe aşağıdakilerden hangisidir?\n\nA. Yansıma  \nB. Kodaçma  \nC. Kanal  \nD. Kaynak kişi  \nE. Gürültü\n\nSorunun Yanıtı: D\n\n5 Aşağıdakilerden hangisi sözel iletişim becerisi olarak düşünülemez?\n\nA. İyi söyleyiş  \nB. Susma  \nC. Sözcük zenginliği  \nD. Uyumlu söz dizimi  \nE. İyi tümce kuruluşu\n\nSorunun Yanıtı: B\n\n6 Aşağıdakilerden hangisi iletinin/mesajın dilini tanımlamaktadır?\n\nA. Mesaj  \nB. İletinin ulaştırılmasında yararlanılan herhangi bir koddur.  \nC. Alıcı  \nD. Yansıma  \nE. Süreç\n\nSorunun Yanıtı: B\n\n7 Kaynak tarafından iletiye/mesaja yüklenen anlama ne ad verilir?\n\nA. Kodaçma  \nB. İleti dili  \nC. Araç  \nD. Yansıma  \nE. Kodlama\n\nSorunun Yanıtı: E\n\n8 Alıcı/hedef tarafından gönderilen iletiye yüklenen anlam ve yorumlamaya ne ad verilir?\n\nA. Dinleme  \nB. Kodaçma  \nC. Susma  \nD. Yansıma  \nE. Kanal\n\nSorunun Yanıtı: B\n\n9 Alıcının, kaynaktan gelen iletiye verdiği karşılığa ne ad verilir?\n\nA. Kanal  \nB. Kaynak kişi  \nC. Yansıma  \nD. Süreç  \nE. Hedef\n\nSorunun Yanıtı: C\n\n10 İletişim sürecinin aksamasına neden olan her türlü uyarıcıya verilen ad hangisidir?\n\nA. Gürültü  \nB. Beceri  \nC. İleti içeriği  \nD. Yansıma  \nE. Alıcı\n\nSorunun Yanıtı: A",
+          "start": 2395.18,
+          "end": 2581.5,
+          "duration": 186.32,
+          "level": 2,
+          "tts_parts": 1,
+          "chars": 2404
+        }
+      ]
+    }
+  ]
+}

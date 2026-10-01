@@ -1,0 +1,314 @@
+{
+  "course_title": "Bölüm 3: İletişim Modelleri",
+  "schema_version": 2,
+  "audio_mode": "single",
+  "audio_file": "audio/ders.mp3",
+  "audio_codec": "MP3 128 kbps",
+  "sample_rate": 44100,
+  "audio_level": {
+    "inPeakDb": -0.8950627647777358,
+    "inRmsDb": -19.827598932194828,
+    "gainDb": 0.835,
+    "clipped": 0,
+    "perPart": true,
+    "gainMinDb": -0.105,
+    "gainMaxDb": 1.805,
+    "targetRmsDb": -10
+  },
+  "total_duration": 2712.04,
+  "tts_engine": "ElevenLabs · eleven_v4",
+  "ai_disclosure": {
+    "level": "ai4",
+    "label": "Yüksek ÜYZ katkısı",
+    "text": "Yüksek ÜYZ katkısı (ai4)"
+  },
+  "tts": {
+    "engine": "elevenlabs",
+    "generated_at": "2026-09-30T14:10:40.799Z",
+    "max_chars_per_request": 9500,
+    "model": "eleven_v4",
+    "voice": {
+      "id": "JgYekNWmelei0oWTtYie",
+      "name": "Elvan - Energetic, Soft and Warm",
+      "gender": "female",
+      "category": "professional"
+    },
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.72,
+      "request_stitching": true
+    },
+    "language_code": "tr",
+    "pauses": {
+      "after_title": "[short pause]",
+      "between_paragraphs": "[short pause]",
+      "between_chunks_ms": 900,
+      "between_chapters_ms": 1600,
+      "between_parts_ms": 250,
+      "lead_in_ms": 400,
+      "tail_ms": 600
+    },
+    "text_rules": {
+      "numbers_to_words": true,
+      "fix_all_caps": true,
+      "abbreviations": true,
+      "spell_unknown_acronyms": true,
+      "builtin_list_edited": true,
+      "builtin_rule_count": 223,
+      "user_lexicon_rule_count": 56,
+      "user_lexicon": "MIT = Em-Ay-Ti\nOECD = O-ii-sii-dii\nGPT = Ci-Pi-Ti\nBERT = bört\nLISP = Lisp\nMYCIN = May-sin\nALPAC = El-pek\nXCON = Eks-kon\nDEC = Dek\nR1 = re bir\nIIT = Ay-Ay-Tii\nGDPR = Ci-Di-Pi-Ar\nKVKK = Ka-Ve-Ka-Ka\nSQL = Es-Küy-El\nDIKW = Dik-dabılyu\nIDC = Ay-Di-Si\nMNIST = Em-nist\nUCI = Yu-Es-Ay\nPIPL = Pi-Ay-Pi-El\nLGPD = El-Ci-Pi-Di\nCCPA = Si-Si-Pi-Ey\nIEC = Ay-İ-Si\nISO = İ-so\nGPAI = Ci-Pi-Ey-Ay\nMRI = Em-Ar-Ay\nCO2 = karbon di oksit\nCNN = Si-En-En\nV1 = ve bir\nV2 = ve iki\nV4 = ve dört\nMR = me re\nVAE = Vi-Ey-İ\nIT = Ay-Ti\nVGG = Vi-Ci-Ci\nGAN = Gan\nRLHF = Ar-El-Eyç-Ef\nBT = Be-Te\nRAG = Rag\nXAI = Eks-Ey-Ay\nEBA = e be a\nT3 = te üç\n& = ve\nMEBİ = me-bi\nMAIN = Meyn\nIBM = Ay-Bi-Em\nKAYZED = KAYZED\nGSYİH = gGayrisafi Yurt İçi Hasıla\nWEF = Ve-E-Ef\nHAI = Eç-Ey-Ay\nX4 = iks dört\nABD = a be de\nABS = a be se\nM2 = me iki\nX1 = iks bir\nSE = se e\nABX = a be iks"
+    },
+    "audio": {
+      "codec": "MP3 128 kbps",
+      "sample_rate": 44100,
+      "gain_mode": "auto",
+      "gain_per_part": true,
+      "target_rms_dbfs": -10,
+      "gain_applied_db": 0.835,
+      "gain_min_db": -0.105,
+      "gain_max_db": 1.805,
+      "input_peak_dbfs": -0.895,
+      "input_rms_dbfs": -19.828,
+      "limiter_hits": 0,
+      "ramp_in_ms": 20,
+      "ramp_out_ms": 50
+    },
+    "manual_edited_chunks": null
+  },
+  "generated_at": "2026-09-30T14:10:40.799Z",
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Model nedir?",
+      "start": 0.4,
+      "end": 412.42,
+      "chunks": [
+        {
+          "id": "c001",
+          "title": "GİRİŞ",
+          "text": "Kitabın bu modülünde ele alınan “Model Nedir?”, soyut, çok katmanlı ve kesintisiz biçimde süregelen iletişim süreçlerini somutlaştırarak anlaşılır kılma arayışını kuramsal bir çerçevede incelemektedir. Doğa bilimlerindeki fiziksel modellemelerden farklı olarak iletişim bilimlerinde modeller; insan davranışlarını, anlam inşasını ve etkileşim ilişkilerini grafiksel ya da şematik düzeyde basitleştirerek ortaya koyan kuramsal araçlar olarak işlev görür. Sürecin dinamik yapısını yapay bir durağanlıkla dondurarak inceleyen bu yaklaşımlar, özellikle gönderen ucundaki “kodlama” ve alıcı ucundaki “açımlama” pratiklerini ve bu iki uç arasındaki yapısal bağıntıları görünür kılar. Doğruluk ve yararlılık ilkeleri ekseninde şekillenen bu modül; iletişim modellerinin işlevselliğini, araştırmacılara sunduğu analitik çerçeveyi ve aşırı basitleştirmenin getirebileceği sınırlılıkları tartışmaya açmaktadır.",
+          "start": 0.4,
+          "end": 59.12,
+          "duration": 58.72,
+          "level": 2,
+          "tts_parts": 1,
+          "chars": 923
+        },
+        {
+          "id": "c002",
+          "title": "MODEL NEDİR?",
+          "text": "Hepimiz günlük yaşamımızda çeşitli modeller kullanırız. Erkek çocukları oyuncak otomobille, kız çocuklar bebeklerle oynarlar. Uçak mühendisi yeni bir kanat modeli oluşturur. Kent planlama uzman bir kent modeli geliştirir. Muhasebeci para akış için bir model kurar. İşadamı/yönetici örgüt içi otorite dağılımı için bir model çizer. Fizikçi olayların matematiksel modellerini yaratır. Psikanalist, düş dünyamızı kendince yorumlayıcı, açıklayıcı modeller kurabilir. İletişimbilimci, iletişim sürecini çözümlemek amacı ile model oluşturur. Okul yöneticisi, okuldaki düzeni sağlamak için, öğretmen ise sınıf içi etkili iletişimi sağlamak için iletişim modellerinden yararlanır.\n\nDoğa bilimlerinde genellikle somut bir olgunun yine somut bir modeli oluşturulabilir. Bu anlamında geliştirilen modeller olgunun asıl cisminden daha büyük ya da daha küçük olabildiği gibi, yerini tuttuğu gerçek olgu ile aynı büyüklükte ve yapıda da olabilir. Bir toplum bilimi olan iletişim biliminde ise konu ve olgular elle tutulur, gözle görülür nesneler değildir.\n\nUğraş alanı insan davranışları ve bu davranışların temelinde yatanlar insan olduğu için, iletişimle ilgili olarak geliştirilen modeller birbiri ile farklılıklar gösterebilmektedir. Ancak model oluşturulmasında, oluşturulmuş modellerin çözümlenmesinde, modellerin derin okumasında ve değerlendirilmesinde doğruluk ile yararlılık ilkeleri yol gösterici olmaktadır. Bu iki temel ilke, aynı zamanda modellerin etkin iletişim ortamlarındaki yararları ve işlevselliği ile yakından ilişkilidir.\n\nÖte yandan, iletişim süreçlerinin somut olmaması yanı sıra iletişim bilimde model oluşturmanın önemli bir sınırlılığının ise iletişim süreçlerinin durağan değil dinamik bir yapıya sahip oluşudur. Bu sınırlılık, etkili iletişim sürecini de kapsamaktadır.\n\nAncak biz iletişimciler, somut olmayan bu iletişim sürecini sanki somutmuşçasına dondurur ya da sürecin bir fotoğrafını çektiğimizi varsayarak, onu büyüteç altına alır, kaynağı başlangıç noktası, alıcıyı da sonul nokta olarak görürüz, Bu iki temel öğe arasındaki var olan diğer öğeleri ve öğelerin birbirleri ile olan ilişkilerini ve etkileşimlerini açıklamaya çalışırız. Hemen belirtmekte yarar vardır ki, dinamik bir yapıyı yapay bir durağanlıkla incelemenin bir takım sınırlılıkları olacaktır. Kurulan modelde zorunlu olarak yer alması beklenen, sıralanan ve tanımlanan öğeler dışında, iletişim sürecini etkileyen, rollerini kesin olarak saptayamadığımız ya da ayrıntılı olarak soyutlayamadığımız başka öğelerin de olabileceğini göz önünde bulundurmalıyız.\n\nBütün amaçlar ve her düzeydeki çözümlemeler için uygun olabilecek bir iletişim modeli bulmak mümkün olmayabilir; önemli olan amaca hizmet edecek doğru modeli seçebilmektir. Öte yandan sunulan modeller farklı şekillere ve formüle edilmeyecek kadar da kutsal değildir. Modeller, kimi zaman sadeleştirilmeye, kimi zaman da eklemlenmeye açık olan yapılar olarak görülmelidir. Bu anlamda herkesin kendi modelini geliştirebileceğini söylemek de olası görülmektedir. Geniş anlamda model, bir nesneye ya da olgunun dizgeli (sistematik) simgelenmesidir. Bir başka anlatımla model, gerçekliğin ya da onun bir bölümünün grafiksel ya da şematik olarak basitleştirilmiş bir biçimidir. Model, herhangi bir yapının ya da sürecin temel öğelerini ve bu öğeler arasındaki ilişkiyi göstermeye, açıklamaya çalışır.\n\nModellerle uğraşanlar iki sürece dikkat çekerler. Bunlar; “kodlama” (modelin gönderen ucunda) ve “açımlama”dır (modelin alıcı ucunda). Kodlama; gönderenin hedeflenen alıcılara ya da iletinin yüklendiği araca uygun olarak bir dile ya da koda çevrilmesi, açımlama ise; gönderenin anlam çıkartmak üzere tekrar çevrilmesi demektir.\n\nBirçok iletişim modelinde geri besleme kavramına yer verilmiştir. Modelleme süreci ile ilişkili olarak geri besleme genelde, iletişimcinin hedeflenen alıcının iletiyi gerçekten istenilen gibi alıp alınmadığı hakkında bilgi edinilen herhangi bir sürece ilişkindir. Geri besleme bilgisi, süregiden ya da gelecekteki iletişim davranışını değiştirmeye yardımcı olabilir. Kodlama ve açımlama kavramları da geri beslemenin yapısının oluşma ve iletilme biçimlerini belirlemede işlevsel olmaktadır.\n\nGenelde iletişim modelleri doğrusal ve doğrusal olmayan modeller olarak ikiye ayrılır. Doğrusal modeller geri beslemeyi dikkate almayan modellerdir; doğrusal olmayan modeller geri besleme ve diğer iletişim süreci öğelerini birlikte ele almaktadır.\n\nGenelde iletişim modelleri doğrusal ve doğrusal olmayan modeller olarak ikiye ayrılır. Doğrusal modeller geri besleme kavramını dikkate almayan modellerdir. En bilinen doğrusal modeller; Aristo, Lasswell, Shannon-Weaver, Berlo modelleridir. Doğrusal modeller basitçe kaynak-ileti-alıcı kavramlarını dikkate alan modeller olmakla birlikte, dairesel, spiral gibi doğrusal olmayan modeller ise; geri beslemeyi ve diğer iletişim süreci öğelerini de içeren modeller olmaktadır. Bunlar; Osgood ve Schramm, Dance, Gerbner, Newcomb, ABX, Westley- MacLean ve Riley-Riley modelleridir. Doğrusal olmayan bu modellerin, iletişim sürecinin daha iyi anlaşılmasına kaynaklık ettiği ve iletişim biliminin açıklanmasına, gelişmesine katkıda bulunduğu söylenebilir.",
+          "start": 60.02,
+          "end": 412.42,
+          "duration": 352.4,
+          "level": 2,
+          "tts_parts": 1,
+          "chars": 5330
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Temel İletişim Modelleri Nelerdir?",
+      "start": 414.02,
+      "end": 2072.68,
+      "chunks": [
+        {
+          "id": "c003",
+          "title": "GİRİŞ",
+          "text": "Kitabın bu modülünde ele alınan “Temel İletişim Modelleri Nelerdir?”, iletişim biliminin tarihsel serüveninde etkileşim süreçlerini çözümlemek adına geliştirilen analitik tasarımları doğrusal ve doğrusal olmayan modeller ekseninde kuramsal bir derinlikle sınıflandırmaktadır. Aristo’nun retorik temelli aktarımından başlayıp Lasswell, Shannon-Weaver ve Berlo ile devam eden doğrusal modeller; kaynak, ileti, kanal ve alıcı hattında ilerleyen, çoğunlukla tek yönlü ve geri beslemeyi sınırlı tutan bir yapı sunar. Buna karşılık Osgood-Schramm, Dance’in spiral tasarımı, Gerbner, Newcomb ABX, Westley-MacLean ve Riley-Riley gibi doğrusal olmayan modeller; iletişimin dinamik, etkileşimli, sosyokültürel ve döngüsel doğasını ön plana çıkararak geri besleme ile algı boyutlarını sürece dâhil eder. Bu modül; iletilerin tasarlanması, iletilmesi ve devingen bağlamlarda çözümlenmesine rehberlik eden ana modelleri temellendirmektedir.",
+          "start": 414.02,
+          "end": 477.94,
+          "duration": 63.92,
+          "level": 2,
+          "tts_parts": 1,
+          "chars": 955
+        },
+        {
+          "id": "c004",
+          "title": "TEMEL İLETİŞİM MODELLERİ NELERDİR?",
+          "text": "Temel iletişim modelleri kapsamında; doğrusal modeller ve doğrusal olmayan modeller konuları ele alınacaktır.",
+          "start": 478.84,
+          "end": 489.48,
+          "duration": 10.64,
+          "level": 2,
+          "tts_parts": 1,
+          "chars": 160
+        },
+        {
+          "id": "c005",
+          "title": "Doğrusal Modeller",
+          "text": "Burada sözünü edeceğimiz iletişim modelleri, genel ve anlaşılabilir düzeyde en temel iletişim modelleridir. Bu temel modeller değişik iletişim durumları karşıwsında nasıl ileti tasarlayıp, gönderme stratejisini belirleneceğiyle yakından ilgilidir. Öte yandan, bu modeller karşımızdakinin de bize gönderdiği geri besleme anlamındaki iletileri anlamamıza yardımcı olabilmektedir. Doğrusal olarak bilinen modeller; Aristo, Lasswell, Shannon ve Weaver modelleridir.",
+          "start": 490.38,
+          "end": 524.86,
+          "duration": 34.48,
+          "level": 3,
+          "tts_parts": 1,
+          "chars": 496
+        },
+        {
+          "id": "c006",
+          "title": "Aristo Modeli",
+          "text": "Milattan önce 4. yüzyıla dayanan bir görüş olarak Aristo’nun düşüncesi ilk iletişim modeli olarak bilinmektedir. Bu modelde aslolan konuşmacı ve dinleyici arasındaki basit iletişim sürecidir.\n\nAristo’nun iletişim modeli, yüzyüze iletişimi temel olarak anlatmaktadır. Örneğin bu modelde, geleneksel sınıf ortamında konuşan eğitimci ve dinleyen öğrenici arasında aktarılan bilgiler olarak ifade edilebilir. Ancak bu model günümüz iletişim süreci ve günümüz yüzyüze iletişim ortamlarında gerçekleşen iletişimi tümüyle açıklama açısından yetersiz kalmaktadır. Model, iletişimin model oluşturma çabalarının ne denli eskiye dayandırıldığını vurgulamak için önemli bir örnek olarak görülmelidir.\n\nŞekil 1. Aristo’nun İletişim Modeli\n\nKonuşmacı, kaynak; konuşma, ileti; dinleyici ise alıcı olarak gösterilir. Bu üç kutu, konuşmacıdan dinleyiciye doğru ilerleyen tek yönlü oklarla bağlanır.",
+          "start": 525.76,
+          "end": 592,
+          "duration": 66.24,
+          "level": 4,
+          "tts_parts": 1,
+          "chars": 965
+        },
+        {
+          "id": "c007",
+          "title": "Lasswell Modeli",
+          "text": "Amerikalı siyaset bilimci Harrold D. Lasswell 1948 yılındaki bir çalışmasında, “kim, neyi, hangi kanalla, kime, hangi etkiyle” söylediği konusunda “tek yönlü” iletişim sürecini vurgulayarak doğrusal bir model ileri sürmüştür. Lasswell’in 1948 ABD başkanlık seçimlerinde propaganda amaçlı ileri sürdüğü ve savunduğu bu modelinde, geri besleme olmakla birlikte şekilsel anlatımda görülmemektedir.\n\nŞekil 2. Lasswell’in Öncü Modeli\n\nİletişimci, ileti, kanal, alıcı ve etki art arda yerleştirilmiş kutularla gösterilir. Kutular, kimin neyi hangi kanalla kime ve hangi etki düzeyinde söylediğini izleyen tek yönlü bir akış oluşturur.\n\nBu modelin kullanımı, her ne kadar basit görülse de model, daha sonra başka araştırmacılar tarafından geliştirilmiş ve Braddock, Lasswell’in bu modeline, iletinin hangi koşullar altında gönderildiğinin önemi, ve hangi amaçla gönderildiği konularında eklemelerde bulunmuş, Lasswell’in modelini Şekil 3.3’deki şekilsel anlatıma dönüştürmüştür.\n\nŞekil 3. Lasswell Modeli\n\nİletişimci, ileti, kanal ve alıcı tek yönlü oklarla birbirine bağlanır. Bu dizinin altında iletişimin hangi koşullarda, hangi amaçla ve hangi etkiyle gerçekleştiğini sorgulayan üç ifade yer alır.\n\nLasswell’in modelinde örneğin; sınıf öğrenme ve öğretim ortamlarında zaman zaman bu modelin işlevsel olduğu görülmektedir. Eğitimcinin bazı konu ve kavramları anlatımında ya da herhangi bir bilgiyi, öğrencilere söz, yazı kanalı ile öğretmek amacı ile anlattığı, hatta öğrenicilerin bu aktarım karşısında soru sormadıkları durumları hatırlayınız. İşte bu durumlar Lasswell modeli ile açıklanabilecek durumlardır.",
+          "start": 592.9,
+          "end": 712.5,
+          "duration": 119.6,
+          "level": 4,
+          "tts_parts": 1,
+          "chars": 1787
+        },
+        {
+          "id": "c008",
+          "title": "Shannon ve Weaver Modeli",
+          "text": "Claude Shannon ve Warner Weaver, Bell telefon şirketi laboratuvarlarında görevli oldukları sırada bu iletişim modelini geliştirmişlerdir.1949 yılında geliştirilen bu model, ileti gönderimi ile ortaya çıkan sorunlar üzerinde durmaktadır. Model ağırlıklı olarak “hangi kanal” en çok sinyal iletir, iletilen bu sinyallerin ne kadarı gürültü öğesi tarafından zarar görür, sorularını kapsar.\n\nResim 1. Shannon ve Weaver’in Öncü Modeli\n\nÇizimde konuşan bir kişiyle dinleyen bir kişi, aralarındaki iletim düzeneğiyle birlikte gösterilir. Alt bölümde elektrik devresi ve bağlantılarına ilişkin ayrıntılı bir çizim bulunur.\n\nModelde ileti kavramı; iletilen mesajın içine gömülmüş herhangi bir girdi olarak tanımlanmaktadır. “Gürültü”, iletinin düzenine karşı çıkıp onu herhangi bir biçimde bozan, istenmeyen belirteçlerdir. Örneğin telefon görüşmesinde, önce bir kişinin sesi kodlanarak bir elektrik gücü-sinyali biçimine gelir. Daha sonra bu güç bir kanal -telefon telleri- aracılığı ile bir alıcıya -telefon ahizesine- iletilir. Dinleyici için bu belirteç, yeniden duyulabilir bir ses biçimine -kodaçma- çevrilir. Ancak bu süreçte zaman zaman telefon teli yüzünden, ahize ya da hatlardaki sıkıntılar ya da başka iletilerin karışması yüzünden fiziksel bazı parazitler söz konusu olabilir ki; bunlar gürültülerdir.\n\nŞekil 4. Shannon ve Weaver Modeli\n\nEnformasyon kaynağından taşıyıcı ortama, sinyal değiştiriciye, alıcıya ve hedefe uzanan bir akış gösterilir. Bağlantılar ileti, sinyal ve alınan sinyal olarak adlandırılır; alıcının altında ona bir okla bağlı gürültü kutusu yer alır.\n\nGürültü unsuruna teknik ve fiziksel etkenler yanında DeFleur, gürültü öğesinin kaynak ya da hedeflenen alıcı tarafından da kaynaklanabileceğini ileri sürerek gürültüye, bir de duyusal anlam yüklemiştir. Bu tür gürültüye örnek olarak da, kaynağın hasta olması ve kendini iyi hissetmemesi, iletiyi tam vurgulayamaması, iletiyi iletirken kafasının başka şeylerle uğraşıyor olması ya da aynı şekilde alıcının iletiyi alırken kafasının başka noktalara odaklanmış olması, o iletiyi alacak ruh hali içersinde olmaması, kendisi için çok daha farklı iletilere eğilimli olması gibi durumlar verilir.\n\nHeinich, Molenda ve Russell, Shannon ve Weaver modeline verdikleri örnekte “kalbin yapısı” konulu bir çalışma tahtaya çizilmekte ve ses ile anlatılmaktadır. Salondakiler, göz ve kulakla aldıkları bu iletilerde bazen tahtanın parlaması, bazen de dışarıdan gelen gürültüler nedeniyle iletileri çok net alamamakta ve konuyu gerektiği gibi anlayamamaktadır.\n\nŞekil 5. Shannon ve Weaver’a Katkı Getiren DeFleur’un Gürültü Öğesi\n\nKaynak, taşıyıcı ortam, kanal, alıcı ve hedef iki karşıt yönlü sırada yer alır; dönüş okları bu sıraları bir döngüye bağlar. Ortadaki gürültü kutusundan farklı iletişim öğelerine oklar uzanır. Üst kanal kitle iletişim aracıyla, alt kanal ise yansımayla ilişkilendirilir.",
+          "start": 713.4,
+          "end": 915.96,
+          "duration": 202.56,
+          "level": 4,
+          "tts_parts": 1,
+          "chars": 3066
+        },
+        {
+          "id": "c009",
+          "title": "Berlo Modeli",
+          "text": "David Berlo tarafından geliştirilen bu model, iletişim sürecinin kaynak, ileti, kanal ve alıcı olarak temel öğelere dayanmaktadır. Geri besleme öğesi bu modelde çok açık bir şekilde yer almamaktadır.\n\nŞekil 6. Berlo Tarafından Geliştirilen Model\n\nBilgi kaynağı, kodlayan, oluk, alıcı-kodaçan ve hedef bir iletim zincirinde gösterilir. Sürekli gürültü oluğa bağlanır; hedef tarafından kaynak tarafına dönen kesikli hat yansımayı gösterir.\n\nKaynağın iletişim sürecindeki davranışlarını belirleyen; düşünme, konuşma, yazma, çizme görüntüleme gibi iletişim becerileri bir dizi etmenle, ileti olarak kodlanmaktadır. Bu iletişim becerileri kaynağın içinde bulunduğu sosyo-kültürel çevreye karşı olan tutum ve davranışlarından bağımsız değildir. Başka deyişle kaynağın iletişim konusundaki becerileri, tutumu ya da davranışı, bilgisi ve içerisinde bulunduğu toplumsal yapılanma, onun iletişim işlevini belirleyen başlıca etmenler olarak görülmektedir.\n\nBerlo modeline göre iletişim öğelerinden biri durumundaki ileti, kaynak tarafından gönderilen uyarımlarla ilgilidir. Burada önemli kodlama öğesi, kullanılan Türkçe, Almanca ya da İngilizce gibi dildir. Alıcıya gönderilen ileti desenlenirken alıcının bildiği ya da kullandığı dil önem kazanmaktadır. Bununla birlikte el-kol hareketleri, mimikler gibi sözsüz öğeler ile müzik, resim ve sanat dallarının kullandığı semboller kullanılır. Yine bu modelde kanal öğesi olarak ön plana çıkan durum, beş duyular ya da iletinin üzerine yüklendiği araçtır. Burada iletinin yüklendiği duyu kanalları ve araçlar arttıkça iletişim sürecinin etkinliğinin artacağı ileri sürülmektedir.\n\nGönderilen iletilere hedef olan alıcı öğesi de tıpkı kaynakta olduğu gibi iletişim becerileri, içinde bulunduğu toplumsal yapı ve sosyo-kültürel ortam açılarından önemli görülmelidir. Bu örtüşmeyi bize fark ettirecek öğe ise geri beslemedir. Ancak modelde geri besleme öğesinin çok açık ve net bulunmaması iletilerin ne kadarının algılandığını belirtmemektedir. Bu durum Berlo modelinin zayıf bir noktası olarak eleştirilmektedir. Bununla birlikte model, iletişimin temel öğelerini açıkça belirttiği ve içerdiği için bazı alanlarda geçerliğe sahiptir.\n\nSonuç olarak Berlo modelinde etkileşim süreci, devingen değil, durağan bir yapıdadır. Bu noktada gözlemlenebileceği gibi, ileri sürülen yeni modeller, bir önceki modelin ömrünü tamamlaması sonucunda geliştirilmemektedir. Bir model tartışılıp, uygulamaya koşulduğu anda, yeni modeller, önceki modelin eksiklerinin farkında olarak eleştirilmesi ve önerilerin eklemlenmesi ile gelişmektedirler.\n\nBir model uygulamadaki ömrünü tamamlarken içinden bir yenisini doğurmaktadır. Modelleme tarihlerinin birbirine yakın olmasının bir nedeni de budur.\n\nYukarıda yer verilen modeller, temel doğrusal modellerdir. Şimdi doğrusal olmayan modellere örnekler verilecektir ki, bu modellerde iletişim sürecinde şimdiye kadar yer verilmeyen ya da belirgin olarak ön plana çıkarılmayan iletişim öğeleri ile bu öğelerin işlevselliği üzerinde durulacaktır.",
+          "start": 916.86,
+          "end": 1118.7,
+          "duration": 201.84,
+          "level": 4,
+          "tts_parts": 1,
+          "chars": 3157
+        },
+        {
+          "id": "c010",
+          "title": "Doğrusal Olmayan Modeller",
+          "text": "İletişimde doğrusal olmayan modeller; Osgood ve Schramm, Dance, Gerbner, Newcomb ABS, Westley-MacLean ve Riley-Riley modelleridir.",
+          "start": 1119.6,
+          "end": 1134,
+          "duration": 14.4,
+          "level": 3,
+          "tts_parts": 1,
+          "chars": 177
+        },
+        {
+          "id": "c011",
+          "title": "Osgood ve Schramm Modeli",
+          "text": "C. E. Osgood ve Wilbur Schramm tarafından 1954 yılında geliştirilen bu modelde kaynak ve alıcılar eşit sorumluluk ve işlev yüklenmektedir. Kaynaktan alıcıya gönderilen ileti alıcıya ulaştıktan sonra bir kodaçımı sürecine, oradan da yorumlanma süreci geçirdikten sonra yeniden kodlanarak kaynağa geri besleme olarak gönderilir. Kaynağa ulaşan alıcının bu iletisi, kaynak tarafından kodaçımı sürecine tabi olduktan sonra yorumlanır ve tekrar alıcıya gönderilir. Bu iletişim süreci sürergider. Bu modelde yorumlama ve geri besleme öğesi belirgin olarak görülür ve önemli işleve sahiptir.\n\nYorumlama ve geri besleme öğesi, gerek kaynağın, gerekse de hedef alıcının sosyal, eğitim ve bilgi birikimlerine koşut olarak iletinin yeniden düzenlenmesini kaçınılmaz kılmakta ya da kısaltmaktadır. Bu durum, tek yönlü ve doğrusal iletişim süreci kavramının açıkça yıkıldığını göstermektedir. Model bu özelliği ile bireylerarası iletişim sürecini tanımlama ve çözümlemede oldukça işlevseldir.\n\nBu modelin örneklerine günlük yaşam pratiğinde sıklıkla karşılaşmaktayız. Bu modelin işleyişi daha çok yüzyüze iletişim süreçlerinde belirgin olarak gözlemlenmekte ve konferans, seminer ya da panel gibi akademik ortamlardaki tartışmalar bu modele uygun olarak gerçekleştirilmekte ve iletilerin sağlıklı değişimi süreci yaşanmaktadır.",
+          "start": 1134.9,
+          "end": 1224.26,
+          "duration": 89.36,
+          "level": 4,
+          "tts_parts": 1,
+          "chars": 1407
+        },
+        {
+          "id": "c012",
+          "title": "Dance’in Spiral (Helical) Modeli",
+          "text": "Osgood ve Schramm modelinin gelişmiş bir sürümü olarak bilinen ve 1967 yılında gündeme getirilmiş bu model, doğrusal modeller ile doğrusal olmayan modellerin karşı karşıya getirildiği en net ve temel bir modeldir. Şimdiye kadar sözü edilen modeller açıklanmasında, iletişim sürecinin dondurularak açıklanmaya çalışılmışken, Dance, iletişim sürecinin devingen bir yapıya sahip olduğunun altını çizmektedir. İletişim süreci, diğer tüm toplumsal süreçlerde olduğu gibi devamlı değişen öğeleri, ilişkileri ve çevresel etmenleri içerir. Spiral model, bu sürecin zamanla nasıl değiştiğini, boyutların nasıl farklılaştığını tanımlar. Örneğin; karşılıklı bir konuşmada tarafların konu ve gerçek hakkında giderek bilgilenmesi ile konunun genişlemesi gibi.\n\nSpiral; farklı durum, olgu ve bireyler karşısında farklı biçim alır. Birisi için spiral çok geniştir, çünkü konu ve olay hakkında ön birikimi ve bilgisi farklıdır. Bir diğeri için çok küçük ve dardır. Çünkü o konu ya da olay hakkında daha az ön birikim ve bilgisi vardır. Sahip olunan bilginin, diğer bilgilerin yaratılması ya da elde edilmesini kolay kıldığını göstermede de yararlıdır. Ayrıca, iletişim sürecinde bireylerin karşılıklı olarak karşı tarafı bilgilendirdiği ya da bu bilgilenme ile daha ileri noktalara gidildiğini göstermesi açısından da model önemli ve işlevseldir.\n\nŞekil 7. Dance’ın, Spiral Modeli\n\nYukarı doğru genişleyen bir spiral ve yanında yukarı yönlü bir ok gösterilir. Spiralin sağında “Suskunluk sarmalı” etiketi yer alır.",
+          "start": 1225.16,
+          "end": 1336.04,
+          "duration": 110.88,
+          "level": 4,
+          "tts_parts": 1,
+          "chars": 1617
+        },
+        {
+          "id": "c013",
+          "title": "Gerbner Modeli",
+          "text": "Amerikalı iletişimci George Gerbner, 1956 yılında kendi iletişim modelini ileri sürmüştür. Modelin temeli iletiyi gerçeklik ile ilişkilendirmeye yöneliktir. İletinin ne hakkında olduğunu göstermeyi amaçlar ve bizim algı ve anlam ile ilgili sorular üzerinde durmamızı sağlar.\n\nBu modelde “algı” kavramı özgün bir yere sahiptir. Modelin yatay boyutu algısal boyut ile ilişkilidir. Modeldeki dikey boyut ise iletişim sürecinin bir öğesi olan araçların, iletişim aracı ve kanal ile ilişkili boyuttur.\n\nŞekil 8. Gerbner Modeli\n\nŞemada insan veya araç M ile olay E arasındaki yatay bağlantı algılama boyutunu; M içindeki E¹ ise algılanan olayı gösterir. Araçlar, medya ve kontrolü içeren dikey bağlantı, biçim S ve içerik E ile gösterilen iletişim ürününe uzanır. Bu ürün ayrı bir M₂ noktasına bağlanır.\n\nModelde aslolan işleyiş, birisi (M) bir olayı (E), (E’) olarak algılar, tepki gösterir. Algıladığı ve tepki gösterdiği bu durumu bazı araçlar yardımı ile belli bir biçim ve bağlamda, içeriğe bağlı kalmak üzere bazı sonuçlarla sunar (SE). Karmaşık gibi görülen bu anlatım aslında basit ve işlevseldir. Şekilde, ne algılandığı (E) ile gösterilmiştir. M, olayı algılayan ve E’de olayın algılanmış yeni biçimidir, yani gerçek olayın tam kendisi olmamakla birlikte, gerçeğe yakın bir sürümüdür (M bir birey olabileceği gibi bir makine de olabilir. Bu makinenin bir termostat olduğunu varsayarsak, algıladığı ısı düşüklüğü/yüksekliği bağlamında devreye girer). Burada E, M ve E’ arasındaki ilişki bir algılamadır. Olayın ifadesini dinleyenin, kaynağın ifadesi olan SE’den hareketle ne kadarını, nasıl algıladığı gerçeği M olarak bir başkasına (SE) olarak aktardığını varsayalım. Bu durumda gerçek ne kadar gerçektir ya da ne kadar gerçek olacaktır? Bu durumun sürüp gitmesi durumunda ne düşünüyorsunuz? Her iletiyi alanın geçmişteki deneyim ve birikiminin farklı olabileceğini hesaba kattığımızda, modelin ileti çözümlemelerinde ne kadar işlevsel olduğunu görebiliriz.\n\nÖrneğin dedeniz, pencereden uzaklara bakarak ufukta bir hava kararması, bulutlanma görür ve hava kararması ve bulutlanma bağlamında fırtına, kar yağışı ya da sağnak yağışın olduğu algılamasında bulunur. Ve bu fotoğrafı size aktararak, havanın felaket bozuk olduğu gerçeğini, ortalığın toz duman olacağını algılamanız bağlamında aktarır. Burada gerçeğe ne kadar yakınsınız? Kuşkusuz algılamasının doğru olduğu oranda gerçeğe yakındır. Bunun için dedenizin “felaket bir hava” deneyimi, fırtınalı bir hava deneyiminin olması gereklidir. Bu iletiyi alan sizin, kardeşinize bu durumu aktarmasını düşündüğümüzde, iletiyi dedenizin ve onun anlattığından sizin algıladığınız kadarını ileteceksiniz.\n\nToplumsal düzlemde ise, E yi potansiyel haber, bilgi, ileti ya da gerçeklik, M’i de iletişim aracı ya da kaynak, SE’yi algılanan iletinin ifadesi, M2’yi de alıcı, hedef olarak görelim. Modele böyle bakıldığında şu türden sorular sorma olanağı doğar. Medya tarafından verilen gerçeklik durumu muhabir tarafından algılanıp hazırlanan haber ile gerçeklik arasındaki bağıntı nasıldır? (E ve SE), (M) ve “alıcı kitle= M2 tarafından anlaşılan medya iletisi (SE) nasıl bir şeydir?,",
+          "start": 1336.94,
+          "end": 1569.42,
+          "duration": 232.48,
+          "level": 4,
+          "tts_parts": 1,
+          "chars": 3292
+        },
+        {
+          "id": "c014",
+          "title": "Newcomb ABX Modeli",
+          "text": "1953 yılında Newcomb tarafından, Heiderin 1946’da geliştirdiği iki insanın ya da obje ile olan ilişkilerindeki uyum ya da uyumsuzluk çalışmaları üzerine formüle edilmiştir. Model temelde, iki kişi arasındaki iletişim ilişkilerindeki dinamiği sunmaktadır. Daha geniş ölçekte ise bu dinamik iletişim ilişkisi sonucunda tutum değiştirme, düşünce oluşturma ve propagandist bir işlev sergilemektedir.\n\nŞekil 9. Newcomb ABX Öncü Modeli\n\nÜçgenin alt köşelerinde A ve B, tepesinde X bulunur. A ile B arasındaki zıt yönlü oklar, iki tarafın karşılıklı iletişimini gösterir.\n\nA ile B’nin iletişim ilişkilerinin çok iyi olduğunu ve A’nın X kişi, konu ya da objesine olan tutumunun ya da düşüncesinin pozitif, B’nin ise negatif olduğunu varsayalım. Model bize, A ile B’nin bilgi iletme, inandırma, deliller sunma, kandırma, yeni bilgisel düzenlemelere yer verme türünden iletişim ilişkisine dayanarak, B, A’nın X’e karşı olan pozitif tutumunu negatif ya da tersi olarak, A, B’nin X’e karşı negatif olan düşünce ya da tutumunu pozitif yapabilme gücüne sahip olduğunu anlatır. Bunu gerçekleştirebilmek için; A ve B bireyleri arasında bir çekim gücünün olması, X kişi, kavram ya da objesinin en az A ya da B için savunulabilmesi amacıyla önemli olması ve X’in A ve B için ortak bir ilgi alanı olması gerekmektedir.\n\nŞekil 10. Newcomb ABX Modeli\n\nŞekilde elit ya da seçkinler solda, halk ya da kamu sağda, medya ise altta yer alır. Bu noktaları birleştiren geometrik yapının üstünde, gündemdeki konuları simgeleyen X işaretleri bulunur.\n\nYeniden uyum olarak adlandırılan Newcomb ABX modelinde A=Elit, toplumu yönlendirici karar alanları, XXXXXXler ise gündemdeki konuları ve B=Kamuyu simgelemektedir. Elitin X konularından birine olan tutumunun pozitif, halkın aynı X konusuna tutumunun ise negatif olduğunu düşünelim. Model, Elitin medyayı kullanarak Halkın X konusuna olan negatif tutumunu pozitif yapabilme olasılığına karşılık, Halkın medyayı kullanarak, Elitin X konusuna olan pozitif tutum ya da düşüncesini negatif yapma olasılığının çok az olduğunu söyler. Çünkü Elitin medya üzerinde iktidar-medya çıkar ilişkisi doğrultusunda her zaman için bir kontrol gücü varken, Halkın medyayı kontrol gücü oldukça zayıftır. Bu nedenledir ki, her iki kesimin ihtilal ya da devrim niteliğindeki eylemlerinde ele ilk geçirilen örgüt, medya örgütleri olmaktadır.",
+          "start": 1570.32,
+          "end": 1746.08,
+          "duration": 175.76,
+          "level": 4,
+          "tts_parts": 1,
+          "chars": 2525
+        },
+        {
+          "id": "c015",
+          "title": "Westley ve MacLean Modeli",
+          "text": "1957 tarihine dayanan bu model, varolan araştırma modellerini düzenlemek ve kitle iletişim araştırmaları için yararlı olabilecek sistematik bir işleyiş biçimi bulmak üzere geliştirilmiştir. Modelin kökenleri; sosyal psikoloji, Newcomb ABX modelindeki denge ve yeniden uyum düşüncesine uzanır. Westley ve MacLean, iki kişinin dış objelere karşı olan yeniden uyumlarındaki sistematik ve birbirleri ile ilişkili özelliğini de dikkate alarak, kitle iletişiminin son derece karmaşık konumlarını yansıtan bir model oluşturmaya çalışmışlardır.\n\nWestley ve MacLean düşüncelerini, Newcomb’un modeline uyarlarken temelde iki aşama önerirler. Bu iki aşama kitle iletişimi ve bireyler arası iletişimdeki temel farklılığı dikkate almaktadırlar. Burada bu farkların kitle iletişiminde geri beslemenin en aza indirgendiği ya da gecikmeli olması ve bireyler arası iletişim sürecinde iletiye hedef olan alıcının çevresindeki birçok objeden hangisini seçeceğine yönlendirilmesidir.\n\nBu modelde A çevresindeki X’den X4 gibi ya da Xsonsuza kadar gitmekte olan konu ya da objelerden örneğin, X1’i seçmiş ve alıcı konumundaki B’ye iletmektedir ve onu X1 konusunda bilgilendirmek, etkilemek ya da yönlendirmek istemektedir. Seçtiği bu X1 ile B’ye, diğer X konuları arasından seçme şansı sunmamakta, onu bu seçimi ile yönlendirmektedir. Oysa alıcı konumundaki B’nin genel olarak şu ya da bu ölçüde X1 konusuna ilişkin bir düşüncesi de bulunabilir. Burada B’nin A’ya gönderdiği geri besleme (fBA), sadece A’nın X’ler arasından seçip, düzenleyip desenleyerek gönderdiği iletiye verilen bir yansıma olmayıp, B’nin daha öncesine X1’e ilişkin varolan düşüncesi ve A’nın B’ye gönderdiği ileti ile birleştirilerek verilen bir geri besleme durumundadır. Oysa normal iletişim sürecinde bu geri beslemenin A’nın B’ye gönderdiği iletiye karşılık olan gerime besleme olması gerekirdi, ama bu modelde geri besleme böyle olmayıp, B’nin daha önce X1 konusuna ilişkin düşüncesi ile birleştirilip A’ya gönderilen geri besleme konumundadır.\n\nŞekil 11. Westley ve MacLean Modeli\n\nX₁, X₂, X₃ ve Xn ile gösterilen konulardan A’ya, A’dan B’ye uzanan oklar yer alır; X₁’den B’ye doğrudan bir bağlantı da gösterilir. B’den A’ya dönen kavisli ok fBA olarak adlandırılan geri beslemeyi temsil eder.\n\nBu modelde, bir kaynağın bize ilettiği bilgi karşısında alıcı olarak bizler sadece bize gönderilen iletiye ilişkin geri beslemede bulunmuyoruz, bize gönderilen ileti ile bizim o iletiye ilişkin önceden sahip olduğumuz deneyim ve birikimlerimizi de bize gönderilen iletiyle harmanlayıp geri beslemede bulunuyoruz. Kaynak aldığı geri besleme doğrultusunda iletisini yeniden düzenliyor ve bize tekrar gönderiyor. Alıcı olarak biz, elde ettiğimiz bu bilgiyi bir başkasına aktarken, bu kez ilettiğimiz ileti sadece kaynaktan aldığımız ileti olmayıp, birikimlerimiz ve deneyimlerimizin de katıldığı yeni bir ileti haline dönüşmektedir.",
+          "start": 1746.98,
+          "end": 1956.34,
+          "duration": 209.36,
+          "level": 4,
+          "tts_parts": 1,
+          "chars": 3059
+        },
+        {
+          "id": "c016",
+          "title": "Riley-Riley Modeli",
+          "text": "Öncül iletişim modelleri, iletişimin toplumsal bir boşlukta yer alıp, çevresel etmenlerden etkilenmediği gibi bir izlenim yarattılar. Ancak iletişim tartışmalarının ivme kazanmaya başlaması ile birlikte, iletişimde bulunan bireyin toplumsal yapının bir parçası olduğu görüşü ağırlık kazanmaya başladı. John W. Riley ve Mathilde W. Riley iletişim sürecinin açıklanmasında sosyolojik ağrlıklı açıklamalarda bulundular. İleti gönderen kaynak ya da iletiye maruz kalan alıcıların toplumdan izole olmuş yaratıklar olmadığını ve bu bireylerin birinci dereceden kan bağı olan yakınları ile geleneksel, kalıtsal ve toplumsal bir bağ olduğunu belirterek birincil gruplar olduğunu vurguladılar.\n\nŞekil 12. Riley-Riley Öncü Modeli\n\nİletişimci İ ile alıcı A arasında karşılıklı oklar bulunur. Alıcı, birincil ve ikincil grupları içeren geniş toplumsal yapının içinde konumlandırılır ve bu gruplara bağlanır.\n\nÖte yandan yine bu bireylerin kan bağı ilerisinde, içerisinde bulundukları toplumda sürekli ilişki ve etkileşimde bulundukları, arkadaş çevresi, okul çevresi, iş çevresi, partiler, sendikalar gibi ikincil grup olarak adlandırılan toplumsal örgütlerin bulunduğu gerçeğini dile getirdiler.\n\nBu anlamda, gönderilen ya da alınan iletilerin desenlenmesi ve işlevsel olması açısından bu birincil ve ikincil grup kavramının dikkate alınmasının önemi bu modelin odak noktası haline geldi.\n\nŞekil 13. Riley-Riley Modeli\n\nİletişimci ve alıcı, kendi birincil ve ikincil gruplarını içeren ayrı geniş toplumsal yapılar içinde gösterilir. Aralarındaki iki zıt yönlü ok, iletişim aracı üzerinden karşılıklı bağlantıyı belirtir.",
+          "start": 1957.24,
+          "end": 2072.68,
+          "duration": 115.44,
+          "level": 4,
+          "tts_parts": 1,
+          "chars": 1742
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "İletişim Sürecinde Model Ne İşe Yarar?",
+      "start": 2074.28,
+      "end": 2711.44,
+      "chunks": [
+        {
+          "id": "c017",
+          "title": "GİRİŞ",
+          "text": "Kitabın bu modülünde ele alınan “İletişim Sürecinde Model Ne İşe Yarar?”, iletişim olgusunun görünürde basit fakat arka planda son derece karmaşık ve çok katmanlı olan yapısını çözümlemede kuramsal tasarımların üstlendiği işlevleri tartışmaya açmaktadır. Modeller; araştırmacılara ve iletişim profesyonellerine soyut etkileşim ilişkilerini somutlaştırarak anlama, eleştirel bir yaklaşımla çözümleme ve iletileri hedeflenen amaca en uygun stratejilerle yapılandırma olanağı sunar. Tek bir modelin iletişimi tüm boyutlarıyla açıklamada yetersiz kalabileceğini göz önünde bulunduran bu yaklaşım, modellerin birbirini dışlayan değil; birbirine eklemlenen ve yeni kuramsal açılımlar doğuran devingen doğasını vurgular. Bu modül; toplumsal dinamiklerin dönüştürücü etkisini görünür kılan gelişmiş modellerin sağladığı kavramsal araçları, karmaşık süreçleri aşırı basitleştirme tuzağına düşmeden analiz etmenin önemini ortaya koymaktadır.",
+          "start": 2074.28,
+          "end": 2135.8,
+          "duration": 61.52,
+          "level": 2,
+          "tts_parts": 1,
+          "chars": 954
+        },
+        {
+          "id": "c018",
+          "title": "İLETİŞİM SÜRECİNDE MODEL NE İŞE YARAR?",
+          "text": "Kimi zaman çözümlemeye çalıştığımız iletişim sürecinde birden çok modelin işlevsel olduğunu görebilmekteyiz. İletişim modellerinin bir yararı; mesleğinin odağında iletişim hatta etkili iletişim konusu bulunanların amaçlarına ulaşmada onlara yardımcı olur, çözümleme ve açılımlarda bulunmasını kolaylaştırır. Daha da ötesi iletişim süreçlerini anlama, anlatma, çözümleme ve en önemlisi iletilerini desenlemelerinde eleştirel düşünme alışkanlığı yaratır.\n\nBununla birlikte farklı toplum ve gruplar içersinde oluşan farklı iletişim süreçleri için yeni ve hatta özgün modelleri oluşturmak da söz konusudur. Ancak, modellerin kullanımı ya da iletim süreçlerini açımlamada yararlandığımız ya da oluşturduğumuz model çalışmalarında aşırı basitleştirmeye, yanlışa düşmememiz gerekmektedir. Çünkü aşırı basitleştirme; süreç içersinde bazı önemli işleve sahip öğeleri atlamamıza ya da göremememize neden olur.\n\nBu bölümde belli başlı iletişim modellerine yer verilmiştir. Sözkonusu edilen modellerin her biri, iletişim sürecine değişik bakış açısı getirmektedir. Hiçbir model ya da yaklaşım iletişim sürecini tümüyle çözmeye yetkin değildir.\n\n1950’li yıllardaki modellerde de görüleceği üzere, gelişmekte olan toplumsal olayları iletişim süreçleri açısından anlayabilmek, açıklayabilmek, çözümlemek ve hatta derin okuyabilmek; kısıtlı modelleme çalışmaları nedeni ile çok kolay olmamıştır.\n\nAncak ilerleyen yıllarda modelleme çalışmalarının çeşitlenmesi, iletişim süreci öğelerinin hemen neredeyse tümünün sorgulandığı gelişmiş iletişim modelleri sayesinde gerek iletişim bilimcilerin gerekse iletişim sürecini mesleksel alanlarında sıklık ve yoğunlukla kullanan bireylerin çalışmalarında modelleri kullanımları artmıştır.\n\nTemelde modeller, bizim olayların karmaşık yapılarını açıklığa kavuşturmamıza, bir iletişim süreci öğelerinin birbirleri arasındaki ilişkilerin belirlenmesine yararlar.\n\nBir modelin amacı, gerçek bir olgunun karmaşıklığını görmezlikten gelmek ya da bir iletişim öğesini örneğin “kaynak” diye adlandırdığımızda o öğenin aynı zamanda “alıcı” rolüne de girdiğini ve sürekli biçimde değişik roller aldığını anımsamamız gerekir.",
+          "start": 2136.7,
+          "end": 2284.06,
+          "duration": 147.36,
+          "level": 2,
+          "tts_parts": 1,
+          "chars": 2295
+        },
+        {
+          "id": "c019",
+          "title": "KENDİMİZİ SINAYALIM",
+          "text": "1 “Çift yönlü iletişim olmadıkça, sağlıklı ve etkili bir iletişimden söz edilemez” denildiğinde aşağıdakilerden hangi seçeneğe katılırsınız?\n\nA. Alıcının, işitiyor olması onun anlıyor olması anlamına gelmeyebilir.  \nB. Kaynağın, anlatıyor olması onun anlatabildiği anlamına gelmeyebilir.  \nC. Alıcının, o anda ilgisi başka bir konu üzerinde odaklamış olabilir.  \nD. Kaynağın, o anda etkili ve kavrayıcı anlatımı olmayabilir.  \nE. Yukarıda belirtilenlerin hepsi doğrudur.\n\nSorunun Yanıtı: E\n\n2 “Tek yönlü iletişim, çoğunlukla sağlıklı bir iletişim değildir!” denildiğinde aşağıdakilerden hangi seçeneğe katılırsınız?\n\nA. Alıcının, işitiyor olması onun anlıyor olması anlamına gelmeyebilir.  \nB. Kaynağın, anlatıyor olması onun anlatabildiği anlamına gelmeyebilir.  \nC. Alıcının, o anda ilgisi başka bir konu üzerinde odaklamış olabilir.  \nD. Kaynağın, o anda etkili ve kavrayıcı anlatımı olmayabilir.  \nE. Yukarıda belirtilenlerin hepsi doğrudur.\n\nSorunun Yanıtı: E\n\n3 “ Model nedir?” denildiğinde aşağıdakilerden hangisi geçerli değildir?\n\nA. Model, kimi zaman sadeleştirilmeye, kimi zaman da eklemlenmeye açık olan yapılardır.  \nB. Model, bir nesneye ya da olgunun dizgeli (sistematik) simgelenmesidir.  \nC. Model, gerçekliğin ya da onun bir bölümünün grafiksel ya da şematik olarak basitleştirilmiş bir biçimidir.  \nD. Model, bir sürecin temel öğelerini ve bu öğeler arasındaki ilişkiyi göstermeye, açıklamaya çalışır.  \nE. Modelde kodlama ve açımlama yer almaz.\n\nSorunun Yanıtı: E\n\n4 “Aristo ve Lasswell Modellerlinde geri bildirin hangi notadadır?” denildiğinde aşağıdakilerden hangi seçeneğe katılırsınız?\n\nA. Doğrusal modellerde geri bildirime yer yoktur.  \nB. Doğrusal modellerde geri bildirim beklemezler.  \nC. Geri bildirim, kaynak ve alıcı arasında Doğrusal modellerde belirtilmez.  \nD. Doğrusal modellerde amaç hedefi etkilemektir.  \nE. Yukarıda belirtilenlerin hepsi doğrudur.\n\nSorunun Yanıtı: E\n\n5 Shannon ve Weaver Modelinde “Gürültü ilk kez söz konusu edilmiştir” denildiğinde aşağıdakilerden hangi seçeneğe katılırsınız?\n\nA. “Gürültü”, iletinin düzenine karşı çıkıp onu herhangi bir biçimde bozan, istenmeyen belirteçlerdir.  \nB. Zaman zaman telefon teli yüzünden, ahize ya da hatlardaki sıkıntılar ya da başka iletilerin karışması yüzünden fiziksel bazı parazitler söz konusu olabilir.  \nC. Öğretme ve öğrenme ortamlarında sınıfın uğultusu, akustiği ya da alçaktan geçen uçağın sesi gürültüdür?  \nD. Bu modelde, kaynak, alıcıya istediği etkiyi doğrudan yansıtamamakta ise mutlaka bir gürültü öğesi vardı.  \nE. Yukarıda belirtilenlerin hepsi doğrudur.\n\nSorunun Yanıtı: E\n\n6 Sizce “Gürültü” denildiğinde aşağıdakilerden hangi seçeneğe katılırsınız?\n\nA. Gürültünün sadece bilinen fiziksel bir kavram olmadığına.  \nB. DeFleur gürültü öğesinin kaynak ya da hedeflenen alıcı tarafından da kaynaklanabileceği.  \nC. Gürültü öğesinin kaynak, alıcı ya da iletişim ortamından kaynaklanacağına.  \nD. Kaynak ya da alıcının, o anda herhangi bir nedenden dolayı etkili ve kavrayıcı iletişim de bulunamadığını.  \nE. Yukarıda belirtilenlerin hepsi doğrudur.\n\nSorunun Yanıtı: E\n\n7 “David Berlo tarafından geliştirilen model iletişim sürecinin kaynak, ileti, kanal ve alcı gibi temel öğelerine dayanmaktadır”. denildiğinde aşağıdakilerden hangi seçeneğe katılırsınız?\n\nA. Geri besleme öğesi bu modelde çok açık bir şekilde yer almamaktadır.  \nB. Berlo modeline göre iletişim öğelerinden bir diğeri durumundaki ileti, kaynak tarafından gönderilen uyarımlarla ilgilidir.  \nC. Gönderilen iletilere hedef olan alıcı öğesi de tıpkı kaynakta olduğu gibi iletişim becerileri, içinde bulunduğu toplumsal yapı ve sosyo-kültürel ortam açılarından önemli görülmelidir.  \nD. Berlo modelinde etkileşim süreci, devingen değil, durağan bir yapıdadır.  \nE. Yukarıda belirtilenlerin hepsi doğrudur.\n\nSorunun Yanıtı: E\n\n8 “Doğrusal Olmayan Modeller”. denildiğinde aşağıdakilerden hangi seçeneğe katılırsınız?\n\nA. Osgood ve Schramm modeli doğrusal olmayan Modellerdendir.  \nB. Dance modeli doğrusal olmayan Modellerdendir.  \nC. Gerbner modeli doğrusal olmayan Modellerdendir.  \nD. Newcomb ABX modeli doğrusal olmayan Modellerdendir.  \nE. Yukarıda belirtilenlerin hepsi doğrudur.\n\nSorunun Yanıtı: E\n\n9 “Osgood ve Schramm Modelinde şu özellikler vardır”. denildiğinde aşağıdakilerden hangi seçeneğe katılırsınız?\n\nA. Osgood ve Schramm modelinde kaynak ve alıcılar eşit sorumluluk ve işlev yüklenmektedir.  \nB. Kaynaktan alıcıya gönderilen ileti alcıya ulaştıktan sonra bir kod açımı sürecine oradan da yorumlanma süreci geçirdikten sonra yeniden kodlanarak kaynağa geri besleme olarak gönderilir.  \nC. Kaynağa ulaşan alıncın iletisi, kaynak tarafından kod açımı sürecine tabi olduktan sonra yorumlanır ve tekrar alıcıya gönderilir.  \nD. Bu modelde yorumlama ve geri besleme öğesi belirgin olarak görülür ve önemli işleve sahiptir.  \nE. Yukarıda belirtilenlerin hepsi doğrudur.\n\nSorunun Yanıtı: E\n\n10 “Dance’in Spiral (Helical) Modeli iletişim sürecine şunları katmıştır”. denildiğinde aşağıdakilerden hangi seçeneğe katılırsınız?\n\nA. Dance’in Spiral (Helical) Modeli Osgood ve Schramm modelinin gelişmiş bir sürümü olarak bilinir.  \nB. Dance’in Spiral (Helical) Modeli, doğrusal modeller ile doğrusal olmayan modellerin karşı karşıya getirildiği en net ve temel bir modeldir.  \nC. Dance’in Spiral (Helical) Modeli, iletişim sürecinin devingen bir yapıya sahip olduğunun altını çizmektedir.  \nD. Dance’in Spiral (Helical) Modeli, sürecin zamanla nasıl değiştiğini, boyutların nasıl farklılaştığını tanımlar.  \nE. Yukarıda belirtilenlerin hepsi doğrudur.\n\nSorunun Yanıtı: E",
+          "start": 2284.96,
+          "end": 2711.44,
+          "duration": 426.48,
+          "level": 2,
+          "tts_parts": 1,
+          "chars": 6020
+        }
+      ]
+    }
+  ]
+}
