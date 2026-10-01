@@ -244,14 +244,7 @@ fieldset { border: none; margin: 0; padding: 0; }
    ulaşır. YouTube çerçevesi böylece kullanıcı etkileşimi almış olur ve LMS iframe'i autoplay izni vermese de
    sonraki tüm komutlar (duraklat, devam, ses) çalışır. Kapak görseli ve ▶ düğmesi yalnızca görüntüdür. */
 .video-frame.first-tap .big-play { pointer-events: none; }
-.video-frame.first-tap .video-shield { clip-path: polygon(evenodd, 0 0, 100% 0, 100% 100%, 0 100%, 0 0, 12% 14%, 88% 14%, 88% 84%, 12% 84%, 12% 14%); }
-.video-frame.first-tap:hover .big-play { transform: scale(1.05); }
-.video-frame.first-tap.nudge .big-play { animation: play-nudge 0.5s ease 3; }
-@keyframes play-nudge { 50% { transform: scale(1.18); box-shadow: 0 0 0 14px rgba(255, 255, 255, 0.3), 0 6px 24px rgba(0, 0, 0, 0.35); } }
-.resume-note { display: none; position: absolute; left: 50%; bottom: 0.8rem; z-index: 7; transform: translateX(-50%); align-items: center; gap: 0.6rem; padding: 0.35rem 0.5rem 0.35rem 0.85rem; border-radius: 999px; background: rgba(15, 20, 30, 0.85); color: #fff; font-size: 0.88rem; white-space: nowrap; }
-.resume-note button { padding: 0.2rem 0.65rem; border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 999px; background: transparent; color: #fff; font-size: 0.82rem; cursor: pointer; }
-.video-frame.first-tap.has-resume-note:not(.has-overlay) .resume-note { display: inline-flex; }
-.video-frame.has-resume-note .tap-hint { display: none !important; }
+.video-frame.first-tap .video-shield { clip-path: polygon(evenodd, 0 0, 100% 0, 100% 100%, 0 100%, 0 0, 28% 20%, 72% 20%, 72% 80%, 28% 80%, 28% 20%); }
 .video-frame.first-tap.show-tap-hint:not(.is-playing) .tap-hint { display: block; }
 
 .hotspots { position: absolute; top: 0.8rem; left: 0.8rem; z-index: 4; display: flex; flex-direction: column; align-items: flex-start; gap: 0.5rem; max-width: calc(100% - 1.6rem); pointer-events: none; }
@@ -881,14 +874,11 @@ fieldset { border: none; margin: 0; padding: 0; }
     const unmuteButton = h("button", { type: "button", class: "unmute-button" }, "🔇 Sesi aç");
     const overlayLayer = h("div", { class: "video-overlay", hidden: true });
     const TAP_TEXT = "▶ Başlatmak için videoya dokunun";
-    const resumeText = h("span");
-    const resumeRestart = h("button", { type: "button" }, "Baştan başla");
-    const resumeNote = h("div", { class: "resume-note" }, resumeText, resumeRestart);
     const tapHint = h("p", { class: "tap-hint" }, TAP_TEXT);
     const seekFlash = h("div", { class: "seek-flash", "aria-hidden": "true" });
     const frame = h("div", { class: `video-frame${ccOn ? "" : " is-cropped"}` },
       h("p", { class: "video-placeholder" }, "Video yükleniyor…"),
-      host, poster, shield, pausedLayer, seekFlash, hotspots, menuButton, unmuteButton, tapHint, resumeNote, toast, overlayLayer);
+      host, poster, shield, pausedLayer, seekFlash, hotspots, menuButton, unmuteButton, tapHint, toast, overlayLayer);
     // Yatay telefonda ve tam ekranda videonun iki yanındaki boşluk, geniş geri / ileri sarma düğmesi olur.
     const sideBack = h("button", { type: "button", class: "side-seek is-back", "aria-label": `${SEEK_STEP} saniye geri sar` },
       h("span", { class: "side-seek-circle" }, seekIcon("back", 30)));
@@ -969,7 +959,7 @@ fieldset { border: none; margin: 0; padding: 0; }
     // --- olaylar
     // overflow: clip desteklemeyen tarayıcılarda taşan iframe çerçeveyi kaydırmasın.
     frame.addEventListener("scroll", () => { frame.scrollTop = 0; frame.scrollLeft = 0; });
-    playButton.addEventListener("click", playFromControls);
+    playButton.addEventListener("click", togglePlay);
     bigPlay.addEventListener("click", togglePlay);
     shield.addEventListener("click", togglePlay);
     ccButton.addEventListener("click", () => setCaptions(!ccOn));
@@ -978,7 +968,7 @@ fieldset { border: none; margin: 0; padding: 0; }
     menuButton.addEventListener("click", () => setMenu(!menuOpen));
     unmuteButton.addEventListener("click", requestSound);
     volumeButton.addEventListener("click", toggleMute);
-    rowPlay.addEventListener("click", playFromControls);
+    rowPlay.addEventListener("click", togglePlay);
     for (const [button, delta] of [
       [sideBack, -SEEK_STEP], [sideForward, SEEK_STEP], [rowBack, -SEEK_STEP], [rowForward, SEEK_STEP], [barBack, -SEEK_STEP], [barForward, SEEK_STEP]
     ]) {
@@ -1190,7 +1180,7 @@ fieldset { border: none; margin: 0; padding: 0; }
           seekOnStart = null;
         }
         if (frame.classList.contains("first-tap")) {
-          frame.classList.remove("first-tap", "show-tap-hint", "nudge", "has-resume-note");
+          frame.classList.remove("first-tap", "show-tap-hint");
           if (ytTouched) {
             applyVolume();
             // Odak YouTube çerçevesinde kalırsa klavye kısayolları çalışmaz.
@@ -1269,25 +1259,6 @@ fieldset { border: none; margin: 0; padding: 0; }
       renderButtons();
       renderActiveBookmark();
       if (lms && playing && Date.now() - lastSave > SAVE_EVERY_MS) saveProgress();
-    }
-
-    // LMS iframe'i ses izni vermediğinde ses ancak YouTube çerçevesine yapılan tıklamayla açılabilir.
-    // İlk oynatmada alttaki düğmeye fareyle/dokunarak basılırsa video sessiz başlatılmaz; videonun
-    // üzerindeki ▶ öne çıkarılır. Klavyeyle (event.detail === 0) basılırsa erişilebilirlik için sessiz başlar.
-    function awaitingVideoTap() {
-      return ready && !everPlayed && soundBlocked && !overlay && frame.classList.contains("first-tap");
-    }
-
-    function playFromControls(event) {
-      if (awaitingVideoTap() && event && event.detail > 0) {
-        frame.classList.remove("nudge");
-        void frame.offsetWidth;
-        frame.classList.add("nudge", "show-tap-hint");
-        tapHint.textContent = "▶ Sesli başlatmak için videonun üzerine tıklayın";
-        frame.scrollIntoView({ block: "nearest", behavior: "smooth" });
-        return;
-      }
-      togglePlay();
     }
 
     function togglePlay() {
@@ -1840,21 +1811,6 @@ fieldset { border: none; margin: 0; padding: 0; }
     }
 
     function showResume(at) {
-      if (soundBlocked && !everPlayed && frame.classList.contains("first-tap")) {
-        engine.last = at;
-        lastTracked = null;
-        seekPlayer(at);
-        resumeText.textContent = `Video ${clock(at)} noktasından devam edecek`;
-        resumeRestart.onclick = () => {
-          frame.classList.remove("has-resume-note");
-          engine.prepareSeek(0);
-          seekPlayer(0);
-          tapHint.textContent = TAP_TEXT;
-          frame.classList.add("show-tap-hint");
-        };
-        frame.classList.add("has-resume-note");
-        return;
-      }
       const resume = h("button", { type: "button", class: "primary" }, `${clock(at)} noktasından devam et`);
       const restart = h("button", { type: "button" }, "Baştan başla");
       resume.addEventListener("click", () => {
