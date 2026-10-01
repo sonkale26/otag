@@ -1,0 +1,609 @@
+{
+  "meta": {
+    "id": "mmup4sdm7ozezln",
+    "title": "Jour 1",
+    "subtitle": "DE VOUS À MOI",
+    "footer": "",
+    "eyebrow": "Çöz-Öğren"
+  },
+  "lessons": [
+    {
+      "id": "tikla",
+      "kind": "cards",
+      "title": "Tıkla-Öğren",
+      "intro": "Kavramları görmek için kartlara tıklayın; ön yüzde kavram, arka yüzde açıklaması yer alır.",
+      "activities": [
+        {
+          "title": "Saluer, se présenter et dire la nationalité",
+          "items": [
+            {
+              "term": "Saluer et prendre congé",
+              "definition": "On utilise notamment « Bonjour ! », « Salut ! », « Bonsoir ! », « Au revoir ! », « Bonne journée ! », « Bon après-midi ! », « Bonne soirée ! » et « Bonne nuit ! »."
+            },
+            {
+              "term": "S’appeler",
+              "definition": "Le verbe « s’appeler » s’utilise au présent pour se présenter : je m’appelle, tu t’appelles, il ou elle s’appelle, nous nous appelons, vous vous appelez, ils ou elles s’appellent."
+            },
+            {
+              "term": "Être",
+              "definition": "Le verbe « être » s’utilise notamment pour dire la nationalité : je suis, tu es, il ou elle est, nous sommes, vous êtes, ils ou elles sont."
+            },
+            {
+              "term": "Habiter",
+              "definition": "Le verbe « habiter » s’utilise au présent pour dire où une personne habite."
+            },
+            {
+              "term": "Masculin et féminin des nationalités",
+              "definition": "Au féminin, on ajoute souvent « -e » ; avec « -en » au masculin, on écrit « -enne » au féminin. Certains mots ont une autre forme."
+            },
+            {
+              "term": "Pronoms personnels sujets et toniques",
+              "definition": "Les pronoms sujets sont obligatoires devant le verbe. Les pronoms toniques se placent devant le pronom sujet pour insister."
+            }
+          ]
+        },
+        {
+          "title": "Donner des informations personnelles, dire le jour et l’heure",
+          "items": [
+            {
+              "term": "Informations personnelles",
+              "definition": "Une fiche peut demander le nom, le prénom, la nationalité, la ville, l’adresse électronique et le numéro de téléphone."
+            },
+            {
+              "term": "Les jours de la semaine",
+              "definition": "Les jours sont lundi, mardi, mercredi, jeudi, vendredi, samedi et dimanche. En France, la semaine commence le lundi."
+            },
+            {
+              "term": "Demander l’heure",
+              "definition": "On peut demander l’heure avec « Vous avez l’heure ? » ou « Quelle heure est-il ? »."
+            },
+            {
+              "term": "Dire l’heure",
+              "definition": "On peut dire « Il est 13 heures », « Il est midi », « Il est minuit », ainsi que des formes avec « et quart », « et demie » ou « moins le quart »."
+            },
+            {
+              "term": "Avoir",
+              "definition": "Le verbe « avoir » s’utilise pour dire l’âge et pour marquer la possession : j’ai, tu as, il ou elle a, nous avons, vous avez, ils ou elles ont."
+            },
+            {
+              "term": "Articles indéfinis",
+              "definition": "Il y a trois articles indéfinis : « un » pour un mot masculin, « une » pour un mot féminin et « des » pour un mot masculin ou féminin au pluriel."
+            }
+          ]
+        },
+        {
+          "title": "Comprendre, se faire comprendre et poser des questions",
+          "items": [
+            {
+              "term": "Demander de répéter",
+              "definition": "On peut dire « Tu peux répéter ? » ou « Vous pouvez répéter ? » quand on veut écouter encore une fois."
+            },
+            {
+              "term": "Demander d’épeler",
+              "definition": "On peut demander « Ça s’écrit comment ? » ou « Vous pouvez épeler, s’il vous plaît ? » quand on ne sait pas écrire un mot."
+            },
+            {
+              "term": "Demander le sens",
+              "definition": "On peut dire « Ça veut dire quoi ? » quand on ne comprend pas un mot."
+            },
+            {
+              "term": "Questions avec comment",
+              "definition": "« Comment » s’emploie dans des questions comme « Comment tu t’appelles ? », « Comment ça s’écrit ? » ou « Comment ça va ? »."
+            },
+            {
+              "term": "Questions avec combien",
+              "definition": "« Combien » s’emploie pour demander un nombre ou une quantité, par exemple « Combien il y a d’élèves ? »."
+            },
+            {
+              "term": "Intonation de la phrase interrogative",
+              "definition": "Quand il n’y a pas de mot interrogatif, la voix monte en général. Quand un mot interrogatif est au début de la question, la voix descend en général."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yanitla",
+      "kind": "quiz",
+      "title": "Yanıtla-Öğren",
+      "intro": "Soruları yanıtlayın; her seçimden sonra doğru yanıt ve gerekçesi gösterilir.",
+      "activities": [
+        {
+          "title": "Saluer, se présenter et dire la nationalité",
+          "items": [
+            {
+              "question": "Quelle expression peut-on utiliser pour saluer pendant la journée ?",
+              "options": [
+                "Bonjour !",
+                "Bonne nuit !",
+                "Au revoir !",
+                "À demain !"
+              ],
+              "answer": 0,
+              "explanation": "« Bonjour ! » est une formule de salutation utilisée dans la journée."
+            },
+            {
+              "question": "Quel verbe utilise-t-on pour dire son prénom ?",
+              "options": [
+                "Habiter",
+                "S’appeler",
+                "Être",
+                "Avoir"
+              ],
+              "answer": 1,
+              "explanation": "On utilise « s’appeler » pour dire son prénom."
+            },
+            {
+              "question": "Dans « Je suis française », quel verbe exprime la nationalité ?",
+              "options": [
+                "S’appeler",
+                "Habiter",
+                "Être",
+                "Avoir"
+              ],
+              "answer": 2,
+              "explanation": "Le verbe « être » permet ici d’exprimer la nationalité."
+            },
+            {
+              "question": "Quelle est la forme féminine de « espagnol » ?",
+              "options": [
+                "espagnolien",
+                "espagnola",
+                "espagnolienne",
+                "espagnole"
+              ],
+              "answer": 3,
+              "explanation": "La forme féminine donnée est « espagnole »."
+            },
+            {
+              "question": "Dans « Moi, je suis français », quel type de pronom est « moi » ?",
+              "options": [
+                "Un pronom tonique",
+                "Un article indéfini",
+                "Un mot interrogatif",
+                "Un verbe"
+              ],
+              "answer": 0,
+              "explanation": "« Moi » est un pronom tonique placé devant le pronom sujet pour insister."
+            }
+          ]
+        },
+        {
+          "title": "Donner des informations personnelles, dire le jour et l’heure",
+          "items": [
+            {
+              "question": "Quel jour commence la semaine en France ?",
+              "options": [
+                "dimanche",
+                "lundi",
+                "samedi",
+                "vendredi"
+              ],
+              "answer": 1,
+              "explanation": "En France, la semaine commence le lundi."
+            },
+            {
+              "question": "Quelle question permet de demander l’heure ?",
+              "options": [
+                "Comment tu t’appelles ?",
+                "Tu habites à Paris ?",
+                "Quelle heure est-il ?",
+                "Combien de livres tu as ?"
+              ],
+              "answer": 2,
+              "explanation": "« Quelle heure est-il ? » sert à demander l’heure."
+            },
+            {
+              "question": "Quelle expression indique minuit ?",
+              "options": [
+                "Il est midi.",
+                "Il est neuf heures.",
+                "Il est dix heures.",
+                "Il est minuit."
+              ],
+              "answer": 3,
+              "explanation": "« Il est minuit. » indique minuit."
+            },
+            {
+              "question": "Quel verbe utilise-t-on pour dire l’âge ?",
+              "options": [
+                "Avoir",
+                "Habiter",
+                "S’appeler",
+                "Être"
+              ],
+              "answer": 0,
+              "explanation": "Le verbe « avoir » s’utilise pour dire l’âge."
+            },
+            {
+              "question": "Quel article indéfini utilise-t-on avec un nom féminin singulier ?",
+              "options": [
+                "des",
+                "une",
+                "un",
+                "le"
+              ],
+              "answer": 1,
+              "explanation": "« Une » s’emploie avec un nom féminin singulier."
+            }
+          ]
+        },
+        {
+          "title": "Comprendre, se faire comprendre et poser des questions",
+          "items": [
+            {
+              "question": "Quelle expression utilise-t-on pour demander à quelqu’un de répéter ?",
+              "options": [
+                "Ça veut dire quoi ?",
+                "Quelle heure est-il ?",
+                "Tu peux répéter ?",
+                "Combien de livres tu as ?"
+              ],
+              "answer": 2,
+              "explanation": "« Tu peux répéter ? » sert à demander d’entendre une phrase encore une fois."
+            },
+            {
+              "question": "Quelle expression peut-on utiliser pour demander comment un mot s’écrit ?",
+              "options": [
+                "Tu as quel âge ?",
+                "Comment ça va ?",
+                "Vous avez l’heure ?",
+                "Ça s’écrit comment ?"
+              ],
+              "answer": 3,
+              "explanation": "« Ça s’écrit comment ? » sert à demander l’orthographe d’un mot."
+            },
+            {
+              "question": "Quel mot interrogatif utilise-t-on pour demander un nombre ou une quantité ?",
+              "options": [
+                "Combien",
+                "Comment",
+                "Pardon",
+                "Quelle"
+              ],
+              "answer": 0,
+              "explanation": "« Combien » sert à demander un nombre ou une quantité."
+            },
+            {
+              "question": "Quand il n’y a pas de mot interrogatif, que fait généralement la voix ?",
+              "options": [
+                "Elle descend.",
+                "Elle monte.",
+                "Elle reste toujours au même niveau.",
+                "Elle s’arrête au milieu."
+              ],
+              "answer": 1,
+              "explanation": "Sans mot interrogatif, la voix monte en général."
+            },
+            {
+              "question": "Quelle expression utilise-t-on pour demander le sens d’un mot ?",
+              "options": [
+                "Vous avez l’heure ?",
+                "Tu peux répéter ?",
+                "Ça veut dire quoi ?",
+                "Combien il y a d’élèves ?"
+              ],
+              "answer": 2,
+              "explanation": "« Ça veut dire quoi ? » sert à demander le sens d’un mot ou d’une expression."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bul",
+      "kind": "crossword",
+      "title": "Bul-Öğren",
+      "intro": "İpuçlarından yola çıkarak kelimeleri bulun. Izgara, verdiğiniz kelimelerden otomatik kurulur.",
+      "activities": [
+        {
+          "title": "Saluer, se présenter et dire la nationalité",
+          "items": [
+            {
+              "answer": "BONJOUR",
+              "clue": "Formule de salutation utilisée pendant la journée."
+            },
+            {
+              "answer": "BONSOİR",
+              "clue": "Formule de salutation utilisée le soir."
+            },
+            {
+              "answer": "HABİTER",
+              "clue": "Verbe employé pour dire dans quelle ville une personne vit."
+            },
+            {
+              "answer": "FMİNİN",
+              "clue": "Genre grammatical opposé au masculin."
+            },
+            {
+              "answer": "PRONOM",
+              "clue": "Mot qui peut représenter une personne devant un verbe ou servir à insister."
+            },
+            {
+              "answer": "VOYELLE",
+              "clue": "Catégorie de son illustrée par [i], [y], [a] ou [u]."
+            },
+            {
+              "answer": "CONSONNE",
+              "clue": "Catégorie de son illustrée par [p], [b], [t] ou [d]."
+            }
+          ]
+        },
+        {
+          "title": "Donner des informations personnelles, dire le jour et l’heure",
+          "items": [
+            {
+              "answer": "LUNDİ",
+              "clue": "Jour qui commence la semaine en France."
+            },
+            {
+              "answer": "MARDİ",
+              "clue": "Jour placé après le premier jour de la semaine dans la liste donnée."
+            },
+            {
+              "answer": "HEURE",
+              "clue": "Unité utilisée dans les expressions « Quelle ... est-il ? » et « Il est 13 ... »."
+            },
+            {
+              "answer": "MİNUİT",
+              "clue": "Moment qui correspond à douze heures de la nuit."
+            },
+            {
+              "answer": "AVOİR",
+              "clue": "Verbe utilisé pour dire l’âge et marquer la possession."
+            },
+            {
+              "answer": "ARTİCLE",
+              "clue": "Catégorie grammaticale qui comprend « un », « une » et « des »."
+            },
+            {
+              "answer": "TLPHONE",
+              "clue": "Information personnelle dont on peut demander le numéro."
+            }
+          ]
+        },
+        {
+          "title": "Comprendre, se faire comprendre et poser des questions",
+          "items": [
+            {
+              "answer": "RPTER",
+              "clue": "Dire une nouvelle fois ce qui vient d’être dit."
+            },
+            {
+              "answer": "PELER",
+              "clue": "Dire les lettres d’un mot une par une."
+            },
+            {
+              "answer": "PARDON",
+              "clue": "Expression que l’on peut employer quand on ne comprend pas ou pour s’excuser."
+            },
+            {
+              "answer": "COMMENT",
+              "clue": "Mot interrogatif utilisé pour demander la manière, le nom ou l’orthographe."
+            },
+            {
+              "answer": "COMBİEN",
+              "clue": "Mot interrogatif utilisé pour demander un nombre ou une quantité."
+            },
+            {
+              "answer": "İNTONATİON",
+              "clue": "Mouvement de la voix qui peut monter ou descendre dans une question."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eslestir",
+      "kind": "match",
+      "title": "Eşleştir-Öğren",
+      "intro": "Açıklamayı seçip karşısındaki kavramla eşleştirin.",
+      "activities": [
+        {
+          "title": "Saluer, se présenter et dire la nationalité",
+          "items": [
+            {
+              "term": "Je m’appelle",
+              "definition": "Forme utilisée pour dire son prénom."
+            },
+            {
+              "term": "Je suis",
+              "definition": "Forme utilisée notamment pour dire sa nationalité."
+            },
+            {
+              "term": "Moi",
+              "definition": "Pronom tonique utilisé pour insister."
+            },
+            {
+              "term": "Français / Française",
+              "definition": "Formes masculine et féminine d’une même nationalité."
+            }
+          ]
+        },
+        {
+          "title": "Donner des informations personnelles, dire le jour et l’heure",
+          "items": [
+            {
+              "term": "Lundi",
+              "definition": "Premier jour de la semaine en France."
+            },
+            {
+              "term": "Il est midi",
+              "definition": "Expression qui indique midi."
+            },
+            {
+              "term": "Il est minuit",
+              "definition": "Expression qui indique minuit."
+            },
+            {
+              "term": "Un",
+              "definition": "Article indéfini utilisé avec un nom masculin singulier."
+            }
+          ]
+        },
+        {
+          "title": "Comprendre, se faire comprendre et poser des questions",
+          "items": [
+            {
+              "term": "Tu peux répéter ?",
+              "definition": "Expression utilisée pour demander d’entendre encore une fois."
+            },
+            {
+              "term": "Vous pouvez épeler ?",
+              "definition": "Expression utilisée pour demander les lettres d’un mot."
+            },
+            {
+              "term": "Ça veut dire quoi ?",
+              "definition": "Expression utilisée pour demander le sens d’un mot."
+            },
+            {
+              "term": "Comment",
+              "definition": "Mot interrogatif utilisé dans des questions sur la manière, le nom ou l’orthographe."
+            },
+            {
+              "term": "Combien",
+              "definition": "Mot interrogatif utilisé pour demander un nombre ou une quantité."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dene",
+      "kind": "study",
+      "title": "Dene-Öğren",
+      "intro": "Kısa metni okuyun, öne çıkan noktaları inceleyin ve kontrol sorusunu yanıtlayın.",
+      "activities": [
+        {
+          "title": "Saluer, se présenter et dire la nationalité",
+          "items": [
+            {
+              "category": "Se présenter",
+              "title": "Dire son prénom, sa nationalité et sa ville",
+              "theory": "Pour se présenter, on utilise au présent les verbes « s’appeler », « être » et « habiter ». « S’appeler » sert à dire son prénom. « Être » sert notamment à dire sa nationalité. « Habiter » sert à dire dans quelle ville on vit.",
+              "keyPoints": [
+                "« S’appeler » sert à dire son prénom.",
+                "« Être » peut servir à dire la nationalité.",
+                "« Habiter » sert à dire où l’on vit."
+              ],
+              "question": "Quel verbe utilise-t-on pour dire dans quelle ville on vit ?",
+              "options": [
+                "Habiter",
+                "Être",
+                "S’appeler",
+                "Avoir"
+              ],
+              "answer": 0,
+              "explanation": "On utilise « habiter » pour indiquer la ville où l’on vit."
+            },
+            {
+              "category": "Nationalités et pronoms",
+              "title": "Masculin, féminin et pronoms toniques",
+              "theory": "Le masculin et le féminin des nationalités peuvent avoir des formes différentes. Au féminin, on ajoute souvent « -e » ; avec « -en » au masculin, on écrit « -enne » au féminin. Les pronoms sujets sont obligatoires devant le verbe et les pronoms toniques peuvent se placer devant eux pour insister.",
+              "keyPoints": [
+                "« espagnol » devient « espagnole ».",
+                "« canadien » devient « canadienne ».",
+                "Les pronoms toniques servent à insister."
+              ],
+              "question": "Quel type de pronom se place devant le pronom sujet pour insister ?",
+              "options": [
+                "Un article indéfini",
+                "Un pronom tonique",
+                "Un verbe",
+                "Un mot interrogatif"
+              ],
+              "answer": 1,
+              "explanation": "Un pronom tonique comme « moi » ou « toi » peut se placer devant le pronom sujet pour insister."
+            }
+          ]
+        },
+        {
+          "title": "Donner des informations personnelles, dire le jour et l’heure",
+          "items": [
+            {
+              "category": "Jours et heure",
+              "title": "Dire le jour et l’heure",
+              "theory": "Les jours de la semaine sont lundi, mardi, mercredi, jeudi, vendredi, samedi et dimanche. Pour demander l’heure, on peut dire « Vous avez l’heure ? » ou « Quelle heure est-il ? ». Pour dire l’heure, on utilise des formes comme « Il est 13 heures », « Il est midi » ou « Il est minuit ».",
+              "keyPoints": [
+                "La semaine commence le lundi en France.",
+                "« Quelle heure est-il ? » sert à demander l’heure.",
+                "« Midi » et « minuit » sont deux expressions de l’heure."
+              ],
+              "question": "Quelle expression indique minuit ?",
+              "options": [
+                "Il est midi.",
+                "Il est une heure.",
+                "Il est minuit.",
+                "Il est neuf heures."
+              ],
+              "answer": 2,
+              "explanation": "« Il est minuit. » indique minuit."
+            },
+            {
+              "category": "Avoir et articles indéfinis",
+              "title": "Dire l’âge et utiliser un, une, des",
+              "theory": "Le verbe « avoir » sert à dire l’âge et à marquer la possession. Il se conjugue notamment avec « j’ai », « tu as », « il a », « nous avons », « vous avez », « ils ont ». Les articles indéfinis sont « un », « une » et « des ».",
+              "keyPoints": [
+                "« Avoir » sert à dire l’âge.",
+                "« Une » s’emploie avec un nom féminin singulier.",
+                "« Des » s’emploie avec un nom pluriel."
+              ],
+              "question": "Quel article indéfini utilise-t-on avec un nom au pluriel ?",
+              "options": [
+                "un",
+                "une",
+                "le",
+                "des"
+              ],
+              "answer": 3,
+              "explanation": "« Des » s’emploie avec les noms masculins ou féminins au pluriel."
+            }
+          ]
+        },
+        {
+          "title": "Comprendre, se faire comprendre et poser des questions",
+          "items": [
+            {
+              "category": "Comprendre et se faire comprendre",
+              "title": "Répéter, épeler et demander le sens",
+              "theory": "Quand on ne comprend pas, on peut demander de répéter, d’épeler ou d’expliquer un mot. « Tu peux répéter ? » demande d’entendre encore une fois. « Vous pouvez épeler ? » demande les lettres du mot. « Ça veut dire quoi ? » demande le sens.",
+              "keyPoints": [
+                "« Répéter » signifie dire encore une fois.",
+                "« Épeler » signifie dire les lettres une par une.",
+                "« Ça veut dire quoi ? » sert à demander le sens."
+              ],
+              "question": "Quelle expression permet de demander les lettres d’un mot ?",
+              "options": [
+                "Vous pouvez épeler ?",
+                "Quelle heure est-il ?",
+                "Combien de personnes ?",
+                "Tu habites à Paris ?"
+              ],
+              "answer": 0,
+              "explanation": "« Vous pouvez épeler ? » sert à demander qu’un mot soit dit lettre par lettre."
+            },
+            {
+              "category": "Questions et intonation",
+              "title": "Comment, combien et la voix",
+              "theory": "« Comment » s’utilise dans des questions sur le nom, l’écriture ou la manière. « Combien » sert à demander un nombre ou une quantité. Quand une question n’a pas de mot interrogatif, la voix monte en général. Quand un mot interrogatif est placé au début, la voix descend en général.",
+              "keyPoints": [
+                "« Comment » sert à poser des questions sur la manière ou le nom.",
+                "« Combien » sert à demander un nombre.",
+                "L’intonation change selon la présence d’un mot interrogatif."
+              ],
+              "question": "Quand un mot interrogatif est placé au début de la question, que fait généralement la voix ?",
+              "options": [
+                "Elle monte toujours.",
+                "Elle descend.",
+                "Elle reste au même niveau.",
+                "Elle s’arrête."
+              ],
+              "answer": 1,
+              "explanation": "Avec un mot interrogatif au début de la question, la voix descend en général."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
