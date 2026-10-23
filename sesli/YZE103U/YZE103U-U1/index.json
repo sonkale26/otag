@@ -1,0 +1,472 @@
+{
+  "course_title": "Bölüm 1: Giriş ve Temel Matematiksel Kavramlar",
+  "schema_version": 2,
+  "audio_mode": "single",
+  "audio_file": "audio/ders.mp3",
+  "audio_codec": "MP3 128 kbps",
+  "sample_rate": 44100,
+  "audio_level": {
+    "inPeakDb": -2.5133230884131423,
+    "inRmsDb": -27.12806578711966,
+    "gainDb": 5.59,
+    "clipped": 0,
+    "perPart": true,
+    "gainMinDb": 1.513,
+    "gainMaxDb": 7.625,
+    "targetRmsDb": -10
+  },
+  "total_duration": 6106.76,
+  "tts_engine": "ElevenLabs · eleven_v4",
+  "ai_disclosure": {
+    "level": "ai4",
+    "label": "Yüksek ÜYZ katkısı",
+    "text": "Yüksek ÜYZ katkısı (ai4)"
+  },
+  "tts": {
+    "engine": "elevenlabs",
+    "generated_at": "2026-10-23T08:46:20.378Z",
+    "max_chars_per_request": 9500,
+    "model": "eleven_v4",
+    "models_used": {
+      "eleven_v4": 32
+    },
+    "speak_chapter_titles": true,
+    "speak_course_title": true,
+    "voice": {
+      "id": "R0D8QjgVyRju4HRoCrIC",
+      "name": "İrem - Social Media",
+      "gender": "female",
+      "category": "professional"
+    },
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.69,
+      "request_stitching": true
+    },
+    "language_code": "tr",
+    "pauses": {
+      "after_title": "[short pause]",
+      "between_paragraphs": "[short pause]",
+      "after_chapter_title": "[long pause]",
+      "after_course_title": "[long pause]",
+      "between_chunks_ms": 900,
+      "between_chapters_ms": 1600,
+      "between_parts_ms": 250,
+      "lead_in_ms": 400,
+      "tail_ms": 600
+    },
+    "text_rules": {
+      "numbers_to_words": true,
+      "fix_all_caps": true,
+      "abbreviations": true,
+      "spell_unknown_acronyms": true,
+      "builtin_list_edited": true,
+      "builtin_rule_count": 221,
+      "user_lexicon_rule_count": 122,
+      "user_lexicon": "MIT = Em-Ay-Ti\nOECD = O-ii-sii-dii\nGPT = Ci-Pi-Ti\nBERT = bört\nLISP = Lisp\nMYCIN = May-sin\nALPAC = El-pek\nXCON = Eks-kon\nDEC = Dek\nR1 = re bir\nIIT = Ay-Ay-Tii\nGDPR = Ci-Di-Pi-Ar\nKVKK = Ka-Ve-Ka-Ka\nSQL = Es-Küy-El\nDIKW = Dik-dabılyu\nIDC = Ay-Di-Si\nMNIST = Em-nist\nUCI = Yu-Es-Ay\nPIPL = Pi-Ay-Pi-El\nLGPD = El-Ci-Pi-Di\nCCPA = Si-Si-Pi-Ey\nIEC = Ay-İ-Si\nISO = İ-so\nGPAI = Ci-Pi-Ey-Ay\nMRI = Em-Ar-Ay\nCO2 = karbon di oksit\nCNN = Si-En-En\nV1 = ve bir\nV2 = ve iki\nV4 = ve dört\nMR = me re\nVAE = Vi-Ey-İ\nIT = Ay-Ti\nVGG = Vi-Ci-Ci\nGAN = Gan\nRLHF = Ar-El-Eyç-Ef\nBT = Be-Te\nRAG = Rag\nXAI = Eks-Ey-Ay\nEBA = e be a\nT3 = te üç\n& = ve\nMEBİ = me-bi\nMAIN = Meyn\nIBM = Ay-Bi-Em\nKAYZED = KAYZED\nGSYİH = Gayrisafi Yurt İçi Hasıla\nWEF = Ve-E-Ef\nHAI = Eç-Ey-Ay\nvb. = ve benzeri\nBBC = Bi-Bi-Si\nPİAR = PİAR\nPEVA = Pe-Ve-A\nICC = Ay-Si-Si\nRTÜK = rütük \nCBS = Ce-Be-Se\nIPTV = AYPİ-Ti-Vi\nDPT = De-Pe-Te\nNET = NET\nTR = TeRe\nİTÜ = İTÜ\nANKA = ANKA\nTRT1 = TERETE bir\nTGRT = Tegerete\nODTÜ = ODTÜ\nTGS = TEGESE\nCHP = CEHEPE\nDPP = DEDEPE\nMDP = MEDEPE\nAKP = AKEPE\nTRT2 = TERETE iki\nTRT3 = TERETE üç\nTRT4 = TERETE dört\nCNBC = Si-En-Bi-Si\nNTV = En-Ti-Vi\nTMSF = TeMeSeFe\nMCM = Em-Si-Em\nCSV = Ce-Se-Ve\nATLAS = ATLAS\nVERİ = VERİ\nSPSS = Es-Pi-ES-Es\n≈ = yaklaşık\n± = artı eksi\n× = çarpı\nFAIR = feyr\nCAPI = KAPİ\nH1 = haş bir\nH0 = haş sıfır\nSES = SES\nUC = yu-si\nDOI = doy\nSVG = Se-Ve-Ge\nQR = kü-ar\nWCAG = ve-kag\nPower BI = Pavır bi-ay\nKDV = KA-DE-VE\nCRISP = kırisp\nDM = Di-Em\nSA = es-ey\nND = en-di\nNIST = Nist\nNC = en-si\nBY = bay \nCC = si-si\nTBK = Te-Be-Ka\nZXY = ze iks ye\nXYZ = iks ye ze\nYXZ = ye iks ze\nYZX = ye ze iks\nZYX = ze ye iks\nXZY = iks ze ye\nNULL = Null\nSDK = Se-De-Ka\nCLR = klir\n$ = dolar\nIO = ay-o\nGFG = ci-ef-ci\nFIFO = fifo\nLIFO = laifo\n@ = et\nRGB = RE-GE-BE\nOKH = O-KE-HE"
+    },
+    "audio": {
+      "codec": "MP3 128 kbps",
+      "sample_rate": 44100,
+      "gain_mode": "auto",
+      "gain_per_part": true,
+      "target_rms_dbfs": -10,
+      "gain_applied_db": 5.59,
+      "gain_min_db": 1.513,
+      "gain_max_db": 7.625,
+      "input_peak_dbfs": -2.513,
+      "input_rms_dbfs": -27.128,
+      "limiter_hits": 0,
+      "ramp_in_ms": 20,
+      "ramp_out_ms": 50
+    },
+    "manual_edited_chunks": null
+  },
+  "generated_at": "2026-10-23T08:46:20.378Z",
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Yapay Zekâda Matematiğin Rolü: Veri, Model ve Tahmin",
+      "start": 0.4,
+      "end": 1571.64,
+      "chunks": [
+        {
+          "id": "c001",
+          "title": "GİRİŞ",
+          "text": "Yapay zekâ uygulamaları günlük yaşamın birçok alanında karşımıza çıkmaktadır. Telefonun yüz tanıma özelliği, alışveriş sitelerinin ürün önerileri, harita uygulamalarının varış süresi tahminleri ve e-posta kutusundaki istenmeyen ileti filtreleri bunlara örnek olarak verilebilir. Bu uygulamaların ortak yanı, sonuca sayılar üzerinde yapılan işlemlerle ulaşmalarıdır. Peki bu sistemler veriden nasıl öğrenir ve bir tahmine nasıl ulaşır? Bu sorunun yanıtı, çoğu zaman gözden kaçan ama her modelin arka planında sessizce çalışan matematiktedir. Buradan hareketle bu modülde önce matematiğin bir yapay zekâ modelinde nerede ve nasıl devreye girdiği açıklanacaktır. Ardından bir uygulamanın tahmine ulaşana kadar geçtiği süreç; veri, model, algoritma ve tahmin olmak üzere dört temel yapı taşına ayrılarak incelenecektir. Okuyucu, modül sonunda bir modelin hangi aşamalardan geçtiğini ve her aşamada hangi matematik alanının kullanıldığını görmüş olacaktır. Böylece kitabın ilerleyen bölümlerinde ayrıntılı olarak ele alınacak matematik konularının neden öğrenildiği baştan kavranacaktır.",
+          "start": 0.4,
+          "end": 86.48,
+          "duration": 86.08,
+          "level": 2,
+          "tts_parts": 1,
+          "chars": 1239
+        },
+        {
+          "id": "c002",
+          "title": "YAPAY ZEKÂDA MATEMATİĞİN ROLÜ",
+          "text": "Bir makinenin düşünüp düşünemeyeceği sorusu ilk bakışta felsefi bir problem gibi görünse de aslında matematikle yakından ilişkilidir. Alan Turing 1950 yılında bu soruyu sistemli biçimde tartışmaya açmış ve makinenin düşünmesini doğrudan tanımlamak yerine gözlemlenebilir davranışlara dayalı bir ölçüt önermiştir. Türkiye’de ise bu konuyu erken bir tarihte ele alan isimlerden biri Ord. Prof. Dr. Cahit Arf olmuştur. Arf, 1958-1959 öğretim yılında Erzurum Atatürk Üniversitesinde verdiği “Makine düşünebilir mi ve nasıl düşünebilir?” başlıklı konferansta, bir makinenin nasıl düşünebileceği sorusunu matematiksel bir bakış açısıyla tartışmıştır. Arf’ın bu öngörülü yaklaşımı tesadüf değildir. Çünkü yapay zekâ, insana özgü kabul edilen öğrenme, karar verme ve tahmin etme gibi işleri bilgisayarla gerçekleştirmeyi amaçlayan bir alandır ve bu işleri yaparken arka planda üç adım izler. Önce veriler sayısal olarak temsil edilir. Sonra veriler ile sonuçlar arasındaki ilişki matematiksel biçimde modellenir. En sonunda ise sonuçlar belirli işlemlerle üretilir. Bu nedenle yapay zekâ yalnızca bilgisayar programlarından ibaret değildir. Aynı zamanda lineer cebir, olasılık, istatistik, türev, optimizasyon ve ayrık matematik gibi alanlarla doğrudan bağlantılıdır. Bu alan içinde, kuralların insan tarafından tek tek yazılması yerine doğrudan veriden öğrenilmesini esas alan yaklaşım ise makine öğrenmesi olarak adlandırılır.\n\nBir yapay zekâ modelinin temel işi, veriye dayalı olarak ve belirsizlik altında otomatik karar vermektir. Burada iki anahtar kavram öne çıkar. Bunlar veri ve belirsizliktir.\n\nVeri, modelin başlangıç noktasıdır. Ancak hiçbir veri kümesi gerçek dünyanın bütün durumlarını eksiksiz biçimde kapsayamaz. Eğer böyle bir kapsam mümkün olsaydı birçok durumda yapay zekâya ihtiyaç duyulmazdı. Örneğin iki sayının toplanmasında izlenecek adımlar bellidir ve böyle bir işlemin öğrenilmesine gerek yoktur. Çünkü bu işlem için tüm olası durumları kapsayan açık bir kural zaten vardır. Yapay zekâ ise kuralın açıkça yazılamadığı, verinin eksik kaldığı ya da koşulların değişkenlik gösterdiği durumlarda kullanılır. Buna ölçme sırasında ortaya çıkan istenmeyen küçük sapmalar, yani ölçüm gürültüsü ve veri toplama hataları da eklendiğinde belirsizlik daha belirgin hâle gelir. Bu açıdan yapay zekânın matematiği, büyük ölçüde belirsizlik altında karar verebilmenin matematiği olarak değerlendirilebilir.",
+          "start": 87.38,
+          "end": 254.74,
+          "duration": 167.36,
+          "level": 2,
+          "tts_parts": 1,
+          "chars": 2551
+        },
+        {
+          "id": "c003",
+          "title": "Bir Yapay Zekâ Modelinin Yaşam Döngüsü",
+          "text": "Bir yapay zekâ modelinin yaşam döngüsü incelendiğinde, matematiğin farklı dallarının farklı aşamalarda devreye girdiği görülür (Şekil 1). Bu süreç ham verinin elde edilmesiyle başlar. Ham veri çoğu zaman doğrudan modele verilemez. Bu nedenle veri önce temizlenir, düzenlenir ve bilgisayarın işleyebileceği sayısal bir biçime dönüştürülür. Bu aşamada veriler, belirli bir sıraya göre yazılmış sayı dizileri olan vektörler ve satır ile sütunlardan oluşan sayı tabloları olan matrisler aracılığıyla temsil edilir. Daha sonra bu sayısal temsil üzerine problemi açıklayacak bir model kurulur. Model, girdileri alarak bir çıktı üreten matematiksel bir fonksiyon olarak düşünülebilir. Modelin başarılı sonuçlar üretebilmesi için, davranışını belirleyen sayısal değerler olan parametrelerinin uygun biçimde belirlenmesi gerekir. Bu nedenle eğitim sürecinde modelin parametreleri eldeki verilere göre ayarlanır. Bu ayarlama işlemi hata ölçütleri, türev ve optimizasyon yöntemleriyle gerçekleştirilir. Eğitim tamamlandıktan sonra modelin başarısı değerlendirilir. Bu aşamada modelin tahminleri gerçek sonuçlarla karşılaştırılır ve hata oranı ile doğruluk gibi ölçütler incelenir. Son aşamada ise model, yeni veriler için tahmin, sınıflandırma ya da karar üretir. Görüldüğü gibi bir yapay zekâ modelini anlamak için yalnızca çıktıya bakmak yeterli değildir. Verinin nasıl temsil edildiği, modelin nasıl kurulduğu, parametrelerin nasıl belirlendiği ve sonucun nasıl üretildiği birlikte incelenmelidir.\n\nŞekil 1. Bir yapay zekâ modelinin yaşam döngüsü ve aşamalarda öne çıkan matematik alanları\n\nŞekilde ham veri, sayısal temsil, ef iks teta biçiminde gösterilen model, eğitim ve değerlendirme ile tahmin aşamaları oklarla soldan sağa sıralanır. Eğitim ve değerlendirme aşamasından modele geri dönen kesikli bir ok “gerekirse yeniden eğitim” olarak etiketlenmiştir. Aşamaların altında öne çıkan matematik alanları yer alır: sayısal temsil için lineer cebir, model için fonksiyonlar ve modelleme, eğitim ve değerlendirme için optimizasyon, tahmin için olasılık ve istatistik.",
+          "start": 255.64,
+          "end": 403.64,
+          "duration": 148,
+          "level": 3,
+          "tts_parts": 1,
+          "chars": 2151
+        },
+        {
+          "id": "c004",
+          "title": "Veri",
+          "text": "Veri, her yapay zekâ probleminin başlangıç noktasıdır. Bir modelin öğrenebilmesi için önce gözlemlere, yani veriye ihtiyaç vardır. Bu nedenle veri, yapay zekâ sistemlerinin üzerinde çalıştığı temel ham madde olarak düşünülebilir. Veri, incelenen bir nesneye, olaya ya da duruma ilişkin ölçülebilir, kaydedilebilir ve işlenebilir bilgilerin bütünüdür. Yapay zekâ uygulamalarında veri genel olarak iki temel grupta ele alınır: Yapısal veri ve yapısal olmayan veri.\n\nYapısal veri, önceden belirlenmiş bir düzen içinde saklanan ve genellikle tablo biçiminde gösterilebilen veridir. Bu tür verilerde sütunlar özellikleri, satırlar ise veri kümesindeki tek tek kayıtları, yani gözlemleri ya da örnekleri gösterir. Örneğin; bir hastane kaydında yer alan yaş, boy, kilo, tansiyon ve kan şekeri değerleri yapısal veriye örnek olarak verilebilir. Benzer şekilde bir mağazanın ürün adı, satış miktarı, fiyat ve tarih bilgilerini içeren satış tablosu da yapısal veri niteliğindedir.\n\nYapısal olmayan veri ise önceden tanımlanmış bir tablo düzenine doğrudan yerleştirilemeyen veridir. Metinler, görüntüler, ses kayıtları, videolar ve e-postalar bu gruba girer. Bu tür veriler ilk bakışta düzenli sütun ve satırlardan oluşmaz. Ancak yapay zekâ modellerinde kullanılabilmeleri için belirli işlemlerden geçirilerek sayısal hâle getirilmeleri gerekir. Örneğin bir görüntü piksel değerlerine, bir metin kelime temsillerine, bir ses kaydı ise sayısal sinyal değerlerine dönüştürülebilir. Veri ister yapısal olan ister yapısal olmayan biçimde olsun, modele verilmeden önce bilgisayarın işleyebileceği sayısal bir yapıya dönüştürülmelidir. Çünkü yapay zekâ modelleri yalnızca sayılar üzerinde işlem yapabilir.\n\nBazı veri kümelerinde her gözlem için doğru sonuç da bilinir ve model bu doğru sonuçlara bakarak öğrenir. Gözetimli öğrenme adı verilen bu durumda kullanılan yapısal bir veri kümesinde değişkenler, girdi ve çıktı değişkenleri olmak üzere iki grupta ele alınır. Modelin tahmin üretirken kullandığı ve her bir gözlemi betimleyen değişkenlere girdi değişkenleri ya da öznitelikler adı verilir. Bu değişkenler bazı kaynaklarda bağımsız değişkenler olarak da adlandırılır. Modelin tahmin etmeye çalıştığı değişken ise çıktı değişkeni, bağımlı değişken ya da hedef değişken olarak tanımlanır. Hedef değişkenin değeri, girdi değişkenlerinde yer alan bilgilerden yararlanılarak tahmin edilir. Örneğin bir evin fiyatının tahmin edildiği problemde evin alanı, oda sayısı ve bina yaşı girdi değişkenlerini oluşturur. Tahmin edilmek istenen ev fiyatı ise hedef değişkendir (Şekil 2). Böyle bir veri kümesi, satırları gözlemleri ve sütunları değişkenleri gösteren bir tablo biçiminde düzenlenebilir. Bu tablo matematiksel olarak bir matrisle temsil edildiğinde, veri üzerinde gerçekleştirilecek işlemler için sistemli ve kullanışlı bir yapı elde edilir. Vektörler ve matrisler üzerinde işlem yapmayı, iki gözlem arasındaki benzerliği ölçmeyi, uzaklık ya da açı gibi kavramları tanımlamayı ise lineer cebir sağlar. Dolayısıyla matematiğin bir yapay zekâ modelindeki ilk görevi, verinin uygun bir sayısal biçimde temsil edilmesini sağlamaktır. Bu konu kitabın ilerleyen bölümlerinde ayrıntılı olarak ele alınacaktır.\n\nŞekil 2. Yapısal bir veri kümesinde girdi ve hedef değişkenler\n\nŞekilde dört evden oluşan bir veri kümesi tablo olarak gösterilir. Satırlar gözlemleri, yani örnekleri; alan (metrekare), oda sayısı ve bina yaşı sütunları girdi değişkenlerini, yani öznitelikleri; fiyat (bin lira) sütunu ise hedef değişkeni, yani çıktıyı oluşturur. Evlerin değerleri sırasıyla şöyledir: 120 metrekare, 3 oda, 5 yaş, 2.400 bin lira; 85 metrekare, 2 oda, 12 yaş, 1.550 bin lira; 160 metrekare, 4 oda, 2 yaş, 3.300 bin lira; 95 metrekare, 3 oda, 20 yaş, 1.700 bin lira.",
+          "start": 404.54,
+          "end": 677.1,
+          "duration": 272.56,
+          "level": 3,
+          "tts_parts": 1,
+          "chars": 3926
+        },
+        {
+          "id": "c005",
+          "title": "Model",
+          "text": "Verinin ardından ele alınması gereken temel kavram modeldir. Model, girdi değişkenleri ile hedef değişken arasındaki ilişkiyi matematiksel olarak temsil eden yapıdır. Model, kendisine verilen özelliklerden yararlanarak bir tahmin ya da karar üretir. Bu yönüyle model, veride bulunduğu düşünülen ilişkinin matematiksel bir ifadesi olarak görülebilir. Başka bir deyişle model kurmak, girdiler ile çıktı arasında nasıl bir bağlantı bulunduğuna ilişkin bir varsayım oluşturmaktır.\n\nModeller çoğunlukla parametrik bir yapıya sahiptir ve ef iks teta biçiminde gösterilir. Burada iks girdi değişkenlerini, teta ise modelin davranışını belirleyen parametreleri temsil eder. Parametreler, modelin hangi özelliğe ne kadar önem vereceğini belirleyen sayısal değerlerdir. Modelin genel yapısı aynı kalsa bile parametrelerin değerleri değiştiğinde üretilen sonuçlar da değişir. Bu durum basit bir doğrusal model üzerinden daha açık biçimde görülebilir. Böyle bir model, girdideki her özelliğe bir ağırlık verir ve bu ağırlıklı bilgileri bir araya getirerek sonuç üretir. Model aşağıdaki gibi gösterilebilir:\n\nYe şapka eşittir; w bir çarpı iks bir, artı w iki çarpı iks iki, artı bu şekilde devam ederek, artı w ne çarpı iks ne, artı be.\n\nBu ifadede iks bir, iks iki ve bu şekilde iks ne’ye kadar uzanan değerler girdinin özelliklerini; w bir, w iki ve bu şekilde w ne’ye kadar uzanan değerler bu özelliklere verilen ağırlıkları; be ise sabit terimi temsil eder. Örneğin; ev fiyatı tahmininde evin büyüklüğü daha yüksek bir ağırlığa sahip olabilirken, başka bir özellik daha düşük bir etkiye sahip olabilir. Bir başka örnek olarak, bir e-postanın istenmeyen ileti olup olmadığını belirleyen model verilebilir. Bu model, e-postada geçen belirli kelimelerin sıklığı, bağlantı sayısı ve gönderici bilgisi gibi özellikleri kullanır. Model, bu özelliklerden yararlanarak e-postayı “istenmeyen” ya da “normal” sınıfına yerleştirir. Aynı problem doğrusal bir model, karar ağacı ya da yapay sinir ağı gibi farklı model aileleri kullanılarak çözülebilir. Ancak her model ailesi verideki ilişkileri farklı biçimde temsil eder. Bu nedenle kullanılacak modelin belirlenmesi problemin özelliklerine, veri türüne, veri miktarına ve beklenen çıktıya bağlıdır. Belirli bir problem için uygun model ailesinin ve model yapısının belirlenmesi sürecine model seçimi adı verilir.\n\nModelin ürettiği çıktı, problemin türüne göre farklı anlamlar taşır. Bazı problemlerde çıktı ayrık bir karardır. Örneğin; bir görüntüdeki nesnenin kedi, köpek ya da araba olarak sınıflandırılması bu tür bir karardır. Sınıflandırma problemleri bu gruba girer. Bazı problemlerde ise çıktı sürekli bir değerdir. Örneğin; bir evin fiyatının, bir aracın yakıt tüketiminin ya da bir öğrencinin sınav puanının tahmin edilmesi bu tür problemlere örnek olarak verilebilir. Regresyon problemleri bu gruba girer. Her iki durumda da temel amaç, eldeki verilere en uygun tahmini ya da kararı üretebilen fonksiyonu bulmaktır.",
+          "start": 678,
+          "end": 885.84,
+          "duration": 207.84,
+          "level": 3,
+          "tts_parts": 1,
+          "chars": 3040
+        },
+        {
+          "id": "c006",
+          "title": "Algoritma",
+          "text": "Modelden sonra ele alınması gereken temel kavram algoritmadır. Algoritma, belirli bir problemi çözmek ya da bir işlemi gerçekleştirmek için izlenen sonlu ve düzenli adımlar bütünüdür. Makine öğrenmesinde algoritmanın görevi, modelin veriye en uygun parametrelerini belirlemektir. Model ile algoritma birbiriyle yakından ilişkili olsa da aynı kavramı ifade etmez. Model, girdi değişkenleri ile hedef değişken arasındaki ilişkiyi temsil eden matematiksel yapıdır. Algoritma ise bu ilişkinin veriden nasıl öğrenileceğini belirleyen yöntemdir. Başka bir ifadeyle model, “Girdiler ile çıktı arasında nasıl bir ilişki vardır?” sorusuna yanıt verirken algoritma, “Bu ilişkinin parametreleri veriden nasıl bulunacaktır?” sorusunu yanıtlar.\n\nÖğrenme algoritmaları çoğunlukla yinelemeli biçimde, yani aynı adımları belirli bir koşul sağlanana kadar tekrar tekrar uygulayarak çalışır. İlk olarak model parametrelerine başlangıç değerleri verilir. Daha sonra model, öğrenmesi için ayrılan eğitim verisi üzerinde tahminler üretir. Bu tahminler gerçek sonuçlarla karşılaştırılarak tahmin hatası hesaplanır. Algoritma, bu hatayı azaltacak yönde parametreleri günceller. Güncellenen parametrelerle model yeniden çalıştırılır ve hata tekrar ölçülür. Bu işlem, hata yeterince azalana ya da önceden belirlenen durdurma koşulu sağlanana kadar devam eder. Örneğin; bir e-posta sınıflandırma modelinde algoritma, e-postada geçen kelimelere verilen ağırlıkları tahmin hatasına göre adım adım değiştirir. Böylece model, hangi kelimelerin istenmeyen e-postaları ayırt etmede daha etkili olduğunu veriden öğrenir. Bu nedenle model öğrenme sonunda elde edilen matematiksel yapıyı, algoritma ise bu yapıyı elde etmek için kullanılan işlem sürecini ifade eder.\n\nModelin en uygun kararı verebilmesi için parametrelerinin doğru biçimde ayarlanması gerekir. Bu işlem matematiksel olarak bir optimizasyon problemi şeklinde ele alınır. Öncelikle modelin tahminleri ile gerçek değerler arasındaki farkı ölçen bir hata fonksiyonu tanımlanır. Daha sonra bu hatayı mümkün olduğunca küçük yapan parametre değerleri aranır. Başka bir ifadeyle modelin öğrenmesi, hatayı azaltacak parametrelerin bulunması sürecidir. Parametre sayısı arttıkça bu süreç yüksek boyutlu bir problem hâline gelir. Bu noktada türev ve gradyan kavramları devreye girer. Kısmi türevler, her bir parametrede yapılacak küçük bir değişikliğin hata fonksiyonunu nasıl etkilediğini gösterir. Bu kısmi türevlerin birlikte oluşturduğu gradyan ise hatanın hangi yönde arttığını ya da azaldığını belirlemeye yardımcı olur. Model, eğitim sürecinde parametrelerini adım adım güncelleyerek hatayı azaltmaya çalışır. Böylece öğrenme sürecinin arka planında türev, gradyan ve optimizasyon yer alır.\n\nVeri çoğu zaman eksik, gürültülü ve sınırlıdır. Bu nedenle modelin ürettiği tahminler ve kararlar da belirli bir belirsizlik içerir. Yapay zekâ modellerinde bu belirsizliği sayısal olarak ifade etmek için olasılık kullanılır. Olasılık, bir olayın gerçekleşme derecesini nicel olarak göstermeyi sağlar. Örneğin; bir sınıflandırma modelinin bir görüntüyü yüzde 80 olasılıkla “kedi”, yüzde 20 olasılıkla “köpek” olarak değerlendirmesi, modelin kararını belirsizlikle birlikte ifade ettiğini gösterir.\n\nİstatistik ise verinin toplanması, düzenlenmesi, özetlenmesi, çözümlenmesi ve veriden çıkarım yapılması için gerekli yöntemleri sunar. Aynı zamanda bir modelin tahminlerinin ne kadar güvenilir olduğunu değerlendirmeye yardımcı olur. Modelin hata oranı, doğruluk değeri ve ortalama hata miktarı istatistiksel ölçütlerle incelenir. Bu nedenle olasılık ve istatistik, yapay zekâ modellerinde hem belirsizliği yönetmenin hem de model başarısını değerlendirmenin temel matematiksel araçlarıdır.\n\nBir makine öğrenmesi modelinin geliştirilmesi tek bir işlemden oluşmaz. Bu süreç, birbiriyle bağlantılı ve gerektiğinde tekrarlanan çeşitli aşamaları içerir (Şekil 3). İlk aşamada problemin çözümü için gerekli veriler toplanır. Toplanan veriler daha sonra eksik değerler, hatalı kayıtlar, diğerlerinden belirgin biçimde ayrılan aykırı gözlemler ve farklı ölçüm ölçekleri açısından incelenerek modellemeye uygun hâle getirilir. Veri hazırlama aşamasının ardından, probleme uygun bir öğrenme algoritmasının ve model yapısının belirlendiği model seçimi adımı gelir. Daha sonra seçilen model, hazırlanan veriler kullanılarak eğitilir ve parametreleri öğrenilir. Eğitilen model, tahmin aşamasında daha önce görmediği veriler için bir çıktı üretir. Son olarak değerlendirme aşamasında bu tahminler gerçek değerlerle karşılaştırılarak modelin başarısı çeşitli ölçütlerle ölçülür. Değerlendirme sonuçları yeterli değilse veri hazırlama, model seçimi ya da model eğitimi aşamalarına geri dönülerek gerekli iyileştirmeler yapılır. Bu nedenle model geliştirme süreci doğrusal bir yol izlemekten çok, değerlendirme sonuçlarına göre yeniden düzenlenen yinelemeli bir iş akışı biçimindedir. Aşamaların ayrıntıları problemin türüne göre değişebilse de temel süreç çoğu makine öğrenmesi uygulamasında benzer biçimde ilerler.\n\nŞekil 3. Makine öğrenmesi modeli oluşturma iş akışı\n\nŞekilde veri toplama, veri hazırlama, model seçimi, model eğitimi, tahmin ve değerlendirme aşamaları oklarla soldan sağa sıralanır. Değerlendirme aşamasından veri hazırlama aşamasına uzanan kesikli bir ok, “İyileştirme (gerekirse geri dönüş)” olarak etiketlenmiştir.",
+          "start": 886.74,
+          "end": 1254.18,
+          "duration": 367.44,
+          "level": 3,
+          "tts_parts": 1,
+          "chars": 5480
+        },
+        {
+          "id": "c007",
+          "title": "Tahmin ve Genelleme",
+          "text": "Model eğitiminin ardından tahmin aşamasına geçilir. Tahmin, eğitilmiş modelin daha önce karşılaşmadığı yeni bir gözlem için ürettiği çıktıdır. Model, yeni gözleme ait girdi değişkenlerini kullanarak problemin türüne göre bir sınıf ya da sayısal bir değer üretir. Örneğin; bir e-postanın istenmeyen ileti olarak sınıflandırılması ayrık bir tahmin, bir öğrencinin sınav puanının hesaplanması ise sayısal bir tahmindir. Modelin başarısı yalnızca eğitim verisindeki örnekleri doğru biçimde öğrenmesine bağlı değildir. Asıl önemli olan, eğitim sırasında görmediği yeni veriler üzerinde de doğru ve güvenilir sonuçlar üretebilmesidir. Modelin öğrendiği ilişkileri yeni gözlemlere aktarabilme yeteneğine genelleme adı verilir. Eğitim verisini çok iyi öğrenmesine rağmen yeni veriler üzerinde başarısız olan bir model, verideki genel ilişkileri öğrenmek yerine eğitim örneklerini ezberlemiş olabilir. Bu durum aşırı uyum olarak adlandırılır.\n\nModelin genelleme başarısını ölçebilmek için veri kümesi genellikle eğitim ve test verisi olmak üzere iki bölüme ayrılır. Model, parametrelerini eğitim verisinden öğrenir. Eğitim sürecinde kullanılmayan test verisi ise modelin daha önce görmediği örnekler üzerindeki gerçek performansını değerlendirmek için kullanılır.\n\nÖrnek (Öğrenci Sınav Puanı Tahmini): Bir öğrencinin haftalık çalışma süresi, derse katılım oranı ve önceki sınav puanı gibi özellikleri sayısal olarak ifade edildiğinde, her öğrenci bir özellik vektörü ile temsil edilir. Örneğin bir öğrenci için özellik vektörü; iks eşittir, parantez içinde çalışma süresi, derse katılım, önceki sınav puanı; biçiminde düşünülebilir. Burada iks bir öğrenciyi temsil eden girdi vektörüdür. Vektörün her bileşeni öğrencinin farklı bir özelliğini gösterir. Birden fazla öğrenciye ait bilgiler bir araya getirildiğinde ise satırları öğrencileri, sütunları özellikleri gösteren bir veri matrisi oluşur. Bu aşamada lineer cebir devreye girer. Çünkü öğrenciler vektörlerle, öğrenci grupları ise matrislerle temsil edilir.\n\nModelin görevi, bu özelliklerden yararlanarak öğrencinin sınav puanını tahmin etmektir. Basit bir doğrusal modelde çalışma süresi, derse katılım ve önceki sınav puanı belirli katsayılarla çarpılır. Daha sonra bu katkılar bir araya getirilerek tahmini sınav puanı elde edilir. Bu durum aşağıdaki gibi gösterilebilir:\n\nEf iks teta eşittir; teta sıfır, artı teta bir çarpı çalışma süresi, artı teta iki çarpı derse katılım, artı teta üç çarpı önceki sınav puanı.\n\nBurada ef iks teta modelin ürettiği tahmini sınav puanını gösterir. Teta sıfır, teta bir, teta iki ve teta üç modelin parametreleridir. Parametreler; teta eşittir, parantez içinde teta sıfır, teta bir, teta iki, teta üç; şeklinde düşünülebilir. Teta sıfır sabit terimi temsil eder. Teta bir, çalışma süresinin tahmini puana ne kadar etki edeceğini belirler. Teta iki, derse katılımın etkisini gösterir. Teta üç ise önceki sınav puanının tahmindeki ağırlığını ifade eder.\n\nBaşlangıçta bu parametrelerin en uygun değerleri bilinmez. Eğitim sürecinde model, gerçek sınav puanları ile kendi tahminleri arasındaki farkı azaltacak teta değerlerini bulmaya çalışır. Böylece örnekteki matematiksel yapı üç temel aşamayı birlikte gösterir. Öğrenci bilgileri vektör ve matrislerle temsil edildiği için lineer cebir kullanılır. Özellikler ile sınav puanı arasındaki ilişki bir fonksiyonla ifade edildiği için matematiksel modelleme devreye girer. Parametrelerin en uygun değerlerinin bulunması ise bir optimizasyon problemidir.\n\nVeri, model, algoritma ve tahmin kavramları birbiriyle bağlantılı bir bütün oluşturur. Veri, öğrenme sürecinin temelini sağlar. Model, girdiler ile çıktılar arasındaki ilişkiyi temsil eder. Algoritma, modelin parametrelerini veriden öğrenmesini sağlayan yöntemi belirler. Tahmin ise eğitilmiş modelin yeni gözlemler için ürettiği sonuçtur. Bu yapının başarısı büyük ölçüde kullanılan verinin niteliğine bağlıdır. Veri ne kadar doğru, yeterli ve uygun biçimde temsil edilmişse modelin anlamlı ilişkiler öğrenme olasılığı da o kadar artar. Görüldüğü gibi matematik, bir yapay zekâ modelinin yalnızca belirli bir aşamasında değil bütün işleyişi boyunca yer alır. Veri sayısal olarak temsil edilirken lineer cebir kullanılır. Model kurulurken fonksiyonlar ve matematiksel modelleme devreye girer. Parametrelerin öğrenilmesi türev, gradyan ve optimizasyon yöntemleriyle gerçekleşir. Belirsizlik altında karar üretmek ve modelin başarısını değerlendirmek için ise olasılık ve istatistikten yararlanılır. İzleyen modülde verinin bilgisayar tarafından nasıl sayısal biçimde temsil edildiği ve bu sayısal temsiller üzerinde hesaplamaların nasıl gerçekleştirildiği ele alınacaktır.",
+          "start": 1255.08,
+          "end": 1571.64,
+          "duration": 316.56,
+          "level": 3,
+          "tts_parts": 1,
+          "chars": 4798
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Sayısal Temsil ve Hesaplama",
+      "start": 1573.24,
+      "end": 2623.62,
+      "chunks": [
+        {
+          "id": "c008",
+          "title": "GİRİŞ",
+          "text": "Yapay zekâ sistemlerinin çalışabilmesi için verilerin bilgisayar tarafından işlenebilir bir biçime dönüştürülmesi gerekir. Bir fotoğraf, bir cümle ya da bir ses kaydı insan tarafından doğrudan algılanabilirken bilgisayar bunları yalnızca sayılar üzerinden işler. Bu nedenle yapay zekâda verinin sayısal olarak nasıl temsil edildiğini anlamak temel bir adımdır. Bu modülde önce farklı veri türlerinin hangi yollarla sayısallaştırıldığı ele alınacak, ardından elde edilen sayıların vektör ve matris gibi düzenli yapılarda nasıl gösterildiği incelenecektir. Son olarak bu yapılar üzerinde yapılan temel hesaplamaların bir modelin tahmin üretmesine nasıl katkı sağladığı açıklanacaktır. Böylece ilerleyen bölümlerde ayrıntılı biçimde ele alınacak lineer cebir konuları için kavramsal bir temel oluşturulacaktır.",
+          "start": 1573.24,
+          "end": 1631.72,
+          "duration": 58.48,
+          "level": 2,
+          "tts_parts": 1,
+          "chars": 874
+        },
+        {
+          "id": "c009",
+          "title": "SAYISAL TEMSİL VE HESAPLAMA",
+          "text": "Veri, yapay zekâ sistemlerinin temelini oluşturur. Ancak verinin elde bulunması, bilgisayar tarafından doğrudan işlenebileceği anlamına gelmez. Bir insan fotoğrafa baktığında nesneleri, renkleri ve yüzleri ayırt edebilir, bir cümleyi okuduğunda anlamını kavrayabilir, bir ses kaydını dinlediğinde konuşmayı ve müziği tanıyabilir. Bilgisayar ise bu içerikleri insanın algıladığı biçimiyle göremez, duyamaz ve anlayamaz. Bu nedenle bir verinin bilgisayarda saklanabilmesi, başka verilerle karşılaştırılabilmesi ve matematiksel işlemlerde kullanılabilmesi için önce sayısal bir yapıya çevrilmesi gerekir. Söz konusu çevirme işlemi yalnızca teknik bir hazırlık adımı da değildir. Verinin hangi bilgilerinin korunacağını ve modelin bu veriden hangi ilişkileri öğrenebileceğini de belirler. Dolayısıyla uygun bir sayısal temsil, bir yapay zekâ modelinin başarısını doğrudan etkileyen unsurlar arasında yer alır.\n\nBilgisayarların temelinde, elektriksel sinyallerin farklı durumlarını birbirinden ayırt edebilen elektronik devreler bulunur. Bu durumlar genellikle 0 ve 1 değerleriyle gösterilir ve bu iki değerden her birine bit adı verilir. Metin, görüntü, ses ve video gibi bütün veri türleri bilgisayar belleğinde bitlerden oluşan diziler hâlinde tutulur, işlemci de bu sayısal gösterimler üzerinde aritmetik ve mantıksal işlemler yapar. Örneğin; ekranda görülen renkli bir görüntü piksellere ait sayısal değerlerden meydana gelir, bir ses kaydı belirli zaman aralıklarında ölçülen ses dalgası değerleriyle tutulur, bir metindeki harfler ve noktalama işaretleri ise belirli sayısal kodlarla saklanır. Buradan şu sonuç çıkar. Bilgisayarın bir görüntüyü tanıması, bir sesi çözümlemesi ya da bir metni işlemesi, aslında bu verilerin sayısal karşılıkları üzerinde hesaplama yapması demektir. Yapay zekâ modelleri de fotoğrafın, sözcüğün veya sesin kendisiyle değil bunların sayısal temsilleriyle çalışır. Bu yönüyle sayısallaştırma, gerçek dünyadaki veriler ile modelin yaptığı matematiksel işlemler arasında bir köprü kurar.",
+          "start": 1632.62,
+          "end": 1771.34,
+          "duration": 138.72,
+          "level": 2,
+          "tts_parts": 1,
+          "chars": 2082
+        },
+        {
+          "id": "c010",
+          "title": "Verinin Sayısallaştırılması",
+          "text": "Verinin sayısal biçime çevrilme yöntemi, verinin türüne göre değişir (Şekil 1). Kategorik veriler, metinler, görüntüler ve ses kayıtları farklı özellikler taşıdıkları için aynı yöntemle temsil edilemez. Örneğin; kategorik bir veri belirli kodlarla, bir metin kelime vektörleriyle, bir görüntü piksel değerlerinden oluşan bir matrisle, bir ses kaydı ise zaman içinde ölçülen sinyal değerleriyle gösterilir. Yöntemler farklı olsa da amaç ortaktır. Her veri türü, bilgisayarın saklayabileceği ve üzerinde işlem yapabileceği sayısal bir yapıya dönüştürülür. Bu yapı kimi durumda tek bir değer, kimi durumda sıralı bir sayı dizisi, kimi durumda ise bir vektör ya da matris biçiminde olur. Böylece birbirinden çok farklı veri türleri, matematiksel işlemlerin uygulanabileceği ortak bir dile çevrilmiş olur.\n\nŞekil 1. Farklı veri türlerinin sayısallaştırılması\n\nŞekilde dört veri türü, uygulanan yöntem ve elde edilen sayısal karşılık soldan sağa oklarla eşleştirilir. “Mavi” örneğindeki kategori bire-bir kodlama ile 0, 0, 1 değerlerinden oluşan bir vektöre; “kedi” örneğindeki metin kelime gömme ile 0,21; eksi 0,44; 0,87 diye devam eden bir sayı dizisine dönüşür. Piksel ızgarası olarak gösterilen görüntü piksel değerleriyle satır çarpı sütun boyutlu bir sayı matrisine, dalga olarak gösterilen ses ise örnekleme ile 0,1; 0,3; eksi 0,2; 0,0 diye devam eden bir sayı dizisine dönüştürülür.\n\nBelirli sınıfları ya da grupları gösteren verilere kategorik veri adı verilir. Kan grubu, şehir, renk, meslek ve ürün türü bu tür verilere örnek olarak verilebilir. Kategorik veriler birçok makine öğrenmesi modelinde doğrudan kullanılamaz, bu nedenle modelin işleyebileceği sayısal gösterimlere çevrilir. Bir verinin, model tarafından işlenebilecek sayısal bir vektöre dönüştürülmesi işlemine ise kodlama denir. Kodlamada izlenecek yol verinin taşıdığı bilgiye göre değişir ve yanlış seçilen bir yol, veride bulunmayan ilişkilerin modele taşınmasına yol açabilir. Kategorik verilerde en yaygın kullanılan yöntemlerden biri bire-bir kodlama ya da bilinen adıyla one-hot kodlamadır. Bu yöntemde değişkenin her kategorisi için ayrı bir sütun açılır ve bir gözlem hangi kategoriye aitse o sütuna 1, diğer sütunlara 0 yazılır. Söz gelimi renk değişkeni kırmızı, yeşil ve mavi kategorilerinden oluşuyorsa kırmızı renk 1, 0, 0; yeşil renk 0, 1, 0 ve mavi renk 0, 0, 1 biçiminde gösterilebilir. Bu yöntemin sağladığı temel yarar, kategoriler arasında gerçekte olmayan bir sıralamanın ortaya çıkmasını önlemesidir. Kategorilere doğrudan 1, 2 ve 3 gibi sayılar verilseydi bazı modeller için yanıltıcı bir durum doğardı. Çünkü böyle bir gösterim, kategoriler arasında bir büyüklük ve uzaklık bulunduğu izlenimi uyandırır. Kırmızıya 1, yeşile 2 ve maviye 3 verildiğinde mavinin yeşilden büyük ya da kırmızıdan daha uzak olduğu sonucu çıkarılabilir. Oysa renkler arasında böyle bir sayısal ilişki yoktur. Bire-bir kodlama, her kategoriyi ayrı bir sütunda gösterdiği için bu yapay sıralama sorununu ortadan kaldırır.\n\nMetinler de bilgisayar tarafından doğrudan işlenemez, bu nedenle bir metnin modelin kullanabileceği sayısal bir yapıya çevrilmesi gerekir. Bu süreçte metin önce kelime, alt kelime ya da karakter gibi küçük parçalara ayrılır ve bu parçaların her birine belirteç adı verilir. Daha sonra her belirteç için sayısal bir karşılık üretilir. En basit yaklaşımda her kelimeye ayrı bir numara verilir. Ancak bu yol kelimeleri yalnızca birbirinden ayırır, aralarındaki anlam ilişkisi hakkında bilgi taşımaz. Örneğin “kedi”, “köpek” ve “masa” kelimelerine farklı numaralar verilse de bu numaralara bakarak kedi ile köpek arasındaki anlam yakınlığı görülemez. Daha gelişmiş yaklaşımlarda her kelime tek bir sayı yerine birden çok sayıdan oluşan bir vektörle gösterilir. Kelime gömme adı verilen bu yöntemde, yakın anlamlı kelimelerin vektörleri sayısal uzayda birbirine daha yakın konumlanır. Bu sayede “kedi” ile “köpek” arasındaki uzaklık, “kedi” ile “masa” arasındaki uzaklıktan küçük olabilir. Böylece metnin yalnızca hangi kelimelerden oluştuğu değil, kelimeler arasındaki anlam ilişkileri de modele aktarılabilir. Sonuçta bir cümle ya da belge, sayılardan oluşan düzenli bir diziye veya bir vektörler topluluğuna dönüşür ve model bu sayısal yapı üzerinde işlem yapar.\n\nGörüntüler de bilgisayarda sayısal yapılar hâlinde tutulur. Bir dijital görüntü, satır ve sütunlar biçiminde dizilmiş çok sayıda küçük görüntü elemanından oluşur ve bu elemanların her birine piksel adı verilir. Her piksel, görüntünün belirli bir noktasındaki parlaklık ya da renk bilgisini taşır. Sekiz bitlik gri tonlu bir görüntüde her piksel çoğunlukla 0 ile 255 arasında bir sayıyla gösterilir. Burada 0 siyaha, 255 beyaza karşılık gelir, aradaki değerler ise farklı gri tonlarını ifade eder. Böylece gri tonlu bir görüntü, satır ve sütunlardan oluşan bir sayı tablosuna, yani bir matrise dönüşür (Şekil 2). RGB renk uzayında gösterilen renkli görüntülerde ise her piksel tek bir sayı yerine kırmızı, yeşil ve mavi bileşenlerin yoğunluğunu veren üç ayrı değerle ifade edilir ve bu üç kanalın bir araya gelmesiyle renkli görüntü elde edilir. Görüntülerin bu biçimde sayıya çevrilmesi sayesinde bilgisayar, görüntüdeki kenar, renk, biçim ve doku gibi özellikleri matematiksel işlemlerle inceleyebilir. Dolayısıyla bir görüntü tanıma modeli, görüntüyü insanın gördüğü biçimiyle değil piksellere ait sayısal değerler üzerinden işler.\n\nŞekil 2. Bir görüntünün piksellere ve sayı matrisine dönüşmesi\n\nŞekilde solda altı satır ve altı sütundan oluşan bir piksel ızgarası, sağda bu ızgaraya karşılık gelen 0 ile 255 arası değerler alan sayı matrisi yer alır. Açık gri pikseller 235, siyah pikseller 45, koyu gri pikseller 120 değeriyle gösterilir. Kenarlardaki bütün pikseller 235 değerindedir; ortadaki siyah pikseller koyu bir şekil oluşturur ve bunların arasında iki koyu gri piksel bulunur.\n\nSes, bir ortamda zaman içinde değişen basınç dalgaları biçiminde yayılır. Bilgisayar sürekli yapıdaki bu dalgayı olduğu gibi işleyemediği için ses sinyali belirli zaman aralıklarında ölçülerek sayısal biçime çevrilir. Sürekli zamanlı bir sinyalden belirli zaman noktalarında değer alınması işlemine örnekleme adı verilir. Her ölçüm anında ses dalgasının genliğini gösteren bir değer kaydedilir, böylece kesintisiz biçimde değişen ses sinyali art arda sıralanmış sayılardan oluşan ayrık bir diziye dönüşür. Bir saniyede alınan örnek sayısına örnekleme hızı ya da örnekleme frekansı denir ve bu büyüklük hertz birimiyle verilir. Örnekleme hızı arttıkça ses sinyalindeki zamansal değişimler daha ayrıntılı biçimde temsil edilir ancak aynı ölçüde saklanması ve işlenmesi gereken veri miktarı da büyür.\n\nSesin sayısal temsilinde yalnızca örnekleme hızı değil, her ölçümdeki genlik değerinin ne kadar hassas kaydedildiği de belirleyicidir. Sürekli genlik değerlerinin sonlu sayıdaki belirli düzeylerden birine yuvarlanması işlemine nicemleme adı verilir. Nicemlemenin hassasiyeti çoğunlukla bit derinliği ile belirlenir ve bit derinliği arttıkça ses genliği daha çok düzeyle, daha hassas biçimde gösterilebilir. Elde edilen sayısal ses dizileri sayesinde yapay zekâ modelleri konuşmayı tanıyabilir, konuşmacıları ayırt edebilir, müzik türlerini sınıflandırabilir ve çevresel seslerdeki olağan dışı durumları belirleyebilir. Kategorik veri, metin, görüntü ve ses örnekleri birlikte düşünüldüğünde ortak bir ilke ortaya çıkar. Veri türleri birbirinden ne kadar farklı olursa olsun, bilgisayar tarafından işlenebilmeleri için sayısal yapılarla temsil edilmeleri gerekir. Aralarındaki fark ise bu sayıların hangi yöntemle elde edildiği ve vektör, matris ya da sıralı dizi gibi hangi yapı içinde düzenlendiğidir.",
+          "start": 1772.24,
+          "end": 2303.36,
+          "duration": 531.12,
+          "level": 3,
+          "tts_parts": 1,
+          "chars": 8093
+        },
+        {
+          "id": "c011",
+          "title": "Sayıların Düzenlenmesi: Vektör ve Matris",
+          "text": "Sayısal temsiller gelişigüzel biçimde değil belirli bir düzen içinde saklanır. Önceki modülde belirtildiği gibi vektör, belirli bir sıraya göre yazılmış bir sayı dizisidir ve tek bir gözleme ait özellikler bir araya getirildiğinde böyle bir vektör elde edilir. Örneğin bir öğrencinin çalışma süresi, derse katılım oranı ve önceki sınav puanı aynı vektörde gösterilebilir. Çok sayıda gözleme ait vektörler alt alta yerleştirildiğinde ise bir matris oluşur. Bu matriste her satır bir gözlemi, her sütun ise belirli bir özelliği gösterir. Böylece veri kümesi, bilgisayarın kolayca işleyebileceği düzenli bir sayısal yapıya kavuşur. Vektör ve matrisler yalnızca veriyi saklamaya yaramaz. Aynı zamanda gözlemler arasındaki benzerliğin ölçülmesine, özelliklerin birlikte değerlendirilmesine ve çok sayıda hesaplamanın topluca yapılmasına imkân verir. Yapay zekâ modellerinin büyük veri kümeleri üzerinde hızlı ve sistemli biçimde çalışabilmesinin temel nedenlerinden biri de budur.\n\nBir yapay zekâ modeli çalışırken, veriyi temsil eden sayılar üzerinde matematiksel işlemler yapar. Bu işlemlerin temelinde toplama ve çarpma bulunur ancak büyük veri kümelerinde hesaplamalar tek tek sayılar üzerinde değil vektörler ve matrisler üzerinde toplu biçimde yürütülür. Örneğin modelin bir gözlem için ürettiği sonuç, o gözleme ait özellik değerleri ile modelin bu özelliklere verdiği ağırlıkların karşılıklı çarpılması ve çıkan değerlerin toplanmasıyla bulunabilir. Özellik vektörü ile parametre vektörü arasında yapılan bu işleme iç çarpım adı verilir. İç çarpım, her özelliğin sonuca ne kadar katkı verdiğini tek bir sayısal değerle ifade etmeyi sağlar. Veri ve parametre sayısının milyonlara ulaştığı uygulamalarda bu işlemin her gözlem için ayrı ayrı yapılması çok uzun sürer. Bunun yerine gözlemler bir matriste, model parametreleri ise bir vektör veya matriste düzenlenir ve hesaplamalar toplu olarak gerçekleştirilir. Bu yaklaşım hem işlemlerin daha hızlı yürütülmesini hem de matematiksel sürecin daha derli toplu ifade edilmesini sağlar. Vektör ve matris işlemlerinin yapay zekâ modellerinde merkezi bir yer tutmasının nedeni budur.\n\nÖrnek (Bir Aracın Yakıt Tüketiminin Tahmin Edilmesi): Bir aracın 100 kilometrede tükettiği yakıt miktarının, motor hacmi ve araç ağırlığı kullanılarak tahmin edildiği düşünülsün. Bu örnekte motor hacmi ile araç ağırlığı modelin girdi özelliklerini, yakıt tüketimi ise modelin üreteceği sayısal çıktıyı oluşturur. Motor hacmi 1,6 litre ve ağırlığı 1200 kilogram olan bir araç için özellik vektörü aşağıdaki gibi yazılabilir:\n\nİks eşittir; parantez içinde 1,6 ve 1200.\n\nModel, her özelliğin tahmin üzerindeki etkisini bir parametre ile ifade eder. Motor hacmine ait parametrenin 2, araç ağırlığına ait parametrenin ise 0,003 olduğu kabul edilsin. Bu durumda parametre vektörü şu şekildedir:\n\nTeta eşittir; parantez içinde 2 ve 0,003.\n\nTahmin, her özellik değerinin kendisine karşılık gelen parametre ile çarpılması ve çıkan sonuçların toplanmasıyla elde edilir:\n\nYe şapka eşittir; teta bir çarpı iks bir, artı teta iki çarpı iks iki.\n\nDeğerler yerine yazıldığında hesaplama aşağıdaki gibi yapılır:\n\nYe şapka eşittir; 2 çarpı 1,6, artı 0,003 çarpı 1200.\n\nYe şapka eşittir; 3,2 artı 3,6, eşittir 6,8.\n\nBuna göre model, bu araç için yakıt tüketimini 100 kilometrede 6,8 litre olarak tahmin eder. Burada yapılan işlem, özellik vektörü ile parametre vektörünün karşılıklı elemanlarının çarpılıp toplanmasına, yani iç çarpıma dayanır. Çok sayıda araç için tahmin yapılmak istendiğinde ise her araca ait motor hacmi ve ağırlık değerleri bir matrisin satırlarına yerleştirilir. Parametre vektörü bu matrisle çarpıldığında bütün araçlara ait tahminler tek bir işlemle bulunur. Böylece vektör ve matris kullanımı, çok sayıda gözlem üzerinde hızlı ve düzenli hesaplama yapılmasını sağlar.\n\nYapay zekâ sistemlerinde kategoriler, metinler, görüntüler ve sesler farklı yöntemlerle temsil edilse de hepsi sonunda sayısal yapılara dönüşür. Model, bu sayısal verileri matematiksel bir fonksiyonla işler ve hesaplamanın sonucunda bir tahmin üretir. Böylece verinin sayısallaştırılması, modelin kurulması ve tahminin hesaplanması birbirini tamamlayan aşamalar olarak ortaya çıkar. Bu süreçte kullanılan vektör ve matrislerin nasıl tanımlandığı, verilerin bu yapılar içinde nasıl gösterildiği ve üzerlerinde hangi işlemlerin yapıldığı izleyen bölümlerde lineer cebir kapsamında ayrıntılı olarak ele alınacaktır.",
+          "start": 2304.26,
+          "end": 2623.62,
+          "duration": 319.36,
+          "level": 3,
+          "tts_parts": 1,
+          "chars": 4835
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Sayılar, Sayı Kümeleri ve Temel İşlemler",
+      "start": 2625.22,
+      "end": 4518.56,
+      "chunks": [
+        {
+          "id": "c012",
+          "title": "GİRİŞ",
+          "text": "Yapay zekâ uygulamalarında kullanılan veriler, bilgisayar ortamında sayısal biçimde temsil edilir. Bir görüntüdeki piksel parlaklığı, bir hastanın yaşı, bir modelin ürettiği olasılık değeri ya da bir metindeki kelimelerin sırası bu sayısal verilere örnek olarak verilebilir. Ancak bu sayıların tamamı aynı özelliklere sahip değildir. Bazıları yalnızca tam değerler alırken bazıları ondalıklı ve sürekli değerler alabilir. Yapay zekâ modellerinde toplama, çarpma, karşılaştırma ve türev alma gibi matematiksel işlemlerin doğru biçimde yapılabilmesi için kullanılan sayıların özelliklerinin bilinmesi gerekir. Bu modülde temel sayı kümeleri, sayıların ondalık gösterimleri, sayı doğrusu üzerindeki yerleri, aralık gösterimi ve mutlak değer kavramı yapay zekâdaki kullanım alanlarıyla birlikte ele alınacaktır. Ayrıca sayılar üzerinde tanımlı dört işlem, işaret kuralları, işlem önceliği ve kesirlerle yapılan işlemler tanıtılacaktır.",
+          "start": 2625.22,
+          "end": 2694.1,
+          "duration": 68.88,
+          "level": 2,
+          "tts_parts": 1,
+          "chars": 1011
+        },
+        {
+          "id": "c013",
+          "title": "SAYILAR VE SAYI KÜMELERİ",
+          "text": "Sayılar, taşıdıkları ortak özelliklere göre belirli kümeler altında toplanır ve bu kümeler birbirini kapsayan düzenli bir yapı oluşturur. Yapay zekâ uygulamalarında doğru sayı türüyle çalışabilmek için öncelikle bu kümelerin neler olduğunu ve aralarındaki ilişkiyi tanımak gerekir. Bir modelde kullanılan her büyüklüğün hangi kümeye ait olduğu, o büyüklük üzerinde hangi işlemlerin yapılabileceğini de belirler.",
+          "start": 2695,
+          "end": 2724.76,
+          "duration": 29.76,
+          "level": 2,
+          "tts_parts": 1,
+          "chars": 453
+        },
+        {
+          "id": "c014",
+          "title": "Sayı Kümeleri ve Aralarındaki İlişki",
+          "text": "Matematikte sayılar, ortak özelliklerine göre kümeler hâlinde gruplanır. En temel küme doğal sayılardır ve ne harfiyle gösterilir. Doğal sayılar, sayma işleminden doğan 1, 2, 3 diye devam eden değerlerden oluşur. Bilgisayar bilimlerinde sıralama ve indeksleme çoğu zaman sıfırdan başladığı için, sıfırın da dahil edildiği; ne sıfır eşittir, küme parantezi içinde 0, 1, 2, 3 diye devam eden değerler; gösterimi sıkça kullanılır. Örneğin bir veri kümesindeki ilk örnek genellikle sıfırıncı örnek olarak adlandırılır. Doğal sayılara sıfır ve negatif değerlerin eklenmesiyle tam sayılar kümesi elde edilir ve ze harfiyle gösterilir. Tam sayılar; eksi 2, eksi 1, 0, 1, 2 diye her iki yönde devam eden kesirli olmayan ifadelerdir. İki tam sayının oranı biçiminde yazılabilen sayılar ise rasyonel sayılardır ve ku harfiyle gösterilir. Bir rasyonel sayı, pe ve ku tam sayılar ve ku sıfırdan farklı olmak üzere aşağıdaki gibi tanımlanır:\n\nKu kümesi eşittir; pe bölü ku biçimindeki sayıların kümesi, öyle ki pe ve ku, ze kümesinin elemanıdır ve ku sıfıra eşit değildir.\n\nHer tam sayı, paydası 1 olan bir kesir biçiminde yazılabildiği için aynı zamanda bir rasyonel sayıdır. Örneğin, 5 sayısı 5 bölü 1 olarak gösterilebilir. İki tam sayının oranı biçiminde yazılamayan reel sayılar ise irrasyonel sayılar olarak adlandırılır. Karekök 2, pi ve e bu türün bilinen örnekleridir. Bu sayıların ondalık açılımları ne sonlanır ne de belirli bir blok hâlinde tekrar eder.\n\nRasyonel sayılar kümesi ile irrasyonel sayılar kümesinin birleşimi reel sayılar kümesini oluşturur ve re harfiyle gösterilir. Reel sayılar, makine öğrenmesinde en sık karşılaşılan sayı türüdür çünkü model parametreleri, olasılıklar ve sürekli öz nitelik değerleri reel sayılarla temsil edilir. Bu kümeler arasında bir kapsama ilişkisi bulunur. Her doğal sayı aynı zamanda bir tam sayı, her tam sayı aynı zamanda bir rasyonel sayı ve her rasyonel sayı aynı zamanda bir reel sayıdır. Bu ilişki; ne, ze’nin; ze, ku’nun; ku da re’nin alt kümesidir; biçiminde özetlenir ve Şekil 1’de gösterilmektedir.\n\nReel sayıların ötesinde karmaşık sayılar kümesi de tanımlanır ve ce harfiyle gösterilerek reel sayıları kapsar. Karmaşık sayılar ön lisans düzeyindeki yapay zekâ uygulamalarında doğrudan kullanılmasa da sinyal işleme ve Fourier dönüşümü gibi ileri konularda önemli bir yer tutar. Bu kitap kapsamında ise ağırlıklı olarak reel sayılarla çalışılacaktır.\n\nŞekil 1. Temel sayı kümeleri ve aralarındaki kapsama ilişkisi\n\nŞekilde iç içe geçmiş kutular kümeler arasındaki kapsama ilişkisini gösterir. En dışta reel sayılar re, onun içinde rasyonel sayılar ku, onun içinde tam sayılar ze ve en içte doğal sayılar ne yer alır. Doğal sayılar kutusunda 1, 2, 3 diye devam eden değerler; tam sayılar katmanında eksi 2, eksi 1 ve 0; rasyonel sayılar katmanında ikide bir, eksi dörtte üç ve 0,75 örnekleri bulunur. Reel sayılar kutusunun içinde, rasyonel sayıların dışında kalan ayrı bir alanda irrasyonel sayılar ve örnek olarak karekök 2, pi ve e gösterilir.\n\nÖrnek (Sayıların Kümelere Yerleştirilmesi): Aşağıdaki sayılar uygun sayı kümelerine yerleştirilsin: karekök 64, eksi 5, dörtte üç, 0, pi ve 2,5. Karekök 64 sayısı 8 değerine eşit olduğu için bir doğal sayıdır ve dolayısıyla aynı zamanda ze, ku ve re kümelerinin de elemanıdır. Eksi 5 bir tam sayıdır, ancak doğal sayı değildir. Dörtte üç ve 2,5 sayıları iki tam sayının oranı biçiminde yazılabildikleri için birer rasyonel sayıdır, tam sayı değildir. 0 sayısı bir tam sayıdır. Pi ise irrasyonel bir sayı olduğu için yalnızca re kümesine aittir.",
+          "start": 2725.66,
+          "end": 3000.86,
+          "duration": 275.2,
+          "level": 3,
+          "tts_parts": 1,
+          "chars": 3832
+        },
+        {
+          "id": "c015",
+          "title": "Ondalık Gösterim",
+          "text": "Bir sayının rasyonel mi yoksa irrasyonel mi olduğu, ondalık gösteriminden anlaşılabilir ve burada üç durum söz konusudur. İlk durumda sayının ondalık gösterimi sonludur, yani virgülden sonra sonlu sayıda basamak bulunur. Örneğin dörtte üç sayısı 0,75 olarak yazılır. İkinci durumda gösterim devirlidir, yani virgülden sonra belirli bir basamak bloğu sonsuza kadar tekrar eder. Örneğin üçte bir sayısı 0,333 diye sürüp giden biçimde gösterilir. Bu iki durumdaki sayılar rasyoneldir. Üçüncü durumda ise ondalık açılım ne sonlanır ne de tekrar eder ve bu tür sayılar irrasyoneldir. Pi sayısının 3,14159 diye sürüp giden açılımı bu duruma örnektir.\n\nBu ayrım yapay zekâ açısından önemlidir çünkü bilgisayarlar reel sayıları sınırlı sayıda basamakla, kayan noktalı gösterimle saklar. Bu nedenle pi ya da üçte bir gibi sonsuz açılımlı sayılar bilgisayarda yaklaşık değerleriyle tutulur ve bu durum küçük yuvarlama hatalarına yol açar. Tek bir işlemde fark edilmeyecek kadar küçük olan bu hatalar, milyonlarca işlemin arka arkaya yapıldığı bir eğitim sürecinde birikerek sonucu etkileyebilir.\n\nÖrnek (Ondalık Gösterimin Yorumlanması): Aşağıdaki ondalık gösterimlerden hangileri rasyonel, hangileri irrasyonel sayıdır?\n\na. 0,75\n\nb. 0,333 diye sürüp giden gösterim\n\nc. 1,41421356 diye sürüp giden gösterim\n\nd. 0,142857142857 diye sürüp giden gösterim\n\nBir sayının ondalık gösterimi sonlu ya da devirli ise o sayı rasyoneldir, ne sonlanıp ne de tekrar ediyorsa irrasyoneldir. Buna göre 0,75 gösterimi sonlu olduğu için rasyoneldir. 0,333 diye süren gösterimde 3 rakamı sürekli tekrar ettiği için bu sayı devirlidir ve rasyoneldir. 0,142857142857 diye süren gösterimde de 142857 bloğu tekrar ettiği için sayı devirlidir ve rasyoneldir. Buna karşılık 1,41421356 diye süren gösterimde, yani karekök 2 sayısında basamaklar ne sonlanır ne de bir blok hâlinde tekrar eder; bu nedenle bu sayı irrasyoneldir.",
+          "start": 3001.76,
+          "end": 3168.48,
+          "duration": 166.72,
+          "level": 4,
+          "tts_parts": 1,
+          "chars": 2490
+        },
+        {
+          "id": "c016",
+          "title": "Sayı Doğrusu ve Sıralama",
+          "text": "Reel sayılar, bir doğru üzerinde noktalara karşılık gelecek biçimde modellenir ve bu doğruya sayı doğrusu denir. Doğru üzerinde sıfır referans alınır, sağ tarafta pozitif sayılar, sol tarafta negatif sayılar yer alır. Sayı doğrusunun en önemli özelliği, her reel sayının doğru üzerinde tek bir noktaya ve doğru üzerindeki her noktanın tek bir reel sayıya karşılık gelmesidir. Şekil 2’de bazı sayıların sayı doğrusu üzerindeki konumları görülmektedir.\n\nŞekil 2. Bazı sayıların sayı doğrusu üzerindeki konumları\n\nŞekilde eksi 3’ten 3’e kadar işaretlenmiş bir sayı doğrusu üzerinde dört sayı gösterilir: eksi ikide üç, eksi 2 ile eksi 1 arasında; dörtte üç, 0 ile 1 arasında; karekök 2, 1 ile 2 arasında; pi ise 3’ün biraz sağında yer alır.\n\nSayı doğrusu aynı zamanda sayıların sıralanmasını da sağlar. Doğru üzerinde solda kalan sayı, sağda kalan sayıdan küçüktür ve bu sıralama küçüktür, büyüktür, küçük eşittir ve büyük eşittir sembolleriyle ifade edilir. Sıralama, yapay zekâda karar eşiklerinin belirlenmesinde sıkça kullanılır. Örneğin ikili sınıflandırma yapan bir model, ürettiği olasılık değeri 0,5 değerinden büyük ya da ona eşitse örneği pozitif sınıfa, küçükse negatif sınıfa atar. Burada 0,5 değeri bir karar eşiği olarak görev yapar ve bu eşiğin değiştirilmesi modelin kararlarını doğrudan etkiler.",
+          "start": 3169.38,
+          "end": 3268.9,
+          "duration": 99.52,
+          "level": 4,
+          "tts_parts": 1,
+          "chars": 1441
+        },
+        {
+          "id": "c017",
+          "title": "Reel Sayıların Temel Özellikleri",
+          "text": "Reel sayılar üzerinde tanımlı toplama ve çarpma işlemleri, her zaman geçerli olan birtakım temel özelliklere sahiptir. Bu özellikler cebirsel ifadelerin düzenlenmesinin ve sadeleştirilmesinin temelini oluşturur. Tablo 1’de a, be ve ce herhangi birer reel sayı olmak üzere söz konusu özellikler toplama ve çarpma için ayrı ayrı verilmektedir.\n\nTablo 1. Reel sayıların temel özellikleri\n\nTabloda beş özellik toplama ve çarpma için ayrı ayrı verilir. Değişme özelliği: a artı be eşittir be artı a; a çarpı be eşittir be çarpı a. Birleşme özelliği: parantez içinde a artı be, artı ce eşittir a artı parantez içinde be artı ce; parantez içinde a çarpı be, çarpı ce eşittir a çarpı parantez içinde be çarpı ce. Etkisiz eleman: a artı 0 eşittir a; a çarpı 1 eşittir a. Ters eleman: a artı eksi a eşittir 0; a çarpı 1 bölü a eşittir 1, a sıfıra eşit değilken. Dağılma özelliği: a çarpı parantez içinde be artı ce, eşittir a çarpı be artı a çarpı ce.\n\nBu özellikler, sayıların hangi kurallara göre işlem gördüğünü anlamak açısından önemlidir. Örneğin toplamada birleşme özelliği geçerli olduğu için parantez içinde a artı be, artı ce ile a artı parantez içinde be artı ce ifadeleri aynı sonucu verir. Benzer biçimde değişme ve dağılma özellikleri de reel sayılarla yapılan işlemlerin düzenli ve tutarlı yürütülmesini sağlar. Ancak bu matematiksel özellikler, bilgisayar ortamında yapılan sayısal hesaplamalarda her zaman tam olarak korunmayabilir. Çünkü bilgisayarlar reel sayıları sınırlı basamakla temsil eder, dolayısıyla kayan noktalı aritmetikte yuvarlama hataları ortaya çıkabilir ve işlemlerin yapılma sırası sonucu çok küçük miktarlarda değiştirebilir.\n\nBu özelliklerin yapay zekâ açısından önemi, geçerli oldukları kadar geçerli olmadıkları durumlarda da ortaya çıkar. Örneğin çarpmanın değişme özelliği reel sayılarda her zaman doğrudur ancak yapay zekânın temel araçlarından olan matrislerin çarpımında bu özellik genellikle geçerli değildir. Yani iki matris için a be çarpımı ile be a çarpımı çoğu zaman birbirinden farklı sonuç verir. Bu durum, sayılar için doğru olan her kuralın matrisler için de doğru olacağının varsayılamayacağını gösterir ve konu lineer cebir bölümünde ayrıntılı olarak ele alınacaktır.",
+          "start": 3269.8,
+          "end": 3445.32,
+          "duration": 175.52,
+          "level": 4,
+          "tts_parts": 1,
+          "chars": 2340
+        },
+        {
+          "id": "c018",
+          "title": "Aralık Gösterimi",
+          "text": "Sayı doğrusu üzerinde, iki uç nokta arasında kalan tüm reel sayılardan oluşan alt kümeye aralık denir. Aralıklar, bir değişkenin alabileceği değer kümesini kısa ve açık bir biçimde ifade etmeye yarar. Bir aralığın uç noktalarının kümeye dahil olup olmadığına göre farklı gösterimler kullanılır. Uç noktaların dahil olmadığı aralıklar açık aralık olarak adlandırılır ve normal parantez ile yazılır. Örneğin parantez içinde a, be gösterimi, a küçüktür iks küçüktür be eşitsizliğini sağlayan ve uç noktaları içermeyen tüm reel sayıları belirtir. Uç noktaların dahil olduğu aralıklar ise kapalı aralık olarak adlandırılır ve köşeli parantez ile yazılır, dolayısıyla köşeli parantez içinde a, be gösterimi a küçük eşittir iks küçük eşittir be eşitsizliğine karşılık gelir. Bir uç noktanın dahil edilip diğerinin dışarıda bırakıldığı durumlar yarı açık aralık adını alır. Bir tarafı sınırsız olan aralıklarda ise sonsuz sembolü kullanılır ve bu uç hiçbir zaman kümeye dahil edilmez. Bu türler Şekil 3’te sayı doğrusu üzerinde gösterilmektedir.\n\nŞekil 3. Aralık türlerinin sayı doğrusu üzerindeki gösterimi\n\nŞeklin üstünde içi dolu noktanın uç değerin dahil olduğunu, içi boş noktanın dahil olmadığını gösterdiği belirtilir. Açık aralık iki ucu içi boş noktalı bir doğru parçasıyla, parantez içinde a, be gösterimiyle ve a küçüktür iks küçüktür be eşitsizliğiyle verilir. Kapalı aralık iki ucu içi dolu noktalı bir doğru parçasıyla, köşeli parantez içinde a, be gösterimiyle ve a küçük eşittir iks küçük eşittir be eşitsizliğiyle verilir. Yarı açık aralıkta a ucu içi dolu, be ucu içi boştur; gösterim a’da köşeli, be’de normal parantezle yazılır ve yanında a küçük eşittir iks küçük eşittir be eşitsizliği yer alır. Sınırsız aralık, a’daki içi dolu noktadan sağa uzanan bir okla, a’da köşeli parantez ve sonsuz gösterimiyle ve iks büyük eşittir a eşitsizliğiyle gösterilir.\n\nAralık türlerinin gösterimi ile eşitsizlik karşılıkları Tablo 2’de bir arada verilmektedir.\n\nTablo 2. Aralık türleri ve gösterimleri\n\nTabloda her aralık türü, gösterimi ve eşitsizlik karşılığıyla verilir. Parantez içinde a, be biçimindeki açık aralık a küçüktür iks küçüktür be eşitsizliğine; köşeli parantez içinde a, be biçimindeki kapalı aralık a küçük eşittir iks küçük eşittir be eşitsizliğine karşılık gelir. A’da köşeli, be’de normal parantezle yazılan yarı açık aralık a küçük eşittir iks küçüktür be; a’da normal, be’de köşeli parantezle yazılan yarı açık aralık a küçüktür iks küçük eşittir be eşitsizliğine karşılık gelir. A’dan sonsuza uzanan ve normal parantezle yazılan açık aralık iks büyüktür a; a’da köşeli parantezle yazılan yarı açık aralık iks büyük eşittir a eşitsizliğini gösterir. Eksi sonsuzdan be’ye uzanan ve normal parantezle yazılan açık aralık iks küçüktür be; be’de köşeli parantezle yazılan yarı açık aralık iks küçük eşittir be eşitsizliğini gösterir. Eksi sonsuzdan sonsuza uzanan açık aralık ise tüm reel sayıları, yani iks’in re kümesinin elemanı olduğunu gösterir.\n\nAralık gösterimi yapay zekâda değer kümelerini ve kısıtları tanımlamak için sıkça kullanılır. Bir olasılık değeri her zaman köşeli parantez içinde 0, 1 kapalı aralığında yer alır. Verilerin ölçeklenmesinde öz nitelikler çoğu zaman köşeli parantez içinde 0, 1 ya da köşeli parantez içinde eksi 1, 1 aralığına dönüştürülür. Yapay sinir ağlarında kullanılan aktivasyon fonksiyonlarının çıktıları da aralıklarla tanımlanır. Örneğin sigmoid fonksiyonunun çıktısı parantez içinde 0, 1 açık aralığında, tanjant hiperbolik fonksiyonunun çıktısı ise parantez içinde eksi 1, 1 açık aralığında değer alır. Bu sayede bir değişkenin hangi sınırlar içinde kalacağı tek bir gösterimle ifade edilebilir.\n\nÖrnek (Aktivasyon Fonksiyonunun Çıktı Kümesi): Bir sigmoid aktivasyon fonksiyonunun çıktısı 0 ile 1 değerleri arasında kalır ancak bu uç değerlere tam olarak ulaşmaz. Bu çıktı kümesi aralık gösterimiyle nasıl yazılır?\n\nSigmoid fonksiyonunda girdi negatif sonsuza giderken çıktı 0 değerine, pozitif sonsuza giderken 1 değerine yaklaşır. Ancak sonlu girdi değerleri için çıktı hiçbir zaman tam olarak 0 veya 1 olmaz. Uç noktalar kümeye dahil olmadığı için bu durum açık aralık ile gösterilir ve çıktı kümesi parantez içinde 0, 1 biçiminde yazılır.\n\nÖrnek (Aralıkların Sayı Doğrusunda Gösterimi): Aşağıda verilen aralıkların her biri sayı doğrusu üzerinde gösterilsin:\n\na. Parantez içinde eksi 1, 3\n\nb. Köşeli parantez içinde eksi 2, 2\n\nc. 0’da köşeli, 4’te normal parantezle 0, 4\n\nd. Eksi sonsuzda normal, 1’de köşeli parantezle eksi sonsuz, 1\n\nBir aralığın sayı doğrusu üzerindeki gösteriminde içi dolu nokta uç değerin kümeye dahil olduğunu, içi boş nokta ise dahil olmadığını belirtir. Aralığın bir yöne sınırsız uzadığı durumda ise o yön bir ok ile gösterilir.\n\na. Parantez içinde eksi 1, 3 açık bir aralıktır, bu nedenle eksi 1 ve 3 değerleri içi boş işaretlenir ve aralarındaki bütün değerler taranır.\n\nb. Köşeli parantez içinde eksi 2, 2 kapalı bir aralıktır, her iki uç değer de kümeye dahil olduğu için içi dolu işaretlenir.\n\nc. 0’da köşeli, 4’te normal parantezle yazılan 0, 4 aralığı yarı açık bir aralıktır, 0 değeri dahil olduğu için içi dolu, 4 değeri dahil olmadığı için içi boş işaretlenir.\n\nd. Eksi sonsuzdan 1’e uzanan ve 1’de köşeli parantezle yazılan aralıkta 1 değeri kümeye dâhildir ve aralık 1 değerinden sola doğru uzar, bu nedenle 1 içi dolu işaretlenir ve sola doğru bir ok çizilir.\n\nHer şıkkın altında, eksi 4’ten 5’e kadar işaretlenmiş bir sayı doğrusu üzerinde ilgili aralık bu kurallara göre çizilmiştir.",
+          "start": 3446.22,
+          "end": 3856.38,
+          "duration": 410.16,
+          "level": 4,
+          "tts_parts": 1,
+          "chars": 5927
+        },
+        {
+          "id": "c019",
+          "title": "Sayılarla Temel İşlemler",
+          "text": "Sayı kümeleri tanıtıldıktan sonra bu sayılar üzerinde hangi işlemlerin nasıl yapıldığının bilinmesi gerekir. Toplama, çıkarma, çarpma ve bölme işlemleri bütün hesaplamaların temelini oluşturur. Bir yapay zekâ modelinin ürettiği tahmin de sonuçta bu dört işlemin belirli bir sırayla uygulanmasıyla elde edilir. Bu nedenle işlemlerin hangi kurallara göre yapıldığı, modelin ürettiği sonucun doğruluğu açısından belirleyicidir.",
+          "start": 3857.28,
+          "end": 3888.56,
+          "duration": 31.28,
+          "level": 3,
+          "tts_parts": 1,
+          "chars": 466
+        },
+        {
+          "id": "c020",
+          "title": "Dört İşlem ve İşaret Kuralları",
+          "text": "Reel sayılar üzerinde toplama, çıkarma, çarpma ve bölme işlemleri tanımlıdır. Bu işlemlerde sayıların işaretleri sonucu doğrudan etkiler. Çarpma ve bölme işlemlerinde işaret kuralları olarak adlandırılan üç durum söz konusudur. Aynı işaretli iki sayının çarpımı ya da bölümü pozitif, farklı işaretli iki sayının çarpımı ya da bölümü ise negatif olur:\n\nArtı a çarpı artı be eşittir artı a be; eksi a çarpı eksi be eşittir artı a be; artı a çarpı eksi be eşittir eksi a be.\n\nToplama ve çıkarmada ise işaretler farklı biçimde ele alınır. Aynı işaretli sayılar toplanırken mutlak değerleri toplanır ve ortak işaret korunur. Farklı işaretli sayılar toplanırken mutlak değeri büyük olandan küçük olan çıkarılır ve sonuca mutlak değeri büyük olanın işareti verilir. Bir sayının çıkarılması ise o sayının ters işaretlisinin eklenmesi anlamına gelir, yani a eksi be eşittir a artı eksi be yazılabilir.\n\nBölme işleminde dikkat edilmesi gereken özel bir durum vardır. Bir sayının sıfıra bölünmesi tanımsızdır çünkü sıfır ile çarpıldığında verilen sayıyı veren bir değer bulunamaz. Buna karşılık sıfırın sıfırdan farklı bir sayıya bölümü sıfırdır:\n\n0 bölü a eşittir 0, a sıfıra eşit değilken; a bölü 0 tanımsızdır.\n\nBu ayrım yapay zekâ uygulamalarında önemlidir. Örneğin bir başarı ölçütü hesaplanırken payda sıfır olabiliyorsa, işlem yapılmadan önce bu durumun ayrıca ele alınması gerekir. Aksi hâlde program hata verir ya da anlamsız bir sonuç üretir.",
+          "start": 3889.46,
+          "end": 4000.66,
+          "duration": 111.2,
+          "level": 4,
+          "tts_parts": 1,
+          "chars": 1576
+        },
+        {
+          "id": "c021",
+          "title": "İşlem Önceliği",
+          "text": "Bir ifadede birden çok işlem bir arada bulunduğunda, işlemlerin hangi sırayla yapılacağı önceden belirlenmiş kurallara bağlıdır. Bu kurallara işlem önceliği denir. Buna göre önce parantez içindeki işlemler yapılır. Ardından üslü ifadeler hesaplanır. Daha sonra çarpma ve bölme işlemleri soldan sağa doğru yürütülür. En son olarak toplama ve çıkarma işlemleri yine soldan sağa doğru yapılır. Üslü ifadeler izleyen modülde ayrıntılı olarak ele alınacaktır.\n\nBu sıralamaya uyulmaması, sonucu tamamen değiştirir. Örneğin 3 artı 4 çarpı 2 ifadesinde önce çarpma yapılır ve sonuç 11 olarak bulunur. İşlemler soldan sağa doğru yapılsaydı yanlış biçimde 14 sonucuna ulaşılırdı. Parantez kullanıldığında ise öncelik değişir ve parantez içinde 3 artı 4, çarpı 2 ifadesi 14 değerini verir. Bu nedenle bir formül yazılırken parantezler, hesabın hangi sırayla yapılacağını açıkça belirtmek için kullanılır.\n\nÖrnek (İşlem Önceliği): 12 eksi 3 çarpı parantez içinde 8 eksi 6, artı 10 bölü 5 işleminin sonucu nedir?\n\nÖnce parantez içi hesaplanır ve 8 eksi 6 eşittir 2 bulunur. Ardından çarpma ve bölme soldan sağa yapılır, yani 3 çarpı 2 eşittir 6 ve 10 bölü 5 eşittir 2 elde edilir. Son olarak toplama ve çıkarma soldan sağa uygulanır:\n\n12 eksi 3 çarpı parantez içinde 8 eksi 6, artı 10 bölü 5; eşittir 12 eksi 6 artı 2; eşittir 8.",
+          "start": 4001.56,
+          "end": 4110.84,
+          "duration": 109.28,
+          "level": 4,
+          "tts_parts": 1,
+          "chars": 1494
+        },
+        {
+          "id": "c022",
+          "title": "Kesirlerle İşlemler",
+          "text": "Rasyonel sayılar kesir biçiminde yazıldığından, bu sayılarla yapılan işlemler ayrı kurallara uyar. İki kesir toplanırken ya da çıkarılırken paydaların eşit olması gerekir. Paydalar eşit değilse ortak bir paydada birleştirilir:\n\nA bölü be artı ce bölü de; eşittir parantez içinde a çarpı de artı be çarpı ce, bölü parantez içinde be çarpı de; be sıfıra eşit değil, de sıfıra eşit değilken.\n\nÇarpma işleminde paylar kendi aralarında, paydalar da kendi aralarında çarpılır. Bölme işleminde ise bölen kesir ters çevrilir ve çarpma işlemine dönüştürülür:\n\nA bölü be çarpı ce bölü de; eşittir parantez içinde a çarpı ce, bölü parantez içinde be çarpı de. A bölü be’nin ce bölü de’ye bölümü; eşittir a bölü be çarpı de bölü ce; eşittir parantez içinde a çarpı de, bölü parantez içinde be çarpı ce.\n\nİşlem sonunda pay ve paydanın ortak bölenleri varsa kesir sadeleştirilir. Sadeleştirme, kesrin değerini değiştirmez, yalnızca daha yalın bir gösterim sağlar. Yapay zekâ uygulamalarında kesirler çoğu zaman ondalık değerlere çevrilerek kullanılır. Örneğin bir modelin doğru tahmin oranı dörtte üç biçiminde hesaplanır ve 0,75 olarak yazılır.\n\nÖrnek (Bir Modelin Tahmininin Hesaplanması): Bir model, iki özelliği kullanarak tahmin üretmektedir. Özellik değerleri 3 ve 5, bu özelliklere ait parametreler ise 0,4 ve eksi 0,2 olsun. Modelin sabit terimi 1 olduğuna göre tahmin değeri nedir?\n\nTahmin, her özellik değerinin kendi parametresiyle çarpılıp elde edilen sonuçların toplanmasıyla bulunur. İşlem önceliği gereği önce çarpmalar yapılır, ardından toplama uygulanır. İkinci parametre negatif olduğu için farklı işaretli sayıların çarpımı negatif çıkar:\n\nYe şapka eşittir; 0,4 çarpı 3, artı eksi 0,2 çarpı 5, artı 1.\n\nYe şapka eşittir; 1,2 artı eksi 1, artı 1; eşittir 1,2.\n\nBuna göre modelin ürettiği tahmin 1,2 değeridir. Bu örnek, bir yapay zekâ modelinin arka planındaki hesabın işaret kuralları ve işlem önceliğinden başka bir şey olmadığını gösterir.",
+          "start": 4111.74,
+          "end": 4272.38,
+          "duration": 160.64,
+          "level": 4,
+          "tts_parts": 1,
+          "chars": 2238
+        },
+        {
+          "id": "c023",
+          "title": "Mutlak Değer",
+          "text": "Bir reel sayının mutlak değeri, o sayının sayı doğrusu üzerinde sıfıra olan uzaklığıdır ve iks iki dikey çizgi arasına yazılarak gösterilir. Uzaklık daima negatif olmayan bir değer olduğu için mutlak değer hiçbir zaman negatif olamaz. Mutlak değer, sayının işaretine göre iki durumda tanımlanır:\n\nİks’in mutlak değeri; iks sıfırdan büyük ya da sıfıra eşitse iks, iks sıfırdan küçükse eksi iks olur.\n\nBu tanıma göre pozitif sayıların ve sıfırın mutlak değeri kendisine eşittir, negatif sayıların mutlak değeri ise işaret değiştirerek pozitife dönüşür. Örneğin 5’in mutlak değeri 5 ve eksi 5’in mutlak değeri 5 olur.\n\nMutlak değer kavramı yapay zekâda hata ölçümünün temelini oluşturur. Bir modelin tahmininin gerçek değerden ne kadar saptığı çoğu zaman mutlak fark ile ölçülür. Gerçek değer ye ve modelin tahmini ye şapka olmak üzere mutlak hata, ye eksi ye şapka farkının mutlak değeri biçiminde hesaplanır. Bu ölçü, sapmanın yönünden yani tahminin fazla mı yoksa eksik mi olduğundan bağımsız olarak yalnızca hatanın büyüklüğünü dikkate alır. Bu nedenle çok sayıda tahminin hatası toplandığında pozitif ve negatif sapmalar birbirini götürmez.\n\nÖrnek (Mutlak Hatanın Hesaplanması): Bir ev fiyatı tahmin modeli, gerçek değeri 7.200.000 lira olan bir ev için 7.150.000 lira tahmin etmiştir. Modelin mutlak hatası nedir?\n\nMutlak hata aşağıdaki gibi hesaplanır:\n\nYe eksi ye şapka farkının mutlak değeri; eşittir 7.200.000 eksi 7.150.000 farkının mutlak değeri; eşittir 50.000.\n\nBuna göre modelin mutlak hatası 50.000 liradır. Tahmin gerçek değerin altında kalmış olsa da mutlak değer, hatanın büyüklüğünü pozitif bir sayı olarak verir.\n\nSayı kümeleri arasındaki ayrım, yapay zekâ uygulamalarında doğrudan karşılık bulur. Tam sayılar genellikle sayılabilir ve kesirli olmayan büyüklükler için kullanılır. Bir veri kümesindeki örnek indeksleri, bir görüntüdeki piksel parlaklık değerleri, sınıf etiketleri ve eğitim döngüsü sayıları tam sayılarla temsil edilir. Reel sayılar ise sürekli ve ondalıklı büyüklükler için kullanılır. Model parametreleri, öğrenme oranı, olasılık değerleri ve boy, ısı, gelir gibi ölçülen öz nitelikler reel sayılarla ifade edilir.\n\nReel sayıların sürekliliği, makine öğrenmesinin temel yöntemlerinden biri olan gradyan inişi için kritik öneme sahiptir. Bu yöntem, model parametrelerini çok küçük adımlarla değiştirerek hatayı azaltır ve bunun işleyebilmesi için parametrelerin sürekli bir kümede, yani reel sayılarda tanımlı olması gerekir. Cinsiyet, renk ve şehir gibi kategorik bilgiler ise doğrudan birer sayı olmadıkları için önce sayısal kodlara dönüştürülür. Şekil 4’te farklı türden verilerin hangi sayısal temsillere karşılık geldiği örneklerle gösterilmektedir.\n\nŞekil 4. Farklı veri türlerinin sayısal temsili ve ait oldukları sayı kümeleri\n\nŞekilde beş özellik, değeri ve sayısal temsili satırlar hâlinde verilir. Yaş 27 değeriyle tam sayı, yani ze kümesi; vücut ısısı 36,8 derece santigrat değeriyle reel sayı, yani re kümesi olarak gösterilir. Cinsiyet özelliğinde kadın değeri 1’e eşlenir ve kategori tam koda dönüştürülür; tanı etiketinde pozitif değeri 1’e eşlenir ve 0 ya da 1 değerini alan sınıf etiketi olarak gösterilir. 0,92 değerindeki model çıktısı ise köşeli parantez içinde 0, 1 aralığının elemanı olan bir olasılıktır ve bu aralık re kümesinin alt kümesidir.",
+          "start": 4273.28,
+          "end": 4518.56,
+          "duration": 245.28,
+          "level": 3,
+          "tts_parts": 1,
+          "chars": 3632
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Üslü ve Köklü İfadeler",
+      "start": 4520.16,
+      "end": 6106.16,
+      "chunks": [
+        {
+          "id": "c024",
+          "title": "GİRİŞ",
+          "text": "Yapay zekâ uygulamalarında karşılaşılan hesaplar çoğu zaman yalnızca toplama ve çarpma ile sınırlı kalmaz. Bir modelin hatası hesaplanırken farkların kareleri alınır, iki veri noktası arasındaki uzaklık bulunurken karekök kullanılır, öğrenme oranı gibi çok küçük sayılar ise 10’un kuvvetleri yardımıyla yazılır Aynı biçimde bir sayının kendisiyle defalarca çarpılması gerektiğinde bu işlem tek tek yazılmak yerine kısa bir gösterimle ifade edilir. Buradan hareketle bu modülde önce üslü ifadeler ve bunlarla yapılan işlemler tanıtılacaktır. Ardından üslü ifadelerin ters işlemi olan köklü ifadeler ele alınacak ve bu ikisi arasındaki bağ kesirli üs kavramı üzerinden kurulacaktır. Son olarak bu gösterimlerin yapay zekâ hesaplarında nerede karşımıza çıktığı örneklerle gösterilecektir.",
+          "start": 4520.16,
+          "end": 4577.52,
+          "duration": 57.36,
+          "level": 2,
+          "tts_parts": 1,
+          "chars": 846
+        },
+        {
+          "id": "c025",
+          "title": "ÜSLÜ VE KÖKLÜ İFADELER",
+          "text": "Bir sayının kendisiyle tekrar tekrar çarpılması ya da bir sayının hangi sayının kuvveti olduğunun aranması, matematikte sıkça karşılaşılan iki temel durumdur. Bu iki durum birbirinin ters işlemidir ve üslü ifadeler ile köklü ifadeler aracılığıyla gösterilir. Her iki gösterim de uzun hesapları kısa ve okunaklı biçimde yazmayı sağlar.",
+          "start": 4578.42,
+          "end": 4604.18,
+          "duration": 25.76,
+          "level": 2,
+          "tts_parts": 1,
+          "chars": 374
+        },
+        {
+          "id": "c026",
+          "title": "Üslü İfadeler",
+          "text": "Bir sayının kendisiyle art arda çarpılması işlemi kısaca üslü ifade ile gösterilir. A bir reel sayı ve ne bir doğal sayı olmak üzere, a sayısının ne tane çarpımına üslü ifade denir ve a üzeri ne biçiminde yazılır. Burada tekrar eden sayıya taban, kaç kez çarpıldığını gösteren sayıya ise üs ya da kuvvet adı verilir (Şekil 1). Örneğin 2 üzeri 5 ifadesi, 2 sayısının beş kez çarpılması anlamına gelir ve sonucu 32 olarak bulunur.\n\nŞekil 1. Bir üslü ifadenin bileşenleri\n\nŞekilde büyük yazılmış a üzeri ne ifadesi yer alır; a’yı gösteren ok taban, ne’yi gösteren ok üs ya da kuvvet olarak etiketlenmiştir. Üstte, a üzeri ne’nin ne tane a’nın birbiriyle çarpımına eşit olduğu yazılıdır.\n\nÜslü ifadelerde bazı özel durumlar ayrıca tanımlanır. Bir sayının birinci kuvveti sayının kendisine eşittir. Sıfırdan farklı her sayının sıfırıncı kuvveti 1 olarak kabul edilir. Üssün negatif olması durumunda ise ifade, tabanın çarpmaya göre tersinin ilgili kuvveti biçiminde yazılır. Bu üç durum aşağıdaki gibi gösterilir:\n\nA üzeri 1 eşittir a; a üzeri 0 eşittir 1, a sıfıra eşit değilken; a üzeri eksi ne eşittir 1 bölü a üzeri ne, a sıfıra eşit değilken.\n\nNegatif üs, sayının işaretiyle ilgili değildir. Yalnızca bölme işlemini gösterir. Örneğin 10 üzeri eksi 3 ifadesi negatif bir sayı değil, 1 bölü 1000 yani 0,001 değeridir. Bu ayrım özellikle öğrenme oranı gibi çok küçük değerlerin yazımında önemlidir.\n\nTabanın işareti de sonucu belirler. Negatif bir sayının çift kuvveti pozitif, tek kuvveti ise negatif olur. Ayrıca parantez kullanımı sonucu değiştirir. Parantez içinde eksi 2, üzeri 4 ifadesinde üs bütün parantezi etkiler ve sonuç 16 olur. Buna karşılık parantezsiz yazılan eksi 2 üzeri 4 ifadesinde önce 2 üzeri 4 hesaplanır, sonra işaret uygulanır ve sonuç eksi 16 olarak bulunur. Bu durum önceki modülde ele alınan işlem önceliğinin doğrudan bir sonucudur.",
+          "start": 4605.08,
+          "end": 4755.4,
+          "duration": 150.32,
+          "level": 3,
+          "tts_parts": 1,
+          "chars": 2056
+        },
+        {
+          "id": "c027",
+          "title": "Üslü İfadelerin Özellikleri",
+          "text": "Üslü ifadelerle yapılan işlemler belirli kurallara uyar. Bu kurallar sayesinde uzun çarpımlar tek tek yazılmadan sadeleştirilebilir. Tablo 1’de a ve be sıfırdan farklı reel sayılar, me ve ne ise tam sayılar olmak üzere temel özellikler verilmektedir.\n\nTablo 1. Üslü ifadelerin temel özellikleri\n\nAynı tabanlı çarpım: a üzeri me çarpı a üzeri ne, eşittir a üzeri me artı ne; örneğin 2 üzeri 3 çarpı 2 üzeri 4, eşittir 2 üzeri 7. Aynı tabanlı bölüm: a üzeri me bölü a üzeri ne, eşittir a üzeri me eksi ne; örneğin 5 üzeri 6 bölü 5 üzeri 2, eşittir 5 üzeri 4. Üssün üssü: parantez içinde a üzeri me, üzeri ne, eşittir a üzeri me çarpı ne; örneğin parantez içinde 3 üzeri 2, üzeri 4, eşittir 3 üzeri 8. Çarpımın üssü: parantez içinde a çarpı be, üzeri ne, eşittir a üzeri ne çarpı be üzeri ne; örneğin parantez içinde 2 çarpı 5, üzeri 3, eşittir 2 üzeri 3 çarpı 5 üzeri 3. Bölümün üssü: parantez içinde a bölü be, üzeri ne, eşittir a üzeri ne bölü be üzeri ne; örneğin parantez içinde 3 bölü 4, üzeri 2, eşittir 9 bölü 16.\n\nBu kuralların hepsi tanımdan doğar. Örneğin aynı tabanlı çarpımda üslerin toplanması, tabanın önce me kez sonra ne kez çarpılmasının toplamda me artı ne kez çarpılmasıyla aynı olmasından kaynaklanır. Benzer biçimde bölme işleminde üslerin çıkarılması, sadeleşen çarpanların sayısını gösterir.\n\nÖrnek (Üslü İfadelerin Sadeleştirilmesi): Parantez içinde 2 üzeri 3 çarpı 2 üzeri 5, bölü 2 üzeri 4 işleminin sonucu nedir?\n\nÖnce paydaki aynı tabanlı çarpım için üsler toplanır ve 2 üzeri 3 çarpı 2 üzeri 5 eşittir 2 üzeri 8 bulunur. Ardından bölme işleminde üsler çıkarılır:\n\nParantez içinde 2 üzeri 3 çarpı 2 üzeri 5, bölü 2 üzeri 4; eşittir 2 üzeri 8 bölü 2 üzeri 4; eşittir 2 üzeri 8 eksi 4; eşittir 2 üzeri 4; eşittir 16.",
+          "start": 4756.3,
+          "end": 4916.78,
+          "duration": 160.48,
+          "level": 4,
+          "tts_parts": 1,
+          "chars": 2009
+        },
+        {
+          "id": "c028",
+          "title": "Onun Kuvvetleri ve Bilimsel Gösterim",
+          "text": "Çok büyük ya da çok küçük sayıları yazmak zahmetlidir ve okuma hatasına açıktır. Bu nedenle bu sayılar, 1 ile 10 arasında bir sayı ile 10’un bir kuvvetinin çarpımı biçiminde yazılır. Bu gösterime bilimsel gösterim denir. Bilimsel gösterim; büyük Ne eşittir ce çarpı 10 üzeri ne, 1 küçük eşittir ce küçüktür 10; şeklindedir. Bu gösterimde üs pozitifse sayı büyük, negatifse küçüktür. Örneğin 45.000 sayısı 4,5 çarpı 10 üzeri 4 biçiminde, 0,0003 sayısı ise 3 çarpı 10 üzeri eksi 4 biçiminde yazılır. Bilimsel gösterimin en büyük yararı, sayının büyüklük mertebesini tek bakışta göstermesidir. Bu gösterim yapay zekâ uygulamalarında sıkça karşımıza çıkar. Bir modelin öğrenme oranı çoğu zaman 0,001 yerine 10 üzeri eksi 3 biçiminde belirtilir. Bir veri kümesindeki örnek sayısı 1.200.000 yerine 1,2 çarpı 10 üzeri 6 olarak yazılır. Bir sinir ağındaki parametre sayısının 10 üzeri 9 mertebesinde olduğu söylendiğinde, bu sayının tam değeri değil büyüklük mertebesi ifade edilmiş olur. Programlama ortamlarında da bu gösterim bir e eksi üç ya da bir nokta iki e altı biçiminde kullanılır.",
+          "start": 4917.68,
+          "end": 5008.48,
+          "duration": 90.8,
+          "level": 4,
+          "tts_parts": 1,
+          "chars": 1247
+        },
+        {
+          "id": "c029",
+          "title": "Köklü İfadeler",
+          "text": "Üs alma işleminin tersi kök almadır. Karesi 9 olan pozitif sayı arandığında 3 değeri bulunur ve bu işlem karekök alma olarak adlandırılır. Genel olarak ne birden büyük bir doğal sayı olmak üzere, n’inci kuvveti a sayısına eşit olan sayıya a sayısının n’inci dereceden kökü denir. Kök işaretinin içinde yer alan ifadeye ise kök içi adı verilir. İkinci dereceden kök yazılırken derece belirtilmez ve yalnızca kök işareti kullanılır, bu köke karekök denir.\n\nKök alırken kök derecesinin tek ya da çift olması önemlidir. Kök derecesi çift olduğunda kök içi negatif olamaz çünkü hiçbir reel sayının çift kuvveti negatif değildir. Bu durumda ifade reel sayılarda tanımsızdır. Kök derecesi tek olduğunda ise kök içi negatif olabilir ve sonuç da negatif çıkar. Örneğin eksi 8 sayısının küpkökü, yani küpkök eksi 8, eksi 2 değeridir. Ayrıca çift dereceli kökün sonucu daima negatif olmayan bir sayı olarak alınır, dolayısıyla 9 sayısının karekökü, karekök 9 eşittir 3 olarak yazılır.\n\nÜslü ve köklü ifadeler aslında aynı işlemin iki farklı yazımıdır. Bu bağ kesirli üs ile kurulur. Bir sayının 1 bölü ne kuvveti, o sayının n’inci dereceden köküne eşittir. Daha genel olarak pay ve payda birlikte düşünüldüğünde aşağıdaki eşitlikler yazılır:\n\nA üzeri 1 bölü ne, eşittir a’nın n’inci dereceden kökü. A üzeri me bölü ne, eşittir a üzeri me’nin n’inci dereceden kökü; bu da a’nın n’inci dereceden kökünün m’inci kuvvetine eşittir.\n\nBu eşitlik sayesinde köklü ifadelerle yapılan işlemler için ayrı kurallar ezberlemeye gerek kalmaz. Bir köklü ifade kesirli üs biçiminde yazıldığında, üslü ifadelerin bilinen bütün özellikleri doğrudan uygulanabilir.",
+          "start": 5009.38,
+          "end": 5135.14,
+          "duration": 125.76,
+          "level": 3,
+          "tts_parts": 1,
+          "chars": 1754
+        },
+        {
+          "id": "c030",
+          "title": "Köklü İfadelerin Özellikleri",
+          "text": "Köklü ifadeler için geçerli olan temel kurallar Tablo 2’de verilmektedir. Bu kurallarda kök içleri negatif olmayan sayılar olarak alınmıştır.\n\nTablo 2. Köklü ifadelerin temel özellikleri\n\nÇarpımın kökü: a çarpı be’nin n’inci dereceden kökü, a’nın n’inci dereceden kökü ile be’nin n’inci dereceden kökünün çarpımına eşittir; örneğin karekök 36, karekök 4 çarpı karekök 9’a eşittir ve sonuç 6’dır. Bölümün kökü: a bölü be’nin n’inci dereceden kökü, a’nın n’inci dereceden kökünün be’nin n’inci dereceden köküne bölümüne eşittir; örneğin 25 bölü 4’ün karekökü 5 bölü 2’dir. Kökün kuvveti: a’nın n’inci dereceden kökünün m’inci kuvveti, a üzeri me’nin n’inci dereceden köküne eşittir; örneğin karekök 5’in 4’üncü kuvveti 25’tir. Kökün kökü: a’nın n’inci dereceden kökünün m’inci dereceden kökü, a’nın m çarpı n’inci dereceden köküne eşittir; örneğin 256’nın 4’üncü dereceden kökünün karekökü 2’dir. Çift dereceli kök: a karenin karekökü, a’nın mutlak değerine eşittir; örneğin parantez içinde eksi 7’nin karesinin karekökü 7’dir.\n\nTablonun son satırı özellikle dikkat çekicidir. Bir sayının karesinin karekökü, sayının kendisi değil mutlak değeridir. Çünkü kare alma işlemi işareti kaybettirir, karekök ise negatif olmayan bir sonuç üretir. Bu ayrıntı önceki modülde tanıtılan mutlak değer kavramıyla doğrudan bağlantılıdır ve hata hesaplarında sık kullanılır. Kare alma ile karekök alma işlemlerinin birbirinin tersi olduğu, bu iki işleme karşılık gelen eğriler çizildiğinde açıkça görülür. Şekil 2’de görüldüğü gibi iki eğri ye eşittir iks doğrusuna göre birbirinin yansımasıdır. Ayrıca kare alma işlemi büyük değerleri hızla büyütürken karekök alma işlemi tam tersine büyümeyi yavaşlatır. Bu davranış, bir modelin hatası hesaplanırken kare almanın büyük hataları neden daha ağır cezalandırdığını da açıklar.\n\nŞekil 2. Kare alma ve karekök alma işlemlerinin karşılaştırılması\n\nŞekilde yatay eksen iks, dikey eksen ye olmak üzere 0 ile 4 arasında üç çizgi gösterilir: ye eşittir iks kare eğrisi, ye eşittir karekök iks eğrisi ve kesikli çizgiyle ye eşittir iks doğrusu. Üç çizgi parantez içinde 1, 1 noktasında kesişir. İks kare eğrisi 1’den sonra hızla yükselir, karekök iks eğrisi ise yavaş artarak iks eşittir 4’te ye eşittir 2 değerine ulaşır.\n\nÖrnek (Köklü İfadelerin Sadeleştirilmesi): Karekök 18 çarpı karekök 2 işleminin sonucu nedir?\n\nÇarpımın kökü kuralı ters yönde kullanılarak iki kök tek bir kök altında birleştirilir:\n\nKarekök 18 çarpı karekök 2; eşittir 18 çarpı 2’nin karekökü; eşittir karekök 36; eşittir 6.\n\nÖrnek: Aşağıdaki işlemlerin sonuçlarını bulunuz.\n\n1. Karekök 12 artı karekök 27 eksi karekök 75, eşittir kaç?\n\n2. Karekök 50 bölü karekök 2, eşittir kaç?\n\n3. 6 bölü parantez içinde karekök 5 eksi karekök 2, eşittir kaç?\n\nKöklü ifadelerde işlem yapılabilmesi için önce kök içindeki sayıların tam kare çarpanları kök dışına çıkarılır ve ifadeler benzer köklü terimler durumuna getirilir.\n\n1. Kök içindeki sayılar tam kare çarpanlarına ayrılır. Buna göre karekök 12 eşittir 2 karekök 3, karekök 27 eşittir 3 karekök 3 ve karekök 75 eşittir 5 karekök 3 bulunur. Üç terim de karekök 3 içerdiğinden benzer köklü terimlerdir ve katsayılarıyla işlem yapılır.\n\nKarekök 12 artı karekök 27 eksi karekök 75; eşittir 2 karekök 3 artı 3 karekök 3 eksi 5 karekök 3; eşittir parantez içinde 2 artı 3 eksi 5, çarpı karekök 3; eşittir 0.\n\n2. Bölme işleminde de kök içindeki sayılar bölünür.\n\nKarekök 50 bölü karekök 2; eşittir 50 bölü 2’nin karekökü; eşittir karekök 25; eşittir 5.\n\n3. Paydada iki terimli bir köklü ifade bulunduğundan pay ve payda, paydanın eşleniği olan karekök 5 artı karekök 2 ile çarpılır. Bu işleme paydayı köklü ifadeden kurtarma denir.\n\n6 bölü parantez içinde karekök 5 eksi karekök 2; eşittir 6 çarpı parantez içinde karekök 5 artı karekök 2, bölü parantez içinde karekök 5’in karesi eksi karekök 2’nin karesi; eşittir 6 çarpı parantez içinde karekök 5 artı karekök 2, bölü parantez içinde 5 eksi 2; eşittir 2 karekök 5 artı 2 karekök 2.",
+          "start": 5136.04,
+          "end": 5463.32,
+          "duration": 327.28,
+          "level": 4,
+          "tts_parts": 1,
+          "chars": 4573
+        },
+        {
+          "id": "c031",
+          "title": "Üslü ve Köklü İfadelerin Yapay Zekâdaki Yeri",
+          "text": "Üslü ve köklü ifadeler yapay zekâ hesaplarında yalnızca birer gösterim kısaltması değildir. Bu ifadeler, modelin hatasının nasıl ölçüleceğini ve veriler arasındaki benzerliğin nasıl hesaplanacağını doğrudan belirler. Aşağıda en sık karşılaşılan üç kullanım ele alınmaktadır.\n\nBirinci kullanım hata ölçümüdür. Bir modelin tahminleri ile gerçek değerler arasındaki farklar hesaplanırken bu farkların doğrudan toplanması yanıltıcı olur çünkü pozitif ve negatif sapmalar birbirini götürür. Bu nedenle farkların kareleri alınır ve ortalaması hesaplanır. Ortalama kare hata olarak adlandırılan bu ölçüt aşağıdaki gibi yazılır:\n\nOKH eşittir; ye bir eksi ye şapka bir farkının karesi, artı bu şekilde devam ederek, artı ye ne eksi ye şapka ne farkının karesi; bu toplamın ne’ye bölümü.\n\nKare alma işlemi hem işaret sorununu ortadan kaldırır hem de büyük hataları küçük hatalara göre çok daha ağır cezalandırır. Ancak bu ölçütün birimi, ölçülen büyüklüğün biriminin karesidir. Örneğin fiyat tahmininde sonuç lira değil lira karesi cinsinden çıkar. Bu sakıncayı gidermek için ortalama kare hatanın karekökü alınır ve elde edilen ölçüt orijinal birimle yorumlanabilir hâle gelir.\n\nİkinci kullanım uzaklık hesabıdır. Önceki modüllerde her gözlemin bir sayı dizisiyle temsil edildiği belirtilmişti. İki gözlemin birbirine ne kadar benzediği, karşılık gelen noktalar arasındaki uzaklıkla ölçülür. Düzlemdeki iki nokta için bu uzaklık, farkların kareleri toplamının karekökü olarak hesaplanır (Şekil 3). Öklid uzaklığı adı verilen bu ölçü, Pisagor teoreminin doğrudan bir uygulamasıdır:\n\nDe eşittir; parantez içinde iks iki eksi iks bir farkının karesi ile parantez içinde ye iki eksi ye bir farkının karesinin toplamının karekökü.\n\nŞekil 3. Düzlemde iki nokta arasındaki uzaklığın hesaplanması\n\nŞekilde koordinat düzleminde pe noktası, yani iks bir, ye bir noktası parantez içinde 1, 1 konumunda; ku noktası, yani iks iki, ye iki noktası parantez içinde 4, 3 konumunda gösterilir. İki noktayı birleştiren doğru parçası, de harfiyle gösterilen uzaklıktır. Pe noktasından sağa uzanan yatay kesikli çizgi iks iki eksi iks bir farkını, ku noktasından aşağı inen dikey kesikli çizgi ye iki eksi ye bir farkını gösterir ve bu çizgilerle bir dik üçgen oluşur.\n\nBu formül ikiden fazla özellik bulunduğunda da aynı mantıkla genişletilir. Her özellik için fark alınır, kareleri toplanır ve sonucun karekökü hesaplanır. Benzer gözlemleri aynı öbeğe yerleştiren kümeleme yöntemleri ile en yakın komşuya bakarak karar veren sınıflandırma yöntemleri bu hesaba dayanır.\n\nÜçüncü kullanım büyüme ve küçülme hızlarının ifade edilmesidir. Bir veri kümesinin boyutu, bir modelin parametre sayısı ya da bir algoritmanın çalışma süresi çoğu zaman onun kuvvetleriyle belirtilir. Ayrıca öğrenme sürecinde öğrenme oranının her adımda belirli bir oranla çarpılarak azaltılması da üslü bir yapı oluşturur. Bu nedenle üslü gösterim, bir büyüklüğün ne kadar hızlı arttığını ya da azaldığını tek bakışta görmeyi sağlar.",
+          "start": 5464.22,
+          "end": 5684.46,
+          "duration": 220.24,
+          "level": 3,
+          "tts_parts": 1,
+          "chars": 3186
+        },
+        {
+          "id": "c032",
+          "title": "KENDİMİZİ SINAYALIM",
+          "text": "1. Bir yapay zekâ sürecinde girdi değişkenleri ile hedef değişken arasındaki ilişkiyi matematiksel olarak temsil eden yapı aşağıdakilerden hangisidir?\n\nA) Veri\n\nB) Model\n\nC) Algoritma\n\nD) Tahmin\n\nE) Gözlem\n\nSorunun Yanıtı: B\n\n2. Aşağıdakilerden hangisi yapısal olmayan veriye örnektir?\n\nA) Hastaların yaş ve kilo değerlerini içeren tablo\n\nB) Bir mağazanın satış miktarı tablosu\n\nC) Bir konuşmanın ses kaydı\n\nD) Öğrenci notlarını içeren çizelge\n\nE) Ürün fiyatlarını içeren liste\n\nSorunun Yanıtı: C\n\n3. Aşağıdakilerden hangisi eğitim verisini çok iyi öğrendiği hâlde, daha önce görmediği veriler üzerinde başarısız olan bir modelin durumunu ifade eder?\n\nA) Genelleme\n\nB) Aşırı uyum\n\nC) Optimizasyon\n\nD) Yayma\n\nE) Sınıflandırma\n\nSorunun Yanıtı: B\n\n4. Bir modelin parametrelerinin veriden nasıl öğrenileceğini belirleyen yöntem aşağıdakilerden hangisidir?\n\nA) Model\n\nB) Öz nitelik\n\nC) Algoritma\n\nD) Hedef değişken\n\nE) Bilimsel gösterim\n\nSorunun Yanıtı: C\n\n5. Bir yapay zekâ modelinin ürettiği kararlardaki belirsizliği sayısal olarak ifade etmeye yarayan matematik alanı aşağıdakilerden hangisidir?\n\nA) Lineer cebir\n\nB) Olasılık\n\nC) Ayrık matematik\n\nD) Geometri\n\nE) Trigonometri\n\nSorunun Yanıtı: B\n\n6. Bilgisayarların temelinde yer alan ve yalnızca 0 ile 1 değerlerini alan birime ne ad verilir?\n\nA) Bit\n\nB) Piksel\n\nC) Belirteç\n\nD) Vektör\n\nE) Skaler\n\nSorunun Yanıtı: A\n\n7. Bir kategorik değişkenin her kategorisi için ayrı bir sütun açılarak ilgili sütuna 1, diğerlerine 0 yazılması işlemi aşağıdakilerden hangisidir?\n\nA) Örnekleme\n\nB) Nicemleme\n\nC) İç çarpım\n\nD) Kelime gömme\n\nE) Bire-bir kodlama\n\nSorunun Yanıtı: E\n\n8. Sekiz bitlik gri tonlu bir görüntüde bir pikselin alabileceği değer aralığı aşağıdakilerden hangisinde doğru olarak verilmiştir?\n\nA) 0 ile 1 arası\n\nB) 0 ile 100 arası\n\nC) 0 ile 255 arası\n\nD) 1 ile 256 arası\n\nE) Eksi 128 ile 127 arası\n\nSorunun Yanıtı: C\n\n9. Sürekli zamanlı bir ses sinyalinden belirli zaman noktalarında değer alınması işlemine ne ad verilir?\n\nA) Nicemleme\n\nB) Kodlama\n\nC) Örnekleme\n\nD) Gömme\n\nE) Ölçekleme\n\nSorunun Yanıtı: C\n\n10. Özellik vektörü ile parametre vektörünün karşılıklı elemanlarının çarpılıp toplanmasıyla elde edilen işlem aşağıdakilerden hangisidir?\n\nA) İç çarpım\n\nB) Toplama\n\nC) Örnekleme\n\nD) Kodlama\n\nE) Nicemleme\n\nSorunun Yanıtı: A\n\n11. Aşağıdakilerden hangisi bir irrasyonel sayıdır?\n\nA) 0,75\n\nB) Eksi 7\n\nC) 4\n\nD) Pi\n\nE) Dörtte üç\n\nSorunun Yanıtı: D\n\n12. Temel sayı kümeleri arasındaki kapsama ilişkisi aşağıdakilerden hangisinde doğru olarak verilmiştir?\n\nA) Ne, ze’nin; ze, ku’nun; ku, re’nin alt kümesidir.\n\nB) Re, ku’nun; ku, ze’nin; ze, ne’nin alt kümesidir.\n\nC) Ze, ne’nin; ne, ku’nun; ku, re’nin alt kümesidir.\n\nD) Ku, ze’nin; ze, ne’nin; ne, re’nin alt kümesidir.\n\nE) Ne, ku’nun; ku, ze’nin; ze, re’nin alt kümesidir.\n\nSorunun Yanıtı: A\n\n13. 0 küçüktür iks küçüktür 1 kümesi aşağıdakilerden hangisiyle gösterilir?\n\nA) Köşeli parantez içinde 0, 1\n\nB) Parantez içinde 0, 1\n\nC) 0’da köşeli, 1’de normal parantezle 0, 1\n\nD) Eksi sonsuzda normal, 1’de köşeli parantezle eksi sonsuz, 1\n\nE) Köşeli parantez içinde eksi 1, 1\n\nSorunun Yanıtı: B\n\n14. 12 eksi 3 çarpı parantez içinde 8 eksi 6, artı 10 bölü 5 işleminin sonucu kaçtır?\n\nA) 4\n\nB) 6\n\nC) 8\n\nD) 10\n\nE) 12\n\nSorunun Yanıtı: C\n\n15. Bir modelin gerçek değeri 1.200.000 olan bir gözlem için 1.150.000 tahmin etmesi durumunda mutlak hata kaçtır?\n\nA) Eksi 50.000\n\nB) 50.000\n\nC) 1.150.000\n\nD) 2.350.000\n\nE) 0\n\nSorunun Yanıtı: B\n\n16. Sıfırdan farklı her a sayısı için a üzeri 0 ifadesinin değeri aşağıdakilerden hangisidir?\n\nA) 1\n\nB) 0\n\nC) Be\n\nD) Eksi be\n\nE) Tanımsız\n\nSorunun Yanıtı: A\n\n17. Parantez içinde 2 üzeri 3 çarpı 2 üzeri 5, bölü 2 üzeri 4 işleminin sonucu kaçtır?\n\nA) 4\n\nB) 8\n\nC) 16\n\nD) 32\n\nE) 64\n\nSorunun Yanıtı: C\n\n18. 10 üzeri eksi 3 ifadesinin değeri aşağıdakilerden hangisidir?\n\nA) Eksi 1000\n\nB) Eksi 0,001\n\nC) 0,001\n\nD) 0,01\n\nE) 1000\n\nSorunun Yanıtı: C\n\n19. Karekök 72 ifadesi aşağıdakilerden hangisine eşittir?\n\nA) 6\n\nB) Eksi 6\n\nC) 6 karekök 5\n\nD) 4 karekök 2\n\nE) 6 karekök 2\n\nSorunun Yanıtı: E\n\n20. Düzlemde parantez içinde 12, 4 ve parantez içinde 16, 1 noktaları arasındaki Öklid uzaklığı kaçtır?\n\nA) 3\n\nB) 4\n\nC) 5\n\nD) 7\n\nE) 25\n\nSorunun Yanıtı: C",
+          "start": 5685.36,
+          "end": 6106.16,
+          "duration": 420.8,
+          "level": 2,
+          "tts_parts": 1,
+          "chars": 6764
+        }
+      ]
+    }
+  ]
+}
